@@ -7,6 +7,7 @@ import { DashboardPage } from './pages/DashboardPage';
 import { CoursesPage } from './pages/CoursesPage';
 import { SchedulePage } from './pages/SchedulePage';
 import { ProfilePage } from './pages/ProfilePage';
+import { MobileAppShell } from './pages/MobileAppShell';
 
 export const App: React.FC = () => {
   const [user, setUser] = useState<User | null>(() => {
@@ -18,6 +19,10 @@ export const App: React.FC = () => {
   });
 
   const [currentView, setCurrentView] = useState<string>('dashboard');
+  const [isMobileMode, setIsMobileMode] = useState<boolean>(() => {
+    const saved = localStorage.getItem('unisphere_mode');
+    return saved !== null ? saved === 'mobile' : true; // Default to true as user requested mobile view
+  });
 
   useEffect(() => {
     if (user) {
@@ -26,6 +31,11 @@ export const App: React.FC = () => {
       localStorage.removeItem('unisphere_user');
     }
   }, [user]);
+
+  const handleToggleMobileMode = (mobile: boolean) => {
+    setIsMobileMode(mobile);
+    localStorage.setItem('unisphere_mode', mobile ? 'mobile' : 'desktop');
+  };
 
   const handleLoginSuccess = (authenticatedUser: User) => {
     setUser(authenticatedUser);
@@ -59,13 +69,60 @@ export const App: React.FC = () => {
         onNavigate={(view) => setCurrentView(view)}
         onLogout={handleLogout}
         onSwitchRole={handleSwitchRole}
+        isMobileMode={isMobileMode}
+        onToggleMobileMode={handleToggleMobileMode}
       />
 
       {/* Main Content Area */}
       <main style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
         {!user || currentView === 'auth' ? (
           <AuthPage onSuccess={handleLoginSuccess} />
+        ) : isMobileMode ? (
+          /* Mobile Device View (Simulated Smartphone Frame) */
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '1rem 0.5rem',
+            background: 'radial-gradient(circle at 50% 20%, rgba(37, 99, 235, 0.12), transparent 70%)',
+          }}>
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '12px',
+              marginBottom: '1rem',
+              color: '#94a3b8',
+              fontSize: '0.85rem',
+            }}>
+              <span>📱 <strong>UniSphere Mobile Simulator</strong></span>
+              <span>•</span>
+              <span style={{ color: '#10b981' }}>Live Interactive Prototype</span>
+              <span>•</span>
+              <button
+                onClick={() => handleToggleMobileMode(false)}
+                style={{
+                  background: 'rgba(255,255,255,0.06)',
+                  border: '1px solid rgba(255,255,255,0.12)',
+                  color: '#38bdf8',
+                  borderRadius: '6px',
+                  padding: '2px 8px',
+                  fontSize: '0.75rem',
+                  cursor: 'pointer',
+                }}
+              >
+                Switch to Full Desktop View ↗
+              </button>
+            </div>
+
+            <MobileAppShell
+              user={user}
+              onLogout={handleLogout}
+              onSwitchRole={handleSwitchRole}
+            />
+          </div>
         ) : (
+          /* Desktop Web View */
           <>
             {currentView === 'dashboard' && (
               <DashboardPage user={user} onNavigate={setCurrentView} />

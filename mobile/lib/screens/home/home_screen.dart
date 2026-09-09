@@ -1,15 +1,22 @@
 import 'package:flutter/material.dart';
 import '../../core/constants/app_constants.dart';
 import '../../core/theme/app_colors.dart';
-import '../../models/user.dart';
 import '../../services/mock_data_service.dart';
 import '../../state/auth_state.dart';
 import '../../widgets/stat_card.dart';
 import '../../widgets/user_avatar.dart';
+import '../ai_assistant/ai_assistant_screen.dart';
+import '../assignments/assignments_screen.dart';
+import '../attendance/attendance_screen.dart';
 import '../auth/login_screen.dart';
+import '../chat/chat_screen.dart';
+import '../exams/exams_screen.dart';
+import '../notifications/notifications_screen.dart';
+import '../placements/placements_screen.dart';
 import '../profile/profile_screen.dart';
+import '../timetable/timetable_screen.dart';
 
-/// Professional University Mobile Dashboard.
+/// Professional University Mobile Dashboard with all core campus modules.
 class HomeScreen extends StatefulWidget {
   final AuthState authState;
 
@@ -62,22 +69,9 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
-  void _navigateToProfile() {
+  void _navigateTo(Widget screen) {
     Navigator.of(context).push(
-      MaterialPageRoute(
-        builder: (_) => ProfileScreen(authState: widget.authState),
-      ),
-    );
-  }
-
-  void _showModuleNotification(String moduleTitle) {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text('$moduleTitle module accessed'),
-        duration: const Duration(seconds: 2),
-        behavior: SnackBarBehavior.floating,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-      ),
+      MaterialPageRoute(builder: (_) => screen),
     );
   }
 
@@ -116,21 +110,14 @@ class _HomeScreenState extends State<HomeScreen> {
               IconButton(
                 icon: const Icon(Icons.notifications_none_rounded),
                 tooltip: 'Notifications',
-                onPressed: () {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('No new campus alerts at this time.'),
-                      behavior: SnackBarBehavior.floating,
-                    ),
-                  );
-                },
+                onPressed: () => _navigateTo(const NotificationsScreen()),
               ),
               Padding(
                 padding: const EdgeInsets.only(right: 12),
                 child: UserAvatar(
                   user: user,
                   radius: 17,
-                  onTap: _navigateToProfile,
+                  onTap: () => _navigateTo(ProfileScreen(authState: widget.authState)),
                 ),
               ),
             ],
@@ -140,7 +127,7 @@ class _HomeScreenState extends State<HomeScreen> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Welcome Card
+                // Welcome Hero Card
                 Container(
                   width: double.infinity,
                   padding: const EdgeInsets.all(20),
@@ -214,33 +201,39 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 const SizedBox(height: 24),
 
-                // Academic Metrics / KPI Row
+                // Academic Metrics / KPI Row (Clickable)
                 Row(
                   children: [
                     Expanded(
-                      child: StatCard(
-                        title: 'Current GPA',
-                        value: user.gpa?.toStringAsFixed(2) ?? '3.82',
-                        subtitle: 'Top 5% of class',
-                        icon: Icons.auto_graph_rounded,
-                        color: AppColors.primary,
+                      child: GestureDetector(
+                        onTap: () => _navigateTo(const ExamsScreen()),
+                        child: StatCard(
+                          title: 'Current GPA',
+                          value: user.gpa?.toStringAsFixed(2) ?? '3.86',
+                          subtitle: 'Tap for Transcripts',
+                          icon: Icons.auto_graph_rounded,
+                          color: AppColors.primary,
+                        ),
                       ),
                     ),
                     const SizedBox(width: 12),
                     Expanded(
-                      child: StatCard(
-                        title: 'Attendance',
-                        value: '${user.attendanceRate?.toStringAsFixed(1) ?? '94.5'}%',
-                        subtitle: 'Above requirement',
-                        icon: Icons.check_circle_outline_rounded,
-                        color: AppColors.success,
+                      child: GestureDetector(
+                        onTap: () => _navigateTo(const AttendanceScreen()),
+                        child: StatCard(
+                          title: 'Attendance',
+                          value: '${user.attendanceRate?.toStringAsFixed(1) ?? '94.8'}%',
+                          subtitle: 'Subject Breakdown',
+                          icon: Icons.check_circle_outline_rounded,
+                          color: AppColors.success,
+                        ),
                       ),
                     ),
                   ],
                 ),
                 const SizedBox(height: 24),
 
-                // Main University Features Section
+                // Main Campus Modules Section
                 const Text(
                   'Campus Modules',
                   style: TextStyle(
@@ -260,46 +253,46 @@ class _HomeScreenState extends State<HomeScreen> {
                   childAspectRatio: 1.35,
                   children: [
                     _buildModuleCard(
-                      title: 'Courses',
-                      subtitle: '5 Enrolled',
-                      icon: Icons.menu_book_rounded,
-                      color: AppColors.primary,
-                      onTap: () => _showModuleNotification('Courses'),
+                      title: 'Attendance',
+                      subtitle: '94.8% Safe',
+                      icon: Icons.fact_check_outlined,
+                      color: AppColors.success,
+                      onTap: () => _navigateTo(const AttendanceScreen()),
                     ),
                     _buildModuleCard(
                       title: 'Timetable',
-                      subtitle: 'Full Week',
+                      subtitle: 'Weekly Schedule',
                       icon: Icons.calendar_today_rounded,
-                      color: AppColors.secondary,
-                      onTap: () => _showModuleNotification('Timetable'),
+                      color: AppColors.primary,
+                      onTap: () => _navigateTo(const TimetableScreen()),
                     ),
                     _buildModuleCard(
-                      title: 'Exams & Grades',
-                      subtitle: 'Transcripts',
+                      title: 'Assignments',
+                      subtitle: '2 Pending Tasks',
+                      icon: Icons.assignment_outlined,
+                      color: AppColors.warning,
+                      onTap: () => _navigateTo(const AssignmentsScreen()),
+                    ),
+                    _buildModuleCard(
+                      title: 'Exams & Results',
+                      subtitle: 'Admit Cards & CGPA',
                       icon: Icons.analytics_outlined,
                       color: AppColors.accent,
-                      onTap: () => _showModuleNotification('Exams & Grades'),
+                      onTap: () => _navigateTo(const ExamsScreen()),
                     ),
                     _buildModuleCard(
-                      title: 'Tuition & Fees',
-                      subtitle: 'Zero Balance',
-                      icon: Icons.account_balance_wallet_outlined,
-                      color: AppColors.success,
-                      onTap: () => _showModuleNotification('Tuition & Fees'),
+                      title: 'Placements',
+                      subtitle: 'Google, Microsoft',
+                      icon: Icons.work_outline_rounded,
+                      color: const Color(0xFF0284C7),
+                      onTap: () => _navigateTo(const PlacementsScreen()),
                     ),
                     _buildModuleCard(
-                      title: 'Digital Library',
-                      subtitle: 'Research Portal',
-                      icon: Icons.local_library_outlined,
-                      color: AppColors.warning,
-                      onTap: () => _showModuleNotification('Digital Library'),
-                    ),
-                    _buildModuleCard(
-                      title: 'Campus Services',
-                      subtitle: 'ID, Shuttle & Cafeteria',
-                      icon: Icons.domain_rounded,
+                      title: 'Faculty Chat',
+                      subtitle: 'Professors & Peers',
+                      icon: Icons.chat_bubble_outline_rounded,
                       color: const Color(0xFFEC4899),
-                      onTap: () => _showModuleNotification('Campus Services'),
+                      onTap: () => _navigateTo(const ChatScreen()),
                     ),
                   ],
                 ),
@@ -318,7 +311,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ),
                     TextButton(
-                      onPressed: () => _showModuleNotification('Weekly Schedule'),
+                      onPressed: () => _navigateTo(const TimetableScreen()),
                       child: const Text('View All'),
                     ),
                   ],
@@ -360,7 +353,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               const SizedBox(height: 4),
                               Row(
                                 children: [
-                                  Icon(Icons.schedule_rounded,
+                                  const Icon(Icons.schedule_rounded,
                                       size: 13, color: AppColors.textSecondaryLight),
                                   const SizedBox(width: 4),
                                   Text(
@@ -371,7 +364,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                     ),
                                   ),
                                   const SizedBox(width: 12),
-                                  Icon(Icons.place_outlined,
+                                  const Icon(Icons.place_outlined,
                                       size: 13, color: AppColors.textSecondaryLight),
                                   const SizedBox(width: 4),
                                   Text(
@@ -394,13 +387,21 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
+          floatingActionButton: FloatingActionButton.extended(
+            onPressed: () => _navigateTo(const AiAssistantScreen()),
+            backgroundColor: AppColors.primary,
+            icon: const Icon(Icons.auto_awesome, color: Colors.white),
+            label: const Text('AI Assistant', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700)),
+          ),
           bottomNavigationBar: NavigationBar(
             selectedIndex: _selectedBottomTab,
             onDestinationSelected: (idx) {
-              if (idx == 2) {
-                _navigateToProfile();
+              if (idx == 1) {
+                _navigateTo(const TimetableScreen());
+              } else if (idx == 2) {
+                _navigateTo(const ChatScreen());
               } else if (idx == 3) {
-                _handleLogout();
+                _navigateTo(ProfileScreen(authState: widget.authState));
               } else {
                 setState(() => _selectedBottomTab = idx);
               }
@@ -414,16 +415,17 @@ class _HomeScreenState extends State<HomeScreen> {
               NavigationDestination(
                 icon: Icon(Icons.calendar_month_outlined),
                 selectedIcon: Icon(Icons.calendar_month_rounded),
-                label: 'Schedule',
+                label: 'Timetable',
+              ),
+              NavigationDestination(
+                icon: Icon(Icons.chat_bubble_outline_rounded),
+                selectedIcon: Icon(Icons.chat_bubble_rounded),
+                label: 'Messages',
               ),
               NavigationDestination(
                 icon: Icon(Icons.person_outline_rounded),
                 selectedIcon: Icon(Icons.person_rounded),
                 label: 'Profile',
-              ),
-              NavigationDestination(
-                icon: Icon(Icons.logout_rounded, color: AppColors.error),
-                label: 'Sign Out',
               ),
             ],
           ),

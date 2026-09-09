@@ -7,6 +7,10 @@ import '../../state/profile_state.dart';
 import '../../widgets/custom_button.dart';
 import '../../widgets/custom_text_field.dart';
 
+<<<<<<< HEAD
+/// Modal dialog for modifying user contact details.
+=======
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
 class EditProfileDialog extends StatefulWidget {
   final User currentUser;
   final AuthState authState;

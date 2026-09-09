@@ -1,45 +1,108 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { User } from './types/auth';
+import { mockStudentUser, mockFacultyUser } from './services/mockData';
+import { Navbar } from './components/Navbar';
+import { AuthPage } from './pages/AuthPage';
+import { DashboardPage } from './pages/DashboardPage';
+import { CoursesPage } from './pages/CoursesPage';
+import { SchedulePage } from './pages/SchedulePage';
+import { ProfilePage } from './pages/ProfilePage';
 
 export const App: React.FC = () => {
+  const [user, setUser] = useState<User | null>(() => {
+    try {
+      const saved = localStorage.getItem('unisphere_user');
+      if (saved) return JSON.parse(saved);
+    } catch (_) {}
+    return mockStudentUser; // Provide instant access by default
+  });
+
+  const [currentView, setCurrentView] = useState<string>('dashboard');
+
+  useEffect(() => {
+    if (user) {
+      localStorage.setItem('unisphere_user', JSON.stringify(user));
+    } else {
+      localStorage.removeItem('unisphere_user');
+    }
+  }, [user]);
+
+  const handleLoginSuccess = (authenticatedUser: User) => {
+    setUser(authenticatedUser);
+    setCurrentView('dashboard');
+  };
+
+  const handleLogout = () => {
+    setUser(null);
+    setCurrentView('auth');
+  };
+
+  const handleSwitchRole = () => {
+    if (!user) return;
+    if (user.role === 'student') {
+      setUser(mockFacultyUser);
+    } else {
+      setUser(mockStudentUser);
+    }
+  };
+
+  const handleUpdateUser = (updated: User) => {
+    setUser(updated);
+  };
+
   return (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      minHeight: '100vh',
-      padding: '2rem',
-      backgroundColor: '#0f172a',
-      color: '#f8fafc',
-      fontFamily: 'system-ui, -apple-system, sans-serif'
-    }}>
-      <div style={{
-        backgroundColor: '#1e293b',
-        padding: '3rem',
-        borderRadius: '1rem',
-        boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)',
-        maxWidth: '600px',
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+      {/* Top Navigation Bar */}
+      <Navbar
+        user={user}
+        currentView={currentView}
+        onNavigate={(view) => setCurrentView(view)}
+        onLogout={handleLogout}
+        onSwitchRole={handleSwitchRole}
+      />
+
+      {/* Main Content Area */}
+      <main style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
+        {!user || currentView === 'auth' ? (
+          <AuthPage onSuccess={handleLoginSuccess} />
+        ) : (
+          <>
+            {currentView === 'dashboard' && (
+              <DashboardPage user={user} onNavigate={setCurrentView} />
+            )}
+            {currentView === 'courses' && <CoursesPage />}
+            {currentView === 'schedule' && <SchedulePage />}
+            {currentView === 'profile' && (
+              <ProfilePage
+                user={user}
+                onUpdateUser={handleUpdateUser}
+                onLogout={handleLogout}
+              />
+            )}
+          </>
+        )}
+      </main>
+
+      {/* Modern Footer */}
+      <footer style={{
+        padding: '1.5rem 2rem',
         textAlign: 'center',
-        border: '1px solid #334155'
+        borderTop: '1px solid rgba(255, 255, 255, 0.06)',
+        color: '#64748b',
+        fontSize: '0.8rem',
+        marginTop: 'auto',
       }}>
-        <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: '#38bdf8' }}>
-          UniSphere AI
-        </h1>
-        <p style={{ fontSize: '1.2rem', color: '#94a3b8', marginBottom: '1.5rem' }}>
-          Multi-Tenant University Management Platform
-        </p>
-        <div style={{
-          padding: '0.75rem 1.5rem',
-          backgroundColor: '#0369a1',
-          color: '#ffffff',
-          borderRadius: '0.5rem',
-          display: 'inline-block',
-          fontWeight: 600,
-          fontSize: '0.9rem'
-        }}>
-          Web Frontend Foundation Ready
+        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px' }}>
+          <span style={{
+            width: '8px',
+            height: '8px',
+            borderRadius: '50%',
+            backgroundColor: '#10b981',
+            display: 'inline-block',
+          }} />
+          <span>UniSphere AI Platform • Multi-Tenant University Management System • Fall 2026</span>
         </div>
-      </div>
+      </footer>
     </div>
   );
 };

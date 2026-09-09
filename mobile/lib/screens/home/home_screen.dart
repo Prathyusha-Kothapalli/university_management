@@ -1,5 +1,26 @@
 import 'package:flutter/material.dart';
 import '../../core/constants/app_constants.dart';
+<<<<<<< HEAD
+import '../../core/theme/app_colors.dart';
+import '../../services/mock_data_service.dart';
+import '../../state/auth_state.dart';
+import '../../widgets/stat_card.dart';
+import '../../widgets/user_avatar.dart';
+import '../ai_assistant/ai_assistant_screen.dart';
+import '../assignments/assignments_screen.dart';
+import '../attendance/attendance_screen.dart';
+import '../auth/login_screen.dart';
+import '../chat/chat_screen.dart';
+import '../exams/exams_screen.dart';
+import '../notifications/notifications_screen.dart';
+import '../placements/placements_screen.dart';
+import '../profile/profile_screen.dart';
+import '../timetable/timetable_screen.dart';
+
+/// Professional University Mobile Dashboard with all core campus modules.
+class HomeScreen extends StatefulWidget {
+  final AuthState authState;
+=======
 import '../../core/constants/route_constants.dart';
 import '../../core/theme/app_colors.dart';
 import '../../state/auth_state.dart';
@@ -10,11 +31,15 @@ import '../../widgets/user_avatar.dart';
 class HomeScreen extends StatefulWidget {
   final AuthState authState;
   final ProfileState profileState;
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
 
   const HomeScreen({
     super.key,
     required this.authState,
+<<<<<<< HEAD
+=======
     required this.profileState,
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
   });
 
   @override
@@ -22,6 +47,20 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+<<<<<<< HEAD
+  int _selectedBottomTab = 0;
+
+  Future<void> _handleLogout() async {
+    final shouldLogout = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+        title: const Text('Sign Out'),
+        content: const Text('Are you sure you want to log out of UniSphere?'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(false),
+=======
   @override
   void initState() {
     super.initState();
@@ -42,6 +81,7 @@ class _HomeScreenState extends State<HomeScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.of(ctx).pop(),
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
             child: const Text('Cancel'),
           ),
           ElevatedButton(
@@ -49,6 +89,10 @@ class _HomeScreenState extends State<HomeScreen> {
               backgroundColor: AppColors.error,
               foregroundColor: Colors.white,
             ),
+<<<<<<< HEAD
+            onPressed: () => Navigator.of(ctx).pop(true),
+            child: const Text('Sign Out'),
+=======
             onPressed: () async {
               Navigator.of(ctx).pop();
               await widget.authState.logout();
@@ -60,14 +104,89 @@ class _HomeScreenState extends State<HomeScreen> {
               }
             },
             child: const Text('Logout'),
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
           ),
         ],
       ),
     );
+<<<<<<< HEAD
+
+    if (shouldLogout == true && mounted) {
+      await widget.authState.logout();
+      if (mounted) {
+        Navigator.of(context).pushAndRemoveUntil(
+          MaterialPageRoute(
+            builder: (_) => LoginScreen(authState: widget.authState),
+          ),
+          (route) => false,
+        );
+      }
+    }
+  }
+
+  void _navigateTo(Widget screen) {
+    Navigator.of(context).push(
+      MaterialPageRoute(builder: (_) => screen),
+    );
+=======
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
   }
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
+    return AnimatedBuilder(
+      animation: widget.authState,
+      builder: (context, _) {
+        final user = widget.authState.currentUser ?? MockDataService.defaultStudent;
+
+        return Scaffold(
+          backgroundColor: AppColors.backgroundLight,
+          appBar: AppBar(
+            elevation: 0,
+            title: Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(6),
+                  decoration: BoxDecoration(
+                    color: AppColors.primary,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: const Icon(Icons.school_rounded, color: Colors.white, size: 18),
+                ),
+                const SizedBox(width: 10),
+                const Text(
+                  AppConstants.appName,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: -0.3,
+                  ),
+                ),
+              ],
+            ),
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.notifications_none_rounded),
+                tooltip: 'Notifications',
+                onPressed: () => _navigateTo(const NotificationsScreen()),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(right: 12),
+                child: UserAvatar(
+                  user: user,
+                  radius: 17,
+                  onTap: () => _navigateTo(ProfileScreen(authState: widget.authState)),
+                ),
+              ),
+            ],
+          ),
+          body: SingleChildScrollView(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Welcome Hero Card
+=======
     final user = widget.authState.currentUser;
     final userName = user?.name ?? 'Student';
     final userRole = user?.roleDisplay ?? 'Student';
@@ -136,21 +255,32 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // Welcome Card Banner
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
                 Container(
                   width: double.infinity,
                   padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
                     gradient: const LinearGradient(
+<<<<<<< HEAD
+                      colors: [AppColors.primary, Color(0xFF1D4ED8)],
+=======
                       colors: [Color(0xFF0284C7), Color(0xFF1E3A8A)],
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                     ),
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: [
                       BoxShadow(
+<<<<<<< HEAD
+                        color: AppColors.primary.withOpacity(0.28),
+                        blurRadius: 18,
+                        offset: const Offset(0, 8),
+=======
                         color: AppColors.primary.withOpacity(0.3),
                         blurRadius: 16,
                         offset: const Offset(0, 6),
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
                       ),
                     ],
                   ),
@@ -164,20 +294,35 @@ class _HomeScreenState extends State<HomeScreen> {
                             padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(0.2),
+<<<<<<< HEAD
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Text(
+                              user.role.displayName.toUpperCase(),
+=======
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: Text(
                               userRole.toUpperCase(),
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
                               style: const TextStyle(
                                 color: Colors.white,
                                 fontSize: 11,
                                 fontWeight: FontWeight.w700,
+<<<<<<< HEAD
+                                letterSpacing: 0.5,
+=======
                                 letterSpacing: 0.8,
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
                               ),
                             ),
                           ),
                           Text(
+<<<<<<< HEAD
+                            user.studentId ?? 'US-2026',
+=======
                             user?.studentId ?? 'ID: UNIV-2026',
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
                             style: TextStyle(
                               color: Colors.white.withOpacity(0.8),
                               fontSize: 12,
@@ -186,6 +331,11 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         ],
                       ),
+<<<<<<< HEAD
+                      const SizedBox(height: 12),
+                      Text(
+                        'Welcome back, ${user.name.split(' ').first}!',
+=======
                       const SizedBox(height: 14),
                       Text(
                         'Welcome back,',
@@ -197,6 +347,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       const SizedBox(height: 2),
                       Text(
                         userName,
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
                         style: const TextStyle(
                           color: Colors.white,
                           fontSize: 22,
@@ -204,17 +355,56 @@ class _HomeScreenState extends State<HomeScreen> {
                           letterSpacing: -0.3,
                         ),
                       ),
+<<<<<<< HEAD
+                      const SizedBox(height: 4),
+                      Text(
+                        user.department ?? 'Computer Science & Engineering',
+                        style: TextStyle(
+                          color: Colors.white.withOpacity(0.85),
+=======
                       const SizedBox(height: 6),
                       Text(
                         user?.department ?? 'Computer Science & Engineering',
                         style: TextStyle(
                           color: Colors.white.withOpacity(0.9),
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
                           fontSize: 13,
                         ),
                       ),
                     ],
                   ),
                 ),
+<<<<<<< HEAD
+                const SizedBox(height: 24),
+
+                // Academic Metrics / KPI Row (Clickable)
+                Row(
+                  children: [
+                    Expanded(
+                      child: GestureDetector(
+                        onTap: () => _navigateTo(const ExamsScreen()),
+                        child: StatCard(
+                          title: 'Current GPA',
+                          value: user.gpa?.toStringAsFixed(2) ?? '3.86',
+                          subtitle: 'Tap for Transcripts',
+                          icon: Icons.auto_graph_rounded,
+                          color: AppColors.primary,
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: GestureDetector(
+                        onTap: () => _navigateTo(const AttendanceScreen()),
+                        child: StatCard(
+                          title: 'Attendance',
+                          value: '${user.attendanceRate?.toStringAsFixed(1) ?? '94.8'}%',
+                          subtitle: 'Subject Breakdown',
+                          icon: Icons.check_circle_outline_rounded,
+                          color: AppColors.success,
+                        ),
+                      ),
+=======
                 const SizedBox(height: 20),
 
                 // Quick Academic Stats
@@ -266,22 +456,172 @@ class _HomeScreenState extends State<HomeScreen> {
                       icon: Icons.calendar_today_rounded,
                       color: AppColors.feesOrange,
                       backgroundColor: const Color(0xFFFEF3C7),
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
                     ),
                   ],
                 ),
                 const SizedBox(height: 24),
 
+<<<<<<< HEAD
+                // Main Campus Modules Section
+                const Text(
+                  'Campus Modules',
+                  style: TextStyle(
+                    fontSize: 18,
+=======
                 // Main University Management Feature Modules
                 const Text(
                   'Campus Modules',
                   style: TextStyle(
                     fontSize: 16,
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
                     fontWeight: FontWeight.w700,
                     color: AppColors.textPrimaryLight,
                   ),
                 ),
                 const SizedBox(height: 12),
 
+<<<<<<< HEAD
+                GridView.count(
+                  crossAxisCount: 2,
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  mainAxisSpacing: 12,
+                  crossAxisSpacing: 12,
+                  childAspectRatio: 1.35,
+                  children: [
+                    _buildModuleCard(
+                      title: 'Attendance',
+                      subtitle: '94.8% Safe',
+                      icon: Icons.fact_check_outlined,
+                      color: AppColors.success,
+                      onTap: () => _navigateTo(const AttendanceScreen()),
+                    ),
+                    _buildModuleCard(
+                      title: 'Timetable',
+                      subtitle: 'Weekly Schedule',
+                      icon: Icons.calendar_today_rounded,
+                      color: AppColors.primary,
+                      onTap: () => _navigateTo(const TimetableScreen()),
+                    ),
+                    _buildModuleCard(
+                      title: 'Assignments',
+                      subtitle: '2 Pending Tasks',
+                      icon: Icons.assignment_outlined,
+                      color: AppColors.warning,
+                      onTap: () => _navigateTo(const AssignmentsScreen()),
+                    ),
+                    _buildModuleCard(
+                      title: 'Exams & Results',
+                      subtitle: 'Admit Cards & CGPA',
+                      icon: Icons.analytics_outlined,
+                      color: AppColors.accent,
+                      onTap: () => _navigateTo(const ExamsScreen()),
+                    ),
+                    _buildModuleCard(
+                      title: 'Placements',
+                      subtitle: 'Google, Microsoft',
+                      icon: Icons.work_outline_rounded,
+                      color: const Color(0xFF0284C7),
+                      onTap: () => _navigateTo(const PlacementsScreen()),
+                    ),
+                    _buildModuleCard(
+                      title: 'Faculty Chat',
+                      subtitle: 'Professors & Peers',
+                      icon: Icons.chat_bubble_outline_rounded,
+                      color: const Color(0xFFEC4899),
+                      onTap: () => _navigateTo(const ChatScreen()),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 24),
+
+                // Today's Class Schedule Preview
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const Text(
+                      "Today's Classes",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w700,
+                        color: AppColors.textPrimaryLight,
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () => _navigateTo(const TimetableScreen()),
+                      child: const Text('View All'),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 8),
+
+                ...MockDataService.todaySchedule.map((item) {
+                  return Container(
+                    margin: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.all(14),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(14),
+                      border: Border.all(color: AppColors.borderLight),
+                    ),
+                    child: Row(
+                      children: [
+                        Container(
+                          width: 4,
+                          height: 48,
+                          decoration: BoxDecoration(
+                            color: Color(item['colorHex'] as int),
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                        ),
+                        const SizedBox(width: 14),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                '${item['code']} - ${item['name']}',
+                                style: const TextStyle(
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 14,
+                                  color: AppColors.textPrimaryLight,
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              Row(
+                                children: [
+                                  const Icon(Icons.schedule_rounded,
+                                      size: 13, color: AppColors.textSecondaryLight),
+                                  const SizedBox(width: 4),
+                                  Text(
+                                    item['time'].toString(),
+                                    style: const TextStyle(
+                                      fontSize: 12,
+                                      color: AppColors.textSecondaryLight,
+                                    ),
+                                  ),
+                                  const SizedBox(width: 12),
+                                  const Icon(Icons.place_outlined,
+                                      size: 13, color: AppColors.textSecondaryLight),
+                                  const SizedBox(width: 4),
+                                  Text(
+                                    item['room'].toString(),
+                                    style: const TextStyle(
+                                      fontSize: 12,
+                                      color: AppColors.textSecondaryLight,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
+                }),
+=======
                 _buildFeatureGrid(context),
                 const SizedBox(height: 24),
 
@@ -380,10 +720,54 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ],
                 ),
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
                 const SizedBox(height: 20),
               ],
             ),
           ),
+<<<<<<< HEAD
+          floatingActionButton: FloatingActionButton.extended(
+            onPressed: () => _navigateTo(const AiAssistantScreen()),
+            backgroundColor: AppColors.primary,
+            icon: const Icon(Icons.auto_awesome, color: Colors.white),
+            label: const Text('AI Assistant', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700)),
+          ),
+          bottomNavigationBar: NavigationBar(
+            selectedIndex: _selectedBottomTab,
+            onDestinationSelected: (idx) {
+              if (idx == 1) {
+                _navigateTo(const TimetableScreen());
+              } else if (idx == 2) {
+                _navigateTo(const ChatScreen());
+              } else if (idx == 3) {
+                _navigateTo(ProfileScreen(authState: widget.authState));
+              } else {
+                setState(() => _selectedBottomTab = idx);
+              }
+            },
+            destinations: const [
+              NavigationDestination(
+                icon: Icon(Icons.dashboard_outlined),
+                selectedIcon: Icon(Icons.dashboard_rounded),
+                label: 'Dashboard',
+              ),
+              NavigationDestination(
+                icon: Icon(Icons.calendar_month_outlined),
+                selectedIcon: Icon(Icons.calendar_month_rounded),
+                label: 'Timetable',
+              ),
+              NavigationDestination(
+                icon: Icon(Icons.chat_bubble_outline_rounded),
+                selectedIcon: Icon(Icons.chat_bubble_rounded),
+                label: 'Messages',
+              ),
+              NavigationDestination(
+                icon: Icon(Icons.person_outline_rounded),
+                selectedIcon: Icon(Icons.person_rounded),
+                label: 'Profile',
+              ),
+            ],
+=======
         ),
       ),
     );
@@ -454,12 +838,65 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ],
             ),
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
           ),
         );
       },
     );
   }
 
+<<<<<<< HEAD
+  Widget _buildModuleCard({
+    required String title,
+    required String subtitle,
+    required IconData icon,
+    required Color color,
+    required VoidCallback onTap,
+  }) {
+    return Card(
+      elevation: 0,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(16),
+        side: const BorderSide(color: AppColors.borderLight),
+      ),
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(16),
+        child: Padding(
+          padding: const EdgeInsets.all(14),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                padding: const EdgeInsets.all(8),
+                decoration: BoxDecoration(
+                  color: color.withOpacity(0.12),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Icon(icon, size: 20, color: color),
+              ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    title,
+                    style: const TextStyle(
+                      fontSize: 14,
+                      fontWeight: FontWeight.w700,
+                      color: AppColors.textPrimaryLight,
+                    ),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    subtitle,
+                    style: const TextStyle(
+                      fontSize: 11.5,
+                      color: AppColors.textSecondaryLight,
+                    ),
+                  ),
+                ],
+=======
   Widget _buildScheduleItem({
     required String time,
     required String subject,
@@ -496,11 +933,16 @@ class _HomeScreenState extends State<HomeScreen> {
                   fontSize: 12,
                   color: AppColors.textSecondaryLight,
                 ),
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
               ),
             ],
           ),
         ),
+<<<<<<< HEAD
+      ),
+=======
       ],
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
     );
   }
 }

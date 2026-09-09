@@ -1,5 +1,28 @@
 import 'package:flutter/foundation.dart';
 import '../models/user.dart';
+<<<<<<< HEAD
+import '../repositories/user_repository.dart';
+
+/// Profile management state provider.
+class ProfileState extends ChangeNotifier {
+  final UserRepository _userRepository;
+
+  bool _isSaving = false;
+  String? _errorMessage;
+
+  ProfileState({UserRepository? userRepository})
+      : _userRepository = userRepository ?? UserRepository();
+
+  bool get isSaving => _isSaving;
+  String? get errorMessage => _errorMessage;
+
+  /// Update user profile attributes
+  Future<User?> updateProfile(
+    User currentUser, {
+    required String name,
+    String? phone,
+  }) async {
+=======
 import '../models/user_profile.dart';
 import '../repositories/user_repository.dart';
 import '../core/network/api_exceptions.dart';
@@ -39,10 +62,32 @@ class ProfileState extends ChangeNotifier {
   }
 
   Future<User?> updateProfile(User currentUser, {String? name, String? phone}) async {
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
     _isSaving = true;
     _errorMessage = null;
     notifyListeners();
 
+<<<<<<< HEAD
+    final result = await _userRepository.updateProfile(name: name, phone: phone);
+
+    _isSaving = false;
+    return result.fold(
+      onSuccess: (updatedUser) {
+        _errorMessage = null;
+        notifyListeners();
+        return updatedUser;
+      },
+      onFailure: (error) {
+        _errorMessage = error;
+        notifyListeners();
+        return null;
+      },
+    );
+  }
+
+  void clearError() {
+    _errorMessage = null;
+=======
     try {
       final updatedUser = await _repository.updateProfile(currentUser, name: name, phone: phone);
       if (_profile != null) {
@@ -72,6 +117,7 @@ class ProfileState extends ChangeNotifier {
     _errorMessage = null;
     _isLoading = false;
     _isSaving = false;
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
     notifyListeners();
   }
 }

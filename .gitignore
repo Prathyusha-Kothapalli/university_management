@@ -1,0 +1,77 @@
+# Operating System
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Environment and Secrets
+.env
+.env.local
+.env.*.local
+*.env
+*.pem
+*.key
+*.cert
+
+# Python / FastAPI / AI
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+ENV/
+env/
+*.egg-info/
+.mypy_cache/
+.ruff_cache/
+
+# Web / Node / React
+node_modules/
+dist/
+build/
+.npm
+.yarn/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.eslintcache
+
+# Flutter / Dart
+mobile/.dart_tool/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/.packages
+mobile/.pub-cache/
+mobile/.pub/
+mobile/build/
+mobile/ios/Runner.xcworkspace
+mobile/ios/Pods/
+mobile/android/.gradle/
+mobile/android/local.properties
+
+# Database & Cache
+*.sqlite3
+*.db
+docker_data/
+postgres_data/
+redis_data/
+
+# Docker
+*.tar
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+.antigravity/
+
+# Temporary Files
+tmp/
+temp/
+*.tmp

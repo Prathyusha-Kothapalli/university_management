@@ -1,30 +1,60 @@
-import React, { useState } from 'react';
-import { User } from '../types/auth';
+import React, { useState, useEffect } from 'react';
+import { User, ScheduleItem } from '../types/auth';
 import { AttendanceView } from './AttendanceView';
 import { AssignmentsView } from './AssignmentsView';
 import { ExamsView } from './ExamsView';
 import { PlacementsView } from './PlacementsView';
 import { AiAssistantView } from './AiAssistantView';
-import { mockSchedule } from '../services/mockData';
+import { getStoredSchedule } from '../services/scheduleStore';
+import { FacultyTimetableModal } from '../components/FacultyTimetableModal';
 
 interface MobileAppShellProps {
   user: User | null;
   onLogout: () => void;
   onSwitchRole: () => void;
+  initialTab?: 'home' | 'schedule' | 'ai' | 'profile';
+  onNavigate?: (view: string) => void;
 }
 
 export const MobileAppShell: React.FC<MobileAppShellProps> = ({
   user,
   onLogout,
   onSwitchRole,
+  initialTab = 'home',
+  onNavigate,
 }) => {
-  const [activeTab, setActiveTab] = useState<'home' | 'schedule' | 'ai' | 'profile'>('home');
+  const [activeTab, setActiveTab] = useState<'home' | 'schedule' | 'ai' | 'profile'>(initialTab);
   const [subView, setSubView] = useState<'none' | 'attendance' | 'assignments' | 'exams' | 'placements'>('none');
   const [selectedDay, setSelectedDay] = useState('Monday');
   const [isOfflineMode, setIsOfflineMode] = useState(false);
+  const [schedule, setSchedule] = useState<ScheduleItem[]>(() => getStoredSchedule());
+
+  // Faculty modal state
+  const [modalOpen, setModalOpen] = useState(false);
+  const [editingItem, setEditingItem] = useState<ScheduleItem | null>(null);
+
+  const isFaculty = user?.role === 'faculty';
+
+  const reloadSchedule = () => {
+    setSchedule(getStoredSchedule());
+  };
+
+  useEffect(() => {
+    const handleUpdated = () => reloadSchedule();
+    window.addEventListener('unisphere_schedule_updated', handleUpdated);
+    return () => window.removeEventListener('unisphere_schedule_updated', handleUpdated);
+  }, []);
+
+  // Sync when initialTab prop changes from parent
+  useEffect(() => {
+    if (initialTab) {
+      setActiveTab(initialTab);
+      setSubView('none');
+    }
+  }, [initialTab]);
 
   const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
-  const daySchedule = mockSchedule.filter((s) => s.day === selectedDay);
+  const daySchedule = schedule.filter((s) => s.day === selectedDay);
 
   const navigateToSub = (view: 'attendance' | 'assignments' | 'exams' | 'placements') => {
     setSubView(view);
@@ -33,6 +63,21 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
   const handleTabChange = (tab: 'home' | 'schedule' | 'ai' | 'profile') => {
     setActiveTab(tab);
     setSubView('none');
+    if (onNavigate) {
+      if (tab === 'home') onNavigate('dashboard');
+      else if (tab === 'schedule') onNavigate('schedule');
+      else if (tab === 'profile') onNavigate('profile');
+    }
+  };
+
+  const handleOpenAddLecture = () => {
+    setEditingItem(null);
+    setModalOpen(true);
+  };
+
+  const handleOpenEditLecture = (item: ScheduleItem) => {
+    setEditingItem(item);
+    setModalOpen(true);
   };
 
   return (
@@ -79,18 +124,22 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
                 ←
               </button>
             ) : (
-              <div style={{
-                width: '30px',
-                height: '30px',
-                borderRadius: '8px',
-                background: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontWeight: 900,
-                color: '#fff',
-                fontSize: '0.9rem',
-              }}>
+              <div
+                onClick={() => handleTabChange('home')}
+                style={{
+                  width: '30px',
+                  height: '30px',
+                  borderRadius: '8px',
+                  background: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontWeight: 900,
+                  color: '#fff',
+                  fontSize: '0.9rem',
+                  cursor: 'pointer',
+                }}
+              >
                 U
               </div>
             )}
@@ -105,12 +154,12 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
                   : subView === 'placements'
                   ? 'Campus Placements'
                   : activeTab === 'schedule'
-                  ? 'Weekly Timetable'
+                  ? (isFaculty ? 'Faculty Timetable' : 'Lecture Timetable')
                   : activeTab === 'ai'
                   ? 'UniSphere AI'
                   : activeTab === 'profile'
                   ? 'My Account'
-                  : 'UniSphere Mobile'}
+                  : (isFaculty ? 'Faculty Mobile Hub' : 'UniSphere Mobile')}
               </div>
               <div style={{ fontSize: '0.65rem', color: isOfflineMode ? '#f59e0b' : '#10b981' }}>
                 {isOfflineMode ? '● Offline Mode Active' : '● Connected to Python API'}
@@ -118,7 +167,7 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
             </div>
           </div>
 
-          {/* Quick status badges */}
+          {/* Quick status badges and CLICKABLE PROFILE AVATAR */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
             <span
               onClick={() => setIsOfflineMode(!isOfflineMode)}
@@ -135,18 +184,29 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
             >
               {isOfflineMode ? 'Offline' : 'Online'}
             </span>
-            <div style={{
-              width: '28px',
-              height: '28px',
-              borderRadius: '50%',
-              background: '#334155',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '0.75rem',
-              fontWeight: 700,
-              color: '#38bdf8',
-            }}>
+
+            {/* Clickable Avatar to Open Profile */}
+            <div
+              onClick={() => handleTabChange('profile')}
+              title="Tap to open your profile"
+              style={{
+                width: '30px',
+                height: '30px',
+                borderRadius: '50%',
+                background: activeTab === 'profile'
+                  ? 'linear-gradient(135deg, #38bdf8, #2563eb)'
+                  : '#334155',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                fontSize: '0.78rem',
+                fontWeight: 700,
+                color: '#ffffff',
+                cursor: 'pointer',
+                boxShadow: activeTab === 'profile' ? '0 0 8px rgba(56, 189, 248, 0.5)' : 'none',
+                border: '1.5px solid rgba(255, 255, 255, 0.2)',
+              }}
+            >
               {user?.name.charAt(0) || 'U'}
             </div>
           </div>
@@ -163,42 +223,138 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
           {/* 2. If at Root of Active Tab */}
           {subView === 'none' && activeTab === 'home' && (
             <div style={{ padding: '1.25rem', display: 'flex', flexDirection: 'column', gap: '14px' }}>
-              {/* Student Greeting Banner */}
-              <div style={{
-                background: 'linear-gradient(135deg, #1e3a8a, #0369a1)',
-                padding: '1.25rem',
-                borderRadius: '16px',
-                color: '#fff',
-                boxShadow: '0 4px 16px rgba(3, 105, 161, 0.25)',
-              }}>
+              {/* Greeting Banner (Clickable to open profile!) */}
+              <div
+                onClick={() => handleTabChange('profile')}
+                title="Tap to view your complete profile"
+                style={{
+                  background: isFaculty
+                    ? 'linear-gradient(135deg, #1e1b4b, #4338ca)'
+                    : 'linear-gradient(135deg, #1e3a8a, #0369a1)',
+                  padding: '1.25rem',
+                  borderRadius: '16px',
+                  color: '#fff',
+                  boxShadow: '0 4px 16px rgba(3, 105, 161, 0.25)',
+                  cursor: 'pointer',
+                  transition: 'transform 0.15s',
+                }}
+              >
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                   <div>
-                    <div style={{ fontSize: '0.75rem', opacity: 0.85 }}>Welcome back 👋</div>
+                    <div style={{ fontSize: '0.75rem', opacity: 0.85 }}>
+                      {isFaculty ? 'Faculty Instructor 👋' : 'Welcome back 👋'}
+                    </div>
                     <div style={{ fontSize: '1.2rem', fontWeight: 800, marginTop: '2px' }}>
                       {user?.name || 'Alex Rivera'}
                     </div>
                     <div style={{ fontSize: '0.72rem', opacity: 0.8, marginTop: '2px' }}>
-                      Roll: {user?.id || 'CS-2023-889'} • Dept of CS & AI
+                      {isFaculty ? 'Tenured Professor' : `Roll: ${user?.id || 'CS-2023-889'}`} • Dept of CS & AI
                     </div>
                   </div>
                   <span style={{
                     fontSize: '0.7rem',
                     background: 'rgba(255,255,255,0.2)',
-                    padding: '2px 8px',
+                    padding: '3px 8px',
                     borderRadius: '8px',
                     fontWeight: 700,
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '4px',
                   }}>
-                    Fall 2026
+                    👤 Profile ›
                   </span>
                 </div>
               </div>
 
-              {/* Quick Actions Grid (Flutter Modules) */}
+              {/* FACULTY FEATURE: Change Timetable Direct Quick Action */}
+              {isFaculty && (
+                <div
+                  className="glass-panel"
+                  style={{
+                    padding: '1rem',
+                    border: '1.5px solid rgba(99, 102, 241, 0.5)',
+                    background: 'rgba(30, 27, 75, 0.6)',
+                  }}
+                >
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                      <span style={{ fontSize: '1.2rem' }}>🗓️</span>
+                      <span style={{ fontSize: '0.9rem', fontWeight: 800, color: '#f8fafc' }}>
+                        Change Timetable
+                      </span>
+                    </div>
+                    <button
+                      onClick={handleOpenAddLecture}
+                      className="btn btn-primary"
+                      style={{ padding: '4px 10px', fontSize: '0.75rem', borderRadius: '8px' }}
+                    >
+                      ➕ Add Slot
+                    </button>
+                  </div>
+                  <p style={{ fontSize: '0.75rem', color: '#94a3b8', marginBottom: '8px' }}>
+                    Faculty can reschedule hours or add extra teaching sessions.
+                  </p>
+                  <button
+                    onClick={() => handleTabChange('schedule')}
+                    className="btn btn-secondary"
+                    style={{ width: '100%', padding: '6px', fontSize: '0.78rem' }}
+                  >
+                    Open Weekly Timetable Editor →
+                  </button>
+                </div>
+              )}
+
+              {/* Quick Actions Grid */}
               <div>
                 <div style={{ fontSize: '0.825rem', fontWeight: 700, color: '#94a3b8', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-                  Mobile Campus Modules
+                  {isFaculty ? 'Faculty Quick Access' : 'Mobile Campus Modules'}
                 </div>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '10px' }}>
+                  {/* Profile Card on Home Dashboard */}
+                  <div
+                    onClick={() => handleTabChange('profile')}
+                    className="glass-panel"
+                    style={{
+                      padding: '0.9rem',
+                      cursor: 'pointer',
+                      transition: 'transform 0.15s',
+                      border: '1px solid rgba(56, 189, 248, 0.3)',
+                    }}
+                  >
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <span style={{ fontSize: '1.4rem' }}>👤</span>
+                      <span style={{ fontSize: '0.7rem', color: '#38bdf8', fontWeight: 800 }}>Open</span>
+                    </div>
+                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#f8fafc', marginTop: '6px' }}>
+                      My Profile
+                    </div>
+                    <div style={{ fontSize: '0.68rem', color: '#94a3b8' }}>ID, details & role</div>
+                  </div>
+
+                  {/* Timetable Card */}
+                  <div
+                    onClick={() => handleTabChange('schedule')}
+                    className="glass-panel"
+                    style={{
+                      padding: '0.9rem',
+                      cursor: 'pointer',
+                      transition: 'transform 0.15s',
+                    }}
+                  >
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <span style={{ fontSize: '1.4rem' }}>📅</span>
+                      <span style={{ fontSize: '0.7rem', color: '#a78bfa', fontWeight: 800 }}>
+                        {isFaculty ? 'Edit' : 'View'}
+                      </span>
+                    </div>
+                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#f8fafc', marginTop: '6px' }}>
+                      Timetable
+                    </div>
+                    <div style={{ fontSize: '0.68rem', color: '#94a3b8' }}>
+                      {isFaculty ? 'Reschedule classes' : 'Weekly lectures'}
+                    </div>
+                  </div>
+
                   {/* Attendance Card */}
                   <div
                     onClick={() => navigateToSub('attendance')}
@@ -211,15 +367,19 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
                   >
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                       <span style={{ fontSize: '1.4rem' }}>📊</span>
-                      <span style={{ fontSize: '0.7rem', color: '#10b981', fontWeight: 800 }}>89.0%</span>
+                      <span style={{ fontSize: '0.7rem', color: '#10b981', fontWeight: 800 }}>
+                        {isFaculty ? 'Gradebook' : '89.0%'}
+                      </span>
                     </div>
                     <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#f8fafc', marginTop: '6px' }}>
-                      Attendance
+                      {isFaculty ? 'Student Records' : 'Attendance'}
                     </div>
-                    <div style={{ fontSize: '0.68rem', color: '#94a3b8' }}>All subjects safe</div>
+                    <div style={{ fontSize: '0.68rem', color: '#94a3b8' }}>
+                      {isFaculty ? 'All cohorts safe' : 'All subjects safe'}
+                    </div>
                   </div>
 
-                  {/* Assignments Card */}
+                  {/* Assignments / Courses */}
                   <div
                     onClick={() => navigateToSub('assignments')}
                     className="glass-panel"
@@ -231,61 +391,21 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
                   >
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                       <span style={{ fontSize: '1.4rem' }}>📝</span>
-                      <span style={{ fontSize: '0.7rem', color: '#f59e0b', fontWeight: 800 }}>2 Due</span>
+                      <span style={{ fontSize: '0.7rem', color: '#f59e0b', fontWeight: 800 }}>Active</span>
                     </div>
                     <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#f8fafc', marginTop: '6px' }}>
                       Assignments
                     </div>
-                    <div style={{ fontSize: '0.68rem', color: '#94a3b8' }}>Next: Sep 18</div>
-                  </div>
-
-                  {/* Exams & Transcripts */}
-                  <div
-                    onClick={() => navigateToSub('exams')}
-                    className="glass-panel"
-                    style={{
-                      padding: '0.9rem',
-                      cursor: 'pointer',
-                      transition: 'transform 0.15s',
-                    }}
-                  >
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                      <span style={{ fontSize: '1.4rem' }}>🎯</span>
-                      <span style={{ fontSize: '0.7rem', color: '#a78bfa', fontWeight: 800 }}>9.42 CGPA</span>
-                    </div>
-                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#f8fafc', marginTop: '6px' }}>
-                      Exams & Grades
-                    </div>
-                    <div style={{ fontSize: '0.68rem', color: '#94a3b8' }}>Admit card ready</div>
-                  </div>
-
-                  {/* Placements */}
-                  <div
-                    onClick={() => navigateToSub('placements')}
-                    className="glass-panel"
-                    style={{
-                      padding: '0.9rem',
-                      cursor: 'pointer',
-                      transition: 'transform 0.15s',
-                    }}
-                  >
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                      <span style={{ fontSize: '1.4rem' }}>💼</span>
-                      <span style={{ fontSize: '0.7rem', color: '#34d399', fontWeight: 800 }}>4 Drives</span>
-                    </div>
-                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#f8fafc', marginTop: '6px' }}>
-                      Placements
-                    </div>
-                    <div style={{ fontSize: '0.68rem', color: '#94a3b8' }}>Google, NVIDIA, Apple</div>
+                    <div style={{ fontSize: '0.68rem', color: '#94a3b8' }}>Submissions & grading</div>
                   </div>
                 </div>
               </div>
 
-              {/* Today's Classes */}
+              {/* Today's Schedule Preview */}
               <div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px' }}>
                   <div style={{ fontSize: '0.825rem', fontWeight: 700, color: '#94a3b8', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-                    Today's Schedule
+                    {isFaculty ? "Today's Teaching Lectures" : "Today's Schedule"}
                   </div>
                   <button
                     onClick={() => handleTabChange('schedule')}
@@ -296,25 +416,44 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
                 </div>
 
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                  <div className="glass-panel" style={{ padding: '0.85rem 1rem', borderLeft: '4px solid #3b82f6' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                      <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#60a5fa' }}>CS-401 • 10:00 AM</span>
-                      <span style={{ fontSize: '0.7rem', color: '#94a3b8' }}>Turing B-204</span>
-                    </div>
-                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#f8fafc', marginTop: '3px' }}>
-                      Deep Learning & Neural Architectures
-                    </div>
-                  </div>
+                  {schedule.slice(0, 2).map((item) => (
+                    <div
+                      key={item.id}
+                      className="glass-panel"
+                      style={{
+                        padding: '0.85rem 1rem',
+                        borderLeft: `4px solid ${item.color}`,
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                      }}
+                    >
+                      <div>
+                        <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
+                          <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#60a5fa' }}>
+                            {item.code} • {item.time}
+                          </span>
+                        </div>
+                        <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#f8fafc', marginTop: '2px' }}>
+                          {item.title}
+                        </div>
+                        <div style={{ fontSize: '0.7rem', color: '#94a3b8' }}>
+                          🏛️ {item.room}
+                        </div>
+                      </div>
 
-                  <div className="glass-panel" style={{ padding: '0.85rem 1rem', borderLeft: '4px solid #10b981' }}>
-                    <div style={{ display: 'flex', justifyContent: 'space-between' }}>
-                      <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#34d399' }}>DS-310 • 01:30 PM</span>
-                      <span style={{ fontSize: '0.7rem', color: '#94a3b8' }}>Newton N-101</span>
+                      {isFaculty && (
+                        <button
+                          onClick={() => handleOpenEditLecture(item)}
+                          className="btn btn-secondary"
+                          style={{ padding: '4px 8px', fontSize: '0.72rem' }}
+                          title="Change lecture"
+                        >
+                          ✏️ Edit
+                        </button>
+                      )}
                     </div>
-                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#f8fafc', marginTop: '3px' }}>
-                      Big Data Distributed Systems
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
 
@@ -335,20 +474,35 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
                 <div style={{ fontSize: '1.6rem' }}>✨</div>
                 <div>
                   <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#f8fafc' }}>
-                    Have a question? Ask AI
+                    Have a question? Ask AI Copilot
                   </div>
                   <div style={{ fontSize: '0.72rem', color: '#94a3b8' }}>
-                    Instant answers for rooms, attendance & schedules
+                    {isFaculty ? 'Query room availability or student lists' : 'Instant answers for timetable & exams'}
                   </div>
                 </div>
               </div>
             </div>
           )}
 
-          {/* Schedule Tab */}
+          {/* Schedule Tab with Faculty Change Option */}
           {subView === 'none' && activeTab === 'schedule' && (
             <div style={{ padding: '1rem' }}>
-              {/* Day selector */}
+              {/* Day selector with Add button for Faculty */}
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '10px' }}>
+                <div style={{ fontSize: '0.85rem', fontWeight: 800, color: '#f8fafc' }}>
+                  {selectedDay} Schedule
+                </div>
+                {isFaculty && (
+                  <button
+                    onClick={handleOpenAddLecture}
+                    className="btn btn-primary"
+                    style={{ padding: '4px 10px', fontSize: '0.72rem', borderRadius: '8px' }}
+                  >
+                    ➕ Add Slot
+                  </button>
+                )}
+              </div>
+
               <div style={{ display: 'flex', gap: '6px', overflowX: 'auto', paddingBottom: '8px', marginBottom: '12px' }}>
                 {days.map((d) => (
                   <button
@@ -372,32 +526,66 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
               </div>
 
               <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
-                {daySchedule.map((item) => (
-                  <div
-                    key={item.id}
-                    className="glass-panel"
-                    style={{
-                      padding: '0.9rem 1rem',
-                      borderLeft: `4px solid ${item.color}`,
-                    }}
-                  >
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
-                      <span style={{ fontSize: '0.72rem', fontWeight: 700, color: '#38bdf8' }}>
-                        {item.code}
-                      </span>
-                      <span style={{ fontSize: '0.72rem', color: '#f59e0b', fontWeight: 600 }}>
-                        {item.time}
-                      </span>
+                {daySchedule.length > 0 ? (
+                  daySchedule.map((item) => (
+                    <div
+                      key={item.id}
+                      className="glass-panel"
+                      style={{
+                        padding: '0.9rem 1rem',
+                        borderLeft: `4px solid ${item.color}`,
+                        display: 'flex',
+                        justifyContent: 'space-between',
+                        alignItems: 'center',
+                      }}
+                    >
+                      <div style={{ flex: 1 }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
+                          <span style={{ fontSize: '0.72rem', fontWeight: 700, color: '#38bdf8' }}>
+                            {item.code}
+                          </span>
+                          <span style={{ fontSize: '0.72rem', color: '#f59e0b', fontWeight: 600 }}>
+                            {item.time}
+                          </span>
+                        </div>
+                        <div style={{ fontSize: '0.875rem', fontWeight: 700, color: '#f8fafc', marginBottom: '4px' }}>
+                          {item.title}
+                        </div>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.72rem', color: '#94a3b8' }}>
+                          <span>🏛️ {item.room}</span>
+                          <span>👨‍🏫 {item.instructor}</span>
+                        </div>
+                      </div>
+
+                      {isFaculty && (
+                        <button
+                          onClick={() => handleOpenEditLecture(item)}
+                          className="btn btn-secondary"
+                          style={{ padding: '6px 10px', fontSize: '0.75rem', marginLeft: '10px', whiteSpace: 'nowrap' }}
+                          title="Change or reschedule this lecture"
+                        >
+                          ✏️ Change
+                        </button>
+                      )}
                     </div>
-                    <div style={{ fontSize: '0.875rem', fontWeight: 700, color: '#f8fafc', marginBottom: '4px' }}>
-                      {item.title}
+                  ))
+                ) : (
+                  <div className="glass-panel" style={{ padding: '2rem', textAlign: 'center', color: '#94a3b8' }}>
+                    <div style={{ fontSize: '1.8rem', marginBottom: '6px' }}>☕</div>
+                    <div style={{ fontWeight: 700, fontSize: '0.9rem', color: '#f8fafc' }}>
+                      No lectures on {selectedDay}
                     </div>
-                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.72rem', color: '#94a3b8' }}>
-                      <span>🏛️ {item.room}</span>
-                      <span>👨‍🏫 {item.instructor}</span>
-                    </div>
+                    {isFaculty && (
+                      <button
+                        onClick={handleOpenAddLecture}
+                        className="btn btn-primary"
+                        style={{ marginTop: '10px', padding: '6px 12px', fontSize: '0.75rem' }}
+                      >
+                        ➕ Add a lecture for {selectedDay}
+                      </button>
+                    )}
                   </div>
-                ))}
+                )}
               </div>
             </div>
           )}
@@ -413,7 +601,9 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
                   width: '64px',
                   height: '64px',
                   borderRadius: '50%',
-                  background: 'linear-gradient(135deg, #2563eb, #38bdf8)',
+                  background: isFaculty
+                    ? 'linear-gradient(135deg, #4338ca, #6366f1)'
+                    : 'linear-gradient(135deg, #2563eb, #38bdf8)',
                   margin: '0 auto 10px',
                   display: 'flex',
                   alignItems: 'center',
@@ -432,34 +622,17 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
                 </div>
                 <div style={{ marginTop: '8px' }}>
                   <span className={`badge badge-${user?.role || 'student'}`}>
-                    {user?.role || 'Student'} • {user?.department || 'Computer Science'}
+                    {user?.role === 'faculty' ? 'Faculty Member' : 'Student'} • {user?.department || 'Computer Science'}
                   </span>
                 </div>
               </div>
 
-              {/* Account Options */}
+              {/* Account Options & Role Switcher */}
               <div className="glass-panel" style={{ padding: '0.5rem', display: 'flex', flexDirection: 'column' }}>
                 <div
                   onClick={onSwitchRole}
                   style={{
-                    padding: '10px 12px',
-                    display: 'flex',
-                    justifyContent: 'space-between',
-                    alignItems: 'center',
-                    cursor: 'pointer',
-                    borderBottom: '1px solid rgba(255,255,255,0.06)',
-                  }}
-                >
-                  <span style={{ fontSize: '0.85rem', color: '#f8fafc' }}>
-                    🔄 Switch to {user?.role === 'student' ? 'Faculty' : 'Student'} Role
-                  </span>
-                  <span style={{ color: '#38bdf8' }}>›</span>
-                </div>
-
-                <div
-                  onClick={() => setIsOfflineMode(!isOfflineMode)}
-                  style={{
-                    padding: '10px 12px',
+                    padding: '12px 14px',
                     display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'center',
@@ -468,7 +641,29 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
                   }}
                 >
                   <div>
-                    <div style={{ fontSize: '0.85rem', color: '#f8fafc' }}>
+                    <div style={{ fontSize: '0.875rem', fontWeight: 700, color: '#f8fafc' }}>
+                      🔄 Switch to {user?.role === 'student' ? 'Faculty 👨‍🏫' : 'Student 🎓'}
+                    </div>
+                    <div style={{ fontSize: '0.7rem', color: '#94a3b8' }}>
+                      Test both student and faculty timetable workflows
+                    </div>
+                  </div>
+                  <span style={{ color: '#38bdf8', fontWeight: 800 }}>›</span>
+                </div>
+
+                <div
+                  onClick={() => setIsOfflineMode(!isOfflineMode)}
+                  style={{
+                    padding: '12px 14px',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    cursor: 'pointer',
+                    borderBottom: '1px solid rgba(255,255,255,0.06)',
+                  }}
+                >
+                  <div>
+                    <div style={{ fontSize: '0.85rem', color: '#f8fafc', fontWeight: 600 }}>
                       💾 Offline Storage Cache
                     </div>
                     <div style={{ fontSize: '0.7rem', color: '#94a3b8' }}>
@@ -483,7 +678,7 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
                 <div
                   onClick={onLogout}
                   style={{
-                    padding: '10px 12px',
+                    padding: '12px 14px',
                     display: 'flex',
                     justifyContent: 'space-between',
                     alignItems: 'center',
@@ -538,6 +733,17 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
           <div className="phone-home-pill" />
         </div>
       </div>
+
+      {/* Faculty Timetable Edit/Add Modal in Phone view */}
+      {isFaculty && (
+        <FacultyTimetableModal
+          isOpen={modalOpen}
+          onClose={() => setModalOpen(false)}
+          onScheduleUpdated={reloadSchedule}
+          initialItem={editingItem}
+          instructorName={user?.name || 'Prof. Arthur Vance'}
+        />
+      )}
     </div>
   );
 };

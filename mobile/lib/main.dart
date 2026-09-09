@@ -1,83 +1,58 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
+import 'core/constants/app_constants.dart';
+import 'core/constants/route_constants.dart';
+import 'core/theme/app_theme.dart';
+import 'screens/auth/login_screen.dart';
+import 'screens/auth/register_screen.dart';
+import 'screens/home/home_screen.dart';
+import 'screens/profile/profile_screen.dart';
+import 'screens/splash/splash_screen.dart';
+import 'state/auth_state.dart';
 
 void main() {
-  runApp(const UniSphereApp());
+  WidgetsFlutterBinding.ensureInitialized();
+
+  // Set system UI overlay style for modern transparent status bars
+  SystemChrome.setSystemUIOverlayStyle(
+    const SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarIconBrightness: Brightness.dark,
+      systemNavigationBarColor: Colors.white,
+      systemNavigationBarIconBrightness: Brightness.dark,
+    ),
+  );
+
+  final authState = AuthState();
+
+  runApp(UniSphereApp(authState: authState));
 }
 
+/// Root Application Widget for UniSphere AI Mobile.
 class UniSphereApp extends StatelessWidget {
-  const UniSphereApp({super.key});
+  final AuthState authState;
+
+  const UniSphereApp({
+    super.key,
+    required this.authState,
+  });
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'UniSphere AI',
+      title: AppConstants.appName,
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color(0xFF0284C7)),
-        useMaterial3: true,
-      ),
-      home: const FoundationPlaceholderScreen(),
-    );
-  }
-}
-
-class FoundationPlaceholderScreen extends StatelessWidget {
-  const FoundationPlaceholderScreen({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: const Color(0xFF0F172A),
-      body: Center(
-        child: Container(
-          margin: const EdgeInsets.all(24.0),
-          padding: const EdgeInsets.all(32.0),
-          decoration: BoxDecoration(
-            color: const Color(0xFF1E293B),
-            borderRadius: BorderRadius.circular(16.0),
-            border: Border.all(color: const Color(0xFF334155)),
-          ),
-          child: Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              const Icon(
-                Icons.school_rounded,
-                size: 64.0,
-                color: Color(0xFF38BDF8),
-              ),
-              const SizedBox(height: 16.0),
-              const Text(
-                'UniSphere AI',
-                style: TextStyle(
-                  fontSize: 28.0,
-                  fontWeight: FontWeight.bold,
-                  color: Color(0xFF38BDF8),
-                ),
-              ),
-              const SizedBox(height: 8.0),
-              const Text(
-                'Multi-Tenant University Management',
-                style: TextStyle(
-                  fontSize: 16.0,
-                  color: Color(0xFF94A3B8),
-                ),
-                textAlign: TextAlign.center,
-              ),
-              const SizedBox(height: 24.0),
-              Chip(
-                backgroundColor: const Color(0xFF0369A1),
-                label: const Text(
-                  'Mobile Foundation Ready',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
+      theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: ThemeMode.light,
+      initialRoute: RouteConstants.splash,
+      routes: {
+        RouteConstants.splash: (ctx) => SplashScreen(authState: authState),
+        RouteConstants.login: (ctx) => LoginScreen(authState: authState),
+        RouteConstants.register: (ctx) => RegisterScreen(authState: authState),
+        RouteConstants.home: (ctx) => HomeScreen(authState: authState),
+        RouteConstants.profile: (ctx) => ProfileScreen(authState: authState),
+      },
     );
   }
 }

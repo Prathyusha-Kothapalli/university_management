@@ -1,36 +1,77 @@
 from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware
 
-from app.core.config import settings
+from app.api.v1.auth import router as auth_router
+from app.api.v1.users import router as users_router
+from app.api.v1.universities import router as universities_router
+from app.api.v1.campuses import router as campuses_router
+from app.api.v1.departments import router as departments_router
+from app.api.v1.programs import router as programs_router
+from app.api.v1.academic_years import router as academic_years_router
+from app.api.v1.semesters import router as semesters_router
+from app.api.v1.students import router as students_router
+from app.api.v1.faculty import router as faculty_router
+
 
 app = FastAPI(
-    title=settings.PROJECT_NAME,
-    version=settings.VERSION,
-    openapi_url=f"{settings.API_V1_STR}/openapi.json",
+    title="UniSphere AI Backend",
+    version="1.0.0"
 )
 
-# Set up CORS middleware
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+
+app.include_router(
+    auth_router,
+    prefix="/api/v1"
 )
 
-@app.get("/")
-def read_root():
-    return {
-        "status": "healthy",
-        "service": settings.PROJECT_NAME,
-        "version": settings.VERSION,
-        "message": "Welcome to UniSphere AI Multi-Tenant Platform Backend API Foundation"
-    }
+app.include_router(
+    users_router,
+    prefix="/api/v1"
+)
 
-@app.get("/health")
+app.include_router(
+    universities_router,
+    prefix="/api/v1"
+)
+
+app.include_router(
+    campuses_router,
+    prefix="/api/v1"
+)
+
+app.include_router(
+    departments_router,
+    prefix="/api/v1"
+)
+
+app.include_router(
+    programs_router,
+    prefix="/api/v1"
+)
+
+app.include_router(
+    academic_years_router,
+    prefix="/api/v1"
+)
+
+app.include_router(
+    semesters_router,
+    prefix="/api/v1"
+)
+
+app.include_router(
+    students_router,
+    prefix="/api/v1"
+)
+
+app.include_router(
+    faculty_router,
+    prefix="/api/v1"
+)
+
+
+@app.get("/health/")
 def health_check():
     return {
         "status": "ok",
-        "service": "backend",
-        "environment": settings.ENVIRONMENT
+        "service": "UniSphere AI Backend"
     }

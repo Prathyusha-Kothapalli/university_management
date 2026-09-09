@@ -1,12 +1,43 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:unisphere_mobile/core/constants/app_constants.dart';
 import 'package:unisphere_mobile/main.dart';
+import 'package:unisphere_mobile/repositories/auth_repository.dart';
+import 'package:unisphere_mobile/repositories/user_repository.dart';
+import 'package:unisphere_mobile/services/storage_service.dart';
+import 'package:unisphere_mobile/services/token_storage_service.dart';
+import 'package:unisphere_mobile/state/auth_state.dart';
+import 'package:unisphere_mobile/state/profile_state.dart';
 
 void main() {
-  testWidgets('UniSphere App foundation smoke test', (WidgetTester tester) async {
-    await tester.pumpWidget(const UniSphereApp());
+  testWidgets('UniSphere App initial splash and app load smoke test', (WidgetTester tester) async {
+    final storage = InMemoryStorageService();
+    final tokenStorage = TokenStorageService(storage: storage);
+    final authRepository = AuthRepository(tokenStorage: tokenStorage, forceMock: true);
+    final userRepository = UserRepository(tokenStorage: tokenStorage, forceMock: true);
 
-    expect(find.text('UniSphere AI'), findsOneWidget);
-    expect(find.text('Multi-Tenant University Management'), findsOneWidget);
-    expect(find.text('Mobile Foundation Ready'), findsOneWidget);
+    final authState = AuthState(repository: authRepository);
+    final profileState = ProfileState(repository: userRepository);
+
+    await tester.pumpWidget(
+      UniSphereApp(
+        authState: authState,
+        profileState: profileState,
+      ),
+    );
+
+    // Verify Splash Screen elements render immediately
+    expect(find.text(AppConstants.appName), findsOneWidget);
+    expect(find.text(AppConstants.appTagline), findsOneWidget);
+    expect(find.byType(CircularProgressIndicator), findsOneWidget);
+
+    // Advance time through splash animation and authentication check
+    await tester.pump(const Duration(milliseconds: 1500));
+    await tester.pumpAndSettle();
+
+    // After unauthenticated splash check, should navigate to Login screen
+    expect(find.text('Welcome Back'), findsOneWidget);
+    expect(find.text('Sign In'), findsOneWidget);
+    expect(find.text('Create an Account'), findsOneWidget);
   });
 }

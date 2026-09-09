@@ -119,6 +119,8 @@ export const App: React.FC = () => {
               user={user}
               onLogout={handleLogout}
               onSwitchRole={handleSwitchRole}
+              initialTab={currentView === 'profile' ? 'profile' : currentView === 'schedule' ? 'schedule' : 'home'}
+              onNavigate={(v) => setCurrentView(v)}
             />
           </div>
         ) : (
@@ -128,7 +130,7 @@ export const App: React.FC = () => {
               <DashboardPage user={user} onNavigate={setCurrentView} />
             )}
             {currentView === 'courses' && <CoursesPage />}
-            {currentView === 'schedule' && <SchedulePage />}
+            {currentView === 'schedule' && <SchedulePage user={user} />}
             {currentView === 'profile' && (
               <ProfilePage
                 user={user}

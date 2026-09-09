@@ -7,6 +7,8 @@ interface NavbarProps {
   onNavigate: (view: string) => void;
   onLogout: () => void;
   onSwitchRole: () => void;
+  isMobileMode?: boolean;
+  onToggleMobileMode?: (mobile: boolean) => void;
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -15,6 +17,8 @@ export const Navbar: React.FC<NavbarProps> = ({
   onNavigate,
   onLogout,
   onSwitchRole,
+  isMobileMode = false,
+  onToggleMobileMode,
 }) => {
   return (
     <header style={{
@@ -96,7 +100,62 @@ export const Navbar: React.FC<NavbarProps> = ({
 
       {/* User Actions */}
       {user ? (
-        <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
+          {/* Mobile vs Desktop View Toggle */}
+          {onToggleMobileMode && (
+            <div style={{
+              display: 'flex',
+              background: 'rgba(15, 23, 42, 0.9)',
+              padding: '3px',
+              borderRadius: '10px',
+              border: '1px solid rgba(255, 255, 255, 0.12)',
+              gap: '2px',
+            }}>
+              <button
+                type="button"
+                onClick={() => onToggleMobileMode(true)}
+                style={{
+                  padding: '5px 12px',
+                  borderRadius: '7px',
+                  border: 'none',
+                  background: isMobileMode ? 'linear-gradient(135deg, #2563eb, #0ea5e9)' : 'transparent',
+                  color: isMobileMode ? '#ffffff' : '#94a3b8',
+                  fontSize: '0.75rem',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '4px',
+                  boxShadow: isMobileMode ? '0 2px 8px rgba(37,99,235,0.4)' : 'none',
+                  transition: 'all 0.15s ease',
+                }}
+              >
+                📱 Mobile View
+              </button>
+              <button
+                type="button"
+                onClick={() => onToggleMobileMode(false)}
+                style={{
+                  padding: '5px 12px',
+                  borderRadius: '7px',
+                  border: 'none',
+                  background: !isMobileMode ? 'linear-gradient(135deg, #2563eb, #0ea5e9)' : 'transparent',
+                  color: !isMobileMode ? '#ffffff' : '#94a3b8',
+                  fontSize: '0.75rem',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '4px',
+                  boxShadow: !isMobileMode ? '0 2px 8px rgba(37,99,235,0.4)' : 'none',
+                  transition: 'all 0.15s ease',
+                }}
+              >
+                🖥️ Desktop
+              </button>
+            </div>
+          )}
+
           {/* Role Switcher Pill */}
           <button
             onClick={onSwitchRole}

@@ -8,21 +8,7 @@ from sqlalchemy import pool
 from alembic import context
 
 from app.database.base import Base
-from app.database.base import Base
-from app.models import (
-    User,
-    Role,
-    University,
-    Campus,
-    Department,
-    Program,
-    AcademicYear,
-    Semester,
-    Student,
-    Faculty,
-    StudentGuardian,
-    FacultyDepartment,
-)
+import app.models
 
 # Load environment variables from backend/.env
 load_dotenv()

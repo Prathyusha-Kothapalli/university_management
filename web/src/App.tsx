@@ -1,168 +1,114 @@
-import React, { useState, useEffect } from 'react';
-import { User } from './types/auth';
-import { mockStudentUser, mockFacultyUser } from './services/mockData';
+import React from 'react';
+import { HashRouter as Router, Routes, Route, Navigate, Outlet } from 'react-router-dom';
+import { AuthProvider } from './context/AuthContext';
+import { ThemeProvider } from './context/ThemeContext';
+import { ToastProvider } from './context/ToastContext';
+import { useAuth } from './hooks/useAuth';
 import { Navbar } from './components/Navbar';
-import { AuthPage } from './pages/AuthPage';
-import { DashboardPage } from './pages/DashboardPage';
-import { CoursesPage } from './pages/CoursesPage';
-import { SchedulePage } from './pages/SchedulePage';
-import { ProfilePage } from './pages/ProfilePage';
-import { MobileAppShell } from './pages/MobileAppShell';
+import { Sidebar } from './components/Sidebar';
+import { ToastContainer } from './components/ToastContainer';
 
-export const App: React.FC = () => {
-  const [user, setUser] = useState<User | null>(() => {
-    try {
-      const saved = localStorage.getItem('unisphere_user');
-      if (saved) return JSON.parse(saved);
-    } catch (_) {}
-    return mockStudentUser; // Provide instant access by default
-  });
+// Page Views
+import { LoginPage } from './pages/Auth/LoginPage';
+import { DashboardPage } from './pages/Dashboard/DashboardPage';
+import { AcademicsPage } from './pages/Academics/AcademicsPage';
+import { LearningPage } from './pages/Learning/LearningPage';
+import { ExamsPage } from './pages/Exams/ExamsPage';
+import { FinancePage } from './pages/Finance/FinancePage';
+import { LibraryPage } from './pages/Library/LibraryPage';
+import { FacilitiesPage } from './pages/Facilities/FacilitiesPage';
+import { PlacementsPage } from './pages/Placements/PlacementsPage';
+import { AiAssistantPage } from './pages/AI/AiAssistantPage';
+import { ProfilePage } from './pages/Profile/ProfilePage';
 
-  const [currentView, setCurrentView] = useState<string>('dashboard');
-  const [isMobileMode, setIsMobileMode] = useState<boolean>(() => {
-    const saved = localStorage.getItem('unisphere_mode');
-    return saved !== null ? saved === 'mobile' : true; // Default to true as user requested mobile view
-  });
+import { HODDashboard } from './pages/Dashboard/HODDashboard';
+import { ParentDashboard } from './pages/Dashboard/ParentDashboard';
+import { ParentAcademicsView } from './pages/Parent/ParentAcademicsView';
+import { ParentAttendanceView } from './pages/Parent/ParentAttendanceView';
+import { ParentFinanceView } from './pages/Parent/ParentFinanceView';
+import { ParentServicesView } from './pages/Parent/ParentServicesView';
+import { DepartmentOverview } from './pages/Department/DepartmentOverview';
+import { DepartmentStudents } from './pages/Department/DepartmentStudents';
+import { DepartmentFaculty } from './pages/Department/DepartmentFaculty';
+import { DepartmentCourses } from './pages/Department/DepartmentCourses';
 
-  useEffect(() => {
-    if (user) {
-      localStorage.setItem('unisphere_user', JSON.stringify(user));
-    } else {
-      localStorage.removeItem('unisphere_user');
-    }
-  }, [user]);
+// Protected App Layout
+const ProtectedLayout: React.FC = () => {
+  const { isAuthenticated } = useAuth();
 
-  const handleToggleMobileMode = (mobile: boolean) => {
-    setIsMobileMode(mobile);
-    localStorage.setItem('unisphere_mode', mobile ? 'mobile' : 'desktop');
-  };
-
-  const handleLoginSuccess = (authenticatedUser: User) => {
-    setUser(authenticatedUser);
-    setCurrentView('dashboard');
-  };
-
-  const handleLogout = () => {
-    setUser(null);
-    setCurrentView('auth');
-  };
-
-  const handleSwitchRole = () => {
-    if (!user) return;
-    if (user.role === 'student') {
-      setUser(mockFacultyUser);
-    } else {
-      setUser(mockStudentUser);
-    }
-  };
-
-  const handleUpdateUser = (updated: User) => {
-    setUser(updated);
-  };
+  if (!isAuthenticated) {
+    return <Navigate to="/login" replace />;
+  }
 
   return (
-    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
-      {/* Top Navigation Bar */}
-      <Navbar
-        user={user}
-        currentView={currentView}
-        onNavigate={(view) => setCurrentView(view)}
-        onLogout={handleLogout}
-        onSwitchRole={handleSwitchRole}
-        isMobileMode={isMobileMode}
-        onToggleMobileMode={handleToggleMobileMode}
-      />
-
-      {/* Main Content Area */}
-      <main style={{ flex: 1, display: 'flex', flexDirection: 'column' }}>
-        {!user || currentView === 'auth' ? (
-          <AuthPage onSuccess={handleLoginSuccess} />
-        ) : isMobileMode ? (
-          /* Mobile Device View (Simulated Smartphone Frame) */
-          <div style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            padding: '1rem 0.5rem',
-            background: 'radial-gradient(circle at 50% 20%, rgba(37, 99, 235, 0.12), transparent 70%)',
-          }}>
-            <div style={{
-              display: 'flex',
-              alignItems: 'center',
-              gap: '12px',
-              marginBottom: '1rem',
-              color: '#94a3b8',
-              fontSize: '0.85rem',
-            }}>
-              <span>📱 <strong>UniSphere Mobile Simulator</strong></span>
-              <span>•</span>
-              <span style={{ color: '#10b981' }}>Live Interactive Prototype</span>
-              <span>•</span>
-              <button
-                onClick={() => handleToggleMobileMode(false)}
-                style={{
-                  background: 'rgba(255,255,255,0.06)',
-                  border: '1px solid rgba(255,255,255,0.12)',
-                  color: '#38bdf8',
-                  borderRadius: '6px',
-                  padding: '2px 8px',
-                  fontSize: '0.75rem',
-                  cursor: 'pointer',
-                }}
-              >
-                Switch to Full Desktop View ↗
-              </button>
-            </div>
-
-            <MobileAppShell
-              user={user}
-              onLogout={handleLogout}
-              onSwitchRole={handleSwitchRole}
-              initialTab={currentView === 'profile' ? 'profile' : currentView === 'schedule' ? 'schedule' : 'home'}
-              onNavigate={(v) => setCurrentView(v)}
-            />
-          </div>
-        ) : (
-          /* Desktop Web View */
-          <>
-            {currentView === 'dashboard' && (
-              <DashboardPage user={user} onNavigate={setCurrentView} />
-            )}
-            {currentView === 'courses' && <CoursesPage />}
-            {currentView === 'schedule' && <SchedulePage user={user} />}
-            {currentView === 'profile' && (
-              <ProfilePage
-                user={user}
-                onUpdateUser={handleUpdateUser}
-                onLogout={handleLogout}
-              />
-            )}
-          </>
-        )}
-      </main>
-
-      {/* Modern Footer */}
-      <footer style={{
-        padding: '1.5rem 2rem',
-        textAlign: 'center',
-        borderTop: '1px solid rgba(255, 255, 255, 0.06)',
-        color: '#64748b',
-        fontSize: '0.8rem',
-        marginTop: 'auto',
-      }}>
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px' }}>
-          <span style={{
-            width: '8px',
-            height: '8px',
-            borderRadius: '50%',
-            backgroundColor: '#10b981',
-            display: 'inline-block',
-          }} />
-          <span>UniSphere AI Platform • Multi-Tenant University Management System • Fall 2026</span>
-        </div>
-      </footer>
+    <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', backgroundColor: '#090d16', color: '#f8fafc' }}>
+      <Navbar />
+      <div style={{ display: 'flex', flex: 1 }}>
+        <Sidebar />
+        <main style={{ flex: 1, minWidth: 0, overflowX: 'hidden' }}>
+          <Outlet />
+        </main>
+      </div>
+      <ToastContainer />
     </div>
+  );
+};
+
+export const App: React.FC = () => {
+  return (
+    <AuthProvider>
+      <ThemeProvider>
+        <ToastProvider>
+          <Router>
+            <Routes>
+              {/* Public Routes */}
+              <Route path="/login" element={<LoginPage />} />
+
+              {/* Protected SPA Routes */}
+              <Route element={<ProtectedLayout />}>
+                <Route path="/dashboard" element={<DashboardPage />} />
+                <Route path="/parent/dashboard" element={<ParentDashboard />} />
+                <Route path="/parent/student" element={<ParentDashboard />} />
+                <Route path="/parent/academics" element={<ParentAcademicsView />} />
+                <Route path="/parent/courses" element={<ParentAcademicsView />} />
+                <Route path="/parent/attendance" element={<ParentAttendanceView />} />
+                <Route path="/parent/assignments" element={<ParentAcademicsView />} />
+                <Route path="/parent/exams" element={<ParentAcademicsView />} />
+                <Route path="/parent/results" element={<ParentAcademicsView />} />
+                <Route path="/parent/transcript" element={<ParentAcademicsView />} />
+                <Route path="/parent/fees" element={<ParentFinanceView />} />
+                <Route path="/parent/payments" element={<ParentFinanceView />} />
+                <Route path="/parent/library" element={<ParentServicesView />} />
+                <Route path="/parent/hostel" element={<ParentServicesView />} />
+                <Route path="/parent/transport" element={<ParentServicesView />} />
+                <Route path="/parent/placements" element={<ParentServicesView />} />
+                <Route path="/parent/documents" element={<ParentServicesView />} />
+                <Route path="/parent/notifications" element={<ParentDashboard />} />
+                <Route path="/parent/ai" element={<AiAssistantPage />} />
+                <Route path="/parent/profile" element={<ProfilePage />} />
+                <Route path="/hod/dashboard" element={<HODDashboard />} />
+                <Route path="/hod/department" element={<DepartmentOverview />} />
+                <Route path="/hod/students" element={<DepartmentStudents />} />
+                <Route path="/hod/faculty" element={<DepartmentFaculty />} />
+                <Route path="/hod/courses" element={<DepartmentCourses />} />
+                <Route path="/academics" element={<AcademicsPage />} />
+                <Route path="/learning" element={<LearningPage />} />
+                <Route path="/exams" element={<ExamsPage />} />
+                <Route path="/finance" element={<FinancePage />} />
+                <Route path="/library" element={<LibraryPage />} />
+                <Route path="/facilities" element={<FacilitiesPage />} />
+                <Route path="/placements" element={<PlacementsPage />} />
+                <Route path="/ai" element={<AiAssistantPage />} />
+                <Route path="/profile" element={<ProfilePage />} />
+              </Route>
+
+              {/* Default Fallback Redirect */}
+              <Route path="*" element={<Navigate to="/dashboard" replace />} />
+            </Routes>
+          </Router>
+        </ToastProvider>
+      </ThemeProvider>
+    </AuthProvider>
   );
 };
 

@@ -89,7 +89,13 @@ class Student(Base):
     )
 
     attendance_records = relationship(
-    "AttendanceRecord",
-    back_populates="student",
-    cascade="all, delete-orphan"
+        "AttendanceRecord",
+        back_populates="student",
+        cascade="all, delete-orphan"
     )
+
+    course_enrollments = relationship(
+        "CourseEnrollment",
+        back_populates="student",
+        cascade="all, delete-orphan"
+    )

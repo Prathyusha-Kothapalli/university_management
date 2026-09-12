@@ -1,17 +1,11 @@
 import 'package:flutter/material.dart';
 import '../core/theme/app_colors.dart';
-<<<<<<< HEAD
 
 /// Reusable empty placeholder view with title, message, and optional action button.
-=======
-import 'custom_button.dart';
-
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
 class EmptyStateView extends StatelessWidget {
   final IconData icon;
   final String title;
   final String message;
-<<<<<<< HEAD
   final String? actionText;
   final VoidCallback? onAction;
 
@@ -22,18 +16,6 @@ class EmptyStateView extends StatelessWidget {
     required this.message,
     this.actionText,
     this.onAction,
-=======
-  final String? buttonText;
-  final VoidCallback? onButtonPressed;
-
-  const EmptyStateView({
-    super.key,
-    this.icon = Icons.inbox_outlined,
-    required this.title,
-    required this.message,
-    this.buttonText,
-    this.onButtonPressed,
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
   });
 
   @override
@@ -47,7 +29,6 @@ class EmptyStateView extends StatelessWidget {
             Container(
               padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
-<<<<<<< HEAD
                 color: AppColors.primary.withOpacity(0.08),
                 shape: BoxShape.circle,
               ),
@@ -56,12 +37,6 @@ class EmptyStateView extends StatelessWidget {
                 size: 48,
                 color: AppColors.primary,
               ),
-=======
-                color: AppColors.primaryLight,
-                shape: BoxShape.circle,
-              ),
-              child: Icon(icon, size: 48, color: AppColors.primary),
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
             ),
             const SizedBox(height: 20),
             Text(
@@ -83,21 +58,11 @@ class EmptyStateView extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
-<<<<<<< HEAD
             if (actionText != null && onAction != null) ...[
               const SizedBox(height: 20),
               OutlinedButton(
                 onPressed: onAction,
                 child: Text(actionText!),
-=======
-            if (buttonText != null && onButtonPressed != null) ...[
-              const SizedBox(height: 24),
-              CustomButton(
-                text: buttonText!,
-                onPressed: onButtonPressed,
-                width: 180,
-                height: 44,
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
               ),
             ],
           ],

@@ -13,15 +13,20 @@ import {
   Bot,
   User,
   ShieldAlert,
+  Sparkles,
 } from 'lucide-react';
 
 export const Sidebar: React.FC = () => {
   const { role } = useAuth();
 
   const navItems = [
-    { to: '/dashboard', label: 'Dashboard', icon: <LayoutDashboard size={18} />, roles: ['admin', 'faculty', 'student'] },
+    { to: '/dashboard', label: 'Student Dashboard', icon: <LayoutDashboard size={18} />, roles: ['student'] },
+    { to: '/admin/dashboard', label: 'Admin Governance', icon: <LayoutDashboard size={18} />, roles: ['admin'] },
+    { to: '/faculty/dashboard', label: 'Faculty Portal', icon: <LayoutDashboard size={18} />, roles: ['faculty'] },
     { to: '/hod/dashboard', label: 'HOD Dashboard', icon: <LayoutDashboard size={18} />, roles: ['hod'] },
     { to: '/parent/dashboard', label: 'Parent Dashboard', icon: <LayoutDashboard size={18} />, roles: ['parent'] },
+    { to: '/librarian/dashboard', label: 'Librarian Dashboard', icon: <LayoutDashboard size={18} />, roles: ['librarian'] },
+    { to: '/features/hub', label: '20 Smart Features Suite', icon: <Sparkles size={18} />, roles: ['admin', 'faculty', 'student', 'hod', 'parent', 'librarian'], highlight: true },
     { to: '/parent/student', label: 'My Student Profile', icon: <User size={18} />, roles: ['parent'] },
     { to: '/parent/academics', label: 'Academics & Courses', icon: <GraduationCap size={18} />, roles: ['parent'] },
     { to: '/parent/assignments', label: 'Assignments', icon: <BookOpen size={18} />, roles: ['parent'] },
@@ -38,11 +43,11 @@ export const Sidebar: React.FC = () => {
     { to: '/learning', label: 'Learning & Materials', icon: <BookOpen size={18} />, roles: ['admin', 'faculty', 'student', 'hod'] },
     { to: '/exams', label: 'Exams & Results', icon: <FileCheck size={18} />, roles: ['admin', 'faculty', 'student', 'hod'] },
     { to: '/finance', label: 'Finance & Fees', icon: <CreditCard size={18} />, roles: ['admin', 'student'] },
-    { to: '/library', label: 'Library System', icon: <Library size={18} />, roles: ['admin', 'faculty', 'student', 'hod'] },
+    { to: '/library', label: 'Library System', icon: <Library size={18} />, roles: ['admin', 'faculty', 'student', 'hod', 'librarian'] },
     { to: '/facilities', label: 'Hostel & Transport', icon: <Building2 size={18} />, roles: ['admin', 'student'] },
     { to: '/placements', label: 'Placements', icon: <Briefcase size={18} />, roles: ['admin', 'faculty', 'student', 'hod'] },
-    { to: '/ai', label: 'AI Copilot', icon: <Bot size={18} />, roles: ['admin', 'faculty', 'student', 'hod'], highlight: true },
-    { to: '/profile', label: 'My Profile & Vault', icon: <User size={18} />, roles: ['admin', 'faculty', 'student', 'hod', 'parent'] },
+    { to: '/ai', label: 'AI Copilot', icon: <Bot size={18} />, roles: ['admin', 'faculty', 'student', 'hod', 'librarian'], highlight: true },
+    { to: '/profile', label: 'My Profile & Vault', icon: <User size={18} />, roles: ['admin', 'faculty', 'student', 'hod', 'parent', 'librarian'] },
   ];
 
   const filteredItems = navItems.filter((item) => item.roles.includes(role));

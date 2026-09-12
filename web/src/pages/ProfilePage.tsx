@@ -1,13 +1,18 @@
 import React, { useState } from 'react';
 import { User } from '../types/auth';
+import { mockStudentUser } from '../services/mockData';
 
 interface ProfilePageProps {
-  user: User;
-  onUpdateUser: (updated: User) => void;
-  onLogout: () => void;
+  user?: User;
+  onUpdateUser?: (updated: User) => void;
+  onLogout?: () => void;
 }
 
-export const ProfilePage: React.FC<ProfilePageProps> = ({ user, onUpdateUser, onLogout }) => {
+export const ProfilePage: React.FC<ProfilePageProps> = ({
+  user = mockStudentUser,
+  onUpdateUser = () => {},
+  onLogout = () => {}
+}) => {
   const [isEditing, setIsEditing] = useState(false);
   const [name, setName] = useState(user.name);
   const [phone, setPhone] = useState(user.phone || '');

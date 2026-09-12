@@ -1,6 +1,21 @@
 platform :ios, '12.0'
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
 # CocoaPods analytics sends network stats which slows down checkouts.
+=======
+# CocoaPods analytics sends network stats synchronously affecting flutter build latency.
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+# CocoaPods analytics sends network stats synchronously affecting flutter build latency.
+=======
+# CocoaPods analytics sends network stats which slows down checkouts.
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
+=======
+# CocoaPods analytics sends network stats which slows down checkouts.
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 ENV['COCOAPODS_DISABLE_STATS'] = 'true'
 
 project 'Runner', {
@@ -12,7 +27,22 @@ project 'Runner', {
 def flutter_root
   generated_xcode_build_settings_path = File.expand_path(File.join('..', 'Flutter', 'Generated.xcconfig'), __FILE__)
   unless File.exist?(generated_xcode_build_settings_path)
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
     raise "#{generated_xcode_build_settings_path} must exist. If you're running pod install manually, make sure flutter pub get has been run."
+=======
+    raise "#{generated_xcode_build_settings_path} must exist. If you're running pod install manually, make sure flutter pub get is executed first"
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+    raise "#{generated_xcode_build_settings_path} must exist. If you're running pod install manually, make sure flutter pub get is executed first"
+=======
+    raise "#{generated_xcode_build_settings_path} must exist. If you're running pod install manually, make sure flutter pub get has been run."
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
+=======
+    raise "#{generated_xcode_build_settings_path} must exist. If you're running pod install manually, make sure flutter pub get has been run."
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   end
 
   File.foreach(generated_xcode_build_settings_path) do |line|

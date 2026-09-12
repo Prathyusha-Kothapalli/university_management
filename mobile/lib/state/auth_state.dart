@@ -1,11 +1,54 @@
 import 'package:flutter/foundation.dart';
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 import '../core/network/api_exceptions.dart';
 import '../models/login_request.dart';
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+import '../core/network/api_exceptions.dart';
+import '../models/login_request.dart';
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
+=======
+import '../core/network/api_exceptions.dart';
+import '../models/login_request.dart';
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 import '../models/register_request.dart';
 import '../models/user.dart';
 import '../repositories/auth_repository.dart';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+/// Central reactive authentication and session state provider.
+class AuthState extends ChangeNotifier {
+  final AuthRepository _authRepository;
+
+  User? _currentUser;
+  bool _isLoading = false;
+  String? _errorMessage;
+  bool _isInitialized = false;
+
+  AuthState({AuthRepository? authRepository})
+      : _authRepository = authRepository ?? AuthRepository();
+
+  User? get currentUser => _currentUser;
+  bool get isAuthenticated => _currentUser != null;
+  bool get isLoading => _isLoading;
+  String? get errorMessage => _errorMessage;
+  bool get isInitialized => _isInitialized;
+
+  /// Check whether the user already has a valid token/session
+  Future<bool> checkAuth() async {
+    _isLoading = true;
+=======
+=======
+>>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 enum AuthStatus {
   initial,
   loading,
@@ -75,6 +118,12 @@ class AuthState extends ChangeNotifier {
     bool rememberMe = false,
   }) async {
     _status = AuthStatus.loading;
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 =======
 /// Central reactive authentication and session state provider.
 class AuthState extends ChangeNotifier {
@@ -97,12 +146,34 @@ class AuthState extends ChangeNotifier {
   /// Check whether the user already has a valid token/session
   Future<bool> checkAuth() async {
     _isLoading = true;
+<<<<<<< HEAD
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
+=======
 >>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     _errorMessage = null;
     notifyListeners();
 
     try {
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+      final user = await _authRepository.checkAuth();
+      _currentUser = user;
+      _isInitialized = true;
+      _isLoading = false;
+      notifyListeners();
+      return _currentUser != null;
+    } catch (e) {
+      _currentUser = null;
+      _isInitialized = true;
+      _isLoading = false;
+=======
+=======
+>>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       final response = await _repository.login(
         LoginRequest(
           email: email.trim(),
@@ -126,6 +197,12 @@ class AuthState extends ChangeNotifier {
     } catch (e) {
       _status = AuthStatus.error;
       _errorMessage = 'An unexpected error occurred during login. Please try again.';
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 =======
       final user = await _authRepository.checkAuth();
       _currentUser = user;
@@ -137,18 +214,28 @@ class AuthState extends ChangeNotifier {
       _currentUser = null;
       _isInitialized = true;
       _isLoading = false;
+<<<<<<< HEAD
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
+=======
 >>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       notifyListeners();
       return false;
     }
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
   /// Perform login with positional arguments
   Future<bool> loginWithCredentials(String email, String password, [bool rememberMe = false]) {
     return login(email: email, password: password, rememberMe: rememberMe);
   }
 
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   /// Perform registration
   Future<bool> register(RegisterRequest request) async {
     _status = AuthStatus.loading;
@@ -175,10 +262,27 @@ class AuthState extends ChangeNotifier {
     }
   }
 
+<<<<<<< HEAD
+  /// Perform logout
+  Future<void> logout() async {
+    _status = AuthStatus.loading;
+    notifyListeners();
+
+    try {
+      await _repository.logout();
+    } catch (_) {
+      // Ignored
+    } finally {
+      _currentUser = null;
+      _status = AuthStatus.unauthenticated;
+=======
+>>>>>>> origin/web
+=======
   /// Update local user state
   void updateUser(User updatedUser) {
     _currentUser = updatedUser;
 =======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   /// Authenticate with email and password
   Future<bool> login(String email, String password) async {
     _isLoading = true;
@@ -262,12 +366,71 @@ class AuthState extends ChangeNotifier {
   /// Clear active error banner
   void clearError() {
     if (_errorMessage != null) {
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  /// Perform registration
+  Future<bool> register(RegisterRequest request) async {
+    _status = AuthStatus.loading;
+    _errorMessage = null;
+    notifyListeners();
+
+    try {
+      final response = await _repository.register(request);
+      _currentUser = response.user;
+      _status = AuthStatus.authenticated;
+      _errorMessage = null;
+      notifyListeners();
+      return true;
+    } on ApiException catch (e) {
+      _status = AuthStatus.error;
+      _errorMessage = e.message;
+      notifyListeners();
+      return false;
+    } catch (e) {
+      _status = AuthStatus.error;
+      _errorMessage = 'Registration failed. Please verify your details and try again.';
+      notifyListeners();
+      return false;
+    }
+  }
+
+  /// Perform logout
+  Future<void> logout() async {
+    _status = AuthStatus.loading;
+    notifyListeners();
+
+    try {
+      await _repository.logout();
+    } catch (_) {
+      // Ignored
+    } finally {
+      _currentUser = null;
+      _status = AuthStatus.unauthenticated;
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
+=======
 >>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       _errorMessage = null;
       notifyListeners();
     }
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/web
+
+  void updateUser(User updatedUser) {
+    _currentUser = updatedUser;
+    notifyListeners();
+  }
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
   /// Clear active error banner
   void clearError() {
@@ -279,6 +442,15 @@ class AuthState extends ChangeNotifier {
     }
     notifyListeners();
   }
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 }
 =======
 }

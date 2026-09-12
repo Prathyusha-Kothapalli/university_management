@@ -1,6 +1,21 @@
 class RouteConstants {
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
   RouteConstants._();
 
+=======
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+  RouteConstants._();
+
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
+=======
+  RouteConstants._();
+
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   static const String splash = '/';
   static const String login = '/login';
   static const String register = '/register';

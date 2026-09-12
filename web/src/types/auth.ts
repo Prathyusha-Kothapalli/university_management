@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 export type UserRole = 'student' | 'faculty' | 'admin';
 
 export interface User {
@@ -44,6 +45,31 @@ export interface Announcement {
   date: string;
   category: 'Exam' | 'Academic' | 'Campus' | 'Fee' | 'Placement' | 'Faculty';
   content: string;
+<<<<<<< HEAD
+=======
+import { User } from './user';
+
+export interface LoginCredentials {
+  email: string;
+  password?: string;
+  rememberMe?: boolean;
+}
+
+export interface AuthResponse {
+  user: User;
+  token?: string;
+  refreshToken?: string;
+  expiresIn?: number;
+}
+
+export interface AuthState {
+  user: User | null;
+  isAuthenticated: boolean;
+  loading: boolean;
+  error: string | null;
+>>>>>>> origin/web
+=======
   author?: string;
   targetRole?: 'all' | 'student' | 'faculty';
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 }

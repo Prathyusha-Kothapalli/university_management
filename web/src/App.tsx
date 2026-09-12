@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+import React from 'react';
+import { HashRouter as Router, Routes, Route, Navigate, Outlet } from 'react-router-dom';
+import { AuthProvider } from './context/AuthContext';
+import { ThemeProvider } from './context/ThemeContext';
+import { ToastProvider } from './context/ToastContext';
+import { useAuth } from './hooks/useAuth';
+import { Navbar } from './components/Navbar';
+import { Sidebar } from './components/Sidebar';
+import { ToastContainer } from './components/ToastContainer';
+=======
 import React, { useState, useEffect } from 'react';
 import { User } from './types/auth';
 import { mockStudentUser, mockFacultyUser } from './services/mockData';
@@ -12,6 +24,7 @@ import { AiRagPlaygroundPage } from './pages/AiRagPlaygroundPage';
 import { HostelManagementDashboard } from './pages/Hostel/HostelManagementDashboard';
 import { MobileAppShell } from './pages/MobileAppShell';
 import { SplashScreen } from './pages/SplashScreen';
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
 export const App: React.FC = () => {
   const [user, setUser] = useState<User | null>(() => {
@@ -352,4 +365,10 @@ export const App: React.FC = () => {
 };
 
 export default App;
+<<<<<<< HEAD
+=======
+export { App, default } from './app/App';
+>>>>>>> origin/web
+=======
 
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689

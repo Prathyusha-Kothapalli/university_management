@@ -1,3 +1,11 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 plugins {
     id "com.android.application"
     id "kotlin-android"
@@ -5,6 +13,14 @@ plugins {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 def localProperties = new Properties()
 def localPropertiesFile = rootProject.file('local.properties')
 if (localPropertiesFile.exists()) {
@@ -23,8 +39,26 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/web
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply from: "$flutterRoot/packages/flutter_tools/gradle/flutter.gradle"
+
+<<<<<<< HEAD
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
+=======
 =======
 >>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 android {
     namespace "com.unisphere.mobile"
     compileSdkVersion 34
@@ -61,11 +95,28 @@ android {
 flutter {
     source '../..'
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 <<<<<<< HEAD
 }
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
+=======
 =======
 }
 >>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689

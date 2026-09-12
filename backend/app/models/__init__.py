@@ -43,6 +43,26 @@ from app.models.library_fine import LibraryFine
 from app.models.hostel import Hostel
 from app.models.hostel_room import HostelRoom
 from app.models.hostel_allocation import HostelAllocation
+from app.models.hostel_expansion import (
+    HostelBuilding,
+    HostelFloor,
+    HostelBed,
+    HostelApplication,
+    HostelTransfer,
+    HostelCheckIn,
+    HostelCheckOut,
+    HostelAttendance,
+    HostelVisitor,
+    HostelComplaint,
+    HostelMaintenanceRequest,
+    HostelStaff,
+    HostelShift,
+    HostelInventory,
+    HostelMess,
+    HostelMealFeedback,
+    HostelIncident,
+    HostelAnnouncement,
+)
 from app.models.transport_route import TransportRoute
 from app.models.transport_vehicle import TransportVehicle
 from app.models.transport_allocation import TransportAllocation

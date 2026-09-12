@@ -5,11 +5,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
 
     <application
-<<<<<<< HEAD
         android:label="UniSphere AI"
-=======
-        android:label="UniSphere"
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -20,10 +16,6 @@
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
             android:windowSoftInputMode="adjustResize">
-<<<<<<< HEAD
-            
-=======
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
             <meta-data
               android:name="io.flutter.embedding.android.NormalTheme"
               android:resource="@style/NormalTheme"

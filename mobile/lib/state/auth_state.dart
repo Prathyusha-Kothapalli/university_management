@@ -1,36 +1,10 @@
 import 'package:flutter/foundation.dart';
-<<<<<<< HEAD
-=======
 import '../core/network/api_exceptions.dart';
 import '../models/login_request.dart';
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
 import '../models/register_request.dart';
 import '../models/user.dart';
 import '../repositories/auth_repository.dart';
 
-<<<<<<< HEAD
-/// Central reactive authentication and session state provider.
-class AuthState extends ChangeNotifier {
-  final AuthRepository _authRepository;
-
-  User? _currentUser;
-  bool _isLoading = false;
-  String? _errorMessage;
-  bool _isInitialized = false;
-
-  AuthState({AuthRepository? authRepository})
-      : _authRepository = authRepository ?? AuthRepository();
-
-  User? get currentUser => _currentUser;
-  bool get isAuthenticated => _currentUser != null;
-  bool get isLoading => _isLoading;
-  String? get errorMessage => _errorMessage;
-  bool get isInitialized => _isInitialized;
-
-  /// Check whether the user already has a valid token/session
-  Future<bool> checkAuth() async {
-    _isLoading = true;
-=======
 enum AuthStatus {
   initial,
   loading,
@@ -39,6 +13,7 @@ enum AuthStatus {
   error,
 }
 
+/// Central reactive authentication and session state provider.
 class AuthState extends ChangeNotifier {
   final AuthRepository _repository;
 
@@ -48,19 +23,23 @@ class AuthState extends ChangeNotifier {
   bool _rememberMe = false;
   String? _savedEmail;
 
-  AuthState({AuthRepository? repository})
-      : _repository = repository ?? AuthRepository();
+  AuthState({
+    AuthRepository? repository,
+    AuthRepository? authRepository,
+  }) : _repository = repository ?? authRepository ?? AuthRepository();
 
   AuthStatus get status => _status;
   User? get currentUser => _currentUser;
   String? get errorMessage => _errorMessage;
-  bool get isAuthenticated => _status == AuthStatus.authenticated && _currentUser != null;
+  bool get isAuthenticated =>
+      _status == AuthStatus.authenticated && _currentUser != null;
   bool get isLoading => _status == AuthStatus.loading;
+  bool get isInitialized => _status != AuthStatus.initial;
   bool get rememberMe => _rememberMe;
   String? get savedEmail => _savedEmail;
 
   /// Check token & user persistence upon app launch (Splash Screen)
-  Future<void> checkAuthStatus() async {
+  Future<bool> checkAuthStatus() async {
     _status = AuthStatus.loading;
     notifyListeners();
 
@@ -82,32 +61,23 @@ class AuthState extends ChangeNotifier {
     }
 
     notifyListeners();
+    return isAuthenticated;
   }
 
-  /// Perform login
+  /// Alias for backward compatibility
+  Future<bool> checkAuth() => checkAuthStatus();
+
+  /// Perform login with named arguments
   Future<bool> login({
     required String email,
     required String password,
     bool rememberMe = false,
   }) async {
     _status = AuthStatus.loading;
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
     _errorMessage = null;
     notifyListeners();
 
     try {
-<<<<<<< HEAD
-      final user = await _authRepository.checkAuth();
-      _currentUser = user;
-      _isInitialized = true;
-      _isLoading = false;
-      notifyListeners();
-      return _currentUser != null;
-    } catch (e) {
-      _currentUser = null;
-      _isInitialized = true;
-      _isLoading = false;
-=======
       final response = await _repository.login(
         LoginRequest(
           email: email.trim(),
@@ -131,84 +101,16 @@ class AuthState extends ChangeNotifier {
     } catch (e) {
       _status = AuthStatus.error;
       _errorMessage = 'An unexpected error occurred during login. Please try again.';
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
       notifyListeners();
       return false;
     }
   }
 
-<<<<<<< HEAD
-  /// Authenticate with email and password
-  Future<bool> login(String email, String password) async {
-    _isLoading = true;
-    _errorMessage = null;
-    notifyListeners();
-
-    final result = await _authRepository.login(email, password);
-
-    _isLoading = false;
-    return result.fold(
-      onSuccess: (user) {
-        _currentUser = user;
-        _errorMessage = null;
-        notifyListeners();
-        return true;
-      },
-      onFailure: (error) {
-        _errorMessage = error;
-        notifyListeners();
-        return false;
-      },
-    );
+  /// Perform login with positional arguments
+  Future<bool> loginWithCredentials(String email, String password, [bool rememberMe = false]) {
+    return login(email: email, password: password, rememberMe: rememberMe);
   }
 
-  /// Register a new account
-  Future<bool> register(RegisterRequest request) async {
-    _isLoading = true;
-    _errorMessage = null;
-    notifyListeners();
-
-    final result = await _authRepository.register(request);
-
-    _isLoading = false;
-    return result.fold(
-      onSuccess: (user) {
-        _currentUser = user;
-        _errorMessage = null;
-        notifyListeners();
-        return true;
-      },
-      onFailure: (error) {
-        _errorMessage = error;
-        notifyListeners();
-        return false;
-      },
-    );
-  }
-
-  /// Update local user state
-  void updateUser(User user) {
-    _currentUser = user;
-    notifyListeners();
-  }
-
-  /// Terminate session and reset state
-  Future<void> logout() async {
-    _isLoading = true;
-    notifyListeners();
-
-    await _authRepository.logout();
-
-    _currentUser = null;
-    _errorMessage = null;
-    _isLoading = false;
-    notifyListeners();
-  }
-
-  /// Clear active error banner
-  void clearError() {
-    if (_errorMessage != null) {
-=======
   /// Perform registration
   Future<bool> register(RegisterRequest request) async {
     _status = AuthStatus.loading;
@@ -235,7 +137,13 @@ class AuthState extends ChangeNotifier {
     }
   }
 
-  /// Perform logout
+  /// Update local user state
+  void updateUser(User updatedUser) {
+    _currentUser = updatedUser;
+    notifyListeners();
+  }
+
+  /// Terminate session and reset state
   Future<void> logout() async {
     _status = AuthStatus.loading;
     notifyListeners();
@@ -247,25 +155,19 @@ class AuthState extends ChangeNotifier {
     } finally {
       _currentUser = null;
       _status = AuthStatus.unauthenticated;
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
       _errorMessage = null;
       notifyListeners();
     }
   }
-<<<<<<< HEAD
-=======
 
-  void updateUser(User updatedUser) {
-    _currentUser = updatedUser;
-    notifyListeners();
-  }
-
+  /// Clear active error banner
   void clearError() {
     _errorMessage = null;
     if (_status == AuthStatus.error) {
-      _status = _currentUser != null ? AuthStatus.authenticated : AuthStatus.unauthenticated;
+      _status = _currentUser != null
+          ? AuthStatus.authenticated
+          : AuthStatus.unauthenticated;
     }
     notifyListeners();
   }
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
 }

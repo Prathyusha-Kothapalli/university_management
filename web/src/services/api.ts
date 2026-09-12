@@ -493,3 +493,121 @@ export const scholarshipsApi = {
       { id: `app-${Date.now()}`, scholarship_id: scholarshipId, student_name: 'Alex Morgan', status: 'Submitted' }
     ),
 };
+
+export const hostelDashboardApi = {
+  getOverview: () =>
+    apiRequest<any>(
+      { method: 'GET', url: '/hostel/dashboard/overview' },
+      {
+        total_hostels: 4,
+        total_buildings: 12,
+        total_floors: 36,
+        total_rooms: 240,
+        total_beds: 480,
+        occupied_beds: 384,
+        available_beds: 96,
+        reserved_beds: 12,
+        maintenance_beds: 8,
+        vacant_rooms: 40,
+        partially_occupied_rooms: 20,
+        full_rooms: 180,
+        occupancy_percentage: 80.0,
+        current_residents: 384,
+        pending_applications: 18,
+        pending_allocations: 9,
+        pending_room_transfers: 4,
+        open_complaints: 7,
+        maintenance_requests: 5,
+        outstanding_hostel_fees: 14500.0,
+      }
+    ),
+  getKpis: () =>
+    apiRequest<any>(
+      { method: 'GET', url: '/hostel/dashboard/kpis' },
+      {
+        total_students: 1200,
+        total_residents: 384,
+        available_beds: 96,
+        occupied_beds: 384,
+        occupancy_rate: 80.0,
+        pending_applications: 18,
+        pending_allocations: 9,
+        open_complaints: 7,
+        maintenance_requests: 5,
+        fee_due: 14500.0,
+        visitors_today: 14,
+        checkins_today: 6,
+        checkouts_today: 2,
+      }
+    ),
+  getAnalytics: () =>
+    apiRequest<any>(
+      { method: 'GET', url: '/hostel/dashboard/analytics' },
+      {
+        occupancy_by_hostel: { "Boys Hostel A": 120, "Girls Hostel B": 140, "Executive Block C": 84, "Postgrad Block D": 40 },
+        occupancy_by_building: { "Block North": 110, "Block South": 130, "Block East": 90, "Block West": 54 },
+        occupancy_by_room_type: { "Single AC": 40, "Double Non-AC": 220, "Triple Shared": 124 },
+        occupied_vs_available: { "Occupied": 384, "Available": 96 },
+        monthly_occupancy_trend: [
+          { month: "Jan", occupancy: 74.0 },
+          { month: "Feb", occupancy: 76.5 },
+          { month: "Mar", occupancy: 78.0 },
+          { month: "Apr", occupancy: 79.5 },
+          { month: "May", occupancy: 80.0 },
+        ],
+        gender_wise_occupancy: { "Boys": 204, "Girls": 180 },
+        fee_analytics: { "Total Revenue": 120000.0, "Paid": 105500.0, "Due": 14500.0 },
+        complaint_resolution_metrics: { "Open": 7, "Resolved": 42 },
+        mess_satisfaction_score: 4.7,
+      }
+    ),
+  getAiInsights: () =>
+    apiRequest<any>(
+      { method: 'GET', url: '/hostel/dashboard/ai-insights' },
+      {
+        predicted_next_month_occupancy: 86.4,
+        forecasted_bed_demand: 42,
+        recommended_allocations_count: 9,
+        maintenance_risk_alert: "Block 2 - 2nd Floor Water Filter unit requires cartridge replacement.",
+        unusual_occupancy_flag: false,
+        fee_default_risk_students_count: 3,
+        ai_summary: "Occupancy is trending upwards by 4.2%. 9 room allocations can be auto-processed based on student preference and proximity to departments.",
+      }
+    ),
+  getBuildings: () =>
+    apiRequest<any[]>(
+      { method: 'GET', url: '/hostel/buildings' },
+      [
+        { id: 'b-1', hostel_id: 'h-1', building_name: 'Sir CV Raman - Block A', code: 'CVR-A', total_floors: 4, total_capacity: 120, warden_name: 'Dr. Robert Vance', status: 'ACTIVE' },
+        { id: 'b-2', hostel_id: 'h-2', building_name: 'Kalpana Chawla - Block B', code: 'KC-B', total_floors: 3, total_capacity: 100, warden_name: 'Dr. Maria Santos', status: 'ACTIVE' },
+      ]
+    ),
+  getApplications: () =>
+    apiRequest<any[]>(
+      { method: 'GET', url: '/hostel/applications' },
+      [
+        { id: 'app-1', student_id: 'st-1', hostel_id: 'h-1', preferred_room_type: 'DOUBLE', application_date: '2026-09-01', status: 'SUBMITTED', remarks: 'Requires Ground floor if available' },
+      ]
+    ),
+  getComplaints: () =>
+    apiRequest<any[]>(
+      { method: 'GET', url: '/hostel/complaints' },
+      [
+        { id: 'comp-1', student_id: 'st-1', hostel_id: 'h-1', room_number: '204', category: 'PLUMBING', priority: 'HIGH', subject: 'Water tap leaking', description: 'Bathroom tap leak causing water wastage.', status: 'OPEN', created_at: '2026-09-10T10:00:00' },
+      ]
+    ),
+  getMaintenance: () =>
+    apiRequest<any[]>(
+      { method: 'GET', url: '/hostel/maintenance' },
+      [
+        { id: 'm-1', hostel_id: 'h-1', issue_type: 'Electrical Breaker Check', description: 'Main switch board maintenance on Floor 2', priority: 'HIGH', status: 'PENDING', technician_name: 'Alex Electrician', estimated_cost: 150.0, actual_cost: 0.0, created_at: '2026-09-11' },
+      ]
+    ),
+  getVisitors: () =>
+    apiRequest<any[]>(
+      { method: 'GET', url: '/hostel/visitors' },
+      [
+        { id: 'v-1', student_id: 'st-1', visitor_name: 'Sunil Morgan', relation: 'Father', contact_phone: '+1-555-0988', purpose: 'Family Visit', check_in_time: '2026-09-12T10:30:00', status: 'APPROVED' },
+      ]
+    ),
+};

@@ -302,6 +302,7 @@ from app.api.v1.finance_expansion import router as finance_expansion_router
 from app.api.v1.alumni_endowment import router as alumni_endowment_router
 from app.api.v1.campus_iot_telemetry import router as campus_iot_telemetry_router
 from app.api.v1.evaluation_ast_grading import router as evaluation_ast_grading_router
+from app.api.v1.hostel_expansion import router as hostel_expansion_router
 
 app.include_router(
     auth_expansion_router,
@@ -355,6 +356,11 @@ app.include_router(
 
 app.include_router(
     evaluation_ast_grading_router,
+    prefix="/api/v1"
+)
+
+app.include_router(
+    hostel_expansion_router,
     prefix="/api/v1"
 )
 

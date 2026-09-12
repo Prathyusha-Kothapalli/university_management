@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
+import '../../core/constants/route_constants.dart';
+=======
 import '../../core/constants/app_constants.dart';
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 import '../../core/theme/app_colors.dart';
 import '../../core/utils/validators.dart';
 import '../../state/auth_state.dart';
@@ -7,6 +11,10 @@ import '../../widgets/custom_button.dart';
 import '../../widgets/custom_text_field.dart';
 import '../../widgets/error_card.dart';
 
+<<<<<<< HEAD
+/// Complete, responsive Registration Screen.
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 class RegisterScreen extends StatefulWidget {
   final AuthState authState;
 
@@ -40,6 +48,14 @@ class _RegisterScreenState extends State<RegisterScreen> {
   }
 
   Future<void> _handleRegister() async {
+<<<<<<< HEAD
+    widget.authState.clearError();
+    if (!_formKey.currentState!.validate()) {
+      return;
+    }
+
+    FocusScope.of(context).unfocus();
+=======
     setState(() {
       _localError = null;
     });
@@ -56,12 +72,19 @@ class _RegisterScreenState extends State<RegisterScreen> {
     setState(() {
       _isLoading = true;
     });
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 
     final success = await widget.authState.register(
       fullName: _fullNameController.text.trim(),
       email: _emailController.text.trim(),
       password: _passwordController.text,
       role: _selectedRole,
+<<<<<<< HEAD
+      department: _selectedRole == 'faculty'
+          ? 'Academic Faculty'
+          : 'Undergraduate Studies',
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     );
 
     setState(() {
@@ -75,12 +98,57 @@ class _RegisterScreenState extends State<RegisterScreen> {
           backgroundColor: AppColors.success,
         ),
       );
+<<<<<<< HEAD
+      Navigator.of(context).pushNamedAndRemoveUntil(
+        RouteConstants.home,
+        (route) => false,
+      );
+=======
       Navigator.of(context).pop();
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     }
   }
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
+    final isLoading = widget.authState.isLoading;
+    final errorMessage = widget.authState.errorMessage;
+
+    return Scaffold(
+      backgroundColor: AppColors.backgroundLight,
+      appBar: AppBar(
+        title: const Text('Create Account'),
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back_rounded),
+          onPressed: () => Navigator.of(context).pop(),
+        ),
+      ),
+      body: SafeArea(
+        child: Center(
+          child: SingleChildScrollView(
+            padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+            child: Form(
+              key: _formKey,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  const Text(
+                    'Join UniSphere',
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.w700,
+                      color: AppColors.textPrimaryLight,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  const Text(
+                    'Set up your student or faculty academic credentials',
+                    style: TextStyle(
+                      fontSize: 13,
+                      color: AppColors.textSecondaryLight,
+                    ),
+=======
     return Scaffold(
       backgroundColor: AppColors.backgroundLight,
       appBar: AppBar(
@@ -110,10 +178,168 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   style: TextStyle(
                     fontSize: 14,
                     color: AppColors.textSecondaryLight,
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
                   ),
-                ),
-                const SizedBox(height: 24),
+                  const SizedBox(height: 20),
 
+<<<<<<< HEAD
+                  // Role Picker Segment
+                  Container(
+                    decoration: BoxDecoration(
+                      color: AppColors.surfaceElevatedLight,
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(color: AppColors.borderLight),
+                    ),
+                    padding: const EdgeInsets.all(4),
+                    child: Row(
+                      children: [
+                        Expanded(
+                          child: ChoiceChip(
+                            label: const Center(child: Text('Student')),
+                            selected: _selectedRole == 'student',
+                            onSelected: (selected) {
+                              if (selected) setState(() => _selectedRole = 'student');
+                            },
+                            selectedColor: AppColors.primary,
+                            labelStyle: TextStyle(
+                              color: _selectedRole == 'student'
+                                  ? Colors.white
+                                  : AppColors.textSecondaryLight,
+                              fontWeight: FontWeight.w600,
+                            ),
+                            showCheckmark: false,
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: ChoiceChip(
+                            label: const Center(child: Text('Faculty / Staff')),
+                            selected: _selectedRole == 'faculty',
+                            onSelected: (selected) {
+                              if (selected) setState(() => _selectedRole = 'faculty');
+                            },
+                            selectedColor: AppColors.primary,
+                            labelStyle: TextStyle(
+                              color: _selectedRole == 'faculty'
+                                  ? Colors.white
+                                  : AppColors.textSecondaryLight,
+                              fontWeight: FontWeight.w600,
+                            ),
+                            showCheckmark: false,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+
+                  // Error Message
+                  if (errorMessage != null) ...[
+                    ErrorCard(
+                      message: errorMessage,
+                      onDismiss: () => widget.authState.clearError(),
+                    ),
+                    const SizedBox(height: 16),
+                  ],
+
+                  // Full Name
+                  CustomTextField(
+                    controller: _nameController,
+                    label: 'Full Name',
+                    hint: 'e.g. Alex Mercer',
+                    prefixIcon: Icons.person_outline_rounded,
+                    validator: Validators.validateName,
+                  ),
+                  const SizedBox(height: 16),
+
+                  // University Email
+                  CustomTextField(
+                    controller: _emailController,
+                    label: 'Email Address',
+                    hint: 'alex@university.edu',
+                    prefixIcon: Icons.alternate_email_rounded,
+                    keyboardType: TextInputType.emailAddress,
+                    validator: Validators.validateEmail,
+                  ),
+                  const SizedBox(height: 16),
+
+                  // Phone Field
+                  CustomTextField(
+                    controller: _phoneController,
+                    label: 'Phone Number',
+                    hint: '+1 (555) 234-5678',
+                    prefixIcon: Icons.phone_outlined,
+                    keyboardType: TextInputType.phone,
+                    validator: Validators.validatePhone,
+                  ),
+                  const SizedBox(height: 16),
+
+                  // Password Field
+                  CustomTextField(
+                    controller: _passwordController,
+                    label: 'Password',
+                    hint: 'At least 6 characters',
+                    prefixIcon: Icons.lock_outline_rounded,
+                    isPassword: true,
+                    validator: Validators.validatePassword,
+                  ),
+                  const SizedBox(height: 16),
+
+                  // Confirm Password Field
+                  CustomTextField(
+                    controller: _confirmPasswordController,
+                    label: 'Confirm Password',
+                    hint: 'Re-enter your password',
+                    prefixIcon: Icons.lock_reset_rounded,
+                    isPassword: true,
+                    textInputAction: TextInputAction.done,
+                    validator: (val) => Validators.validateConfirmPassword(
+                      val,
+                      _passwordController.text,
+                    ),
+                    onSubmitted: (_) => _handleRegister(),
+                  ),
+                  const SizedBox(height: 28),
+
+                  // Submit Button
+                  CustomButton(
+                    text: 'Register Account',
+                    onPressed: _handleRegister,
+                    isLoading: isLoading,
+                    icon: Icons.person_add_alt_1_rounded,
+                  ),
+                  const SizedBox(height: 20),
+
+                  // Back to Login link
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      const Text(
+                        'Already registered? ',
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: AppColors.textSecondaryLight,
+                        ),
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          widget.authState.clearError();
+                          Navigator.of(context).pop();
+                        },
+                        child: const Text(
+                          'Sign In',
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w700,
+                            color: AppColors.primary,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+=======
                 if (_localError != null || widget.authState.errorMessage != null)
                   ErrorCard(
                     message: _localError ?? widget.authState.errorMessage!,
@@ -193,6 +419,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   icon: Icons.person_add_alt_1_rounded,
                 ),
               ],
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
             ),
           ),
         ),

@@ -7,6 +7,21 @@ class EmptyStateView extends StatelessWidget {
   final String title;
   final String message;
   final String? actionText;
+<<<<<<< HEAD
+  final String? buttonText;
+  final VoidCallback? onAction;
+  final VoidCallback? onButtonPressed;
+
+  const EmptyStateView({
+    super.key,
+    this.icon = Icons.inbox_outlined,
+    required this.title,
+    required this.message,
+    this.actionText,
+    this.buttonText,
+    this.onAction,
+    this.onButtonPressed,
+=======
   final VoidCallback? onAction;
 
   const EmptyStateView({
@@ -16,10 +31,14 @@ class EmptyStateView extends StatelessWidget {
     required this.message,
     this.actionText,
     this.onAction,
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
   });
 
   @override
   Widget build(BuildContext context) {
+    final label = actionText ?? buttonText;
+    final callback = onAction ?? onButtonPressed;
+
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(32),
@@ -58,11 +77,27 @@ class EmptyStateView extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
+<<<<<<< HEAD
+            if (label != null && callback != null) ...[
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: callback,
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.primary,
+                  foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                ),
+                child: Text(label),
+=======
             if (actionText != null && onAction != null) ...[
               const SizedBox(height: 20),
               OutlinedButton(
                 onPressed: onAction,
                 child: Text(actionText!),
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
               ),
             ],
           ],

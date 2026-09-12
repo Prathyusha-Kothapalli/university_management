@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import '../../core/constants/app_constants.dart';
+<<<<<<< HEAD
+import '../../core/constants/route_constants.dart';
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 import '../../core/theme/app_colors.dart';
+import '../../models/user.dart';
 import '../../services/mock_data_service.dart';
 import '../../state/auth_state.dart';
+import '../../state/profile_state.dart';
 import '../../widgets/stat_card.dart';
 import '../../widgets/user_avatar.dart';
 import '../ai_assistant/ai_assistant_screen.dart';
@@ -19,11 +25,19 @@ import '../timetable/timetable_screen.dart';
 /// Professional University Mobile Dashboard with all core campus modules.
 class HomeScreen extends StatefulWidget {
   final AuthState authState;
+<<<<<<< HEAD
+  final ProfileState? profileState;
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 
   const HomeScreen({
     super.key,
     required this.authState,
+<<<<<<< HEAD
+    this.profileState,
+=======
     required this.profileState,
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
   });
 
   @override
@@ -32,6 +46,15 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int _selectedBottomTab = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    final user = widget.authState.currentUser;
+    if (user != null && widget.profileState != null) {
+      widget.profileState!.loadProfile(user);
+    }
+  }
 
   Future<void> _handleLogout() async {
     final shouldLogout = await showDialog<bool>(
@@ -60,10 +83,8 @@ class _HomeScreenState extends State<HomeScreen> {
     if (shouldLogout == true && mounted) {
       await widget.authState.logout();
       if (mounted) {
-        Navigator.of(context).pushAndRemoveUntil(
-          MaterialPageRoute(
-            builder: (_) => LoginScreen(authState: widget.authState),
-          ),
+        Navigator.of(context).pushNamedAndRemoveUntil(
+          RouteConstants.login,
           (route) => false,
         );
       }
@@ -74,6 +95,67 @@ class _HomeScreenState extends State<HomeScreen> {
     Navigator.of(context).push(
       MaterialPageRoute(builder: (_) => screen),
     );
+<<<<<<< HEAD
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return AnimatedBuilder(
+      animation: widget.authState,
+      builder: (context, _) {
+        final user = widget.authState.currentUser ?? MockDataService.defaultStudent;
+
+        return Scaffold(
+          backgroundColor: AppColors.backgroundLight,
+          appBar: AppBar(
+            elevation: 0,
+            title: Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(6),
+                  decoration: BoxDecoration(
+                    color: AppColors.primary,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: const Icon(Icons.school_rounded, color: Colors.white, size: 18),
+                ),
+                const SizedBox(width: 10),
+                const Text(
+                  AppConstants.appName,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: -0.3,
+                  ),
+                ),
+              ],
+            ),
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.notifications_none_rounded),
+                tooltip: 'Notifications',
+                onPressed: () => _navigateTo(const NotificationsScreen()),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(right: 12),
+                child: UserAvatar(
+                  user: user,
+                  radius: 17,
+                  onTap: () => _navigateTo(ProfileScreen(
+                    authState: widget.authState,
+                    profileState: widget.profileState,
+                  )),
+                ),
+              ),
+            ],
+          ),
+          body: SingleChildScrollView(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Welcome Hero Card
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
                 Container(
                   width: double.infinity,
                   padding: const EdgeInsets.all(20),
@@ -337,7 +419,8 @@ class _HomeScreenState extends State<HomeScreen> {
             onPressed: () => _navigateTo(const AiAssistantScreen()),
             backgroundColor: AppColors.primary,
             icon: const Icon(Icons.auto_awesome, color: Colors.white),
-            label: const Text('AI Assistant', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700)),
+            label: const Text('AI Assistant',
+                style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700)),
           ),
           bottomNavigationBar: NavigationBar(
             selectedIndex: _selectedBottomTab,
@@ -347,7 +430,10 @@ class _HomeScreenState extends State<HomeScreen> {
               } else if (idx == 2) {
                 _navigateTo(const ChatScreen());
               } else if (idx == 3) {
-                _navigateTo(ProfileScreen(authState: widget.authState));
+                _navigateTo(ProfileScreen(
+                  authState: widget.authState,
+                  profileState: widget.profileState,
+                ));
               } else {
                 setState(() => _selectedBottomTab = idx);
               }

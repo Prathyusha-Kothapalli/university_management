@@ -90,53 +90,86 @@ lib/
 │   └── user.dart                   <-- User profile domain model (roles, GPA, student ID)
 ├── repositories/
 │   ├── auth_repository.dart        <-- Session lifecycle, login, register, logout
-│   └── user_repository.dart        <-- User profile fetching & updating
+│   └── user_repository.dart        <-- Profile fetch and updates
 ├── screens/
-│   ├── ai_assistant/
-│   │   └── ai_assistant_screen.dart<-- Interactive Campus AI Chatbot
-│   ├── assignments/
-│   │   └── assignments_screen.dart <-- Coursework tasks and submissions
-│   ├── attendance/
-│   │   └── attendance_screen.dart  <-- Subject-wise attendance and safety thresholds
-│   ├── auth/
-│   │   ├── login_screen.dart       <-- Login with quick demo buttons & validation
-│   │   └── register_screen.dart    <-- Registration with role selector
-│   ├── chat/
-│   │   └── chat_screen.dart        <-- Messaging with professors and advisors
-│   ├── exams/
-│   │   └── exams_screen.dart       <-- Exam schedules, hall tickets, CGPA transcripts
-│   ├── home/
-│   │   └── home_screen.dart        <-- Main dashboard connecting all campus modules
-│   ├── notifications/
-│   │   └── notifications_screen.dart<-- Push alerts & campus notices
-│   ├── placements/
-│   │   └── placements_screen.dart  <-- Campus recruitment drives & applications
-│   ├── profile/
-│   │   ├── edit_profile_dialog.dart<-- Modal to update name and phone
-│   │   └── profile_screen.dart     <-- Profile inspection & logout
-│   └── splash/
-│       └── splash_screen.dart      <-- Animated university crest & token check
+│   ├── ai_assistant/               <-- Campus AI Copilot
+│   ├── assignments/                <-- Assignments & Coursework
+│   ├── attendance/                 <-- Attendance Tracking
+│   ├── auth/                       <-- Login & Registration
+│   ├── chat/                       <-- Direct Messaging
+│   ├── exams/                      <-- Exam Schedules & Hall Tickets
+│   ├── home/                       <-- Main Dashboard & Navigation
+│   ├── notifications/              <-- Campus Notices & Alerts
+│   ├── placements/                 <-- Campus Placements & Recruitment
+│   ├── profile/                    <-- User Profile & Settings
+│   ├── splash/                     <-- Initial splash screen
+│   └── timetable/                  <-- Weekly Timetable
 ├── services/
-│   ├── api_service.dart            <-- High-level API calls with mock fallback
-│   ├── mock_data_service.dart      <-- Offline demo datasets
-│   ├── storage_service.dart        <-- User profile caching
-│   └── token_storage_service.dart  <-- Secure JWT access & refresh token persistence
+│   ├── api_service.dart            <-- High-level REST API service with fallback
+│   ├── mock_data_service.dart      <-- Demo data for offline testing
+│   ├── storage_service.dart        <-- Local persistence service
+│   └── token_storage_service.dart  <-- Secure token storage
 ├── state/
-│   ├── auth_state.dart             <-- Reactive ChangeNotifier for authentication
-│   └── profile_state.dart          <-- Reactive ChangeNotifier for profile updates
-├── widgets/
-│   ├── custom_button.dart          <-- Material 3 button with loading spinner
-│   ├── custom_text_field.dart      <-- Input field with validation & password toggle
-│   ├── empty_state_view.dart       <-- Placeholder for empty views
-│   ├── error_card.dart             <-- Dismissible error alert
-│   ├── loading_indicator.dart      <-- Centered progress indicator
-│   ├── stat_card.dart              <-- Academic metric card (GPA, Attendance)
-│   └── user_avatar.dart            <-- User initials avatar
-└── main.dart                       <-- App bootstrap, themes & routing
+│   ├── auth_state.dart             <-- Authentication state notifier
+│   └── profile_state.dart          <-- Profile state notifier
+├── widgets/                        <-- Reusable UI components
+└── main.dart                       <-- Application entrypoint
 ```
 
 ---
 
+<<<<<<< HEAD
+## ⚙️ Backend API Configuration
+
+The backend endpoint is centrally configured in:
+[`lib/core/constants/api_constants.dart`](file:///c:/Users/abc/university_management/mobile/lib/core/constants/api_constants.dart)
+
+```dart
+class ApiConstants {
+  // Set your backend API URL here:
+  static const String API_BASE_URL = "http://10.0.2.2:8000/api/v1";
+
+  // When true, automatically falls back to the mock layer if live backend is unreachable
+  static const bool useMockFallbackOnFailure = true;
+
+  // Force mock mode for offline testing and demos
+  static const bool forceMockMode = false;
+}
+```
+
+### URL Guide by Platform
+- **Android Emulator**: `http://10.0.2.2:8000/api/v1`
+- **iOS Simulator**: `http://127.0.0.1:8000/api/v1`
+- **Physical Device**: `http://<YOUR_LOCAL_IP>:8000/api/v1`
+- **Production Server**: `https://api.unisphere.edu/api/v1`
+
+---
+
+## 🔑 Demo Credentials
+
+For quick testing without creating an account:
+- **Student**: `student@university.edu` / `Password123!`
+- **Faculty**: `faculty@university.edu` / `Password123!`
+
+---
+
+## 🚀 Running the Application
+
+1. **Install Dependencies:**
+   ```bash
+   flutter pub get
+   ```
+
+2. **Run All Tests:**
+   ```bash
+   flutter test
+   ```
+
+3. **Launch on Connected Device or Emulator:**
+   ```bash
+   flutter run
+   ```
+=======
 ## ⚙️ Backend API Configuration (Python FastAPI)
 
 Both the Flutter mobile application and React web frontend communicate with the shared Python FastAPI backend.
@@ -163,3 +196,4 @@ class ApiConstants {
 cd mobile
 flutter test
 ```
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9

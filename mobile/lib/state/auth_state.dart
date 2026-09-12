@@ -5,6 +5,77 @@ import '../models/register_request.dart';
 import '../models/user.dart';
 import '../repositories/auth_repository.dart';
 
+<<<<<<< HEAD
+enum AuthStatus {
+  initial,
+  loading,
+  authenticated,
+  unauthenticated,
+  error,
+}
+
+/// Central reactive authentication and session state provider.
+class AuthState extends ChangeNotifier {
+  final AuthRepository _repository;
+
+  AuthStatus _status = AuthStatus.initial;
+  User? _currentUser;
+  String? _errorMessage;
+  bool _rememberMe = false;
+  String? _savedEmail;
+
+  AuthState({
+    AuthRepository? repository,
+    AuthRepository? authRepository,
+  }) : _repository = repository ?? authRepository ?? AuthRepository();
+
+  AuthStatus get status => _status;
+  User? get currentUser => _currentUser;
+  String? get errorMessage => _errorMessage;
+  bool get isAuthenticated =>
+      _status == AuthStatus.authenticated && _currentUser != null;
+  bool get isLoading => _status == AuthStatus.loading;
+  bool get isInitialized => _status != AuthStatus.initial;
+  bool get rememberMe => _rememberMe;
+  String? get savedEmail => _savedEmail;
+
+  /// Check token & user persistence upon app launch (Splash Screen)
+  Future<bool> checkAuthStatus() async {
+    _status = AuthStatus.loading;
+    notifyListeners();
+
+    try {
+      final isAuth = await _repository.isAuthenticated();
+      _rememberMe = await _repository.getRememberMe();
+      _savedEmail = await _repository.getSavedEmail();
+
+      if (isAuth) {
+        _currentUser = await _repository.getCurrentUser();
+        _status = AuthStatus.authenticated;
+      } else {
+        _currentUser = null;
+        _status = AuthStatus.unauthenticated;
+      }
+    } catch (_) {
+      _currentUser = null;
+      _status = AuthStatus.unauthenticated;
+    }
+
+    notifyListeners();
+    return isAuthenticated;
+  }
+
+  /// Alias for backward compatibility
+  Future<bool> checkAuth() => checkAuthStatus();
+
+  /// Perform login with named arguments
+  Future<bool> login({
+    required String email,
+    required String password,
+    bool rememberMe = false,
+  }) async {
+    _status = AuthStatus.loading;
+=======
 /// Central reactive authentication and session state provider.
 class AuthState extends ChangeNotifier {
   final AuthRepository _authRepository;
@@ -26,10 +97,36 @@ class AuthState extends ChangeNotifier {
   /// Check whether the user already has a valid token/session
   Future<bool> checkAuth() async {
     _isLoading = true;
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     _errorMessage = null;
     notifyListeners();
 
     try {
+<<<<<<< HEAD
+      final response = await _repository.login(
+        LoginRequest(
+          email: email.trim(),
+          password: password,
+          rememberMe: rememberMe,
+        ),
+      );
+
+      _currentUser = response.user;
+      _rememberMe = rememberMe;
+      _savedEmail = rememberMe ? email.trim() : null;
+      _status = AuthStatus.authenticated;
+      _errorMessage = null;
+      notifyListeners();
+      return true;
+    } on ApiException catch (e) {
+      _status = AuthStatus.error;
+      _errorMessage = e.message;
+      notifyListeners();
+      return false;
+    } catch (e) {
+      _status = AuthStatus.error;
+      _errorMessage = 'An unexpected error occurred during login. Please try again.';
+=======
       final user = await _authRepository.checkAuth();
       _currentUser = user;
       _isInitialized = true;
@@ -40,11 +137,48 @@ class AuthState extends ChangeNotifier {
       _currentUser = null;
       _isInitialized = true;
       _isLoading = false;
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
       notifyListeners();
       return false;
     }
   }
 
+<<<<<<< HEAD
+  /// Perform login with positional arguments
+  Future<bool> loginWithCredentials(String email, String password, [bool rememberMe = false]) {
+    return login(email: email, password: password, rememberMe: rememberMe);
+  }
+
+  /// Perform registration
+  Future<bool> register(RegisterRequest request) async {
+    _status = AuthStatus.loading;
+    _errorMessage = null;
+    notifyListeners();
+
+    try {
+      final response = await _repository.register(request);
+      _currentUser = response.user;
+      _status = AuthStatus.authenticated;
+      _errorMessage = null;
+      notifyListeners();
+      return true;
+    } on ApiException catch (e) {
+      _status = AuthStatus.error;
+      _errorMessage = e.message;
+      notifyListeners();
+      return false;
+    } catch (e) {
+      _status = AuthStatus.error;
+      _errorMessage = 'Registration failed. Please verify your details and try again.';
+      notifyListeners();
+      return false;
+    }
+  }
+
+  /// Update local user state
+  void updateUser(User updatedUser) {
+    _currentUser = updatedUser;
+=======
   /// Authenticate with email and password
   Future<bool> login(String email, String password) async {
     _isLoading = true;
@@ -96,11 +230,24 @@ class AuthState extends ChangeNotifier {
   /// Update local user state
   void updateUser(User user) {
     _currentUser = user;
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     notifyListeners();
   }
 
   /// Terminate session and reset state
   Future<void> logout() async {
+<<<<<<< HEAD
+    _status = AuthStatus.loading;
+    notifyListeners();
+
+    try {
+      await _repository.logout();
+    } catch (_) {
+      // Ignored
+    } finally {
+      _currentUser = null;
+      _status = AuthStatus.unauthenticated;
+=======
     _isLoading = true;
     notifyListeners();
 
@@ -115,8 +262,24 @@ class AuthState extends ChangeNotifier {
   /// Clear active error banner
   void clearError() {
     if (_errorMessage != null) {
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
       _errorMessage = null;
       notifyListeners();
     }
   }
+<<<<<<< HEAD
+
+  /// Clear active error banner
+  void clearError() {
+    _errorMessage = null;
+    if (_status == AuthStatus.error) {
+      _status = _currentUser != null
+          ? AuthStatus.authenticated
+          : AuthStatus.unauthenticated;
+    }
+    notifyListeners();
+  }
 }
+=======
+}
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9

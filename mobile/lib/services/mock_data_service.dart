@@ -1,6 +1,14 @@
+<<<<<<< HEAD
+import 'dart:async';
+import '../core/network/api_exceptions.dart';
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 import '../models/campus_features.dart';
+import '../models/login_request.dart';
 import '../models/login_response.dart';
+import '../models/register_request.dart';
 import '../models/user.dart';
+import '../models/user_profile.dart';
 
 /// Embedded Mock Data Provider
 /// Allows complete end-to-end testing of the Flutter application when the backend API
@@ -413,5 +421,114 @@ class MockDataService {
     } else {
       return 'I am your UniSphere AI Campus Assistant. You can ask me about class timetables, attendance requirements, exam schedules, placement eligibility, or academic regulations!';
     }
+<<<<<<< HEAD
+  }
+
+  // Mock In-Memory User Database
+  static final List<User> _mockUsers = [
+    defaultStudent,
+    defaultFaculty,
+    const User(
+      id: 'usr_adm_3001',
+      name: 'Marcus Vance',
+      email: 'admin@university.edu',
+      phone: '+1 (555) 456-7890',
+      role: UserRole.admin,
+      department: 'Registrar & Academic Operations',
+      studentId: 'ADM-EXEC-001',
+    ),
+  ];
+
+  static Future<LoginResponse> mockLogin(LoginRequest request) async {
+    await Future.delayed(const Duration(milliseconds: 650));
+
+    final email = request.email.trim().toLowerCase();
+    final password = request.password.trim();
+
+    if (password.length < 6) {
+      throw const UnauthorizedException(message: 'Invalid email or password.');
+    }
+
+    User? foundUser;
+    for (final u in _mockUsers) {
+      if (u.email.toLowerCase() == email) {
+        foundUser = u;
+        break;
+      }
+    }
+
+    foundUser ??= User(
+      id: 'usr_std_${DateTime.now().millisecondsSinceEpoch.toString().substring(7)}',
+      name: email.split('@').first.replaceAll('.', ' ').toUpperCase(),
+      email: email,
+      phone: '+1 (555) 888-9999',
+      role: email.contains('faculty') ? UserRole.faculty : UserRole.student,
+      department: 'Information Technology',
+      studentId: 'UNIV-2026-IT-109',
+    );
+
+    final mockToken = 'mock_jwt_token_${DateTime.now().millisecondsSinceEpoch}_${foundUser.id}';
+    return LoginResponse(
+      accessToken: mockToken,
+      tokenType: 'Bearer',
+      expiresIn: 86400,
+      user: foundUser,
+    );
+  }
+
+  static Future<LoginResponse> mockRegister(RegisterRequest request) async {
+    await Future.delayed(const Duration(milliseconds: 750));
+
+    final newUser = User(
+      id: 'usr_reg_${DateTime.now().millisecondsSinceEpoch}',
+      name: request.name,
+      email: request.email,
+      phone: request.phone,
+      role: UserRole.fromString(request.role),
+      department: request.department ?? 'General Sciences',
+      studentId: 'UNIV-2026-REG-${DateTime.now().millisecond}',
+      createdAt: DateTime.now(),
+    );
+
+    _mockUsers.add(newUser);
+
+    final mockToken = 'mock_jwt_token_${DateTime.now().millisecondsSinceEpoch}_${newUser.id}';
+    return LoginResponse(
+      accessToken: mockToken,
+      tokenType: 'Bearer',
+      expiresIn: 86400,
+      user: newUser,
+    );
+  }
+
+  static Future<UserProfile> mockGetProfile(User user) async {
+    await Future.delayed(const Duration(milliseconds: 400));
+    return UserProfile(
+      user: user,
+      gpa: 3.85,
+      attendancePercentage: 94.2,
+      enrolledCredits: 18,
+      totalCreditsCompleted: 74,
+      currentSemester: 'Semester 5 (Fall 2026)',
+      academicProgram: 'B.S. in Computer Science',
+      enrollmentStatus: 'Active - Full Time',
+      emergencyContact: '+1 (555) 999-0000',
+    );
+  }
+
+  static Future<User> mockUpdateProfile(User current, {String? name, String? phone}) async {
+    await Future.delayed(const Duration(milliseconds: 500));
+    final updated = current.copyWith(
+      name: name ?? current.name,
+      phone: phone ?? current.phone,
+    );
+
+    final idx = _mockUsers.indexWhere((u) => u.id == current.id);
+    if (idx != -1) {
+      _mockUsers[idx] = updated;
+    }
+    return updated;
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
   }
 }

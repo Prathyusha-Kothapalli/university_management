@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+import '../core/constants/api_constants.dart';
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 import '../core/network/api_client.dart';
 import '../core/network/api_endpoints.dart';
 import '../core/network/api_exceptions.dart';
@@ -5,13 +9,30 @@ import '../models/login_request.dart';
 import '../models/login_response.dart';
 import '../models/register_request.dart';
 import '../models/user.dart';
+<<<<<<< HEAD
+import '../models/user_profile.dart';
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 import 'mock_data_service.dart';
+import 'token_storage_service.dart';
 
 /// High-level API Service delegating to [ApiClient] with graceful mock fallback.
 class ApiService {
   final ApiClient apiClient;
+  final TokenStorageService tokenStorage;
 
-  ApiService({ApiClient? apiClient}) : apiClient = apiClient ?? ApiClient();
+  ApiService({
+    ApiClient? apiClient,
+    ApiClient? client,
+    TokenStorageService? tokenStorage,
+  })  : tokenStorage = tokenStorage ?? TokenStorageService(),
+        apiClient = apiClient ??
+            client ??
+            ApiClient(
+              baseUrl: ApiConstants.API_BASE_URL,
+              tokenProvider: () async =>
+                  (tokenStorage ?? TokenStorageService()).getToken(),
+            );
 
   /// Authenticate user via backend API with offline mock fallback.
   Future<LoginResponse> login(LoginRequest request) async {
@@ -51,6 +72,8 @@ class ApiService {
       );
       return LoginResponse(
         accessToken: 'mock_jwt_token_${DateTime.now().millisecondsSinceEpoch}',
+        tokenType: 'Bearer',
+        expiresIn: 86400,
         user: newUser,
       );
     }
@@ -69,22 +92,45 @@ class ApiService {
     }
   }
 
-  /// Update user profile attributes.
-  Future<User> updateProfile(Map<String, dynamic> updates) async {
+  /// Fetch detailed user profile.
+  Future<UserProfile> getUserProfile([User? user]) async {
     try {
+      final json = await apiClient.get(ApiEndpoints.currentUser);
+      final data = json is Map<String, dynamic> && json.containsKey('data')
+          ? json['data'] as Map<String, dynamic>
+          : json as Map<String, dynamic>;
+      return UserProfile.fromJson(data);
+    } on NetworkException {
+      return MockDataService.mockGetProfile(user ?? MockDataService.defaultStudent);
+    }
+  }
+
+  /// Update user profile attributes.
+  Future<User> updateProfile({
+    String? name,
+    String? phone,
+    Map<String, dynamic>? updates,
+  }) async {
+    try {
+      final body = <String, dynamic>{};
+      if (updates != null) {
+        body.addAll(updates);
+      }
+      if (name != null) body['name'] = name;
+      if (phone != null) body['phone'] = phone;
+
       final json = await apiClient.put(
         ApiEndpoints.updateProfile,
-        body: updates,
+        body: body,
       );
       final data = json is Map<String, dynamic> && json.containsKey('data')
           ? json['data'] as Map<String, dynamic>
           : json as Map<String, dynamic>;
       return User.fromJson(data);
     } on NetworkException {
-      // Return updated mock user
       return MockDataService.defaultStudent.copyWith(
-        name: updates['name'] as String?,
-        phone: updates['phone'] as String?,
+        name: name ?? updates?['name'] as String?,
+        phone: phone ?? updates?['phone'] as String?,
       );
     }
   }
@@ -94,7 +140,11 @@ class ApiService {
     try {
       await apiClient.post(ApiEndpoints.logout);
     } catch (_) {
+<<<<<<< HEAD
+      // Non-fatal if backend token invalidation is unreachable
+=======
       // Ignore network errors on logout
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     }
   }
 }

@@ -25,8 +25,24 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
+<<<<<<< HEAD
+  late final TextEditingController _emailController;
+  late final TextEditingController _passwordController;
+  bool _rememberMe = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _rememberMe = widget.authState.rememberMe;
+    _emailController = TextEditingController(
+      text: widget.authState.savedEmail ?? '',
+    );
+    _passwordController = TextEditingController();
+  }
+=======
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 
   @override
   void dispose() {
@@ -35,10 +51,42 @@ class _LoginScreenState extends State<LoginScreen> {
     super.dispose();
   }
 
+<<<<<<< HEAD
+  void _fillQuickDemo(String role) {
+    setState(() {
+      if (role == 'student') {
+        _emailController.text = 'student@university.edu';
+        _passwordController.text = 'Password123!';
+      } else {
+        _emailController.text = 'faculty@university.edu';
+        _passwordController.text = 'Password123!';
+      }
+      _rememberMe = true;
+    });
+    widget.authState.clearError();
+  }
+
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
   Future<void> _handleLogin() async {
     widget.authState.clearError();
     if (!_formKey.currentState!.validate()) return;
 
+<<<<<<< HEAD
+    FocusScope.of(context).unfocus();
+
+    final success = await widget.authState.login(
+      email: _emailController.text.trim(),
+      password: _passwordController.text,
+      rememberMe: _rememberMe,
+    );
+
+    if (success && mounted) {
+      // Clear navigation stack and go to Home
+      Navigator.of(context).pushNamedAndRemoveUntil(
+        RouteConstants.home,
+        (route) => false,
+=======
     final success = await widget.authState.login(
       _emailController.text.trim(),
       _passwordController.text,
@@ -49,10 +97,15 @@ class _LoginScreenState extends State<LoginScreen> {
         MaterialPageRoute(
           builder: (_) => HomeScreen(authState: widget.authState),
         ),
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
       );
     }
   }
 
+<<<<<<< HEAD
+  @override
+  Widget build(BuildContext context) {
+=======
   void _fillQuickDemo(String role) {
     setState(() {
       if (role == 'student') {
@@ -69,12 +122,16 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
     final authState = widget.authState;
 
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     return Scaffold(
       backgroundColor: AppColors.backgroundLight,
       body: SafeArea(
         child: AnimatedBuilder(
-          animation: authState,
+          animation: widget.authState,
           builder: (context, _) {
+            final authState = widget.authState;
+            final errorMessage = authState.errorMessage;
+
             return Center(
               child: SingleChildScrollView(
                 padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
@@ -125,6 +182,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           color: AppColors.textSecondaryLight,
                         ),
                       ),
+<<<<<<< HEAD
+=======
                       const SizedBox(height: 28),
 
                       // Error Alert Banner
@@ -166,9 +225,10 @@ class _LoginScreenState extends State<LoginScreen> {
                         isLoading: authState.isLoading,
                         icon: Icons.login_rounded,
                       ),
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
                       const SizedBox(height: 20),
 
-                      // Quick Demo Shortcut (helpful for testers & backend integration)
+                      // Quick Demo Autofill Helper Card
                       Container(
                         padding: const EdgeInsets.all(12),
                         decoration: BoxDecoration(
@@ -215,34 +275,132 @@ class _LoginScreenState extends State<LoginScreen> {
                           ],
                         ),
                       ),
+                      const SizedBox(height: 18),
+
+                      // Error Message
+                      if (errorMessage != null) ...[
+                        ErrorCard(
+                          message: errorMessage,
+                          onDismiss: () => authState.clearError(),
+                        ),
+                        const SizedBox(height: 16),
+                      ],
+
+                      // Email Field
+                      CustomTextField(
+                        controller: _emailController,
+                        label: 'University Email',
+                        hint: 'name@university.edu',
+                        prefixIcon: Icons.alternate_email_rounded,
+                        keyboardType: TextInputType.emailAddress,
+                        validator: Validators.validateEmail,
+                        textInputAction: TextInputAction.next,
+                      ),
+                      const SizedBox(height: 16),
+
+                      // Password Field
+                      CustomTextField(
+                        controller: _passwordController,
+                        label: 'Password',
+                        hint: '••••••••',
+                        prefixIcon: Icons.lock_outline_rounded,
+                        isPassword: true,
+                        textInputAction: TextInputAction.done,
+                        validator: Validators.validatePassword,
+                        onSubmitted: (_) => _handleLogin(),
+                      ),
+                      const SizedBox(height: 12),
+
+                      // Remember Me & Forgot Password row
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Row(
+                            children: [
+                              SizedBox(
+                                height: 24,
+                                width: 24,
+                                child: Checkbox(
+                                  value: _rememberMe,
+                                  onChanged: (value) {
+                                    setState(() {
+                                      _rememberMe = value ?? false;
+                                    });
+                                  },
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(4),
+                                  ),
+                                  activeColor: AppColors.primary,
+                                ),
+                              ),
+                              const SizedBox(width: 8),
+                              const Text(
+                                'Remember me',
+                                style: TextStyle(
+                                  fontSize: 13,
+                                  color: AppColors.textSecondaryLight,
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ],
+                          ),
+                          TextButton(
+                            onPressed: () {
+                              ScaffoldMessenger.of(context).showSnackBar(
+                                const SnackBar(
+                                  content: Text('Password reset instructions have been sent to your registered email.'),
+                                  duration: Duration(seconds: 3),
+                                ),
+                              );
+                            },
+                            style: TextButton.styleFrom(
+                              padding: EdgeInsets.zero,
+                              minimumSize: const Size(50, 30),
+                            ),
+                            child: const Text(
+                              'Forgot password?',
+                              style: TextStyle(
+                                fontSize: 13,
+                                fontWeight: FontWeight.w600,
+                                color: AppColors.primary,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                       const SizedBox(height: 24),
 
-                      // Register Navigation Link
+                      // Login Button
+                      CustomButton(
+                        text: 'Sign In',
+                        onPressed: _handleLogin,
+                        isLoading: authState.isLoading,
+                        icon: Icons.login_rounded,
+                      ),
+                      const SizedBox(height: 24),
+
+                      // Register Navigation Option
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           const Text(
                             "Don't have an account? ",
                             style: TextStyle(
-                              color: AppColors.textSecondaryLight,
                               fontSize: 14,
+                              color: AppColors.textSecondaryLight,
                             ),
                           ),
                           GestureDetector(
                             onTap: () {
                               authState.clearError();
-                              Navigator.of(context).push(
-                                MaterialPageRoute(
-                                  builder: (_) => RegisterScreen(authState: authState),
-                                ),
-                              );
+                              Navigator.of(context).pushNamed(RouteConstants.register);
                             },
                             child: const Text(
-                              'Register',
+                              'Create an Account',
                               style: TextStyle(
-                                color: AppColors.primary,
-                                fontWeight: FontWeight.w700,
                                 fontSize: 14,
+                                fontWeight: FontWeight.w700,
+                                color: AppColors.primary,
                               ),
                             ),
                           ),

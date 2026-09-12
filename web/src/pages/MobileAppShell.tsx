@@ -1,33 +1,43 @@
 import React, { useState, useEffect } from 'react';
-import { User, ScheduleItem } from '../types/auth';
+import { User, ScheduleItem, Announcement } from '../types/auth';
 import { AttendanceView } from './AttendanceView';
 import { AssignmentsView } from './AssignmentsView';
 import { ExamsView } from './ExamsView';
 import { PlacementsView } from './PlacementsView';
 import { AiAssistantView } from './AiAssistantView';
+import { AnnouncementsView } from './AnnouncementsView';
 import { getStoredSchedule } from '../services/scheduleStore';
+import { getStoredAnnouncements } from '../services/announcementStore';
 import { FacultyTimetableModal } from '../components/FacultyTimetableModal';
+import { MobileAuthView } from './MobileAuthView';
 
 interface MobileAppShellProps {
   user: User | null;
+  onLogin?: (user: User) => void;
   onLogout: () => void;
   onSwitchRole: () => void;
-  initialTab?: 'home' | 'schedule' | 'ai' | 'profile';
+  initialTab?: string;
   onNavigate?: (view: string) => void;
+  isFullscreen?: boolean;
+  onToggleFullscreen?: () => void;
 }
 
 export const MobileAppShell: React.FC<MobileAppShellProps> = ({
   user,
+  onLogin,
   onLogout,
   onSwitchRole,
   initialTab = 'home',
   onNavigate,
+  isFullscreen = false,
+  onToggleFullscreen,
 }) => {
-  const [activeTab, setActiveTab] = useState<'home' | 'schedule' | 'ai' | 'profile'>(initialTab);
-  const [subView, setSubView] = useState<'none' | 'attendance' | 'assignments' | 'exams' | 'placements'>('none');
+  const [activeTab, setActiveTab] = useState<'home' | 'schedule' | 'ai' | 'profile'>('home');
+  const [subView, setSubView] = useState<'none' | 'attendance' | 'assignments' | 'exams' | 'placements' | 'announcements'>('none');
   const [selectedDay, setSelectedDay] = useState('Monday');
   const [isOfflineMode, setIsOfflineMode] = useState(false);
   const [schedule, setSchedule] = useState<ScheduleItem[]>(() => getStoredSchedule());
+  const [announcements, setAnnouncements] = useState<Announcement[]>(() => getStoredAnnouncements());
 
   // Faculty modal state
   const [modalOpen, setModalOpen] = useState(false);
@@ -39,16 +49,39 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
     setSchedule(getStoredSchedule());
   };
 
+  const reloadAnnouncements = () => {
+    setAnnouncements(getStoredAnnouncements());
+  };
+
   useEffect(() => {
-    const handleUpdated = () => reloadSchedule();
-    window.addEventListener('unisphere_schedule_updated', handleUpdated);
-    return () => window.removeEventListener('unisphere_schedule_updated', handleUpdated);
+    const handleSchedUpdated = () => reloadSchedule();
+    const handleAnnUpdated = () => reloadAnnouncements();
+
+    window.addEventListener('unisphere_schedule_updated', handleSchedUpdated);
+    window.addEventListener('unisphere_announcements_updated', handleAnnUpdated);
+
+    return () => {
+      window.removeEventListener('unisphere_schedule_updated', handleSchedUpdated);
+      window.removeEventListener('unisphere_announcements_updated', handleAnnUpdated);
+    };
   }, []);
 
-  // Sync when initialTab prop changes from parent
+  // Sync when initialTab / currentView changes from parent navbar
   useEffect(() => {
-    if (initialTab) {
-      setActiveTab(initialTab);
+    if (initialTab === 'placements') {
+      setActiveTab('home');
+      setSubView('placements');
+    } else if (initialTab === 'announcements') {
+      setActiveTab('home');
+      setSubView('announcements');
+    } else if (initialTab === 'profile') {
+      setActiveTab('profile');
+      setSubView('none');
+    } else if (initialTab === 'schedule') {
+      setActiveTab('schedule');
+      setSubView('none');
+    } else if (initialTab === 'dashboard') {
+      setActiveTab('home');
       setSubView('none');
     }
   }, [initialTab]);
@@ -56,8 +89,12 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
   const days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
   const daySchedule = schedule.filter((s) => s.day === selectedDay);
 
-  const navigateToSub = (view: 'attendance' | 'assignments' | 'exams' | 'placements') => {
+  const navigateToSub = (view: 'attendance' | 'assignments' | 'exams' | 'placements' | 'announcements') => {
     setSubView(view);
+    if (onNavigate) {
+      if (view === 'placements') onNavigate('placements');
+      else if (view === 'announcements') onNavigate('announcements');
+    }
   };
 
   const handleTabChange = (tab: 'home' | 'schedule' | 'ai' | 'profile') => {
@@ -80,9 +117,13 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
     setModalOpen(true);
   };
 
+  const visibleAnnouncements = announcements.filter(
+    (a) => isFaculty || a.targetRole !== 'faculty'
+  );
+
   return (
-    <div className="phone-wrapper">
-      <div className="phone-shell">
+    <div className={`phone-wrapper ${isFullscreen ? 'fullscreen' : ''}`}>
+      <div className={`phone-shell ${isFullscreen ? 'fullscreen' : ''}`}>
         {/* Phone Top Notch Bar & Status Bar */}
         <div className="phone-notch-bar">
           <span>9:41</span>
@@ -153,6 +194,8 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
                   ? 'Exams & Results'
                   : subView === 'placements'
                   ? 'Campus Placements'
+                  : subView === 'announcements'
+                  ? 'Announcements'
                   : activeTab === 'schedule'
                   ? (isFaculty ? 'Faculty Timetable' : 'Lecture Timetable')
                   : activeTab === 'ai'
@@ -169,13 +212,51 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
 
           {/* Quick status badges and CLICKABLE PROFILE AVATAR */}
           <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            {user && (
+              <span
+                onClick={onSwitchRole}
+                title="Switch between Student and Faculty"
+                style={{
+                  fontSize: '0.65rem',
+                  cursor: 'pointer',
+                  padding: '3px 7px',
+                  borderRadius: '8px',
+                  background: isFaculty ? 'rgba(99, 102, 241, 0.2)' : 'rgba(14, 165, 233, 0.2)',
+                  color: isFaculty ? '#c084fc' : '#38bdf8',
+                  fontWeight: 700,
+                  border: isFaculty ? '1px solid rgba(99, 102, 241, 0.35)' : '1px solid rgba(14, 165, 233, 0.35)',
+                }}
+              >
+                {isFaculty ? 'Faculty 👨‍🏫' : 'Student 🎓'}
+              </span>
+            )}
+
+            {onToggleFullscreen && (
+              <span
+                onClick={onToggleFullscreen}
+                title="Toggle between phone frame and fullscreen mobile view"
+                style={{
+                  fontSize: '0.65rem',
+                  cursor: 'pointer',
+                  padding: '3px 7px',
+                  borderRadius: '8px',
+                  background: 'rgba(255, 255, 255, 0.08)',
+                  color: '#cbd5e1',
+                  fontWeight: 700,
+                  border: '1px solid rgba(255, 255, 255, 0.15)',
+                }}
+              >
+                {isFullscreen ? '📱 Frame' : '⛶ Full'}
+              </span>
+            )}
+
             <span
               onClick={() => setIsOfflineMode(!isOfflineMode)}
               title="Click to toggle simulated Offline Mode"
               style={{
                 fontSize: '0.65rem',
                 cursor: 'pointer',
-                padding: '2px 8px',
+                padding: '3px 7px',
                 borderRadius: '8px',
                 background: isOfflineMode ? 'rgba(245, 158, 11, 0.2)' : 'rgba(16, 185, 129, 0.15)',
                 color: isOfflineMode ? '#f59e0b' : '#10b981',
@@ -186,44 +267,51 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
             </span>
 
             {/* Clickable Avatar to Open Profile */}
-            <div
-              onClick={() => handleTabChange('profile')}
-              title="Tap to open your profile"
-              style={{
-                width: '30px',
-                height: '30px',
-                borderRadius: '50%',
-                background: activeTab === 'profile'
-                  ? 'linear-gradient(135deg, #38bdf8, #2563eb)'
-                  : '#334155',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                fontSize: '0.78rem',
-                fontWeight: 700,
-                color: '#ffffff',
-                cursor: 'pointer',
-                boxShadow: activeTab === 'profile' ? '0 0 8px rgba(56, 189, 248, 0.5)' : 'none',
-                border: '1.5px solid rgba(255, 255, 255, 0.2)',
-              }}
-            >
-              {user?.name.charAt(0) || 'U'}
-            </div>
+            {user && (
+              <div
+                onClick={() => handleTabChange('profile')}
+                title="Tap to open your profile"
+                style={{
+                  width: '28px',
+                  height: '28px',
+                  borderRadius: '50%',
+                  background: activeTab === 'profile'
+                    ? 'linear-gradient(135deg, #38bdf8, #2563eb)'
+                    : '#334155',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  fontSize: '0.78rem',
+                  fontWeight: 700,
+                  color: '#ffffff',
+                  cursor: 'pointer',
+                  boxShadow: activeTab === 'profile' ? '0 0 8px rgba(56, 189, 248, 0.5)' : 'none',
+                  border: '1.5px solid rgba(255, 255, 255, 0.2)',
+                }}
+              >
+                {user.name.charAt(0)}
+              </div>
+            )}
           </div>
         </div>
 
         {/* Phone Scrollable Screen Content */}
         <div className="phone-screen">
-          {/* 1. If inside a SubView */}
-          {subView === 'attendance' && <AttendanceView />}
-          {subView === 'assignments' && <AssignmentsView />}
-          {subView === 'exams' && <ExamsView />}
-          {subView === 'placements' && <PlacementsView />}
+          {!user ? (
+            <MobileAuthView onSuccess={(u) => onLogin && onLogin(u)} />
+          ) : (
+            <>
+              {/* 1. If inside a SubView */}
+              {subView === 'attendance' && <AttendanceView />}
+              {subView === 'assignments' && <AssignmentsView />}
+              {subView === 'exams' && <ExamsView />}
+              {subView === 'placements' && <PlacementsView />}
+              {subView === 'announcements' && <AnnouncementsView user={user} />}
 
           {/* 2. If at Root of Active Tab */}
           {subView === 'none' && activeTab === 'home' && (
             <div style={{ padding: '1.25rem', display: 'flex', flexDirection: 'column', gap: '14px' }}>
-              {/* Greeting Banner (Clickable to open profile!) */}
+              {/* Greeting Banner */}
               <div
                 onClick={() => handleTabChange('profile')}
                 title="Tap to view your complete profile"
@@ -266,6 +354,34 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
                 </div>
               </div>
 
+              {/* Announcements Alert Chip on Home */}
+              <div
+                onClick={() => navigateToSub('announcements')}
+                style={{
+                  backgroundColor: 'rgba(245, 158, 11, 0.12)',
+                  border: '1px solid rgba(245, 158, 11, 0.3)',
+                  borderRadius: '12px',
+                  padding: '10px 12px',
+                  display: 'flex',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  cursor: 'pointer',
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                  <span style={{ fontSize: '1.1rem' }}>📢</span>
+                  <div>
+                    <div style={{ fontSize: '0.78rem', fontWeight: 700, color: '#fbbf24' }}>
+                      {visibleAnnouncements.length} Campus Announcements
+                    </div>
+                    <div style={{ fontSize: '0.68rem', color: '#cbd5e1' }}>
+                      {visibleAnnouncements[0]?.title.slice(0, 36)}...
+                    </div>
+                  </div>
+                </div>
+                <span style={{ fontSize: '0.75rem', color: '#fbbf24', fontWeight: 700 }}>View →</span>
+              </div>
+
               {/* FACULTY FEATURE: Change Timetable Direct Quick Action */}
               {isFaculty && (
                 <div
@@ -304,13 +420,129 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
                 </div>
               )}
 
-              {/* Quick Actions Grid */}
+              {/* Quick Actions Grid (Student & Faculty Modules) */}
               <div>
                 <div style={{ fontSize: '0.825rem', fontWeight: 700, color: '#94a3b8', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.5px' }}>
-                  {isFaculty ? 'Faculty Quick Access' : 'Mobile Campus Modules'}
+                  {isFaculty ? 'Faculty Quick Access' : 'Student Campus Modules'}
                 </div>
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '10px' }}>
-                  {/* Profile Card on Home Dashboard */}
+                  {/* PLACEMENTS IN STUDENT MODULE */}
+                  {!isFaculty && (
+                    <div
+                      onClick={() => navigateToSub('placements')}
+                      className="glass-panel"
+                      style={{
+                        padding: '0.9rem',
+                        cursor: 'pointer',
+                        transition: 'transform 0.15s',
+                        border: '1px solid rgba(16, 185, 129, 0.35)',
+                      }}
+                    >
+                      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                        <span style={{ fontSize: '1.4rem' }}>💼</span>
+                        <span style={{ fontSize: '0.7rem', color: '#34d399', fontWeight: 800 }}>Tier-1</span>
+                      </div>
+                      <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#f8fafc', marginTop: '6px' }}>
+                        Placements
+                      </div>
+                      <div style={{ fontSize: '0.68rem', color: '#94a3b8' }}>Google, NVIDIA, Apple</div>
+                    </div>
+                  )}
+
+                  {/* ANNOUNCEMENTS IN BOTH STUDENT AND FACULTY */}
+                  <div
+                    onClick={() => navigateToSub('announcements')}
+                    className="glass-panel"
+                    style={{
+                      padding: '0.9rem',
+                      cursor: 'pointer',
+                      transition: 'transform 0.15s',
+                      border: '1px solid rgba(245, 158, 11, 0.35)',
+                    }}
+                  >
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <span style={{ fontSize: '1.4rem' }}>📢</span>
+                      <span style={{ fontSize: '0.7rem', color: '#fbbf24', fontWeight: 800 }}>
+                        {visibleAnnouncements.length} New
+                      </span>
+                    </div>
+                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#f8fafc', marginTop: '6px' }}>
+                      Announcements
+                    </div>
+                    <div style={{ fontSize: '0.68rem', color: '#94a3b8' }}>
+                      {isFaculty ? 'Post & View' : 'Campus circulars'}
+                    </div>
+                  </div>
+
+                  {/* Timetable Card */}
+                  <div
+                    onClick={() => handleTabChange('schedule')}
+                    className="glass-panel"
+                    style={{
+                      padding: '0.9rem',
+                      cursor: 'pointer',
+                      transition: 'transform 0.15s',
+                    }}
+                  >
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <span style={{ fontSize: '1.4rem' }}>📅</span>
+                      <span style={{ fontSize: '0.7rem', color: '#a78bfa', fontWeight: 800 }}>
+                        {isFaculty ? 'Change' : 'Classes'}
+                      </span>
+                    </div>
+                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#f8fafc', marginTop: '6px' }}>
+                      Timetable
+                    </div>
+                    <div style={{ fontSize: '0.68rem', color: '#94a3b8' }}>
+                      {isFaculty ? 'Reschedule slots' : 'Weekly lectures'}
+                    </div>
+                  </div>
+
+                  {/* Attendance Card */}
+                  <div
+                    onClick={() => navigateToSub('attendance')}
+                    className="glass-panel"
+                    style={{
+                      padding: '0.9rem',
+                      cursor: 'pointer',
+                      transition: 'transform 0.15s',
+                    }}
+                  >
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <span style={{ fontSize: '1.4rem' }}>📊</span>
+                      <span style={{ fontSize: '0.7rem', color: '#10b981', fontWeight: 800 }}>
+                        {isFaculty ? 'Grading' : '89.0%'}
+                      </span>
+                    </div>
+                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#f8fafc', marginTop: '6px' }}>
+                      {isFaculty ? 'Student Records' : 'Attendance'}
+                    </div>
+                    <div style={{ fontSize: '0.68rem', color: '#94a3b8' }}>
+                      {isFaculty ? 'All safe' : 'Safe status (≥75%)'}
+                    </div>
+                  </div>
+
+                  {/* Assignments Card */}
+                  <div
+                    onClick={() => navigateToSub('assignments')}
+                    className="glass-panel"
+                    style={{
+                      padding: '0.9rem',
+                      cursor: 'pointer',
+                      transition: 'transform 0.15s',
+                    }}
+                  >
+                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <span style={{ fontSize: '1.4rem' }}>📝</span>
+                      <span style={{ fontSize: '0.7rem', color: '#f59e0b', fontWeight: 800 }}>2 Due</span>
+                    </div>
+                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#f8fafc', marginTop: '6px' }}>
+                      Assignments
+                    </div>
+                    <div style={{ fontSize: '0.68rem', color: '#94a3b8' }}>Coursework tasks</div>
+                  </div>
+
+                  {/* Profile Card */}
                   <div
                     onClick={() => handleTabChange('profile')}
                     className="glass-panel"
@@ -328,75 +560,7 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
                     <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#f8fafc', marginTop: '6px' }}>
                       My Profile
                     </div>
-                    <div style={{ fontSize: '0.68rem', color: '#94a3b8' }}>ID, details & role</div>
-                  </div>
-
-                  {/* Timetable Card */}
-                  <div
-                    onClick={() => handleTabChange('schedule')}
-                    className="glass-panel"
-                    style={{
-                      padding: '0.9rem',
-                      cursor: 'pointer',
-                      transition: 'transform 0.15s',
-                    }}
-                  >
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                      <span style={{ fontSize: '1.4rem' }}>📅</span>
-                      <span style={{ fontSize: '0.7rem', color: '#a78bfa', fontWeight: 800 }}>
-                        {isFaculty ? 'Edit' : 'View'}
-                      </span>
-                    </div>
-                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#f8fafc', marginTop: '6px' }}>
-                      Timetable
-                    </div>
-                    <div style={{ fontSize: '0.68rem', color: '#94a3b8' }}>
-                      {isFaculty ? 'Reschedule classes' : 'Weekly lectures'}
-                    </div>
-                  </div>
-
-                  {/* Attendance Card */}
-                  <div
-                    onClick={() => navigateToSub('attendance')}
-                    className="glass-panel"
-                    style={{
-                      padding: '0.9rem',
-                      cursor: 'pointer',
-                      transition: 'transform 0.15s',
-                    }}
-                  >
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                      <span style={{ fontSize: '1.4rem' }}>📊</span>
-                      <span style={{ fontSize: '0.7rem', color: '#10b981', fontWeight: 800 }}>
-                        {isFaculty ? 'Gradebook' : '89.0%'}
-                      </span>
-                    </div>
-                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#f8fafc', marginTop: '6px' }}>
-                      {isFaculty ? 'Student Records' : 'Attendance'}
-                    </div>
-                    <div style={{ fontSize: '0.68rem', color: '#94a3b8' }}>
-                      {isFaculty ? 'All cohorts safe' : 'All subjects safe'}
-                    </div>
-                  </div>
-
-                  {/* Assignments / Courses */}
-                  <div
-                    onClick={() => navigateToSub('assignments')}
-                    className="glass-panel"
-                    style={{
-                      padding: '0.9rem',
-                      cursor: 'pointer',
-                      transition: 'transform 0.15s',
-                    }}
-                  >
-                    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                      <span style={{ fontSize: '1.4rem' }}>📝</span>
-                      <span style={{ fontSize: '0.7rem', color: '#f59e0b', fontWeight: 800 }}>Active</span>
-                    </div>
-                    <div style={{ fontSize: '0.85rem', fontWeight: 700, color: '#f8fafc', marginTop: '6px' }}>
-                      Assignments
-                    </div>
-                    <div style={{ fontSize: '0.68rem', color: '#94a3b8' }}>Submissions & grading</div>
+                    <div style={{ fontSize: '0.68rem', color: '#94a3b8' }}>ID & credentials</div>
                   </div>
                 </div>
               </div>
@@ -477,7 +641,7 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
                     Have a question? Ask AI Copilot
                   </div>
                   <div style={{ fontSize: '0.72rem', color: '#94a3b8' }}>
-                    {isFaculty ? 'Query room availability or student lists' : 'Instant answers for timetable & exams'}
+                    {isFaculty ? 'Query student attendance & classroom bookings' : 'Instant answers for placements, timetable & exams'}
                   </div>
                 </div>
               </div>
@@ -645,7 +809,7 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
                       🔄 Switch to {user?.role === 'student' ? 'Faculty 👨‍🏫' : 'Student 🎓'}
                     </div>
                     <div style={{ fontSize: '0.7rem', color: '#94a3b8' }}>
-                      Test both student and faculty timetable workflows
+                      Test both student and faculty timetable & announcements
                     </div>
                   </div>
                   <span style={{ color: '#38bdf8', fontWeight: 800 }}>›</span>
@@ -694,14 +858,17 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
               </div>
             </div>
           )}
+            </>
+          )}
         </div>
 
         {/* Mobile Bottom Tab Bar */}
-        <div className="mobile-tab-bar">
-          <button
-            onClick={() => handleTabChange('home')}
-            className={`mobile-tab-btn ${activeTab === 'home' && subView === 'none' ? 'active' : ''}`}
-          >
+        {user && (
+          <div className="mobile-tab-bar">
+            <button
+              onClick={() => handleTabChange('home')}
+              className={`mobile-tab-btn ${activeTab === 'home' && subView === 'none' ? 'active' : ''}`}
+            >
             <span className="tab-icon">🏠</span>
             <span>Home</span>
           </button>
@@ -727,6 +894,7 @@ export const MobileAppShell: React.FC<MobileAppShellProps> = ({
             <span>Profile</span>
           </button>
         </div>
+        )}
 
         {/* Phone Bottom Home Bar */}
         <div className="phone-home-bar">

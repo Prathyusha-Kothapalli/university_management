@@ -1,47 +1,7 @@
-<<<<<<< HEAD
-import 'dart:convert';
-import '../models/user.dart';
-
-/// Key-value storage service for non-sensitive cached data (e.g. user profile, settings).
-class StorageService {
-  static final Map<String, dynamic> _memoryStore = {};
-
-  static const String _cachedUserKey = 'unisphere_cached_user';
-  static const String _rememberEmailKey = 'unisphere_remember_email';
-
-  Future<void> saveUser(User user) async {
-    _memoryStore[_cachedUserKey] = jsonEncode(user.toJson());
-  }
-
-  Future<User?> getUser() async {
-    final raw = _memoryStore[_cachedUserKey];
-    if (raw == null) return null;
-    try {
-      final map = jsonDecode(raw.toString()) as Map<String, dynamic>;
-      return User.fromJson(map);
-    } catch (_) {
-      return null;
-    }
-  }
-
-  Future<void> removeUser() async {
-    _memoryStore.remove(_cachedUserKey);
-  }
-
-  Future<void> saveRememberedEmail(String email) async {
-    _memoryStore[_rememberEmailKey] = email;
-  }
-
-  Future<String?> getRememberedEmail() async {
-    return _memoryStore[_rememberEmailKey] as String?;
-  }
-
-  Future<void> clearAll() async {
-    _memoryStore.clear();
-=======
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
+import '../models/user.dart';
 
 abstract class IStorageService {
   Future<void> write(String key, String value);
@@ -81,8 +41,7 @@ class InMemoryStorageService implements IStorageService {
   }
 }
 
-/// Persistent file-backed secure key-value store with obfuscation
-/// Works reliably across Android, iOS, Windows, Mac, Linux without native binary dependency issues.
+/// Persistent file-backed secure key-value store
 class SecureFileStorageService implements IStorageService {
   static final Map<String, String> _memoryCache = {};
   static bool _initialized = false;
@@ -107,49 +66,30 @@ class SecureFileStorageService implements IStorageService {
       if (await file.exists()) {
         final content = await file.readAsString();
         if (content.isNotEmpty) {
-          final decoded = jsonDecode(_unobfuscate(content)) as Map<String, dynamic>;
-          _memoryCache.clear();
-          decoded.forEach((k, v) {
-            _memoryCache[k] = v.toString();
-          });
+          final decoded = jsonDecode(content) as Map<String, dynamic>;
+          decoded.forEach((k, v) => _memoryCache[k] = v.toString());
         }
       }
     } catch (_) {
-      // If reading fails or file is corrupt, fallback gracefully to memory
-    } finally {
-      _initialized = true;
+      // Gracefully continue with memory cache
     }
+    _initialized = true;
   }
 
-  Future<void> _persist() async {
+  Future<void> _flush() async {
     try {
       final file = _storageFile;
-      final rawJson = jsonEncode(_memoryCache);
-      final obfuscated = _obfuscate(rawJson);
-      await file.writeAsString(obfuscated, flush: true);
+      await file.writeAsString(jsonEncode(_memoryCache));
     } catch (_) {
-      // Non-fatal if filesystem is restricted (e.g. sandbox without temp access)
+      // Ignored for environments without write permissions
     }
-  }
-
-  String _obfuscate(String input) {
-    final bytes = utf8.encode(input);
-    // Simple XOR cipher with fixed salt for basic on-device resting obfuscation
-    final obfuscated = bytes.map((b) => b ^ 0x5A).toList();
-    return base64Encode(obfuscated);
-  }
-
-  String _unobfuscate(String input) {
-    final bytes = base64Decode(input);
-    final restored = bytes.map((b) => b ^ 0x5A).toList();
-    return utf8.decode(restored);
   }
 
   @override
   Future<void> write(String key, String value) async {
     await _ensureLoaded();
     _memoryCache[key] = value;
-    await _persist();
+    await _flush();
   }
 
   @override
@@ -162,20 +102,60 @@ class SecureFileStorageService implements IStorageService {
   Future<void> delete(String key) async {
     await _ensureLoaded();
     _memoryCache.remove(key);
-    await _persist();
+    await _flush();
   }
 
   @override
   Future<void> clear() async {
-    await _ensureLoaded();
     _memoryCache.clear();
-    await _persist();
+    await _flush();
   }
 
   @override
   Future<bool> containsKey(String key) async {
     await _ensureLoaded();
     return _memoryCache.containsKey(key);
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+  }
+}
+
+/// Key-value storage service for user preferences and profile caching.
+class StorageService {
+  final IStorageService _storage;
+
+  StorageService({IStorageService? storage})
+      : _storage = storage ?? InMemoryStorageService();
+
+  static const String _cachedUserKey = 'unisphere_cached_user';
+  static const String _rememberEmailKey = 'unisphere_remember_email';
+
+  Future<void> saveUser(User user) async {
+    await _storage.write(_cachedUserKey, jsonEncode(user.toJson()));
+  }
+
+  Future<User?> getUser() async {
+    final raw = await _storage.read(_cachedUserKey);
+    if (raw == null) return null;
+    try {
+      final map = jsonDecode(raw) as Map<String, dynamic>;
+      return User.fromJson(map);
+    } catch (_) {
+      return null;
+    }
+  }
+
+  Future<void> removeUser() async {
+    await _storage.delete(_cachedUserKey);
+  }
+
+  Future<void> saveRememberedEmail(String email) async {
+    await _storage.write(_rememberEmailKey, email);
+  }
+
+  Future<String?> getRememberedEmail() async {
+    return await _storage.read(_rememberEmailKey);
+  }
+
+  Future<void> clearAll() async {
+    await _storage.clear();
   }
 }

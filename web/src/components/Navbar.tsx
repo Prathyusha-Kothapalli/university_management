@@ -70,13 +70,24 @@ export const Navbar: React.FC<NavbarProps> = ({
 
       {/* Nav Navigation Links */}
       {user && (
-        <nav style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-          {[
-            { id: 'dashboard', label: 'Dashboard' },
-            { id: 'courses', label: 'Courses' },
-            { id: 'schedule', label: 'Timetable' },
-            { id: 'profile', label: 'My Profile' },
-          ].map((item) => (
+        <nav style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+          {(user.role === 'faculty'
+            ? [
+                { id: 'dashboard', label: 'Dashboard' },
+                { id: 'courses', label: 'Teaching Courses' },
+                { id: 'schedule', label: 'Timetable' },
+                { id: 'announcements', label: 'Announcements 📢' },
+                { id: 'profile', label: 'My Profile' },
+              ]
+            : [
+                { id: 'dashboard', label: 'Dashboard' },
+                { id: 'courses', label: 'Courses' },
+                { id: 'schedule', label: 'Timetable' },
+                { id: 'placements', label: 'Placements 💼' },
+                { id: 'announcements', label: 'Announcements 📢' },
+                { id: 'profile', label: 'My Profile' },
+              ]
+          ).map((item) => (
             <button
               key={item.id}
               onClick={() => onNavigate(item.id)}
@@ -84,12 +95,13 @@ export const Navbar: React.FC<NavbarProps> = ({
                 background: currentView === item.id ? 'rgba(37, 99, 235, 0.2)' : 'transparent',
                 color: currentView === item.id ? '#38bdf8' : '#94a3b8',
                 border: currentView === item.id ? '1px solid rgba(56, 189, 248, 0.3)' : '1px solid transparent',
-                padding: '8px 16px',
+                padding: '7px 14px',
                 borderRadius: '8px',
-                fontSize: '0.875rem',
+                fontSize: '0.85rem',
                 fontWeight: currentView === item.id ? 700 : 500,
                 cursor: 'pointer',
                 transition: 'all 0.2s',
+                whiteSpace: 'nowrap',
               }}
             >
               {item.label}

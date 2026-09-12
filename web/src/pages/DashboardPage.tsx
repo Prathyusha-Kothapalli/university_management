@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { User, ScheduleItem } from '../types/auth';
-import { mockCourses, mockAnnouncements } from '../services/mockData';
+import { User, ScheduleItem, Announcement } from '../types/auth';
 import { getStoredSchedule } from '../services/scheduleStore';
+import { getStoredAnnouncements } from '../services/announcementStore';
 import { FacultyTimetableModal } from '../components/FacultyTimetableModal';
+import { PostAnnouncementModal } from '../components/PostAnnouncementModal';
 
 interface DashboardPageProps {
   user: User;
@@ -12,8 +13,10 @@ interface DashboardPageProps {
 export const DashboardPage: React.FC<DashboardPageProps> = ({ user, onNavigate }) => {
   const [notification, setNotification] = useState<string | null>(null);
   const [schedule, setSchedule] = useState<ScheduleItem[]>(() => getStoredSchedule());
+  const [announcements, setAnnouncements] = useState<Announcement[]>(() => getStoredAnnouncements());
   const [modalOpen, setModalOpen] = useState(false);
   const [editingItem, setEditingItem] = useState<ScheduleItem | null>(null);
+  const [postAnnModalOpen, setPostAnnModalOpen] = useState(false);
 
   const isFaculty = user.role === 'faculty';
 
@@ -21,10 +24,21 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ user, onNavigate }
     setSchedule(getStoredSchedule());
   };
 
+  const reloadAnnouncements = () => {
+    setAnnouncements(getStoredAnnouncements());
+  };
+
   useEffect(() => {
-    const handleUpdated = () => reloadSchedule();
-    window.addEventListener('unisphere_schedule_updated', handleUpdated);
-    return () => window.removeEventListener('unisphere_schedule_updated', handleUpdated);
+    const handleSchedUpdated = () => reloadSchedule();
+    const handleAnnUpdated = () => reloadAnnouncements();
+
+    window.addEventListener('unisphere_schedule_updated', handleSchedUpdated);
+    window.addEventListener('unisphere_announcements_updated', handleAnnUpdated);
+
+    return () => {
+      window.removeEventListener('unisphere_schedule_updated', handleSchedUpdated);
+      window.removeEventListener('unisphere_announcements_updated', handleAnnUpdated);
+    };
   }, []);
 
   const showNotification = (text: string) => {
@@ -41,6 +55,10 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ user, onNavigate }
     setEditingItem(item);
     setModalOpen(true);
   };
+
+  const visibleAnnouncements = announcements.filter(
+    (a) => isFaculty || a.targetRole !== 'faculty'
+  );
 
   return (
     <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '2rem 1.5rem', width: '100%' }}>
@@ -112,19 +130,46 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ user, onNavigate }
           </p>
         </div>
 
-        <div style={{ display: 'flex', gap: '10px' }}>
-          {isFaculty && (
+        <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap' }}>
+          {isFaculty ? (
+            <>
+              <button
+                onClick={handleOpenAddLecture}
+                className="btn btn-primary"
+                style={{
+                  backgroundColor: '#ffffff',
+                  color: '#4338ca',
+                  fontWeight: 700,
+                  boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
+                }}
+              >
+                ➕ Add / Change Timetable
+              </button>
+              <button
+                onClick={() => setPostAnnModalOpen(true)}
+                className="btn"
+                style={{
+                  backgroundColor: 'rgba(255, 255, 255, 0.2)',
+                  color: '#ffffff',
+                  fontWeight: 700,
+                  border: '1px solid rgba(255, 255, 255, 0.3)',
+                }}
+              >
+                📢 Post Notice
+              </button>
+            </>
+          ) : (
             <button
-              onClick={handleOpenAddLecture}
+              onClick={() => onNavigate('placements')}
               className="btn btn-primary"
               style={{
                 backgroundColor: '#ffffff',
-                color: '#4338ca',
+                color: '#065f46',
                 fontWeight: 700,
                 boxShadow: '0 4px 12px rgba(0, 0, 0, 0.15)',
               }}
             >
-              ➕ Add / Change Timetable
+              💼 Placements (48 Drives)
             </button>
           )}
 
@@ -141,7 +186,6 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ user, onNavigate }
             📚 {isFaculty ? 'Teaching Courses' : 'My Courses'}
           </button>
 
-          {/* Explicit Profile Button on Home Dashboard */}
           <button
             id="home-dashboard-profile-btn"
             onClick={() => onNavigate('profile')}
@@ -189,10 +233,10 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ user, onNavigate }
             color: '#10b981',
           },
           {
-            title: 'Academic Role',
-            value: 'Professor',
-            sub: 'Tenured Faculty Member',
-            icon: '🏛️',
+            title: 'Campus Bulletins',
+            value: `${announcements.length} Notices`,
+            sub: 'Published Active',
+            icon: '📢',
             color: '#8b5cf6',
           },
         ].map((stat, idx) => (
@@ -214,29 +258,29 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ user, onNavigate }
           {
             title: 'Cumulative GPA',
             value: user.gpa.toFixed(2),
-            sub: 'Top 5% of Department',
+            sub: 'Rank #4 in Department',
             icon: '🎯',
             color: '#2563eb',
           },
           {
-            title: 'Class Attendance',
-            value: `${user.attendanceRate.toFixed(1)}%`,
-            sub: 'Excellent standing',
-            icon: '✅',
+            title: 'Placement Standing',
+            value: 'Super Dream',
+            sub: 'Eligible for ≥ ₹20 LPA Tier-1',
+            icon: '💼',
             color: '#10b981',
           },
           {
-            title: 'Credits Completed',
-            value: `${user.creditsEarned || 88} / ${user.totalCredits || 120}`,
-            sub: 'On Track for Graduation',
-            icon: '🎓',
+            title: 'Class Attendance',
+            value: `${user.attendanceRate.toFixed(1)}%`,
+            sub: 'Safe Standing (≥75%)',
+            icon: '✅',
             color: '#0ea5e9',
           },
           {
-            title: 'Enrolled Courses',
-            value: `${mockCourses.length}`,
-            sub: 'Fall Semester 2026',
-            icon: '📖',
+            title: 'Active Bulletins',
+            value: `${visibleAnnouncements.length} Notices`,
+            sub: 'Exams, Placements, Events',
+            icon: '📢',
             color: '#6366f1',
           },
         ].map((stat, idx) => (
@@ -257,7 +301,7 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ user, onNavigate }
         ))}
       </div>
 
-      {/* FACULTY SPECIFIC: Timetable Management Control Section */}
+      {/* FACULTY SPECIFIC: Timetable Management Section */}
       {isFaculty && (
         <div className="glass-panel" style={{ padding: '1.75rem', marginBottom: '2.5rem', border: '1.5px solid rgba(99, 102, 241, 0.4)' }}>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1rem', flexWrap: 'wrap', gap: '1rem' }}>
@@ -349,14 +393,21 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ user, onNavigate }
         gap: '1rem',
         marginBottom: '2.5rem',
       }}>
-        {[
-          { title: isFaculty ? 'Teaching Classes' : 'Courses', desc: isFaculty ? '3 Active' : '5 Enrolled', icon: '📚', action: () => onNavigate('courses') },
-          { title: isFaculty ? 'Manage Timetable' : 'Timetable', desc: isFaculty ? 'Change & Edit' : 'Weekly Classes', icon: '📅', action: () => onNavigate('schedule') },
+        {(isFaculty ? [
+          { title: 'Teaching Classes', desc: '3 Active Courses', icon: '📚', action: () => onNavigate('courses') },
+          { title: 'Manage Timetable', desc: 'Change & Reschedule', icon: '📅', action: () => onNavigate('schedule') },
+          { title: 'Campus Bulletins', desc: 'Broadcast Notices', icon: '📢', action: () => onNavigate('announcements') },
           { title: 'My Profile & ID', desc: 'Account & Settings', icon: '👤', action: () => onNavigate('profile') },
-          { title: 'Exams & Grades', desc: 'Fall 2026 Records', icon: '📊', action: () => showNotification('Opening exam and evaluation records...') },
           { title: 'Digital Library', desc: '40K+ Journals', icon: '🏛️', action: () => showNotification('Connected to University IEEE & ACM library credentials.') },
           { title: 'Campus AI Copilot', desc: 'Virtual Assistant', icon: '🤖', action: () => showNotification('UniSphere AI Concierge is ready to help!') },
-        ].map((mod, idx) => (
+        ] : [
+          { title: 'Courses', desc: '5 Enrolled', icon: '📚', action: () => onNavigate('courses') },
+          { title: 'Timetable', desc: 'Weekly Classes', icon: '📅', action: () => onNavigate('schedule') },
+          { title: 'Placements Cell', desc: 'Google, NVIDIA Drives', icon: '💼', action: () => onNavigate('placements') },
+          { title: 'Campus Bulletins', desc: 'Official Notices', icon: '📢', action: () => onNavigate('announcements') },
+          { title: 'My Profile & ID', desc: 'Account & Credentials', icon: '👤', action: () => onNavigate('profile') },
+          { title: 'Campus AI Copilot', desc: 'Virtual Assistant', icon: '🤖', action: () => showNotification('UniSphere AI Concierge is ready to help!') },
+        ]).map((mod, idx) => (
           <div
             key={idx}
             onClick={mod.action}
@@ -477,46 +528,78 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ user, onNavigate }
           </div>
         </div>
 
-        {/* Official Announcements Card */}
+        {/* Official Announcements Card (with View All and Post Actions!) */}
         <div className="glass-panel" style={{ padding: '1.5rem' }}>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem' }}>
+          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.25rem', flexWrap: 'wrap', gap: '8px' }}>
             <h3 style={{ fontSize: '1.15rem', fontWeight: 700, color: '#f8fafc' }}>
               📢 Campus Bulletins
             </h3>
-            <span style={{ fontSize: '0.78rem', color: '#38bdf8', fontWeight: 600 }}>
-              Official Updates
-            </span>
+            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              {isFaculty && (
+                <button
+                  onClick={() => setPostAnnModalOpen(true)}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    color: '#a5b4fc',
+                    fontSize: '0.8rem',
+                    fontWeight: 700,
+                    cursor: 'pointer',
+                  }}
+                >
+                  + Post Notice
+                </button>
+              )}
+              <button
+                onClick={() => onNavigate('announcements')}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  color: '#38bdf8',
+                  fontSize: '0.825rem',
+                  fontWeight: 700,
+                  cursor: 'pointer',
+                }}
+              >
+                View All ({visibleAnnouncements.length}) →
+              </button>
+            </div>
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-            {mockAnnouncements.map((ann) => (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
+            {visibleAnnouncements.slice(0, 3).map((ann) => (
               <div
                 key={ann.id}
+                onClick={() => onNavigate('announcements')}
                 style={{
                   padding: '12px',
                   borderRadius: '12px',
                   backgroundColor: 'rgba(15, 23, 42, 0.4)',
                   border: '1px solid var(--color-border-subtle)',
+                  cursor: 'pointer',
+                  transition: 'border-color 0.15s',
                 }}
+                onMouseEnter={(e) => (e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.4)')}
+                onMouseLeave={(e) => (e.currentTarget.style.borderColor = 'var(--color-border-subtle)')}
               >
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '4px' }}>
                   <span style={{
                     fontSize: '0.7rem',
                     fontWeight: 700,
-                    color: ann.category === 'Academic' ? '#38bdf8' : '#a78bfa',
+                    color: ann.category === 'Placement' ? '#34d399' : ann.category === 'Exam' ? '#fbbf24' : '#38bdf8',
                     textTransform: 'uppercase',
                   }}>
                     {ann.category}
                   </span>
-                  <span style={{ fontSize: '0.75rem', color: '#64748b' }}>
+                  <span style={{ fontSize: '0.72rem', color: '#64748b' }}>
                     {ann.date}
                   </span>
                 </div>
                 <div style={{ fontSize: '0.875rem', fontWeight: 600, color: '#f8fafc' }}>
                   {ann.title}
                 </div>
-                <div style={{ fontSize: '0.78rem', color: '#94a3b8', marginTop: '4px', lineHeight: 1.4 }}>
-                  {ann.content}
+                <div style={{ fontSize: '0.78rem', color: '#94a3b8', marginTop: '3px', lineHeight: 1.4 }}>
+                  {ann.content.length > 95 ? `${ann.content.substring(0, 95)}...` : ann.content}
                 </div>
               </div>
             ))}
@@ -532,6 +615,16 @@ export const DashboardPage: React.FC<DashboardPageProps> = ({ user, onNavigate }
           onScheduleUpdated={reloadSchedule}
           initialItem={editingItem}
           instructorName={user.name}
+        />
+      )}
+
+      {/* Faculty Announcement Post Modal */}
+      {isFaculty && (
+        <PostAnnouncementModal
+          isOpen={postAnnModalOpen}
+          onClose={() => setPostAnnModalOpen(false)}
+          onAnnouncementCreated={reloadAnnouncements}
+          authorName={user.name}
         />
       )}
     </div>

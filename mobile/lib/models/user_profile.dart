@@ -10,6 +10,11 @@ class UserProfile {
   final String academicProgram;
   final String enrollmentStatus;
   final String? emergencyContact;
+  final String? bio;
+  final List<String> skills;
+  final List<String> education;
+  final List<String> experience;
+  final String resumeStatus;
 
   const UserProfile({
     required this.user,
@@ -21,6 +26,24 @@ class UserProfile {
     this.academicProgram = 'B.S. Computer Science & Engineering',
     this.enrollmentStatus = 'Active - Full Time',
     this.emergencyContact,
+    this.bio = 'Passionate computer science student specializing in AI, mobile architecture, and full-stack software development.',
+    this.skills = const [
+      'Flutter & Dart',
+      'Python & FastAPI',
+      'TypeScript & React',
+      'PostgreSQL',
+      'Docker',
+      'Git & CI/CD',
+    ],
+    this.education = const [
+      'B.S. in Computer Science — UniSphere Institute of Tech (2023 - 2027)',
+      'High School Diploma — Apex Academy (2021 - 2023)',
+    ],
+    this.experience = const [
+      'Software Engineering Intern — TechNova Labs (Summer 2025)',
+      'Undergraduate Research Assistant — Autonomous Systems Lab (2024 - Present)',
+    ],
+    this.resumeStatus = 'Resume_Alex_Mercer_2026.pdf (Uploaded)',
   });
 
   factory UserProfile.fromJson(Map<String, dynamic> json) {
@@ -34,6 +57,28 @@ class UserProfile {
       academicProgram: json['academic_program']?.toString() ?? 'B.S. Computer Science & Engineering',
       enrollmentStatus: json['enrollment_status']?.toString() ?? 'Active - Full Time',
       emergencyContact: json['emergency_contact']?.toString(),
+      bio: json['bio']?.toString() ??
+          'Passionate computer science student specializing in AI, mobile architecture, and full-stack software development.',
+      skills: (json['skills'] as List<dynamic>?)?.map((e) => e.toString()).toList() ??
+          const [
+            'Flutter & Dart',
+            'Python & FastAPI',
+            'TypeScript & React',
+            'PostgreSQL',
+            'Docker',
+            'Git & CI/CD',
+          ],
+      education: (json['education'] as List<dynamic>?)?.map((e) => e.toString()).toList() ??
+          const [
+            'B.S. in Computer Science — UniSphere Institute of Tech (2023 - 2027)',
+            'High School Diploma — Apex Academy (2021 - 2023)',
+          ],
+      experience: (json['experience'] as List<dynamic>?)?.map((e) => e.toString()).toList() ??
+          const [
+            'Software Engineering Intern — TechNova Labs (Summer 2025)',
+            'Undergraduate Research Assistant — Autonomous Systems Lab (2024 - Present)',
+          ],
+      resumeStatus: json['resume_status']?.toString() ?? 'Resume_Alex_Mercer_2026.pdf (Uploaded)',
     );
   }
 
@@ -48,6 +93,11 @@ class UserProfile {
       'academic_program': academicProgram,
       'enrollment_status': enrollmentStatus,
       'emergency_contact': emergencyContact,
+      'bio': bio,
+      'skills': skills,
+      'education': education,
+      'experience': experience,
+      'resume_status': resumeStatus,
     };
   }
 
@@ -61,6 +111,11 @@ class UserProfile {
     String? academicProgram,
     String? enrollmentStatus,
     String? emergencyContact,
+    String? bio,
+    List<String>? skills,
+    List<String>? education,
+    List<String>? experience,
+    String? resumeStatus,
   }) {
     return UserProfile(
       user: user ?? this.user,
@@ -72,6 +127,11 @@ class UserProfile {
       academicProgram: academicProgram ?? this.academicProgram,
       enrollmentStatus: enrollmentStatus ?? this.enrollmentStatus,
       emergencyContact: emergencyContact ?? this.emergencyContact,
+      bio: bio ?? this.bio,
+      skills: skills ?? this.skills,
+      education: education ?? this.education,
+      experience: experience ?? this.experience,
+      resumeStatus: resumeStatus ?? this.resumeStatus,
     );
   }
 }

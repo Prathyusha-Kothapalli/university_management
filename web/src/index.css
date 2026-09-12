@@ -229,14 +229,20 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  min-height: calc(100vh - 70px);
+  padding: 1.25rem 0.5rem;
+  min-height: 100vh;
+}
+
+.phone-wrapper.fullscreen {
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
 }
 
 .phone-shell {
   width: 412px;
   max-width: 100%;
-  height: 840px;
+  height: 860px;
   background: #0f172a;
   border-radius: 48px;
   box-shadow: 
@@ -248,6 +254,31 @@ body {
   position: relative;
   overflow: hidden;
   border: 4px solid #0b132b;
+  transition: all 0.3s ease;
+}
+
+.phone-shell.fullscreen {
+  width: 100vw !important;
+  max-width: 100vw !important;
+  height: 100vh !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+@media (max-width: 640px) {
+  .phone-wrapper {
+    padding: 0;
+    min-height: 100vh;
+  }
+  .phone-shell {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    height: 100vh !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
 }
 
 .phone-notch-bar {

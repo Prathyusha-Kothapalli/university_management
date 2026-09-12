@@ -6,6 +6,7 @@ import 'package:unisphere_mobile/models/register_request.dart';
 import 'package:unisphere_mobile/models/user.dart';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import 'package:unisphere_mobile/models/user_profile.dart';
 
@@ -118,11 +119,13 @@ void main() {
           'role': 'faculty',
 <<<<<<< HEAD
 =======
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 import 'package:unisphere_mobile/models/user_profile.dart';
 
 void main() {
   group('Models JSON Serialization Tests', () {
-    test('User fromJson and toJson', () {
+    test('User fromJson and toJson work symmetrically', () {
       final json = {
         'id': 'usr_101',
         'name': 'Alex Mercer',
@@ -131,14 +134,19 @@ void main() {
         'role': 'student',
         'department': 'CS',
         'student_id': 'UNIV-101',
+        'enrolled_year': '2024 - 2028',
+        'gpa': 3.95,
+        'attendance_rate': 98.2,
       };
 
       final user = User.fromJson(json);
       expect(user.id, 'usr_101');
       expect(user.name, 'Alex Mercer');
       expect(user.email, 'alex@university.edu');
+      expect(user.role, UserRole.student);
       expect(user.roleDisplay, 'Student');
       expect(user.initials, 'AM');
+      expect(user.gpa, 3.95);
 
       final serialized = user.toJson();
       expect(serialized['id'], 'usr_101');
@@ -146,7 +154,7 @@ void main() {
       expect(serialized['role'], 'student');
     });
 
-    test('LoginRequest toJson', () {
+    test('LoginRequest toJson and fromJson', () {
       const req = LoginRequest(
         email: 'alex@university.edu',
         password: 'Password123!',
@@ -156,26 +164,36 @@ void main() {
       expect(json['email'], 'alex@university.edu');
       expect(json['password'], 'Password123!');
       expect(json['remember_me'], true);
+
+      final parsed = LoginRequest.fromJson(json);
+      expect(parsed.email, req.email);
+      expect(parsed.password, req.password);
+      expect(parsed.rememberMe, true);
     });
 
     test('LoginResponse fromJson and toJson', () {
       final json = {
         'access_token': 'jwt_secret_token_123',
-        'token_type': 'bearer',
+        'refresh_token': 'refresh_token_456',
+        'token_type': 'Bearer',
         'expires_in': 3600,
         'user': {
           'id': 'usr_1',
           'name': 'Alex Mercer',
           'email': 'alex@university.edu',
           'role': 'student',
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
 =======
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
         },
       };
 
       final res = LoginResponse.fromJson(json);
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       expect(res.accessToken, 'jwt.token.abc');
@@ -217,15 +235,19 @@ void main() {
 =======
 =======
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       expect(res.accessToken, 'jwt_secret_token_123');
-      expect(res.tokenType, 'bearer');
-      expect(res.user.name, 'Alex Mercer');
+      expect(res.refreshToken, 'refresh_token_456');
+      expect(res.user?.name, 'Alex Mercer');
+      expect(res.user?.role, UserRole.student);
 
       final serialized = res.toJson();
       expect(serialized['access_token'], 'jwt_secret_token_123');
+      expect(serialized['refresh_token'], 'refresh_token_456');
     });
 
-    test('RegisterRequest toJson', () {
+    test('RegisterRequest toJson and fromJson', () {
       const reg = RegisterRequest(
         name: 'Jordan Lee',
         email: 'jordan@university.edu',
@@ -239,6 +261,11 @@ void main() {
       expect(json['email'], 'jordan@university.edu');
       expect(json['role'], 'student');
       expect(json['department'], 'Physics');
+
+      final parsed = RegisterRequest.fromJson(json);
+      expect(parsed.name, 'Jordan Lee');
+      expect(parsed.email, 'jordan@university.edu');
+      expect(parsed.role, 'student');
     });
 
     test('ApiResponse fromJson and factory methods', () {
@@ -275,6 +302,7 @@ void main() {
       expect(updated.gpa, 4.0);
       expect(updated.user.name, 'Alex');
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
 =======
 =======
@@ -316,6 +344,8 @@ void main() {
       expect(res.data?['count'], 42);
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     });
   });
 }

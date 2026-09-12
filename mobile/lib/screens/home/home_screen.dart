@@ -2,9 +2,17 @@ import 'package:flutter/material.dart';
 import '../../core/constants/app_constants.dart';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import '../../core/constants/route_constants.dart';
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 import '../../core/theme/app_colors.dart';
+import '../../models/user.dart';
 import '../../services/mock_data_service.dart';
 import '../../state/auth_state.dart';
+import '../../state/profile_state.dart';
 import '../../widgets/stat_card.dart';
 import '../../widgets/user_avatar.dart';
 import '../ai_assistant/ai_assistant_screen.dart';
@@ -21,7 +29,10 @@ import '../timetable/timetable_screen.dart';
 /// Professional University Mobile Dashboard with all core campus modules.
 class HomeScreen extends StatefulWidget {
   final AuthState authState;
+<<<<<<< HEAD
+  final ProfileState? profileState;
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> origin/web
 import '../../core/constants/route_constants.dart';
@@ -52,10 +63,14 @@ class HomeScreen extends StatefulWidget {
   final AuthState authState;
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
   const HomeScreen({
     super.key,
     required this.authState,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -66,6 +81,12 @@ class HomeScreen extends StatefulWidget {
 =======
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+    this.profileState,
+=======
+    required this.profileState,
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   });
 
   @override
@@ -75,7 +96,19 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   int _selectedBottomTab = 0;
+
+  @override
+  void initState() {
+    super.initState();
+    final user = widget.authState.currentUser;
+    if (user != null && widget.profileState != null) {
+      widget.profileState!.loadProfile(user);
+    }
+  }
 
   Future<void> _handleLogout() async {
     final shouldLogout = await showDialog<bool>(
@@ -87,6 +120,7 @@ class _HomeScreenState extends State<HomeScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.of(ctx).pop(false),
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/web
@@ -128,6 +162,8 @@ class _HomeScreenState extends State<HomeScreen> {
             onPressed: () => Navigator.of(ctx).pop(false),
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
             child: const Text('Cancel'),
           ),
           ElevatedButton(
@@ -135,6 +171,7 @@ class _HomeScreenState extends State<HomeScreen> {
               backgroundColor: AppColors.error,
               foregroundColor: Colors.white,
             ),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
             onPressed: () => Navigator.of(ctx).pop(true),
@@ -161,23 +198,28 @@ class _HomeScreenState extends State<HomeScreen> {
             child: const Text('Sign Out'),
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+            onPressed: () => Navigator.of(ctx).pop(true),
+            child: const Text('Sign Out'),
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
           ),
         ],
       ),
     );
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
     if (shouldLogout == true && mounted) {
       await widget.authState.logout();
       if (mounted) {
-        Navigator.of(context).pushAndRemoveUntil(
-          MaterialPageRoute(
-            builder: (_) => LoginScreen(authState: widget.authState),
-          ),
+        Navigator.of(context).pushNamedAndRemoveUntil(
+          RouteConstants.login,
           (route) => false,
         );
       }
@@ -189,6 +231,7 @@ class _HomeScreenState extends State<HomeScreen> {
     Navigator.of(context).push(
       MaterialPageRoute(builder: (_) => screen),
     );
+<<<<<<< HEAD
 =======
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
 =======
@@ -211,12 +254,18 @@ class _HomeScreenState extends State<HomeScreen> {
     );
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+<<<<<<< HEAD
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   }
 
   @override
   Widget build(BuildContext context) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     return AnimatedBuilder(
       animation: widget.authState,
       builder: (context, _) {
@@ -257,7 +306,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 child: UserAvatar(
                   user: user,
                   radius: 17,
-                  onTap: () => _navigateTo(ProfileScreen(authState: widget.authState)),
+                  onTap: () => _navigateTo(ProfileScreen(
+                    authState: widget.authState,
+                    profileState: widget.profileState,
+                  )),
                 ),
               ),
             ],
@@ -269,6 +321,7 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 // Welcome Hero Card
 =======
+<<<<<<< HEAD
 =======
 >>>>>>> origin/web
     final user = widget.authState.currentUser;
@@ -403,11 +456,15 @@ class _HomeScreenState extends State<HomeScreen> {
                 // Welcome Card
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
                 Container(
                   width: double.infinity,
                   padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
                     gradient: const LinearGradient(
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                       colors: [AppColors.primary, Color(0xFF1D4ED8)],
@@ -420,6 +477,9 @@ class _HomeScreenState extends State<HomeScreen> {
                       colors: [AppColors.primary, Color(0xFF1D4ED8)],
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+                      colors: [AppColors.primary, Color(0xFF1D4ED8)],
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                     ),
@@ -428,6 +488,7 @@ class _HomeScreenState extends State<HomeScreen> {
                       BoxShadow(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                         color: AppColors.primary.withOpacity(0.28),
                         blurRadius: 18,
                         offset: const Offset(0, 8),
@@ -446,6 +507,11 @@ class _HomeScreenState extends State<HomeScreen> {
                         offset: const Offset(0, 8),
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+                        color: AppColors.primary.withOpacity(0.28),
+                        blurRadius: 18,
+                        offset: const Offset(0, 8),
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
                       ),
                     ],
                   ),
@@ -461,10 +527,14 @@ class _HomeScreenState extends State<HomeScreen> {
                               color: Colors.white.withOpacity(0.2),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
                               borderRadius: BorderRadius.circular(12),
                             ),
                             child: Text(
                               user.role.displayName.toUpperCase(),
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/web
@@ -482,12 +552,15 @@ class _HomeScreenState extends State<HomeScreen> {
                               user.role.displayName.toUpperCase(),
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
                               style: const TextStyle(
                                 color: Colors.white,
                                 fontSize: 11,
                                 fontWeight: FontWeight.w700,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 letterSpacing: 0.5,
 =======
                                 letterSpacing: 0.8,
@@ -498,12 +571,16 @@ class _HomeScreenState extends State<HomeScreen> {
                                 letterSpacing: 0.5,
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+                                letterSpacing: 0.5,
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
                               ),
                             ),
                           ),
                           Text(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                             user.studentId ?? 'US-2026',
 =======
                             user?.studentId ?? 'ID: UNIV-2026',
@@ -514,6 +591,9 @@ class _HomeScreenState extends State<HomeScreen> {
                             user.studentId ?? 'US-2026',
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+                            user.studentId ?? 'US-2026',
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
                             style: TextStyle(
                               color: Colors.white.withOpacity(0.8),
                               fontSize: 12,
@@ -522,6 +602,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           ),
                         ],
                       ),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                       const SizedBox(height: 12),
@@ -550,6 +631,11 @@ class _HomeScreenState extends State<HomeScreen> {
                         'Welcome back, ${user.name.split(' ').first}!',
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+                      const SizedBox(height: 12),
+                      Text(
+                        'Welcome back, ${user.name.split(' ').first}!',
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
                         style: const TextStyle(
                           color: Colors.white,
                           fontSize: 22,
@@ -559,11 +645,15 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
                       const SizedBox(height: 4),
                       Text(
                         user.department ?? 'Computer Science & Engineering',
                         style: TextStyle(
                           color: Colors.white.withOpacity(0.85),
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/web
@@ -583,6 +673,8 @@ class _HomeScreenState extends State<HomeScreen> {
                           color: Colors.white.withOpacity(0.85),
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
                           fontSize: 13,
                         ),
                       ),
@@ -591,6 +683,9 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
                 const SizedBox(height: 24),
 
                 // Academic Metrics / KPI Row (Clickable)
@@ -620,6 +715,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           color: AppColors.success,
                         ),
                       ),
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/web
@@ -678,6 +774,8 @@ class _HomeScreenState extends State<HomeScreen> {
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
 =======
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
                     ),
                   ],
                 ),
@@ -685,11 +783,15 @@ class _HomeScreenState extends State<HomeScreen> {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
                 // Main Campus Modules Section
                 const Text(
                   'Campus Modules',
                   style: TextStyle(
                     fontSize: 18,
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/web
@@ -702,6 +804,8 @@ class _HomeScreenState extends State<HomeScreen> {
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
 =======
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
                     fontWeight: FontWeight.w700,
                     color: AppColors.textPrimaryLight,
                   ),
@@ -710,6 +814,9 @@ class _HomeScreenState extends State<HomeScreen> {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
                 GridView.count(
                   crossAxisCount: 2,
                   shrinkWrap: true,
@@ -849,6 +956,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   );
                 }),
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/web
@@ -1141,17 +1249,23 @@ class _HomeScreenState extends State<HomeScreen> {
                 }),
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
                 const SizedBox(height: 20),
               ],
             ),
           ),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
           floatingActionButton: FloatingActionButton.extended(
             onPressed: () => _navigateTo(const AiAssistantScreen()),
             backgroundColor: AppColors.primary,
             icon: const Icon(Icons.auto_awesome, color: Colors.white),
-            label: const Text('AI Assistant', style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700)),
+            label: const Text('AI Assistant',
+                style: TextStyle(color: Colors.white, fontWeight: FontWeight.w700)),
           ),
           bottomNavigationBar: NavigationBar(
             selectedIndex: _selectedBottomTab,
@@ -1161,7 +1275,10 @@ class _HomeScreenState extends State<HomeScreen> {
               } else if (idx == 2) {
                 _navigateTo(const ChatScreen());
               } else if (idx == 3) {
-                _navigateTo(ProfileScreen(authState: widget.authState));
+                _navigateTo(ProfileScreen(
+                  authState: widget.authState,
+                  profileState: widget.profileState,
+                ));
               } else {
                 setState(() => _selectedBottomTab = idx);
               }
@@ -1188,6 +1305,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 label: 'Profile',
               ),
             ],
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/web
@@ -1299,12 +1417,15 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
           ),
         );
       },
     );
   }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -1346,6 +1467,8 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
 =======
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   Widget _buildModuleCard({
     required String title,
     required String subtitle,
@@ -1397,6 +1520,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   ),
                 ],
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   Widget _buildScheduleItem({
     required String time,
@@ -1438,10 +1562,13 @@ class _HomeScreenState extends State<HomeScreen> {
 =======
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
               ),
             ],
           ),
         ),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       ),
@@ -1454,6 +1581,9 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+      ),
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     );
   }
 }

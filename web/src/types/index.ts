@@ -1,6 +1,6 @@
 // Types matching UniSphere AI Backend Pydantic Schemas across Groups 1-11
 
-export type UserRole = 'admin' | 'faculty' | 'student' | 'hod' | 'parent';
+export type UserRole = 'admin' | 'faculty' | 'student' | 'hod' | 'parent' | 'librarian';
 
 export interface StudentGuardian {
   id: string;

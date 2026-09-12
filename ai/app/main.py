@@ -3,11 +3,18 @@ from fastapi.middleware.cors import CORSMiddleware
 from ai.app.schemas.schemas import AgentQueryRequest, AgentQueryResponse
 from ai.app.services.conversation_service import ConversationService
 
+from ai.app.routers.assistant import router as assistant_router
+from ai.app.routers.rag_expanded import router as rag_expanded_router
+
 app = FastAPI(
     title="UniSphere AI Microservice",
     version="1.0.0",
     description="Dedicated Multi-Agent AI Subsystem with RAG & Tool Execution for UniSphere AI Platform"
 )
+
+app.include_router(assistant_router)
+app.include_router(rag_expanded_router)
+
 
 app.add_middleware(
     CORSMiddleware,

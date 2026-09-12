@@ -114,6 +114,8 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
       : role === 'hod'
       ? 'parent'
       : role === 'parent'
+      ? 'librarian'
+      : role === 'librarian'
       ? 'admin'
       : 'student';
 
@@ -131,6 +133,9 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
     } else if (targetRole === 'parent') {
       updatedName = 'Mr. Ramesh Kumar';
       updatedDept = 'Parent / Guardian Portal (Rahul Kumar)';
+    } else if (targetRole === 'librarian') {
+      updatedName = 'Mrs. Eleanor Vance';
+      updatedDept = 'Central University Library (Chief Librarian)';
     } else if (targetRole === 'admin') {
       updatedName = 'Admin Administrator';
       updatedDept = 'Central University Administration';

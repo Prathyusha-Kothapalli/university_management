@@ -7,6 +7,7 @@
     <application
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:label="UniSphere AI"
 =======
         android:label="UniSphere"
@@ -17,6 +18,9 @@
         android:label="UniSphere AI"
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+        android:label="UniSphere AI"
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
@@ -29,6 +33,7 @@
             android:windowSoftInputMode="adjustResize">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             
 =======
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
@@ -37,6 +42,11 @@
             
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+=======
+            
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
             <meta-data
               android:name="io.flutter.embedding.android.NormalTheme"
               android:resource="@style/NormalTheme"

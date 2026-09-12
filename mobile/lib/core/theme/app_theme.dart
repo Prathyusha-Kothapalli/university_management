@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import 'app_colors.dart';
 import 'app_typography.dart';
@@ -8,14 +9,17 @@ import 'app_typography.dart';
 class AppTheme {
 =======
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 import 'package:flutter/services.dart';
 import 'app_colors.dart';
 import 'app_typography.dart';
 
-/// Material 3 Themes (Light & Dark)
+/// Material 3 Themes (Light & Dark) for UniSphere AI Mobile Application.
 class AppTheme {
   AppTheme._();
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 import 'app_colors.dart';
@@ -26,12 +30,17 @@ class AppTheme {
 =======
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   static ThemeData get lightTheme {
     return ThemeData(
       useMaterial3: true,
       brightness: Brightness.light,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       primaryColor: AppColors.primary,
       scaffoldBackgroundColor: AppColors.backgroundLight,
       colorScheme: const ColorScheme.light(
@@ -51,12 +60,14 @@ class AppTheme {
         backgroundColor: AppColors.surfaceLight,
         foregroundColor: AppColors.textPrimaryLight,
         elevation: 0,
+        scrolledUnderElevation: 1,
         centerTitle: true,
         titleTextStyle: AppTypography.titleLarge,
         systemOverlayStyle: SystemUiOverlayStyle.dark,
       ),
       cardTheme: CardTheme(
         color: AppColors.surfaceLight,
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/web
@@ -123,6 +134,8 @@ class AppTheme {
         color: AppColors.surfaceLight,
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
@@ -130,6 +143,7 @@ class AppTheme {
         ),
         margin: EdgeInsets.zero,
       ),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -141,6 +155,8 @@ class AppTheme {
         labelStyle: const TextStyle(color: AppColors.textSecondaryLight, fontSize: 14),
 =======
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.primary,
@@ -156,7 +172,7 @@ class AppTheme {
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
           foregroundColor: AppColors.primary,
-          side: const BorderSide(color: AppColors.primary, width: 1.5),
+          side: const BorderSide(color: AppColors.primary),
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
@@ -167,6 +183,7 @@ class AppTheme {
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: Colors.white,
+<<<<<<< HEAD
         contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
 <<<<<<< HEAD
 =======
@@ -180,6 +197,9 @@ class AppTheme {
 =======
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: const BorderSide(color: AppColors.borderLight),
@@ -190,12 +210,13 @@ class AppTheme {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: AppColors.primary, width: 2),
+          borderSide: const BorderSide(color: AppColors.primary, width: 1.5),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: const BorderSide(color: AppColors.error),
         ),
+<<<<<<< HEAD
         focusedErrorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: const BorderSide(color: AppColors.error, width: 2),
@@ -234,10 +255,20 @@ class AppTheme {
         hintStyle: const TextStyle(color: AppColors.textMutedLight),
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+        hintStyle: const TextStyle(color: AppColors.textMutedLight, fontSize: 14),
+      ),
+      chipTheme: ChipThemeData(
+        backgroundColor: const Color(0xFFF1F5F9),
+        labelStyle: const TextStyle(fontSize: 12, color: AppColors.textPrimaryLight),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       ),
       dividerTheme: const DividerThemeData(
         color: AppColors.borderLight,
         thickness: 1,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         space: 1,
@@ -250,6 +281,9 @@ class AppTheme {
         space: 1,
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+        space: 1,
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       ),
     );
   }
@@ -260,6 +294,7 @@ class AppTheme {
       brightness: Brightness.dark,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       colorScheme: const ColorScheme.dark(
         primary: AppColors.primary,
@@ -277,12 +312,14 @@ class AppTheme {
       scaffoldBackgroundColor: AppColors.backgroundDark,
 =======
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       primaryColor: AppColors.primaryLight,
       scaffoldBackgroundColor: AppColors.backgroundDark,
       colorScheme: const ColorScheme.dark(
         primary: AppColors.primaryLight,
         onPrimary: Colors.white,
-        primaryContainer: Color(0xFF1E3A8A),
+        primaryContainer: AppColors.primaryDark,
         onPrimaryContainer: Colors.white,
         secondary: AppColors.secondaryLight,
         onSecondary: Colors.white,
@@ -292,6 +329,7 @@ class AppTheme {
         onError: Colors.white,
         outline: AppColors.borderDark,
       ),
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
       colorScheme: const ColorScheme.dark(
@@ -312,10 +350,13 @@ class AppTheme {
 =======
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       appBarTheme: const AppBarTheme(
         backgroundColor: AppColors.surfaceDark,
         foregroundColor: AppColors.textPrimaryDark,
         elevation: 0,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         centerTitle: true,
@@ -327,15 +368,19 @@ class AppTheme {
 =======
 =======
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
         scrolledUnderElevation: 1,
-        centerTitle: false,
+        centerTitle: true,
         titleTextStyle: TextStyle(
           fontSize: 18,
           fontWeight: FontWeight.w700,
           color: AppColors.textPrimaryDark,
         ),
+        systemOverlayStyle: SystemUiOverlayStyle.light,
       ),
       cardTheme: CardTheme(
+<<<<<<< HEAD
         color: AppColors.cardDark,
 <<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
@@ -349,6 +394,9 @@ class AppTheme {
         color: AppColors.surfaceDark,
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+        color: AppColors.surfaceDark,
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
@@ -356,6 +404,7 @@ class AppTheme {
         ),
         margin: EdgeInsets.zero,
       ),
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -367,6 +416,8 @@ class AppTheme {
         labelStyle: const TextStyle(color: AppColors.textSecondaryDark, fontSize: 14),
 =======
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           backgroundColor: AppColors.primaryLight,
@@ -379,19 +430,9 @@ class AppTheme {
           textStyle: AppTypography.labelLarge,
         ),
       ),
-      outlinedButtonTheme: OutlinedButtonThemeData(
-        style: OutlinedButton.styleFrom(
-          foregroundColor: AppColors.primaryLight,
-          side: const BorderSide(color: AppColors.primaryLight, width: 1.5),
-          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
-          ),
-          textStyle: AppTypography.labelLarge,
-        ),
-      ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
+<<<<<<< HEAD
         fillColor: const Color(0xFF1E293B),
         contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
 <<<<<<< HEAD
@@ -406,6 +447,10 @@ class AppTheme {
 =======
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+        fillColor: AppColors.surfaceDark,
+        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: const BorderSide(color: AppColors.borderDark),
@@ -418,6 +463,7 @@ class AppTheme {
           borderRadius: BorderRadius.circular(12),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
           borderSide: const BorderSide(color: AppColors.primaryLight, width: 2),
 =======
           borderSide: const BorderSide(color: AppColors.primary, width: 2),
@@ -428,11 +474,15 @@ class AppTheme {
           borderSide: const BorderSide(color: AppColors.primaryLight, width: 2),
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+          borderSide: const BorderSide(color: AppColors.primaryLight, width: 1.5),
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: const BorderSide(color: AppColors.error),
         ),
+<<<<<<< HEAD
         focusedErrorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: const BorderSide(color: AppColors.error, width: 2),
@@ -462,10 +512,20 @@ class AppTheme {
         hintStyle: const TextStyle(color: AppColors.textMutedDark),
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+        hintStyle: const TextStyle(color: AppColors.textMutedDark, fontSize: 14),
+      ),
+      chipTheme: ChipThemeData(
+        backgroundColor: const Color(0xFF334155),
+        labelStyle: const TextStyle(fontSize: 12, color: AppColors.textPrimaryDark),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       ),
       dividerTheme: const DividerThemeData(
         color: AppColors.borderDark,
         thickness: 1,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
         space: 1,
@@ -478,6 +538,9 @@ class AppTheme {
         space: 1,
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+        space: 1,
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       ),
     );
   }

@@ -43,8 +43,9 @@ export interface Announcement {
   id: string;
   title: string;
   date: string;
-  category: 'Exam' | 'Academic' | 'Campus' | 'Fee';
+  category: 'Exam' | 'Academic' | 'Campus' | 'Fee' | 'Placement' | 'Faculty';
   content: string;
+<<<<<<< HEAD
 =======
 import { User } from './user';
 
@@ -67,4 +68,8 @@ export interface AuthState {
   loading: boolean;
   error: string | null;
 >>>>>>> origin/web
+=======
+  author?: string;
+  targetRole?: 'all' | 'student' | 'faculty';
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 }

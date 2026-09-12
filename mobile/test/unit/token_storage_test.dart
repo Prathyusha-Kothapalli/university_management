@@ -1,6 +1,7 @@
 import 'package:flutter_test/flutter_test.dart';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import 'package:unisphere_mobile/services/token_storage_service.dart';
 
 void main() {
@@ -36,6 +37,8 @@ void main() {
 =======
 =======
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 import 'package:unisphere_mobile/models/user.dart';
 import 'package:unisphere_mobile/services/storage_service.dart';
 import 'package:unisphere_mobile/services/token_storage_service.dart';
@@ -54,9 +57,10 @@ void main() {
       expect(await tokenStorage.hasToken(), isFalse);
       expect(await tokenStorage.getToken(), isNull);
 
-      await tokenStorage.saveToken('jwt_mock_token_abc123');
+      await tokenStorage.saveToken('jwt_mock_token_abc123', refreshToken: 'jwt_refresh_456');
       expect(await tokenStorage.hasToken(), isTrue);
       expect(await tokenStorage.getToken(), 'jwt_mock_token_abc123');
+      expect(await tokenStorage.getRefreshToken(), 'jwt_refresh_456');
 
       await tokenStorage.deleteToken();
       expect(await tokenStorage.hasToken(), isFalse);
@@ -68,7 +72,6 @@ void main() {
         id: 'usr_test',
         name: 'Alex Mercer',
         email: 'alex@uni.edu',
-        role: 'student',
       );
 
       expect(await tokenStorage.getUser(), isNull);
@@ -104,6 +107,7 @@ void main() {
       expect(await tokenStorage.hasToken(), isFalse);
       expect(await tokenStorage.getUser(), isNull);
       expect(await tokenStorage.getSavedEmail(), isNull);
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
 =======
@@ -142,6 +146,8 @@ void main() {
       expect(await service.getToken(), isNull);
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     });
   });
 }

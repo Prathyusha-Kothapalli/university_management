@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'dart:io';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import 'package:http/http.dart' as http;
 
@@ -35,30 +36,27 @@ class ApiClient {
       );
 =======
 >>>>>>> origin/web
+=======
+import 'package:http/http.dart' as http;
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
 import '../constants/api_constants.dart';
 import '../../services/token_storage_service.dart';
 import 'api_exceptions.dart';
 
-/// Centralized HTTP API Client.
-///
-/// Handles:
-/// - Base URL resolution from [ApiConstants]
-/// - Automatic `Authorization: Bearer <token>` injection
-/// - REST verbs: GET, POST, PUT, DELETE
-/// - JSON serialization and deserialization
-/// - Robust HTTP & socket exception translation
+/// Centralized HTTP API Client with JSON handling and exception translation.
 class ApiClient {
   final String baseUrl;
   final TokenStorageService tokenStorage;
-  final HttpClient _httpClient;
+  final http.Client _httpClient;
 
   ApiClient({
     String? baseUrl,
     TokenStorageService? tokenStorage,
-    HttpClient? httpClient,
+    http.Client? httpClient,
   })  : baseUrl = baseUrl ?? ApiConstants.apiBaseUrl,
         tokenStorage = tokenStorage ?? TokenStorageService(),
+<<<<<<< HEAD
         _httpClient = httpClient ??
             (HttpClient()
               ..connectionTimeout =
@@ -92,6 +90,8 @@ class ApiClient {
     http.Client? httpClient,
     this.tokenProvider,
   })  : baseUrl = baseUrl ?? ApiConstants.API_BASE_URL,
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
         _httpClient = httpClient ?? http.Client();
 
   Uri _buildUri(String path, [Map<String, dynamic>? queryParameters]) {
@@ -104,14 +104,18 @@ class ApiClient {
       return uri.replace(
         queryParameters: queryParameters.map((k, v) => MapEntry(k, v.toString())),
       );
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
 =======
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     }
     return uri;
   }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -479,16 +483,17 @@ class ApiClient {
 <<<<<<< HEAD
 =======
   Future<Map<String, String>> _buildHeaders([Map<String, String>? customHeaders]) async {
+=======
+  Future<Map<String, String>> _buildHeaders(Map<String, String>? customHeaders) async {
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     final headers = <String, String>{
-      ApiConstants.headerContentType: ApiConstants.contentTypeJson,
-      'Accept': ApiConstants.contentTypeJson,
+      'Content-Type': 'application/json; charset=UTF-8',
+      'Accept': 'application/json',
     };
 
-    if (tokenProvider != null) {
-      final token = await tokenProvider!();
-      if (token != null && token.isNotEmpty) {
-        headers[ApiConstants.headerAuthorization] = '${ApiConstants.bearerPrefix}$token';
-      }
+    final token = await tokenStorage.getToken();
+    if (token != null && token.isNotEmpty) {
+      headers['Authorization'] = 'Bearer $token';
     }
 
     if (customHeaders != null) {
@@ -497,18 +502,68 @@ class ApiClient {
     return headers;
   }
 
+  dynamic _processResponse(http.Response response) {
+    final statusCode = response.statusCode;
+    dynamic jsonBody;
+
+    if (response.body.isNotEmpty) {
+      try {
+        jsonBody = jsonDecode(response.body);
+      } catch (_) {
+        jsonBody = response.body;
+      }
+    }
+
+    if (statusCode >= 200 && statusCode < 300) {
+      return jsonBody;
+    }
+
+    String message = 'Request failed with status: $statusCode';
+    if (jsonBody is Map<String, dynamic>) {
+      if (jsonBody.containsKey('detail')) {
+        final detail = jsonBody['detail'];
+        message = detail is String ? detail : detail.toString();
+      } else if (jsonBody.containsKey('message')) {
+        message = jsonBody['message'].toString();
+      }
+    }
+
+    switch (statusCode) {
+      case 400:
+      case 422:
+        Map<String, dynamic>? errors;
+        if (jsonBody is Map<String, dynamic> && jsonBody.containsKey('errors')) {
+          errors = jsonBody['errors'] as Map<String, dynamic>?;
+        }
+        throw ValidationException(message, errors);
+      case 401:
+        throw UnauthorizedException(message, jsonBody);
+      case 403:
+        throw ForbiddenException(message);
+      case 404:
+        throw NotFoundException(message);
+      case 408:
+        throw TimeoutException(message);
+      case 500:
+      case 502:
+      case 503:
+        throw ServerException(message, statusCode);
+      default:
+        throw ApiException(message, statusCode, jsonBody, jsonBody);
+    }
+  }
+
   Future<dynamic> get(
-    String path, {
+    String endpoint, {
     Map<String, dynamic>? queryParameters,
     Map<String, String>? headers,
   }) async {
-    final uri = _buildUri(path, queryParameters);
-    final requestHeaders = await _buildHeaders(headers);
-
+    final uri = _buildUri(endpoint, queryParameters);
     try {
+      final requestHeaders = await _buildHeaders(headers);
       final response = await _httpClient
           .get(uri, headers: requestHeaders)
-          .timeout(ApiConstants.receiveTimeout);
+          .timeout(ApiConstants.connectTimeout);
       return _processResponse(response);
     } on SocketException {
       throw const NetworkException();
@@ -520,20 +575,17 @@ class ApiClient {
   }
 
   Future<dynamic> post(
-    String path, {
+    String endpoint, {
     dynamic body,
+    Map<String, dynamic>? queryParameters,
     Map<String, String>? headers,
   }) async {
-    final uri = _buildUri(path);
-    final requestHeaders = await _buildHeaders(headers);
-
+    final uri = _buildUri(endpoint, queryParameters);
     try {
+      final requestHeaders = await _buildHeaders(headers);
+      final encodedBody = body != null ? jsonEncode(body) : null;
       final response = await _httpClient
-          .post(
-            uri,
-            headers: requestHeaders,
-            body: body != null ? jsonEncode(body) : null,
-          )
+          .post(uri, headers: requestHeaders, body: encodedBody)
           .timeout(ApiConstants.connectTimeout);
       return _processResponse(response);
     } on SocketException {
@@ -546,20 +598,17 @@ class ApiClient {
   }
 
   Future<dynamic> put(
-    String path, {
+    String endpoint, {
     dynamic body,
+    Map<String, dynamic>? queryParameters,
     Map<String, String>? headers,
   }) async {
-    final uri = _buildUri(path);
-    final requestHeaders = await _buildHeaders(headers);
-
+    final uri = _buildUri(endpoint, queryParameters);
     try {
+      final requestHeaders = await _buildHeaders(headers);
+      final encodedBody = body != null ? jsonEncode(body) : null;
       final response = await _httpClient
-          .put(
-            uri,
-            headers: requestHeaders,
-            body: body != null ? jsonEncode(body) : null,
-          )
+          .put(uri, headers: requestHeaders, body: encodedBody)
           .timeout(ApiConstants.connectTimeout);
       return _processResponse(response);
     } on SocketException {
@@ -572,20 +621,15 @@ class ApiClient {
   }
 
   Future<dynamic> delete(
-    String path, {
-    dynamic body,
+    String endpoint, {
+    Map<String, dynamic>? queryParameters,
     Map<String, String>? headers,
   }) async {
-    final uri = _buildUri(path);
-    final requestHeaders = await _buildHeaders(headers);
-
+    final uri = _buildUri(endpoint, queryParameters);
     try {
+      final requestHeaders = await _buildHeaders(headers);
       final response = await _httpClient
-          .delete(
-            uri,
-            headers: requestHeaders,
-            body: body != null ? jsonEncode(body) : null,
-          )
+          .delete(uri, headers: requestHeaders)
           .timeout(ApiConstants.connectTimeout);
       return _processResponse(response);
     } on SocketException {
@@ -597,62 +641,14 @@ class ApiClient {
     }
   }
 
-  dynamic _processResponse(http.Response response) {
-    dynamic jsonBody;
-    if (response.body.isNotEmpty) {
-      try {
-        jsonBody = jsonDecode(response.body);
-      } catch (_) {
-        jsonBody = response.body;
-      }
-    }
-
-    final statusCode = response.statusCode;
-    if (statusCode >= 200 && statusCode < 300) {
-      return jsonBody;
-    }
-
-    String errorMessage = 'Server request failed';
-    if (jsonBody is Map<String, dynamic>) {
-      if (jsonBody.containsKey('message')) {
-        errorMessage = jsonBody['message'].toString();
-      } else if (jsonBody.containsKey('detail')) {
-        errorMessage = jsonBody['detail'].toString();
-      } else if (jsonBody.containsKey('error')) {
-        errorMessage = jsonBody['error'].toString();
-      }
-    }
-
-    switch (statusCode) {
-      case 400:
-        throw ApiException(message: errorMessage, statusCode: 400, data: jsonBody);
-      case 401:
-        throw UnauthorizedException(message: errorMessage, data: jsonBody);
-      case 403:
-        throw ForbiddenException(message: errorMessage);
-      case 404:
-        throw NotFoundException(message: errorMessage);
-      case 422:
-        Map<String, dynamic>? errors;
-        if (jsonBody is Map<String, dynamic> && jsonBody['errors'] is Map) {
-          errors = Map<String, dynamic>.from(jsonBody['errors']);
-        }
-        throw ValidationException(message: errorMessage, errors: errors);
-      case 500:
-      case 502:
-      case 503:
-      case 504:
-        throw ServerException(message: errorMessage, statusCode: statusCode);
-      default:
-        throw ApiException(message: errorMessage, statusCode: statusCode, data: jsonBody);
-    }
-  }
-
   void close() {
     _httpClient.close();
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
 =======
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   }
 }

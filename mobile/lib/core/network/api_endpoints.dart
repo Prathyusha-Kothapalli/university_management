@@ -1,10 +1,15 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /// Shared API endpoint paths matching the Python FastAPI backend.
+=======
+/// Shared API endpoint paths for UniSphere AI Mobile Application.
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 class ApiEndpoints {
   ApiEndpoints._();
 
   // Authentication & Session
+<<<<<<< HEAD
 =======
 class ApiEndpoints {
   // Authentication
@@ -18,6 +23,8 @@ class ApiEndpoints {
 >>>>>>> 29907a7 (added flutter)
   // Authentication
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   static const String login = '/auth/login';
   static const String register = '/auth/register';
   static const String logout = '/auth/logout';
@@ -25,9 +32,21 @@ class ApiEndpoints {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   // Users & Profile
   static const String currentUser = '/users/me';
   static const String updateProfile = '/users/profile';
+
+  // HR & Career Management
+  static const String jobs = '/jobs';
+  static const String jobDetails = '/jobs'; // append /{id}
+  static const String applyJob = '/applications';
+  static const String myApplications = '/applications/me';
+  static const String resume = '/resume';
+  static const String interviews = '/interviews';
+  static const String myInterviews = '/interviews/me';
 
   // Academic Modules
   static const String courses = '/academic/courses';
@@ -40,9 +59,11 @@ class ApiEndpoints {
 
   // Communication & Services
   static const String notifications = '/notifications';
+  static const String notices = '/notices';
   static const String chatMessages = '/chat/messages';
   static const String placements = '/placements/drives';
   static const String aiChat = '/ai/chat';
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/web
@@ -70,4 +91,6 @@ class ApiEndpoints {
   static const String grades = '/academic/grades';
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 }

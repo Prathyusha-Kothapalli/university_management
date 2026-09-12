@@ -4,6 +4,7 @@ import 'package:unisphere_mobile/core/constants/app_constants.dart';
 import 'package:unisphere_mobile/main.dart';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import 'package:unisphere_mobile/state/auth_state.dart';
 
 void main() {
@@ -16,6 +17,8 @@ void main() {
     expect(find.text(AppConstants.appName), findsOneWidget);
     expect(find.byType(CircularProgressIndicator), findsOneWidget);
 =======
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 import 'package:unisphere_mobile/repositories/auth_repository.dart';
 import 'package:unisphere_mobile/repositories/user_repository.dart';
 import 'package:unisphere_mobile/services/storage_service.dart';
@@ -70,8 +73,11 @@ void main() {
     expect(find.text('Sign In'), findsOneWidget);
     expect(find.text('Create an Account'), findsOneWidget);
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
 =======
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 =======
 import 'package:unisphere_mobile/state/auth_state.dart';
 
@@ -84,7 +90,11 @@ void main() {
     // Verify UniSphere AI branding is displayed
     expect(find.text(AppConstants.appName), findsOneWidget);
     expect(find.byType(CircularProgressIndicator), findsOneWidget);
+<<<<<<< HEAD
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   });
 }

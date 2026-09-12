@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import '../core/theme/app_colors.dart';
 
 /// KPI/Statistic card for student/faculty dashboards.
@@ -15,6 +16,11 @@ import '../core/theme/app_colors.dart';
 /// KPI/Statistic card for student/faculty dashboards.
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+import '../core/theme/app_colors.dart';
+
+/// KPI/Statistic card for student/faculty dashboards.
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 class StatCard extends StatelessWidget {
   final String title;
   final String value;
@@ -23,6 +29,7 @@ class StatCard extends StatelessWidget {
   final Color color;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   final Color backgroundColor;
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
@@ -31,6 +38,12 @@ class StatCard extends StatelessWidget {
 =======
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+  final Color? backgroundColor;
+=======
+  final Color backgroundColor;
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
   const StatCard({
     super.key,
@@ -40,8 +53,14 @@ class StatCard extends StatelessWidget {
     required this.icon,
 <<<<<<< HEAD
 <<<<<<< HEAD
-    this.color = AppColors.primary,
+<<<<<<< HEAD
 =======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
+    this.color = AppColors.primary,
+<<<<<<< HEAD
+    this.backgroundColor,
+=======
+<<<<<<< HEAD
     required this.color,
     required this.backgroundColor,
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
@@ -52,12 +71,21 @@ class StatCard extends StatelessWidget {
     this.color = AppColors.primary,
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   });
 
   @override
   Widget build(BuildContext context) {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    final bg = backgroundColor ?? color.withOpacity(0.12);
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     return Card(
       elevation: 0,
       shape: RoundedRectangleBorder(
@@ -84,7 +112,7 @@ class StatCard extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.all(8),
                   decoration: BoxDecoration(
-                    color: color.withOpacity(0.12),
+                    color: bg,
                     borderRadius: BorderRadius.circular(10),
                   ),
                   child: Icon(icon, size: 18, color: color),
@@ -114,6 +142,7 @@ class StatCard extends StatelessWidget {
             ],
           ],
         ),
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/web
@@ -240,6 +269,8 @@ class StatCard extends StatelessWidget {
         ),
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       ),
     );
   }

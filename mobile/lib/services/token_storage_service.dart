@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /// Service interface and implementation for secure JWT token persistence.
 ///
 /// Follows security best practice:
@@ -63,32 +64,43 @@ class TokenStorageService {
 =======
 =======
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 import 'dart:convert';
 import '../core/constants/app_constants.dart';
 import '../models/user.dart';
 import 'storage_service.dart';
 
+/// Secure token & auth credential persistence service.
 class TokenStorageService {
   final IStorageService _storage;
 
   TokenStorageService({IStorageService? storage})
-      : _storage = storage ?? SecureFileStorageService();
+      : _storage = storage ?? InMemoryStorageService();
 
-  Future<void> saveToken(String token) async {
-    await _storage.write(AppConstants.tokenKey, token);
+  Future<void> saveToken(String accessToken, {String? refreshToken}) async {
+    await _storage.write(AppConstants.tokenKey, accessToken);
+    if (refreshToken != null) {
+      await _storage.write(AppConstants.refreshTokenKey, refreshToken);
+    }
   }
 
   Future<String?> getToken() async {
     return await _storage.read(AppConstants.tokenKey);
   }
 
-  Future<void> deleteToken() async {
-    await _storage.delete(AppConstants.tokenKey);
+  Future<String?> getRefreshToken() async {
+    return await _storage.read(AppConstants.refreshTokenKey);
   }
 
   Future<bool> hasToken() async {
     final token = await getToken();
     return token != null && token.trim().isNotEmpty;
+  }
+
+  Future<void> deleteToken() async {
+    await _storage.delete(AppConstants.tokenKey);
+    await _storage.delete(AppConstants.refreshTokenKey);
   }
 
   Future<void> saveUser(User user) async {
@@ -111,13 +123,13 @@ class TokenStorageService {
     await _storage.delete(AppConstants.userKey);
   }
 
-  Future<void> setRememberMe(bool remember) async {
-    await _storage.write(AppConstants.rememberMeKey, remember.toString());
+  Future<void> setRememberMe(bool value) async {
+    await _storage.write(AppConstants.rememberMeKey, value.toString());
   }
 
   Future<bool> getRememberMe() async {
-    final value = await _storage.read(AppConstants.rememberMeKey);
-    return value == 'true';
+    final val = await _storage.read(AppConstants.rememberMeKey);
+    return val == 'true';
   }
 
   Future<void> saveEmail(String email) async {
@@ -131,6 +143,7 @@ class TokenStorageService {
   Future<void> clearAuthData() async {
     await deleteToken();
     await deleteUser();
+<<<<<<< HEAD
     // Intentionally keep saved email if Remember Me is checked, otherwise wipe
     final remember = await getRememberMe();
     if (!remember) {
@@ -203,5 +216,14 @@ class TokenStorageService {
     await deleteToken();
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+    await _storage.delete(AppConstants.savedEmailKey);
+    await _storage.delete(AppConstants.rememberMeKey);
+  }
+
+  Future<void> clearAll() async {
+    await clearAuthData();
+    await _storage.clear();
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   }
 }

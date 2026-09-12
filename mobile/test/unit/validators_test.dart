@@ -4,6 +4,7 @@ import 'package:unisphere_mobile/core/utils/validators.dart';
 void main() {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   group('Validators Tests', () {
     test('validateEmail validates correctly', () {
       expect(Validators.validateEmail(''), isNotNull);
@@ -40,12 +41,21 @@ void main() {
 =======
 =======
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   group('Validators Unit Tests', () {
     test('validateRequired tests', () {
       expect(Validators.validateRequired(null, 'Username'), 'Username is required');
       expect(Validators.validateRequired('', 'Username'), 'Username is required');
       expect(Validators.validateRequired('   ', 'Username'), 'Username is required');
       expect(Validators.validateRequired('alex', 'Username'), isNull);
+    });
+
+    test('validateName tests', () {
+      expect(Validators.validateName(null), 'Full name is required');
+      expect(Validators.validateName(''), 'Full name is required');
+      expect(Validators.validateName('A'), 'Name must be at least 2 characters long');
+      expect(Validators.validateName('Alex Mercer'), isNull);
     });
 
     test('validateEmail tests', () {
@@ -73,6 +83,7 @@ void main() {
     test('validatePhone tests', () {
       expect(Validators.validatePhone(null), 'Phone number is required');
       expect(Validators.validatePhone('12'), 'Please enter a valid phone number');
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
 =======
@@ -112,6 +123,9 @@ void main() {
       expect(Validators.validatePhone('abc'), isNotNull);
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+      expect(Validators.validatePhone('abc'), 'Please enter a valid phone number');
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       expect(Validators.validatePhone('+1 (555) 234-5678'), isNull);
       expect(Validators.validatePhone('9876543210'), isNull);
     });

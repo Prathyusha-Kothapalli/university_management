@@ -67,24 +67,17 @@ export const LoginPage: React.FC = () => {
       >
         {/* Header */}
         <div style={{ textAlign: 'center', marginBottom: '2rem' }}>
-          <div
+          <img
+            src="/logo.png"
+            alt="UniSphere AI Logo"
             style={{
-              width: '54px',
-              height: '54px',
-              borderRadius: '14px',
-              background: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
-              color: '#ffffff',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '1.8rem',
-              fontWeight: 800,
+              width: '72px',
+              height: '72px',
+              objectFit: 'contain',
               margin: '0 auto 12px auto',
-              boxShadow: '0 8px 20px rgba(37, 99, 235, 0.4)',
+              filter: 'drop-shadow(0 8px 20px rgba(37, 99, 235, 0.5))',
             }}
-          >
-            U
-          </div>
+          />
           <h2 style={{ margin: 0, fontSize: '1.6rem', fontWeight: 800, color: '#f8fafc' }}>
             UniSphere <span style={{ color: '#38bdf8' }}>AI</span>
           </h2>

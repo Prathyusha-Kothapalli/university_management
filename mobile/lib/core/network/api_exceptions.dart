@@ -1,12 +1,21 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 /// Base class for all API and Network exceptions.
 class ApiException implements Exception {
   final String message;
   final int? statusCode;
   final dynamic details;
+  final dynamic data;
 
-  const ApiException(this.message, {this.statusCode, this.details});
+  const ApiException([
+    this.message = 'An error occurred. Please try again.',
+    this.statusCode,
+    this.details,
+    this.data,
+  ]);
 
   @override
   String toString() => message;
@@ -14,42 +23,43 @@ class ApiException implements Exception {
 
 /// Thrown when device has no network connection.
 class NetworkException extends ApiException {
-  const NetworkException([String message = 'No internet connection. Please check your network.'])
-      : super(message, statusCode: 0);
+  const NetworkException([
+    String message = 'Unable to connect to the server. Please check your network connection.',
+  ]) : super(message, 0);
 }
 
 /// Thrown on HTTP request timeout.
 class TimeoutException extends ApiException {
-  const TimeoutException([String message = 'The connection has timed out. Please try again.'])
-      : super(message, statusCode: 408);
+  const TimeoutException([
+    String message = 'The connection has timed out. Please try again.',
+  ]) : super(message, 408);
 }
 
 /// Thrown when user credentials or token are invalid/expired (HTTP 401).
 class UnauthorizedException extends ApiException {
-  const UnauthorizedException([String message = 'Invalid credentials or session expired.'])
-      : super(message, statusCode: 401);
+  const UnauthorizedException([
+    String message = 'Invalid credentials or session expired. Please log in again.',
+    dynamic data,
+  ]) : super(message, 401, null, data);
 }
 
 /// Thrown when user lacks permission to access resource (HTTP 403).
 class ForbiddenException extends ApiException {
-  const ForbiddenException([String message = 'Access denied. You do not have permission.'])
-      : super(message, statusCode: 403);
+  const ForbiddenException([
+    String message = 'Access denied. You do not have permission to perform this action.',
+  ]) : super(message, 403);
 }
 
 /// Thrown when resource is not found (HTTP 404).
 class NotFoundException extends ApiException {
-  const NotFoundException([String message = 'Requested resource was not found on the server.'])
-      : super(message, statusCode: 404);
-}
-
-/// Thrown on backend 5xx errors.
-class ServerException extends ApiException {
-  const ServerException([String message = 'Server encountered an error. Please try again later.'])
-      : super(message, statusCode: 500);
+  const NotFoundException([
+    String message = 'Requested resource was not found on the server.',
+  ]) : super(message, 404);
 }
 
 /// Thrown on 400 or 422 validation errors.
 class ValidationException extends ApiException {
+<<<<<<< HEAD
   final Map<String, List<String>> errors;
 
   const ValidationException(
@@ -106,18 +116,22 @@ class NotFoundException extends ApiException {
 }
 
 class ValidationException extends ApiException {
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   final Map<String, dynamic>? errors;
 
-  const ValidationException({
-    String message = 'Validation failed. Please check the entered information.',
+  const ValidationException([
+    String message = 'Validation failed. Please verify your input.',
     this.errors,
-  }) : super(message: message, statusCode: 422, data: errors);
+  ]) : super(message, 422, errors, errors);
 }
 
+/// Thrown on backend 5xx errors.
 class ServerException extends ApiException {
-  const ServerException({
-    String message = 'The server encountered an error. Please try again later.',
+  const ServerException([
+    String message = 'Server encountered an error. Please try again later.',
     int? statusCode,
+<<<<<<< HEAD
   }) : super(message: message, statusCode: statusCode ?? 500);
 <<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
@@ -181,4 +195,7 @@ class ValidationException extends ApiException {
   }) : super(message, statusCode: 422);
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+  ]) : super(message, statusCode ?? 500);
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 }

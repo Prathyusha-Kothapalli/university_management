@@ -30,9 +30,20 @@ export const Navbar: React.FC = () => {
   }, []);
 
   const handleRoleToggle = () => {
-    const nextRole: UserRole = role === 'student' ? 'faculty' : role === 'faculty' ? 'hod' : role === 'hod' ? 'parent' : role === 'parent' ? 'admin' : 'student';
+    const nextRole: UserRole = role === 'student' ? 'faculty' : role === 'faculty' ? 'hod' : role === 'hod' ? 'parent' : role === 'parent' ? 'librarian' : role === 'librarian' ? 'admin' : 'student';
     switchRole(nextRole);
-    const targetPath = nextRole === 'parent' ? '/parent/dashboard' : nextRole === 'hod' ? '/hod/dashboard' : '/dashboard';
+    const targetPath =
+      nextRole === 'admin'
+        ? '/admin/dashboard'
+        : nextRole === 'faculty'
+        ? '/faculty/dashboard'
+        : nextRole === 'hod'
+        ? '/hod/dashboard'
+        : nextRole === 'parent'
+        ? '/parent/dashboard'
+        : nextRole === 'librarian'
+        ? '/librarian/dashboard'
+        : '/dashboard';
     navigate(targetPath);
     showToast(`Switched active portal view to ${nextRole.toUpperCase()}`, 'info');
   };
@@ -47,6 +58,7 @@ export const Navbar: React.FC = () => {
     { label: 'Dashboard & KPIs', path: '/dashboard', cat: 'Overview' },
     { label: 'Parent & Guardian Portal', path: '/parent/dashboard', cat: 'Parent Portal' },
     { label: 'HOD Department Portal', path: '/hod/dashboard', cat: 'Management' },
+    { label: 'Librarian Operations Dashboard', path: '/librarian/dashboard', cat: 'Management' },
     { label: 'Academics & Courses', path: '/academics', cat: 'Academics' },
     { label: 'Assignments & Study Notes', path: '/learning', cat: 'Learning' },
     { label: 'Exams, Grades & Transcripts', path: '/exams', cat: 'Exams' },
@@ -84,23 +96,16 @@ export const Navbar: React.FC = () => {
         onClick={() => navigate('/dashboard')}
         style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}
       >
-        <div
+        <img
+          src="/logo.png"
+          alt="UniSphere AI Logo"
           style={{
-            width: '36px',
-            height: '36px',
-            borderRadius: '10px',
-            background: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            color: '#ffffff',
-            fontWeight: 800,
-            fontSize: '1.15rem',
-            boxShadow: '0 4px 12px rgba(37, 99, 235, 0.4)',
+            width: '38px',
+            height: '38px',
+            objectFit: 'contain',
+            filter: 'drop-shadow(0 4px 10px rgba(37, 99, 235, 0.5))',
           }}
-        >
-          U
-        </div>
+        />
         <div>
           <div style={{ fontWeight: 800, fontSize: '1.15rem', color: '#f8fafc', letterSpacing: '-0.3px' }}>
             UniSphere <span style={{ color: '#38bdf8' }}>AI</span>
@@ -113,70 +118,38 @@ export const Navbar: React.FC = () => {
 
       {/* Center Command Palette Search Bar */}
       {user && (
-        <button
-          onClick={() => setIsCommandPaletteOpen(true)}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '10px',
-            padding: '6px 14px',
-            backgroundColor: 'rgba(255, 255, 255, 0.04)',
-            border: '1px solid rgba(255, 255, 255, 0.1)',
-            borderRadius: '20px',
-            color: '#94a3b8',
-            fontSize: '0.8rem',
-            cursor: 'pointer',
-            width: '260px',
-          }}
-        >
-          <Search size={14} style={{ color: '#38bdf8' }} />
-          <span style={{ flex: 1, textAlign: 'left' }}>Quick Search Modules...</span>
-          <span style={{ fontSize: '0.7rem', padding: '2px 6px', background: 'rgba(255,255,255,0.08)', borderRadius: '4px', border: '1px solid rgba(255,255,255,0.1)' }}>
-            Ctrl+K
-          </span>
-        </button>
-      )}
-
-      {/* Quick Actions & Profile */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-        {user && (
-          <>
-            {/* Role Switcher Pill */}
-            <button
-              onClick={handleRoleToggle}
-              title="Click to toggle between Admin, Faculty, and Student views"
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '6px',
-                padding: '6px 14px',
-                borderRadius: '20px',
-                border: '1px solid rgba(56, 189, 248, 0.4)',
-                background: 'rgba(37, 99, 235, 0.15)',
-                color: '#38bdf8',
-                fontSize: '0.75rem',
-                fontWeight: 700,
-                cursor: 'pointer',
-                transition: 'all 0.15s ease',
-              }}
-            >
-              <RefreshCw size={13} />
-              <span>Role: {role.toUpperCase()}</span>
-            </button>
-
-            {/* Theme Toggle */}
+        <nav style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+          {(user.role === 'faculty'
+            ? [
+                { id: 'dashboard', label: 'Dashboard' },
+                { id: 'courses', label: 'Teaching Courses' },
+                { id: 'schedule', label: 'Timetable' },
+                { id: 'announcements', label: 'Announcements 📢' },
+                { id: 'profile', label: 'My Profile' },
+              ]
+            : [
+                { id: 'dashboard', label: 'Dashboard' },
+                { id: 'courses', label: 'Courses' },
+                { id: 'schedule', label: 'Timetable' },
+                { id: 'placements', label: 'Placements 💼' },
+                { id: 'announcements', label: 'Announcements 📢' },
+                { id: 'profile', label: 'My Profile' },
+              ]
+          ).map((item) => (
             <button
               onClick={toggleTheme}
               title={`Switch to ${theme === 'dark' ? 'Light' : 'Dark'} mode`}
               style={{
-                background: 'rgba(255, 255, 255, 0.05)',
-                border: '1px solid rgba(255, 255, 255, 0.1)',
-                color: '#e2e8f0',
-                padding: '7px',
+                background: currentView === item.id ? 'rgba(37, 99, 235, 0.2)' : 'transparent',
+                color: currentView === item.id ? '#38bdf8' : '#94a3b8',
+                border: currentView === item.id ? '1px solid rgba(56, 189, 248, 0.3)' : '1px solid transparent',
+                padding: '7px 14px',
                 borderRadius: '8px',
+                fontSize: '0.85rem',
+                fontWeight: currentView === item.id ? 700 : 500,
                 cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
+                transition: 'all 0.2s',
+                whiteSpace: 'nowrap',
               }}
             >
               {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}

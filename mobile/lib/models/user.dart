@@ -1,8 +1,11 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 /// User role enum
 enum UserRole {
   student,
@@ -39,20 +42,37 @@ enum UserRole {
         return 'Staff';
     }
   }
+
+  String get roleString {
+    switch (this) {
+      case UserRole.student:
+        return 'student';
+      case UserRole.faculty:
+        return 'faculty';
+      case UserRole.admin:
+        return 'admin';
+      case UserRole.staff:
+        return 'staff';
+    }
+  }
 }
 
 /// User domain model representing an authenticated university member.
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
 =======
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 class User {
   final String id;
   final String name;
   final String email;
   final String? phone;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -63,6 +83,8 @@ class User {
   final DateTime? createdAt;
 =======
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   final UserRole role;
   final String? department;
   final String? studentId;
@@ -71,6 +93,7 @@ class User {
   final double? gpa;
   final double? attendanceRate;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
   final String role; // 'student', 'faculty', 'admin'
   final String? department;
@@ -81,6 +104,9 @@ class User {
 =======
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+  final DateTime? createdAt;
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
   const User({
     required this.id,
@@ -89,6 +115,9 @@ class User {
     this.phone,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     this.role = UserRole.student,
     this.department,
     this.studentId,
@@ -96,21 +125,35 @@ class User {
     this.enrolledYear,
     this.gpa,
     this.attendanceRate,
+    this.createdAt,
   });
 
+  String get roleDisplay => role.displayName;
+
+  String get initials {
+    final parts = name.trim().split(RegExp(r'\s+'));
+    if (parts.isEmpty || parts[0].isEmpty) return 'U';
+    if (parts.length == 1) return parts[0][0].toUpperCase();
+    return '${parts[0][0]}${parts[parts.length - 1][0]}'.toUpperCase();
+  }
+
   factory User.fromJson(Map<String, dynamic> json) {
+    final rawRole = json['role']?.toString();
+    final roleEnum = rawRole != null ? UserRole.fromString(rawRole) : UserRole.student;
+
     return User(
       id: json['id']?.toString() ?? '',
       name: json['name'] as String? ?? json['full_name'] as String? ?? '',
       email: json['email'] as String? ?? '',
       phone: json['phone'] as String?,
-      role: UserRole.fromString(json['role'] as String?),
+      role: roleEnum,
       department: json['department'] as String? ?? 'Computer Science & AI',
       studentId: json['student_id'] as String? ?? json['roll_no'] as String? ?? 'US-2026-042',
       avatarUrl: json['avatar_url'] as String?,
       enrolledYear: json['enrolled_year'] as String? ?? '2024 - 2028',
       gpa: (json['gpa'] as num?)?.toDouble() ?? 3.82,
       attendanceRate: (json['attendance_rate'] as num?)?.toDouble() ?? 94.5,
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/web
@@ -174,6 +217,9 @@ class User {
       attendanceRate: (json['attendance_rate'] as num?)?.toDouble() ?? 94.5,
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+      createdAt: json['created_at'] != null ? DateTime.tryParse(json['created_at'].toString()) : null,
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     );
   }
 
@@ -181,8 +227,10 @@ class User {
     return {
       'id': id,
       'name': name,
+      'full_name': name,
       'email': email,
       'phone': phone,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -194,12 +242,16 @@ class User {
 =======
 >>>>>>> origin/web
       'role': role.name,
+=======
+      'role': role.roleString,
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       'department': department,
       'student_id': studentId,
       'avatar_url': avatarUrl,
       'enrolled_year': enrolledYear,
       'gpa': gpa,
       'attendance_rate': attendanceRate,
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
       'role': role,
@@ -211,6 +263,9 @@ class User {
 =======
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+      'created_at': createdAt?.toIso8601String(),
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     };
   }
 
@@ -221,6 +276,7 @@ class User {
     String? phone,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     String? role,
     String? department,
@@ -229,6 +285,8 @@ class User {
     DateTime? createdAt,
 =======
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     UserRole? role,
     String? department,
     String? studentId,
@@ -236,6 +294,7 @@ class User {
     String? enrolledYear,
     double? gpa,
     double? attendanceRate,
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     String? role,
@@ -247,6 +306,9 @@ class User {
 =======
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+    DateTime? createdAt,
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   }) {
     return User(
       id: id ?? this.id,
@@ -257,6 +319,7 @@ class User {
       department: department ?? this.department,
       studentId: studentId ?? this.studentId,
       avatarUrl: avatarUrl ?? this.avatarUrl,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
       enrolledYear: enrolledYear ?? this.enrolledYear,
@@ -292,4 +355,12 @@ class User {
   }
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+      enrolledYear: enrolledYear ?? this.enrolledYear,
+      gpa: gpa ?? this.gpa,
+      attendanceRate: attendanceRate ?? this.attendanceRate,
+      createdAt: createdAt ?? this.createdAt,
+    );
+  }
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 }

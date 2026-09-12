@@ -1,4 +1,4 @@
-from typing import Dict, List, Optional
+from typing import Dict, List, Optional, Any
 from datetime import datetime
 from ai.app.schemas.schemas import AgentQueryRequest, AgentQueryResponse
 from ai.app.agents.registry import AgentRegistry

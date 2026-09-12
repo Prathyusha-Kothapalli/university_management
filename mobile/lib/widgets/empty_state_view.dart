@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../core/theme/app_colors.dart';
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 /// Reusable empty placeholder view with title, message, and optional action button.
 =======
@@ -16,13 +17,35 @@ import 'custom_button.dart';
 /// Reusable empty placeholder view with title, message, and optional action button.
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+
+/// Reusable empty placeholder view with title, message, and optional action button.
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 class EmptyStateView extends StatelessWidget {
   final IconData icon;
   final String title;
   final String message;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   final String? actionText;
+<<<<<<< HEAD
+  final String? buttonText;
+  final VoidCallback? onAction;
+  final VoidCallback? onButtonPressed;
+
+  const EmptyStateView({
+    super.key,
+    this.icon = Icons.inbox_outlined,
+    required this.title,
+    required this.message,
+    this.actionText,
+    this.buttonText,
+    this.onAction,
+    this.onButtonPressed,
+=======
   final VoidCallback? onAction;
 
   const EmptyStateView({
@@ -32,6 +55,7 @@ class EmptyStateView extends StatelessWidget {
     required this.message,
     this.actionText,
     this.onAction,
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/web
@@ -61,10 +85,16 @@ class EmptyStateView extends StatelessWidget {
     this.onAction,
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   });
 
   @override
   Widget build(BuildContext context) {
+    final label = actionText ?? buttonText;
+    final callback = onAction ?? onButtonPressed;
+
     return Center(
       child: Padding(
         padding: const EdgeInsets.all(32),
@@ -76,6 +106,7 @@ class EmptyStateView extends StatelessWidget {
               decoration: BoxDecoration(
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
                 color: AppColors.primaryLight,
                 shape: BoxShape.circle,
@@ -83,6 +114,8 @@ class EmptyStateView extends StatelessWidget {
               child: Icon(icon, size: 48, color: AppColors.primary),
 =======
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
                 color: AppColors.primary.withOpacity(0.08),
                 shape: BoxShape.circle,
               ),
@@ -91,6 +124,7 @@ class EmptyStateView extends StatelessWidget {
                 size: 48,
                 color: AppColors.primary,
               ),
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
                 color: AppColors.primaryLight,
@@ -101,6 +135,8 @@ class EmptyStateView extends StatelessWidget {
 =======
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
             ),
             const SizedBox(height: 20),
             Text(
@@ -124,11 +160,29 @@ class EmptyStateView extends StatelessWidget {
             ),
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            if (label != null && callback != null) ...[
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: callback,
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: AppColors.primary,
+                  foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                ),
+                child: Text(label),
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
             if (actionText != null && onAction != null) ...[
               const SizedBox(height: 20),
               OutlinedButton(
                 onPressed: onAction,
                 child: Text(actionText!),
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> origin/web
@@ -150,6 +204,9 @@ class EmptyStateView extends StatelessWidget {
                 child: Text(actionText!),
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
               ),
             ],
           ],

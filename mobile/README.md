@@ -1,7 +1,6 @@
 <<<<<<< HEAD
 # UniSphere Mobile — University Management Application
 
-<<<<<<< HEAD
 A complete, production-ready Flutter mobile application built for Android & iOS with **Material 3**, **JWT authentication**, and offline functionality, sharing the exact same **Python FastAPI** backend as the React web application.
 
 ---
@@ -59,6 +58,7 @@ A complete, production-ready Flutter mobile application built for Android & iOS 
    │Placements │ │ Campus    │ │  AI Assistant   │
    │  Screen   │ │   Chat    │ │  (Floating Bot) │
    └───────────┘ └───────────┘ └─────────────────┘
+<<<<<<< HEAD
 =======
 A complete, production-ready Flutter mobile application for the **UniSphere AI** Multi-Tenant University Management Platform.
 
@@ -186,12 +186,17 @@ A production-ready, multi-tenant Flutter mobile application built with **Materia
                          (Logout)───────────┘
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 ```
 
 ---
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 ## 🏗️ Folder Architecture
 
 ```
@@ -221,80 +226,35 @@ lib/
 │   └── user.dart                   <-- User profile domain model (roles, GPA, student ID)
 ├── repositories/
 │   ├── auth_repository.dart        <-- Session lifecycle, login, register, logout
-│   └── user_repository.dart        <-- User profile fetching & updating
+│   └── user_repository.dart        <-- Profile fetch and updates
 ├── screens/
-│   ├── ai_assistant/
-│   │   └── ai_assistant_screen.dart<-- Interactive Campus AI Chatbot
-│   ├── assignments/
-│   │   └── assignments_screen.dart <-- Coursework tasks and submissions
-│   ├── attendance/
-│   │   └── attendance_screen.dart  <-- Subject-wise attendance and safety thresholds
-│   ├── auth/
-│   │   ├── login_screen.dart       <-- Login with quick demo buttons & validation
-│   │   └── register_screen.dart    <-- Registration with role selector
-│   ├── chat/
-│   │   └── chat_screen.dart        <-- Messaging with professors and advisors
-│   ├── exams/
-│   │   └── exams_screen.dart       <-- Exam schedules, hall tickets, CGPA transcripts
-│   ├── home/
-│   │   └── home_screen.dart        <-- Main dashboard connecting all campus modules
-│   ├── notifications/
-│   │   └── notifications_screen.dart<-- Push alerts & campus notices
-│   ├── placements/
-│   │   └── placements_screen.dart  <-- Campus recruitment drives & applications
-│   ├── profile/
-│   │   ├── edit_profile_dialog.dart<-- Modal to update name and phone
-│   │   └── profile_screen.dart     <-- Profile inspection & logout
-│   └── splash/
-│       └── splash_screen.dart      <-- Animated university crest & token check
+│   ├── ai_assistant/               <-- Campus AI Copilot
+│   ├── assignments/                <-- Assignments & Coursework
+│   ├── attendance/                 <-- Attendance Tracking
+│   ├── auth/                       <-- Login & Registration
+│   ├── chat/                       <-- Direct Messaging
+│   ├── exams/                      <-- Exam Schedules & Hall Tickets
+│   ├── home/                       <-- Main Dashboard & Navigation
+│   ├── notifications/              <-- Campus Notices & Alerts
+│   ├── placements/                 <-- Campus Placements & Recruitment
+│   ├── profile/                    <-- User Profile & Settings
+│   ├── splash/                     <-- Initial splash screen
+│   └── timetable/                  <-- Weekly Timetable
 ├── services/
-│   ├── api_service.dart            <-- High-level API calls with mock fallback
-│   ├── mock_data_service.dart      <-- Offline demo datasets
-│   ├── storage_service.dart        <-- User profile caching
-│   └── token_storage_service.dart  <-- Secure JWT access & refresh token persistence
+│   ├── api_service.dart            <-- High-level REST API service with fallback
+│   ├── mock_data_service.dart      <-- Demo data for offline testing
+│   ├── storage_service.dart        <-- Local persistence service
+│   └── token_storage_service.dart  <-- Secure token storage
 ├── state/
-│   ├── auth_state.dart             <-- Reactive ChangeNotifier for authentication
-│   └── profile_state.dart          <-- Reactive ChangeNotifier for profile updates
-├── widgets/
-│   ├── custom_button.dart          <-- Material 3 button with loading spinner
-│   ├── custom_text_field.dart      <-- Input field with validation & password toggle
-│   ├── empty_state_view.dart       <-- Placeholder for empty views
-│   ├── error_card.dart             <-- Dismissible error alert
-│   ├── loading_indicator.dart      <-- Centered progress indicator
-│   ├── stat_card.dart              <-- Academic metric card (GPA, Attendance)
-│   └── user_avatar.dart            <-- User initials avatar
-└── main.dart                       <-- App bootstrap, themes & routing
+│   ├── auth_state.dart             <-- Authentication state notifier
+│   └── profile_state.dart          <-- Profile state notifier
+├── widgets/                        <-- Reusable UI components
+└── main.dart                       <-- Application entrypoint
 ```
 
 ---
 
-## ⚙️ Backend API Configuration (Python FastAPI)
-
-Both the Flutter mobile application and React web frontend communicate with the shared Python FastAPI backend.
-To switch the mobile app's active backend address, edit **[`lib/core/constants/api_constants.dart`](lib/core/constants/api_constants.dart)**:
-
-```dart
-class ApiConstants {
-  // Android Emulator:
-  static const String apiBaseUrl = 'http://10.0.2.2:8000/api/v1';
-
-  // iOS Simulator / Web / Desktop:
-  // static const String apiBaseUrl = 'http://localhost:8000/api/v1';
-
-  // Physical Phone on LAN:
-  // static const String apiBaseUrl = 'http://192.168.1.X:8000/api/v1';
-}
-```
-
----
-
-## 🧪 Automated Testing
-
-```bash
-cd mobile
-flutter test
-```
-=======
+<<<<<<< HEAD
 ## ⚙️ Backend API Configuration
 
 =======
@@ -328,9 +288,8 @@ class ApiConstants {
 ## 🔑 Demo Credentials
 
 For quick testing without creating an account:
-- **Email**: `student@university.edu`
-- **Password**: `Password123!`
-*(Or click the **Fill** button on the Login screen)*
+- **Student**: `student@university.edu` / `Password123!`
+- **Faculty**: `faculty@university.edu` / `Password123!`
 
 ---
 
@@ -350,6 +309,7 @@ For quick testing without creating an account:
    ```bash
    flutter run
    ```
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
 =======
@@ -435,11 +395,36 @@ class ApiConstants {
 ## 🧪 Testing & Execution
 
 Run the automated test suite:
+=======
+=======
+## ⚙️ Backend API Configuration (Python FastAPI)
+
+Both the Flutter mobile application and React web frontend communicate with the shared Python FastAPI backend.
+To switch the mobile app's active backend address, edit **[`lib/core/constants/api_constants.dart`](lib/core/constants/api_constants.dart)**:
+
+```dart
+class ApiConstants {
+  // Android Emulator:
+  static const String apiBaseUrl = 'http://10.0.2.2:8000/api/v1';
+
+  // iOS Simulator / Web / Desktop:
+  // static const String apiBaseUrl = 'http://localhost:8000/api/v1';
+
+  // Physical Phone on LAN:
+  // static const String apiBaseUrl = 'http://192.168.1.X:8000/api/v1';
+}
+```
+
+---
+
+## 🧪 Automated Testing
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
 ```bash
 cd mobile
 flutter test
 ```
+<<<<<<< HEAD
 
 Run code analysis:
 
@@ -454,3 +439,6 @@ flutter run
 ```
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689

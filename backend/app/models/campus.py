@@ -73,3 +73,9 @@ class Campus(Base):
         "Department",
         back_populates="campus"
     )
+
+    classrooms = relationship(
+        "Classroom",
+        back_populates="campus",
+        cascade="all, delete-orphan"
+    )

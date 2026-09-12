@@ -1,4 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
+import 'package:unisphere_mobile/models/register_request.dart';
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 import 'package:unisphere_mobile/models/register_request.dart';
@@ -58,6 +60,8 @@ void main() {
 >>>>>>> origin/web
 import 'package:unisphere_mobile/models/login_request.dart';
 import 'package:unisphere_mobile/models/register_request.dart';
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 import 'package:unisphere_mobile/repositories/auth_repository.dart';
 import 'package:unisphere_mobile/services/storage_service.dart';
 import 'package:unisphere_mobile/services/token_storage_service.dart';
@@ -146,10 +150,14 @@ void main() {
       expect(authState.isAuthenticated, isFalse);
       expect(authState.currentUser, isNull);
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
 =======
 =======
 import 'package:unisphere_mobile/models/register_request.dart';
+=======
+=======
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 import 'package:unisphere_mobile/models/user.dart';
 import 'package:unisphere_mobile/repositories/auth_repository.dart';
 import 'package:unisphere_mobile/services/token_storage_service.dart';
@@ -201,8 +209,12 @@ void main() {
       expect(await tokenStorage.hasToken(), isTrue);
 
       await authRepository.logout();
+<<<<<<< HEAD
 >>>>>>> 29907a7 (added flutter)
 >>>>>>> origin/web
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
+>>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       expect(await tokenStorage.hasToken(), isFalse);
     });
   });

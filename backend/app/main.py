@@ -379,6 +379,21 @@ app.include_router(
     prefix="/api/v1"
 )
 
+app.include_router(
+    health_center_router,
+    prefix="/api/v1"
+)
+
+app.include_router(
+    canteen_router,
+    prefix="/api/v1"
+)
+
+app.include_router(
+    lost_and_found_router,
+    prefix="/api/v1"
+)
+
 
 @app.get("/health/")
 def health_check():

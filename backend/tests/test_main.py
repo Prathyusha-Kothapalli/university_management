@@ -23,3 +23,6 @@ def test_openapi_schema():
     assert "/api/v1/library-books/" in data["paths"]
     assert "/api/v1/hostels/" in data["paths"]
     assert "/api/v1/placement-drives/" in data["paths"]
+    assert "/api/v1/health-center/medical-records" in data["paths"]
+    assert "/api/v1/canteen/menu-items" in data["paths"]
+    assert "/api/v1/lost-and-found/items" in data["paths"]

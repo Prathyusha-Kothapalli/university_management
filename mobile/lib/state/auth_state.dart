@@ -1,13 +1,21 @@
 import 'package:flutter/foundation.dart';
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import '../core/network/api_exceptions.dart';
 import '../models/login_request.dart';
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+import '../core/network/api_exceptions.dart';
+import '../models/login_request.dart';
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
 import '../models/register_request.dart';
 import '../models/user.dart';
 import '../repositories/auth_repository.dart';
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 /// Central reactive authentication and session state provider.
 class AuthState extends ChangeNotifier {
@@ -31,6 +39,8 @@ class AuthState extends ChangeNotifier {
   Future<bool> checkAuth() async {
     _isLoading = true;
 =======
+=======
+>>>>>>> origin/web
 enum AuthStatus {
   initial,
   loading,
@@ -91,11 +101,38 @@ class AuthState extends ChangeNotifier {
     bool rememberMe = false,
   }) async {
     _status = AuthStatus.loading;
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+/// Central reactive authentication and session state provider.
+class AuthState extends ChangeNotifier {
+  final AuthRepository _authRepository;
+
+  User? _currentUser;
+  bool _isLoading = false;
+  String? _errorMessage;
+  bool _isInitialized = false;
+
+  AuthState({AuthRepository? authRepository})
+      : _authRepository = authRepository ?? AuthRepository();
+
+  User? get currentUser => _currentUser;
+  bool get isAuthenticated => _currentUser != null;
+  bool get isLoading => _isLoading;
+  String? get errorMessage => _errorMessage;
+  bool get isInitialized => _isInitialized;
+
+  /// Check whether the user already has a valid token/session
+  Future<bool> checkAuth() async {
+    _isLoading = true;
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
     _errorMessage = null;
     notifyListeners();
 
     try {
+<<<<<<< HEAD
 <<<<<<< HEAD
       final user = await _authRepository.checkAuth();
       _currentUser = user;
@@ -108,6 +145,8 @@ class AuthState extends ChangeNotifier {
       _isInitialized = true;
       _isLoading = false;
 =======
+=======
+>>>>>>> origin/web
       final response = await _repository.login(
         LoginRequest(
           email: email.trim(),
@@ -131,13 +170,70 @@ class AuthState extends ChangeNotifier {
     } catch (e) {
       _status = AuthStatus.error;
       _errorMessage = 'An unexpected error occurred during login. Please try again.';
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+      final user = await _authRepository.checkAuth();
+      _currentUser = user;
+      _isInitialized = true;
+      _isLoading = false;
+      notifyListeners();
+      return _currentUser != null;
+    } catch (e) {
+      _currentUser = null;
+      _isInitialized = true;
+      _isLoading = false;
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
       notifyListeners();
       return false;
     }
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  /// Perform registration
+  Future<bool> register(RegisterRequest request) async {
+    _status = AuthStatus.loading;
+    _errorMessage = null;
+    notifyListeners();
+
+    try {
+      final response = await _repository.register(request);
+      _currentUser = response.user;
+      _status = AuthStatus.authenticated;
+      _errorMessage = null;
+      notifyListeners();
+      return true;
+    } on ApiException catch (e) {
+      _status = AuthStatus.error;
+      _errorMessage = e.message;
+      notifyListeners();
+      return false;
+    } catch (e) {
+      _status = AuthStatus.error;
+      _errorMessage = 'Registration failed. Please verify your details and try again.';
+      notifyListeners();
+      return false;
+    }
+  }
+
+  /// Perform logout
+  Future<void> logout() async {
+    _status = AuthStatus.loading;
+    notifyListeners();
+
+    try {
+      await _repository.logout();
+    } catch (_) {
+      // Ignored
+    } finally {
+      _currentUser = null;
+      _status = AuthStatus.unauthenticated;
+=======
+>>>>>>> origin/web
   /// Authenticate with email and password
   Future<bool> login(String email, String password) async {
     _isLoading = true;
@@ -208,6 +304,7 @@ class AuthState extends ChangeNotifier {
   /// Clear active error banner
   void clearError() {
     if (_errorMessage != null) {
+<<<<<<< HEAD
 =======
   /// Perform registration
   Future<bool> register(RegisterRequest request) async {
@@ -248,12 +345,18 @@ class AuthState extends ChangeNotifier {
       _currentUser = null;
       _status = AuthStatus.unauthenticated;
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
       _errorMessage = null;
       notifyListeners();
     }
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/web
 
   void updateUser(User updatedUser) {
     _currentUser = updatedUser;
@@ -267,5 +370,10 @@ class AuthState extends ChangeNotifier {
     }
     notifyListeners();
   }
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
 }

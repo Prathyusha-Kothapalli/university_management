@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../core/theme/app_colors.dart';
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 enum ButtonVariant { primary, secondary, outline, text }
 
 /// Reusable Material 3 custom button with loading state and icons.
@@ -9,12 +10,22 @@ enum ButtonVariant { primary, secondary, outline, text }
 enum ButtonVariant { primary, secondary, outlined, text, danger }
 
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+enum ButtonVariant { primary, secondary, outlined, text, danger }
+
+=======
+enum ButtonVariant { primary, secondary, outline, text }
+
+/// Reusable Material 3 custom button with loading state and icons.
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
 class CustomButton extends StatelessWidget {
   final String text;
   final VoidCallback? onPressed;
   final bool isLoading;
   final ButtonVariant variant;
   final IconData? icon;
+<<<<<<< HEAD
 <<<<<<< HEAD
   final bool isFullWidth;
   final Color? backgroundColor;
@@ -24,6 +35,16 @@ class CustomButton extends StatelessWidget {
   final double height;
   final double borderRadius;
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+  final double? width;
+  final double height;
+  final double borderRadius;
+=======
+  final bool isFullWidth;
+  final Color? backgroundColor;
+  final Color? textColor;
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
 
   const CustomButton({
     super.key,
@@ -33,6 +54,7 @@ class CustomButton extends StatelessWidget {
     this.variant = ButtonVariant.primary,
     this.icon,
 <<<<<<< HEAD
+<<<<<<< HEAD
     this.isFullWidth = true,
     this.backgroundColor,
     this.textColor,
@@ -41,10 +63,21 @@ class CustomButton extends StatelessWidget {
     this.height = 50,
     this.borderRadius = 12,
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+    this.width = double.infinity,
+    this.height = 50,
+    this.borderRadius = 12,
+=======
+    this.isFullWidth = true,
+    this.backgroundColor,
+    this.textColor,
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
   });
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
 <<<<<<< HEAD
     final Widget child = isLoading
         ? SizedBox(
@@ -56,6 +89,8 @@ class CustomButton extends StatelessWidget {
                 variant == ButtonVariant.outline || variant == ButtonVariant.text
                     ? (textColor ?? AppColors.primary)
 =======
+=======
+>>>>>>> origin/web
     final effectiveOnPressed = isLoading ? null : onPressed;
 
     Widget child = isLoading
@@ -67,12 +102,27 @@ class CustomButton extends StatelessWidget {
               valueColor: AlwaysStoppedAnimation<Color>(
                 variant == ButtonVariant.outlined || variant == ButtonVariant.text
                     ? AppColors.primary
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+    final Widget child = isLoading
+        ? SizedBox(
+            height: 20,
+            width: 20,
+            child: CircularProgressIndicator(
+              strokeWidth: 2.5,
+              valueColor: AlwaysStoppedAnimation<Color>(
+                variant == ButtonVariant.outline || variant == ButtonVariant.text
+                    ? (textColor ?? AppColors.primary)
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
                     : Colors.white,
               ),
             ),
           )
         : Row(
+<<<<<<< HEAD
 <<<<<<< HEAD
             mainAxisSize: isFullWidth ? MainAxisSize.max : MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
@@ -80,12 +130,24 @@ class CustomButton extends StatelessWidget {
               if (icon != null) ...[
                 Icon(icon, size: 20),
 =======
+=======
+>>>>>>> origin/web
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               if (icon != null) ...[
                 Icon(icon, size: 18),
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+            mainAxisSize: isFullWidth ? MainAxisSize.max : MainAxisSize.min,
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              if (icon != null) ...[
+                Icon(icon, size: 20),
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
                 const SizedBox(width: 8),
               ],
               Text(
@@ -101,6 +163,7 @@ class CustomButton extends StatelessWidget {
 
     Widget button;
 <<<<<<< HEAD
+<<<<<<< HEAD
     switch (variant) {
       case ButtonVariant.primary:
         button = ElevatedButton(
@@ -110,6 +173,8 @@ class CustomButton extends StatelessWidget {
             foregroundColor: textColor ?? Colors.white,
             disabledBackgroundColor: AppColors.primary.withOpacity(0.6),
 =======
+=======
+>>>>>>> origin/web
 
     switch (variant) {
       case ButtonVariant.primary:
@@ -123,7 +188,20 @@ class CustomButton extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(borderRadius),
             ),
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+    switch (variant) {
+      case ButtonVariant.primary:
+        button = ElevatedButton(
+          onPressed: isLoading ? null : onPressed,
+          style: ElevatedButton.styleFrom(
+            backgroundColor: backgroundColor ?? AppColors.primary,
+            foregroundColor: textColor ?? Colors.white,
+            disabledBackgroundColor: AppColors.primary.withOpacity(0.6),
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
           ),
           child: child,
         );
@@ -132,11 +210,14 @@ class CustomButton extends StatelessWidget {
       case ButtonVariant.secondary:
         button = ElevatedButton(
 <<<<<<< HEAD
+<<<<<<< HEAD
           onPressed: isLoading ? null : onPressed,
           style: ElevatedButton.styleFrom(
             backgroundColor: backgroundColor ?? AppColors.secondary,
             foregroundColor: textColor ?? Colors.white,
 =======
+=======
+>>>>>>> origin/web
           onPressed: effectiveOnPressed,
           style: ElevatedButton.styleFrom(
             backgroundColor: AppColors.secondary,
@@ -146,12 +227,22 @@ class CustomButton extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(borderRadius),
             ),
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+          onPressed: isLoading ? null : onPressed,
+          style: ElevatedButton.styleFrom(
+            backgroundColor: backgroundColor ?? AppColors.secondary,
+            foregroundColor: textColor ?? Colors.white,
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
           ),
           child: child,
         );
         break;
 
+<<<<<<< HEAD
 <<<<<<< HEAD
       case ButtonVariant.outline:
         button = OutlinedButton(
@@ -160,6 +251,8 @@ class CustomButton extends StatelessWidget {
             foregroundColor: textColor ?? AppColors.primary,
             side: BorderSide(color: backgroundColor ?? AppColors.primary, width: 1.5),
 =======
+=======
+>>>>>>> origin/web
       case ButtonVariant.danger:
         button = ElevatedButton(
           onPressed: effectiveOnPressed,
@@ -185,7 +278,18 @@ class CustomButton extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(borderRadius),
             ),
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+      case ButtonVariant.outline:
+        button = OutlinedButton(
+          onPressed: isLoading ? null : onPressed,
+          style: OutlinedButton.styleFrom(
+            foregroundColor: textColor ?? AppColors.primary,
+            side: BorderSide(color: backgroundColor ?? AppColors.primary, width: 1.5),
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
           ),
           child: child,
         );
@@ -194,23 +298,35 @@ class CustomButton extends StatelessWidget {
       case ButtonVariant.text:
         button = TextButton(
 <<<<<<< HEAD
+<<<<<<< HEAD
           onPressed: isLoading ? null : onPressed,
           style: TextButton.styleFrom(
             foregroundColor: textColor ?? AppColors.primary,
 =======
+=======
+>>>>>>> origin/web
           onPressed: effectiveOnPressed,
           style: TextButton.styleFrom(
             foregroundColor: AppColors.primary,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(borderRadius),
             ),
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+          onPressed: isLoading ? null : onPressed,
+          style: TextButton.styleFrom(
+            foregroundColor: textColor ?? AppColors.primary,
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
           ),
           child: child,
         );
         break;
     }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
     if (isFullWidth) {
       return SizedBox(
@@ -220,6 +336,8 @@ class CustomButton extends StatelessWidget {
     }
     return button;
 =======
+=======
+>>>>>>> origin/web
     if (width != null) {
       return SizedBox(
         width: width,
@@ -229,6 +347,18 @@ class CustomButton extends StatelessWidget {
     }
 
     return SizedBox(height: height, child: button);
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+    if (isFullWidth) {
+      return SizedBox(
+        width: double.infinity,
+        child: button,
+      );
+    }
+    return button;
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
   }
 }

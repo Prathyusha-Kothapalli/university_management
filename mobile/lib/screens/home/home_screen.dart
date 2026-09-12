@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../core/constants/app_constants.dart';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import '../../core/theme/app_colors.dart';
 import '../../services/mock_data_service.dart';
 import '../../state/auth_state.dart';
@@ -21,6 +22,8 @@ import '../timetable/timetable_screen.dart';
 class HomeScreen extends StatefulWidget {
   final AuthState authState;
 =======
+=======
+>>>>>>> origin/web
 import '../../core/constants/route_constants.dart';
 import '../../core/theme/app_colors.dart';
 import '../../state/auth_state.dart';
@@ -31,15 +34,38 @@ import '../../widgets/user_avatar.dart';
 class HomeScreen extends StatefulWidget {
   final AuthState authState;
   final ProfileState profileState;
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+import '../../core/theme/app_colors.dart';
+import '../../models/user.dart';
+import '../../services/mock_data_service.dart';
+import '../../state/auth_state.dart';
+import '../../widgets/stat_card.dart';
+import '../../widgets/user_avatar.dart';
+import '../auth/login_screen.dart';
+import '../profile/profile_screen.dart';
+
+/// Professional University Mobile Dashboard.
+class HomeScreen extends StatefulWidget {
+  final AuthState authState;
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
 
   const HomeScreen({
     super.key,
     required this.authState,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     required this.profileState,
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+    required this.profileState,
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
   });
 
   @override
@@ -47,6 +73,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+<<<<<<< HEAD
 <<<<<<< HEAD
   int _selectedBottomTab = 0;
 
@@ -61,6 +88,8 @@ class _HomeScreenState extends State<HomeScreen> {
           TextButton(
             onPressed: () => Navigator.of(ctx).pop(false),
 =======
+=======
+>>>>>>> origin/web
   @override
   void initState() {
     super.initState();
@@ -81,7 +110,24 @@ class _HomeScreenState extends State<HomeScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.of(ctx).pop(),
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+  int _selectedBottomTab = 0;
+
+  Future<void> _handleLogout() async {
+    final shouldLogout = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+        title: const Text('Sign Out'),
+        content: const Text('Are you sure you want to log out of UniSphere?'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(false),
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
             child: const Text('Cancel'),
           ),
           ElevatedButton(
@@ -90,9 +136,12 @@ class _HomeScreenState extends State<HomeScreen> {
               foregroundColor: Colors.white,
             ),
 <<<<<<< HEAD
+<<<<<<< HEAD
             onPressed: () => Navigator.of(ctx).pop(true),
             child: const Text('Sign Out'),
 =======
+=======
+>>>>>>> origin/web
             onPressed: () async {
               Navigator.of(ctx).pop();
               await widget.authState.logout();
@@ -104,12 +153,23 @@ class _HomeScreenState extends State<HomeScreen> {
               }
             },
             child: const Text('Logout'),
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+            onPressed: () => Navigator.of(ctx).pop(true),
+            child: const Text('Sign Out'),
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
           ),
         ],
       ),
     );
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/web
 
     if (shouldLogout == true && mounted) {
       await widget.authState.logout();
@@ -124,16 +184,38 @@ class _HomeScreenState extends State<HomeScreen> {
     }
   }
 
+<<<<<<< HEAD
   void _navigateTo(Widget screen) {
     Navigator.of(context).push(
       MaterialPageRoute(builder: (_) => screen),
     );
 =======
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+  void _navigateToProfile() {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) => ProfileScreen(authState: widget.authState),
+      ),
+    );
+  }
+
+  void _showModuleNotification(String moduleTitle) {
+    ScaffoldMessenger.of(context).showSnackBar(
+      SnackBar(
+        content: Text('$moduleTitle module accessed'),
+        duration: const Duration(seconds: 2),
+        behavior: SnackBarBehavior.floating,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+      ),
+    );
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
   }
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
 <<<<<<< HEAD
     return AnimatedBuilder(
       animation: widget.authState,
@@ -187,6 +269,8 @@ class _HomeScreenState extends State<HomeScreen> {
               children: [
                 // Welcome Hero Card
 =======
+=======
+>>>>>>> origin/web
     final user = widget.authState.currentUser;
     final userName = user?.name ?? 'Student';
     final userRole = user?.roleDisplay ?? 'Student';
@@ -255,23 +339,94 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // Welcome Card Banner
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+    return AnimatedBuilder(
+      animation: widget.authState,
+      builder: (context, _) {
+        final user = widget.authState.currentUser ?? MockDataService.defaultStudent;
+
+        return Scaffold(
+          backgroundColor: AppColors.backgroundLight,
+          appBar: AppBar(
+            elevation: 0,
+            title: Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(6),
+                  decoration: BoxDecoration(
+                    color: AppColors.primary,
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: const Icon(Icons.school_rounded, color: Colors.white, size: 18),
+                ),
+                const SizedBox(width: 10),
+                const Text(
+                  AppConstants.appName,
+                  style: TextStyle(
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: -0.3,
+                  ),
+                ),
+              ],
+            ),
+            actions: [
+              IconButton(
+                icon: const Icon(Icons.notifications_none_rounded),
+                tooltip: 'Notifications',
+                onPressed: () {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    const SnackBar(
+                      content: Text('No new campus alerts at this time.'),
+                      behavior: SnackBarBehavior.floating,
+                    ),
+                  );
+                },
+              ),
+              Padding(
+                padding: const EdgeInsets.only(right: 12),
+                child: UserAvatar(
+                  user: user,
+                  radius: 17,
+                  onTap: _navigateToProfile,
+                ),
+              ),
+            ],
+          ),
+          body: SingleChildScrollView(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Welcome Card
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
                 Container(
                   width: double.infinity,
                   padding: const EdgeInsets.all(20),
                   decoration: BoxDecoration(
                     gradient: const LinearGradient(
 <<<<<<< HEAD
+<<<<<<< HEAD
                       colors: [AppColors.primary, Color(0xFF1D4ED8)],
 =======
                       colors: [Color(0xFF0284C7), Color(0xFF1E3A8A)],
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+                      colors: [Color(0xFF0284C7), Color(0xFF1E3A8A)],
+=======
+                      colors: [AppColors.primary, Color(0xFF1D4ED8)],
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                     ),
                     borderRadius: BorderRadius.circular(20),
                     boxShadow: [
                       BoxShadow(
+<<<<<<< HEAD
 <<<<<<< HEAD
                         color: AppColors.primary.withOpacity(0.28),
                         blurRadius: 18,
@@ -281,6 +436,16 @@ class _HomeScreenState extends State<HomeScreen> {
                         blurRadius: 16,
                         offset: const Offset(0, 6),
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+                        color: AppColors.primary.withOpacity(0.3),
+                        blurRadius: 16,
+                        offset: const Offset(0, 6),
+=======
+                        color: AppColors.primary.withOpacity(0.28),
+                        blurRadius: 18,
+                        offset: const Offset(0, 8),
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
                       ),
                     ],
                   ),
@@ -295,34 +460,60 @@ class _HomeScreenState extends State<HomeScreen> {
                             decoration: BoxDecoration(
                               color: Colors.white.withOpacity(0.2),
 <<<<<<< HEAD
+<<<<<<< HEAD
                               borderRadius: BorderRadius.circular(12),
                             ),
                             child: Text(
                               user.role.displayName.toUpperCase(),
 =======
+=======
+>>>>>>> origin/web
                               borderRadius: BorderRadius.circular(20),
                             ),
                             child: Text(
                               userRole.toUpperCase(),
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+                              borderRadius: BorderRadius.circular(12),
+                            ),
+                            child: Text(
+                              user.role.displayName.toUpperCase(),
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
                               style: const TextStyle(
                                 color: Colors.white,
                                 fontSize: 11,
                                 fontWeight: FontWeight.w700,
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 letterSpacing: 0.5,
 =======
                                 letterSpacing: 0.8,
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+                                letterSpacing: 0.8,
+=======
+                                letterSpacing: 0.5,
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
                               ),
                             ),
                           ),
                           Text(
 <<<<<<< HEAD
+<<<<<<< HEAD
                             user.studentId ?? 'US-2026',
 =======
                             user?.studentId ?? 'ID: UNIV-2026',
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+                            user?.studentId ?? 'ID: UNIV-2026',
+=======
+                            user.studentId ?? 'US-2026',
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
                             style: TextStyle(
                               color: Colors.white.withOpacity(0.8),
                               fontSize: 12,
@@ -332,10 +523,13 @@ class _HomeScreenState extends State<HomeScreen> {
                         ],
                       ),
 <<<<<<< HEAD
+<<<<<<< HEAD
                       const SizedBox(height: 12),
                       Text(
                         'Welcome back, ${user.name.split(' ').first}!',
 =======
+=======
+>>>>>>> origin/web
                       const SizedBox(height: 14),
                       Text(
                         'Welcome back,',
@@ -347,7 +541,15 @@ class _HomeScreenState extends State<HomeScreen> {
                       const SizedBox(height: 2),
                       Text(
                         userName,
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+                      const SizedBox(height: 12),
+                      Text(
+                        'Welcome back, ${user.name.split(' ').first}!',
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
                         style: const TextStyle(
                           color: Colors.white,
                           fontSize: 22,
@@ -356,24 +558,38 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
 <<<<<<< HEAD
+<<<<<<< HEAD
                       const SizedBox(height: 4),
                       Text(
                         user.department ?? 'Computer Science & Engineering',
                         style: TextStyle(
                           color: Colors.white.withOpacity(0.85),
 =======
+=======
+>>>>>>> origin/web
                       const SizedBox(height: 6),
                       Text(
                         user?.department ?? 'Computer Science & Engineering',
                         style: TextStyle(
                           color: Colors.white.withOpacity(0.9),
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+                      const SizedBox(height: 4),
+                      Text(
+                        user.department ?? 'Computer Science & Engineering',
+                        style: TextStyle(
+                          color: Colors.white.withOpacity(0.85),
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
                           fontSize: 13,
                         ),
                       ),
                     ],
                   ),
                 ),
+<<<<<<< HEAD
 <<<<<<< HEAD
                 const SizedBox(height: 24),
 
@@ -405,6 +621,8 @@ class _HomeScreenState extends State<HomeScreen> {
                         ),
                       ),
 =======
+=======
+>>>>>>> origin/web
                 const SizedBox(height: 20),
 
                 // Quick Academic Stats
@@ -456,12 +674,16 @@ class _HomeScreenState extends State<HomeScreen> {
                       icon: Icons.calendar_today_rounded,
                       color: AppColors.feesOrange,
                       backgroundColor: const Color(0xFFFEF3C7),
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+>>>>>>> origin/web
                     ),
                   ],
                 ),
                 const SizedBox(height: 24),
 
+<<<<<<< HEAD
 <<<<<<< HEAD
                 // Main Campus Modules Section
                 const Text(
@@ -469,18 +691,24 @@ class _HomeScreenState extends State<HomeScreen> {
                   style: TextStyle(
                     fontSize: 18,
 =======
+=======
+>>>>>>> origin/web
                 // Main University Management Feature Modules
                 const Text(
                   'Campus Modules',
                   style: TextStyle(
                     fontSize: 16,
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+>>>>>>> origin/web
                     fontWeight: FontWeight.w700,
                     color: AppColors.textPrimaryLight,
                   ),
                 ),
                 const SizedBox(height: 12),
 
+<<<<<<< HEAD
 <<<<<<< HEAD
                 GridView.count(
                   crossAxisCount: 2,
@@ -622,6 +850,8 @@ class _HomeScreenState extends State<HomeScreen> {
                   );
                 }),
 =======
+=======
+>>>>>>> origin/web
                 _buildFeatureGrid(context),
                 const SizedBox(height: 24),
 
@@ -703,10 +933,31 @@ class _HomeScreenState extends State<HomeScreen> {
                           padding: const EdgeInsets.symmetric(vertical: 12),
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                         ),
+<<<<<<< HEAD
+=======
+=======
+                const SizedBox(height: 24),
+
+                // Academic Metrics / KPI Row
+                Row(
+                  children: [
+                    Expanded(
+                      child: StatCard(
+                        title: 'Current GPA',
+                        value: user.gpa?.toStringAsFixed(2) ?? '3.82',
+                        subtitle: 'Top 5% of class',
+                        icon: Icons.auto_graph_rounded,
+                        color: AppColors.primary,
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
                       ),
                     ),
                     const SizedBox(width: 12),
                     Expanded(
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> origin/web
                       child: OutlinedButton.icon(
                         icon: const Icon(Icons.logout_rounded, size: 18, color: AppColors.error),
                         label: const Text('Sign Out', style: TextStyle(color: AppColors.error)),
@@ -716,15 +967,185 @@ class _HomeScreenState extends State<HomeScreen> {
                           padding: const EdgeInsets.symmetric(vertical: 12),
                           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
                         ),
+<<<<<<< HEAD
+=======
+=======
+                      child: StatCard(
+                        title: 'Attendance',
+                        value: '${user.attendanceRate?.toStringAsFixed(1) ?? '94.5'}%',
+                        subtitle: 'Above requirement',
+                        icon: Icons.check_circle_outline_rounded,
+                        color: AppColors.success,
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
                       ),
                     ),
                   ],
                 ),
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+<<<<<<< HEAD
+=======
+                const SizedBox(height: 24),
+
+                // Main University Features Section
+                const Text(
+                  'Campus Modules',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w700,
+                    color: AppColors.textPrimaryLight,
+                  ),
+                ),
+                const SizedBox(height: 12),
+
+                GridView.count(
+                  crossAxisCount: 2,
+                  shrinkWrap: true,
+                  physics: const NeverScrollableScrollPhysics(),
+                  mainAxisSpacing: 12,
+                  crossAxisSpacing: 12,
+                  childAspectRatio: 1.35,
+                  children: [
+                    _buildModuleCard(
+                      title: 'Courses',
+                      subtitle: '5 Enrolled',
+                      icon: Icons.menu_book_rounded,
+                      color: AppColors.primary,
+                      onTap: () => _showModuleNotification('Courses'),
+                    ),
+                    _buildModuleCard(
+                      title: 'Timetable',
+                      subtitle: 'Full Week',
+                      icon: Icons.calendar_today_rounded,
+                      color: AppColors.secondary,
+                      onTap: () => _showModuleNotification('Timetable'),
+                    ),
+                    _buildModuleCard(
+                      title: 'Exams & Grades',
+                      subtitle: 'Transcripts',
+                      icon: Icons.analytics_outlined,
+                      color: AppColors.accent,
+                      onTap: () => _showModuleNotification('Exams & Grades'),
+                    ),
+                    _buildModuleCard(
+                      title: 'Tuition & Fees',
+                      subtitle: 'Zero Balance',
+                      icon: Icons.account_balance_wallet_outlined,
+                      color: AppColors.success,
+                      onTap: () => _showModuleNotification('Tuition & Fees'),
+                    ),
+                    _buildModuleCard(
+                      title: 'Digital Library',
+                      subtitle: 'Research Portal',
+                      icon: Icons.local_library_outlined,
+                      color: AppColors.warning,
+                      onTap: () => _showModuleNotification('Digital Library'),
+                    ),
+                    _buildModuleCard(
+                      title: 'Campus Services',
+                      subtitle: 'ID, Shuttle & Cafeteria',
+                      icon: Icons.domain_rounded,
+                      color: const Color(0xFFEC4899),
+                      onTap: () => _showModuleNotification('Campus Services'),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 24),
+
+                // Today's Class Schedule Preview
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    const Text(
+                      "Today's Classes",
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w700,
+                        color: AppColors.textPrimaryLight,
+                      ),
+                    ),
+                    TextButton(
+                      onPressed: () => _showModuleNotification('Weekly Schedule'),
+                      child: const Text('View All'),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 8),
+
+                ...MockDataService.todaySchedule.map((item) {
+                  return Container(
+                    margin: const EdgeInsets.only(bottom: 10),
+                    padding: const EdgeInsets.all(14),
+                    decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(14),
+                      border: Border.all(color: AppColors.borderLight),
+                    ),
+                    child: Row(
+                      children: [
+                        Container(
+                          width: 4,
+                          height: 48,
+                          decoration: BoxDecoration(
+                            color: Color(item['colorHex'] as int),
+                            borderRadius: BorderRadius.circular(4),
+                          ),
+                        ),
+                        const SizedBox(width: 14),
+                        Expanded(
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                '${item['code']} - ${item['name']}',
+                                style: const TextStyle(
+                                  fontWeight: FontWeight.w700,
+                                  fontSize: 14,
+                                  color: AppColors.textPrimaryLight,
+                                ),
+                              ),
+                              const SizedBox(height: 4),
+                              Row(
+                                children: [
+                                  Icon(Icons.schedule_rounded,
+                                      size: 13, color: AppColors.textSecondaryLight),
+                                  const SizedBox(width: 4),
+                                  Text(
+                                    item['time'].toString(),
+                                    style: const TextStyle(
+                                      fontSize: 12,
+                                      color: AppColors.textSecondaryLight,
+                                    ),
+                                  ),
+                                  const SizedBox(width: 12),
+                                  Icon(Icons.place_outlined,
+                                      size: 13, color: AppColors.textSecondaryLight),
+                                  const SizedBox(width: 4),
+                                  Text(
+                                    item['room'].toString(),
+                                    style: const TextStyle(
+                                      fontSize: 12,
+                                      color: AppColors.textSecondaryLight,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
+                }),
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
                 const SizedBox(height: 20),
               ],
             ),
           ),
+<<<<<<< HEAD
 <<<<<<< HEAD
           floatingActionButton: FloatingActionButton.extended(
             onPressed: () => _navigateTo(const AiAssistantScreen()),
@@ -768,6 +1189,8 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ],
 =======
+=======
+>>>>>>> origin/web
         ),
       ),
     );
@@ -838,7 +1261,44 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               ],
             ),
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+          bottomNavigationBar: NavigationBar(
+            selectedIndex: _selectedBottomTab,
+            onDestinationSelected: (idx) {
+              if (idx == 2) {
+                _navigateToProfile();
+              } else if (idx == 3) {
+                _handleLogout();
+              } else {
+                setState(() => _selectedBottomTab = idx);
+              }
+            },
+            destinations: const [
+              NavigationDestination(
+                icon: Icon(Icons.dashboard_outlined),
+                selectedIcon: Icon(Icons.dashboard_rounded),
+                label: 'Dashboard',
+              ),
+              NavigationDestination(
+                icon: Icon(Icons.calendar_month_outlined),
+                selectedIcon: Icon(Icons.calendar_month_rounded),
+                label: 'Schedule',
+              ),
+              NavigationDestination(
+                icon: Icon(Icons.person_outline_rounded),
+                selectedIcon: Icon(Icons.person_rounded),
+                label: 'Profile',
+              ),
+              NavigationDestination(
+                icon: Icon(Icons.logout_rounded, color: AppColors.error),
+                label: 'Sign Out',
+              ),
+            ],
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
           ),
         );
       },
@@ -846,6 +1306,46 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  Widget _buildScheduleItem({
+    required String time,
+    required String subject,
+    required String room,
+    required bool isOngoing,
+  }) {
+    return Row(
+      children: [
+        Container(
+          width: 4,
+          height: 42,
+          decoration: BoxDecoration(
+            color: isOngoing ? AppColors.success : const Color(0xFFCBD5E1),
+            borderRadius: BorderRadius.circular(2),
+          ),
+        ),
+        const SizedBox(width: 12),
+        Expanded(
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                subject,
+                style: const TextStyle(
+                  fontSize: 14,
+                  fontWeight: FontWeight.w600,
+                  color: AppColors.textPrimaryLight,
+                ),
+              ),
+              const SizedBox(height: 2),
+              Text(
+                '$time • $room',
+                style: const TextStyle(
+                  fontSize: 12,
+                  color: AppColors.textSecondaryLight,
+                ),
+=======
+>>>>>>> origin/web
   Widget _buildModuleCard({
     required String title,
     required String subtitle,
@@ -896,6 +1396,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ),
                 ],
+<<<<<<< HEAD
 =======
   Widget _buildScheduleItem({
     required String time,
@@ -934,15 +1435,25 @@ class _HomeScreenState extends State<HomeScreen> {
                   color: AppColors.textSecondaryLight,
                 ),
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
               ),
             ],
           ),
         ),
 <<<<<<< HEAD
+<<<<<<< HEAD
       ),
 =======
       ],
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+      ],
+=======
+      ),
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
     );
   }
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 import { HashRouter as Router, Routes, Route, Navigate, Outlet } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
@@ -113,3 +114,6 @@ export const App: React.FC = () => {
 };
 
 export default App;
+=======
+export { App, default } from './app/App';
+>>>>>>> origin/web

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import '../../core/theme/app_colors.dart';
 import '../../models/user.dart';
 import '../../state/auth_state.dart';
@@ -13,6 +14,8 @@ import 'edit_profile_dialog.dart';
 class ProfileScreen extends StatefulWidget {
   final AuthState authState;
 =======
+=======
+>>>>>>> origin/web
 import '../../core/constants/route_constants.dart';
 import '../../core/theme/app_colors.dart';
 import '../../state/auth_state.dart';
@@ -25,15 +28,38 @@ import 'edit_profile_dialog.dart';
 class ProfileScreen extends StatefulWidget {
   final AuthState authState;
   final ProfileState profileState;
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+import '../../core/theme/app_colors.dart';
+import '../../models/user.dart';
+import '../../state/auth_state.dart';
+import '../../state/profile_state.dart';
+import '../../widgets/custom_button.dart';
+import '../../widgets/user_avatar.dart';
+import '../auth/login_screen.dart';
+import 'edit_profile_dialog.dart';
+
+/// User Profile Screen with details inspection, editing modal, and secure logout.
+class ProfileScreen extends StatefulWidget {
+  final AuthState authState;
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
 
   const ProfileScreen({
     super.key,
     required this.authState,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
     required this.profileState,
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+    required this.profileState,
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
   });
 
   @override
@@ -41,6 +67,7 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
+<<<<<<< HEAD
 <<<<<<< HEAD
   late final ProfileState _profileState;
 
@@ -67,6 +94,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
           TextButton(
             onPressed: () => Navigator.of(ctx).pop(false),
 =======
+=======
+>>>>>>> origin/web
   @override
   void initState() {
     super.initState();
@@ -107,7 +136,36 @@ class _ProfileScreenState extends State<ProfileScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.of(ctx).pop(),
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+  late final ProfileState _profileState;
+
+  @override
+  void initState() {
+    super.initState();
+    _profileState = ProfileState();
+  }
+
+  @override
+  void dispose() {
+    _profileState.dispose();
+    super.dispose();
+  }
+
+  Future<void> _handleLogoutConfirmation() async {
+    final shouldLogout = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
+        title: const Text('Sign Out'),
+        content: const Text('Are you sure you want to log out of your university account?'),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(ctx).pop(false),
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
             child: const Text('Cancel'),
           ),
           ElevatedButton(
@@ -116,9 +174,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
               foregroundColor: Colors.white,
             ),
 <<<<<<< HEAD
+<<<<<<< HEAD
             onPressed: () => Navigator.of(ctx).pop(true),
             child: const Text('Sign Out'),
 =======
+=======
+>>>>>>> origin/web
             onPressed: () async {
               Navigator.of(ctx).pop();
               await widget.authState.logout();
@@ -130,12 +191,23 @@ class _ProfileScreenState extends State<ProfileScreen> {
               }
             },
             child: const Text('Logout'),
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+            onPressed: () => Navigator.of(ctx).pop(true),
+            child: const Text('Sign Out'),
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
           ),
         ],
       ),
     );
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/web
 
     if (shouldLogout == true && mounted) {
       await widget.authState.logout();
@@ -148,14 +220,21 @@ class _ProfileScreenState extends State<ProfileScreen> {
         );
       }
     }
+<<<<<<< HEAD
 =======
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
   }
 
   @override
   Widget build(BuildContext context) {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/web
     final user = widget.authState.currentUser;
     final profile = widget.profileState.profile;
     final isLoading = widget.profileState.isLoading;
@@ -166,7 +245,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
       );
     }
 
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
     return Scaffold(
       backgroundColor: AppColors.backgroundLight,
       appBar: AppBar(
@@ -174,6 +258,213 @@ class _ProfileScreenState extends State<ProfileScreen> {
         actions: [
           IconButton(
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+            icon: const Icon(Icons.edit_outlined),
+            tooltip: 'Edit Profile',
+            onPressed: _showEditDialog,
+          ),
+        ],
+      ),
+      body: SafeArea(
+        child: isLoading && profile == null
+            ? const Center(child: LoadingIndicator(message: 'Loading profile data...'))
+            : SingleChildScrollView(
+                padding: const EdgeInsets.all(20),
+                child: Column(
+                  children: [
+                    // Avatar & Main Header
+                    Center(
+                      child: Column(
+                        children: [
+                          Stack(
+                            children: [
+                              UserAvatar(
+                                imageUrl: user.avatarUrl,
+                                initials: user.initials,
+                                radius: 46,
+                              ),
+                              Positioned(
+                                bottom: 0,
+                                right: 0,
+                                child: GestureDetector(
+                                  onTap: _showEditDialog,
+                                  child: Container(
+                                    padding: const EdgeInsets.all(6),
+                                    decoration: BoxDecoration(
+                                      color: AppColors.primary,
+                                      shape: BoxShape.circle,
+                                      border: Border.all(color: Colors.white, width: 2),
+                                    ),
+                                    child: const Icon(
+                                      Icons.camera_alt_rounded,
+                                      size: 16,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          const SizedBox(height: 14),
+                          Text(
+                            user.name,
+                            style: const TextStyle(
+                              fontSize: 22,
+                              fontWeight: FontWeight.w700,
+                              color: AppColors.textPrimaryLight,
+                              letterSpacing: -0.3,
+                            ),
+                          ),
+                          const SizedBox(height: 4),
+                          Text(
+                            user.email,
+                            style: const TextStyle(
+                              fontSize: 14,
+                              color: AppColors.textSecondaryLight,
+                            ),
+                          ),
+                          const SizedBox(height: 10),
+                          Container(
+                            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+                            decoration: BoxDecoration(
+                              color: AppColors.primaryLight,
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: Text(
+                              user.roleDisplay.toUpperCase(),
+                              style: const TextStyle(
+                                fontSize: 11,
+                                fontWeight: FontWeight.w700,
+                                color: AppColors.primaryDark,
+                                letterSpacing: 0.8,
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    const SizedBox(height: 24),
+
+                    // Edit Profile Action Button
+                    CustomButton(
+                      text: 'Edit Profile Information',
+                      onPressed: _showEditDialog,
+                      variant: ButtonVariant.outlined,
+                      icon: Icons.edit_note_rounded,
+                      height: 44,
+                    ),
+                    const SizedBox(height: 20),
+
+                    // Contact & University Info Card
+                    _buildSectionCard(
+                      title: 'Personal & Contact Info',
+                      icon: Icons.badge_outlined,
+                      items: [
+                        _buildInfoRow('Full Name', user.name),
+                        _buildInfoRow('Email Address', user.email),
+                        _buildInfoRow('Phone Number', user.phone ?? 'Not provided'),
+                        _buildInfoRow('Account Type', user.roleDisplay),
+                        _buildInfoRow('Member Since', 'September 2024'),
+                      ],
+                    ),
+                    const SizedBox(height: 16),
+
+                    // Academic Profile Card
+                    _buildSectionCard(
+                      title: 'Academic Details',
+                      icon: Icons.school_outlined,
+                      items: [
+                        _buildInfoRow('Student / Faculty ID', user.studentId ?? 'UNIV-2026-CS-042'),
+                        _buildInfoRow('Department', user.department ?? 'Computer Science & Engineering'),
+                        _buildInfoRow('Academic Program', profile?.academicProgram ?? 'B.S. Computer Science'),
+                        _buildInfoRow('Current Term', profile?.currentSemester ?? 'Semester 5 (Fall 2026)'),
+                        _buildInfoRow('Enrollment Status', profile?.enrollmentStatus ?? 'Active - Full Time'),
+                        _buildInfoRow('Cumulative GPA', profile?.gpa.toStringAsFixed(2) ?? '3.85'),
+                        _buildInfoRow('Attendance', '${profile?.attendancePercentage.toStringAsFixed(1) ?? '94.2'}%'),
+                      ],
+                    ),
+                    const SizedBox(height: 28),
+
+                    // Logout Button
+                    CustomButton(
+                      text: 'Sign Out Account',
+                      onPressed: _confirmLogout,
+                      variant: ButtonVariant.danger,
+                      icon: Icons.logout_rounded,
+                    ),
+                    const SizedBox(height: 24),
+                  ],
+                ),
+              ),
+      ),
+    );
+  }
+
+  Widget _buildSectionCard({
+    required String title,
+    required IconData icon,
+    required List<Widget> items,
+  }) {
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(18),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: const Color(0xFFE2E8F0)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            children: [
+              Icon(icon, size: 20, color: AppColors.primary),
+              const SizedBox(width: 8),
+              Text(
+                title,
+                style: const TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.w700,
+                  color: AppColors.textPrimaryLight,
+                ),
+              ),
+            ],
+          ),
+          const Divider(height: 24),
+          ...items,
+        ],
+      ),
+    );
+  }
+
+  Widget _buildInfoRow(String label, String value) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          SizedBox(
+            width: 130,
+            child: Text(
+              label,
+              style: const TextStyle(
+                fontSize: 13,
+                color: AppColors.textSecondaryLight,
+                fontWeight: FontWeight.w500,
+              ),
+            ),
+          ),
+          Expanded(
+            child: Text(
+              value,
+              style: const TextStyle(
+                fontSize: 13,
+                color: AppColors.textPrimaryLight,
+                fontWeight: FontWeight.w600,
+              ),
+=======
+>>>>>>> origin/web
             icon: const Icon(Icons.logout_rounded, color: AppColors.error),
             tooltip: 'Sign Out',
             onPressed: _handleLogoutConfirmation,
@@ -322,6 +613,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
           );
         },
+<<<<<<< HEAD
 =======
             icon: const Icon(Icons.edit_outlined),
             tooltip: 'Edit Profile',
@@ -461,11 +753,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 ),
               ),
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+>>>>>>> origin/web
       ),
     );
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> origin/web
   Widget _buildInfoTile({
     required IconData icon,
     required String label,
@@ -506,6 +803,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   ),
                 ),
               ],
+<<<<<<< HEAD
 =======
   Widget _buildSectionCard({
     required String title,
@@ -570,6 +868,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 fontWeight: FontWeight.w600,
               ),
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
             ),
           ),
         ],

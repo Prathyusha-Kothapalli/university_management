@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import '../../core/constants/app_constants.dart';
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import '../../core/constants/route_constants.dart';
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+import '../../core/constants/route_constants.dart';
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
 import '../../core/theme/app_colors.dart';
 import '../../core/utils/validators.dart';
 import '../../state/auth_state.dart';
@@ -11,13 +17,22 @@ import '../../widgets/custom_button.dart';
 import '../../widgets/custom_text_field.dart';
 import '../../widgets/error_card.dart';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+=======
+>>>>>>> origin/web
 import '../home/home_screen.dart';
 import 'register_screen.dart';
 
 /// Complete, responsive Login Screen.
+<<<<<<< HEAD
 =======
 
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
 class LoginScreen extends StatefulWidget {
   final AuthState authState;
 
@@ -33,9 +48,12 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
 <<<<<<< HEAD
+<<<<<<< HEAD
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
 =======
+=======
+>>>>>>> origin/web
   late final TextEditingController _emailController;
   late final TextEditingController _passwordController;
   bool _rememberMe = false;
@@ -49,7 +67,14 @@ class _LoginScreenState extends State<LoginScreen> {
     );
     _passwordController = TextEditingController();
   }
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+  final _emailController = TextEditingController();
+  final _passwordController = TextEditingController();
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
 
   @override
   void dispose() {
@@ -58,6 +83,7 @@ class _LoginScreenState extends State<LoginScreen> {
     super.dispose();
   }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
   Future<void> _handleLogin() async {
     widget.authState.clearError();
@@ -74,6 +100,8 @@ class _LoginScreenState extends State<LoginScreen> {
           builder: (_) => HomeScreen(authState: widget.authState),
         ),
 =======
+=======
+>>>>>>> origin/web
   void _fillDemoCredentials() {
     setState(() {
       _emailController.text = AppConstants.demoEmail;
@@ -103,12 +131,39 @@ class _LoginScreenState extends State<LoginScreen> {
       Navigator.of(context).pushNamedAndRemoveUntil(
         RouteConstants.home,
         (route) => false,
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+  Future<void> _handleLogin() async {
+    widget.authState.clearError();
+    if (!_formKey.currentState!.validate()) return;
+
+    final success = await widget.authState.login(
+      _emailController.text.trim(),
+      _passwordController.text,
+    );
+
+    if (success && mounted) {
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => HomeScreen(authState: widget.authState),
+        ),
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
       );
     }
   }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  @override
+  Widget build(BuildContext context) {
+    final isLoading = widget.authState.isLoading;
+    final errorMessage = widget.authState.errorMessage;
+=======
+>>>>>>> origin/web
   void _fillQuickDemo(String role) {
     setState(() {
       if (role == 'student') {
@@ -124,16 +179,21 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     final authState = widget.authState;
+<<<<<<< HEAD
 =======
   @override
   Widget build(BuildContext context) {
     final isLoading = widget.authState.isLoading;
     final errorMessage = widget.authState.errorMessage;
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
 
     return Scaffold(
       backgroundColor: AppColors.backgroundLight,
       body: SafeArea(
+<<<<<<< HEAD
 <<<<<<< HEAD
         child: AnimatedBuilder(
           animation: authState,
@@ -189,6 +249,8 @@ class _LoginScreenState extends State<LoginScreen> {
                         'Sign in to access your student or faculty portal',
                         textAlign: TextAlign.center,
 =======
+=======
+>>>>>>> origin/web
         child: Center(
           child: SingleChildScrollView(
             padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
@@ -408,13 +470,95 @@ class _LoginScreenState extends State<LoginScreen> {
                     children: [
                       const Text(
                         "Don't have an account? ",
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+        child: AnimatedBuilder(
+          animation: authState,
+          builder: (context, _) {
+            return Center(
+              child: SingleChildScrollView(
+                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
+                child: Form(
+                  key: _formKey,
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.stretch,
+                    children: [
+                      // Header Icon & Title
+                      Center(
+                        child: Container(
+                          width: 72,
+                          height: 72,
+                          decoration: BoxDecoration(
+                            gradient: const LinearGradient(
+                              colors: [AppColors.primary, AppColors.secondary],
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                            ),
+                            borderRadius: BorderRadius.circular(20),
+                            boxShadow: [
+                              BoxShadow(
+                                color: AppColors.primary.withOpacity(0.25),
+                                blurRadius: 20,
+                                offset: const Offset(0, 8),
+                              ),
+                            ],
+                          ),
+                          child: const Icon(
+                            Icons.school_rounded,
+                            size: 38,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                      const SizedBox(height: 20),
+                      const Text(
+                        AppConstants.appName,
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                          fontSize: 26,
+                          fontWeight: FontWeight.w800,
+                          color: AppColors.textPrimaryLight,
+                          letterSpacing: -0.5,
+                        ),
+                      ),
+                      const SizedBox(height: 6),
+                      const Text(
+                        'Sign in to access your student or faculty portal',
+                        textAlign: TextAlign.center,
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
                         style: TextStyle(
                           fontSize: 14,
                           color: AppColors.textSecondaryLight,
                         ),
                       ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                      GestureDetector(
+                        onTap: () {
+                          widget.authState.clearError();
+                          Navigator.of(context).pushNamed(RouteConstants.register);
+                        },
+                        child: const Text(
+                          'Create an Account',
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w700,
+                            color: AppColors.primary,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+=======
+>>>>>>> origin/web
                       const SizedBox(height: 28),
 
                       // Error Alert Banner
@@ -544,6 +688,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             );
           },
+<<<<<<< HEAD
 =======
                       GestureDetector(
                         onTap: () {
@@ -566,6 +711,9 @@ class _LoginScreenState extends State<LoginScreen> {
             ),
           ),
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
         ),
       ),
     );

@@ -5,6 +5,60 @@ import 'package:unisphere_mobile/models/login_response.dart';
 import 'package:unisphere_mobile/models/register_request.dart';
 import 'package:unisphere_mobile/models/user.dart';
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+import 'package:unisphere_mobile/models/user_profile.dart';
+
+void main() {
+  group('Models JSON Serialization Tests', () {
+    test('User fromJson and toJson', () {
+      final json = {
+        'id': 'usr_101',
+        'name': 'Alex Mercer',
+        'email': 'alex@university.edu',
+        'phone': '+1 555-0199',
+        'role': 'student',
+        'department': 'CS',
+        'student_id': 'UNIV-101',
+      };
+
+      final user = User.fromJson(json);
+      expect(user.id, 'usr_101');
+      expect(user.name, 'Alex Mercer');
+      expect(user.email, 'alex@university.edu');
+      expect(user.roleDisplay, 'Student');
+      expect(user.initials, 'AM');
+
+      final serialized = user.toJson();
+      expect(serialized['id'], 'usr_101');
+      expect(serialized['name'], 'Alex Mercer');
+      expect(serialized['role'], 'student');
+    });
+
+    test('LoginRequest toJson', () {
+      const req = LoginRequest(
+        email: 'alex@university.edu',
+        password: 'Password123!',
+        rememberMe: true,
+      );
+      final json = req.toJson();
+      expect(json['email'], 'alex@university.edu');
+      expect(json['password'], 'Password123!');
+      expect(json['remember_me'], true);
+    });
+
+    test('LoginResponse fromJson and toJson', () {
+      final json = {
+        'access_token': 'jwt_secret_token_123',
+        'token_type': 'bearer',
+        'expires_in': 3600,
+        'user': {
+          'id': 'usr_1',
+          'name': 'Alex Mercer',
+          'email': 'alex@university.edu',
+          'role': 'student',
+=======
+>>>>>>> origin/web
 
 void main() {
   group('Models Serialization Tests', () {
@@ -62,6 +116,7 @@ void main() {
           'name': 'Morgan Reed',
           'email': 'morgan@university.edu',
           'role': 'faculty',
+<<<<<<< HEAD
 =======
 import 'package:unisphere_mobile/models/user_profile.dart';
 
@@ -114,10 +169,14 @@ void main() {
           'email': 'alex@university.edu',
           'role': 'student',
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
         },
       };
 
       final res = LoginResponse.fromJson(json);
+<<<<<<< HEAD
 <<<<<<< HEAD
       expect(res.accessToken, 'jwt.token.abc');
       expect(res.refreshToken, 'refresh.token.xyz');
@@ -156,6 +215,8 @@ void main() {
       expect(res.message, 'Operation completed');
       expect(res.data?['count'], 42);
 =======
+=======
+>>>>>>> origin/web
       expect(res.accessToken, 'jwt_secret_token_123');
       expect(res.tokenType, 'bearer');
       expect(res.user.name, 'Alex Mercer');
@@ -213,7 +274,48 @@ void main() {
       final updated = profile.copyWith(gpa: 4.0);
       expect(updated.gpa, 4.0);
       expect(updated.user.name, 'Alex');
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+      expect(res.accessToken, 'jwt.token.abc');
+      expect(res.refreshToken, 'refresh.token.xyz');
+      expect(res.user?.name, 'Morgan Reed');
+      expect(res.user?.role, UserRole.faculty);
+    });
+
+    test('RegisterRequest serialization', () {
+      const req = RegisterRequest(
+        name: 'Jordan Lee',
+        email: 'jordan@university.edu',
+        phone: '+15551234567',
+        password: 'SecretPassword99!',
+        role: 'student',
+      );
+
+      final json = req.toJson();
+      expect(json['name'], 'Jordan Lee');
+      expect(json['email'], 'jordan@university.edu');
+      expect(json['role'], 'student');
+    });
+
+    test('ApiResponse generic parsing', () {
+      final json = {
+        'success': true,
+        'message': 'Operation completed',
+        'data': {'count': 42},
+      };
+
+      final res = ApiResponse<Map<String, dynamic>>.fromJson(
+        json,
+        (data) => data as Map<String, dynamic>,
+      );
+
+      expect(res.success, isTrue);
+      expect(res.message, 'Operation completed');
+      expect(res.data?['count'], 42);
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
     });
   });
 }

@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 import '../../core/constants/route_constants.dart';
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+import '../../core/constants/route_constants.dart';
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
 import '../../core/theme/app_colors.dart';
 import '../../core/utils/validators.dart';
 import '../../models/register_request.dart';
@@ -11,12 +17,21 @@ import '../../widgets/custom_button.dart';
 import '../../widgets/custom_text_field.dart';
 import '../../widgets/error_card.dart';
 <<<<<<< HEAD
+<<<<<<< HEAD
 import '../home/home_screen.dart';
 
 /// Complete, responsive Registration Screen.
 =======
 
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+
+=======
+import '../home/home_screen.dart';
+
+/// Complete, responsive Registration Screen.
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
 class RegisterScreen extends StatefulWidget {
   final AuthState authState;
 
@@ -51,14 +66,23 @@ class _RegisterScreenState extends State<RegisterScreen> {
   Future<void> _handleRegister() async {
     widget.authState.clearError();
 <<<<<<< HEAD
+<<<<<<< HEAD
     if (!_formKey.currentState!.validate()) return;
 =======
+=======
+>>>>>>> origin/web
     if (!_formKey.currentState!.validate()) {
       return;
     }
 
     FocusScope.of(context).unfocus();
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+    if (!_formKey.currentState!.validate()) return;
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
 
     final request = RegisterRequest(
       name: _nameController.text.trim(),
@@ -67,20 +91,29 @@ class _RegisterScreenState extends State<RegisterScreen> {
       password: _passwordController.text,
       role: _selectedRole,
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       department: _selectedRole == 'faculty' ? 'Academic Faculty' : 'Undergraduate Studies',
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+      department: _selectedRole == 'faculty' ? 'Academic Faculty' : 'Undergraduate Studies',
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
     );
 
     final success = await widget.authState.register(request);
 
     if (success && mounted) {
 <<<<<<< HEAD
+<<<<<<< HEAD
       Navigator.of(context).pushAndRemoveUntil(
         MaterialPageRoute(
           builder: (_) => HomeScreen(authState: widget.authState),
         ),
 =======
+=======
+>>>>>>> origin/web
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Account created successfully! Welcome to UniSphere.'),
@@ -89,7 +122,16 @@ class _RegisterScreenState extends State<RegisterScreen> {
       );
       Navigator.of(context).pushNamedAndRemoveUntil(
         RouteConstants.home,
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+      Navigator.of(context).pushAndRemoveUntil(
+        MaterialPageRoute(
+          builder: (_) => HomeScreen(authState: widget.authState),
+        ),
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
         (route) => false,
       );
     }
@@ -98,11 +140,19 @@ class _RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
 <<<<<<< HEAD
+<<<<<<< HEAD
     final authState = widget.authState;
 =======
     final isLoading = widget.authState.isLoading;
     final errorMessage = widget.authState.errorMessage;
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+    final isLoading = widget.authState.isLoading;
+    final errorMessage = widget.authState.errorMessage;
+=======
+    final authState = widget.authState;
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
 
     return Scaffold(
       backgroundColor: AppColors.backgroundLight,
@@ -110,14 +160,22 @@ class _RegisterScreenState extends State<RegisterScreen> {
         title: const Text('Create Account'),
         leading: IconButton(
 <<<<<<< HEAD
+<<<<<<< HEAD
           icon: const Icon(Icons.arrow_back_ios_new_rounded, size: 20),
 =======
           icon: const Icon(Icons.arrow_back_rounded),
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+          icon: const Icon(Icons.arrow_back_rounded),
+=======
+          icon: const Icon(Icons.arrow_back_ios_new_rounded, size: 20),
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
           onPressed: () => Navigator.of(context).pop(),
         ),
       ),
       body: SafeArea(
+<<<<<<< HEAD
 <<<<<<< HEAD
         child: AnimatedBuilder(
           animation: authState,
@@ -141,6 +199,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     const Text(
                       'Register for unified campus access and resources',
 =======
+=======
+>>>>>>> origin/web
         child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
           child: Form(
@@ -329,13 +389,63 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   children: [
                     const Text(
                       'Already registered? ',
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+        child: AnimatedBuilder(
+          animation: authState,
+          builder: (context, _) {
+            return SingleChildScrollView(
+              padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+              child: Form(
+                key: _formKey,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
+                    const Text(
+                      'Join UniSphere',
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight.w700,
+                        color: AppColors.textPrimaryLight,
+                      ),
+                    ),
+                    const SizedBox(height: 4),
+                    const Text(
+                      'Register for unified campus access and resources',
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
                       style: TextStyle(
                         fontSize: 14,
                         color: AppColors.textSecondaryLight,
                       ),
                     ),
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+                    GestureDetector(
+                      onTap: () {
+                        widget.authState.clearError();
+                        Navigator.of(context).pop();
+                      },
+                      child: const Text(
+                        'Log in',
+                        style: TextStyle(
+                          fontSize: 14,
+                          fontWeight: FontWeight.w700,
+                          color: AppColors.primary,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 16),
+              ],
+            ),
+          ),
+=======
+>>>>>>> origin/web
                     const SizedBox(height: 20),
 
                     // Error Notification Banner
@@ -496,6 +606,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
               ),
             );
           },
+<<<<<<< HEAD
 =======
                     GestureDetector(
                       onTap: () {
@@ -518,6 +629,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
             ),
           ),
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
         ),
       ),
     );

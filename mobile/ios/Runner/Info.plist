@@ -6,10 +6,17 @@
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
 <<<<<<< HEAD
+<<<<<<< HEAD
 	<string>UniSphere AI</string>
 =======
 	<string>UniSphere</string>
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+	<string>UniSphere</string>
+=======
+	<string>UniSphere AI</string>
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -39,7 +46,10 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> origin/web
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -47,7 +57,12 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>CADisableMinimumFrameDurationOnPhone</key>

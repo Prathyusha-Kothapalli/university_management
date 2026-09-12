@@ -1,4 +1,8 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> origin/web
 /// User role enum
 enum UserRole {
   student,
@@ -38,14 +42,27 @@ enum UserRole {
 }
 
 /// User domain model representing an authenticated university member.
+<<<<<<< HEAD
 =======
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
 class User {
   final String id;
   final String name;
   final String email;
   final String? phone;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  final String role; // 'student', 'faculty', 'admin'
+  final String? department;
+  final String? studentId;
+  final String? avatarUrl;
+  final DateTime? createdAt;
+=======
+>>>>>>> origin/web
   final UserRole role;
   final String? department;
   final String? studentId;
@@ -53,6 +70,7 @@ class User {
   final String? enrolledYear;
   final double? gpa;
   final double? attendanceRate;
+<<<<<<< HEAD
 =======
   final String role; // 'student', 'faculty', 'admin'
   final String? department;
@@ -60,12 +78,16 @@ class User {
   final String? avatarUrl;
   final DateTime? createdAt;
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
 
   const User({
     required this.id,
     required this.name,
     required this.email,
     this.phone,
+<<<<<<< HEAD
 <<<<<<< HEAD
     this.role = UserRole.student,
     this.department,
@@ -90,6 +112,8 @@ class User {
       gpa: (json['gpa'] as num?)?.toDouble() ?? 3.82,
       attendanceRate: (json['attendance_rate'] as num?)?.toDouble() ?? 94.5,
 =======
+=======
+>>>>>>> origin/web
     this.role = 'student',
     this.department,
     this.studentId,
@@ -122,7 +146,34 @@ class User {
       studentId: json['student_id']?.toString() ?? json['studentId']?.toString(),
       avatarUrl: json['avatar_url']?.toString() ?? json['avatarUrl']?.toString(),
       createdAt: json['created_at'] != null ? DateTime.tryParse(json['created_at'].toString()) : null,
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+    this.role = UserRole.student,
+    this.department,
+    this.studentId,
+    this.avatarUrl,
+    this.enrolledYear,
+    this.gpa,
+    this.attendanceRate,
+  });
+
+  factory User.fromJson(Map<String, dynamic> json) {
+    return User(
+      id: json['id']?.toString() ?? '',
+      name: json['name'] as String? ?? json['full_name'] as String? ?? '',
+      email: json['email'] as String? ?? '',
+      phone: json['phone'] as String?,
+      role: UserRole.fromString(json['role'] as String?),
+      department: json['department'] as String? ?? 'Computer Science & AI',
+      studentId: json['student_id'] as String? ?? json['roll_no'] as String? ?? 'US-2026-042',
+      avatarUrl: json['avatar_url'] as String?,
+      enrolledYear: json['enrolled_year'] as String? ?? '2024 - 2028',
+      gpa: (json['gpa'] as num?)?.toDouble() ?? 3.82,
+      attendanceRate: (json['attendance_rate'] as num?)?.toDouble() ?? 94.5,
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
     );
   }
 
@@ -133,6 +184,15 @@ class User {
       'email': email,
       'phone': phone,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+      'role': role,
+      'department': department,
+      'student_id': studentId,
+      'avatar_url': avatarUrl,
+      'created_at': createdAt?.toIso8601String(),
+=======
+>>>>>>> origin/web
       'role': role.name,
       'department': department,
       'student_id': studentId,
@@ -140,6 +200,7 @@ class User {
       'enrolled_year': enrolledYear,
       'gpa': gpa,
       'attendance_rate': attendanceRate,
+<<<<<<< HEAD
 =======
       'role': role,
       'department': department,
@@ -147,6 +208,9 @@ class User {
       'avatar_url': avatarUrl,
       'created_at': createdAt?.toIso8601String(),
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
     };
   }
 
@@ -156,6 +220,15 @@ class User {
     String? email,
     String? phone,
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    String? role,
+    String? department,
+    String? studentId,
+    String? avatarUrl,
+    DateTime? createdAt,
+=======
+>>>>>>> origin/web
     UserRole? role,
     String? department,
     String? studentId,
@@ -163,6 +236,7 @@ class User {
     String? enrolledYear,
     double? gpa,
     double? attendanceRate,
+<<<<<<< HEAD
 =======
     String? role,
     String? department,
@@ -170,6 +244,9 @@ class User {
     String? avatarUrl,
     DateTime? createdAt,
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
   }) {
     return User(
       id: id ?? this.id,
@@ -181,12 +258,15 @@ class User {
       studentId: studentId ?? this.studentId,
       avatarUrl: avatarUrl ?? this.avatarUrl,
 <<<<<<< HEAD
+<<<<<<< HEAD
       enrolledYear: enrolledYear ?? this.enrolledYear,
       gpa: gpa ?? this.gpa,
       attendanceRate: attendanceRate ?? this.attendanceRate,
     );
   }
 =======
+=======
+>>>>>>> origin/web
       createdAt: createdAt ?? this.createdAt,
     );
   }
@@ -201,5 +281,15 @@ class User {
 
   @override
   int get hashCode => id.hashCode ^ email.hashCode;
+<<<<<<< HEAD
 >>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
+=======
+=======
+      enrolledYear: enrolledYear ?? this.enrolledYear,
+      gpa: gpa ?? this.gpa,
+      attendanceRate: attendanceRate ?? this.attendanceRate,
+    );
+  }
+>>>>>>> 29907a7 (added flutter)
+>>>>>>> origin/web
 }

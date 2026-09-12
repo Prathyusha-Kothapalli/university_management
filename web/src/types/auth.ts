@@ -42,6 +42,8 @@ export interface Announcement {
   id: string;
   title: string;
   date: string;
-  category: 'Exam' | 'Academic' | 'Campus' | 'Fee';
+  category: 'Exam' | 'Academic' | 'Campus' | 'Fee' | 'Placement' | 'Faculty';
   content: string;
+  author?: string;
+  targetRole?: 'all' | 'student' | 'faculty';
 }

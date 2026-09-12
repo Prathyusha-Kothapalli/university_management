@@ -1,4 +1,4 @@
-/// Shared API endpoint paths matching the Python FastAPI backend.
+/// Shared API endpoint paths for UniSphere AI Mobile Application.
 class ApiEndpoints {
   ApiEndpoints._();
 
@@ -12,6 +12,15 @@ class ApiEndpoints {
   static const String currentUser = '/users/me';
   static const String updateProfile = '/users/profile';
 
+  // HR & Career Management
+  static const String jobs = '/jobs';
+  static const String jobDetails = '/jobs'; // append /{id}
+  static const String applyJob = '/applications';
+  static const String myApplications = '/applications/me';
+  static const String resume = '/resume';
+  static const String interviews = '/interviews';
+  static const String myInterviews = '/interviews/me';
+
   // Academic Modules
   static const String courses = '/academic/courses';
   static const String timetable = '/academic/timetable';
@@ -23,6 +32,7 @@ class ApiEndpoints {
 
   // Communication & Services
   static const String notifications = '/notifications';
+  static const String notices = '/notices';
   static const String chatMessages = '/chat/messages';
   static const String placements = '/placements/drives';
   static const String aiChat = '/ai/chat';

@@ -118,70 +118,38 @@ export const Navbar: React.FC = () => {
 
       {/* Center Command Palette Search Bar */}
       {user && (
-        <button
-          onClick={() => setIsCommandPaletteOpen(true)}
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '10px',
-            padding: '6px 14px',
-            backgroundColor: 'rgba(255, 255, 255, 0.04)',
-            border: '1px solid rgba(255, 255, 255, 0.1)',
-            borderRadius: '20px',
-            color: '#94a3b8',
-            fontSize: '0.8rem',
-            cursor: 'pointer',
-            width: '260px',
-          }}
-        >
-          <Search size={14} style={{ color: '#38bdf8' }} />
-          <span style={{ flex: 1, textAlign: 'left' }}>Quick Search Modules...</span>
-          <span style={{ fontSize: '0.7rem', padding: '2px 6px', background: 'rgba(255,255,255,0.08)', borderRadius: '4px', border: '1px solid rgba(255,255,255,0.1)' }}>
-            Ctrl+K
-          </span>
-        </button>
-      )}
-
-      {/* Quick Actions & Profile */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
-        {user && (
-          <>
-            {/* Role Switcher Pill */}
-            <button
-              onClick={handleRoleToggle}
-              title="Click to toggle between Admin, Faculty, and Student views"
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '6px',
-                padding: '6px 14px',
-                borderRadius: '20px',
-                border: '1px solid rgba(56, 189, 248, 0.4)',
-                background: 'rgba(37, 99, 235, 0.15)',
-                color: '#38bdf8',
-                fontSize: '0.75rem',
-                fontWeight: 700,
-                cursor: 'pointer',
-                transition: 'all 0.15s ease',
-              }}
-            >
-              <RefreshCw size={13} />
-              <span>Role: {role.toUpperCase()}</span>
-            </button>
-
-            {/* Theme Toggle */}
+        <nav style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+          {(user.role === 'faculty'
+            ? [
+                { id: 'dashboard', label: 'Dashboard' },
+                { id: 'courses', label: 'Teaching Courses' },
+                { id: 'schedule', label: 'Timetable' },
+                { id: 'announcements', label: 'Announcements 📢' },
+                { id: 'profile', label: 'My Profile' },
+              ]
+            : [
+                { id: 'dashboard', label: 'Dashboard' },
+                { id: 'courses', label: 'Courses' },
+                { id: 'schedule', label: 'Timetable' },
+                { id: 'placements', label: 'Placements 💼' },
+                { id: 'announcements', label: 'Announcements 📢' },
+                { id: 'profile', label: 'My Profile' },
+              ]
+          ).map((item) => (
             <button
               onClick={toggleTheme}
               title={`Switch to ${theme === 'dark' ? 'Light' : 'Dark'} mode`}
               style={{
-                background: 'rgba(255, 255, 255, 0.05)',
-                border: '1px solid rgba(255, 255, 255, 0.1)',
-                color: '#e2e8f0',
-                padding: '7px',
+                background: currentView === item.id ? 'rgba(37, 99, 235, 0.2)' : 'transparent',
+                color: currentView === item.id ? '#38bdf8' : '#94a3b8',
+                border: currentView === item.id ? '1px solid rgba(56, 189, 248, 0.3)' : '1px solid transparent',
+                padding: '7px 14px',
                 borderRadius: '8px',
+                fontSize: '0.85rem',
+                fontWeight: currentView === item.id ? 700 : 500,
                 cursor: 'pointer',
-                display: 'flex',
-                alignItems: 'center',
+                transition: 'all 0.2s',
+                whiteSpace: 'nowrap',
               }}
             >
               {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}

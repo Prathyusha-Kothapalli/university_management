@@ -12,6 +12,10 @@ class Result<T> {
       : data = null,
         isSuccess = false;
 
+  bool get isFailure => !isSuccess;
+  T? get dataOrNull => data;
+  String? get errorOrNull => error;
+
   R fold<R>({
     required R Function(T data) onSuccess,
     required R Function(String error) onFailure,
@@ -22,4 +26,10 @@ class Result<T> {
       return onFailure(error ?? 'An unexpected error occurred');
     }
   }
+
+  R when<R>({
+    required R Function(T data) success,
+    required R Function(String error) failure,
+  }) =>
+      fold(onSuccess: success, onFailure: failure);
 }

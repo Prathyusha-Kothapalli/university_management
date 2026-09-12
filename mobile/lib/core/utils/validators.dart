@@ -3,11 +3,11 @@ class Validators {
   Validators._();
 
   static final RegExp _emailRegExp = RegExp(
-    r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$',
+    r'^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$',
   );
 
   static final RegExp _phoneRegExp = RegExp(
-    r'^\+?[0-9\s\-()]{7,15}$',
+    r'^\+?[0-9\s\-()]{7,18}$',
   );
 
   static String? validateRequired(String? value, [String fieldName = 'Field']) {
@@ -22,7 +22,7 @@ class Validators {
       return 'Full name is required';
     }
     if (value.trim().length < 2) {
-      return 'Name must be at least 2 characters';
+      return 'Name must be at least 2 characters long';
     }
     return null;
   }
@@ -31,7 +31,8 @@ class Validators {
     if (value == null || value.trim().isEmpty) {
       return 'Email address is required';
     }
-    if (!_emailRegExp.hasMatch(value.trim())) {
+    final trimmed = value.trim();
+    if (!_emailRegExp.hasMatch(trimmed)) {
       return 'Please enter a valid email address';
     }
     return null;
@@ -61,7 +62,10 @@ class Validators {
     if (value == null || value.trim().isEmpty) {
       return 'Phone number is required';
     }
-    if (!_phoneRegExp.hasMatch(value.trim())) {
+    final trimmed = value.trim();
+    // Count actual digits: require at least 7 digits
+    final digitCount = trimmed.replaceAll(RegExp(r'\D'), '').length;
+    if (digitCount < 7 || !_phoneRegExp.hasMatch(trimmed)) {
       return 'Please enter a valid phone number';
     }
     return null;

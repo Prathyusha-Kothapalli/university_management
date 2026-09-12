@@ -1,234 +1,197 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
+import 'package:http/http.dart' as http;
 
 import '../constants/api_constants.dart';
 import '../../services/token_storage_service.dart';
 import 'api_exceptions.dart';
 
-/// Centralized HTTP API Client.
-///
-/// Handles:
-/// - Base URL resolution from [ApiConstants]
-/// - Automatic `Authorization: Bearer <token>` injection
-/// - REST verbs: GET, POST, PUT, DELETE
-/// - JSON serialization and deserialization
-/// - Robust HTTP & socket exception translation
+/// Centralized HTTP API Client with JSON handling and exception translation.
 class ApiClient {
   final String baseUrl;
   final TokenStorageService tokenStorage;
-  final HttpClient _httpClient;
+  final http.Client _httpClient;
 
   ApiClient({
     String? baseUrl,
     TokenStorageService? tokenStorage,
-    HttpClient? httpClient,
+    http.Client? httpClient,
   })  : baseUrl = baseUrl ?? ApiConstants.apiBaseUrl,
         tokenStorage = tokenStorage ?? TokenStorageService(),
-        _httpClient = httpClient ??
-            (HttpClient()
-              ..connectionTimeout =
-                  Duration(seconds: ApiConstants.connectTimeoutSeconds));
+        _httpClient = httpClient ?? http.Client();
 
-  Uri _buildUri(String endpoint, [Map<String, dynamic>? queryParams]) {
+  Uri _buildUri(String path, [Map<String, dynamic>? queryParameters]) {
     final cleanBase = baseUrl.endsWith('/') ? baseUrl.substring(0, baseUrl.length - 1) : baseUrl;
-    final cleanEndpoint = endpoint.startsWith('/') ? endpoint : '/$endpoint';
-    final fullUrl = '$cleanBase$cleanEndpoint';
-
+    final cleanPath = path.startsWith('/') ? path : '/$path';
+    final fullUrl = '$cleanBase$cleanPath';
     final uri = Uri.parse(fullUrl);
-    if (queryParams != null && queryParams.isNotEmpty) {
-      final stringParams = queryParams.map((k, v) => MapEntry(k, v.toString()));
-      return uri.replace(queryParameters: stringParams);
+
+    if (queryParameters != null && queryParameters.isNotEmpty) {
+      return uri.replace(
+        queryParameters: queryParameters.map((k, v) => MapEntry(k, v.toString())),
+      );
     }
     return uri;
   }
 
-  Future<void> _applyHeaders(HttpClientRequest request, Map<String, String>? customHeaders) async {
-    // Default headers
-    request.headers.set(HttpHeaders.contentTypeHeader, 'application/json; charset=UTF-8');
-    request.headers.set(HttpHeaders.acceptHeader, 'application/json');
+  Future<Map<String, String>> _buildHeaders(Map<String, String>? customHeaders) async {
+    final headers = <String, String>{
+      'Content-Type': 'application/json; charset=UTF-8',
+      'Accept': 'application/json',
+    };
 
-    // Attach JWT Bearer Token if available
     final token = await tokenStorage.getToken();
     if (token != null && token.isNotEmpty) {
-      request.headers.set(HttpHeaders.authorizationHeader, 'Bearer $token');
+      headers['Authorization'] = 'Bearer $token';
     }
 
-    // Apply any custom headers
     if (customHeaders != null) {
-      customHeaders.forEach((key, value) {
-        request.headers.set(key, value);
-      });
+      headers.addAll(customHeaders);
     }
+    return headers;
   }
 
-  Future<dynamic> _processResponse(HttpClientResponse response) async {
-    final responseBody = await response.transform(utf8.decoder).join();
+  dynamic _processResponse(http.Response response) {
     final statusCode = response.statusCode;
+    dynamic jsonBody;
 
-    dynamic json;
-    if (responseBody.isNotEmpty) {
+    if (response.body.isNotEmpty) {
       try {
-        json = jsonDecode(responseBody);
+        jsonBody = jsonDecode(response.body);
       } catch (_) {
-        json = {'message': responseBody};
+        jsonBody = response.body;
       }
-    } else {
-      json = {};
     }
 
     if (statusCode >= 200 && statusCode < 300) {
-      return json;
+      return jsonBody;
     }
 
-    final message = (json is Map && json['message'] != null)
-        ? json['message'].toString()
-        : 'HTTP Error $statusCode';
+    String message = 'Request failed with status: $statusCode';
+    if (jsonBody is Map<String, dynamic>) {
+      if (jsonBody.containsKey('detail')) {
+        final detail = jsonBody['detail'];
+        message = detail is String ? detail : detail.toString();
+      } else if (jsonBody.containsKey('message')) {
+        message = jsonBody['message'].toString();
+      }
+    }
 
     switch (statusCode) {
+      case 400:
+      case 422:
+        Map<String, dynamic>? errors;
+        if (jsonBody is Map<String, dynamic> && jsonBody.containsKey('errors')) {
+          errors = jsonBody['errors'] as Map<String, dynamic>?;
+        }
+        throw ValidationException(message, errors);
       case 401:
-        await tokenStorage.deleteToken();
-        throw UnauthorizedException(message);
+        throw UnauthorizedException(message, jsonBody);
       case 403:
         throw ForbiddenException(message);
       case 404:
         throw NotFoundException(message);
-      case 422:
-      case 400:
-        throw ValidationException(message);
+      case 408:
+        throw TimeoutException(message);
       case 500:
       case 502:
       case 503:
-        throw ServerException(message);
+        throw ServerException(message, statusCode);
       default:
-        throw ApiException(message, statusCode: statusCode, details: json);
+        throw ApiException(message, statusCode, jsonBody, jsonBody);
     }
   }
 
-  /// Execute GET request
   Future<dynamic> get(
     String endpoint, {
-    Map<String, dynamic>? queryParams,
+    Map<String, dynamic>? queryParameters,
     Map<String, String>? headers,
   }) async {
+    final uri = _buildUri(endpoint, queryParameters);
     try {
-      final uri = _buildUri(endpoint, queryParams);
-      final request = await _httpClient.getUrl(uri).timeout(
-            Duration(seconds: ApiConstants.connectTimeoutSeconds),
-          );
-      await _applyHeaders(request, headers);
-
-      final response = await request.close().timeout(
-            Duration(seconds: ApiConstants.receiveTimeoutSeconds),
-          );
-      return await _processResponse(response);
-    } on SocketException catch (e) {
-      throw NetworkException('Unable to reach server: ${e.message}');
+      final requestHeaders = await _buildHeaders(headers);
+      final response = await _httpClient
+          .get(uri, headers: requestHeaders)
+          .timeout(ApiConstants.connectTimeout);
+      return _processResponse(response);
+    } on SocketException {
+      throw const NetworkException();
     } on TimeoutException {
-      throw const TimeoutException('Request timed out. Please try again.');
-    } on ApiException {
-      rethrow;
-    } catch (e) {
-      throw ApiException('Unexpected network error: $e');
+      throw const TimeoutException();
+    } on http.ClientException {
+      throw const NetworkException();
     }
   }
 
-  /// Execute POST request
   Future<dynamic> post(
     String endpoint, {
     dynamic body,
+    Map<String, dynamic>? queryParameters,
     Map<String, String>? headers,
   }) async {
+    final uri = _buildUri(endpoint, queryParameters);
     try {
-      final uri = _buildUri(endpoint);
-      final request = await _httpClient.postUrl(uri).timeout(
-            Duration(seconds: ApiConstants.connectTimeoutSeconds),
-          );
-      await _applyHeaders(request, headers);
-
-      if (body != null) {
-        final payload = body is String ? body : jsonEncode(body);
-        request.write(payload);
-      }
-
-      final response = await request.close().timeout(
-            Duration(seconds: ApiConstants.receiveTimeoutSeconds),
-          );
-      return await _processResponse(response);
-    } on SocketException catch (e) {
-      throw NetworkException('Unable to reach server: ${e.message}');
+      final requestHeaders = await _buildHeaders(headers);
+      final encodedBody = body != null ? jsonEncode(body) : null;
+      final response = await _httpClient
+          .post(uri, headers: requestHeaders, body: encodedBody)
+          .timeout(ApiConstants.connectTimeout);
+      return _processResponse(response);
+    } on SocketException {
+      throw const NetworkException();
     } on TimeoutException {
-      throw const TimeoutException('Request timed out. Please try again.');
-    } on ApiException {
-      rethrow;
-    } catch (e) {
-      throw ApiException('Unexpected network error: $e');
+      throw const TimeoutException();
+    } on http.ClientException {
+      throw const NetworkException();
     }
   }
 
-  /// Execute PUT request
   Future<dynamic> put(
     String endpoint, {
     dynamic body,
+    Map<String, dynamic>? queryParameters,
     Map<String, String>? headers,
   }) async {
+    final uri = _buildUri(endpoint, queryParameters);
     try {
-      final uri = _buildUri(endpoint);
-      final request = await _httpClient.putUrl(uri).timeout(
-            Duration(seconds: ApiConstants.connectTimeoutSeconds),
-          );
-      await _applyHeaders(request, headers);
-
-      if (body != null) {
-        final payload = body is String ? body : jsonEncode(body);
-        request.write(payload);
-      }
-
-      final response = await request.close().timeout(
-            Duration(seconds: ApiConstants.receiveTimeoutSeconds),
-          );
-      return await _processResponse(response);
-    } on SocketException catch (e) {
-      throw NetworkException('Unable to reach server: ${e.message}');
+      final requestHeaders = await _buildHeaders(headers);
+      final encodedBody = body != null ? jsonEncode(body) : null;
+      final response = await _httpClient
+          .put(uri, headers: requestHeaders, body: encodedBody)
+          .timeout(ApiConstants.connectTimeout);
+      return _processResponse(response);
+    } on SocketException {
+      throw const NetworkException();
     } on TimeoutException {
-      throw const TimeoutException('Request timed out. Please try again.');
-    } on ApiException {
-      rethrow;
-    } catch (e) {
-      throw ApiException('Unexpected network error: $e');
+      throw const TimeoutException();
+    } on http.ClientException {
+      throw const NetworkException();
     }
   }
 
-  /// Execute DELETE request
   Future<dynamic> delete(
     String endpoint, {
-    dynamic body,
+    Map<String, dynamic>? queryParameters,
     Map<String, String>? headers,
   }) async {
+    final uri = _buildUri(endpoint, queryParameters);
     try {
-      final uri = _buildUri(endpoint);
-      final request = await _httpClient.deleteUrl(uri).timeout(
-            Duration(seconds: ApiConstants.connectTimeoutSeconds),
-          );
-      await _applyHeaders(request, headers);
-
-      if (body != null) {
-        final payload = body is String ? body : jsonEncode(body);
-        request.write(payload);
-      }
-
-      final response = await request.close().timeout(
-            Duration(seconds: ApiConstants.receiveTimeoutSeconds),
-          );
-      return await _processResponse(response);
-    } on SocketException catch (e) {
-      throw NetworkException('Unable to reach server: ${e.message}');
+      final requestHeaders = await _buildHeaders(headers);
+      final response = await _httpClient
+          .delete(uri, headers: requestHeaders)
+          .timeout(ApiConstants.connectTimeout);
+      return _processResponse(response);
+    } on SocketException {
+      throw const NetworkException();
     } on TimeoutException {
-      throw const TimeoutException('Request timed out. Please try again.');
-    } on ApiException {
-      rethrow;
-    } catch (e) {
-      throw ApiException('Unexpected network error: $e');
+      throw const TimeoutException();
+    } on http.ClientException {
+      throw const NetworkException();
     }
+  }
+
+  void close() {
+    _httpClient.close();
   }
 }

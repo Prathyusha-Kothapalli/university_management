@@ -22,10 +22,12 @@ class AppColors {
   static const Color error = Color(0xFFEF4444); // Rose Red
   static const Color errorLight = Color(0xFFFEE2E2);
   static const Color info = Color(0xFF3B82F6);
+  static const Color infoLight = Color(0xFFDBEAFE);
 
   // Neutral Background & Surface Colors - Light Mode
   static const Color backgroundLight = Color(0xFFF8FAFC);
   static const Color surfaceLight = Color(0xFFFFFFFF);
+  static const Color cardLight = Color(0xFFFFFFFF);
   static const Color surfaceElevatedLight = Color(0xFFF1F5F9);
   static const Color borderLight = Color(0xFFE2E8F0);
   static const Color textPrimaryLight = Color(0xFF0F172A);
@@ -35,6 +37,7 @@ class AppColors {
   // Neutral Background & Surface Colors - Dark Mode
   static const Color backgroundDark = Color(0xFF0F172A);
   static const Color surfaceDark = Color(0xFF1E293B);
+  static const Color cardDark = Color(0xFF1E293B);
   static const Color surfaceElevatedDark = Color(0xFF334155);
   static const Color borderDark = Color(0xFF334155);
   static const Color textPrimaryDark = Color(0xFFF8FAFC);

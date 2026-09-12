@@ -7,6 +7,7 @@ class EmptyStateView extends StatelessWidget {
   final String title;
   final String message;
   final String? actionText;
+<<<<<<< HEAD
   final String? buttonText;
   final VoidCallback? onAction;
   final VoidCallback? onButtonPressed;
@@ -20,6 +21,17 @@ class EmptyStateView extends StatelessWidget {
     this.buttonText,
     this.onAction,
     this.onButtonPressed,
+=======
+  final VoidCallback? onAction;
+
+  const EmptyStateView({
+    super.key,
+    required this.icon,
+    required this.title,
+    required this.message,
+    this.actionText,
+    this.onAction,
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
   });
 
   @override
@@ -65,6 +77,7 @@ class EmptyStateView extends StatelessWidget {
               ),
               textAlign: TextAlign.center,
             ),
+<<<<<<< HEAD
             if (label != null && callback != null) ...[
               const SizedBox(height: 20),
               ElevatedButton(
@@ -78,6 +91,13 @@ class EmptyStateView extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
                 ),
                 child: Text(label),
+=======
+            if (actionText != null && onAction != null) ...[
+              const SizedBox(height: 20),
+              OutlinedButton(
+                onPressed: onAction,
+                child: Text(actionText!),
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
               ),
             ],
           ],

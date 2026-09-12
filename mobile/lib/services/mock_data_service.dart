@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 import 'dart:async';
 import '../core/network/api_exceptions.dart';
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 import '../models/campus_features.dart';
 import '../models/login_request.dart';
 import '../models/login_response.dart';
@@ -418,6 +421,7 @@ class MockDataService {
     } else {
       return 'I am your UniSphere AI Campus Assistant. You can ask me about class timetables, attendance requirements, exam schedules, placement eligibility, or academic regulations!';
     }
+<<<<<<< HEAD
   }
 
   // Mock In-Memory User Database
@@ -524,5 +528,7 @@ class MockDataService {
       _mockUsers[idx] = updated;
     }
     return updated;
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
   }
 }

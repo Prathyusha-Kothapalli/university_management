@@ -8,7 +8,11 @@ class StatCard extends StatelessWidget {
   final String? subtitle;
   final IconData icon;
   final Color color;
+<<<<<<< HEAD
   final Color? backgroundColor;
+=======
+  final Color backgroundColor;
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 
   const StatCard({
     super.key,
@@ -17,12 +21,18 @@ class StatCard extends StatelessWidget {
     this.subtitle,
     required this.icon,
     this.color = AppColors.primary,
+<<<<<<< HEAD
     this.backgroundColor,
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
   });
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     final bg = backgroundColor ?? color.withOpacity(0.12);
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     return Card(
       elevation: 0,
       shape: RoundedRectangleBorder(

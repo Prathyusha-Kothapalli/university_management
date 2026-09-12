@@ -1,9 +1,16 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import '../../core/constants/app_constants.dart';
+<<<<<<< HEAD
 import '../../core/constants/route_constants.dart';
 import '../../core/theme/app_colors.dart';
 import '../../state/auth_state.dart';
+=======
+import '../../core/theme/app_colors.dart';
+import '../../state/auth_state.dart';
+import '../auth/login_screen.dart';
+import '../home/home_screen.dart';
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 
 /// Professional Splash Screen with authentication session check.
 class SplashScreen extends StatefulWidget {
@@ -21,9 +28,14 @@ class SplashScreen extends StatefulWidget {
 class _SplashScreenState extends State<SplashScreen>
     with SingleTickerProviderStateMixin {
   late AnimationController _animController;
+<<<<<<< HEAD
   late Animation<double> _fadeAnimation;
   late Animation<double> _scaleAnimation;
   Timer? _timeoutTimer;
+=======
+  late Animation<double> _scaleAnimation;
+  late Animation<double> _fadeAnimation;
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 
   @override
   void initState() {
@@ -34,6 +46,14 @@ class _SplashScreenState extends State<SplashScreen>
       duration: const Duration(milliseconds: 1200),
     );
 
+<<<<<<< HEAD
+=======
+    _fadeAnimation = CurvedAnimation(
+      parent: _animController,
+      curve: Curves.easeIn,
+    );
+
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     _scaleAnimation = Tween<double>(begin: 0.85, end: 1.0).animate(
       CurvedAnimation(parent: _animController, curve: Curves.easeOutBack),
     );
@@ -43,6 +63,7 @@ class _SplashScreenState extends State<SplashScreen>
     );
 
     _animController.forward();
+<<<<<<< HEAD
     _initializeApp();
   }
 
@@ -80,12 +101,40 @@ class _SplashScreenState extends State<SplashScreen>
   void _navigate(String routeName) {
     if (Navigator.canPop(context) || ModalRoute.of(context)?.settings.name != null) {
       Navigator.of(context).pushReplacementNamed(routeName);
+=======
+    _checkSessionAndNavigate();
+  }
+
+  Future<void> _checkSessionAndNavigate() async {
+    // Artificial minimum delay for smooth visual transition
+    await Future.delayed(const Duration(milliseconds: 1600));
+
+    final isAuthenticated = await widget.authState.checkAuth();
+
+    if (!mounted) return;
+
+    if (isAuthenticated) {
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => HomeScreen(authState: widget.authState),
+        ),
+      );
+    } else {
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => LoginScreen(authState: widget.authState),
+        ),
+      );
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     }
   }
 
   @override
   void dispose() {
+<<<<<<< HEAD
     _timeoutTimer?.cancel();
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     _animController.dispose();
     super.dispose();
   }
@@ -94,6 +143,7 @@ class _SplashScreenState extends State<SplashScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.backgroundDark,
+<<<<<<< HEAD
       body: Stack(
         children: [
           // Background ambient gradient glow
@@ -212,6 +262,80 @@ class _SplashScreenState extends State<SplashScreen>
             ),
           ),
         ],
+=======
+      body: Center(
+        child: FadeTransition(
+          opacity: _fadeAnimation,
+          child: ScaleTransition(
+            scale: _scaleAnimation,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                // University Emblem
+                Container(
+                  width: 100,
+                  height: 100,
+                  decoration: BoxDecoration(
+                    gradient: const LinearGradient(
+                      colors: [AppColors.primary, AppColors.secondary],
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                    ),
+                    borderRadius: BorderRadius.circular(28),
+                    boxShadow: [
+                      BoxShadow(
+                        color: AppColors.secondary.withOpacity(0.35),
+                        blurRadius: 28,
+                        offset: const Offset(0, 10),
+                      ),
+                    ],
+                  ),
+                  child: const Icon(
+                    Icons.school_rounded,
+                    size: 54,
+                    color: Colors.white,
+                  ),
+                ),
+                const SizedBox(height: 28),
+
+                // App Title
+                const Text(
+                  AppConstants.appName,
+                  style: TextStyle(
+                    fontSize: 30,
+                    fontWeight: FontWeight.w800,
+                    color: Colors.white,
+                    letterSpacing: -0.5,
+                  ),
+                ),
+                const SizedBox(height: 8),
+
+                // Tagline
+                const Text(
+                  AppConstants.appTagline,
+                  style: TextStyle(
+                    fontSize: 14,
+                    fontWeight: FontWeight.w400,
+                    color: AppColors.textMutedDark,
+                    letterSpacing: 0.2,
+                  ),
+                ),
+                const SizedBox(height: 48),
+
+                // Loading Indicator
+                const SizedBox(
+                  width: 28,
+                  height: 28,
+                  child: CircularProgressIndicator(
+                    strokeWidth: 2.8,
+                    valueColor: AlwaysStoppedAnimation<Color>(AppColors.secondaryLight),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
       ),
     );
   }

@@ -118,6 +118,7 @@ lib/
 
 ---
 
+<<<<<<< HEAD
 ## ⚙️ Backend API Configuration
 
 The backend endpoint is centrally configured in:
@@ -168,3 +169,31 @@ For quick testing without creating an account:
    ```bash
    flutter run
    ```
+=======
+## ⚙️ Backend API Configuration (Python FastAPI)
+
+Both the Flutter mobile application and React web frontend communicate with the shared Python FastAPI backend.
+To switch the mobile app's active backend address, edit **[`lib/core/constants/api_constants.dart`](lib/core/constants/api_constants.dart)**:
+
+```dart
+class ApiConstants {
+  // Android Emulator:
+  static const String apiBaseUrl = 'http://10.0.2.2:8000/api/v1';
+
+  // iOS Simulator / Web / Desktop:
+  // static const String apiBaseUrl = 'http://localhost:8000/api/v1';
+
+  // Physical Phone on LAN:
+  // static const String apiBaseUrl = 'http://192.168.1.X:8000/api/v1';
+}
+```
+
+---
+
+## 🧪 Automated Testing
+
+```bash
+cd mobile
+flutter test
+```
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9

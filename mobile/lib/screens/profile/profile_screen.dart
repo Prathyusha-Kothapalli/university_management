@@ -1,23 +1,38 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import '../../core/constants/route_constants.dart';
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 import '../../core/theme/app_colors.dart';
 import '../../models/user.dart';
 import '../../state/auth_state.dart';
 import '../../state/profile_state.dart';
 import '../../widgets/custom_button.dart';
+<<<<<<< HEAD
 import '../../widgets/loading_indicator.dart';
 import '../../widgets/user_avatar.dart';
+=======
+import '../../widgets/user_avatar.dart';
+import '../auth/login_screen.dart';
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 import 'edit_profile_dialog.dart';
 
 /// User Profile Screen with details inspection, editing modal, and secure logout.
 class ProfileScreen extends StatefulWidget {
   final AuthState authState;
+<<<<<<< HEAD
   final ProfileState? profileState;
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 
   const ProfileScreen({
     super.key,
     required this.authState,
+<<<<<<< HEAD
     this.profileState,
+=======
+    required this.profileState,
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
   });
 
   @override
@@ -46,6 +61,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   @override
   void dispose() {
+<<<<<<< HEAD
     if (_createdOwnProfileState) {
       _profileState.dispose();
     }
@@ -73,6 +89,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
     }
   }
 
+=======
+    _profileState.dispose();
+    super.dispose();
+  }
+
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
   Future<void> _handleLogoutConfirmation() async {
     final shouldLogout = await showDialog<bool>(
       context: context,
@@ -106,21 +128,27 @@ class _ProfileScreenState extends State<ProfileScreen> {
         );
       }
     }
+<<<<<<< HEAD
   }
 
   @override
   Widget build(BuildContext context) {
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     return Scaffold(
       backgroundColor: AppColors.backgroundLight,
       appBar: AppBar(
         title: const Text('User Profile'),
         actions: [
           IconButton(
+<<<<<<< HEAD
             icon: const Icon(Icons.edit_outlined),
             tooltip: 'Edit Profile',
             onPressed: _showEditDialog,
           ),
           IconButton(
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
             icon: const Icon(Icons.logout_rounded, color: AppColors.error),
             tooltip: 'Sign Out',
             onPressed: _handleLogoutConfirmation,
@@ -293,6 +321,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
   }
 
+<<<<<<< HEAD
   Widget _buildSectionCard({
     required String title,
     required IconData icon,
@@ -330,6 +359,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
   }
 
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
   Widget _buildInfoTile({
     required IconData icon,
     required String label,
@@ -337,7 +368,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
     Color? valueColor,
   }) {
     return Padding(
+<<<<<<< HEAD
       padding: const EdgeInsets.symmetric(vertical: 4),
+=======
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
       child: Row(
         children: [
           Container(
@@ -346,9 +381,15 @@ class _ProfileScreenState extends State<ProfileScreen> {
               color: AppColors.surfaceElevatedLight,
               borderRadius: BorderRadius.circular(10),
             ),
+<<<<<<< HEAD
             child: Icon(icon, size: 18, color: AppColors.primary),
           ),
           const SizedBox(width: 14),
+=======
+            child: Icon(icon, size: 20, color: AppColors.primary),
+          ),
+          const SizedBox(width: 16),
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -364,7 +405,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 Text(
                   value,
                   style: TextStyle(
+<<<<<<< HEAD
                     fontSize: 14,
+=======
+                    fontSize: 15,
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
                     fontWeight: FontWeight.w600,
                     color: valueColor ?? AppColors.textPrimaryLight,
                   ),

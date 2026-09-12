@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 import 'dart:async';
 import '../core/constants/api_constants.dart';
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 import '../core/network/api_exceptions.dart';
 import '../core/utils/result.dart';
 import '../models/user.dart';
@@ -58,6 +61,7 @@ class UserRepository {
     }
   }
 
+<<<<<<< HEAD
   /// Update profile details
   Future<User> updateProfile(User currentUser, {String? name, String? phone}) async {
     if (_forceMock) {
@@ -85,6 +89,26 @@ class UserRepository {
       await tokenStorage.saveUser(updated);
       await storageService.saveUser(updated);
       return updated;
+=======
+  /// Update profile details (e.g. name, phone)
+  Future<Result<User>> updateProfile({
+    required String name,
+    String? phone,
+  }) async {
+    try {
+      final updates = {
+        'name': name,
+        if (phone != null) 'phone': phone,
+      };
+
+      final updatedUser = await apiService.updateProfile(updates);
+      await storageService.saveUser(updatedUser);
+      return Result.success(updatedUser);
+    } on ApiException catch (e) {
+      return Result.failure(e.message);
+    } catch (e) {
+      return Result.failure('Failed to update profile: $e');
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     }
   }
 }

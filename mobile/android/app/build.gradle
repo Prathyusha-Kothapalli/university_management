@@ -4,6 +4,7 @@ plugins {
     id "dev.flutter.flutter-gradle-plugin"
 }
 
+<<<<<<< HEAD
 def localProperties = new Properties()
 def localPropertiesFile = rootProject.file('local.properties')
 if (localPropertiesFile.exists()) {
@@ -22,6 +23,8 @@ if (flutterVersionName == null) {
     flutterVersionName = '1.0'
 }
 
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 android {
     namespace "com.unisphere.mobile"
     compileSdkVersion 34
@@ -61,4 +64,8 @@ flutter {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9

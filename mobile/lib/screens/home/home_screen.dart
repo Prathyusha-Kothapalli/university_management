@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import '../../core/constants/app_constants.dart';
+<<<<<<< HEAD
 import '../../core/constants/route_constants.dart';
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 import '../../core/theme/app_colors.dart';
 import '../../models/user.dart';
 import '../../services/mock_data_service.dart';
@@ -22,12 +25,19 @@ import '../timetable/timetable_screen.dart';
 /// Professional University Mobile Dashboard with all core campus modules.
 class HomeScreen extends StatefulWidget {
   final AuthState authState;
+<<<<<<< HEAD
   final ProfileState? profileState;
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 
   const HomeScreen({
     super.key,
     required this.authState,
+<<<<<<< HEAD
     this.profileState,
+=======
+    required this.profileState,
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
   });
 
   @override
@@ -85,6 +95,7 @@ class _HomeScreenState extends State<HomeScreen> {
     Navigator.of(context).push(
       MaterialPageRoute(builder: (_) => screen),
     );
+<<<<<<< HEAD
   }
 
   @override
@@ -143,6 +154,8 @@ class _HomeScreenState extends State<HomeScreen> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // Welcome Hero Card
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
                 Container(
                   width: double.infinity,
                   padding: const EdgeInsets.all(20),

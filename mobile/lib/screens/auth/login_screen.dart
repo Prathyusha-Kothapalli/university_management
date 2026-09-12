@@ -25,6 +25,7 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
+<<<<<<< HEAD
   late final TextEditingController _emailController;
   late final TextEditingController _passwordController;
   bool _rememberMe = false;
@@ -38,6 +39,10 @@ class _LoginScreenState extends State<LoginScreen> {
     );
     _passwordController = TextEditingController();
   }
+=======
+  final _emailController = TextEditingController();
+  final _passwordController = TextEditingController();
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 
   @override
   void dispose() {
@@ -46,6 +51,7 @@ class _LoginScreenState extends State<LoginScreen> {
     super.dispose();
   }
 
+<<<<<<< HEAD
   void _fillQuickDemo(String role) {
     setState(() {
       if (role == 'student') {
@@ -60,10 +66,13 @@ class _LoginScreenState extends State<LoginScreen> {
     widget.authState.clearError();
   }
 
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
   Future<void> _handleLogin() async {
     widget.authState.clearError();
     if (!_formKey.currentState!.validate()) return;
 
+<<<<<<< HEAD
     FocusScope.of(context).unfocus();
 
     final success = await widget.authState.login(
@@ -77,12 +86,43 @@ class _LoginScreenState extends State<LoginScreen> {
       Navigator.of(context).pushNamedAndRemoveUntil(
         RouteConstants.home,
         (route) => false,
+=======
+    final success = await widget.authState.login(
+      _emailController.text.trim(),
+      _passwordController.text,
+    );
+
+    if (success && mounted) {
+      Navigator.of(context).pushReplacement(
+        MaterialPageRoute(
+          builder: (_) => HomeScreen(authState: widget.authState),
+        ),
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
       );
     }
   }
 
+<<<<<<< HEAD
   @override
   Widget build(BuildContext context) {
+=======
+  void _fillQuickDemo(String role) {
+    setState(() {
+      if (role == 'student') {
+        _emailController.text = 'alex.johnson@university.edu';
+        _passwordController.text = 'Password123!';
+      } else {
+        _emailController.text = 'sarah.mitchell.faculty@university.edu';
+        _passwordController.text = 'ProfPass2026!';
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final authState = widget.authState;
+
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     return Scaffold(
       backgroundColor: AppColors.backgroundLight,
       body: SafeArea(
@@ -102,28 +142,23 @@ class _LoginScreenState extends State<LoginScreen> {
                     children: [
                       // Header Icon & Title
                       Center(
-                        child: Container(
-                          width: 72,
-                          height: 72,
-                          decoration: BoxDecoration(
-                            gradient: const LinearGradient(
-                              colors: [AppColors.primary, AppColors.secondary],
-                              begin: Alignment.topLeft,
-                              end: Alignment.bottomRight,
-                            ),
-                            borderRadius: BorderRadius.circular(20),
-                            boxShadow: [
-                              BoxShadow(
-                                color: AppColors.primary.withOpacity(0.25),
-                                blurRadius: 20,
-                                offset: const Offset(0, 8),
+                        child: Image.asset(
+                          'assets/logo.png',
+                          width: 78,
+                          height: 78,
+                          fit: BoxFit.contain,
+                          errorBuilder: (context, error, stackTrace) => Container(
+                            width: 72,
+                            height: 72,
+                            decoration: BoxDecoration(
+                              gradient: const LinearGradient(
+                                colors: [AppColors.primary, AppColors.secondary],
+                                begin: Alignment.topLeft,
+                                end: Alignment.bottomRight,
                               ),
-                            ],
-                          ),
-                          child: const Icon(
-                            Icons.school_rounded,
-                            size: 38,
-                            color: Colors.white,
+                              borderRadius: BorderRadius.circular(20),
+                            ),
+                            child: const Icon(Icons.school_rounded, size: 38, color: Colors.white),
                           ),
                         ),
                       ),
@@ -147,6 +182,50 @@ class _LoginScreenState extends State<LoginScreen> {
                           color: AppColors.textSecondaryLight,
                         ),
                       ),
+<<<<<<< HEAD
+=======
+                      const SizedBox(height: 28),
+
+                      // Error Alert Banner
+                      if (authState.errorMessage != null)
+                        ErrorCard(
+                          message: authState.errorMessage!,
+                          onDismiss: authState.clearError,
+                        ),
+
+                      // Email Field
+                      CustomTextField(
+                        controller: _emailController,
+                        label: 'University Email',
+                        hint: 'name@university.edu',
+                        prefixIcon: Icons.email_outlined,
+                        keyboardType: TextInputType.emailAddress,
+                        validator: Validators.validateEmail,
+                        textInputAction: TextInputAction.next,
+                      ),
+                      const SizedBox(height: 16),
+
+                      // Password Field
+                      CustomTextField(
+                        controller: _passwordController,
+                        label: 'Password',
+                        hint: '••••••••',
+                        prefixIcon: Icons.lock_outline_rounded,
+                        isPassword: true,
+                        validator: Validators.validatePassword,
+                        textInputAction: TextInputAction.done,
+                        onFieldSubmitted: (_) => _handleLogin(),
+                      ),
+                      const SizedBox(height: 24),
+
+                      // Login Action Button
+                      CustomButton(
+                        text: 'Sign In',
+                        onPressed: _handleLogin,
+                        isLoading: authState.isLoading,
+                        icon: Icons.login_rounded,
+                      ),
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
                       const SizedBox(height: 20),
 
                       // Quick Demo Autofill Helper Card

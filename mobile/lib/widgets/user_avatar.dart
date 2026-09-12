@@ -5,11 +5,15 @@ import '../models/user.dart';
 /// User Avatar display widget with initial letters fallback.
 class UserAvatar extends StatelessWidget {
   final User? user;
+<<<<<<< HEAD
   final String? imageUrl;
   final String? initials;
   final double radius;
   final Color backgroundColor;
   final Color textColor;
+=======
+  final double radius;
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
   final VoidCallback? onTap;
 
   const UserAvatar({
@@ -41,6 +45,7 @@ class UserAvatar extends StatelessWidget {
     final effectiveInitials = _calculateInitials();
     final url = imageUrl ?? user?.avatarUrl;
 
+<<<<<<< HEAD
     Widget avatar = CircleAvatar(
       radius: radius,
       backgroundColor: backgroundColor,
@@ -57,6 +62,19 @@ class UserAvatar extends StatelessWidget {
               ),
             )
           : null,
+=======
+    final avatar = CircleAvatar(
+      radius: radius,
+      backgroundColor: AppColors.primaryLight,
+      child: Text(
+        initials,
+        style: TextStyle(
+          color: Colors.white,
+          fontSize: radius * 0.8,
+          fontWeight: FontWeight.w700,
+        ),
+      ),
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     );
 
     if (onTap != null) {
@@ -66,6 +84,10 @@ class UserAvatar extends StatelessWidget {
         child: avatar,
       );
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     return avatar;
   }
 }

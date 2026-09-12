@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 import '../core/constants/api_constants.dart';
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 import '../core/network/api_client.dart';
 import '../core/network/api_endpoints.dart';
 import '../core/network/api_exceptions.dart';
@@ -6,7 +9,10 @@ import '../models/login_request.dart';
 import '../models/login_response.dart';
 import '../models/register_request.dart';
 import '../models/user.dart';
+<<<<<<< HEAD
 import '../models/user_profile.dart';
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 import 'mock_data_service.dart';
 import 'token_storage_service.dart';
 
@@ -134,7 +140,11 @@ class ApiService {
     try {
       await apiClient.post(ApiEndpoints.logout);
     } catch (_) {
+<<<<<<< HEAD
       // Non-fatal if backend token invalidation is unreachable
+=======
+      // Ignore network errors on logout
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     }
   }
 }

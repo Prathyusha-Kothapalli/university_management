@@ -1,14 +1,20 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import '../../core/constants/route_constants.dart';
+=======
+import '../../core/constants/app_constants.dart';
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 import '../../core/theme/app_colors.dart';
 import '../../core/utils/validators.dart';
-import '../../models/register_request.dart';
 import '../../state/auth_state.dart';
 import '../../widgets/custom_button.dart';
 import '../../widgets/custom_text_field.dart';
 import '../../widgets/error_card.dart';
 
+<<<<<<< HEAD
 /// Complete, responsive Registration Screen.
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 class RegisterScreen extends StatefulWidget {
   final AuthState authState;
 
@@ -23,60 +29,89 @@ class RegisterScreen extends StatefulWidget {
 
 class _RegisterScreenState extends State<RegisterScreen> {
   final _formKey = GlobalKey<FormState>();
-  final _nameController = TextEditingController();
+  final _fullNameController = TextEditingController();
   final _emailController = TextEditingController();
-  final _phoneController = TextEditingController();
   final _passwordController = TextEditingController();
   final _confirmPasswordController = TextEditingController();
+
   String _selectedRole = 'student';
+  bool _isLoading = false;
+  String? _localError;
 
   @override
   void dispose() {
-    _nameController.dispose();
+    _fullNameController.dispose();
     _emailController.dispose();
-    _phoneController.dispose();
     _passwordController.dispose();
     _confirmPasswordController.dispose();
     super.dispose();
   }
 
   Future<void> _handleRegister() async {
+<<<<<<< HEAD
     widget.authState.clearError();
     if (!_formKey.currentState!.validate()) {
       return;
     }
 
     FocusScope.of(context).unfocus();
+=======
+    setState(() {
+      _localError = null;
+    });
 
-    final request = RegisterRequest(
-      name: _nameController.text.trim(),
+    if (!_formKey.currentState!.validate()) return;
+
+    if (_passwordController.text != _confirmPasswordController.text) {
+      setState(() {
+        _localError = 'Passwords do not match';
+      });
+      return;
+    }
+
+    setState(() {
+      _isLoading = true;
+    });
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
+
+    final success = await widget.authState.register(
+      fullName: _fullNameController.text.trim(),
       email: _emailController.text.trim(),
-      phone: _phoneController.text.trim(),
       password: _passwordController.text,
       role: _selectedRole,
+<<<<<<< HEAD
       department: _selectedRole == 'faculty'
           ? 'Academic Faculty'
           : 'Undergraduate Studies',
+=======
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     );
 
-    final success = await widget.authState.register(request);
+    setState(() {
+      _isLoading = false;
+    });
 
     if (success && mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Account created successfully! Welcome to UniSphere.'),
+          content: Text('Account registered successfully!'),
           backgroundColor: AppColors.success,
         ),
       );
+<<<<<<< HEAD
       Navigator.of(context).pushNamedAndRemoveUntil(
         RouteConstants.home,
         (route) => false,
       );
+=======
+      Navigator.of(context).pop();
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     }
   }
 
   @override
   Widget build(BuildContext context) {
+<<<<<<< HEAD
     final isLoading = widget.authState.isLoading;
     final errorMessage = widget.authState.errorMessage;
 
@@ -113,9 +148,41 @@ class _RegisterScreenState extends State<RegisterScreen> {
                       fontSize: 13,
                       color: AppColors.textSecondaryLight,
                     ),
+=======
+    return Scaffold(
+      backgroundColor: AppColors.backgroundLight,
+      appBar: AppBar(
+        title: const Text('Create UniSphere Account'),
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+      ),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+          child: Form(
+            key: _formKey,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                const Text(
+                  'Join UniSphere AI Platform',
+                  style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.textPrimaryLight,
+                  ),
+                ),
+                const SizedBox(height: 6),
+                const Text(
+                  'Fill in your details to create your campus account.',
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: AppColors.textSecondaryLight,
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
                   ),
                   const SizedBox(height: 20),
 
+<<<<<<< HEAD
                   // Role Picker Segment
                   Container(
                     decoration: BoxDecoration(
@@ -272,6 +339,87 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                 ],
               ),
+=======
+                if (_localError != null || widget.authState.errorMessage != null)
+                  ErrorCard(
+                    message: _localError ?? widget.authState.errorMessage!,
+                    onDismiss: () {
+                      setState(() {
+                        _localError = null;
+                      });
+                      widget.authState.clearError();
+                    },
+                  ),
+
+                CustomTextField(
+                  controller: _fullNameController,
+                  label: 'Full Name',
+                  hint: 'Alex Morgan',
+                  prefixIcon: Icons.person_outline_rounded,
+                  validator: (val) => val == null || val.isEmpty ? 'Enter full name' : null,
+                  textInputAction: TextInputAction.next,
+                ),
+                const SizedBox(height: 16),
+
+                CustomTextField(
+                  controller: _emailController,
+                  label: 'University Email',
+                  hint: 'alex@unisphere.edu',
+                  prefixIcon: Icons.email_outlined,
+                  keyboardType: TextInputType.emailAddress,
+                  validator: Validators.validateEmail,
+                  textInputAction: TextInputAction.next,
+                ),
+                const SizedBox(height: 16),
+
+                DropdownButtonFormField<String>(
+                  value: _selectedRole,
+                  decoration: InputDecoration(
+                    labelText: 'Account Role',
+                    prefixIcon: const Icon(Icons.badge_outlined),
+                    border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
+                  ),
+                  items: const [
+                    DropdownMenuItem(value: 'student', child: Text('Student')),
+                    DropdownMenuItem(value: 'faculty', child: Text('Faculty')),
+                    DropdownMenuItem(value: 'hod', child: Text('Department Head (HOD)')),
+                  ],
+                  onChanged: (val) {
+                    if (val != null) setState(() => _selectedRole = val);
+                  },
+                ),
+                const SizedBox(height: 16),
+
+                CustomTextField(
+                  controller: _passwordController,
+                  label: 'Password',
+                  hint: '••••••••',
+                  prefixIcon: Icons.lock_outline_rounded,
+                  isPassword: true,
+                  validator: Validators.validatePassword,
+                  textInputAction: TextInputAction.next,
+                ),
+                const SizedBox(height: 16),
+
+                CustomTextField(
+                  controller: _confirmPasswordController,
+                  label: 'Confirm Password',
+                  hint: '••••••••',
+                  prefixIcon: Icons.lock_clock_outlined,
+                  isPassword: true,
+                  validator: (val) => val == null || val.isEmpty ? 'Confirm password' : null,
+                  textInputAction: TextInputAction.done,
+                ),
+                const SizedBox(height: 24),
+
+                CustomButton(
+                  text: 'Complete Registration',
+                  onPressed: _handleRegister,
+                  isLoading: _isLoading,
+                  icon: Icons.person_add_alt_1_rounded,
+                ),
+              ],
+>>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
             ),
           ),
         ),

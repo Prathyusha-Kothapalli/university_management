@@ -477,3 +477,19 @@ export const documentsApi = {
       ]
     ),
 };
+
+export const scholarshipsApi = {
+  getScholarships: () =>
+    apiRequest<any[]>(
+      { method: 'GET', url: '/scholarships/' },
+      [
+        { id: 'sch-101', title: 'Merit Excellence Scholarship 2026', sponsor: 'UniSphere Foundation', amount_inr: 75000, min_cgpa: 3.75, deadline: '2026-10-15', status: 'Active' },
+        { id: 'sch-102', title: 'Women in STEM Fellowship', sponsor: 'Tech Innovation Council', amount_inr: 100000, min_cgpa: 3.50, deadline: '2026-11-01', status: 'Active' },
+      ]
+    ),
+  applyScholarship: (scholarshipId: string) =>
+    apiRequest<any>(
+      { method: 'POST', url: `/scholarships/apply/${scholarshipId}` },
+      { id: `app-${Date.now()}`, scholarship_id: scholarshipId, student_name: 'Alex Morgan', status: 'Submitted' }
+    ),
+};

@@ -110,22 +110,17 @@ export const AuthPage: React.FC<AuthPageProps> = ({ onSuccess }) => {
       }}>
         {/* Emblem Header */}
         <div style={{ textAlign: 'center', marginBottom: '1.75rem' }}>
-          <div style={{
-            width: '60px',
-            height: '60px',
-            margin: '0 auto 12px',
-            borderRadius: '16px',
-            background: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            color: '#fff',
-            fontSize: '1.8rem',
-            fontWeight: 800,
-            boxShadow: '0 8px 20px rgba(37, 99, 235, 0.4)',
-          }}>
-            🎓
-          </div>
+          <img
+            src="/logo.png"
+            alt="UniSphere AI Logo"
+            style={{
+              width: '72px',
+              height: '72px',
+              objectFit: 'contain',
+              margin: '0 auto 12px',
+              filter: 'drop-shadow(0 8px 20px rgba(37, 99, 235, 0.4))',
+            }}
+          />
           <h2 style={{ fontSize: '1.75rem', fontWeight: 800, color: '#f8fafc', letterSpacing: '-0.5px' }}>
             {isLogin ? 'Welcome Back' : 'Create an Account'}
           </h2>

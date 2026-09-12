@@ -30,9 +30,20 @@ export const Navbar: React.FC = () => {
   }, []);
 
   const handleRoleToggle = () => {
-    const nextRole: UserRole = role === 'student' ? 'faculty' : role === 'faculty' ? 'hod' : role === 'hod' ? 'parent' : role === 'parent' ? 'admin' : 'student';
+    const nextRole: UserRole = role === 'student' ? 'faculty' : role === 'faculty' ? 'hod' : role === 'hod' ? 'parent' : role === 'parent' ? 'librarian' : role === 'librarian' ? 'admin' : 'student';
     switchRole(nextRole);
-    const targetPath = nextRole === 'parent' ? '/parent/dashboard' : nextRole === 'hod' ? '/hod/dashboard' : '/dashboard';
+    const targetPath =
+      nextRole === 'admin'
+        ? '/admin/dashboard'
+        : nextRole === 'faculty'
+        ? '/faculty/dashboard'
+        : nextRole === 'hod'
+        ? '/hod/dashboard'
+        : nextRole === 'parent'
+        ? '/parent/dashboard'
+        : nextRole === 'librarian'
+        ? '/librarian/dashboard'
+        : '/dashboard';
     navigate(targetPath);
     showToast(`Switched active portal view to ${nextRole.toUpperCase()}`, 'info');
   };
@@ -47,6 +58,7 @@ export const Navbar: React.FC = () => {
     { label: 'Dashboard & KPIs', path: '/dashboard', cat: 'Overview' },
     { label: 'Parent & Guardian Portal', path: '/parent/dashboard', cat: 'Parent Portal' },
     { label: 'HOD Department Portal', path: '/hod/dashboard', cat: 'Management' },
+    { label: 'Librarian Operations Dashboard', path: '/librarian/dashboard', cat: 'Management' },
     { label: 'Academics & Courses', path: '/academics', cat: 'Academics' },
     { label: 'Assignments & Study Notes', path: '/learning', cat: 'Learning' },
     { label: 'Exams, Grades & Transcripts', path: '/exams', cat: 'Exams' },
@@ -84,23 +96,16 @@ export const Navbar: React.FC = () => {
         onClick={() => navigate('/dashboard')}
         style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}
       >
-        <div
+        <img
+          src="/logo.png"
+          alt="UniSphere AI Logo"
           style={{
-            width: '36px',
-            height: '36px',
-            borderRadius: '10px',
-            background: 'linear-gradient(135deg, #2563eb, #0ea5e9)',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            color: '#ffffff',
-            fontWeight: 800,
-            fontSize: '1.15rem',
-            boxShadow: '0 4px 12px rgba(37, 99, 235, 0.4)',
+            width: '38px',
+            height: '38px',
+            objectFit: 'contain',
+            filter: 'drop-shadow(0 4px 10px rgba(37, 99, 235, 0.5))',
           }}
-        >
-          U
-        </div>
+        />
         <div>
           <div style={{ fontWeight: 800, fontSize: '1.15rem', color: '#f8fafc', letterSpacing: '-0.3px' }}>
             UniSphere <span style={{ color: '#38bdf8' }}>AI</span>

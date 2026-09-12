@@ -23,6 +23,10 @@ import { ProfilePage } from './pages/Profile/ProfilePage';
 
 import { HODDashboard } from './pages/Dashboard/HODDashboard';
 import { ParentDashboard } from './pages/Dashboard/ParentDashboard';
+import { LibrarianDashboard } from './pages/Dashboard/LibrarianDashboard';
+import { AdminDashboard } from './pages/Dashboard/AdminDashboard';
+import { FacultyDashboard } from './pages/Dashboard/FacultyDashboard';
+import { SmartCampusFeaturesHub } from './pages/Features/SmartCampusFeaturesHub';
 import { ParentAcademicsView } from './pages/Parent/ParentAcademicsView';
 import { ParentAttendanceView } from './pages/Parent/ParentAttendanceView';
 import { ParentFinanceView } from './pages/Parent/ParentFinanceView';
@@ -87,6 +91,10 @@ export const App: React.FC = () => {
                 <Route path="/parent/ai" element={<AiAssistantPage />} />
                 <Route path="/parent/profile" element={<ProfilePage />} />
                 <Route path="/hod/dashboard" element={<HODDashboard />} />
+                <Route path="/librarian/dashboard" element={<LibrarianDashboard />} />
+                <Route path="/admin/dashboard" element={<AdminDashboard />} />
+                <Route path="/faculty/dashboard" element={<FacultyDashboard />} />
+                <Route path="/features/hub" element={<SmartCampusFeaturesHub />} />
                 <Route path="/hod/department" element={<DepartmentOverview />} />
                 <Route path="/hod/students" element={<DepartmentStudents />} />
                 <Route path="/hod/faculty" element={<DepartmentFaculty />} />

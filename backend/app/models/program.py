@@ -63,3 +63,9 @@ class Program(Base):
         "Department",
         back_populates="programs"
     )
+
+    courses = relationship(
+        "Course",
+        back_populates="program",
+        cascade="all, delete-orphan"
+    )

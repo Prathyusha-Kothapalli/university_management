@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { createContext, useState, useEffect, ReactNode } from 'react';
 import { User, UserRole } from '../types';
 import { authApi } from '../services/api';
@@ -12,27 +11,10 @@ interface AuthContextType {
   logout: () => void;
   switchRole: (newRole?: UserRole) => void;
   updateUser: (updated: Partial<User>) => void;
-=======
-import React, { createContext, useState, useEffect, useCallback } from 'react';
-import { User } from '../types/user';
-import { LoginCredentials } from '../types/auth';
-import { authService } from '../services/authService';
-
-export interface AuthContextType {
-  user: User | null;
-  isAuthenticated: boolean;
-  loading: boolean;
-  error: string | null;
-  login: (credentials: LoginCredentials) => Promise<void>;
-  logout: () => Promise<void>;
-  refreshUser: () => Promise<void>;
-  setError: (error: string | null) => void;
->>>>>>> origin/web
 }
 
 export const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
-<<<<<<< HEAD
 const defaultMockUser: User = {
   id: 'u-101',
   full_name: 'Alex Morgan',
@@ -156,63 +138,6 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
   const updateUser = (updated: Partial<User>) => {
     if (user) {
       setUser({ ...user, ...updated });
-=======
-export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [user, setUser] = useState<User | null>(null);
-  const [loading, setLoading] = useState<boolean>(true);
-  const [error, setError] = useState<string | null>(null);
-
-  const refreshUser = useCallback(async () => {
-    try {
-      setLoading(true);
-      const currentUser = await authService.getMe();
-      setUser(currentUser);
-      setError(null);
-    } catch {
-      setUser(null);
-    } finally {
-      setLoading(false);
-    }
-  }, []);
-
-  useEffect(() => {
-    refreshUser();
-
-    const handleUnauthorized = () => {
-      setUser(null);
-      setError('Session expired. Please sign in again.');
-    };
-
-    window.addEventListener('collexa_unauthorized', handleUnauthorized);
-    return () => {
-      window.removeEventListener('collexa_unauthorized', handleUnauthorized);
-    };
-  }, [refreshUser]);
-
-  const login = async (credentials: LoginCredentials) => {
-    setLoading(true);
-    setError(null);
-    try {
-      const response = await authService.login(credentials);
-      setUser(response.user);
-    } catch (err: any) {
-      const errorMsg = err?.message || 'Login failed. Please check your credentials.';
-      setError(errorMsg);
-      throw err;
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  const logout = async () => {
-    setLoading(true);
-    try {
-      await authService.logout();
-    } finally {
-      setUser(null);
-      setError(null);
-      setLoading(false);
->>>>>>> origin/web
     }
   };
 
@@ -220,7 +145,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
     <AuthContext.Provider
       value={{
         user,
-<<<<<<< HEAD
         role,
         token,
         isAuthenticated: !!user,
@@ -228,15 +152,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
         logout,
         switchRole,
         updateUser,
-=======
-        isAuthenticated: !!user,
-        loading,
-        error,
-        login,
-        logout,
-        refreshUser,
-        setError,
->>>>>>> origin/web
       }}
     >
       {children}

@@ -48,11 +48,26 @@ from app.api.v1.department_budgets import router as department_budgets_router
 from app.api.v1.accreditation import router as accreditation_router
 from app.api.v1.transport_maintenance import router as transport_maintenance_router
 from app.api.v1.attendance_records import router as attendance_records_router
+from app.api.v1.admissions import router as batch1_admissions_router
+from app.api.v1.scholarships import router as batch1_scholarships_router
+from app.api.v1.academic_advising import router as batch1_academic_advising_router
+from app.api.v1.graduation_audit import router as batch1_graduation_audit_router
+from app.api.v1.clubs_organizations import router as batch1_clubs_organizations_router
+from app.api.v1.approval_workflows import router as batch1_approval_workflows_router
+from app.api.v1.digital_certificates import router as batch1_digital_certificates_router
 
 app = FastAPI(
     title="UniSphere AI Backend",
     version="1.0.0"
 )
+
+app.include_router(batch1_admissions_router, prefix="/api/v1")
+app.include_router(batch1_scholarships_router, prefix="/api/v1")
+app.include_router(batch1_academic_advising_router, prefix="/api/v1")
+app.include_router(batch1_graduation_audit_router, prefix="/api/v1")
+app.include_router(batch1_clubs_organizations_router, prefix="/api/v1")
+app.include_router(batch1_approval_workflows_router, prefix="/api/v1")
+app.include_router(batch1_digital_certificates_router, prefix="/api/v1")
 
 app.include_router(
     attendance_records_router,

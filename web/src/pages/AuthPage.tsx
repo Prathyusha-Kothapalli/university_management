@@ -3,10 +3,10 @@ import { User, UserRole } from '../types/auth';
 import { mockStudentUser, mockFacultyUser } from '../services/mockData';
 
 interface AuthPageProps {
-  onSuccess: (user: User) => void;
+  onSuccess?: (user?: any) => void;
 }
 
-export const AuthPage: React.FC<AuthPageProps> = ({ onSuccess }) => {
+export const AuthPage: React.FC<AuthPageProps> = ({ onSuccess = () => {} }) => {
   const [isLogin, setIsLogin] = useState(true);
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');

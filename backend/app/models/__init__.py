@@ -111,6 +111,21 @@ from app.models.smart_campus_transport import (
     VehicleMaintenanceLog,
     HostelMaintenanceTicket,
 )
+from app.models.health_center import (
+    MedicalRecord,
+    HealthAppointment,
+    PharmacyItem,
+    HealthEmergencyAlert,
+)
+from app.models.canteen import (
+    CanteenMenuItem,
+    CanteenOrder,
+    CanteenMealPlan,
+)
+from app.models.lost_and_found import (
+    LostItem,
+    ItemClaim,
+)
 from app.models.finance_expansion import (
     FeeInstallmentPlan,
     FeeInstallment,

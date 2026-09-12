@@ -48,6 +48,9 @@ from app.api.v1.department_budgets import router as department_budgets_router
 from app.api.v1.accreditation import router as accreditation_router
 from app.api.v1.transport_maintenance import router as transport_maintenance_router
 from app.api.v1.attendance_records import router as attendance_records_router
+from app.api.v1.health_center import router as health_center_router
+from app.api.v1.canteen import router as canteen_router
+from app.api.v1.lost_and_found import router as lost_and_found_router
 
 app = FastAPI(
     title="UniSphere AI Backend",
@@ -361,6 +364,21 @@ app.include_router(
 
 app.include_router(
     hostel_expansion_router,
+    prefix="/api/v1"
+)
+
+app.include_router(
+    health_center_router,
+    prefix="/api/v1"
+)
+
+app.include_router(
+    canteen_router,
+    prefix="/api/v1"
+)
+
+app.include_router(
+    lost_and_found_router,
     prefix="/api/v1"
 )
 

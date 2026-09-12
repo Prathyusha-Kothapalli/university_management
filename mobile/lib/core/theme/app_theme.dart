@@ -1,12 +1,24 @@
 import 'package:flutter/material.dart';
+<<<<<<< HEAD
 import 'app_colors.dart';
 import 'app_typography.dart';
 
 class AppTheme {
+=======
+import 'package:flutter/services.dart';
+import 'app_colors.dart';
+import 'app_typography.dart';
+
+/// Material 3 Themes (Light & Dark)
+class AppTheme {
+  AppTheme._();
+
+>>>>>>> 29907a7 (added flutter)
   static ThemeData get lightTheme {
     return ThemeData(
       useMaterial3: true,
       brightness: Brightness.light,
+<<<<<<< HEAD
       colorScheme: const ColorScheme.light(
         primary: AppColors.primary,
         onPrimary: Colors.white,
@@ -39,6 +51,33 @@ class AppTheme {
       ),
       cardTheme: CardTheme(
         color: AppColors.cardLight,
+=======
+      primaryColor: AppColors.primary,
+      scaffoldBackgroundColor: AppColors.backgroundLight,
+      colorScheme: const ColorScheme.light(
+        primary: AppColors.primary,
+        onPrimary: Colors.white,
+        primaryContainer: Color(0xFFDBEAFE),
+        onPrimaryContainer: AppColors.primaryDark,
+        secondary: AppColors.secondary,
+        onSecondary: Colors.white,
+        surface: AppColors.surfaceLight,
+        onSurface: AppColors.textPrimaryLight,
+        error: AppColors.error,
+        onError: Colors.white,
+        outline: AppColors.borderLight,
+      ),
+      appBarTheme: const AppBarTheme(
+        backgroundColor: AppColors.surfaceLight,
+        foregroundColor: AppColors.textPrimaryLight,
+        elevation: 0,
+        centerTitle: true,
+        titleTextStyle: AppTypography.titleLarge,
+        systemOverlayStyle: SystemUiOverlayStyle.dark,
+      ),
+      cardTheme: CardTheme(
+        color: AppColors.surfaceLight,
+>>>>>>> 29907a7 (added flutter)
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
@@ -46,12 +85,42 @@ class AppTheme {
         ),
         margin: EdgeInsets.zero,
       ),
+<<<<<<< HEAD
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: Colors.white,
         contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
         hintStyle: const TextStyle(color: AppColors.textMutedLight, fontSize: 14),
         labelStyle: const TextStyle(color: AppColors.textSecondaryLight, fontSize: 14),
+=======
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.primary,
+          foregroundColor: Colors.white,
+          elevation: 0,
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          textStyle: AppTypography.labelLarge,
+        ),
+      ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+          foregroundColor: AppColors.primary,
+          side: const BorderSide(color: AppColors.primary, width: 1.5),
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          textStyle: AppTypography.labelLarge,
+        ),
+      ),
+      inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        fillColor: Colors.white,
+        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+>>>>>>> 29907a7 (added flutter)
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: const BorderSide(color: AppColors.borderLight),
@@ -72,6 +141,7 @@ class AppTheme {
           borderRadius: BorderRadius.circular(12),
           borderSide: const BorderSide(color: AppColors.error, width: 2),
         ),
+<<<<<<< HEAD
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
@@ -91,11 +161,19 @@ class AppTheme {
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
           textStyle: const TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
         ),
+=======
+        labelStyle: const TextStyle(color: AppColors.textSecondaryLight),
+        hintStyle: const TextStyle(color: AppColors.textMutedLight),
+>>>>>>> 29907a7 (added flutter)
       ),
       dividerTheme: const DividerThemeData(
         color: AppColors.borderLight,
         thickness: 1,
+<<<<<<< HEAD
         space: 24,
+=======
+        space: 1,
+>>>>>>> 29907a7 (added flutter)
       ),
     );
   }
@@ -104,6 +182,7 @@ class AppTheme {
     return ThemeData(
       useMaterial3: true,
       brightness: Brightness.dark,
+<<<<<<< HEAD
       colorScheme: const ColorScheme.dark(
         primary: AppColors.primary,
         onPrimary: Colors.white,
@@ -118,10 +197,28 @@ class AppTheme {
         outline: AppColors.borderDark,
       ),
       scaffoldBackgroundColor: AppColors.backgroundDark,
+=======
+      primaryColor: AppColors.primaryLight,
+      scaffoldBackgroundColor: AppColors.backgroundDark,
+      colorScheme: const ColorScheme.dark(
+        primary: AppColors.primaryLight,
+        onPrimary: Colors.white,
+        primaryContainer: Color(0xFF1E3A8A),
+        onPrimaryContainer: Colors.white,
+        secondary: AppColors.secondaryLight,
+        onSecondary: Colors.white,
+        surface: AppColors.surfaceDark,
+        onSurface: AppColors.textPrimaryDark,
+        error: AppColors.error,
+        onError: Colors.white,
+        outline: AppColors.borderDark,
+      ),
+>>>>>>> 29907a7 (added flutter)
       appBarTheme: const AppBarTheme(
         backgroundColor: AppColors.surfaceDark,
         foregroundColor: AppColors.textPrimaryDark,
         elevation: 0,
+<<<<<<< HEAD
         scrolledUnderElevation: 1,
         centerTitle: false,
         titleTextStyle: TextStyle(
@@ -132,6 +229,14 @@ class AppTheme {
       ),
       cardTheme: CardTheme(
         color: AppColors.cardDark,
+=======
+        centerTitle: true,
+        titleTextStyle: AppTypography.titleLarge,
+        systemOverlayStyle: SystemUiOverlayStyle.light,
+      ),
+      cardTheme: CardTheme(
+        color: AppColors.surfaceDark,
+>>>>>>> 29907a7 (added flutter)
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(16),
@@ -139,12 +244,42 @@ class AppTheme {
         ),
         margin: EdgeInsets.zero,
       ),
+<<<<<<< HEAD
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
         fillColor: const Color(0xFF0F172A),
         contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
         hintStyle: const TextStyle(color: AppColors.textMutedDark, fontSize: 14),
         labelStyle: const TextStyle(color: AppColors.textSecondaryDark, fontSize: 14),
+=======
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.primaryLight,
+          foregroundColor: Colors.white,
+          elevation: 0,
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          textStyle: AppTypography.labelLarge,
+        ),
+      ),
+      outlinedButtonTheme: OutlinedButtonThemeData(
+        style: OutlinedButton.styleFrom(
+          foregroundColor: AppColors.primaryLight,
+          side: const BorderSide(color: AppColors.primaryLight, width: 1.5),
+          padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          textStyle: AppTypography.labelLarge,
+        ),
+      ),
+      inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        fillColor: const Color(0xFF1E293B),
+        contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+>>>>>>> 29907a7 (added flutter)
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
           borderSide: const BorderSide(color: AppColors.borderDark),
@@ -155,7 +290,11 @@ class AppTheme {
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
+<<<<<<< HEAD
           borderSide: const BorderSide(color: AppColors.primary, width: 2),
+=======
+          borderSide: const BorderSide(color: AppColors.primaryLight, width: 2),
+>>>>>>> 29907a7 (added flutter)
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
@@ -165,6 +304,7 @@ class AppTheme {
           borderRadius: BorderRadius.circular(12),
           borderSide: const BorderSide(color: AppColors.error, width: 2),
         ),
+<<<<<<< HEAD
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
@@ -175,11 +315,19 @@ class AppTheme {
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
           textStyle: const TextStyle(fontSize: 15, fontWeight: FontWeight.w600),
         ),
+=======
+        labelStyle: const TextStyle(color: AppColors.textSecondaryDark),
+        hintStyle: const TextStyle(color: AppColors.textMutedDark),
+>>>>>>> 29907a7 (added flutter)
       ),
       dividerTheme: const DividerThemeData(
         color: AppColors.borderDark,
         thickness: 1,
+<<<<<<< HEAD
         space: 24,
+=======
+        space: 1,
+>>>>>>> 29907a7 (added flutter)
       ),
     );
   }

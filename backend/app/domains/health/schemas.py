@@ -1456,3 +1456,2033 @@ class HealthSchemaEntity50Response(HealthSchemaEntity50Base):
 
     model_config = ConfigDict(from_attributes=True)
 
+class HealthSchemaEntity51Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 51")
+    category: str = Field(default="Category_51", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=51 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity51Create(HealthSchemaEntity51Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity51Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity51Response(HealthSchemaEntity51Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity52Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 52")
+    category: str = Field(default="Category_52", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=52 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity52Create(HealthSchemaEntity52Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity52Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity52Response(HealthSchemaEntity52Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity53Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 53")
+    category: str = Field(default="Category_53", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=53 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity53Create(HealthSchemaEntity53Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity53Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity53Response(HealthSchemaEntity53Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity54Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 54")
+    category: str = Field(default="Category_54", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=54 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity54Create(HealthSchemaEntity54Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity54Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity54Response(HealthSchemaEntity54Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity55Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 55")
+    category: str = Field(default="Category_55", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=55 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity55Create(HealthSchemaEntity55Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity55Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity55Response(HealthSchemaEntity55Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity56Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 56")
+    category: str = Field(default="Category_56", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=56 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity56Create(HealthSchemaEntity56Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity56Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity56Response(HealthSchemaEntity56Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity57Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 57")
+    category: str = Field(default="Category_57", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=57 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity57Create(HealthSchemaEntity57Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity57Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity57Response(HealthSchemaEntity57Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity58Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 58")
+    category: str = Field(default="Category_58", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=58 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity58Create(HealthSchemaEntity58Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity58Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity58Response(HealthSchemaEntity58Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity59Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 59")
+    category: str = Field(default="Category_59", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=59 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity59Create(HealthSchemaEntity59Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity59Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity59Response(HealthSchemaEntity59Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity60Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 60")
+    category: str = Field(default="Category_60", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=60 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity60Create(HealthSchemaEntity60Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity60Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity60Response(HealthSchemaEntity60Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity61Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 61")
+    category: str = Field(default="Category_61", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=61 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity61Create(HealthSchemaEntity61Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity61Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity61Response(HealthSchemaEntity61Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity62Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 62")
+    category: str = Field(default="Category_62", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=62 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity62Create(HealthSchemaEntity62Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity62Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity62Response(HealthSchemaEntity62Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity63Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 63")
+    category: str = Field(default="Category_63", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=63 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity63Create(HealthSchemaEntity63Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity63Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity63Response(HealthSchemaEntity63Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity64Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 64")
+    category: str = Field(default="Category_64", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=64 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity64Create(HealthSchemaEntity64Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity64Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity64Response(HealthSchemaEntity64Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity65Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 65")
+    category: str = Field(default="Category_65", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=65 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity65Create(HealthSchemaEntity65Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity65Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity65Response(HealthSchemaEntity65Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity66Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 66")
+    category: str = Field(default="Category_66", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=66 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity66Create(HealthSchemaEntity66Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity66Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity66Response(HealthSchemaEntity66Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity67Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 67")
+    category: str = Field(default="Category_67", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=67 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity67Create(HealthSchemaEntity67Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity67Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity67Response(HealthSchemaEntity67Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity68Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 68")
+    category: str = Field(default="Category_68", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=68 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity68Create(HealthSchemaEntity68Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity68Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity68Response(HealthSchemaEntity68Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity69Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 69")
+    category: str = Field(default="Category_69", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=69 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity69Create(HealthSchemaEntity69Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity69Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity69Response(HealthSchemaEntity69Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity70Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 70")
+    category: str = Field(default="Category_70", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=70 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity70Create(HealthSchemaEntity70Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity70Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity70Response(HealthSchemaEntity70Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity71Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 71")
+    category: str = Field(default="Category_71", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=71 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity71Create(HealthSchemaEntity71Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity71Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity71Response(HealthSchemaEntity71Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity72Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 72")
+    category: str = Field(default="Category_72", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=72 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity72Create(HealthSchemaEntity72Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity72Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity72Response(HealthSchemaEntity72Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity73Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 73")
+    category: str = Field(default="Category_73", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=73 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity73Create(HealthSchemaEntity73Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity73Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity73Response(HealthSchemaEntity73Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity74Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 74")
+    category: str = Field(default="Category_74", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=74 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity74Create(HealthSchemaEntity74Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity74Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity74Response(HealthSchemaEntity74Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity75Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 75")
+    category: str = Field(default="Category_75", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=75 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity75Create(HealthSchemaEntity75Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity75Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity75Response(HealthSchemaEntity75Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity76Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 76")
+    category: str = Field(default="Category_76", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=76 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity76Create(HealthSchemaEntity76Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity76Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity76Response(HealthSchemaEntity76Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity77Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 77")
+    category: str = Field(default="Category_77", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=77 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity77Create(HealthSchemaEntity77Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity77Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity77Response(HealthSchemaEntity77Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity78Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 78")
+    category: str = Field(default="Category_78", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=78 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity78Create(HealthSchemaEntity78Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity78Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity78Response(HealthSchemaEntity78Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity79Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 79")
+    category: str = Field(default="Category_79", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=79 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity79Create(HealthSchemaEntity79Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity79Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity79Response(HealthSchemaEntity79Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity80Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 80")
+    category: str = Field(default="Category_80", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=80 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity80Create(HealthSchemaEntity80Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity80Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity80Response(HealthSchemaEntity80Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity81Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 81")
+    category: str = Field(default="Category_81", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=81 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity81Create(HealthSchemaEntity81Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity81Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity81Response(HealthSchemaEntity81Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity82Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 82")
+    category: str = Field(default="Category_82", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=82 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity82Create(HealthSchemaEntity82Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity82Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity82Response(HealthSchemaEntity82Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity83Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 83")
+    category: str = Field(default="Category_83", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=83 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity83Create(HealthSchemaEntity83Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity83Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity83Response(HealthSchemaEntity83Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity84Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 84")
+    category: str = Field(default="Category_84", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=84 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity84Create(HealthSchemaEntity84Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity84Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity84Response(HealthSchemaEntity84Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity85Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 85")
+    category: str = Field(default="Category_85", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=85 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity85Create(HealthSchemaEntity85Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity85Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity85Response(HealthSchemaEntity85Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity86Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 86")
+    category: str = Field(default="Category_86", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=86 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity86Create(HealthSchemaEntity86Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity86Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity86Response(HealthSchemaEntity86Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity87Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 87")
+    category: str = Field(default="Category_87", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=87 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity87Create(HealthSchemaEntity87Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity87Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity87Response(HealthSchemaEntity87Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity88Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 88")
+    category: str = Field(default="Category_88", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=88 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity88Create(HealthSchemaEntity88Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity88Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity88Response(HealthSchemaEntity88Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity89Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 89")
+    category: str = Field(default="Category_89", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=89 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity89Create(HealthSchemaEntity89Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity89Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity89Response(HealthSchemaEntity89Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity90Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 90")
+    category: str = Field(default="Category_90", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=90 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity90Create(HealthSchemaEntity90Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity90Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity90Response(HealthSchemaEntity90Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity91Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 91")
+    category: str = Field(default="Category_91", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=91 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity91Create(HealthSchemaEntity91Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity91Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity91Response(HealthSchemaEntity91Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity92Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 92")
+    category: str = Field(default="Category_92", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=92 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity92Create(HealthSchemaEntity92Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity92Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity92Response(HealthSchemaEntity92Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity93Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 93")
+    category: str = Field(default="Category_93", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=93 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity93Create(HealthSchemaEntity93Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity93Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity93Response(HealthSchemaEntity93Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity94Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 94")
+    category: str = Field(default="Category_94", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=94 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity94Create(HealthSchemaEntity94Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity94Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity94Response(HealthSchemaEntity94Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity95Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 95")
+    category: str = Field(default="Category_95", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=95 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity95Create(HealthSchemaEntity95Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity95Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity95Response(HealthSchemaEntity95Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity96Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 96")
+    category: str = Field(default="Category_96", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=96 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity96Create(HealthSchemaEntity96Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity96Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity96Response(HealthSchemaEntity96Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity97Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 97")
+    category: str = Field(default="Category_97", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=97 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity97Create(HealthSchemaEntity97Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity97Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity97Response(HealthSchemaEntity97Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity98Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 98")
+    category: str = Field(default="Category_98", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=98 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity98Create(HealthSchemaEntity98Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity98Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity98Response(HealthSchemaEntity98Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity99Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 99")
+    category: str = Field(default="Category_99", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=99 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity99Create(HealthSchemaEntity99Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity99Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity99Response(HealthSchemaEntity99Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity100Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 100")
+    category: str = Field(default="Category_100", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=100 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity100Create(HealthSchemaEntity100Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity100Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity100Response(HealthSchemaEntity100Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity101Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 101")
+    category: str = Field(default="Category_101", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=101 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity101Create(HealthSchemaEntity101Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity101Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity101Response(HealthSchemaEntity101Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity102Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 102")
+    category: str = Field(default="Category_102", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=102 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity102Create(HealthSchemaEntity102Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity102Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity102Response(HealthSchemaEntity102Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity103Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 103")
+    category: str = Field(default="Category_103", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=103 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity103Create(HealthSchemaEntity103Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity103Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity103Response(HealthSchemaEntity103Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity104Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 104")
+    category: str = Field(default="Category_104", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=104 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity104Create(HealthSchemaEntity104Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity104Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity104Response(HealthSchemaEntity104Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity105Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 105")
+    category: str = Field(default="Category_105", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=105 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity105Create(HealthSchemaEntity105Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity105Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity105Response(HealthSchemaEntity105Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity106Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 106")
+    category: str = Field(default="Category_106", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=106 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity106Create(HealthSchemaEntity106Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity106Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity106Response(HealthSchemaEntity106Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity107Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 107")
+    category: str = Field(default="Category_107", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=107 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity107Create(HealthSchemaEntity107Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity107Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity107Response(HealthSchemaEntity107Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity108Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 108")
+    category: str = Field(default="Category_108", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=108 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity108Create(HealthSchemaEntity108Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity108Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity108Response(HealthSchemaEntity108Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity109Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 109")
+    category: str = Field(default="Category_109", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=109 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity109Create(HealthSchemaEntity109Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity109Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity109Response(HealthSchemaEntity109Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity110Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 110")
+    category: str = Field(default="Category_110", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=110 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity110Create(HealthSchemaEntity110Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity110Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity110Response(HealthSchemaEntity110Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity111Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 111")
+    category: str = Field(default="Category_111", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=111 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity111Create(HealthSchemaEntity111Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity111Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity111Response(HealthSchemaEntity111Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity112Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 112")
+    category: str = Field(default="Category_112", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=112 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity112Create(HealthSchemaEntity112Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity112Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity112Response(HealthSchemaEntity112Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity113Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 113")
+    category: str = Field(default="Category_113", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=113 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity113Create(HealthSchemaEntity113Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity113Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity113Response(HealthSchemaEntity113Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity114Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 114")
+    category: str = Field(default="Category_114", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=114 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity114Create(HealthSchemaEntity114Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity114Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity114Response(HealthSchemaEntity114Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity115Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 115")
+    category: str = Field(default="Category_115", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=115 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity115Create(HealthSchemaEntity115Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity115Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity115Response(HealthSchemaEntity115Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity116Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 116")
+    category: str = Field(default="Category_116", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=116 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity116Create(HealthSchemaEntity116Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity116Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity116Response(HealthSchemaEntity116Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity117Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 117")
+    category: str = Field(default="Category_117", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=117 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity117Create(HealthSchemaEntity117Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity117Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity117Response(HealthSchemaEntity117Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity118Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 118")
+    category: str = Field(default="Category_118", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=118 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity118Create(HealthSchemaEntity118Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity118Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity118Response(HealthSchemaEntity118Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity119Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 119")
+    category: str = Field(default="Category_119", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=119 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity119Create(HealthSchemaEntity119Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity119Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity119Response(HealthSchemaEntity119Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HealthSchemaEntity120Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 120")
+    category: str = Field(default="Category_120", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=120 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HealthSchemaEntity120Create(HealthSchemaEntity120Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HealthSchemaEntity120Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HealthSchemaEntity120Response(HealthSchemaEntity120Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+

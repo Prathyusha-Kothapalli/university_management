@@ -3452,3 +3452,693 @@ export interface IHealthItem150Payload {
   is_active?: boolean;
 }
 
+export interface IHealthItem151 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem151Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem152 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem152Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem153 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem153Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem154 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem154Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem155 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem155Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem156 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem156Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem157 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem157Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem158 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem158Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem159 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem159Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem160 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem160Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem161 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem161Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem162 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem162Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem163 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem163Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem164 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem164Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem165 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem165Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem166 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem166Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem167 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem167Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem168 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem168Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem169 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem169Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem170 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem170Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem171 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem171Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem172 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem172Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem173 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem173Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem174 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem174Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem175 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem175Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem176 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem176Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem177 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem177Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem178 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem178Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem179 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem179Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHealthItem180 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHealthItem180Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+

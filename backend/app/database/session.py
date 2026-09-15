@@ -1,18 +1,25 @@
-"""
-Database session setup placeholder for UniSphere AI backend.
-"""
-from typing import Generator
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker, Session
+
 from app.core.config import settings
 
-# Engine & SessionLocal setup will be configured here when models & migrations are introduced.
 
-def get_db() -> Generator:
-    """
-    Dependency for getting async/sync DB session per request.
-    Placeholder for future database operations.
-    """
+engine = create_engine(
+    settings.DATABASE_URL,
+    pool_pre_ping=True
+)
+
+SessionLocal = sessionmaker(
+    bind=engine,
+    autocommit=False,
+    autoflush=False
+)
+
+
+def get_db():
+    db = SessionLocal()
+
     try:
-        db = None
         yield db
     finally:
-        pass
+        db.close()

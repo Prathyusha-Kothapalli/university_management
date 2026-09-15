@@ -2011,3 +2011,2803 @@ class ExamsDomainService:
         self.db.commit()
         return True
 
+    def get_entity_51_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity51]:
+        return self.db.query(ExamsModelEntity51).offset(skip).limit(limit).all()
+
+    def get_entity_51_by_id(self, entity_id: int) -> Optional[ExamsModelEntity51]:
+        return self.db.query(ExamsModelEntity51).filter(ExamsModelEntity51.id == entity_id).first()
+
+    def create_entity_51(self, payload: ExamsSchemaEntity51Create) -> ExamsModelEntity51:
+        db_obj = ExamsModelEntity51(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_51(self, entity_id: int, payload: ExamsSchemaEntity51Update) -> Optional[ExamsModelEntity51]:
+        db_obj = self.get_entity_51_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_51(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_51_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_52_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity52]:
+        return self.db.query(ExamsModelEntity52).offset(skip).limit(limit).all()
+
+    def get_entity_52_by_id(self, entity_id: int) -> Optional[ExamsModelEntity52]:
+        return self.db.query(ExamsModelEntity52).filter(ExamsModelEntity52.id == entity_id).first()
+
+    def create_entity_52(self, payload: ExamsSchemaEntity52Create) -> ExamsModelEntity52:
+        db_obj = ExamsModelEntity52(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_52(self, entity_id: int, payload: ExamsSchemaEntity52Update) -> Optional[ExamsModelEntity52]:
+        db_obj = self.get_entity_52_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_52(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_52_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_53_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity53]:
+        return self.db.query(ExamsModelEntity53).offset(skip).limit(limit).all()
+
+    def get_entity_53_by_id(self, entity_id: int) -> Optional[ExamsModelEntity53]:
+        return self.db.query(ExamsModelEntity53).filter(ExamsModelEntity53.id == entity_id).first()
+
+    def create_entity_53(self, payload: ExamsSchemaEntity53Create) -> ExamsModelEntity53:
+        db_obj = ExamsModelEntity53(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_53(self, entity_id: int, payload: ExamsSchemaEntity53Update) -> Optional[ExamsModelEntity53]:
+        db_obj = self.get_entity_53_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_53(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_53_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_54_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity54]:
+        return self.db.query(ExamsModelEntity54).offset(skip).limit(limit).all()
+
+    def get_entity_54_by_id(self, entity_id: int) -> Optional[ExamsModelEntity54]:
+        return self.db.query(ExamsModelEntity54).filter(ExamsModelEntity54.id == entity_id).first()
+
+    def create_entity_54(self, payload: ExamsSchemaEntity54Create) -> ExamsModelEntity54:
+        db_obj = ExamsModelEntity54(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_54(self, entity_id: int, payload: ExamsSchemaEntity54Update) -> Optional[ExamsModelEntity54]:
+        db_obj = self.get_entity_54_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_54(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_54_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_55_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity55]:
+        return self.db.query(ExamsModelEntity55).offset(skip).limit(limit).all()
+
+    def get_entity_55_by_id(self, entity_id: int) -> Optional[ExamsModelEntity55]:
+        return self.db.query(ExamsModelEntity55).filter(ExamsModelEntity55.id == entity_id).first()
+
+    def create_entity_55(self, payload: ExamsSchemaEntity55Create) -> ExamsModelEntity55:
+        db_obj = ExamsModelEntity55(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_55(self, entity_id: int, payload: ExamsSchemaEntity55Update) -> Optional[ExamsModelEntity55]:
+        db_obj = self.get_entity_55_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_55(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_55_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_56_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity56]:
+        return self.db.query(ExamsModelEntity56).offset(skip).limit(limit).all()
+
+    def get_entity_56_by_id(self, entity_id: int) -> Optional[ExamsModelEntity56]:
+        return self.db.query(ExamsModelEntity56).filter(ExamsModelEntity56.id == entity_id).first()
+
+    def create_entity_56(self, payload: ExamsSchemaEntity56Create) -> ExamsModelEntity56:
+        db_obj = ExamsModelEntity56(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_56(self, entity_id: int, payload: ExamsSchemaEntity56Update) -> Optional[ExamsModelEntity56]:
+        db_obj = self.get_entity_56_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_56(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_56_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_57_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity57]:
+        return self.db.query(ExamsModelEntity57).offset(skip).limit(limit).all()
+
+    def get_entity_57_by_id(self, entity_id: int) -> Optional[ExamsModelEntity57]:
+        return self.db.query(ExamsModelEntity57).filter(ExamsModelEntity57.id == entity_id).first()
+
+    def create_entity_57(self, payload: ExamsSchemaEntity57Create) -> ExamsModelEntity57:
+        db_obj = ExamsModelEntity57(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_57(self, entity_id: int, payload: ExamsSchemaEntity57Update) -> Optional[ExamsModelEntity57]:
+        db_obj = self.get_entity_57_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_57(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_57_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_58_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity58]:
+        return self.db.query(ExamsModelEntity58).offset(skip).limit(limit).all()
+
+    def get_entity_58_by_id(self, entity_id: int) -> Optional[ExamsModelEntity58]:
+        return self.db.query(ExamsModelEntity58).filter(ExamsModelEntity58.id == entity_id).first()
+
+    def create_entity_58(self, payload: ExamsSchemaEntity58Create) -> ExamsModelEntity58:
+        db_obj = ExamsModelEntity58(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_58(self, entity_id: int, payload: ExamsSchemaEntity58Update) -> Optional[ExamsModelEntity58]:
+        db_obj = self.get_entity_58_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_58(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_58_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_59_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity59]:
+        return self.db.query(ExamsModelEntity59).offset(skip).limit(limit).all()
+
+    def get_entity_59_by_id(self, entity_id: int) -> Optional[ExamsModelEntity59]:
+        return self.db.query(ExamsModelEntity59).filter(ExamsModelEntity59.id == entity_id).first()
+
+    def create_entity_59(self, payload: ExamsSchemaEntity59Create) -> ExamsModelEntity59:
+        db_obj = ExamsModelEntity59(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_59(self, entity_id: int, payload: ExamsSchemaEntity59Update) -> Optional[ExamsModelEntity59]:
+        db_obj = self.get_entity_59_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_59(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_59_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_60_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity60]:
+        return self.db.query(ExamsModelEntity60).offset(skip).limit(limit).all()
+
+    def get_entity_60_by_id(self, entity_id: int) -> Optional[ExamsModelEntity60]:
+        return self.db.query(ExamsModelEntity60).filter(ExamsModelEntity60.id == entity_id).first()
+
+    def create_entity_60(self, payload: ExamsSchemaEntity60Create) -> ExamsModelEntity60:
+        db_obj = ExamsModelEntity60(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_60(self, entity_id: int, payload: ExamsSchemaEntity60Update) -> Optional[ExamsModelEntity60]:
+        db_obj = self.get_entity_60_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_60(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_60_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_61_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity61]:
+        return self.db.query(ExamsModelEntity61).offset(skip).limit(limit).all()
+
+    def get_entity_61_by_id(self, entity_id: int) -> Optional[ExamsModelEntity61]:
+        return self.db.query(ExamsModelEntity61).filter(ExamsModelEntity61.id == entity_id).first()
+
+    def create_entity_61(self, payload: ExamsSchemaEntity61Create) -> ExamsModelEntity61:
+        db_obj = ExamsModelEntity61(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_61(self, entity_id: int, payload: ExamsSchemaEntity61Update) -> Optional[ExamsModelEntity61]:
+        db_obj = self.get_entity_61_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_61(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_61_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_62_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity62]:
+        return self.db.query(ExamsModelEntity62).offset(skip).limit(limit).all()
+
+    def get_entity_62_by_id(self, entity_id: int) -> Optional[ExamsModelEntity62]:
+        return self.db.query(ExamsModelEntity62).filter(ExamsModelEntity62.id == entity_id).first()
+
+    def create_entity_62(self, payload: ExamsSchemaEntity62Create) -> ExamsModelEntity62:
+        db_obj = ExamsModelEntity62(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_62(self, entity_id: int, payload: ExamsSchemaEntity62Update) -> Optional[ExamsModelEntity62]:
+        db_obj = self.get_entity_62_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_62(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_62_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_63_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity63]:
+        return self.db.query(ExamsModelEntity63).offset(skip).limit(limit).all()
+
+    def get_entity_63_by_id(self, entity_id: int) -> Optional[ExamsModelEntity63]:
+        return self.db.query(ExamsModelEntity63).filter(ExamsModelEntity63.id == entity_id).first()
+
+    def create_entity_63(self, payload: ExamsSchemaEntity63Create) -> ExamsModelEntity63:
+        db_obj = ExamsModelEntity63(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_63(self, entity_id: int, payload: ExamsSchemaEntity63Update) -> Optional[ExamsModelEntity63]:
+        db_obj = self.get_entity_63_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_63(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_63_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_64_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity64]:
+        return self.db.query(ExamsModelEntity64).offset(skip).limit(limit).all()
+
+    def get_entity_64_by_id(self, entity_id: int) -> Optional[ExamsModelEntity64]:
+        return self.db.query(ExamsModelEntity64).filter(ExamsModelEntity64.id == entity_id).first()
+
+    def create_entity_64(self, payload: ExamsSchemaEntity64Create) -> ExamsModelEntity64:
+        db_obj = ExamsModelEntity64(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_64(self, entity_id: int, payload: ExamsSchemaEntity64Update) -> Optional[ExamsModelEntity64]:
+        db_obj = self.get_entity_64_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_64(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_64_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_65_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity65]:
+        return self.db.query(ExamsModelEntity65).offset(skip).limit(limit).all()
+
+    def get_entity_65_by_id(self, entity_id: int) -> Optional[ExamsModelEntity65]:
+        return self.db.query(ExamsModelEntity65).filter(ExamsModelEntity65.id == entity_id).first()
+
+    def create_entity_65(self, payload: ExamsSchemaEntity65Create) -> ExamsModelEntity65:
+        db_obj = ExamsModelEntity65(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_65(self, entity_id: int, payload: ExamsSchemaEntity65Update) -> Optional[ExamsModelEntity65]:
+        db_obj = self.get_entity_65_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_65(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_65_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_66_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity66]:
+        return self.db.query(ExamsModelEntity66).offset(skip).limit(limit).all()
+
+    def get_entity_66_by_id(self, entity_id: int) -> Optional[ExamsModelEntity66]:
+        return self.db.query(ExamsModelEntity66).filter(ExamsModelEntity66.id == entity_id).first()
+
+    def create_entity_66(self, payload: ExamsSchemaEntity66Create) -> ExamsModelEntity66:
+        db_obj = ExamsModelEntity66(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_66(self, entity_id: int, payload: ExamsSchemaEntity66Update) -> Optional[ExamsModelEntity66]:
+        db_obj = self.get_entity_66_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_66(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_66_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_67_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity67]:
+        return self.db.query(ExamsModelEntity67).offset(skip).limit(limit).all()
+
+    def get_entity_67_by_id(self, entity_id: int) -> Optional[ExamsModelEntity67]:
+        return self.db.query(ExamsModelEntity67).filter(ExamsModelEntity67.id == entity_id).first()
+
+    def create_entity_67(self, payload: ExamsSchemaEntity67Create) -> ExamsModelEntity67:
+        db_obj = ExamsModelEntity67(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_67(self, entity_id: int, payload: ExamsSchemaEntity67Update) -> Optional[ExamsModelEntity67]:
+        db_obj = self.get_entity_67_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_67(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_67_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_68_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity68]:
+        return self.db.query(ExamsModelEntity68).offset(skip).limit(limit).all()
+
+    def get_entity_68_by_id(self, entity_id: int) -> Optional[ExamsModelEntity68]:
+        return self.db.query(ExamsModelEntity68).filter(ExamsModelEntity68.id == entity_id).first()
+
+    def create_entity_68(self, payload: ExamsSchemaEntity68Create) -> ExamsModelEntity68:
+        db_obj = ExamsModelEntity68(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_68(self, entity_id: int, payload: ExamsSchemaEntity68Update) -> Optional[ExamsModelEntity68]:
+        db_obj = self.get_entity_68_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_68(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_68_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_69_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity69]:
+        return self.db.query(ExamsModelEntity69).offset(skip).limit(limit).all()
+
+    def get_entity_69_by_id(self, entity_id: int) -> Optional[ExamsModelEntity69]:
+        return self.db.query(ExamsModelEntity69).filter(ExamsModelEntity69.id == entity_id).first()
+
+    def create_entity_69(self, payload: ExamsSchemaEntity69Create) -> ExamsModelEntity69:
+        db_obj = ExamsModelEntity69(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_69(self, entity_id: int, payload: ExamsSchemaEntity69Update) -> Optional[ExamsModelEntity69]:
+        db_obj = self.get_entity_69_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_69(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_69_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_70_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity70]:
+        return self.db.query(ExamsModelEntity70).offset(skip).limit(limit).all()
+
+    def get_entity_70_by_id(self, entity_id: int) -> Optional[ExamsModelEntity70]:
+        return self.db.query(ExamsModelEntity70).filter(ExamsModelEntity70.id == entity_id).first()
+
+    def create_entity_70(self, payload: ExamsSchemaEntity70Create) -> ExamsModelEntity70:
+        db_obj = ExamsModelEntity70(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_70(self, entity_id: int, payload: ExamsSchemaEntity70Update) -> Optional[ExamsModelEntity70]:
+        db_obj = self.get_entity_70_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_70(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_70_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_71_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity71]:
+        return self.db.query(ExamsModelEntity71).offset(skip).limit(limit).all()
+
+    def get_entity_71_by_id(self, entity_id: int) -> Optional[ExamsModelEntity71]:
+        return self.db.query(ExamsModelEntity71).filter(ExamsModelEntity71.id == entity_id).first()
+
+    def create_entity_71(self, payload: ExamsSchemaEntity71Create) -> ExamsModelEntity71:
+        db_obj = ExamsModelEntity71(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_71(self, entity_id: int, payload: ExamsSchemaEntity71Update) -> Optional[ExamsModelEntity71]:
+        db_obj = self.get_entity_71_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_71(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_71_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_72_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity72]:
+        return self.db.query(ExamsModelEntity72).offset(skip).limit(limit).all()
+
+    def get_entity_72_by_id(self, entity_id: int) -> Optional[ExamsModelEntity72]:
+        return self.db.query(ExamsModelEntity72).filter(ExamsModelEntity72.id == entity_id).first()
+
+    def create_entity_72(self, payload: ExamsSchemaEntity72Create) -> ExamsModelEntity72:
+        db_obj = ExamsModelEntity72(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_72(self, entity_id: int, payload: ExamsSchemaEntity72Update) -> Optional[ExamsModelEntity72]:
+        db_obj = self.get_entity_72_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_72(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_72_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_73_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity73]:
+        return self.db.query(ExamsModelEntity73).offset(skip).limit(limit).all()
+
+    def get_entity_73_by_id(self, entity_id: int) -> Optional[ExamsModelEntity73]:
+        return self.db.query(ExamsModelEntity73).filter(ExamsModelEntity73.id == entity_id).first()
+
+    def create_entity_73(self, payload: ExamsSchemaEntity73Create) -> ExamsModelEntity73:
+        db_obj = ExamsModelEntity73(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_73(self, entity_id: int, payload: ExamsSchemaEntity73Update) -> Optional[ExamsModelEntity73]:
+        db_obj = self.get_entity_73_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_73(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_73_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_74_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity74]:
+        return self.db.query(ExamsModelEntity74).offset(skip).limit(limit).all()
+
+    def get_entity_74_by_id(self, entity_id: int) -> Optional[ExamsModelEntity74]:
+        return self.db.query(ExamsModelEntity74).filter(ExamsModelEntity74.id == entity_id).first()
+
+    def create_entity_74(self, payload: ExamsSchemaEntity74Create) -> ExamsModelEntity74:
+        db_obj = ExamsModelEntity74(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_74(self, entity_id: int, payload: ExamsSchemaEntity74Update) -> Optional[ExamsModelEntity74]:
+        db_obj = self.get_entity_74_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_74(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_74_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_75_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity75]:
+        return self.db.query(ExamsModelEntity75).offset(skip).limit(limit).all()
+
+    def get_entity_75_by_id(self, entity_id: int) -> Optional[ExamsModelEntity75]:
+        return self.db.query(ExamsModelEntity75).filter(ExamsModelEntity75.id == entity_id).first()
+
+    def create_entity_75(self, payload: ExamsSchemaEntity75Create) -> ExamsModelEntity75:
+        db_obj = ExamsModelEntity75(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_75(self, entity_id: int, payload: ExamsSchemaEntity75Update) -> Optional[ExamsModelEntity75]:
+        db_obj = self.get_entity_75_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_75(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_75_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_76_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity76]:
+        return self.db.query(ExamsModelEntity76).offset(skip).limit(limit).all()
+
+    def get_entity_76_by_id(self, entity_id: int) -> Optional[ExamsModelEntity76]:
+        return self.db.query(ExamsModelEntity76).filter(ExamsModelEntity76.id == entity_id).first()
+
+    def create_entity_76(self, payload: ExamsSchemaEntity76Create) -> ExamsModelEntity76:
+        db_obj = ExamsModelEntity76(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_76(self, entity_id: int, payload: ExamsSchemaEntity76Update) -> Optional[ExamsModelEntity76]:
+        db_obj = self.get_entity_76_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_76(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_76_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_77_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity77]:
+        return self.db.query(ExamsModelEntity77).offset(skip).limit(limit).all()
+
+    def get_entity_77_by_id(self, entity_id: int) -> Optional[ExamsModelEntity77]:
+        return self.db.query(ExamsModelEntity77).filter(ExamsModelEntity77.id == entity_id).first()
+
+    def create_entity_77(self, payload: ExamsSchemaEntity77Create) -> ExamsModelEntity77:
+        db_obj = ExamsModelEntity77(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_77(self, entity_id: int, payload: ExamsSchemaEntity77Update) -> Optional[ExamsModelEntity77]:
+        db_obj = self.get_entity_77_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_77(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_77_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_78_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity78]:
+        return self.db.query(ExamsModelEntity78).offset(skip).limit(limit).all()
+
+    def get_entity_78_by_id(self, entity_id: int) -> Optional[ExamsModelEntity78]:
+        return self.db.query(ExamsModelEntity78).filter(ExamsModelEntity78.id == entity_id).first()
+
+    def create_entity_78(self, payload: ExamsSchemaEntity78Create) -> ExamsModelEntity78:
+        db_obj = ExamsModelEntity78(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_78(self, entity_id: int, payload: ExamsSchemaEntity78Update) -> Optional[ExamsModelEntity78]:
+        db_obj = self.get_entity_78_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_78(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_78_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_79_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity79]:
+        return self.db.query(ExamsModelEntity79).offset(skip).limit(limit).all()
+
+    def get_entity_79_by_id(self, entity_id: int) -> Optional[ExamsModelEntity79]:
+        return self.db.query(ExamsModelEntity79).filter(ExamsModelEntity79.id == entity_id).first()
+
+    def create_entity_79(self, payload: ExamsSchemaEntity79Create) -> ExamsModelEntity79:
+        db_obj = ExamsModelEntity79(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_79(self, entity_id: int, payload: ExamsSchemaEntity79Update) -> Optional[ExamsModelEntity79]:
+        db_obj = self.get_entity_79_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_79(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_79_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_80_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity80]:
+        return self.db.query(ExamsModelEntity80).offset(skip).limit(limit).all()
+
+    def get_entity_80_by_id(self, entity_id: int) -> Optional[ExamsModelEntity80]:
+        return self.db.query(ExamsModelEntity80).filter(ExamsModelEntity80.id == entity_id).first()
+
+    def create_entity_80(self, payload: ExamsSchemaEntity80Create) -> ExamsModelEntity80:
+        db_obj = ExamsModelEntity80(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_80(self, entity_id: int, payload: ExamsSchemaEntity80Update) -> Optional[ExamsModelEntity80]:
+        db_obj = self.get_entity_80_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_80(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_80_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_81_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity81]:
+        return self.db.query(ExamsModelEntity81).offset(skip).limit(limit).all()
+
+    def get_entity_81_by_id(self, entity_id: int) -> Optional[ExamsModelEntity81]:
+        return self.db.query(ExamsModelEntity81).filter(ExamsModelEntity81.id == entity_id).first()
+
+    def create_entity_81(self, payload: ExamsSchemaEntity81Create) -> ExamsModelEntity81:
+        db_obj = ExamsModelEntity81(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_81(self, entity_id: int, payload: ExamsSchemaEntity81Update) -> Optional[ExamsModelEntity81]:
+        db_obj = self.get_entity_81_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_81(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_81_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_82_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity82]:
+        return self.db.query(ExamsModelEntity82).offset(skip).limit(limit).all()
+
+    def get_entity_82_by_id(self, entity_id: int) -> Optional[ExamsModelEntity82]:
+        return self.db.query(ExamsModelEntity82).filter(ExamsModelEntity82.id == entity_id).first()
+
+    def create_entity_82(self, payload: ExamsSchemaEntity82Create) -> ExamsModelEntity82:
+        db_obj = ExamsModelEntity82(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_82(self, entity_id: int, payload: ExamsSchemaEntity82Update) -> Optional[ExamsModelEntity82]:
+        db_obj = self.get_entity_82_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_82(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_82_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_83_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity83]:
+        return self.db.query(ExamsModelEntity83).offset(skip).limit(limit).all()
+
+    def get_entity_83_by_id(self, entity_id: int) -> Optional[ExamsModelEntity83]:
+        return self.db.query(ExamsModelEntity83).filter(ExamsModelEntity83.id == entity_id).first()
+
+    def create_entity_83(self, payload: ExamsSchemaEntity83Create) -> ExamsModelEntity83:
+        db_obj = ExamsModelEntity83(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_83(self, entity_id: int, payload: ExamsSchemaEntity83Update) -> Optional[ExamsModelEntity83]:
+        db_obj = self.get_entity_83_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_83(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_83_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_84_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity84]:
+        return self.db.query(ExamsModelEntity84).offset(skip).limit(limit).all()
+
+    def get_entity_84_by_id(self, entity_id: int) -> Optional[ExamsModelEntity84]:
+        return self.db.query(ExamsModelEntity84).filter(ExamsModelEntity84.id == entity_id).first()
+
+    def create_entity_84(self, payload: ExamsSchemaEntity84Create) -> ExamsModelEntity84:
+        db_obj = ExamsModelEntity84(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_84(self, entity_id: int, payload: ExamsSchemaEntity84Update) -> Optional[ExamsModelEntity84]:
+        db_obj = self.get_entity_84_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_84(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_84_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_85_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity85]:
+        return self.db.query(ExamsModelEntity85).offset(skip).limit(limit).all()
+
+    def get_entity_85_by_id(self, entity_id: int) -> Optional[ExamsModelEntity85]:
+        return self.db.query(ExamsModelEntity85).filter(ExamsModelEntity85.id == entity_id).first()
+
+    def create_entity_85(self, payload: ExamsSchemaEntity85Create) -> ExamsModelEntity85:
+        db_obj = ExamsModelEntity85(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_85(self, entity_id: int, payload: ExamsSchemaEntity85Update) -> Optional[ExamsModelEntity85]:
+        db_obj = self.get_entity_85_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_85(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_85_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_86_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity86]:
+        return self.db.query(ExamsModelEntity86).offset(skip).limit(limit).all()
+
+    def get_entity_86_by_id(self, entity_id: int) -> Optional[ExamsModelEntity86]:
+        return self.db.query(ExamsModelEntity86).filter(ExamsModelEntity86.id == entity_id).first()
+
+    def create_entity_86(self, payload: ExamsSchemaEntity86Create) -> ExamsModelEntity86:
+        db_obj = ExamsModelEntity86(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_86(self, entity_id: int, payload: ExamsSchemaEntity86Update) -> Optional[ExamsModelEntity86]:
+        db_obj = self.get_entity_86_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_86(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_86_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_87_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity87]:
+        return self.db.query(ExamsModelEntity87).offset(skip).limit(limit).all()
+
+    def get_entity_87_by_id(self, entity_id: int) -> Optional[ExamsModelEntity87]:
+        return self.db.query(ExamsModelEntity87).filter(ExamsModelEntity87.id == entity_id).first()
+
+    def create_entity_87(self, payload: ExamsSchemaEntity87Create) -> ExamsModelEntity87:
+        db_obj = ExamsModelEntity87(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_87(self, entity_id: int, payload: ExamsSchemaEntity87Update) -> Optional[ExamsModelEntity87]:
+        db_obj = self.get_entity_87_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_87(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_87_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_88_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity88]:
+        return self.db.query(ExamsModelEntity88).offset(skip).limit(limit).all()
+
+    def get_entity_88_by_id(self, entity_id: int) -> Optional[ExamsModelEntity88]:
+        return self.db.query(ExamsModelEntity88).filter(ExamsModelEntity88.id == entity_id).first()
+
+    def create_entity_88(self, payload: ExamsSchemaEntity88Create) -> ExamsModelEntity88:
+        db_obj = ExamsModelEntity88(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_88(self, entity_id: int, payload: ExamsSchemaEntity88Update) -> Optional[ExamsModelEntity88]:
+        db_obj = self.get_entity_88_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_88(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_88_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_89_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity89]:
+        return self.db.query(ExamsModelEntity89).offset(skip).limit(limit).all()
+
+    def get_entity_89_by_id(self, entity_id: int) -> Optional[ExamsModelEntity89]:
+        return self.db.query(ExamsModelEntity89).filter(ExamsModelEntity89.id == entity_id).first()
+
+    def create_entity_89(self, payload: ExamsSchemaEntity89Create) -> ExamsModelEntity89:
+        db_obj = ExamsModelEntity89(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_89(self, entity_id: int, payload: ExamsSchemaEntity89Update) -> Optional[ExamsModelEntity89]:
+        db_obj = self.get_entity_89_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_89(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_89_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_90_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity90]:
+        return self.db.query(ExamsModelEntity90).offset(skip).limit(limit).all()
+
+    def get_entity_90_by_id(self, entity_id: int) -> Optional[ExamsModelEntity90]:
+        return self.db.query(ExamsModelEntity90).filter(ExamsModelEntity90.id == entity_id).first()
+
+    def create_entity_90(self, payload: ExamsSchemaEntity90Create) -> ExamsModelEntity90:
+        db_obj = ExamsModelEntity90(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_90(self, entity_id: int, payload: ExamsSchemaEntity90Update) -> Optional[ExamsModelEntity90]:
+        db_obj = self.get_entity_90_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_90(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_90_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_91_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity91]:
+        return self.db.query(ExamsModelEntity91).offset(skip).limit(limit).all()
+
+    def get_entity_91_by_id(self, entity_id: int) -> Optional[ExamsModelEntity91]:
+        return self.db.query(ExamsModelEntity91).filter(ExamsModelEntity91.id == entity_id).first()
+
+    def create_entity_91(self, payload: ExamsSchemaEntity91Create) -> ExamsModelEntity91:
+        db_obj = ExamsModelEntity91(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_91(self, entity_id: int, payload: ExamsSchemaEntity91Update) -> Optional[ExamsModelEntity91]:
+        db_obj = self.get_entity_91_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_91(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_91_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_92_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity92]:
+        return self.db.query(ExamsModelEntity92).offset(skip).limit(limit).all()
+
+    def get_entity_92_by_id(self, entity_id: int) -> Optional[ExamsModelEntity92]:
+        return self.db.query(ExamsModelEntity92).filter(ExamsModelEntity92.id == entity_id).first()
+
+    def create_entity_92(self, payload: ExamsSchemaEntity92Create) -> ExamsModelEntity92:
+        db_obj = ExamsModelEntity92(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_92(self, entity_id: int, payload: ExamsSchemaEntity92Update) -> Optional[ExamsModelEntity92]:
+        db_obj = self.get_entity_92_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_92(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_92_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_93_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity93]:
+        return self.db.query(ExamsModelEntity93).offset(skip).limit(limit).all()
+
+    def get_entity_93_by_id(self, entity_id: int) -> Optional[ExamsModelEntity93]:
+        return self.db.query(ExamsModelEntity93).filter(ExamsModelEntity93.id == entity_id).first()
+
+    def create_entity_93(self, payload: ExamsSchemaEntity93Create) -> ExamsModelEntity93:
+        db_obj = ExamsModelEntity93(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_93(self, entity_id: int, payload: ExamsSchemaEntity93Update) -> Optional[ExamsModelEntity93]:
+        db_obj = self.get_entity_93_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_93(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_93_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_94_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity94]:
+        return self.db.query(ExamsModelEntity94).offset(skip).limit(limit).all()
+
+    def get_entity_94_by_id(self, entity_id: int) -> Optional[ExamsModelEntity94]:
+        return self.db.query(ExamsModelEntity94).filter(ExamsModelEntity94.id == entity_id).first()
+
+    def create_entity_94(self, payload: ExamsSchemaEntity94Create) -> ExamsModelEntity94:
+        db_obj = ExamsModelEntity94(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_94(self, entity_id: int, payload: ExamsSchemaEntity94Update) -> Optional[ExamsModelEntity94]:
+        db_obj = self.get_entity_94_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_94(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_94_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_95_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity95]:
+        return self.db.query(ExamsModelEntity95).offset(skip).limit(limit).all()
+
+    def get_entity_95_by_id(self, entity_id: int) -> Optional[ExamsModelEntity95]:
+        return self.db.query(ExamsModelEntity95).filter(ExamsModelEntity95.id == entity_id).first()
+
+    def create_entity_95(self, payload: ExamsSchemaEntity95Create) -> ExamsModelEntity95:
+        db_obj = ExamsModelEntity95(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_95(self, entity_id: int, payload: ExamsSchemaEntity95Update) -> Optional[ExamsModelEntity95]:
+        db_obj = self.get_entity_95_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_95(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_95_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_96_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity96]:
+        return self.db.query(ExamsModelEntity96).offset(skip).limit(limit).all()
+
+    def get_entity_96_by_id(self, entity_id: int) -> Optional[ExamsModelEntity96]:
+        return self.db.query(ExamsModelEntity96).filter(ExamsModelEntity96.id == entity_id).first()
+
+    def create_entity_96(self, payload: ExamsSchemaEntity96Create) -> ExamsModelEntity96:
+        db_obj = ExamsModelEntity96(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_96(self, entity_id: int, payload: ExamsSchemaEntity96Update) -> Optional[ExamsModelEntity96]:
+        db_obj = self.get_entity_96_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_96(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_96_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_97_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity97]:
+        return self.db.query(ExamsModelEntity97).offset(skip).limit(limit).all()
+
+    def get_entity_97_by_id(self, entity_id: int) -> Optional[ExamsModelEntity97]:
+        return self.db.query(ExamsModelEntity97).filter(ExamsModelEntity97.id == entity_id).first()
+
+    def create_entity_97(self, payload: ExamsSchemaEntity97Create) -> ExamsModelEntity97:
+        db_obj = ExamsModelEntity97(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_97(self, entity_id: int, payload: ExamsSchemaEntity97Update) -> Optional[ExamsModelEntity97]:
+        db_obj = self.get_entity_97_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_97(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_97_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_98_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity98]:
+        return self.db.query(ExamsModelEntity98).offset(skip).limit(limit).all()
+
+    def get_entity_98_by_id(self, entity_id: int) -> Optional[ExamsModelEntity98]:
+        return self.db.query(ExamsModelEntity98).filter(ExamsModelEntity98.id == entity_id).first()
+
+    def create_entity_98(self, payload: ExamsSchemaEntity98Create) -> ExamsModelEntity98:
+        db_obj = ExamsModelEntity98(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_98(self, entity_id: int, payload: ExamsSchemaEntity98Update) -> Optional[ExamsModelEntity98]:
+        db_obj = self.get_entity_98_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_98(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_98_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_99_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity99]:
+        return self.db.query(ExamsModelEntity99).offset(skip).limit(limit).all()
+
+    def get_entity_99_by_id(self, entity_id: int) -> Optional[ExamsModelEntity99]:
+        return self.db.query(ExamsModelEntity99).filter(ExamsModelEntity99.id == entity_id).first()
+
+    def create_entity_99(self, payload: ExamsSchemaEntity99Create) -> ExamsModelEntity99:
+        db_obj = ExamsModelEntity99(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_99(self, entity_id: int, payload: ExamsSchemaEntity99Update) -> Optional[ExamsModelEntity99]:
+        db_obj = self.get_entity_99_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_99(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_99_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_100_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity100]:
+        return self.db.query(ExamsModelEntity100).offset(skip).limit(limit).all()
+
+    def get_entity_100_by_id(self, entity_id: int) -> Optional[ExamsModelEntity100]:
+        return self.db.query(ExamsModelEntity100).filter(ExamsModelEntity100.id == entity_id).first()
+
+    def create_entity_100(self, payload: ExamsSchemaEntity100Create) -> ExamsModelEntity100:
+        db_obj = ExamsModelEntity100(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_100(self, entity_id: int, payload: ExamsSchemaEntity100Update) -> Optional[ExamsModelEntity100]:
+        db_obj = self.get_entity_100_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_100(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_100_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_101_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity101]:
+        return self.db.query(ExamsModelEntity101).offset(skip).limit(limit).all()
+
+    def get_entity_101_by_id(self, entity_id: int) -> Optional[ExamsModelEntity101]:
+        return self.db.query(ExamsModelEntity101).filter(ExamsModelEntity101.id == entity_id).first()
+
+    def create_entity_101(self, payload: ExamsSchemaEntity101Create) -> ExamsModelEntity101:
+        db_obj = ExamsModelEntity101(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_101(self, entity_id: int, payload: ExamsSchemaEntity101Update) -> Optional[ExamsModelEntity101]:
+        db_obj = self.get_entity_101_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_101(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_101_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_102_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity102]:
+        return self.db.query(ExamsModelEntity102).offset(skip).limit(limit).all()
+
+    def get_entity_102_by_id(self, entity_id: int) -> Optional[ExamsModelEntity102]:
+        return self.db.query(ExamsModelEntity102).filter(ExamsModelEntity102.id == entity_id).first()
+
+    def create_entity_102(self, payload: ExamsSchemaEntity102Create) -> ExamsModelEntity102:
+        db_obj = ExamsModelEntity102(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_102(self, entity_id: int, payload: ExamsSchemaEntity102Update) -> Optional[ExamsModelEntity102]:
+        db_obj = self.get_entity_102_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_102(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_102_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_103_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity103]:
+        return self.db.query(ExamsModelEntity103).offset(skip).limit(limit).all()
+
+    def get_entity_103_by_id(self, entity_id: int) -> Optional[ExamsModelEntity103]:
+        return self.db.query(ExamsModelEntity103).filter(ExamsModelEntity103.id == entity_id).first()
+
+    def create_entity_103(self, payload: ExamsSchemaEntity103Create) -> ExamsModelEntity103:
+        db_obj = ExamsModelEntity103(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_103(self, entity_id: int, payload: ExamsSchemaEntity103Update) -> Optional[ExamsModelEntity103]:
+        db_obj = self.get_entity_103_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_103(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_103_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_104_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity104]:
+        return self.db.query(ExamsModelEntity104).offset(skip).limit(limit).all()
+
+    def get_entity_104_by_id(self, entity_id: int) -> Optional[ExamsModelEntity104]:
+        return self.db.query(ExamsModelEntity104).filter(ExamsModelEntity104.id == entity_id).first()
+
+    def create_entity_104(self, payload: ExamsSchemaEntity104Create) -> ExamsModelEntity104:
+        db_obj = ExamsModelEntity104(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_104(self, entity_id: int, payload: ExamsSchemaEntity104Update) -> Optional[ExamsModelEntity104]:
+        db_obj = self.get_entity_104_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_104(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_104_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_105_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity105]:
+        return self.db.query(ExamsModelEntity105).offset(skip).limit(limit).all()
+
+    def get_entity_105_by_id(self, entity_id: int) -> Optional[ExamsModelEntity105]:
+        return self.db.query(ExamsModelEntity105).filter(ExamsModelEntity105.id == entity_id).first()
+
+    def create_entity_105(self, payload: ExamsSchemaEntity105Create) -> ExamsModelEntity105:
+        db_obj = ExamsModelEntity105(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_105(self, entity_id: int, payload: ExamsSchemaEntity105Update) -> Optional[ExamsModelEntity105]:
+        db_obj = self.get_entity_105_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_105(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_105_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_106_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity106]:
+        return self.db.query(ExamsModelEntity106).offset(skip).limit(limit).all()
+
+    def get_entity_106_by_id(self, entity_id: int) -> Optional[ExamsModelEntity106]:
+        return self.db.query(ExamsModelEntity106).filter(ExamsModelEntity106.id == entity_id).first()
+
+    def create_entity_106(self, payload: ExamsSchemaEntity106Create) -> ExamsModelEntity106:
+        db_obj = ExamsModelEntity106(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_106(self, entity_id: int, payload: ExamsSchemaEntity106Update) -> Optional[ExamsModelEntity106]:
+        db_obj = self.get_entity_106_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_106(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_106_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_107_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity107]:
+        return self.db.query(ExamsModelEntity107).offset(skip).limit(limit).all()
+
+    def get_entity_107_by_id(self, entity_id: int) -> Optional[ExamsModelEntity107]:
+        return self.db.query(ExamsModelEntity107).filter(ExamsModelEntity107.id == entity_id).first()
+
+    def create_entity_107(self, payload: ExamsSchemaEntity107Create) -> ExamsModelEntity107:
+        db_obj = ExamsModelEntity107(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_107(self, entity_id: int, payload: ExamsSchemaEntity107Update) -> Optional[ExamsModelEntity107]:
+        db_obj = self.get_entity_107_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_107(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_107_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_108_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity108]:
+        return self.db.query(ExamsModelEntity108).offset(skip).limit(limit).all()
+
+    def get_entity_108_by_id(self, entity_id: int) -> Optional[ExamsModelEntity108]:
+        return self.db.query(ExamsModelEntity108).filter(ExamsModelEntity108.id == entity_id).first()
+
+    def create_entity_108(self, payload: ExamsSchemaEntity108Create) -> ExamsModelEntity108:
+        db_obj = ExamsModelEntity108(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_108(self, entity_id: int, payload: ExamsSchemaEntity108Update) -> Optional[ExamsModelEntity108]:
+        db_obj = self.get_entity_108_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_108(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_108_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_109_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity109]:
+        return self.db.query(ExamsModelEntity109).offset(skip).limit(limit).all()
+
+    def get_entity_109_by_id(self, entity_id: int) -> Optional[ExamsModelEntity109]:
+        return self.db.query(ExamsModelEntity109).filter(ExamsModelEntity109.id == entity_id).first()
+
+    def create_entity_109(self, payload: ExamsSchemaEntity109Create) -> ExamsModelEntity109:
+        db_obj = ExamsModelEntity109(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_109(self, entity_id: int, payload: ExamsSchemaEntity109Update) -> Optional[ExamsModelEntity109]:
+        db_obj = self.get_entity_109_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_109(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_109_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_110_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity110]:
+        return self.db.query(ExamsModelEntity110).offset(skip).limit(limit).all()
+
+    def get_entity_110_by_id(self, entity_id: int) -> Optional[ExamsModelEntity110]:
+        return self.db.query(ExamsModelEntity110).filter(ExamsModelEntity110.id == entity_id).first()
+
+    def create_entity_110(self, payload: ExamsSchemaEntity110Create) -> ExamsModelEntity110:
+        db_obj = ExamsModelEntity110(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_110(self, entity_id: int, payload: ExamsSchemaEntity110Update) -> Optional[ExamsModelEntity110]:
+        db_obj = self.get_entity_110_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_110(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_110_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_111_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity111]:
+        return self.db.query(ExamsModelEntity111).offset(skip).limit(limit).all()
+
+    def get_entity_111_by_id(self, entity_id: int) -> Optional[ExamsModelEntity111]:
+        return self.db.query(ExamsModelEntity111).filter(ExamsModelEntity111.id == entity_id).first()
+
+    def create_entity_111(self, payload: ExamsSchemaEntity111Create) -> ExamsModelEntity111:
+        db_obj = ExamsModelEntity111(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_111(self, entity_id: int, payload: ExamsSchemaEntity111Update) -> Optional[ExamsModelEntity111]:
+        db_obj = self.get_entity_111_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_111(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_111_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_112_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity112]:
+        return self.db.query(ExamsModelEntity112).offset(skip).limit(limit).all()
+
+    def get_entity_112_by_id(self, entity_id: int) -> Optional[ExamsModelEntity112]:
+        return self.db.query(ExamsModelEntity112).filter(ExamsModelEntity112.id == entity_id).first()
+
+    def create_entity_112(self, payload: ExamsSchemaEntity112Create) -> ExamsModelEntity112:
+        db_obj = ExamsModelEntity112(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_112(self, entity_id: int, payload: ExamsSchemaEntity112Update) -> Optional[ExamsModelEntity112]:
+        db_obj = self.get_entity_112_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_112(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_112_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_113_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity113]:
+        return self.db.query(ExamsModelEntity113).offset(skip).limit(limit).all()
+
+    def get_entity_113_by_id(self, entity_id: int) -> Optional[ExamsModelEntity113]:
+        return self.db.query(ExamsModelEntity113).filter(ExamsModelEntity113.id == entity_id).first()
+
+    def create_entity_113(self, payload: ExamsSchemaEntity113Create) -> ExamsModelEntity113:
+        db_obj = ExamsModelEntity113(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_113(self, entity_id: int, payload: ExamsSchemaEntity113Update) -> Optional[ExamsModelEntity113]:
+        db_obj = self.get_entity_113_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_113(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_113_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_114_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity114]:
+        return self.db.query(ExamsModelEntity114).offset(skip).limit(limit).all()
+
+    def get_entity_114_by_id(self, entity_id: int) -> Optional[ExamsModelEntity114]:
+        return self.db.query(ExamsModelEntity114).filter(ExamsModelEntity114.id == entity_id).first()
+
+    def create_entity_114(self, payload: ExamsSchemaEntity114Create) -> ExamsModelEntity114:
+        db_obj = ExamsModelEntity114(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_114(self, entity_id: int, payload: ExamsSchemaEntity114Update) -> Optional[ExamsModelEntity114]:
+        db_obj = self.get_entity_114_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_114(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_114_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_115_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity115]:
+        return self.db.query(ExamsModelEntity115).offset(skip).limit(limit).all()
+
+    def get_entity_115_by_id(self, entity_id: int) -> Optional[ExamsModelEntity115]:
+        return self.db.query(ExamsModelEntity115).filter(ExamsModelEntity115.id == entity_id).first()
+
+    def create_entity_115(self, payload: ExamsSchemaEntity115Create) -> ExamsModelEntity115:
+        db_obj = ExamsModelEntity115(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_115(self, entity_id: int, payload: ExamsSchemaEntity115Update) -> Optional[ExamsModelEntity115]:
+        db_obj = self.get_entity_115_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_115(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_115_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_116_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity116]:
+        return self.db.query(ExamsModelEntity116).offset(skip).limit(limit).all()
+
+    def get_entity_116_by_id(self, entity_id: int) -> Optional[ExamsModelEntity116]:
+        return self.db.query(ExamsModelEntity116).filter(ExamsModelEntity116.id == entity_id).first()
+
+    def create_entity_116(self, payload: ExamsSchemaEntity116Create) -> ExamsModelEntity116:
+        db_obj = ExamsModelEntity116(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_116(self, entity_id: int, payload: ExamsSchemaEntity116Update) -> Optional[ExamsModelEntity116]:
+        db_obj = self.get_entity_116_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_116(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_116_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_117_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity117]:
+        return self.db.query(ExamsModelEntity117).offset(skip).limit(limit).all()
+
+    def get_entity_117_by_id(self, entity_id: int) -> Optional[ExamsModelEntity117]:
+        return self.db.query(ExamsModelEntity117).filter(ExamsModelEntity117.id == entity_id).first()
+
+    def create_entity_117(self, payload: ExamsSchemaEntity117Create) -> ExamsModelEntity117:
+        db_obj = ExamsModelEntity117(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_117(self, entity_id: int, payload: ExamsSchemaEntity117Update) -> Optional[ExamsModelEntity117]:
+        db_obj = self.get_entity_117_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_117(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_117_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_118_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity118]:
+        return self.db.query(ExamsModelEntity118).offset(skip).limit(limit).all()
+
+    def get_entity_118_by_id(self, entity_id: int) -> Optional[ExamsModelEntity118]:
+        return self.db.query(ExamsModelEntity118).filter(ExamsModelEntity118.id == entity_id).first()
+
+    def create_entity_118(self, payload: ExamsSchemaEntity118Create) -> ExamsModelEntity118:
+        db_obj = ExamsModelEntity118(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_118(self, entity_id: int, payload: ExamsSchemaEntity118Update) -> Optional[ExamsModelEntity118]:
+        db_obj = self.get_entity_118_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_118(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_118_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_119_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity119]:
+        return self.db.query(ExamsModelEntity119).offset(skip).limit(limit).all()
+
+    def get_entity_119_by_id(self, entity_id: int) -> Optional[ExamsModelEntity119]:
+        return self.db.query(ExamsModelEntity119).filter(ExamsModelEntity119.id == entity_id).first()
+
+    def create_entity_119(self, payload: ExamsSchemaEntity119Create) -> ExamsModelEntity119:
+        db_obj = ExamsModelEntity119(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_119(self, entity_id: int, payload: ExamsSchemaEntity119Update) -> Optional[ExamsModelEntity119]:
+        db_obj = self.get_entity_119_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_119(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_119_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_120_list(self, skip: int = 0, limit: int = 100) -> List[ExamsModelEntity120]:
+        return self.db.query(ExamsModelEntity120).offset(skip).limit(limit).all()
+
+    def get_entity_120_by_id(self, entity_id: int) -> Optional[ExamsModelEntity120]:
+        return self.db.query(ExamsModelEntity120).filter(ExamsModelEntity120.id == entity_id).first()
+
+    def create_entity_120(self, payload: ExamsSchemaEntity120Create) -> ExamsModelEntity120:
+        db_obj = ExamsModelEntity120(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_120(self, entity_id: int, payload: ExamsSchemaEntity120Update) -> Optional[ExamsModelEntity120]:
+        db_obj = self.get_entity_120_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_120(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_120_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+

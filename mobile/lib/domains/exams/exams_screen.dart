@@ -13,7 +13,7 @@ class _ExamsMainScreenState extends State<ExamsMainScreen> {
     return Scaffold(
       appBar: AppBar(title: const Text("Examinations & Result Management"), backgroundColor: Colors.indigo),
       body: ListView.builder(
-        itemCount: 75,
+        itemCount: 100,
         padding: const EdgeInsets.all(16),
         itemBuilder: (context, index) {
           return Card(

@@ -454,3 +454,633 @@ def test_sports_entity_50_schema_validation():
     assert obj.entity_code == "TEST_SPORTS_50"
     assert obj.value_amount == 50 * 100.5
 
+def test_sports_entity_51_schema_validation():
+    obj = SportsSchemaEntity51Create(
+        entity_code="TEST_SPORTS_51",
+        name="Test Entity 51",
+        value_amount=51 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_51"
+    assert obj.value_amount == 51 * 100.5
+
+def test_sports_entity_52_schema_validation():
+    obj = SportsSchemaEntity52Create(
+        entity_code="TEST_SPORTS_52",
+        name="Test Entity 52",
+        value_amount=52 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_52"
+    assert obj.value_amount == 52 * 100.5
+
+def test_sports_entity_53_schema_validation():
+    obj = SportsSchemaEntity53Create(
+        entity_code="TEST_SPORTS_53",
+        name="Test Entity 53",
+        value_amount=53 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_53"
+    assert obj.value_amount == 53 * 100.5
+
+def test_sports_entity_54_schema_validation():
+    obj = SportsSchemaEntity54Create(
+        entity_code="TEST_SPORTS_54",
+        name="Test Entity 54",
+        value_amount=54 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_54"
+    assert obj.value_amount == 54 * 100.5
+
+def test_sports_entity_55_schema_validation():
+    obj = SportsSchemaEntity55Create(
+        entity_code="TEST_SPORTS_55",
+        name="Test Entity 55",
+        value_amount=55 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_55"
+    assert obj.value_amount == 55 * 100.5
+
+def test_sports_entity_56_schema_validation():
+    obj = SportsSchemaEntity56Create(
+        entity_code="TEST_SPORTS_56",
+        name="Test Entity 56",
+        value_amount=56 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_56"
+    assert obj.value_amount == 56 * 100.5
+
+def test_sports_entity_57_schema_validation():
+    obj = SportsSchemaEntity57Create(
+        entity_code="TEST_SPORTS_57",
+        name="Test Entity 57",
+        value_amount=57 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_57"
+    assert obj.value_amount == 57 * 100.5
+
+def test_sports_entity_58_schema_validation():
+    obj = SportsSchemaEntity58Create(
+        entity_code="TEST_SPORTS_58",
+        name="Test Entity 58",
+        value_amount=58 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_58"
+    assert obj.value_amount == 58 * 100.5
+
+def test_sports_entity_59_schema_validation():
+    obj = SportsSchemaEntity59Create(
+        entity_code="TEST_SPORTS_59",
+        name="Test Entity 59",
+        value_amount=59 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_59"
+    assert obj.value_amount == 59 * 100.5
+
+def test_sports_entity_60_schema_validation():
+    obj = SportsSchemaEntity60Create(
+        entity_code="TEST_SPORTS_60",
+        name="Test Entity 60",
+        value_amount=60 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_60"
+    assert obj.value_amount == 60 * 100.5
+
+def test_sports_entity_61_schema_validation():
+    obj = SportsSchemaEntity61Create(
+        entity_code="TEST_SPORTS_61",
+        name="Test Entity 61",
+        value_amount=61 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_61"
+    assert obj.value_amount == 61 * 100.5
+
+def test_sports_entity_62_schema_validation():
+    obj = SportsSchemaEntity62Create(
+        entity_code="TEST_SPORTS_62",
+        name="Test Entity 62",
+        value_amount=62 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_62"
+    assert obj.value_amount == 62 * 100.5
+
+def test_sports_entity_63_schema_validation():
+    obj = SportsSchemaEntity63Create(
+        entity_code="TEST_SPORTS_63",
+        name="Test Entity 63",
+        value_amount=63 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_63"
+    assert obj.value_amount == 63 * 100.5
+
+def test_sports_entity_64_schema_validation():
+    obj = SportsSchemaEntity64Create(
+        entity_code="TEST_SPORTS_64",
+        name="Test Entity 64",
+        value_amount=64 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_64"
+    assert obj.value_amount == 64 * 100.5
+
+def test_sports_entity_65_schema_validation():
+    obj = SportsSchemaEntity65Create(
+        entity_code="TEST_SPORTS_65",
+        name="Test Entity 65",
+        value_amount=65 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_65"
+    assert obj.value_amount == 65 * 100.5
+
+def test_sports_entity_66_schema_validation():
+    obj = SportsSchemaEntity66Create(
+        entity_code="TEST_SPORTS_66",
+        name="Test Entity 66",
+        value_amount=66 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_66"
+    assert obj.value_amount == 66 * 100.5
+
+def test_sports_entity_67_schema_validation():
+    obj = SportsSchemaEntity67Create(
+        entity_code="TEST_SPORTS_67",
+        name="Test Entity 67",
+        value_amount=67 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_67"
+    assert obj.value_amount == 67 * 100.5
+
+def test_sports_entity_68_schema_validation():
+    obj = SportsSchemaEntity68Create(
+        entity_code="TEST_SPORTS_68",
+        name="Test Entity 68",
+        value_amount=68 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_68"
+    assert obj.value_amount == 68 * 100.5
+
+def test_sports_entity_69_schema_validation():
+    obj = SportsSchemaEntity69Create(
+        entity_code="TEST_SPORTS_69",
+        name="Test Entity 69",
+        value_amount=69 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_69"
+    assert obj.value_amount == 69 * 100.5
+
+def test_sports_entity_70_schema_validation():
+    obj = SportsSchemaEntity70Create(
+        entity_code="TEST_SPORTS_70",
+        name="Test Entity 70",
+        value_amount=70 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_70"
+    assert obj.value_amount == 70 * 100.5
+
+def test_sports_entity_71_schema_validation():
+    obj = SportsSchemaEntity71Create(
+        entity_code="TEST_SPORTS_71",
+        name="Test Entity 71",
+        value_amount=71 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_71"
+    assert obj.value_amount == 71 * 100.5
+
+def test_sports_entity_72_schema_validation():
+    obj = SportsSchemaEntity72Create(
+        entity_code="TEST_SPORTS_72",
+        name="Test Entity 72",
+        value_amount=72 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_72"
+    assert obj.value_amount == 72 * 100.5
+
+def test_sports_entity_73_schema_validation():
+    obj = SportsSchemaEntity73Create(
+        entity_code="TEST_SPORTS_73",
+        name="Test Entity 73",
+        value_amount=73 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_73"
+    assert obj.value_amount == 73 * 100.5
+
+def test_sports_entity_74_schema_validation():
+    obj = SportsSchemaEntity74Create(
+        entity_code="TEST_SPORTS_74",
+        name="Test Entity 74",
+        value_amount=74 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_74"
+    assert obj.value_amount == 74 * 100.5
+
+def test_sports_entity_75_schema_validation():
+    obj = SportsSchemaEntity75Create(
+        entity_code="TEST_SPORTS_75",
+        name="Test Entity 75",
+        value_amount=75 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_75"
+    assert obj.value_amount == 75 * 100.5
+
+def test_sports_entity_76_schema_validation():
+    obj = SportsSchemaEntity76Create(
+        entity_code="TEST_SPORTS_76",
+        name="Test Entity 76",
+        value_amount=76 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_76"
+    assert obj.value_amount == 76 * 100.5
+
+def test_sports_entity_77_schema_validation():
+    obj = SportsSchemaEntity77Create(
+        entity_code="TEST_SPORTS_77",
+        name="Test Entity 77",
+        value_amount=77 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_77"
+    assert obj.value_amount == 77 * 100.5
+
+def test_sports_entity_78_schema_validation():
+    obj = SportsSchemaEntity78Create(
+        entity_code="TEST_SPORTS_78",
+        name="Test Entity 78",
+        value_amount=78 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_78"
+    assert obj.value_amount == 78 * 100.5
+
+def test_sports_entity_79_schema_validation():
+    obj = SportsSchemaEntity79Create(
+        entity_code="TEST_SPORTS_79",
+        name="Test Entity 79",
+        value_amount=79 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_79"
+    assert obj.value_amount == 79 * 100.5
+
+def test_sports_entity_80_schema_validation():
+    obj = SportsSchemaEntity80Create(
+        entity_code="TEST_SPORTS_80",
+        name="Test Entity 80",
+        value_amount=80 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_80"
+    assert obj.value_amount == 80 * 100.5
+
+def test_sports_entity_81_schema_validation():
+    obj = SportsSchemaEntity81Create(
+        entity_code="TEST_SPORTS_81",
+        name="Test Entity 81",
+        value_amount=81 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_81"
+    assert obj.value_amount == 81 * 100.5
+
+def test_sports_entity_82_schema_validation():
+    obj = SportsSchemaEntity82Create(
+        entity_code="TEST_SPORTS_82",
+        name="Test Entity 82",
+        value_amount=82 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_82"
+    assert obj.value_amount == 82 * 100.5
+
+def test_sports_entity_83_schema_validation():
+    obj = SportsSchemaEntity83Create(
+        entity_code="TEST_SPORTS_83",
+        name="Test Entity 83",
+        value_amount=83 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_83"
+    assert obj.value_amount == 83 * 100.5
+
+def test_sports_entity_84_schema_validation():
+    obj = SportsSchemaEntity84Create(
+        entity_code="TEST_SPORTS_84",
+        name="Test Entity 84",
+        value_amount=84 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_84"
+    assert obj.value_amount == 84 * 100.5
+
+def test_sports_entity_85_schema_validation():
+    obj = SportsSchemaEntity85Create(
+        entity_code="TEST_SPORTS_85",
+        name="Test Entity 85",
+        value_amount=85 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_85"
+    assert obj.value_amount == 85 * 100.5
+
+def test_sports_entity_86_schema_validation():
+    obj = SportsSchemaEntity86Create(
+        entity_code="TEST_SPORTS_86",
+        name="Test Entity 86",
+        value_amount=86 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_86"
+    assert obj.value_amount == 86 * 100.5
+
+def test_sports_entity_87_schema_validation():
+    obj = SportsSchemaEntity87Create(
+        entity_code="TEST_SPORTS_87",
+        name="Test Entity 87",
+        value_amount=87 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_87"
+    assert obj.value_amount == 87 * 100.5
+
+def test_sports_entity_88_schema_validation():
+    obj = SportsSchemaEntity88Create(
+        entity_code="TEST_SPORTS_88",
+        name="Test Entity 88",
+        value_amount=88 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_88"
+    assert obj.value_amount == 88 * 100.5
+
+def test_sports_entity_89_schema_validation():
+    obj = SportsSchemaEntity89Create(
+        entity_code="TEST_SPORTS_89",
+        name="Test Entity 89",
+        value_amount=89 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_89"
+    assert obj.value_amount == 89 * 100.5
+
+def test_sports_entity_90_schema_validation():
+    obj = SportsSchemaEntity90Create(
+        entity_code="TEST_SPORTS_90",
+        name="Test Entity 90",
+        value_amount=90 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_90"
+    assert obj.value_amount == 90 * 100.5
+
+def test_sports_entity_91_schema_validation():
+    obj = SportsSchemaEntity91Create(
+        entity_code="TEST_SPORTS_91",
+        name="Test Entity 91",
+        value_amount=91 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_91"
+    assert obj.value_amount == 91 * 100.5
+
+def test_sports_entity_92_schema_validation():
+    obj = SportsSchemaEntity92Create(
+        entity_code="TEST_SPORTS_92",
+        name="Test Entity 92",
+        value_amount=92 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_92"
+    assert obj.value_amount == 92 * 100.5
+
+def test_sports_entity_93_schema_validation():
+    obj = SportsSchemaEntity93Create(
+        entity_code="TEST_SPORTS_93",
+        name="Test Entity 93",
+        value_amount=93 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_93"
+    assert obj.value_amount == 93 * 100.5
+
+def test_sports_entity_94_schema_validation():
+    obj = SportsSchemaEntity94Create(
+        entity_code="TEST_SPORTS_94",
+        name="Test Entity 94",
+        value_amount=94 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_94"
+    assert obj.value_amount == 94 * 100.5
+
+def test_sports_entity_95_schema_validation():
+    obj = SportsSchemaEntity95Create(
+        entity_code="TEST_SPORTS_95",
+        name="Test Entity 95",
+        value_amount=95 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_95"
+    assert obj.value_amount == 95 * 100.5
+
+def test_sports_entity_96_schema_validation():
+    obj = SportsSchemaEntity96Create(
+        entity_code="TEST_SPORTS_96",
+        name="Test Entity 96",
+        value_amount=96 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_96"
+    assert obj.value_amount == 96 * 100.5
+
+def test_sports_entity_97_schema_validation():
+    obj = SportsSchemaEntity97Create(
+        entity_code="TEST_SPORTS_97",
+        name="Test Entity 97",
+        value_amount=97 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_97"
+    assert obj.value_amount == 97 * 100.5
+
+def test_sports_entity_98_schema_validation():
+    obj = SportsSchemaEntity98Create(
+        entity_code="TEST_SPORTS_98",
+        name="Test Entity 98",
+        value_amount=98 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_98"
+    assert obj.value_amount == 98 * 100.5
+
+def test_sports_entity_99_schema_validation():
+    obj = SportsSchemaEntity99Create(
+        entity_code="TEST_SPORTS_99",
+        name="Test Entity 99",
+        value_amount=99 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_99"
+    assert obj.value_amount == 99 * 100.5
+
+def test_sports_entity_100_schema_validation():
+    obj = SportsSchemaEntity100Create(
+        entity_code="TEST_SPORTS_100",
+        name="Test Entity 100",
+        value_amount=100 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_100"
+    assert obj.value_amount == 100 * 100.5
+
+def test_sports_entity_101_schema_validation():
+    obj = SportsSchemaEntity101Create(
+        entity_code="TEST_SPORTS_101",
+        name="Test Entity 101",
+        value_amount=101 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_101"
+    assert obj.value_amount == 101 * 100.5
+
+def test_sports_entity_102_schema_validation():
+    obj = SportsSchemaEntity102Create(
+        entity_code="TEST_SPORTS_102",
+        name="Test Entity 102",
+        value_amount=102 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_102"
+    assert obj.value_amount == 102 * 100.5
+
+def test_sports_entity_103_schema_validation():
+    obj = SportsSchemaEntity103Create(
+        entity_code="TEST_SPORTS_103",
+        name="Test Entity 103",
+        value_amount=103 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_103"
+    assert obj.value_amount == 103 * 100.5
+
+def test_sports_entity_104_schema_validation():
+    obj = SportsSchemaEntity104Create(
+        entity_code="TEST_SPORTS_104",
+        name="Test Entity 104",
+        value_amount=104 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_104"
+    assert obj.value_amount == 104 * 100.5
+
+def test_sports_entity_105_schema_validation():
+    obj = SportsSchemaEntity105Create(
+        entity_code="TEST_SPORTS_105",
+        name="Test Entity 105",
+        value_amount=105 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_105"
+    assert obj.value_amount == 105 * 100.5
+
+def test_sports_entity_106_schema_validation():
+    obj = SportsSchemaEntity106Create(
+        entity_code="TEST_SPORTS_106",
+        name="Test Entity 106",
+        value_amount=106 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_106"
+    assert obj.value_amount == 106 * 100.5
+
+def test_sports_entity_107_schema_validation():
+    obj = SportsSchemaEntity107Create(
+        entity_code="TEST_SPORTS_107",
+        name="Test Entity 107",
+        value_amount=107 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_107"
+    assert obj.value_amount == 107 * 100.5
+
+def test_sports_entity_108_schema_validation():
+    obj = SportsSchemaEntity108Create(
+        entity_code="TEST_SPORTS_108",
+        name="Test Entity 108",
+        value_amount=108 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_108"
+    assert obj.value_amount == 108 * 100.5
+
+def test_sports_entity_109_schema_validation():
+    obj = SportsSchemaEntity109Create(
+        entity_code="TEST_SPORTS_109",
+        name="Test Entity 109",
+        value_amount=109 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_109"
+    assert obj.value_amount == 109 * 100.5
+
+def test_sports_entity_110_schema_validation():
+    obj = SportsSchemaEntity110Create(
+        entity_code="TEST_SPORTS_110",
+        name="Test Entity 110",
+        value_amount=110 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_110"
+    assert obj.value_amount == 110 * 100.5
+
+def test_sports_entity_111_schema_validation():
+    obj = SportsSchemaEntity111Create(
+        entity_code="TEST_SPORTS_111",
+        name="Test Entity 111",
+        value_amount=111 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_111"
+    assert obj.value_amount == 111 * 100.5
+
+def test_sports_entity_112_schema_validation():
+    obj = SportsSchemaEntity112Create(
+        entity_code="TEST_SPORTS_112",
+        name="Test Entity 112",
+        value_amount=112 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_112"
+    assert obj.value_amount == 112 * 100.5
+
+def test_sports_entity_113_schema_validation():
+    obj = SportsSchemaEntity113Create(
+        entity_code="TEST_SPORTS_113",
+        name="Test Entity 113",
+        value_amount=113 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_113"
+    assert obj.value_amount == 113 * 100.5
+
+def test_sports_entity_114_schema_validation():
+    obj = SportsSchemaEntity114Create(
+        entity_code="TEST_SPORTS_114",
+        name="Test Entity 114",
+        value_amount=114 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_114"
+    assert obj.value_amount == 114 * 100.5
+
+def test_sports_entity_115_schema_validation():
+    obj = SportsSchemaEntity115Create(
+        entity_code="TEST_SPORTS_115",
+        name="Test Entity 115",
+        value_amount=115 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_115"
+    assert obj.value_amount == 115 * 100.5
+
+def test_sports_entity_116_schema_validation():
+    obj = SportsSchemaEntity116Create(
+        entity_code="TEST_SPORTS_116",
+        name="Test Entity 116",
+        value_amount=116 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_116"
+    assert obj.value_amount == 116 * 100.5
+
+def test_sports_entity_117_schema_validation():
+    obj = SportsSchemaEntity117Create(
+        entity_code="TEST_SPORTS_117",
+        name="Test Entity 117",
+        value_amount=117 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_117"
+    assert obj.value_amount == 117 * 100.5
+
+def test_sports_entity_118_schema_validation():
+    obj = SportsSchemaEntity118Create(
+        entity_code="TEST_SPORTS_118",
+        name="Test Entity 118",
+        value_amount=118 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_118"
+    assert obj.value_amount == 118 * 100.5
+
+def test_sports_entity_119_schema_validation():
+    obj = SportsSchemaEntity119Create(
+        entity_code="TEST_SPORTS_119",
+        name="Test Entity 119",
+        value_amount=119 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_119"
+    assert obj.value_amount == 119 * 100.5
+
+def test_sports_entity_120_schema_validation():
+    obj = SportsSchemaEntity120Create(
+        entity_code="TEST_SPORTS_120",
+        name="Test Entity 120",
+        value_amount=120 * 100.5
+    )
+    assert obj.entity_code == "TEST_SPORTS_120"
+    assert obj.value_amount == 120 * 100.5
+

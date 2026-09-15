@@ -13,7 +13,7 @@ class _ResearchMainScreenState extends State<ResearchMainScreen> {
     return Scaffold(
       appBar: AppBar(title: const Text("Research, Grants & Lab Inventory"), backgroundColor: Colors.indigo),
       body: ListView.builder(
-        itemCount: 75,
+        itemCount: 100,
         padding: const EdgeInsets.all(16),
         itemBuilder: (context, index) {
           return Card(

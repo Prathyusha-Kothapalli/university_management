@@ -5041,3 +5041,1263 @@ class ResearchFlutterModel120 {
   };
 }
 
+class ResearchFlutterModel121 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel121({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel121.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel121(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel122 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel122({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel122.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel122(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel123 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel123({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel123.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel123(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel124 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel124({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel124.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel124(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel125 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel125({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel125.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel125(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel126 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel126({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel126.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel126(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel127 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel127({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel127.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel127(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel128 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel128({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel128.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel128(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel129 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel129({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel129.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel129(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel130 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel130({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel130.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel130(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel131 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel131({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel131.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel131(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel132 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel132({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel132.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel132(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel133 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel133({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel133.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel133(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel134 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel134({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel134.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel134(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel135 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel135({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel135.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel135(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel136 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel136({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel136.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel136(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel137 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel137({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel137.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel137(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel138 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel138({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel138.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel138(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel139 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel139({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel139.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel139(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel140 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel140({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel140.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel140(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel141 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel141({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel141.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel141(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel142 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel142({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel142.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel142(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel143 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel143({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel143.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel143(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel144 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel144({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel144.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel144(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel145 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel145({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel145.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel145(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel146 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel146({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel146.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel146(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel147 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel147({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel147.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel147(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel148 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel148({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel148.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel148(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel149 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel149({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel149.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel149(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class ResearchFlutterModel150 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  ResearchFlutterModel150({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory ResearchFlutterModel150.fromJson(Map<String, dynamic> json) {
+    return ResearchFlutterModel150(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+

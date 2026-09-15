@@ -2006,3 +2006,503 @@ class FinanceRepository200:
     def find_by_code(self, code: str) -> Optional[FinanceModelEntity200]:
         return self.db.query(FinanceModelEntity200).filter(FinanceModelEntity200.entity_code == code).first()
 
+class FinanceRepository201:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity201]:
+        return self.db.query(FinanceModelEntity201).filter(FinanceModelEntity201.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity201]:
+        return self.db.query(FinanceModelEntity201).filter(FinanceModelEntity201.entity_code == code).first()
+
+class FinanceRepository202:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity202]:
+        return self.db.query(FinanceModelEntity202).filter(FinanceModelEntity202.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity202]:
+        return self.db.query(FinanceModelEntity202).filter(FinanceModelEntity202.entity_code == code).first()
+
+class FinanceRepository203:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity203]:
+        return self.db.query(FinanceModelEntity203).filter(FinanceModelEntity203.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity203]:
+        return self.db.query(FinanceModelEntity203).filter(FinanceModelEntity203.entity_code == code).first()
+
+class FinanceRepository204:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity204]:
+        return self.db.query(FinanceModelEntity204).filter(FinanceModelEntity204.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity204]:
+        return self.db.query(FinanceModelEntity204).filter(FinanceModelEntity204.entity_code == code).first()
+
+class FinanceRepository205:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity205]:
+        return self.db.query(FinanceModelEntity205).filter(FinanceModelEntity205.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity205]:
+        return self.db.query(FinanceModelEntity205).filter(FinanceModelEntity205.entity_code == code).first()
+
+class FinanceRepository206:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity206]:
+        return self.db.query(FinanceModelEntity206).filter(FinanceModelEntity206.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity206]:
+        return self.db.query(FinanceModelEntity206).filter(FinanceModelEntity206.entity_code == code).first()
+
+class FinanceRepository207:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity207]:
+        return self.db.query(FinanceModelEntity207).filter(FinanceModelEntity207.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity207]:
+        return self.db.query(FinanceModelEntity207).filter(FinanceModelEntity207.entity_code == code).first()
+
+class FinanceRepository208:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity208]:
+        return self.db.query(FinanceModelEntity208).filter(FinanceModelEntity208.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity208]:
+        return self.db.query(FinanceModelEntity208).filter(FinanceModelEntity208.entity_code == code).first()
+
+class FinanceRepository209:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity209]:
+        return self.db.query(FinanceModelEntity209).filter(FinanceModelEntity209.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity209]:
+        return self.db.query(FinanceModelEntity209).filter(FinanceModelEntity209.entity_code == code).first()
+
+class FinanceRepository210:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity210]:
+        return self.db.query(FinanceModelEntity210).filter(FinanceModelEntity210.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity210]:
+        return self.db.query(FinanceModelEntity210).filter(FinanceModelEntity210.entity_code == code).first()
+
+class FinanceRepository211:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity211]:
+        return self.db.query(FinanceModelEntity211).filter(FinanceModelEntity211.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity211]:
+        return self.db.query(FinanceModelEntity211).filter(FinanceModelEntity211.entity_code == code).first()
+
+class FinanceRepository212:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity212]:
+        return self.db.query(FinanceModelEntity212).filter(FinanceModelEntity212.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity212]:
+        return self.db.query(FinanceModelEntity212).filter(FinanceModelEntity212.entity_code == code).first()
+
+class FinanceRepository213:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity213]:
+        return self.db.query(FinanceModelEntity213).filter(FinanceModelEntity213.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity213]:
+        return self.db.query(FinanceModelEntity213).filter(FinanceModelEntity213.entity_code == code).first()
+
+class FinanceRepository214:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity214]:
+        return self.db.query(FinanceModelEntity214).filter(FinanceModelEntity214.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity214]:
+        return self.db.query(FinanceModelEntity214).filter(FinanceModelEntity214.entity_code == code).first()
+
+class FinanceRepository215:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity215]:
+        return self.db.query(FinanceModelEntity215).filter(FinanceModelEntity215.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity215]:
+        return self.db.query(FinanceModelEntity215).filter(FinanceModelEntity215.entity_code == code).first()
+
+class FinanceRepository216:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity216]:
+        return self.db.query(FinanceModelEntity216).filter(FinanceModelEntity216.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity216]:
+        return self.db.query(FinanceModelEntity216).filter(FinanceModelEntity216.entity_code == code).first()
+
+class FinanceRepository217:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity217]:
+        return self.db.query(FinanceModelEntity217).filter(FinanceModelEntity217.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity217]:
+        return self.db.query(FinanceModelEntity217).filter(FinanceModelEntity217.entity_code == code).first()
+
+class FinanceRepository218:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity218]:
+        return self.db.query(FinanceModelEntity218).filter(FinanceModelEntity218.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity218]:
+        return self.db.query(FinanceModelEntity218).filter(FinanceModelEntity218.entity_code == code).first()
+
+class FinanceRepository219:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity219]:
+        return self.db.query(FinanceModelEntity219).filter(FinanceModelEntity219.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity219]:
+        return self.db.query(FinanceModelEntity219).filter(FinanceModelEntity219.entity_code == code).first()
+
+class FinanceRepository220:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity220]:
+        return self.db.query(FinanceModelEntity220).filter(FinanceModelEntity220.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity220]:
+        return self.db.query(FinanceModelEntity220).filter(FinanceModelEntity220.entity_code == code).first()
+
+class FinanceRepository221:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity221]:
+        return self.db.query(FinanceModelEntity221).filter(FinanceModelEntity221.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity221]:
+        return self.db.query(FinanceModelEntity221).filter(FinanceModelEntity221.entity_code == code).first()
+
+class FinanceRepository222:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity222]:
+        return self.db.query(FinanceModelEntity222).filter(FinanceModelEntity222.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity222]:
+        return self.db.query(FinanceModelEntity222).filter(FinanceModelEntity222.entity_code == code).first()
+
+class FinanceRepository223:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity223]:
+        return self.db.query(FinanceModelEntity223).filter(FinanceModelEntity223.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity223]:
+        return self.db.query(FinanceModelEntity223).filter(FinanceModelEntity223.entity_code == code).first()
+
+class FinanceRepository224:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity224]:
+        return self.db.query(FinanceModelEntity224).filter(FinanceModelEntity224.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity224]:
+        return self.db.query(FinanceModelEntity224).filter(FinanceModelEntity224.entity_code == code).first()
+
+class FinanceRepository225:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity225]:
+        return self.db.query(FinanceModelEntity225).filter(FinanceModelEntity225.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity225]:
+        return self.db.query(FinanceModelEntity225).filter(FinanceModelEntity225.entity_code == code).first()
+
+class FinanceRepository226:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity226]:
+        return self.db.query(FinanceModelEntity226).filter(FinanceModelEntity226.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity226]:
+        return self.db.query(FinanceModelEntity226).filter(FinanceModelEntity226.entity_code == code).first()
+
+class FinanceRepository227:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity227]:
+        return self.db.query(FinanceModelEntity227).filter(FinanceModelEntity227.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity227]:
+        return self.db.query(FinanceModelEntity227).filter(FinanceModelEntity227.entity_code == code).first()
+
+class FinanceRepository228:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity228]:
+        return self.db.query(FinanceModelEntity228).filter(FinanceModelEntity228.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity228]:
+        return self.db.query(FinanceModelEntity228).filter(FinanceModelEntity228.entity_code == code).first()
+
+class FinanceRepository229:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity229]:
+        return self.db.query(FinanceModelEntity229).filter(FinanceModelEntity229.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity229]:
+        return self.db.query(FinanceModelEntity229).filter(FinanceModelEntity229.entity_code == code).first()
+
+class FinanceRepository230:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity230]:
+        return self.db.query(FinanceModelEntity230).filter(FinanceModelEntity230.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity230]:
+        return self.db.query(FinanceModelEntity230).filter(FinanceModelEntity230.entity_code == code).first()
+
+class FinanceRepository231:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity231]:
+        return self.db.query(FinanceModelEntity231).filter(FinanceModelEntity231.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity231]:
+        return self.db.query(FinanceModelEntity231).filter(FinanceModelEntity231.entity_code == code).first()
+
+class FinanceRepository232:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity232]:
+        return self.db.query(FinanceModelEntity232).filter(FinanceModelEntity232.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity232]:
+        return self.db.query(FinanceModelEntity232).filter(FinanceModelEntity232.entity_code == code).first()
+
+class FinanceRepository233:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity233]:
+        return self.db.query(FinanceModelEntity233).filter(FinanceModelEntity233.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity233]:
+        return self.db.query(FinanceModelEntity233).filter(FinanceModelEntity233.entity_code == code).first()
+
+class FinanceRepository234:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity234]:
+        return self.db.query(FinanceModelEntity234).filter(FinanceModelEntity234.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity234]:
+        return self.db.query(FinanceModelEntity234).filter(FinanceModelEntity234.entity_code == code).first()
+
+class FinanceRepository235:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity235]:
+        return self.db.query(FinanceModelEntity235).filter(FinanceModelEntity235.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity235]:
+        return self.db.query(FinanceModelEntity235).filter(FinanceModelEntity235.entity_code == code).first()
+
+class FinanceRepository236:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity236]:
+        return self.db.query(FinanceModelEntity236).filter(FinanceModelEntity236.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity236]:
+        return self.db.query(FinanceModelEntity236).filter(FinanceModelEntity236.entity_code == code).first()
+
+class FinanceRepository237:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity237]:
+        return self.db.query(FinanceModelEntity237).filter(FinanceModelEntity237.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity237]:
+        return self.db.query(FinanceModelEntity237).filter(FinanceModelEntity237.entity_code == code).first()
+
+class FinanceRepository238:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity238]:
+        return self.db.query(FinanceModelEntity238).filter(FinanceModelEntity238.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity238]:
+        return self.db.query(FinanceModelEntity238).filter(FinanceModelEntity238.entity_code == code).first()
+
+class FinanceRepository239:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity239]:
+        return self.db.query(FinanceModelEntity239).filter(FinanceModelEntity239.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity239]:
+        return self.db.query(FinanceModelEntity239).filter(FinanceModelEntity239.entity_code == code).first()
+
+class FinanceRepository240:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity240]:
+        return self.db.query(FinanceModelEntity240).filter(FinanceModelEntity240.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity240]:
+        return self.db.query(FinanceModelEntity240).filter(FinanceModelEntity240.entity_code == code).first()
+
+class FinanceRepository241:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity241]:
+        return self.db.query(FinanceModelEntity241).filter(FinanceModelEntity241.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity241]:
+        return self.db.query(FinanceModelEntity241).filter(FinanceModelEntity241.entity_code == code).first()
+
+class FinanceRepository242:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity242]:
+        return self.db.query(FinanceModelEntity242).filter(FinanceModelEntity242.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity242]:
+        return self.db.query(FinanceModelEntity242).filter(FinanceModelEntity242.entity_code == code).first()
+
+class FinanceRepository243:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity243]:
+        return self.db.query(FinanceModelEntity243).filter(FinanceModelEntity243.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity243]:
+        return self.db.query(FinanceModelEntity243).filter(FinanceModelEntity243.entity_code == code).first()
+
+class FinanceRepository244:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity244]:
+        return self.db.query(FinanceModelEntity244).filter(FinanceModelEntity244.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity244]:
+        return self.db.query(FinanceModelEntity244).filter(FinanceModelEntity244.entity_code == code).first()
+
+class FinanceRepository245:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity245]:
+        return self.db.query(FinanceModelEntity245).filter(FinanceModelEntity245.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity245]:
+        return self.db.query(FinanceModelEntity245).filter(FinanceModelEntity245.entity_code == code).first()
+
+class FinanceRepository246:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity246]:
+        return self.db.query(FinanceModelEntity246).filter(FinanceModelEntity246.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity246]:
+        return self.db.query(FinanceModelEntity246).filter(FinanceModelEntity246.entity_code == code).first()
+
+class FinanceRepository247:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity247]:
+        return self.db.query(FinanceModelEntity247).filter(FinanceModelEntity247.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity247]:
+        return self.db.query(FinanceModelEntity247).filter(FinanceModelEntity247.entity_code == code).first()
+
+class FinanceRepository248:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity248]:
+        return self.db.query(FinanceModelEntity248).filter(FinanceModelEntity248.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity248]:
+        return self.db.query(FinanceModelEntity248).filter(FinanceModelEntity248.entity_code == code).first()
+
+class FinanceRepository249:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity249]:
+        return self.db.query(FinanceModelEntity249).filter(FinanceModelEntity249.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity249]:
+        return self.db.query(FinanceModelEntity249).filter(FinanceModelEntity249.entity_code == code).first()
+
+class FinanceRepository250:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[FinanceModelEntity250]:
+        return self.db.query(FinanceModelEntity250).filter(FinanceModelEntity250.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[FinanceModelEntity250]:
+        return self.db.query(FinanceModelEntity250).filter(FinanceModelEntity250.entity_code == code).first()
+

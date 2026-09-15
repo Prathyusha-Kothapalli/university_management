@@ -1804,3 +1804,453 @@ def test_finance_entity_200_schema_validation():
     assert obj.entity_code == "TEST_FINANCE_200"
     assert obj.value_amount == 200 * 100.5
 
+def test_finance_entity_201_schema_validation():
+    obj = FinanceSchemaEntity201Create(
+        entity_code="TEST_FINANCE_201",
+        name="Test Entity 201",
+        value_amount=201 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_201"
+    assert obj.value_amount == 201 * 100.5
+
+def test_finance_entity_202_schema_validation():
+    obj = FinanceSchemaEntity202Create(
+        entity_code="TEST_FINANCE_202",
+        name="Test Entity 202",
+        value_amount=202 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_202"
+    assert obj.value_amount == 202 * 100.5
+
+def test_finance_entity_203_schema_validation():
+    obj = FinanceSchemaEntity203Create(
+        entity_code="TEST_FINANCE_203",
+        name="Test Entity 203",
+        value_amount=203 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_203"
+    assert obj.value_amount == 203 * 100.5
+
+def test_finance_entity_204_schema_validation():
+    obj = FinanceSchemaEntity204Create(
+        entity_code="TEST_FINANCE_204",
+        name="Test Entity 204",
+        value_amount=204 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_204"
+    assert obj.value_amount == 204 * 100.5
+
+def test_finance_entity_205_schema_validation():
+    obj = FinanceSchemaEntity205Create(
+        entity_code="TEST_FINANCE_205",
+        name="Test Entity 205",
+        value_amount=205 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_205"
+    assert obj.value_amount == 205 * 100.5
+
+def test_finance_entity_206_schema_validation():
+    obj = FinanceSchemaEntity206Create(
+        entity_code="TEST_FINANCE_206",
+        name="Test Entity 206",
+        value_amount=206 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_206"
+    assert obj.value_amount == 206 * 100.5
+
+def test_finance_entity_207_schema_validation():
+    obj = FinanceSchemaEntity207Create(
+        entity_code="TEST_FINANCE_207",
+        name="Test Entity 207",
+        value_amount=207 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_207"
+    assert obj.value_amount == 207 * 100.5
+
+def test_finance_entity_208_schema_validation():
+    obj = FinanceSchemaEntity208Create(
+        entity_code="TEST_FINANCE_208",
+        name="Test Entity 208",
+        value_amount=208 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_208"
+    assert obj.value_amount == 208 * 100.5
+
+def test_finance_entity_209_schema_validation():
+    obj = FinanceSchemaEntity209Create(
+        entity_code="TEST_FINANCE_209",
+        name="Test Entity 209",
+        value_amount=209 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_209"
+    assert obj.value_amount == 209 * 100.5
+
+def test_finance_entity_210_schema_validation():
+    obj = FinanceSchemaEntity210Create(
+        entity_code="TEST_FINANCE_210",
+        name="Test Entity 210",
+        value_amount=210 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_210"
+    assert obj.value_amount == 210 * 100.5
+
+def test_finance_entity_211_schema_validation():
+    obj = FinanceSchemaEntity211Create(
+        entity_code="TEST_FINANCE_211",
+        name="Test Entity 211",
+        value_amount=211 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_211"
+    assert obj.value_amount == 211 * 100.5
+
+def test_finance_entity_212_schema_validation():
+    obj = FinanceSchemaEntity212Create(
+        entity_code="TEST_FINANCE_212",
+        name="Test Entity 212",
+        value_amount=212 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_212"
+    assert obj.value_amount == 212 * 100.5
+
+def test_finance_entity_213_schema_validation():
+    obj = FinanceSchemaEntity213Create(
+        entity_code="TEST_FINANCE_213",
+        name="Test Entity 213",
+        value_amount=213 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_213"
+    assert obj.value_amount == 213 * 100.5
+
+def test_finance_entity_214_schema_validation():
+    obj = FinanceSchemaEntity214Create(
+        entity_code="TEST_FINANCE_214",
+        name="Test Entity 214",
+        value_amount=214 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_214"
+    assert obj.value_amount == 214 * 100.5
+
+def test_finance_entity_215_schema_validation():
+    obj = FinanceSchemaEntity215Create(
+        entity_code="TEST_FINANCE_215",
+        name="Test Entity 215",
+        value_amount=215 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_215"
+    assert obj.value_amount == 215 * 100.5
+
+def test_finance_entity_216_schema_validation():
+    obj = FinanceSchemaEntity216Create(
+        entity_code="TEST_FINANCE_216",
+        name="Test Entity 216",
+        value_amount=216 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_216"
+    assert obj.value_amount == 216 * 100.5
+
+def test_finance_entity_217_schema_validation():
+    obj = FinanceSchemaEntity217Create(
+        entity_code="TEST_FINANCE_217",
+        name="Test Entity 217",
+        value_amount=217 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_217"
+    assert obj.value_amount == 217 * 100.5
+
+def test_finance_entity_218_schema_validation():
+    obj = FinanceSchemaEntity218Create(
+        entity_code="TEST_FINANCE_218",
+        name="Test Entity 218",
+        value_amount=218 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_218"
+    assert obj.value_amount == 218 * 100.5
+
+def test_finance_entity_219_schema_validation():
+    obj = FinanceSchemaEntity219Create(
+        entity_code="TEST_FINANCE_219",
+        name="Test Entity 219",
+        value_amount=219 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_219"
+    assert obj.value_amount == 219 * 100.5
+
+def test_finance_entity_220_schema_validation():
+    obj = FinanceSchemaEntity220Create(
+        entity_code="TEST_FINANCE_220",
+        name="Test Entity 220",
+        value_amount=220 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_220"
+    assert obj.value_amount == 220 * 100.5
+
+def test_finance_entity_221_schema_validation():
+    obj = FinanceSchemaEntity221Create(
+        entity_code="TEST_FINANCE_221",
+        name="Test Entity 221",
+        value_amount=221 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_221"
+    assert obj.value_amount == 221 * 100.5
+
+def test_finance_entity_222_schema_validation():
+    obj = FinanceSchemaEntity222Create(
+        entity_code="TEST_FINANCE_222",
+        name="Test Entity 222",
+        value_amount=222 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_222"
+    assert obj.value_amount == 222 * 100.5
+
+def test_finance_entity_223_schema_validation():
+    obj = FinanceSchemaEntity223Create(
+        entity_code="TEST_FINANCE_223",
+        name="Test Entity 223",
+        value_amount=223 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_223"
+    assert obj.value_amount == 223 * 100.5
+
+def test_finance_entity_224_schema_validation():
+    obj = FinanceSchemaEntity224Create(
+        entity_code="TEST_FINANCE_224",
+        name="Test Entity 224",
+        value_amount=224 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_224"
+    assert obj.value_amount == 224 * 100.5
+
+def test_finance_entity_225_schema_validation():
+    obj = FinanceSchemaEntity225Create(
+        entity_code="TEST_FINANCE_225",
+        name="Test Entity 225",
+        value_amount=225 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_225"
+    assert obj.value_amount == 225 * 100.5
+
+def test_finance_entity_226_schema_validation():
+    obj = FinanceSchemaEntity226Create(
+        entity_code="TEST_FINANCE_226",
+        name="Test Entity 226",
+        value_amount=226 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_226"
+    assert obj.value_amount == 226 * 100.5
+
+def test_finance_entity_227_schema_validation():
+    obj = FinanceSchemaEntity227Create(
+        entity_code="TEST_FINANCE_227",
+        name="Test Entity 227",
+        value_amount=227 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_227"
+    assert obj.value_amount == 227 * 100.5
+
+def test_finance_entity_228_schema_validation():
+    obj = FinanceSchemaEntity228Create(
+        entity_code="TEST_FINANCE_228",
+        name="Test Entity 228",
+        value_amount=228 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_228"
+    assert obj.value_amount == 228 * 100.5
+
+def test_finance_entity_229_schema_validation():
+    obj = FinanceSchemaEntity229Create(
+        entity_code="TEST_FINANCE_229",
+        name="Test Entity 229",
+        value_amount=229 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_229"
+    assert obj.value_amount == 229 * 100.5
+
+def test_finance_entity_230_schema_validation():
+    obj = FinanceSchemaEntity230Create(
+        entity_code="TEST_FINANCE_230",
+        name="Test Entity 230",
+        value_amount=230 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_230"
+    assert obj.value_amount == 230 * 100.5
+
+def test_finance_entity_231_schema_validation():
+    obj = FinanceSchemaEntity231Create(
+        entity_code="TEST_FINANCE_231",
+        name="Test Entity 231",
+        value_amount=231 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_231"
+    assert obj.value_amount == 231 * 100.5
+
+def test_finance_entity_232_schema_validation():
+    obj = FinanceSchemaEntity232Create(
+        entity_code="TEST_FINANCE_232",
+        name="Test Entity 232",
+        value_amount=232 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_232"
+    assert obj.value_amount == 232 * 100.5
+
+def test_finance_entity_233_schema_validation():
+    obj = FinanceSchemaEntity233Create(
+        entity_code="TEST_FINANCE_233",
+        name="Test Entity 233",
+        value_amount=233 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_233"
+    assert obj.value_amount == 233 * 100.5
+
+def test_finance_entity_234_schema_validation():
+    obj = FinanceSchemaEntity234Create(
+        entity_code="TEST_FINANCE_234",
+        name="Test Entity 234",
+        value_amount=234 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_234"
+    assert obj.value_amount == 234 * 100.5
+
+def test_finance_entity_235_schema_validation():
+    obj = FinanceSchemaEntity235Create(
+        entity_code="TEST_FINANCE_235",
+        name="Test Entity 235",
+        value_amount=235 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_235"
+    assert obj.value_amount == 235 * 100.5
+
+def test_finance_entity_236_schema_validation():
+    obj = FinanceSchemaEntity236Create(
+        entity_code="TEST_FINANCE_236",
+        name="Test Entity 236",
+        value_amount=236 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_236"
+    assert obj.value_amount == 236 * 100.5
+
+def test_finance_entity_237_schema_validation():
+    obj = FinanceSchemaEntity237Create(
+        entity_code="TEST_FINANCE_237",
+        name="Test Entity 237",
+        value_amount=237 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_237"
+    assert obj.value_amount == 237 * 100.5
+
+def test_finance_entity_238_schema_validation():
+    obj = FinanceSchemaEntity238Create(
+        entity_code="TEST_FINANCE_238",
+        name="Test Entity 238",
+        value_amount=238 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_238"
+    assert obj.value_amount == 238 * 100.5
+
+def test_finance_entity_239_schema_validation():
+    obj = FinanceSchemaEntity239Create(
+        entity_code="TEST_FINANCE_239",
+        name="Test Entity 239",
+        value_amount=239 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_239"
+    assert obj.value_amount == 239 * 100.5
+
+def test_finance_entity_240_schema_validation():
+    obj = FinanceSchemaEntity240Create(
+        entity_code="TEST_FINANCE_240",
+        name="Test Entity 240",
+        value_amount=240 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_240"
+    assert obj.value_amount == 240 * 100.5
+
+def test_finance_entity_241_schema_validation():
+    obj = FinanceSchemaEntity241Create(
+        entity_code="TEST_FINANCE_241",
+        name="Test Entity 241",
+        value_amount=241 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_241"
+    assert obj.value_amount == 241 * 100.5
+
+def test_finance_entity_242_schema_validation():
+    obj = FinanceSchemaEntity242Create(
+        entity_code="TEST_FINANCE_242",
+        name="Test Entity 242",
+        value_amount=242 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_242"
+    assert obj.value_amount == 242 * 100.5
+
+def test_finance_entity_243_schema_validation():
+    obj = FinanceSchemaEntity243Create(
+        entity_code="TEST_FINANCE_243",
+        name="Test Entity 243",
+        value_amount=243 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_243"
+    assert obj.value_amount == 243 * 100.5
+
+def test_finance_entity_244_schema_validation():
+    obj = FinanceSchemaEntity244Create(
+        entity_code="TEST_FINANCE_244",
+        name="Test Entity 244",
+        value_amount=244 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_244"
+    assert obj.value_amount == 244 * 100.5
+
+def test_finance_entity_245_schema_validation():
+    obj = FinanceSchemaEntity245Create(
+        entity_code="TEST_FINANCE_245",
+        name="Test Entity 245",
+        value_amount=245 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_245"
+    assert obj.value_amount == 245 * 100.5
+
+def test_finance_entity_246_schema_validation():
+    obj = FinanceSchemaEntity246Create(
+        entity_code="TEST_FINANCE_246",
+        name="Test Entity 246",
+        value_amount=246 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_246"
+    assert obj.value_amount == 246 * 100.5
+
+def test_finance_entity_247_schema_validation():
+    obj = FinanceSchemaEntity247Create(
+        entity_code="TEST_FINANCE_247",
+        name="Test Entity 247",
+        value_amount=247 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_247"
+    assert obj.value_amount == 247 * 100.5
+
+def test_finance_entity_248_schema_validation():
+    obj = FinanceSchemaEntity248Create(
+        entity_code="TEST_FINANCE_248",
+        name="Test Entity 248",
+        value_amount=248 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_248"
+    assert obj.value_amount == 248 * 100.5
+
+def test_finance_entity_249_schema_validation():
+    obj = FinanceSchemaEntity249Create(
+        entity_code="TEST_FINANCE_249",
+        name="Test Entity 249",
+        value_amount=249 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_249"
+    assert obj.value_amount == 249 * 100.5
+
+def test_finance_entity_250_schema_validation():
+    obj = FinanceSchemaEntity250Create(
+        entity_code="TEST_FINANCE_250",
+        name="Test Entity 250",
+        value_amount=250 * 100.5
+    )
+    assert obj.entity_code == "TEST_FINANCE_250"
+    assert obj.value_amount == 250 * 100.5
+

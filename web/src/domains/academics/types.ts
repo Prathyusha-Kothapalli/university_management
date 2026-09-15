@@ -3452,3 +3452,693 @@ export interface IAcademicsItem150Payload {
   is_active?: boolean;
 }
 
+export interface IAcademicsItem151 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem151Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem152 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem152Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem153 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem153Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem154 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem154Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem155 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem155Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem156 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem156Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem157 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem157Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem158 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem158Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem159 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem159Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem160 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem160Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem161 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem161Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem162 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem162Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem163 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem163Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem164 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem164Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem165 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem165Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem166 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem166Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem167 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem167Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem168 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem168Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem169 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem169Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem170 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem170Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem171 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem171Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem172 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem172Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem173 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem173Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem174 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem174Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem175 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem175Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem176 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem176Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem177 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem177Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem178 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem178Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem179 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem179Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IAcademicsItem180 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IAcademicsItem180Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+

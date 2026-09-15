@@ -13,7 +13,7 @@ class _TransportMainScreenState extends State<TransportMainScreen> {
     return Scaffold(
       appBar: AppBar(title: const Text("Transport & Fleet Logistics"), backgroundColor: Colors.indigo),
       body: ListView.builder(
-        itemCount: 75,
+        itemCount: 100,
         padding: const EdgeInsets.all(16),
         itemBuilder: (context, index) {
           return Card(

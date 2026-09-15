@@ -13,7 +13,7 @@ class _AcademicsMainScreenState extends State<AcademicsMainScreen> {
     return Scaffold(
       appBar: AppBar(title: const Text("Academic & Curriculum Management"), backgroundColor: Colors.indigo),
       body: ListView.builder(
-        itemCount: 75,
+        itemCount: 100,
         padding: const EdgeInsets.all(16),
         itemBuilder: (context, index) {
           return Card(

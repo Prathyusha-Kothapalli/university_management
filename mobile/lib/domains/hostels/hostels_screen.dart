@@ -13,7 +13,7 @@ class _HostelsMainScreenState extends State<HostelsMainScreen> {
     return Scaffold(
       appBar: AppBar(title: const Text("Student Life & Hostel Operations"), backgroundColor: Colors.indigo),
       body: ListView.builder(
-        itemCount: 75,
+        itemCount: 100,
         padding: const EdgeInsets.all(16),
         itemBuilder: (context, index) {
           return Card(

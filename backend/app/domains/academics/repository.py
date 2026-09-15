@@ -2006,3 +2006,503 @@ class AcademicsRepository200:
     def find_by_code(self, code: str) -> Optional[AcademicsModelEntity200]:
         return self.db.query(AcademicsModelEntity200).filter(AcademicsModelEntity200.entity_code == code).first()
 
+class AcademicsRepository201:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity201]:
+        return self.db.query(AcademicsModelEntity201).filter(AcademicsModelEntity201.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity201]:
+        return self.db.query(AcademicsModelEntity201).filter(AcademicsModelEntity201.entity_code == code).first()
+
+class AcademicsRepository202:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity202]:
+        return self.db.query(AcademicsModelEntity202).filter(AcademicsModelEntity202.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity202]:
+        return self.db.query(AcademicsModelEntity202).filter(AcademicsModelEntity202.entity_code == code).first()
+
+class AcademicsRepository203:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity203]:
+        return self.db.query(AcademicsModelEntity203).filter(AcademicsModelEntity203.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity203]:
+        return self.db.query(AcademicsModelEntity203).filter(AcademicsModelEntity203.entity_code == code).first()
+
+class AcademicsRepository204:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity204]:
+        return self.db.query(AcademicsModelEntity204).filter(AcademicsModelEntity204.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity204]:
+        return self.db.query(AcademicsModelEntity204).filter(AcademicsModelEntity204.entity_code == code).first()
+
+class AcademicsRepository205:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity205]:
+        return self.db.query(AcademicsModelEntity205).filter(AcademicsModelEntity205.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity205]:
+        return self.db.query(AcademicsModelEntity205).filter(AcademicsModelEntity205.entity_code == code).first()
+
+class AcademicsRepository206:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity206]:
+        return self.db.query(AcademicsModelEntity206).filter(AcademicsModelEntity206.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity206]:
+        return self.db.query(AcademicsModelEntity206).filter(AcademicsModelEntity206.entity_code == code).first()
+
+class AcademicsRepository207:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity207]:
+        return self.db.query(AcademicsModelEntity207).filter(AcademicsModelEntity207.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity207]:
+        return self.db.query(AcademicsModelEntity207).filter(AcademicsModelEntity207.entity_code == code).first()
+
+class AcademicsRepository208:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity208]:
+        return self.db.query(AcademicsModelEntity208).filter(AcademicsModelEntity208.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity208]:
+        return self.db.query(AcademicsModelEntity208).filter(AcademicsModelEntity208.entity_code == code).first()
+
+class AcademicsRepository209:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity209]:
+        return self.db.query(AcademicsModelEntity209).filter(AcademicsModelEntity209.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity209]:
+        return self.db.query(AcademicsModelEntity209).filter(AcademicsModelEntity209.entity_code == code).first()
+
+class AcademicsRepository210:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity210]:
+        return self.db.query(AcademicsModelEntity210).filter(AcademicsModelEntity210.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity210]:
+        return self.db.query(AcademicsModelEntity210).filter(AcademicsModelEntity210.entity_code == code).first()
+
+class AcademicsRepository211:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity211]:
+        return self.db.query(AcademicsModelEntity211).filter(AcademicsModelEntity211.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity211]:
+        return self.db.query(AcademicsModelEntity211).filter(AcademicsModelEntity211.entity_code == code).first()
+
+class AcademicsRepository212:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity212]:
+        return self.db.query(AcademicsModelEntity212).filter(AcademicsModelEntity212.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity212]:
+        return self.db.query(AcademicsModelEntity212).filter(AcademicsModelEntity212.entity_code == code).first()
+
+class AcademicsRepository213:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity213]:
+        return self.db.query(AcademicsModelEntity213).filter(AcademicsModelEntity213.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity213]:
+        return self.db.query(AcademicsModelEntity213).filter(AcademicsModelEntity213.entity_code == code).first()
+
+class AcademicsRepository214:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity214]:
+        return self.db.query(AcademicsModelEntity214).filter(AcademicsModelEntity214.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity214]:
+        return self.db.query(AcademicsModelEntity214).filter(AcademicsModelEntity214.entity_code == code).first()
+
+class AcademicsRepository215:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity215]:
+        return self.db.query(AcademicsModelEntity215).filter(AcademicsModelEntity215.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity215]:
+        return self.db.query(AcademicsModelEntity215).filter(AcademicsModelEntity215.entity_code == code).first()
+
+class AcademicsRepository216:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity216]:
+        return self.db.query(AcademicsModelEntity216).filter(AcademicsModelEntity216.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity216]:
+        return self.db.query(AcademicsModelEntity216).filter(AcademicsModelEntity216.entity_code == code).first()
+
+class AcademicsRepository217:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity217]:
+        return self.db.query(AcademicsModelEntity217).filter(AcademicsModelEntity217.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity217]:
+        return self.db.query(AcademicsModelEntity217).filter(AcademicsModelEntity217.entity_code == code).first()
+
+class AcademicsRepository218:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity218]:
+        return self.db.query(AcademicsModelEntity218).filter(AcademicsModelEntity218.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity218]:
+        return self.db.query(AcademicsModelEntity218).filter(AcademicsModelEntity218.entity_code == code).first()
+
+class AcademicsRepository219:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity219]:
+        return self.db.query(AcademicsModelEntity219).filter(AcademicsModelEntity219.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity219]:
+        return self.db.query(AcademicsModelEntity219).filter(AcademicsModelEntity219.entity_code == code).first()
+
+class AcademicsRepository220:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity220]:
+        return self.db.query(AcademicsModelEntity220).filter(AcademicsModelEntity220.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity220]:
+        return self.db.query(AcademicsModelEntity220).filter(AcademicsModelEntity220.entity_code == code).first()
+
+class AcademicsRepository221:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity221]:
+        return self.db.query(AcademicsModelEntity221).filter(AcademicsModelEntity221.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity221]:
+        return self.db.query(AcademicsModelEntity221).filter(AcademicsModelEntity221.entity_code == code).first()
+
+class AcademicsRepository222:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity222]:
+        return self.db.query(AcademicsModelEntity222).filter(AcademicsModelEntity222.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity222]:
+        return self.db.query(AcademicsModelEntity222).filter(AcademicsModelEntity222.entity_code == code).first()
+
+class AcademicsRepository223:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity223]:
+        return self.db.query(AcademicsModelEntity223).filter(AcademicsModelEntity223.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity223]:
+        return self.db.query(AcademicsModelEntity223).filter(AcademicsModelEntity223.entity_code == code).first()
+
+class AcademicsRepository224:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity224]:
+        return self.db.query(AcademicsModelEntity224).filter(AcademicsModelEntity224.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity224]:
+        return self.db.query(AcademicsModelEntity224).filter(AcademicsModelEntity224.entity_code == code).first()
+
+class AcademicsRepository225:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity225]:
+        return self.db.query(AcademicsModelEntity225).filter(AcademicsModelEntity225.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity225]:
+        return self.db.query(AcademicsModelEntity225).filter(AcademicsModelEntity225.entity_code == code).first()
+
+class AcademicsRepository226:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity226]:
+        return self.db.query(AcademicsModelEntity226).filter(AcademicsModelEntity226.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity226]:
+        return self.db.query(AcademicsModelEntity226).filter(AcademicsModelEntity226.entity_code == code).first()
+
+class AcademicsRepository227:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity227]:
+        return self.db.query(AcademicsModelEntity227).filter(AcademicsModelEntity227.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity227]:
+        return self.db.query(AcademicsModelEntity227).filter(AcademicsModelEntity227.entity_code == code).first()
+
+class AcademicsRepository228:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity228]:
+        return self.db.query(AcademicsModelEntity228).filter(AcademicsModelEntity228.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity228]:
+        return self.db.query(AcademicsModelEntity228).filter(AcademicsModelEntity228.entity_code == code).first()
+
+class AcademicsRepository229:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity229]:
+        return self.db.query(AcademicsModelEntity229).filter(AcademicsModelEntity229.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity229]:
+        return self.db.query(AcademicsModelEntity229).filter(AcademicsModelEntity229.entity_code == code).first()
+
+class AcademicsRepository230:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity230]:
+        return self.db.query(AcademicsModelEntity230).filter(AcademicsModelEntity230.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity230]:
+        return self.db.query(AcademicsModelEntity230).filter(AcademicsModelEntity230.entity_code == code).first()
+
+class AcademicsRepository231:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity231]:
+        return self.db.query(AcademicsModelEntity231).filter(AcademicsModelEntity231.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity231]:
+        return self.db.query(AcademicsModelEntity231).filter(AcademicsModelEntity231.entity_code == code).first()
+
+class AcademicsRepository232:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity232]:
+        return self.db.query(AcademicsModelEntity232).filter(AcademicsModelEntity232.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity232]:
+        return self.db.query(AcademicsModelEntity232).filter(AcademicsModelEntity232.entity_code == code).first()
+
+class AcademicsRepository233:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity233]:
+        return self.db.query(AcademicsModelEntity233).filter(AcademicsModelEntity233.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity233]:
+        return self.db.query(AcademicsModelEntity233).filter(AcademicsModelEntity233.entity_code == code).first()
+
+class AcademicsRepository234:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity234]:
+        return self.db.query(AcademicsModelEntity234).filter(AcademicsModelEntity234.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity234]:
+        return self.db.query(AcademicsModelEntity234).filter(AcademicsModelEntity234.entity_code == code).first()
+
+class AcademicsRepository235:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity235]:
+        return self.db.query(AcademicsModelEntity235).filter(AcademicsModelEntity235.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity235]:
+        return self.db.query(AcademicsModelEntity235).filter(AcademicsModelEntity235.entity_code == code).first()
+
+class AcademicsRepository236:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity236]:
+        return self.db.query(AcademicsModelEntity236).filter(AcademicsModelEntity236.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity236]:
+        return self.db.query(AcademicsModelEntity236).filter(AcademicsModelEntity236.entity_code == code).first()
+
+class AcademicsRepository237:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity237]:
+        return self.db.query(AcademicsModelEntity237).filter(AcademicsModelEntity237.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity237]:
+        return self.db.query(AcademicsModelEntity237).filter(AcademicsModelEntity237.entity_code == code).first()
+
+class AcademicsRepository238:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity238]:
+        return self.db.query(AcademicsModelEntity238).filter(AcademicsModelEntity238.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity238]:
+        return self.db.query(AcademicsModelEntity238).filter(AcademicsModelEntity238.entity_code == code).first()
+
+class AcademicsRepository239:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity239]:
+        return self.db.query(AcademicsModelEntity239).filter(AcademicsModelEntity239.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity239]:
+        return self.db.query(AcademicsModelEntity239).filter(AcademicsModelEntity239.entity_code == code).first()
+
+class AcademicsRepository240:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity240]:
+        return self.db.query(AcademicsModelEntity240).filter(AcademicsModelEntity240.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity240]:
+        return self.db.query(AcademicsModelEntity240).filter(AcademicsModelEntity240.entity_code == code).first()
+
+class AcademicsRepository241:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity241]:
+        return self.db.query(AcademicsModelEntity241).filter(AcademicsModelEntity241.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity241]:
+        return self.db.query(AcademicsModelEntity241).filter(AcademicsModelEntity241.entity_code == code).first()
+
+class AcademicsRepository242:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity242]:
+        return self.db.query(AcademicsModelEntity242).filter(AcademicsModelEntity242.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity242]:
+        return self.db.query(AcademicsModelEntity242).filter(AcademicsModelEntity242.entity_code == code).first()
+
+class AcademicsRepository243:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity243]:
+        return self.db.query(AcademicsModelEntity243).filter(AcademicsModelEntity243.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity243]:
+        return self.db.query(AcademicsModelEntity243).filter(AcademicsModelEntity243.entity_code == code).first()
+
+class AcademicsRepository244:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity244]:
+        return self.db.query(AcademicsModelEntity244).filter(AcademicsModelEntity244.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity244]:
+        return self.db.query(AcademicsModelEntity244).filter(AcademicsModelEntity244.entity_code == code).first()
+
+class AcademicsRepository245:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity245]:
+        return self.db.query(AcademicsModelEntity245).filter(AcademicsModelEntity245.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity245]:
+        return self.db.query(AcademicsModelEntity245).filter(AcademicsModelEntity245.entity_code == code).first()
+
+class AcademicsRepository246:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity246]:
+        return self.db.query(AcademicsModelEntity246).filter(AcademicsModelEntity246.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity246]:
+        return self.db.query(AcademicsModelEntity246).filter(AcademicsModelEntity246.entity_code == code).first()
+
+class AcademicsRepository247:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity247]:
+        return self.db.query(AcademicsModelEntity247).filter(AcademicsModelEntity247.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity247]:
+        return self.db.query(AcademicsModelEntity247).filter(AcademicsModelEntity247.entity_code == code).first()
+
+class AcademicsRepository248:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity248]:
+        return self.db.query(AcademicsModelEntity248).filter(AcademicsModelEntity248.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity248]:
+        return self.db.query(AcademicsModelEntity248).filter(AcademicsModelEntity248.entity_code == code).first()
+
+class AcademicsRepository249:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity249]:
+        return self.db.query(AcademicsModelEntity249).filter(AcademicsModelEntity249.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity249]:
+        return self.db.query(AcademicsModelEntity249).filter(AcademicsModelEntity249.entity_code == code).first()
+
+class AcademicsRepository250:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[AcademicsModelEntity250]:
+        return self.db.query(AcademicsModelEntity250).filter(AcademicsModelEntity250.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[AcademicsModelEntity250]:
+        return self.db.query(AcademicsModelEntity250).filter(AcademicsModelEntity250.entity_code == code).first()
+

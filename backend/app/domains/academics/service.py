@@ -8011,3 +8011,2003 @@ class AcademicsDomainService:
         self.db.commit()
         return True
 
+    def get_entity_201_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity201]:
+        return self.db.query(AcademicsModelEntity201).offset(skip).limit(limit).all()
+
+    def get_entity_201_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity201]:
+        return self.db.query(AcademicsModelEntity201).filter(AcademicsModelEntity201.id == entity_id).first()
+
+    def create_entity_201(self, payload: AcademicsSchemaEntity201Create) -> AcademicsModelEntity201:
+        db_obj = AcademicsModelEntity201(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_201(self, entity_id: int, payload: AcademicsSchemaEntity201Update) -> Optional[AcademicsModelEntity201]:
+        db_obj = self.get_entity_201_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_201(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_201_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_202_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity202]:
+        return self.db.query(AcademicsModelEntity202).offset(skip).limit(limit).all()
+
+    def get_entity_202_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity202]:
+        return self.db.query(AcademicsModelEntity202).filter(AcademicsModelEntity202.id == entity_id).first()
+
+    def create_entity_202(self, payload: AcademicsSchemaEntity202Create) -> AcademicsModelEntity202:
+        db_obj = AcademicsModelEntity202(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_202(self, entity_id: int, payload: AcademicsSchemaEntity202Update) -> Optional[AcademicsModelEntity202]:
+        db_obj = self.get_entity_202_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_202(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_202_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_203_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity203]:
+        return self.db.query(AcademicsModelEntity203).offset(skip).limit(limit).all()
+
+    def get_entity_203_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity203]:
+        return self.db.query(AcademicsModelEntity203).filter(AcademicsModelEntity203.id == entity_id).first()
+
+    def create_entity_203(self, payload: AcademicsSchemaEntity203Create) -> AcademicsModelEntity203:
+        db_obj = AcademicsModelEntity203(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_203(self, entity_id: int, payload: AcademicsSchemaEntity203Update) -> Optional[AcademicsModelEntity203]:
+        db_obj = self.get_entity_203_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_203(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_203_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_204_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity204]:
+        return self.db.query(AcademicsModelEntity204).offset(skip).limit(limit).all()
+
+    def get_entity_204_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity204]:
+        return self.db.query(AcademicsModelEntity204).filter(AcademicsModelEntity204.id == entity_id).first()
+
+    def create_entity_204(self, payload: AcademicsSchemaEntity204Create) -> AcademicsModelEntity204:
+        db_obj = AcademicsModelEntity204(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_204(self, entity_id: int, payload: AcademicsSchemaEntity204Update) -> Optional[AcademicsModelEntity204]:
+        db_obj = self.get_entity_204_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_204(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_204_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_205_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity205]:
+        return self.db.query(AcademicsModelEntity205).offset(skip).limit(limit).all()
+
+    def get_entity_205_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity205]:
+        return self.db.query(AcademicsModelEntity205).filter(AcademicsModelEntity205.id == entity_id).first()
+
+    def create_entity_205(self, payload: AcademicsSchemaEntity205Create) -> AcademicsModelEntity205:
+        db_obj = AcademicsModelEntity205(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_205(self, entity_id: int, payload: AcademicsSchemaEntity205Update) -> Optional[AcademicsModelEntity205]:
+        db_obj = self.get_entity_205_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_205(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_205_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_206_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity206]:
+        return self.db.query(AcademicsModelEntity206).offset(skip).limit(limit).all()
+
+    def get_entity_206_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity206]:
+        return self.db.query(AcademicsModelEntity206).filter(AcademicsModelEntity206.id == entity_id).first()
+
+    def create_entity_206(self, payload: AcademicsSchemaEntity206Create) -> AcademicsModelEntity206:
+        db_obj = AcademicsModelEntity206(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_206(self, entity_id: int, payload: AcademicsSchemaEntity206Update) -> Optional[AcademicsModelEntity206]:
+        db_obj = self.get_entity_206_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_206(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_206_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_207_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity207]:
+        return self.db.query(AcademicsModelEntity207).offset(skip).limit(limit).all()
+
+    def get_entity_207_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity207]:
+        return self.db.query(AcademicsModelEntity207).filter(AcademicsModelEntity207.id == entity_id).first()
+
+    def create_entity_207(self, payload: AcademicsSchemaEntity207Create) -> AcademicsModelEntity207:
+        db_obj = AcademicsModelEntity207(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_207(self, entity_id: int, payload: AcademicsSchemaEntity207Update) -> Optional[AcademicsModelEntity207]:
+        db_obj = self.get_entity_207_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_207(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_207_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_208_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity208]:
+        return self.db.query(AcademicsModelEntity208).offset(skip).limit(limit).all()
+
+    def get_entity_208_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity208]:
+        return self.db.query(AcademicsModelEntity208).filter(AcademicsModelEntity208.id == entity_id).first()
+
+    def create_entity_208(self, payload: AcademicsSchemaEntity208Create) -> AcademicsModelEntity208:
+        db_obj = AcademicsModelEntity208(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_208(self, entity_id: int, payload: AcademicsSchemaEntity208Update) -> Optional[AcademicsModelEntity208]:
+        db_obj = self.get_entity_208_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_208(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_208_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_209_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity209]:
+        return self.db.query(AcademicsModelEntity209).offset(skip).limit(limit).all()
+
+    def get_entity_209_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity209]:
+        return self.db.query(AcademicsModelEntity209).filter(AcademicsModelEntity209.id == entity_id).first()
+
+    def create_entity_209(self, payload: AcademicsSchemaEntity209Create) -> AcademicsModelEntity209:
+        db_obj = AcademicsModelEntity209(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_209(self, entity_id: int, payload: AcademicsSchemaEntity209Update) -> Optional[AcademicsModelEntity209]:
+        db_obj = self.get_entity_209_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_209(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_209_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_210_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity210]:
+        return self.db.query(AcademicsModelEntity210).offset(skip).limit(limit).all()
+
+    def get_entity_210_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity210]:
+        return self.db.query(AcademicsModelEntity210).filter(AcademicsModelEntity210.id == entity_id).first()
+
+    def create_entity_210(self, payload: AcademicsSchemaEntity210Create) -> AcademicsModelEntity210:
+        db_obj = AcademicsModelEntity210(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_210(self, entity_id: int, payload: AcademicsSchemaEntity210Update) -> Optional[AcademicsModelEntity210]:
+        db_obj = self.get_entity_210_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_210(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_210_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_211_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity211]:
+        return self.db.query(AcademicsModelEntity211).offset(skip).limit(limit).all()
+
+    def get_entity_211_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity211]:
+        return self.db.query(AcademicsModelEntity211).filter(AcademicsModelEntity211.id == entity_id).first()
+
+    def create_entity_211(self, payload: AcademicsSchemaEntity211Create) -> AcademicsModelEntity211:
+        db_obj = AcademicsModelEntity211(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_211(self, entity_id: int, payload: AcademicsSchemaEntity211Update) -> Optional[AcademicsModelEntity211]:
+        db_obj = self.get_entity_211_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_211(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_211_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_212_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity212]:
+        return self.db.query(AcademicsModelEntity212).offset(skip).limit(limit).all()
+
+    def get_entity_212_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity212]:
+        return self.db.query(AcademicsModelEntity212).filter(AcademicsModelEntity212.id == entity_id).first()
+
+    def create_entity_212(self, payload: AcademicsSchemaEntity212Create) -> AcademicsModelEntity212:
+        db_obj = AcademicsModelEntity212(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_212(self, entity_id: int, payload: AcademicsSchemaEntity212Update) -> Optional[AcademicsModelEntity212]:
+        db_obj = self.get_entity_212_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_212(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_212_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_213_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity213]:
+        return self.db.query(AcademicsModelEntity213).offset(skip).limit(limit).all()
+
+    def get_entity_213_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity213]:
+        return self.db.query(AcademicsModelEntity213).filter(AcademicsModelEntity213.id == entity_id).first()
+
+    def create_entity_213(self, payload: AcademicsSchemaEntity213Create) -> AcademicsModelEntity213:
+        db_obj = AcademicsModelEntity213(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_213(self, entity_id: int, payload: AcademicsSchemaEntity213Update) -> Optional[AcademicsModelEntity213]:
+        db_obj = self.get_entity_213_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_213(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_213_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_214_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity214]:
+        return self.db.query(AcademicsModelEntity214).offset(skip).limit(limit).all()
+
+    def get_entity_214_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity214]:
+        return self.db.query(AcademicsModelEntity214).filter(AcademicsModelEntity214.id == entity_id).first()
+
+    def create_entity_214(self, payload: AcademicsSchemaEntity214Create) -> AcademicsModelEntity214:
+        db_obj = AcademicsModelEntity214(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_214(self, entity_id: int, payload: AcademicsSchemaEntity214Update) -> Optional[AcademicsModelEntity214]:
+        db_obj = self.get_entity_214_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_214(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_214_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_215_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity215]:
+        return self.db.query(AcademicsModelEntity215).offset(skip).limit(limit).all()
+
+    def get_entity_215_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity215]:
+        return self.db.query(AcademicsModelEntity215).filter(AcademicsModelEntity215.id == entity_id).first()
+
+    def create_entity_215(self, payload: AcademicsSchemaEntity215Create) -> AcademicsModelEntity215:
+        db_obj = AcademicsModelEntity215(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_215(self, entity_id: int, payload: AcademicsSchemaEntity215Update) -> Optional[AcademicsModelEntity215]:
+        db_obj = self.get_entity_215_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_215(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_215_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_216_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity216]:
+        return self.db.query(AcademicsModelEntity216).offset(skip).limit(limit).all()
+
+    def get_entity_216_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity216]:
+        return self.db.query(AcademicsModelEntity216).filter(AcademicsModelEntity216.id == entity_id).first()
+
+    def create_entity_216(self, payload: AcademicsSchemaEntity216Create) -> AcademicsModelEntity216:
+        db_obj = AcademicsModelEntity216(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_216(self, entity_id: int, payload: AcademicsSchemaEntity216Update) -> Optional[AcademicsModelEntity216]:
+        db_obj = self.get_entity_216_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_216(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_216_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_217_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity217]:
+        return self.db.query(AcademicsModelEntity217).offset(skip).limit(limit).all()
+
+    def get_entity_217_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity217]:
+        return self.db.query(AcademicsModelEntity217).filter(AcademicsModelEntity217.id == entity_id).first()
+
+    def create_entity_217(self, payload: AcademicsSchemaEntity217Create) -> AcademicsModelEntity217:
+        db_obj = AcademicsModelEntity217(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_217(self, entity_id: int, payload: AcademicsSchemaEntity217Update) -> Optional[AcademicsModelEntity217]:
+        db_obj = self.get_entity_217_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_217(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_217_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_218_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity218]:
+        return self.db.query(AcademicsModelEntity218).offset(skip).limit(limit).all()
+
+    def get_entity_218_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity218]:
+        return self.db.query(AcademicsModelEntity218).filter(AcademicsModelEntity218.id == entity_id).first()
+
+    def create_entity_218(self, payload: AcademicsSchemaEntity218Create) -> AcademicsModelEntity218:
+        db_obj = AcademicsModelEntity218(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_218(self, entity_id: int, payload: AcademicsSchemaEntity218Update) -> Optional[AcademicsModelEntity218]:
+        db_obj = self.get_entity_218_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_218(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_218_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_219_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity219]:
+        return self.db.query(AcademicsModelEntity219).offset(skip).limit(limit).all()
+
+    def get_entity_219_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity219]:
+        return self.db.query(AcademicsModelEntity219).filter(AcademicsModelEntity219.id == entity_id).first()
+
+    def create_entity_219(self, payload: AcademicsSchemaEntity219Create) -> AcademicsModelEntity219:
+        db_obj = AcademicsModelEntity219(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_219(self, entity_id: int, payload: AcademicsSchemaEntity219Update) -> Optional[AcademicsModelEntity219]:
+        db_obj = self.get_entity_219_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_219(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_219_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_220_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity220]:
+        return self.db.query(AcademicsModelEntity220).offset(skip).limit(limit).all()
+
+    def get_entity_220_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity220]:
+        return self.db.query(AcademicsModelEntity220).filter(AcademicsModelEntity220.id == entity_id).first()
+
+    def create_entity_220(self, payload: AcademicsSchemaEntity220Create) -> AcademicsModelEntity220:
+        db_obj = AcademicsModelEntity220(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_220(self, entity_id: int, payload: AcademicsSchemaEntity220Update) -> Optional[AcademicsModelEntity220]:
+        db_obj = self.get_entity_220_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_220(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_220_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_221_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity221]:
+        return self.db.query(AcademicsModelEntity221).offset(skip).limit(limit).all()
+
+    def get_entity_221_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity221]:
+        return self.db.query(AcademicsModelEntity221).filter(AcademicsModelEntity221.id == entity_id).first()
+
+    def create_entity_221(self, payload: AcademicsSchemaEntity221Create) -> AcademicsModelEntity221:
+        db_obj = AcademicsModelEntity221(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_221(self, entity_id: int, payload: AcademicsSchemaEntity221Update) -> Optional[AcademicsModelEntity221]:
+        db_obj = self.get_entity_221_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_221(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_221_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_222_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity222]:
+        return self.db.query(AcademicsModelEntity222).offset(skip).limit(limit).all()
+
+    def get_entity_222_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity222]:
+        return self.db.query(AcademicsModelEntity222).filter(AcademicsModelEntity222.id == entity_id).first()
+
+    def create_entity_222(self, payload: AcademicsSchemaEntity222Create) -> AcademicsModelEntity222:
+        db_obj = AcademicsModelEntity222(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_222(self, entity_id: int, payload: AcademicsSchemaEntity222Update) -> Optional[AcademicsModelEntity222]:
+        db_obj = self.get_entity_222_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_222(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_222_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_223_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity223]:
+        return self.db.query(AcademicsModelEntity223).offset(skip).limit(limit).all()
+
+    def get_entity_223_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity223]:
+        return self.db.query(AcademicsModelEntity223).filter(AcademicsModelEntity223.id == entity_id).first()
+
+    def create_entity_223(self, payload: AcademicsSchemaEntity223Create) -> AcademicsModelEntity223:
+        db_obj = AcademicsModelEntity223(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_223(self, entity_id: int, payload: AcademicsSchemaEntity223Update) -> Optional[AcademicsModelEntity223]:
+        db_obj = self.get_entity_223_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_223(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_223_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_224_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity224]:
+        return self.db.query(AcademicsModelEntity224).offset(skip).limit(limit).all()
+
+    def get_entity_224_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity224]:
+        return self.db.query(AcademicsModelEntity224).filter(AcademicsModelEntity224.id == entity_id).first()
+
+    def create_entity_224(self, payload: AcademicsSchemaEntity224Create) -> AcademicsModelEntity224:
+        db_obj = AcademicsModelEntity224(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_224(self, entity_id: int, payload: AcademicsSchemaEntity224Update) -> Optional[AcademicsModelEntity224]:
+        db_obj = self.get_entity_224_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_224(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_224_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_225_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity225]:
+        return self.db.query(AcademicsModelEntity225).offset(skip).limit(limit).all()
+
+    def get_entity_225_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity225]:
+        return self.db.query(AcademicsModelEntity225).filter(AcademicsModelEntity225.id == entity_id).first()
+
+    def create_entity_225(self, payload: AcademicsSchemaEntity225Create) -> AcademicsModelEntity225:
+        db_obj = AcademicsModelEntity225(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_225(self, entity_id: int, payload: AcademicsSchemaEntity225Update) -> Optional[AcademicsModelEntity225]:
+        db_obj = self.get_entity_225_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_225(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_225_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_226_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity226]:
+        return self.db.query(AcademicsModelEntity226).offset(skip).limit(limit).all()
+
+    def get_entity_226_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity226]:
+        return self.db.query(AcademicsModelEntity226).filter(AcademicsModelEntity226.id == entity_id).first()
+
+    def create_entity_226(self, payload: AcademicsSchemaEntity226Create) -> AcademicsModelEntity226:
+        db_obj = AcademicsModelEntity226(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_226(self, entity_id: int, payload: AcademicsSchemaEntity226Update) -> Optional[AcademicsModelEntity226]:
+        db_obj = self.get_entity_226_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_226(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_226_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_227_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity227]:
+        return self.db.query(AcademicsModelEntity227).offset(skip).limit(limit).all()
+
+    def get_entity_227_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity227]:
+        return self.db.query(AcademicsModelEntity227).filter(AcademicsModelEntity227.id == entity_id).first()
+
+    def create_entity_227(self, payload: AcademicsSchemaEntity227Create) -> AcademicsModelEntity227:
+        db_obj = AcademicsModelEntity227(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_227(self, entity_id: int, payload: AcademicsSchemaEntity227Update) -> Optional[AcademicsModelEntity227]:
+        db_obj = self.get_entity_227_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_227(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_227_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_228_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity228]:
+        return self.db.query(AcademicsModelEntity228).offset(skip).limit(limit).all()
+
+    def get_entity_228_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity228]:
+        return self.db.query(AcademicsModelEntity228).filter(AcademicsModelEntity228.id == entity_id).first()
+
+    def create_entity_228(self, payload: AcademicsSchemaEntity228Create) -> AcademicsModelEntity228:
+        db_obj = AcademicsModelEntity228(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_228(self, entity_id: int, payload: AcademicsSchemaEntity228Update) -> Optional[AcademicsModelEntity228]:
+        db_obj = self.get_entity_228_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_228(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_228_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_229_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity229]:
+        return self.db.query(AcademicsModelEntity229).offset(skip).limit(limit).all()
+
+    def get_entity_229_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity229]:
+        return self.db.query(AcademicsModelEntity229).filter(AcademicsModelEntity229.id == entity_id).first()
+
+    def create_entity_229(self, payload: AcademicsSchemaEntity229Create) -> AcademicsModelEntity229:
+        db_obj = AcademicsModelEntity229(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_229(self, entity_id: int, payload: AcademicsSchemaEntity229Update) -> Optional[AcademicsModelEntity229]:
+        db_obj = self.get_entity_229_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_229(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_229_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_230_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity230]:
+        return self.db.query(AcademicsModelEntity230).offset(skip).limit(limit).all()
+
+    def get_entity_230_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity230]:
+        return self.db.query(AcademicsModelEntity230).filter(AcademicsModelEntity230.id == entity_id).first()
+
+    def create_entity_230(self, payload: AcademicsSchemaEntity230Create) -> AcademicsModelEntity230:
+        db_obj = AcademicsModelEntity230(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_230(self, entity_id: int, payload: AcademicsSchemaEntity230Update) -> Optional[AcademicsModelEntity230]:
+        db_obj = self.get_entity_230_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_230(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_230_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_231_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity231]:
+        return self.db.query(AcademicsModelEntity231).offset(skip).limit(limit).all()
+
+    def get_entity_231_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity231]:
+        return self.db.query(AcademicsModelEntity231).filter(AcademicsModelEntity231.id == entity_id).first()
+
+    def create_entity_231(self, payload: AcademicsSchemaEntity231Create) -> AcademicsModelEntity231:
+        db_obj = AcademicsModelEntity231(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_231(self, entity_id: int, payload: AcademicsSchemaEntity231Update) -> Optional[AcademicsModelEntity231]:
+        db_obj = self.get_entity_231_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_231(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_231_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_232_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity232]:
+        return self.db.query(AcademicsModelEntity232).offset(skip).limit(limit).all()
+
+    def get_entity_232_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity232]:
+        return self.db.query(AcademicsModelEntity232).filter(AcademicsModelEntity232.id == entity_id).first()
+
+    def create_entity_232(self, payload: AcademicsSchemaEntity232Create) -> AcademicsModelEntity232:
+        db_obj = AcademicsModelEntity232(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_232(self, entity_id: int, payload: AcademicsSchemaEntity232Update) -> Optional[AcademicsModelEntity232]:
+        db_obj = self.get_entity_232_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_232(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_232_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_233_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity233]:
+        return self.db.query(AcademicsModelEntity233).offset(skip).limit(limit).all()
+
+    def get_entity_233_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity233]:
+        return self.db.query(AcademicsModelEntity233).filter(AcademicsModelEntity233.id == entity_id).first()
+
+    def create_entity_233(self, payload: AcademicsSchemaEntity233Create) -> AcademicsModelEntity233:
+        db_obj = AcademicsModelEntity233(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_233(self, entity_id: int, payload: AcademicsSchemaEntity233Update) -> Optional[AcademicsModelEntity233]:
+        db_obj = self.get_entity_233_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_233(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_233_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_234_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity234]:
+        return self.db.query(AcademicsModelEntity234).offset(skip).limit(limit).all()
+
+    def get_entity_234_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity234]:
+        return self.db.query(AcademicsModelEntity234).filter(AcademicsModelEntity234.id == entity_id).first()
+
+    def create_entity_234(self, payload: AcademicsSchemaEntity234Create) -> AcademicsModelEntity234:
+        db_obj = AcademicsModelEntity234(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_234(self, entity_id: int, payload: AcademicsSchemaEntity234Update) -> Optional[AcademicsModelEntity234]:
+        db_obj = self.get_entity_234_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_234(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_234_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_235_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity235]:
+        return self.db.query(AcademicsModelEntity235).offset(skip).limit(limit).all()
+
+    def get_entity_235_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity235]:
+        return self.db.query(AcademicsModelEntity235).filter(AcademicsModelEntity235.id == entity_id).first()
+
+    def create_entity_235(self, payload: AcademicsSchemaEntity235Create) -> AcademicsModelEntity235:
+        db_obj = AcademicsModelEntity235(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_235(self, entity_id: int, payload: AcademicsSchemaEntity235Update) -> Optional[AcademicsModelEntity235]:
+        db_obj = self.get_entity_235_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_235(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_235_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_236_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity236]:
+        return self.db.query(AcademicsModelEntity236).offset(skip).limit(limit).all()
+
+    def get_entity_236_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity236]:
+        return self.db.query(AcademicsModelEntity236).filter(AcademicsModelEntity236.id == entity_id).first()
+
+    def create_entity_236(self, payload: AcademicsSchemaEntity236Create) -> AcademicsModelEntity236:
+        db_obj = AcademicsModelEntity236(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_236(self, entity_id: int, payload: AcademicsSchemaEntity236Update) -> Optional[AcademicsModelEntity236]:
+        db_obj = self.get_entity_236_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_236(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_236_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_237_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity237]:
+        return self.db.query(AcademicsModelEntity237).offset(skip).limit(limit).all()
+
+    def get_entity_237_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity237]:
+        return self.db.query(AcademicsModelEntity237).filter(AcademicsModelEntity237.id == entity_id).first()
+
+    def create_entity_237(self, payload: AcademicsSchemaEntity237Create) -> AcademicsModelEntity237:
+        db_obj = AcademicsModelEntity237(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_237(self, entity_id: int, payload: AcademicsSchemaEntity237Update) -> Optional[AcademicsModelEntity237]:
+        db_obj = self.get_entity_237_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_237(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_237_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_238_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity238]:
+        return self.db.query(AcademicsModelEntity238).offset(skip).limit(limit).all()
+
+    def get_entity_238_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity238]:
+        return self.db.query(AcademicsModelEntity238).filter(AcademicsModelEntity238.id == entity_id).first()
+
+    def create_entity_238(self, payload: AcademicsSchemaEntity238Create) -> AcademicsModelEntity238:
+        db_obj = AcademicsModelEntity238(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_238(self, entity_id: int, payload: AcademicsSchemaEntity238Update) -> Optional[AcademicsModelEntity238]:
+        db_obj = self.get_entity_238_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_238(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_238_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_239_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity239]:
+        return self.db.query(AcademicsModelEntity239).offset(skip).limit(limit).all()
+
+    def get_entity_239_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity239]:
+        return self.db.query(AcademicsModelEntity239).filter(AcademicsModelEntity239.id == entity_id).first()
+
+    def create_entity_239(self, payload: AcademicsSchemaEntity239Create) -> AcademicsModelEntity239:
+        db_obj = AcademicsModelEntity239(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_239(self, entity_id: int, payload: AcademicsSchemaEntity239Update) -> Optional[AcademicsModelEntity239]:
+        db_obj = self.get_entity_239_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_239(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_239_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_240_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity240]:
+        return self.db.query(AcademicsModelEntity240).offset(skip).limit(limit).all()
+
+    def get_entity_240_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity240]:
+        return self.db.query(AcademicsModelEntity240).filter(AcademicsModelEntity240.id == entity_id).first()
+
+    def create_entity_240(self, payload: AcademicsSchemaEntity240Create) -> AcademicsModelEntity240:
+        db_obj = AcademicsModelEntity240(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_240(self, entity_id: int, payload: AcademicsSchemaEntity240Update) -> Optional[AcademicsModelEntity240]:
+        db_obj = self.get_entity_240_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_240(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_240_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_241_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity241]:
+        return self.db.query(AcademicsModelEntity241).offset(skip).limit(limit).all()
+
+    def get_entity_241_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity241]:
+        return self.db.query(AcademicsModelEntity241).filter(AcademicsModelEntity241.id == entity_id).first()
+
+    def create_entity_241(self, payload: AcademicsSchemaEntity241Create) -> AcademicsModelEntity241:
+        db_obj = AcademicsModelEntity241(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_241(self, entity_id: int, payload: AcademicsSchemaEntity241Update) -> Optional[AcademicsModelEntity241]:
+        db_obj = self.get_entity_241_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_241(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_241_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_242_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity242]:
+        return self.db.query(AcademicsModelEntity242).offset(skip).limit(limit).all()
+
+    def get_entity_242_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity242]:
+        return self.db.query(AcademicsModelEntity242).filter(AcademicsModelEntity242.id == entity_id).first()
+
+    def create_entity_242(self, payload: AcademicsSchemaEntity242Create) -> AcademicsModelEntity242:
+        db_obj = AcademicsModelEntity242(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_242(self, entity_id: int, payload: AcademicsSchemaEntity242Update) -> Optional[AcademicsModelEntity242]:
+        db_obj = self.get_entity_242_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_242(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_242_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_243_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity243]:
+        return self.db.query(AcademicsModelEntity243).offset(skip).limit(limit).all()
+
+    def get_entity_243_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity243]:
+        return self.db.query(AcademicsModelEntity243).filter(AcademicsModelEntity243.id == entity_id).first()
+
+    def create_entity_243(self, payload: AcademicsSchemaEntity243Create) -> AcademicsModelEntity243:
+        db_obj = AcademicsModelEntity243(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_243(self, entity_id: int, payload: AcademicsSchemaEntity243Update) -> Optional[AcademicsModelEntity243]:
+        db_obj = self.get_entity_243_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_243(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_243_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_244_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity244]:
+        return self.db.query(AcademicsModelEntity244).offset(skip).limit(limit).all()
+
+    def get_entity_244_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity244]:
+        return self.db.query(AcademicsModelEntity244).filter(AcademicsModelEntity244.id == entity_id).first()
+
+    def create_entity_244(self, payload: AcademicsSchemaEntity244Create) -> AcademicsModelEntity244:
+        db_obj = AcademicsModelEntity244(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_244(self, entity_id: int, payload: AcademicsSchemaEntity244Update) -> Optional[AcademicsModelEntity244]:
+        db_obj = self.get_entity_244_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_244(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_244_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_245_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity245]:
+        return self.db.query(AcademicsModelEntity245).offset(skip).limit(limit).all()
+
+    def get_entity_245_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity245]:
+        return self.db.query(AcademicsModelEntity245).filter(AcademicsModelEntity245.id == entity_id).first()
+
+    def create_entity_245(self, payload: AcademicsSchemaEntity245Create) -> AcademicsModelEntity245:
+        db_obj = AcademicsModelEntity245(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_245(self, entity_id: int, payload: AcademicsSchemaEntity245Update) -> Optional[AcademicsModelEntity245]:
+        db_obj = self.get_entity_245_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_245(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_245_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_246_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity246]:
+        return self.db.query(AcademicsModelEntity246).offset(skip).limit(limit).all()
+
+    def get_entity_246_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity246]:
+        return self.db.query(AcademicsModelEntity246).filter(AcademicsModelEntity246.id == entity_id).first()
+
+    def create_entity_246(self, payload: AcademicsSchemaEntity246Create) -> AcademicsModelEntity246:
+        db_obj = AcademicsModelEntity246(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_246(self, entity_id: int, payload: AcademicsSchemaEntity246Update) -> Optional[AcademicsModelEntity246]:
+        db_obj = self.get_entity_246_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_246(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_246_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_247_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity247]:
+        return self.db.query(AcademicsModelEntity247).offset(skip).limit(limit).all()
+
+    def get_entity_247_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity247]:
+        return self.db.query(AcademicsModelEntity247).filter(AcademicsModelEntity247.id == entity_id).first()
+
+    def create_entity_247(self, payload: AcademicsSchemaEntity247Create) -> AcademicsModelEntity247:
+        db_obj = AcademicsModelEntity247(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_247(self, entity_id: int, payload: AcademicsSchemaEntity247Update) -> Optional[AcademicsModelEntity247]:
+        db_obj = self.get_entity_247_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_247(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_247_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_248_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity248]:
+        return self.db.query(AcademicsModelEntity248).offset(skip).limit(limit).all()
+
+    def get_entity_248_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity248]:
+        return self.db.query(AcademicsModelEntity248).filter(AcademicsModelEntity248.id == entity_id).first()
+
+    def create_entity_248(self, payload: AcademicsSchemaEntity248Create) -> AcademicsModelEntity248:
+        db_obj = AcademicsModelEntity248(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_248(self, entity_id: int, payload: AcademicsSchemaEntity248Update) -> Optional[AcademicsModelEntity248]:
+        db_obj = self.get_entity_248_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_248(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_248_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_249_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity249]:
+        return self.db.query(AcademicsModelEntity249).offset(skip).limit(limit).all()
+
+    def get_entity_249_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity249]:
+        return self.db.query(AcademicsModelEntity249).filter(AcademicsModelEntity249.id == entity_id).first()
+
+    def create_entity_249(self, payload: AcademicsSchemaEntity249Create) -> AcademicsModelEntity249:
+        db_obj = AcademicsModelEntity249(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_249(self, entity_id: int, payload: AcademicsSchemaEntity249Update) -> Optional[AcademicsModelEntity249]:
+        db_obj = self.get_entity_249_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_249(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_249_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_250_list(self, skip: int = 0, limit: int = 100) -> List[AcademicsModelEntity250]:
+        return self.db.query(AcademicsModelEntity250).offset(skip).limit(limit).all()
+
+    def get_entity_250_by_id(self, entity_id: int) -> Optional[AcademicsModelEntity250]:
+        return self.db.query(AcademicsModelEntity250).filter(AcademicsModelEntity250.id == entity_id).first()
+
+    def create_entity_250(self, payload: AcademicsSchemaEntity250Create) -> AcademicsModelEntity250:
+        db_obj = AcademicsModelEntity250(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_250(self, entity_id: int, payload: AcademicsSchemaEntity250Update) -> Optional[AcademicsModelEntity250]:
+        db_obj = self.get_entity_250_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_250(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_250_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+

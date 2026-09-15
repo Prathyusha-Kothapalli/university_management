@@ -5806,3 +5806,1453 @@ class AcademicsSchemaEntity200Response(AcademicsSchemaEntity200Base):
 
     model_config = ConfigDict(from_attributes=True)
 
+class AcademicsSchemaEntity201Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 201")
+    category: str = Field(default="Category_201", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=201 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity201Create(AcademicsSchemaEntity201Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity201Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity201Response(AcademicsSchemaEntity201Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity202Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 202")
+    category: str = Field(default="Category_202", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=202 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity202Create(AcademicsSchemaEntity202Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity202Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity202Response(AcademicsSchemaEntity202Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity203Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 203")
+    category: str = Field(default="Category_203", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=203 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity203Create(AcademicsSchemaEntity203Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity203Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity203Response(AcademicsSchemaEntity203Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity204Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 204")
+    category: str = Field(default="Category_204", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=204 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity204Create(AcademicsSchemaEntity204Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity204Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity204Response(AcademicsSchemaEntity204Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity205Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 205")
+    category: str = Field(default="Category_205", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=205 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity205Create(AcademicsSchemaEntity205Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity205Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity205Response(AcademicsSchemaEntity205Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity206Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 206")
+    category: str = Field(default="Category_206", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=206 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity206Create(AcademicsSchemaEntity206Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity206Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity206Response(AcademicsSchemaEntity206Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity207Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 207")
+    category: str = Field(default="Category_207", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=207 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity207Create(AcademicsSchemaEntity207Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity207Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity207Response(AcademicsSchemaEntity207Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity208Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 208")
+    category: str = Field(default="Category_208", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=208 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity208Create(AcademicsSchemaEntity208Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity208Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity208Response(AcademicsSchemaEntity208Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity209Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 209")
+    category: str = Field(default="Category_209", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=209 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity209Create(AcademicsSchemaEntity209Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity209Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity209Response(AcademicsSchemaEntity209Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity210Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 210")
+    category: str = Field(default="Category_210", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=210 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity210Create(AcademicsSchemaEntity210Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity210Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity210Response(AcademicsSchemaEntity210Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity211Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 211")
+    category: str = Field(default="Category_211", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=211 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity211Create(AcademicsSchemaEntity211Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity211Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity211Response(AcademicsSchemaEntity211Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity212Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 212")
+    category: str = Field(default="Category_212", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=212 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity212Create(AcademicsSchemaEntity212Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity212Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity212Response(AcademicsSchemaEntity212Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity213Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 213")
+    category: str = Field(default="Category_213", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=213 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity213Create(AcademicsSchemaEntity213Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity213Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity213Response(AcademicsSchemaEntity213Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity214Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 214")
+    category: str = Field(default="Category_214", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=214 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity214Create(AcademicsSchemaEntity214Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity214Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity214Response(AcademicsSchemaEntity214Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity215Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 215")
+    category: str = Field(default="Category_215", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=215 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity215Create(AcademicsSchemaEntity215Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity215Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity215Response(AcademicsSchemaEntity215Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity216Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 216")
+    category: str = Field(default="Category_216", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=216 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity216Create(AcademicsSchemaEntity216Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity216Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity216Response(AcademicsSchemaEntity216Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity217Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 217")
+    category: str = Field(default="Category_217", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=217 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity217Create(AcademicsSchemaEntity217Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity217Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity217Response(AcademicsSchemaEntity217Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity218Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 218")
+    category: str = Field(default="Category_218", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=218 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity218Create(AcademicsSchemaEntity218Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity218Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity218Response(AcademicsSchemaEntity218Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity219Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 219")
+    category: str = Field(default="Category_219", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=219 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity219Create(AcademicsSchemaEntity219Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity219Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity219Response(AcademicsSchemaEntity219Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity220Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 220")
+    category: str = Field(default="Category_220", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=220 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity220Create(AcademicsSchemaEntity220Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity220Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity220Response(AcademicsSchemaEntity220Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity221Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 221")
+    category: str = Field(default="Category_221", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=221 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity221Create(AcademicsSchemaEntity221Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity221Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity221Response(AcademicsSchemaEntity221Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity222Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 222")
+    category: str = Field(default="Category_222", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=222 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity222Create(AcademicsSchemaEntity222Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity222Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity222Response(AcademicsSchemaEntity222Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity223Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 223")
+    category: str = Field(default="Category_223", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=223 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity223Create(AcademicsSchemaEntity223Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity223Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity223Response(AcademicsSchemaEntity223Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity224Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 224")
+    category: str = Field(default="Category_224", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=224 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity224Create(AcademicsSchemaEntity224Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity224Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity224Response(AcademicsSchemaEntity224Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity225Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 225")
+    category: str = Field(default="Category_225", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=225 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity225Create(AcademicsSchemaEntity225Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity225Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity225Response(AcademicsSchemaEntity225Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity226Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 226")
+    category: str = Field(default="Category_226", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=226 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity226Create(AcademicsSchemaEntity226Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity226Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity226Response(AcademicsSchemaEntity226Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity227Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 227")
+    category: str = Field(default="Category_227", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=227 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity227Create(AcademicsSchemaEntity227Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity227Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity227Response(AcademicsSchemaEntity227Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity228Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 228")
+    category: str = Field(default="Category_228", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=228 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity228Create(AcademicsSchemaEntity228Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity228Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity228Response(AcademicsSchemaEntity228Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity229Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 229")
+    category: str = Field(default="Category_229", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=229 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity229Create(AcademicsSchemaEntity229Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity229Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity229Response(AcademicsSchemaEntity229Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity230Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 230")
+    category: str = Field(default="Category_230", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=230 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity230Create(AcademicsSchemaEntity230Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity230Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity230Response(AcademicsSchemaEntity230Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity231Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 231")
+    category: str = Field(default="Category_231", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=231 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity231Create(AcademicsSchemaEntity231Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity231Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity231Response(AcademicsSchemaEntity231Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity232Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 232")
+    category: str = Field(default="Category_232", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=232 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity232Create(AcademicsSchemaEntity232Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity232Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity232Response(AcademicsSchemaEntity232Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity233Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 233")
+    category: str = Field(default="Category_233", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=233 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity233Create(AcademicsSchemaEntity233Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity233Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity233Response(AcademicsSchemaEntity233Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity234Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 234")
+    category: str = Field(default="Category_234", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=234 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity234Create(AcademicsSchemaEntity234Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity234Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity234Response(AcademicsSchemaEntity234Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity235Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 235")
+    category: str = Field(default="Category_235", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=235 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity235Create(AcademicsSchemaEntity235Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity235Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity235Response(AcademicsSchemaEntity235Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity236Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 236")
+    category: str = Field(default="Category_236", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=236 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity236Create(AcademicsSchemaEntity236Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity236Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity236Response(AcademicsSchemaEntity236Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity237Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 237")
+    category: str = Field(default="Category_237", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=237 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity237Create(AcademicsSchemaEntity237Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity237Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity237Response(AcademicsSchemaEntity237Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity238Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 238")
+    category: str = Field(default="Category_238", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=238 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity238Create(AcademicsSchemaEntity238Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity238Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity238Response(AcademicsSchemaEntity238Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity239Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 239")
+    category: str = Field(default="Category_239", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=239 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity239Create(AcademicsSchemaEntity239Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity239Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity239Response(AcademicsSchemaEntity239Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity240Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 240")
+    category: str = Field(default="Category_240", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=240 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity240Create(AcademicsSchemaEntity240Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity240Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity240Response(AcademicsSchemaEntity240Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity241Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 241")
+    category: str = Field(default="Category_241", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=241 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity241Create(AcademicsSchemaEntity241Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity241Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity241Response(AcademicsSchemaEntity241Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity242Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 242")
+    category: str = Field(default="Category_242", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=242 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity242Create(AcademicsSchemaEntity242Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity242Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity242Response(AcademicsSchemaEntity242Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity243Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 243")
+    category: str = Field(default="Category_243", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=243 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity243Create(AcademicsSchemaEntity243Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity243Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity243Response(AcademicsSchemaEntity243Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity244Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 244")
+    category: str = Field(default="Category_244", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=244 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity244Create(AcademicsSchemaEntity244Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity244Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity244Response(AcademicsSchemaEntity244Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity245Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 245")
+    category: str = Field(default="Category_245", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=245 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity245Create(AcademicsSchemaEntity245Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity245Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity245Response(AcademicsSchemaEntity245Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity246Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 246")
+    category: str = Field(default="Category_246", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=246 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity246Create(AcademicsSchemaEntity246Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity246Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity246Response(AcademicsSchemaEntity246Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity247Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 247")
+    category: str = Field(default="Category_247", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=247 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity247Create(AcademicsSchemaEntity247Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity247Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity247Response(AcademicsSchemaEntity247Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity248Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 248")
+    category: str = Field(default="Category_248", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=248 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity248Create(AcademicsSchemaEntity248Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity248Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity248Response(AcademicsSchemaEntity248Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity249Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 249")
+    category: str = Field(default="Category_249", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=249 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity249Create(AcademicsSchemaEntity249Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity249Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity249Response(AcademicsSchemaEntity249Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class AcademicsSchemaEntity250Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 250")
+    category: str = Field(default="Category_250", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=250 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class AcademicsSchemaEntity250Create(AcademicsSchemaEntity250Base):
+    entity_code: str = Field(..., max_length=100)
+
+class AcademicsSchemaEntity250Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class AcademicsSchemaEntity250Response(AcademicsSchemaEntity250Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+

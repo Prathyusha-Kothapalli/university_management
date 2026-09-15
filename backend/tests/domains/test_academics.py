@@ -1804,3 +1804,453 @@ def test_academics_entity_200_schema_validation():
     assert obj.entity_code == "TEST_ACADEMICS_200"
     assert obj.value_amount == 200 * 100.5
 
+def test_academics_entity_201_schema_validation():
+    obj = AcademicsSchemaEntity201Create(
+        entity_code="TEST_ACADEMICS_201",
+        name="Test Entity 201",
+        value_amount=201 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_201"
+    assert obj.value_amount == 201 * 100.5
+
+def test_academics_entity_202_schema_validation():
+    obj = AcademicsSchemaEntity202Create(
+        entity_code="TEST_ACADEMICS_202",
+        name="Test Entity 202",
+        value_amount=202 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_202"
+    assert obj.value_amount == 202 * 100.5
+
+def test_academics_entity_203_schema_validation():
+    obj = AcademicsSchemaEntity203Create(
+        entity_code="TEST_ACADEMICS_203",
+        name="Test Entity 203",
+        value_amount=203 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_203"
+    assert obj.value_amount == 203 * 100.5
+
+def test_academics_entity_204_schema_validation():
+    obj = AcademicsSchemaEntity204Create(
+        entity_code="TEST_ACADEMICS_204",
+        name="Test Entity 204",
+        value_amount=204 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_204"
+    assert obj.value_amount == 204 * 100.5
+
+def test_academics_entity_205_schema_validation():
+    obj = AcademicsSchemaEntity205Create(
+        entity_code="TEST_ACADEMICS_205",
+        name="Test Entity 205",
+        value_amount=205 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_205"
+    assert obj.value_amount == 205 * 100.5
+
+def test_academics_entity_206_schema_validation():
+    obj = AcademicsSchemaEntity206Create(
+        entity_code="TEST_ACADEMICS_206",
+        name="Test Entity 206",
+        value_amount=206 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_206"
+    assert obj.value_amount == 206 * 100.5
+
+def test_academics_entity_207_schema_validation():
+    obj = AcademicsSchemaEntity207Create(
+        entity_code="TEST_ACADEMICS_207",
+        name="Test Entity 207",
+        value_amount=207 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_207"
+    assert obj.value_amount == 207 * 100.5
+
+def test_academics_entity_208_schema_validation():
+    obj = AcademicsSchemaEntity208Create(
+        entity_code="TEST_ACADEMICS_208",
+        name="Test Entity 208",
+        value_amount=208 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_208"
+    assert obj.value_amount == 208 * 100.5
+
+def test_academics_entity_209_schema_validation():
+    obj = AcademicsSchemaEntity209Create(
+        entity_code="TEST_ACADEMICS_209",
+        name="Test Entity 209",
+        value_amount=209 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_209"
+    assert obj.value_amount == 209 * 100.5
+
+def test_academics_entity_210_schema_validation():
+    obj = AcademicsSchemaEntity210Create(
+        entity_code="TEST_ACADEMICS_210",
+        name="Test Entity 210",
+        value_amount=210 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_210"
+    assert obj.value_amount == 210 * 100.5
+
+def test_academics_entity_211_schema_validation():
+    obj = AcademicsSchemaEntity211Create(
+        entity_code="TEST_ACADEMICS_211",
+        name="Test Entity 211",
+        value_amount=211 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_211"
+    assert obj.value_amount == 211 * 100.5
+
+def test_academics_entity_212_schema_validation():
+    obj = AcademicsSchemaEntity212Create(
+        entity_code="TEST_ACADEMICS_212",
+        name="Test Entity 212",
+        value_amount=212 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_212"
+    assert obj.value_amount == 212 * 100.5
+
+def test_academics_entity_213_schema_validation():
+    obj = AcademicsSchemaEntity213Create(
+        entity_code="TEST_ACADEMICS_213",
+        name="Test Entity 213",
+        value_amount=213 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_213"
+    assert obj.value_amount == 213 * 100.5
+
+def test_academics_entity_214_schema_validation():
+    obj = AcademicsSchemaEntity214Create(
+        entity_code="TEST_ACADEMICS_214",
+        name="Test Entity 214",
+        value_amount=214 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_214"
+    assert obj.value_amount == 214 * 100.5
+
+def test_academics_entity_215_schema_validation():
+    obj = AcademicsSchemaEntity215Create(
+        entity_code="TEST_ACADEMICS_215",
+        name="Test Entity 215",
+        value_amount=215 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_215"
+    assert obj.value_amount == 215 * 100.5
+
+def test_academics_entity_216_schema_validation():
+    obj = AcademicsSchemaEntity216Create(
+        entity_code="TEST_ACADEMICS_216",
+        name="Test Entity 216",
+        value_amount=216 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_216"
+    assert obj.value_amount == 216 * 100.5
+
+def test_academics_entity_217_schema_validation():
+    obj = AcademicsSchemaEntity217Create(
+        entity_code="TEST_ACADEMICS_217",
+        name="Test Entity 217",
+        value_amount=217 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_217"
+    assert obj.value_amount == 217 * 100.5
+
+def test_academics_entity_218_schema_validation():
+    obj = AcademicsSchemaEntity218Create(
+        entity_code="TEST_ACADEMICS_218",
+        name="Test Entity 218",
+        value_amount=218 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_218"
+    assert obj.value_amount == 218 * 100.5
+
+def test_academics_entity_219_schema_validation():
+    obj = AcademicsSchemaEntity219Create(
+        entity_code="TEST_ACADEMICS_219",
+        name="Test Entity 219",
+        value_amount=219 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_219"
+    assert obj.value_amount == 219 * 100.5
+
+def test_academics_entity_220_schema_validation():
+    obj = AcademicsSchemaEntity220Create(
+        entity_code="TEST_ACADEMICS_220",
+        name="Test Entity 220",
+        value_amount=220 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_220"
+    assert obj.value_amount == 220 * 100.5
+
+def test_academics_entity_221_schema_validation():
+    obj = AcademicsSchemaEntity221Create(
+        entity_code="TEST_ACADEMICS_221",
+        name="Test Entity 221",
+        value_amount=221 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_221"
+    assert obj.value_amount == 221 * 100.5
+
+def test_academics_entity_222_schema_validation():
+    obj = AcademicsSchemaEntity222Create(
+        entity_code="TEST_ACADEMICS_222",
+        name="Test Entity 222",
+        value_amount=222 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_222"
+    assert obj.value_amount == 222 * 100.5
+
+def test_academics_entity_223_schema_validation():
+    obj = AcademicsSchemaEntity223Create(
+        entity_code="TEST_ACADEMICS_223",
+        name="Test Entity 223",
+        value_amount=223 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_223"
+    assert obj.value_amount == 223 * 100.5
+
+def test_academics_entity_224_schema_validation():
+    obj = AcademicsSchemaEntity224Create(
+        entity_code="TEST_ACADEMICS_224",
+        name="Test Entity 224",
+        value_amount=224 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_224"
+    assert obj.value_amount == 224 * 100.5
+
+def test_academics_entity_225_schema_validation():
+    obj = AcademicsSchemaEntity225Create(
+        entity_code="TEST_ACADEMICS_225",
+        name="Test Entity 225",
+        value_amount=225 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_225"
+    assert obj.value_amount == 225 * 100.5
+
+def test_academics_entity_226_schema_validation():
+    obj = AcademicsSchemaEntity226Create(
+        entity_code="TEST_ACADEMICS_226",
+        name="Test Entity 226",
+        value_amount=226 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_226"
+    assert obj.value_amount == 226 * 100.5
+
+def test_academics_entity_227_schema_validation():
+    obj = AcademicsSchemaEntity227Create(
+        entity_code="TEST_ACADEMICS_227",
+        name="Test Entity 227",
+        value_amount=227 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_227"
+    assert obj.value_amount == 227 * 100.5
+
+def test_academics_entity_228_schema_validation():
+    obj = AcademicsSchemaEntity228Create(
+        entity_code="TEST_ACADEMICS_228",
+        name="Test Entity 228",
+        value_amount=228 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_228"
+    assert obj.value_amount == 228 * 100.5
+
+def test_academics_entity_229_schema_validation():
+    obj = AcademicsSchemaEntity229Create(
+        entity_code="TEST_ACADEMICS_229",
+        name="Test Entity 229",
+        value_amount=229 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_229"
+    assert obj.value_amount == 229 * 100.5
+
+def test_academics_entity_230_schema_validation():
+    obj = AcademicsSchemaEntity230Create(
+        entity_code="TEST_ACADEMICS_230",
+        name="Test Entity 230",
+        value_amount=230 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_230"
+    assert obj.value_amount == 230 * 100.5
+
+def test_academics_entity_231_schema_validation():
+    obj = AcademicsSchemaEntity231Create(
+        entity_code="TEST_ACADEMICS_231",
+        name="Test Entity 231",
+        value_amount=231 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_231"
+    assert obj.value_amount == 231 * 100.5
+
+def test_academics_entity_232_schema_validation():
+    obj = AcademicsSchemaEntity232Create(
+        entity_code="TEST_ACADEMICS_232",
+        name="Test Entity 232",
+        value_amount=232 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_232"
+    assert obj.value_amount == 232 * 100.5
+
+def test_academics_entity_233_schema_validation():
+    obj = AcademicsSchemaEntity233Create(
+        entity_code="TEST_ACADEMICS_233",
+        name="Test Entity 233",
+        value_amount=233 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_233"
+    assert obj.value_amount == 233 * 100.5
+
+def test_academics_entity_234_schema_validation():
+    obj = AcademicsSchemaEntity234Create(
+        entity_code="TEST_ACADEMICS_234",
+        name="Test Entity 234",
+        value_amount=234 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_234"
+    assert obj.value_amount == 234 * 100.5
+
+def test_academics_entity_235_schema_validation():
+    obj = AcademicsSchemaEntity235Create(
+        entity_code="TEST_ACADEMICS_235",
+        name="Test Entity 235",
+        value_amount=235 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_235"
+    assert obj.value_amount == 235 * 100.5
+
+def test_academics_entity_236_schema_validation():
+    obj = AcademicsSchemaEntity236Create(
+        entity_code="TEST_ACADEMICS_236",
+        name="Test Entity 236",
+        value_amount=236 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_236"
+    assert obj.value_amount == 236 * 100.5
+
+def test_academics_entity_237_schema_validation():
+    obj = AcademicsSchemaEntity237Create(
+        entity_code="TEST_ACADEMICS_237",
+        name="Test Entity 237",
+        value_amount=237 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_237"
+    assert obj.value_amount == 237 * 100.5
+
+def test_academics_entity_238_schema_validation():
+    obj = AcademicsSchemaEntity238Create(
+        entity_code="TEST_ACADEMICS_238",
+        name="Test Entity 238",
+        value_amount=238 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_238"
+    assert obj.value_amount == 238 * 100.5
+
+def test_academics_entity_239_schema_validation():
+    obj = AcademicsSchemaEntity239Create(
+        entity_code="TEST_ACADEMICS_239",
+        name="Test Entity 239",
+        value_amount=239 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_239"
+    assert obj.value_amount == 239 * 100.5
+
+def test_academics_entity_240_schema_validation():
+    obj = AcademicsSchemaEntity240Create(
+        entity_code="TEST_ACADEMICS_240",
+        name="Test Entity 240",
+        value_amount=240 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_240"
+    assert obj.value_amount == 240 * 100.5
+
+def test_academics_entity_241_schema_validation():
+    obj = AcademicsSchemaEntity241Create(
+        entity_code="TEST_ACADEMICS_241",
+        name="Test Entity 241",
+        value_amount=241 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_241"
+    assert obj.value_amount == 241 * 100.5
+
+def test_academics_entity_242_schema_validation():
+    obj = AcademicsSchemaEntity242Create(
+        entity_code="TEST_ACADEMICS_242",
+        name="Test Entity 242",
+        value_amount=242 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_242"
+    assert obj.value_amount == 242 * 100.5
+
+def test_academics_entity_243_schema_validation():
+    obj = AcademicsSchemaEntity243Create(
+        entity_code="TEST_ACADEMICS_243",
+        name="Test Entity 243",
+        value_amount=243 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_243"
+    assert obj.value_amount == 243 * 100.5
+
+def test_academics_entity_244_schema_validation():
+    obj = AcademicsSchemaEntity244Create(
+        entity_code="TEST_ACADEMICS_244",
+        name="Test Entity 244",
+        value_amount=244 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_244"
+    assert obj.value_amount == 244 * 100.5
+
+def test_academics_entity_245_schema_validation():
+    obj = AcademicsSchemaEntity245Create(
+        entity_code="TEST_ACADEMICS_245",
+        name="Test Entity 245",
+        value_amount=245 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_245"
+    assert obj.value_amount == 245 * 100.5
+
+def test_academics_entity_246_schema_validation():
+    obj = AcademicsSchemaEntity246Create(
+        entity_code="TEST_ACADEMICS_246",
+        name="Test Entity 246",
+        value_amount=246 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_246"
+    assert obj.value_amount == 246 * 100.5
+
+def test_academics_entity_247_schema_validation():
+    obj = AcademicsSchemaEntity247Create(
+        entity_code="TEST_ACADEMICS_247",
+        name="Test Entity 247",
+        value_amount=247 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_247"
+    assert obj.value_amount == 247 * 100.5
+
+def test_academics_entity_248_schema_validation():
+    obj = AcademicsSchemaEntity248Create(
+        entity_code="TEST_ACADEMICS_248",
+        name="Test Entity 248",
+        value_amount=248 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_248"
+    assert obj.value_amount == 248 * 100.5
+
+def test_academics_entity_249_schema_validation():
+    obj = AcademicsSchemaEntity249Create(
+        entity_code="TEST_ACADEMICS_249",
+        name="Test Entity 249",
+        value_amount=249 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_249"
+    assert obj.value_amount == 249 * 100.5
+
+def test_academics_entity_250_schema_validation():
+    obj = AcademicsSchemaEntity250Create(
+        entity_code="TEST_ACADEMICS_250",
+        name="Test Entity 250",
+        value_amount=250 * 100.5
+    )
+    assert obj.entity_code == "TEST_ACADEMICS_250"
+    assert obj.value_amount == 250 * 100.5
+

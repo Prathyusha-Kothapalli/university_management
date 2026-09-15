@@ -1084,3 +1084,723 @@ def test_hr_entity_120_schema_validation():
     assert obj.entity_code == "TEST_HR_120"
     assert obj.value_amount == 120 * 100.5
 
+def test_hr_entity_121_schema_validation():
+    obj = HrSchemaEntity121Create(
+        entity_code="TEST_HR_121",
+        name="Test Entity 121",
+        value_amount=121 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_121"
+    assert obj.value_amount == 121 * 100.5
+
+def test_hr_entity_122_schema_validation():
+    obj = HrSchemaEntity122Create(
+        entity_code="TEST_HR_122",
+        name="Test Entity 122",
+        value_amount=122 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_122"
+    assert obj.value_amount == 122 * 100.5
+
+def test_hr_entity_123_schema_validation():
+    obj = HrSchemaEntity123Create(
+        entity_code="TEST_HR_123",
+        name="Test Entity 123",
+        value_amount=123 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_123"
+    assert obj.value_amount == 123 * 100.5
+
+def test_hr_entity_124_schema_validation():
+    obj = HrSchemaEntity124Create(
+        entity_code="TEST_HR_124",
+        name="Test Entity 124",
+        value_amount=124 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_124"
+    assert obj.value_amount == 124 * 100.5
+
+def test_hr_entity_125_schema_validation():
+    obj = HrSchemaEntity125Create(
+        entity_code="TEST_HR_125",
+        name="Test Entity 125",
+        value_amount=125 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_125"
+    assert obj.value_amount == 125 * 100.5
+
+def test_hr_entity_126_schema_validation():
+    obj = HrSchemaEntity126Create(
+        entity_code="TEST_HR_126",
+        name="Test Entity 126",
+        value_amount=126 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_126"
+    assert obj.value_amount == 126 * 100.5
+
+def test_hr_entity_127_schema_validation():
+    obj = HrSchemaEntity127Create(
+        entity_code="TEST_HR_127",
+        name="Test Entity 127",
+        value_amount=127 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_127"
+    assert obj.value_amount == 127 * 100.5
+
+def test_hr_entity_128_schema_validation():
+    obj = HrSchemaEntity128Create(
+        entity_code="TEST_HR_128",
+        name="Test Entity 128",
+        value_amount=128 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_128"
+    assert obj.value_amount == 128 * 100.5
+
+def test_hr_entity_129_schema_validation():
+    obj = HrSchemaEntity129Create(
+        entity_code="TEST_HR_129",
+        name="Test Entity 129",
+        value_amount=129 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_129"
+    assert obj.value_amount == 129 * 100.5
+
+def test_hr_entity_130_schema_validation():
+    obj = HrSchemaEntity130Create(
+        entity_code="TEST_HR_130",
+        name="Test Entity 130",
+        value_amount=130 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_130"
+    assert obj.value_amount == 130 * 100.5
+
+def test_hr_entity_131_schema_validation():
+    obj = HrSchemaEntity131Create(
+        entity_code="TEST_HR_131",
+        name="Test Entity 131",
+        value_amount=131 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_131"
+    assert obj.value_amount == 131 * 100.5
+
+def test_hr_entity_132_schema_validation():
+    obj = HrSchemaEntity132Create(
+        entity_code="TEST_HR_132",
+        name="Test Entity 132",
+        value_amount=132 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_132"
+    assert obj.value_amount == 132 * 100.5
+
+def test_hr_entity_133_schema_validation():
+    obj = HrSchemaEntity133Create(
+        entity_code="TEST_HR_133",
+        name="Test Entity 133",
+        value_amount=133 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_133"
+    assert obj.value_amount == 133 * 100.5
+
+def test_hr_entity_134_schema_validation():
+    obj = HrSchemaEntity134Create(
+        entity_code="TEST_HR_134",
+        name="Test Entity 134",
+        value_amount=134 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_134"
+    assert obj.value_amount == 134 * 100.5
+
+def test_hr_entity_135_schema_validation():
+    obj = HrSchemaEntity135Create(
+        entity_code="TEST_HR_135",
+        name="Test Entity 135",
+        value_amount=135 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_135"
+    assert obj.value_amount == 135 * 100.5
+
+def test_hr_entity_136_schema_validation():
+    obj = HrSchemaEntity136Create(
+        entity_code="TEST_HR_136",
+        name="Test Entity 136",
+        value_amount=136 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_136"
+    assert obj.value_amount == 136 * 100.5
+
+def test_hr_entity_137_schema_validation():
+    obj = HrSchemaEntity137Create(
+        entity_code="TEST_HR_137",
+        name="Test Entity 137",
+        value_amount=137 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_137"
+    assert obj.value_amount == 137 * 100.5
+
+def test_hr_entity_138_schema_validation():
+    obj = HrSchemaEntity138Create(
+        entity_code="TEST_HR_138",
+        name="Test Entity 138",
+        value_amount=138 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_138"
+    assert obj.value_amount == 138 * 100.5
+
+def test_hr_entity_139_schema_validation():
+    obj = HrSchemaEntity139Create(
+        entity_code="TEST_HR_139",
+        name="Test Entity 139",
+        value_amount=139 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_139"
+    assert obj.value_amount == 139 * 100.5
+
+def test_hr_entity_140_schema_validation():
+    obj = HrSchemaEntity140Create(
+        entity_code="TEST_HR_140",
+        name="Test Entity 140",
+        value_amount=140 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_140"
+    assert obj.value_amount == 140 * 100.5
+
+def test_hr_entity_141_schema_validation():
+    obj = HrSchemaEntity141Create(
+        entity_code="TEST_HR_141",
+        name="Test Entity 141",
+        value_amount=141 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_141"
+    assert obj.value_amount == 141 * 100.5
+
+def test_hr_entity_142_schema_validation():
+    obj = HrSchemaEntity142Create(
+        entity_code="TEST_HR_142",
+        name="Test Entity 142",
+        value_amount=142 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_142"
+    assert obj.value_amount == 142 * 100.5
+
+def test_hr_entity_143_schema_validation():
+    obj = HrSchemaEntity143Create(
+        entity_code="TEST_HR_143",
+        name="Test Entity 143",
+        value_amount=143 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_143"
+    assert obj.value_amount == 143 * 100.5
+
+def test_hr_entity_144_schema_validation():
+    obj = HrSchemaEntity144Create(
+        entity_code="TEST_HR_144",
+        name="Test Entity 144",
+        value_amount=144 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_144"
+    assert obj.value_amount == 144 * 100.5
+
+def test_hr_entity_145_schema_validation():
+    obj = HrSchemaEntity145Create(
+        entity_code="TEST_HR_145",
+        name="Test Entity 145",
+        value_amount=145 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_145"
+    assert obj.value_amount == 145 * 100.5
+
+def test_hr_entity_146_schema_validation():
+    obj = HrSchemaEntity146Create(
+        entity_code="TEST_HR_146",
+        name="Test Entity 146",
+        value_amount=146 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_146"
+    assert obj.value_amount == 146 * 100.5
+
+def test_hr_entity_147_schema_validation():
+    obj = HrSchemaEntity147Create(
+        entity_code="TEST_HR_147",
+        name="Test Entity 147",
+        value_amount=147 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_147"
+    assert obj.value_amount == 147 * 100.5
+
+def test_hr_entity_148_schema_validation():
+    obj = HrSchemaEntity148Create(
+        entity_code="TEST_HR_148",
+        name="Test Entity 148",
+        value_amount=148 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_148"
+    assert obj.value_amount == 148 * 100.5
+
+def test_hr_entity_149_schema_validation():
+    obj = HrSchemaEntity149Create(
+        entity_code="TEST_HR_149",
+        name="Test Entity 149",
+        value_amount=149 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_149"
+    assert obj.value_amount == 149 * 100.5
+
+def test_hr_entity_150_schema_validation():
+    obj = HrSchemaEntity150Create(
+        entity_code="TEST_HR_150",
+        name="Test Entity 150",
+        value_amount=150 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_150"
+    assert obj.value_amount == 150 * 100.5
+
+def test_hr_entity_151_schema_validation():
+    obj = HrSchemaEntity151Create(
+        entity_code="TEST_HR_151",
+        name="Test Entity 151",
+        value_amount=151 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_151"
+    assert obj.value_amount == 151 * 100.5
+
+def test_hr_entity_152_schema_validation():
+    obj = HrSchemaEntity152Create(
+        entity_code="TEST_HR_152",
+        name="Test Entity 152",
+        value_amount=152 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_152"
+    assert obj.value_amount == 152 * 100.5
+
+def test_hr_entity_153_schema_validation():
+    obj = HrSchemaEntity153Create(
+        entity_code="TEST_HR_153",
+        name="Test Entity 153",
+        value_amount=153 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_153"
+    assert obj.value_amount == 153 * 100.5
+
+def test_hr_entity_154_schema_validation():
+    obj = HrSchemaEntity154Create(
+        entity_code="TEST_HR_154",
+        name="Test Entity 154",
+        value_amount=154 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_154"
+    assert obj.value_amount == 154 * 100.5
+
+def test_hr_entity_155_schema_validation():
+    obj = HrSchemaEntity155Create(
+        entity_code="TEST_HR_155",
+        name="Test Entity 155",
+        value_amount=155 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_155"
+    assert obj.value_amount == 155 * 100.5
+
+def test_hr_entity_156_schema_validation():
+    obj = HrSchemaEntity156Create(
+        entity_code="TEST_HR_156",
+        name="Test Entity 156",
+        value_amount=156 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_156"
+    assert obj.value_amount == 156 * 100.5
+
+def test_hr_entity_157_schema_validation():
+    obj = HrSchemaEntity157Create(
+        entity_code="TEST_HR_157",
+        name="Test Entity 157",
+        value_amount=157 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_157"
+    assert obj.value_amount == 157 * 100.5
+
+def test_hr_entity_158_schema_validation():
+    obj = HrSchemaEntity158Create(
+        entity_code="TEST_HR_158",
+        name="Test Entity 158",
+        value_amount=158 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_158"
+    assert obj.value_amount == 158 * 100.5
+
+def test_hr_entity_159_schema_validation():
+    obj = HrSchemaEntity159Create(
+        entity_code="TEST_HR_159",
+        name="Test Entity 159",
+        value_amount=159 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_159"
+    assert obj.value_amount == 159 * 100.5
+
+def test_hr_entity_160_schema_validation():
+    obj = HrSchemaEntity160Create(
+        entity_code="TEST_HR_160",
+        name="Test Entity 160",
+        value_amount=160 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_160"
+    assert obj.value_amount == 160 * 100.5
+
+def test_hr_entity_161_schema_validation():
+    obj = HrSchemaEntity161Create(
+        entity_code="TEST_HR_161",
+        name="Test Entity 161",
+        value_amount=161 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_161"
+    assert obj.value_amount == 161 * 100.5
+
+def test_hr_entity_162_schema_validation():
+    obj = HrSchemaEntity162Create(
+        entity_code="TEST_HR_162",
+        name="Test Entity 162",
+        value_amount=162 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_162"
+    assert obj.value_amount == 162 * 100.5
+
+def test_hr_entity_163_schema_validation():
+    obj = HrSchemaEntity163Create(
+        entity_code="TEST_HR_163",
+        name="Test Entity 163",
+        value_amount=163 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_163"
+    assert obj.value_amount == 163 * 100.5
+
+def test_hr_entity_164_schema_validation():
+    obj = HrSchemaEntity164Create(
+        entity_code="TEST_HR_164",
+        name="Test Entity 164",
+        value_amount=164 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_164"
+    assert obj.value_amount == 164 * 100.5
+
+def test_hr_entity_165_schema_validation():
+    obj = HrSchemaEntity165Create(
+        entity_code="TEST_HR_165",
+        name="Test Entity 165",
+        value_amount=165 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_165"
+    assert obj.value_amount == 165 * 100.5
+
+def test_hr_entity_166_schema_validation():
+    obj = HrSchemaEntity166Create(
+        entity_code="TEST_HR_166",
+        name="Test Entity 166",
+        value_amount=166 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_166"
+    assert obj.value_amount == 166 * 100.5
+
+def test_hr_entity_167_schema_validation():
+    obj = HrSchemaEntity167Create(
+        entity_code="TEST_HR_167",
+        name="Test Entity 167",
+        value_amount=167 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_167"
+    assert obj.value_amount == 167 * 100.5
+
+def test_hr_entity_168_schema_validation():
+    obj = HrSchemaEntity168Create(
+        entity_code="TEST_HR_168",
+        name="Test Entity 168",
+        value_amount=168 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_168"
+    assert obj.value_amount == 168 * 100.5
+
+def test_hr_entity_169_schema_validation():
+    obj = HrSchemaEntity169Create(
+        entity_code="TEST_HR_169",
+        name="Test Entity 169",
+        value_amount=169 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_169"
+    assert obj.value_amount == 169 * 100.5
+
+def test_hr_entity_170_schema_validation():
+    obj = HrSchemaEntity170Create(
+        entity_code="TEST_HR_170",
+        name="Test Entity 170",
+        value_amount=170 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_170"
+    assert obj.value_amount == 170 * 100.5
+
+def test_hr_entity_171_schema_validation():
+    obj = HrSchemaEntity171Create(
+        entity_code="TEST_HR_171",
+        name="Test Entity 171",
+        value_amount=171 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_171"
+    assert obj.value_amount == 171 * 100.5
+
+def test_hr_entity_172_schema_validation():
+    obj = HrSchemaEntity172Create(
+        entity_code="TEST_HR_172",
+        name="Test Entity 172",
+        value_amount=172 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_172"
+    assert obj.value_amount == 172 * 100.5
+
+def test_hr_entity_173_schema_validation():
+    obj = HrSchemaEntity173Create(
+        entity_code="TEST_HR_173",
+        name="Test Entity 173",
+        value_amount=173 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_173"
+    assert obj.value_amount == 173 * 100.5
+
+def test_hr_entity_174_schema_validation():
+    obj = HrSchemaEntity174Create(
+        entity_code="TEST_HR_174",
+        name="Test Entity 174",
+        value_amount=174 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_174"
+    assert obj.value_amount == 174 * 100.5
+
+def test_hr_entity_175_schema_validation():
+    obj = HrSchemaEntity175Create(
+        entity_code="TEST_HR_175",
+        name="Test Entity 175",
+        value_amount=175 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_175"
+    assert obj.value_amount == 175 * 100.5
+
+def test_hr_entity_176_schema_validation():
+    obj = HrSchemaEntity176Create(
+        entity_code="TEST_HR_176",
+        name="Test Entity 176",
+        value_amount=176 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_176"
+    assert obj.value_amount == 176 * 100.5
+
+def test_hr_entity_177_schema_validation():
+    obj = HrSchemaEntity177Create(
+        entity_code="TEST_HR_177",
+        name="Test Entity 177",
+        value_amount=177 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_177"
+    assert obj.value_amount == 177 * 100.5
+
+def test_hr_entity_178_schema_validation():
+    obj = HrSchemaEntity178Create(
+        entity_code="TEST_HR_178",
+        name="Test Entity 178",
+        value_amount=178 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_178"
+    assert obj.value_amount == 178 * 100.5
+
+def test_hr_entity_179_schema_validation():
+    obj = HrSchemaEntity179Create(
+        entity_code="TEST_HR_179",
+        name="Test Entity 179",
+        value_amount=179 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_179"
+    assert obj.value_amount == 179 * 100.5
+
+def test_hr_entity_180_schema_validation():
+    obj = HrSchemaEntity180Create(
+        entity_code="TEST_HR_180",
+        name="Test Entity 180",
+        value_amount=180 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_180"
+    assert obj.value_amount == 180 * 100.5
+
+def test_hr_entity_181_schema_validation():
+    obj = HrSchemaEntity181Create(
+        entity_code="TEST_HR_181",
+        name="Test Entity 181",
+        value_amount=181 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_181"
+    assert obj.value_amount == 181 * 100.5
+
+def test_hr_entity_182_schema_validation():
+    obj = HrSchemaEntity182Create(
+        entity_code="TEST_HR_182",
+        name="Test Entity 182",
+        value_amount=182 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_182"
+    assert obj.value_amount == 182 * 100.5
+
+def test_hr_entity_183_schema_validation():
+    obj = HrSchemaEntity183Create(
+        entity_code="TEST_HR_183",
+        name="Test Entity 183",
+        value_amount=183 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_183"
+    assert obj.value_amount == 183 * 100.5
+
+def test_hr_entity_184_schema_validation():
+    obj = HrSchemaEntity184Create(
+        entity_code="TEST_HR_184",
+        name="Test Entity 184",
+        value_amount=184 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_184"
+    assert obj.value_amount == 184 * 100.5
+
+def test_hr_entity_185_schema_validation():
+    obj = HrSchemaEntity185Create(
+        entity_code="TEST_HR_185",
+        name="Test Entity 185",
+        value_amount=185 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_185"
+    assert obj.value_amount == 185 * 100.5
+
+def test_hr_entity_186_schema_validation():
+    obj = HrSchemaEntity186Create(
+        entity_code="TEST_HR_186",
+        name="Test Entity 186",
+        value_amount=186 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_186"
+    assert obj.value_amount == 186 * 100.5
+
+def test_hr_entity_187_schema_validation():
+    obj = HrSchemaEntity187Create(
+        entity_code="TEST_HR_187",
+        name="Test Entity 187",
+        value_amount=187 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_187"
+    assert obj.value_amount == 187 * 100.5
+
+def test_hr_entity_188_schema_validation():
+    obj = HrSchemaEntity188Create(
+        entity_code="TEST_HR_188",
+        name="Test Entity 188",
+        value_amount=188 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_188"
+    assert obj.value_amount == 188 * 100.5
+
+def test_hr_entity_189_schema_validation():
+    obj = HrSchemaEntity189Create(
+        entity_code="TEST_HR_189",
+        name="Test Entity 189",
+        value_amount=189 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_189"
+    assert obj.value_amount == 189 * 100.5
+
+def test_hr_entity_190_schema_validation():
+    obj = HrSchemaEntity190Create(
+        entity_code="TEST_HR_190",
+        name="Test Entity 190",
+        value_amount=190 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_190"
+    assert obj.value_amount == 190 * 100.5
+
+def test_hr_entity_191_schema_validation():
+    obj = HrSchemaEntity191Create(
+        entity_code="TEST_HR_191",
+        name="Test Entity 191",
+        value_amount=191 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_191"
+    assert obj.value_amount == 191 * 100.5
+
+def test_hr_entity_192_schema_validation():
+    obj = HrSchemaEntity192Create(
+        entity_code="TEST_HR_192",
+        name="Test Entity 192",
+        value_amount=192 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_192"
+    assert obj.value_amount == 192 * 100.5
+
+def test_hr_entity_193_schema_validation():
+    obj = HrSchemaEntity193Create(
+        entity_code="TEST_HR_193",
+        name="Test Entity 193",
+        value_amount=193 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_193"
+    assert obj.value_amount == 193 * 100.5
+
+def test_hr_entity_194_schema_validation():
+    obj = HrSchemaEntity194Create(
+        entity_code="TEST_HR_194",
+        name="Test Entity 194",
+        value_amount=194 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_194"
+    assert obj.value_amount == 194 * 100.5
+
+def test_hr_entity_195_schema_validation():
+    obj = HrSchemaEntity195Create(
+        entity_code="TEST_HR_195",
+        name="Test Entity 195",
+        value_amount=195 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_195"
+    assert obj.value_amount == 195 * 100.5
+
+def test_hr_entity_196_schema_validation():
+    obj = HrSchemaEntity196Create(
+        entity_code="TEST_HR_196",
+        name="Test Entity 196",
+        value_amount=196 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_196"
+    assert obj.value_amount == 196 * 100.5
+
+def test_hr_entity_197_schema_validation():
+    obj = HrSchemaEntity197Create(
+        entity_code="TEST_HR_197",
+        name="Test Entity 197",
+        value_amount=197 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_197"
+    assert obj.value_amount == 197 * 100.5
+
+def test_hr_entity_198_schema_validation():
+    obj = HrSchemaEntity198Create(
+        entity_code="TEST_HR_198",
+        name="Test Entity 198",
+        value_amount=198 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_198"
+    assert obj.value_amount == 198 * 100.5
+
+def test_hr_entity_199_schema_validation():
+    obj = HrSchemaEntity199Create(
+        entity_code="TEST_HR_199",
+        name="Test Entity 199",
+        value_amount=199 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_199"
+    assert obj.value_amount == 199 * 100.5
+
+def test_hr_entity_200_schema_validation():
+    obj = HrSchemaEntity200Create(
+        entity_code="TEST_HR_200",
+        name="Test Entity 200",
+        value_amount=200 * 100.5
+    )
+    assert obj.entity_code == "TEST_HR_200"
+    assert obj.value_amount == 200 * 100.5
+

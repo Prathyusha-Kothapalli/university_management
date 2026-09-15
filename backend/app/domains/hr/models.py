@@ -3728,3 +3728,2483 @@ class HrModelEntity120(Base):
             "updated_at": self.updated_at.isoformat() if self.updated_at else None
         }
 
+class HrModelEntity121(Base):
+    __tablename__ = "hr_entity_121"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_121")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=121 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity122(Base):
+    __tablename__ = "hr_entity_122"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_122")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=122 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity123(Base):
+    __tablename__ = "hr_entity_123"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_123")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=123 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity124(Base):
+    __tablename__ = "hr_entity_124"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_124")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=124 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity125(Base):
+    __tablename__ = "hr_entity_125"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_125")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=125 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity126(Base):
+    __tablename__ = "hr_entity_126"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_126")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=126 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity127(Base):
+    __tablename__ = "hr_entity_127"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_127")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=127 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity128(Base):
+    __tablename__ = "hr_entity_128"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_128")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=128 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity129(Base):
+    __tablename__ = "hr_entity_129"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_129")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=129 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity130(Base):
+    __tablename__ = "hr_entity_130"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_130")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=130 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity131(Base):
+    __tablename__ = "hr_entity_131"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_131")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=131 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity132(Base):
+    __tablename__ = "hr_entity_132"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_132")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=132 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity133(Base):
+    __tablename__ = "hr_entity_133"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_133")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=133 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity134(Base):
+    __tablename__ = "hr_entity_134"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_134")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=134 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity135(Base):
+    __tablename__ = "hr_entity_135"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_135")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=135 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity136(Base):
+    __tablename__ = "hr_entity_136"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_136")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=136 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity137(Base):
+    __tablename__ = "hr_entity_137"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_137")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=137 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity138(Base):
+    __tablename__ = "hr_entity_138"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_138")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=138 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity139(Base):
+    __tablename__ = "hr_entity_139"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_139")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=139 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity140(Base):
+    __tablename__ = "hr_entity_140"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_140")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=140 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity141(Base):
+    __tablename__ = "hr_entity_141"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_141")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=141 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity142(Base):
+    __tablename__ = "hr_entity_142"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_142")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=142 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity143(Base):
+    __tablename__ = "hr_entity_143"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_143")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=143 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity144(Base):
+    __tablename__ = "hr_entity_144"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_144")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=144 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity145(Base):
+    __tablename__ = "hr_entity_145"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_145")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=145 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity146(Base):
+    __tablename__ = "hr_entity_146"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_146")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=146 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity147(Base):
+    __tablename__ = "hr_entity_147"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_147")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=147 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity148(Base):
+    __tablename__ = "hr_entity_148"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_148")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=148 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity149(Base):
+    __tablename__ = "hr_entity_149"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_149")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=149 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity150(Base):
+    __tablename__ = "hr_entity_150"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_150")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=150 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity151(Base):
+    __tablename__ = "hr_entity_151"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_151")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=151 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity152(Base):
+    __tablename__ = "hr_entity_152"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_152")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=152 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity153(Base):
+    __tablename__ = "hr_entity_153"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_153")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=153 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity154(Base):
+    __tablename__ = "hr_entity_154"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_154")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=154 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity155(Base):
+    __tablename__ = "hr_entity_155"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_155")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=155 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity156(Base):
+    __tablename__ = "hr_entity_156"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_156")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=156 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity157(Base):
+    __tablename__ = "hr_entity_157"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_157")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=157 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity158(Base):
+    __tablename__ = "hr_entity_158"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_158")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=158 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity159(Base):
+    __tablename__ = "hr_entity_159"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_159")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=159 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity160(Base):
+    __tablename__ = "hr_entity_160"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_160")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=160 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity161(Base):
+    __tablename__ = "hr_entity_161"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_161")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=161 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity162(Base):
+    __tablename__ = "hr_entity_162"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_162")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=162 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity163(Base):
+    __tablename__ = "hr_entity_163"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_163")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=163 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity164(Base):
+    __tablename__ = "hr_entity_164"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_164")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=164 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity165(Base):
+    __tablename__ = "hr_entity_165"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_165")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=165 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity166(Base):
+    __tablename__ = "hr_entity_166"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_166")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=166 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity167(Base):
+    __tablename__ = "hr_entity_167"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_167")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=167 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity168(Base):
+    __tablename__ = "hr_entity_168"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_168")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=168 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity169(Base):
+    __tablename__ = "hr_entity_169"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_169")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=169 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity170(Base):
+    __tablename__ = "hr_entity_170"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_170")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=170 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity171(Base):
+    __tablename__ = "hr_entity_171"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_171")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=171 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity172(Base):
+    __tablename__ = "hr_entity_172"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_172")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=172 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity173(Base):
+    __tablename__ = "hr_entity_173"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_173")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=173 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity174(Base):
+    __tablename__ = "hr_entity_174"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_174")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=174 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity175(Base):
+    __tablename__ = "hr_entity_175"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_175")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=175 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity176(Base):
+    __tablename__ = "hr_entity_176"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_176")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=176 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity177(Base):
+    __tablename__ = "hr_entity_177"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_177")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=177 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity178(Base):
+    __tablename__ = "hr_entity_178"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_178")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=178 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity179(Base):
+    __tablename__ = "hr_entity_179"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_179")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=179 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity180(Base):
+    __tablename__ = "hr_entity_180"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_180")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=180 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity181(Base):
+    __tablename__ = "hr_entity_181"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_181")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=181 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity182(Base):
+    __tablename__ = "hr_entity_182"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_182")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=182 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity183(Base):
+    __tablename__ = "hr_entity_183"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_183")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=183 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity184(Base):
+    __tablename__ = "hr_entity_184"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_184")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=184 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity185(Base):
+    __tablename__ = "hr_entity_185"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_185")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=185 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity186(Base):
+    __tablename__ = "hr_entity_186"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_186")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=186 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity187(Base):
+    __tablename__ = "hr_entity_187"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_187")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=187 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity188(Base):
+    __tablename__ = "hr_entity_188"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_188")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=188 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity189(Base):
+    __tablename__ = "hr_entity_189"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_189")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=189 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity190(Base):
+    __tablename__ = "hr_entity_190"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_190")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=190 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity191(Base):
+    __tablename__ = "hr_entity_191"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_191")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=191 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity192(Base):
+    __tablename__ = "hr_entity_192"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_192")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=192 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity193(Base):
+    __tablename__ = "hr_entity_193"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_193")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=193 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity194(Base):
+    __tablename__ = "hr_entity_194"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_194")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=194 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity195(Base):
+    __tablename__ = "hr_entity_195"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_195")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=195 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity196(Base):
+    __tablename__ = "hr_entity_196"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_196")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=196 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity197(Base):
+    __tablename__ = "hr_entity_197"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_197")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=197 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity198(Base):
+    __tablename__ = "hr_entity_198"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_198")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=198 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity199(Base):
+    __tablename__ = "hr_entity_199"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_199")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=199 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class HrModelEntity200(Base):
+    __tablename__ = "hr_entity_200"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_200")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=200 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+

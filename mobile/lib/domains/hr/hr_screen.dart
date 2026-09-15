@@ -1,67 +1,32 @@
-import 'package:flutter/material.dart';
-import 'hr_model.dart';
+import "package:flutter/material.dart";
+import "hr_models.dart";
 
-class HrScreen extends StatefulWidget {
-  const HrScreen({Key? key}) : super(key: key);
-
+class HrMainScreen extends StatefulWidget {
+  const HrMainScreen({Key? key}) : super(key: key);
   @override
-  State<HrScreen> createState() => _HrScreenState();
+  State<HrMainScreen> createState() => _HrMainScreenState();
 }
 
-class _HrScreenState extends State<HrScreen> {
-  final List<HrModel> _items = [
-    HrModel(
-      id: 1,
-      entityCode: 'HR_M01',
-      name: 'Human Resources & Faculty Management Primary Record',
-      category: 'Mobile',
-      status: 'ACTIVE',
-      createdAt: DateTime.now(),
-    ),
-    HrModel(
-      id: 2,
-      entityCode: 'HR_M02',
-      name: 'Human Resources & Faculty Management Secondary Sync',
-      category: 'System',
-      status: 'ACTIVE',
-      createdAt: DateTime.now(),
-    ),
-  ];
-
+class _HrMainScreenState extends State<HrMainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Human Resources & Faculty Management'),
-        backgroundColor: Colors.indigo,
-      ),
+      appBar: AppBar(title: const Text("Human Resources & Faculty Management"), backgroundColor: Colors.indigo),
       body: ListView.builder(
-        itemCount: _items.length,
+        itemCount: 30,
         padding: const EdgeInsets.all(16),
         itemBuilder: (context, index) {
-          final item = _items[index];
           return Card(
             elevation: 2,
             margin: const EdgeInsets.only(bottom: 12),
             child: ListTile(
-              leading: CircleAvatar(
-                backgroundColor: Colors.indigo.shade100,
-                child: Text(item.entityCode.substring(0, 2)),
-              ),
-              title: Text(item.name, style: const TextStyle(fontWeight: FontWeight.bold)),
-              subtitle: Text('${item.category} • ${item.status}'),
+              leading: CircleAvatar(backgroundColor: Colors.indigo.shade100, child: Text("${index + 1}")),
+              title: Text("Human Resources & Faculty Management Record #${index + 1}", style: const TextStyle(fontWeight: FontWeight.bold)),
+              subtitle: Text("Code: HR-M-${index + 100}"),
               trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-              onTap: () {
-                // Navigate to details
-              },
             ),
           );
         },
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: Colors.indigo,
-        child: const Icon(Icons.add),
       ),
     );
   }

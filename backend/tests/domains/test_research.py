@@ -1084,3 +1084,723 @@ def test_research_entity_120_schema_validation():
     assert obj.entity_code == "TEST_RESEARCH_120"
     assert obj.value_amount == 120 * 100.5
 
+def test_research_entity_121_schema_validation():
+    obj = ResearchSchemaEntity121Create(
+        entity_code="TEST_RESEARCH_121",
+        name="Test Entity 121",
+        value_amount=121 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_121"
+    assert obj.value_amount == 121 * 100.5
+
+def test_research_entity_122_schema_validation():
+    obj = ResearchSchemaEntity122Create(
+        entity_code="TEST_RESEARCH_122",
+        name="Test Entity 122",
+        value_amount=122 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_122"
+    assert obj.value_amount == 122 * 100.5
+
+def test_research_entity_123_schema_validation():
+    obj = ResearchSchemaEntity123Create(
+        entity_code="TEST_RESEARCH_123",
+        name="Test Entity 123",
+        value_amount=123 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_123"
+    assert obj.value_amount == 123 * 100.5
+
+def test_research_entity_124_schema_validation():
+    obj = ResearchSchemaEntity124Create(
+        entity_code="TEST_RESEARCH_124",
+        name="Test Entity 124",
+        value_amount=124 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_124"
+    assert obj.value_amount == 124 * 100.5
+
+def test_research_entity_125_schema_validation():
+    obj = ResearchSchemaEntity125Create(
+        entity_code="TEST_RESEARCH_125",
+        name="Test Entity 125",
+        value_amount=125 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_125"
+    assert obj.value_amount == 125 * 100.5
+
+def test_research_entity_126_schema_validation():
+    obj = ResearchSchemaEntity126Create(
+        entity_code="TEST_RESEARCH_126",
+        name="Test Entity 126",
+        value_amount=126 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_126"
+    assert obj.value_amount == 126 * 100.5
+
+def test_research_entity_127_schema_validation():
+    obj = ResearchSchemaEntity127Create(
+        entity_code="TEST_RESEARCH_127",
+        name="Test Entity 127",
+        value_amount=127 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_127"
+    assert obj.value_amount == 127 * 100.5
+
+def test_research_entity_128_schema_validation():
+    obj = ResearchSchemaEntity128Create(
+        entity_code="TEST_RESEARCH_128",
+        name="Test Entity 128",
+        value_amount=128 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_128"
+    assert obj.value_amount == 128 * 100.5
+
+def test_research_entity_129_schema_validation():
+    obj = ResearchSchemaEntity129Create(
+        entity_code="TEST_RESEARCH_129",
+        name="Test Entity 129",
+        value_amount=129 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_129"
+    assert obj.value_amount == 129 * 100.5
+
+def test_research_entity_130_schema_validation():
+    obj = ResearchSchemaEntity130Create(
+        entity_code="TEST_RESEARCH_130",
+        name="Test Entity 130",
+        value_amount=130 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_130"
+    assert obj.value_amount == 130 * 100.5
+
+def test_research_entity_131_schema_validation():
+    obj = ResearchSchemaEntity131Create(
+        entity_code="TEST_RESEARCH_131",
+        name="Test Entity 131",
+        value_amount=131 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_131"
+    assert obj.value_amount == 131 * 100.5
+
+def test_research_entity_132_schema_validation():
+    obj = ResearchSchemaEntity132Create(
+        entity_code="TEST_RESEARCH_132",
+        name="Test Entity 132",
+        value_amount=132 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_132"
+    assert obj.value_amount == 132 * 100.5
+
+def test_research_entity_133_schema_validation():
+    obj = ResearchSchemaEntity133Create(
+        entity_code="TEST_RESEARCH_133",
+        name="Test Entity 133",
+        value_amount=133 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_133"
+    assert obj.value_amount == 133 * 100.5
+
+def test_research_entity_134_schema_validation():
+    obj = ResearchSchemaEntity134Create(
+        entity_code="TEST_RESEARCH_134",
+        name="Test Entity 134",
+        value_amount=134 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_134"
+    assert obj.value_amount == 134 * 100.5
+
+def test_research_entity_135_schema_validation():
+    obj = ResearchSchemaEntity135Create(
+        entity_code="TEST_RESEARCH_135",
+        name="Test Entity 135",
+        value_amount=135 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_135"
+    assert obj.value_amount == 135 * 100.5
+
+def test_research_entity_136_schema_validation():
+    obj = ResearchSchemaEntity136Create(
+        entity_code="TEST_RESEARCH_136",
+        name="Test Entity 136",
+        value_amount=136 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_136"
+    assert obj.value_amount == 136 * 100.5
+
+def test_research_entity_137_schema_validation():
+    obj = ResearchSchemaEntity137Create(
+        entity_code="TEST_RESEARCH_137",
+        name="Test Entity 137",
+        value_amount=137 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_137"
+    assert obj.value_amount == 137 * 100.5
+
+def test_research_entity_138_schema_validation():
+    obj = ResearchSchemaEntity138Create(
+        entity_code="TEST_RESEARCH_138",
+        name="Test Entity 138",
+        value_amount=138 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_138"
+    assert obj.value_amount == 138 * 100.5
+
+def test_research_entity_139_schema_validation():
+    obj = ResearchSchemaEntity139Create(
+        entity_code="TEST_RESEARCH_139",
+        name="Test Entity 139",
+        value_amount=139 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_139"
+    assert obj.value_amount == 139 * 100.5
+
+def test_research_entity_140_schema_validation():
+    obj = ResearchSchemaEntity140Create(
+        entity_code="TEST_RESEARCH_140",
+        name="Test Entity 140",
+        value_amount=140 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_140"
+    assert obj.value_amount == 140 * 100.5
+
+def test_research_entity_141_schema_validation():
+    obj = ResearchSchemaEntity141Create(
+        entity_code="TEST_RESEARCH_141",
+        name="Test Entity 141",
+        value_amount=141 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_141"
+    assert obj.value_amount == 141 * 100.5
+
+def test_research_entity_142_schema_validation():
+    obj = ResearchSchemaEntity142Create(
+        entity_code="TEST_RESEARCH_142",
+        name="Test Entity 142",
+        value_amount=142 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_142"
+    assert obj.value_amount == 142 * 100.5
+
+def test_research_entity_143_schema_validation():
+    obj = ResearchSchemaEntity143Create(
+        entity_code="TEST_RESEARCH_143",
+        name="Test Entity 143",
+        value_amount=143 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_143"
+    assert obj.value_amount == 143 * 100.5
+
+def test_research_entity_144_schema_validation():
+    obj = ResearchSchemaEntity144Create(
+        entity_code="TEST_RESEARCH_144",
+        name="Test Entity 144",
+        value_amount=144 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_144"
+    assert obj.value_amount == 144 * 100.5
+
+def test_research_entity_145_schema_validation():
+    obj = ResearchSchemaEntity145Create(
+        entity_code="TEST_RESEARCH_145",
+        name="Test Entity 145",
+        value_amount=145 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_145"
+    assert obj.value_amount == 145 * 100.5
+
+def test_research_entity_146_schema_validation():
+    obj = ResearchSchemaEntity146Create(
+        entity_code="TEST_RESEARCH_146",
+        name="Test Entity 146",
+        value_amount=146 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_146"
+    assert obj.value_amount == 146 * 100.5
+
+def test_research_entity_147_schema_validation():
+    obj = ResearchSchemaEntity147Create(
+        entity_code="TEST_RESEARCH_147",
+        name="Test Entity 147",
+        value_amount=147 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_147"
+    assert obj.value_amount == 147 * 100.5
+
+def test_research_entity_148_schema_validation():
+    obj = ResearchSchemaEntity148Create(
+        entity_code="TEST_RESEARCH_148",
+        name="Test Entity 148",
+        value_amount=148 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_148"
+    assert obj.value_amount == 148 * 100.5
+
+def test_research_entity_149_schema_validation():
+    obj = ResearchSchemaEntity149Create(
+        entity_code="TEST_RESEARCH_149",
+        name="Test Entity 149",
+        value_amount=149 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_149"
+    assert obj.value_amount == 149 * 100.5
+
+def test_research_entity_150_schema_validation():
+    obj = ResearchSchemaEntity150Create(
+        entity_code="TEST_RESEARCH_150",
+        name="Test Entity 150",
+        value_amount=150 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_150"
+    assert obj.value_amount == 150 * 100.5
+
+def test_research_entity_151_schema_validation():
+    obj = ResearchSchemaEntity151Create(
+        entity_code="TEST_RESEARCH_151",
+        name="Test Entity 151",
+        value_amount=151 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_151"
+    assert obj.value_amount == 151 * 100.5
+
+def test_research_entity_152_schema_validation():
+    obj = ResearchSchemaEntity152Create(
+        entity_code="TEST_RESEARCH_152",
+        name="Test Entity 152",
+        value_amount=152 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_152"
+    assert obj.value_amount == 152 * 100.5
+
+def test_research_entity_153_schema_validation():
+    obj = ResearchSchemaEntity153Create(
+        entity_code="TEST_RESEARCH_153",
+        name="Test Entity 153",
+        value_amount=153 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_153"
+    assert obj.value_amount == 153 * 100.5
+
+def test_research_entity_154_schema_validation():
+    obj = ResearchSchemaEntity154Create(
+        entity_code="TEST_RESEARCH_154",
+        name="Test Entity 154",
+        value_amount=154 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_154"
+    assert obj.value_amount == 154 * 100.5
+
+def test_research_entity_155_schema_validation():
+    obj = ResearchSchemaEntity155Create(
+        entity_code="TEST_RESEARCH_155",
+        name="Test Entity 155",
+        value_amount=155 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_155"
+    assert obj.value_amount == 155 * 100.5
+
+def test_research_entity_156_schema_validation():
+    obj = ResearchSchemaEntity156Create(
+        entity_code="TEST_RESEARCH_156",
+        name="Test Entity 156",
+        value_amount=156 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_156"
+    assert obj.value_amount == 156 * 100.5
+
+def test_research_entity_157_schema_validation():
+    obj = ResearchSchemaEntity157Create(
+        entity_code="TEST_RESEARCH_157",
+        name="Test Entity 157",
+        value_amount=157 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_157"
+    assert obj.value_amount == 157 * 100.5
+
+def test_research_entity_158_schema_validation():
+    obj = ResearchSchemaEntity158Create(
+        entity_code="TEST_RESEARCH_158",
+        name="Test Entity 158",
+        value_amount=158 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_158"
+    assert obj.value_amount == 158 * 100.5
+
+def test_research_entity_159_schema_validation():
+    obj = ResearchSchemaEntity159Create(
+        entity_code="TEST_RESEARCH_159",
+        name="Test Entity 159",
+        value_amount=159 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_159"
+    assert obj.value_amount == 159 * 100.5
+
+def test_research_entity_160_schema_validation():
+    obj = ResearchSchemaEntity160Create(
+        entity_code="TEST_RESEARCH_160",
+        name="Test Entity 160",
+        value_amount=160 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_160"
+    assert obj.value_amount == 160 * 100.5
+
+def test_research_entity_161_schema_validation():
+    obj = ResearchSchemaEntity161Create(
+        entity_code="TEST_RESEARCH_161",
+        name="Test Entity 161",
+        value_amount=161 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_161"
+    assert obj.value_amount == 161 * 100.5
+
+def test_research_entity_162_schema_validation():
+    obj = ResearchSchemaEntity162Create(
+        entity_code="TEST_RESEARCH_162",
+        name="Test Entity 162",
+        value_amount=162 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_162"
+    assert obj.value_amount == 162 * 100.5
+
+def test_research_entity_163_schema_validation():
+    obj = ResearchSchemaEntity163Create(
+        entity_code="TEST_RESEARCH_163",
+        name="Test Entity 163",
+        value_amount=163 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_163"
+    assert obj.value_amount == 163 * 100.5
+
+def test_research_entity_164_schema_validation():
+    obj = ResearchSchemaEntity164Create(
+        entity_code="TEST_RESEARCH_164",
+        name="Test Entity 164",
+        value_amount=164 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_164"
+    assert obj.value_amount == 164 * 100.5
+
+def test_research_entity_165_schema_validation():
+    obj = ResearchSchemaEntity165Create(
+        entity_code="TEST_RESEARCH_165",
+        name="Test Entity 165",
+        value_amount=165 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_165"
+    assert obj.value_amount == 165 * 100.5
+
+def test_research_entity_166_schema_validation():
+    obj = ResearchSchemaEntity166Create(
+        entity_code="TEST_RESEARCH_166",
+        name="Test Entity 166",
+        value_amount=166 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_166"
+    assert obj.value_amount == 166 * 100.5
+
+def test_research_entity_167_schema_validation():
+    obj = ResearchSchemaEntity167Create(
+        entity_code="TEST_RESEARCH_167",
+        name="Test Entity 167",
+        value_amount=167 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_167"
+    assert obj.value_amount == 167 * 100.5
+
+def test_research_entity_168_schema_validation():
+    obj = ResearchSchemaEntity168Create(
+        entity_code="TEST_RESEARCH_168",
+        name="Test Entity 168",
+        value_amount=168 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_168"
+    assert obj.value_amount == 168 * 100.5
+
+def test_research_entity_169_schema_validation():
+    obj = ResearchSchemaEntity169Create(
+        entity_code="TEST_RESEARCH_169",
+        name="Test Entity 169",
+        value_amount=169 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_169"
+    assert obj.value_amount == 169 * 100.5
+
+def test_research_entity_170_schema_validation():
+    obj = ResearchSchemaEntity170Create(
+        entity_code="TEST_RESEARCH_170",
+        name="Test Entity 170",
+        value_amount=170 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_170"
+    assert obj.value_amount == 170 * 100.5
+
+def test_research_entity_171_schema_validation():
+    obj = ResearchSchemaEntity171Create(
+        entity_code="TEST_RESEARCH_171",
+        name="Test Entity 171",
+        value_amount=171 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_171"
+    assert obj.value_amount == 171 * 100.5
+
+def test_research_entity_172_schema_validation():
+    obj = ResearchSchemaEntity172Create(
+        entity_code="TEST_RESEARCH_172",
+        name="Test Entity 172",
+        value_amount=172 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_172"
+    assert obj.value_amount == 172 * 100.5
+
+def test_research_entity_173_schema_validation():
+    obj = ResearchSchemaEntity173Create(
+        entity_code="TEST_RESEARCH_173",
+        name="Test Entity 173",
+        value_amount=173 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_173"
+    assert obj.value_amount == 173 * 100.5
+
+def test_research_entity_174_schema_validation():
+    obj = ResearchSchemaEntity174Create(
+        entity_code="TEST_RESEARCH_174",
+        name="Test Entity 174",
+        value_amount=174 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_174"
+    assert obj.value_amount == 174 * 100.5
+
+def test_research_entity_175_schema_validation():
+    obj = ResearchSchemaEntity175Create(
+        entity_code="TEST_RESEARCH_175",
+        name="Test Entity 175",
+        value_amount=175 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_175"
+    assert obj.value_amount == 175 * 100.5
+
+def test_research_entity_176_schema_validation():
+    obj = ResearchSchemaEntity176Create(
+        entity_code="TEST_RESEARCH_176",
+        name="Test Entity 176",
+        value_amount=176 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_176"
+    assert obj.value_amount == 176 * 100.5
+
+def test_research_entity_177_schema_validation():
+    obj = ResearchSchemaEntity177Create(
+        entity_code="TEST_RESEARCH_177",
+        name="Test Entity 177",
+        value_amount=177 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_177"
+    assert obj.value_amount == 177 * 100.5
+
+def test_research_entity_178_schema_validation():
+    obj = ResearchSchemaEntity178Create(
+        entity_code="TEST_RESEARCH_178",
+        name="Test Entity 178",
+        value_amount=178 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_178"
+    assert obj.value_amount == 178 * 100.5
+
+def test_research_entity_179_schema_validation():
+    obj = ResearchSchemaEntity179Create(
+        entity_code="TEST_RESEARCH_179",
+        name="Test Entity 179",
+        value_amount=179 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_179"
+    assert obj.value_amount == 179 * 100.5
+
+def test_research_entity_180_schema_validation():
+    obj = ResearchSchemaEntity180Create(
+        entity_code="TEST_RESEARCH_180",
+        name="Test Entity 180",
+        value_amount=180 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_180"
+    assert obj.value_amount == 180 * 100.5
+
+def test_research_entity_181_schema_validation():
+    obj = ResearchSchemaEntity181Create(
+        entity_code="TEST_RESEARCH_181",
+        name="Test Entity 181",
+        value_amount=181 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_181"
+    assert obj.value_amount == 181 * 100.5
+
+def test_research_entity_182_schema_validation():
+    obj = ResearchSchemaEntity182Create(
+        entity_code="TEST_RESEARCH_182",
+        name="Test Entity 182",
+        value_amount=182 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_182"
+    assert obj.value_amount == 182 * 100.5
+
+def test_research_entity_183_schema_validation():
+    obj = ResearchSchemaEntity183Create(
+        entity_code="TEST_RESEARCH_183",
+        name="Test Entity 183",
+        value_amount=183 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_183"
+    assert obj.value_amount == 183 * 100.5
+
+def test_research_entity_184_schema_validation():
+    obj = ResearchSchemaEntity184Create(
+        entity_code="TEST_RESEARCH_184",
+        name="Test Entity 184",
+        value_amount=184 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_184"
+    assert obj.value_amount == 184 * 100.5
+
+def test_research_entity_185_schema_validation():
+    obj = ResearchSchemaEntity185Create(
+        entity_code="TEST_RESEARCH_185",
+        name="Test Entity 185",
+        value_amount=185 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_185"
+    assert obj.value_amount == 185 * 100.5
+
+def test_research_entity_186_schema_validation():
+    obj = ResearchSchemaEntity186Create(
+        entity_code="TEST_RESEARCH_186",
+        name="Test Entity 186",
+        value_amount=186 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_186"
+    assert obj.value_amount == 186 * 100.5
+
+def test_research_entity_187_schema_validation():
+    obj = ResearchSchemaEntity187Create(
+        entity_code="TEST_RESEARCH_187",
+        name="Test Entity 187",
+        value_amount=187 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_187"
+    assert obj.value_amount == 187 * 100.5
+
+def test_research_entity_188_schema_validation():
+    obj = ResearchSchemaEntity188Create(
+        entity_code="TEST_RESEARCH_188",
+        name="Test Entity 188",
+        value_amount=188 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_188"
+    assert obj.value_amount == 188 * 100.5
+
+def test_research_entity_189_schema_validation():
+    obj = ResearchSchemaEntity189Create(
+        entity_code="TEST_RESEARCH_189",
+        name="Test Entity 189",
+        value_amount=189 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_189"
+    assert obj.value_amount == 189 * 100.5
+
+def test_research_entity_190_schema_validation():
+    obj = ResearchSchemaEntity190Create(
+        entity_code="TEST_RESEARCH_190",
+        name="Test Entity 190",
+        value_amount=190 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_190"
+    assert obj.value_amount == 190 * 100.5
+
+def test_research_entity_191_schema_validation():
+    obj = ResearchSchemaEntity191Create(
+        entity_code="TEST_RESEARCH_191",
+        name="Test Entity 191",
+        value_amount=191 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_191"
+    assert obj.value_amount == 191 * 100.5
+
+def test_research_entity_192_schema_validation():
+    obj = ResearchSchemaEntity192Create(
+        entity_code="TEST_RESEARCH_192",
+        name="Test Entity 192",
+        value_amount=192 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_192"
+    assert obj.value_amount == 192 * 100.5
+
+def test_research_entity_193_schema_validation():
+    obj = ResearchSchemaEntity193Create(
+        entity_code="TEST_RESEARCH_193",
+        name="Test Entity 193",
+        value_amount=193 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_193"
+    assert obj.value_amount == 193 * 100.5
+
+def test_research_entity_194_schema_validation():
+    obj = ResearchSchemaEntity194Create(
+        entity_code="TEST_RESEARCH_194",
+        name="Test Entity 194",
+        value_amount=194 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_194"
+    assert obj.value_amount == 194 * 100.5
+
+def test_research_entity_195_schema_validation():
+    obj = ResearchSchemaEntity195Create(
+        entity_code="TEST_RESEARCH_195",
+        name="Test Entity 195",
+        value_amount=195 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_195"
+    assert obj.value_amount == 195 * 100.5
+
+def test_research_entity_196_schema_validation():
+    obj = ResearchSchemaEntity196Create(
+        entity_code="TEST_RESEARCH_196",
+        name="Test Entity 196",
+        value_amount=196 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_196"
+    assert obj.value_amount == 196 * 100.5
+
+def test_research_entity_197_schema_validation():
+    obj = ResearchSchemaEntity197Create(
+        entity_code="TEST_RESEARCH_197",
+        name="Test Entity 197",
+        value_amount=197 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_197"
+    assert obj.value_amount == 197 * 100.5
+
+def test_research_entity_198_schema_validation():
+    obj = ResearchSchemaEntity198Create(
+        entity_code="TEST_RESEARCH_198",
+        name="Test Entity 198",
+        value_amount=198 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_198"
+    assert obj.value_amount == 198 * 100.5
+
+def test_research_entity_199_schema_validation():
+    obj = ResearchSchemaEntity199Create(
+        entity_code="TEST_RESEARCH_199",
+        name="Test Entity 199",
+        value_amount=199 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_199"
+    assert obj.value_amount == 199 * 100.5
+
+def test_research_entity_200_schema_validation():
+    obj = ResearchSchemaEntity200Create(
+        entity_code="TEST_RESEARCH_200",
+        name="Test Entity 200",
+        value_amount=200 * 100.5
+    )
+    assert obj.entity_code == "TEST_RESEARCH_200"
+    assert obj.value_amount == 200 * 100.5
+

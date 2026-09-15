@@ -13,7 +13,7 @@ class _PlacementsMainScreenState extends State<PlacementsMainScreen> {
     return Scaffold(
       appBar: AppBar(title: const Text("Placements & Alumni Network"), backgroundColor: Colors.indigo),
       body: ListView.builder(
-        itemCount: 50,
+        itemCount: 75,
         padding: const EdgeInsets.all(16),
         itemBuilder: (context, index) {
           return Card(

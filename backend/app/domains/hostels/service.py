@@ -4811,3 +4811,3203 @@ class HostelsDomainService:
         self.db.commit()
         return True
 
+    def get_entity_121_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity121]:
+        return self.db.query(HostelsModelEntity121).offset(skip).limit(limit).all()
+
+    def get_entity_121_by_id(self, entity_id: int) -> Optional[HostelsModelEntity121]:
+        return self.db.query(HostelsModelEntity121).filter(HostelsModelEntity121.id == entity_id).first()
+
+    def create_entity_121(self, payload: HostelsSchemaEntity121Create) -> HostelsModelEntity121:
+        db_obj = HostelsModelEntity121(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_121(self, entity_id: int, payload: HostelsSchemaEntity121Update) -> Optional[HostelsModelEntity121]:
+        db_obj = self.get_entity_121_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_121(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_121_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_122_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity122]:
+        return self.db.query(HostelsModelEntity122).offset(skip).limit(limit).all()
+
+    def get_entity_122_by_id(self, entity_id: int) -> Optional[HostelsModelEntity122]:
+        return self.db.query(HostelsModelEntity122).filter(HostelsModelEntity122.id == entity_id).first()
+
+    def create_entity_122(self, payload: HostelsSchemaEntity122Create) -> HostelsModelEntity122:
+        db_obj = HostelsModelEntity122(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_122(self, entity_id: int, payload: HostelsSchemaEntity122Update) -> Optional[HostelsModelEntity122]:
+        db_obj = self.get_entity_122_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_122(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_122_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_123_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity123]:
+        return self.db.query(HostelsModelEntity123).offset(skip).limit(limit).all()
+
+    def get_entity_123_by_id(self, entity_id: int) -> Optional[HostelsModelEntity123]:
+        return self.db.query(HostelsModelEntity123).filter(HostelsModelEntity123.id == entity_id).first()
+
+    def create_entity_123(self, payload: HostelsSchemaEntity123Create) -> HostelsModelEntity123:
+        db_obj = HostelsModelEntity123(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_123(self, entity_id: int, payload: HostelsSchemaEntity123Update) -> Optional[HostelsModelEntity123]:
+        db_obj = self.get_entity_123_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_123(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_123_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_124_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity124]:
+        return self.db.query(HostelsModelEntity124).offset(skip).limit(limit).all()
+
+    def get_entity_124_by_id(self, entity_id: int) -> Optional[HostelsModelEntity124]:
+        return self.db.query(HostelsModelEntity124).filter(HostelsModelEntity124.id == entity_id).first()
+
+    def create_entity_124(self, payload: HostelsSchemaEntity124Create) -> HostelsModelEntity124:
+        db_obj = HostelsModelEntity124(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_124(self, entity_id: int, payload: HostelsSchemaEntity124Update) -> Optional[HostelsModelEntity124]:
+        db_obj = self.get_entity_124_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_124(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_124_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_125_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity125]:
+        return self.db.query(HostelsModelEntity125).offset(skip).limit(limit).all()
+
+    def get_entity_125_by_id(self, entity_id: int) -> Optional[HostelsModelEntity125]:
+        return self.db.query(HostelsModelEntity125).filter(HostelsModelEntity125.id == entity_id).first()
+
+    def create_entity_125(self, payload: HostelsSchemaEntity125Create) -> HostelsModelEntity125:
+        db_obj = HostelsModelEntity125(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_125(self, entity_id: int, payload: HostelsSchemaEntity125Update) -> Optional[HostelsModelEntity125]:
+        db_obj = self.get_entity_125_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_125(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_125_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_126_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity126]:
+        return self.db.query(HostelsModelEntity126).offset(skip).limit(limit).all()
+
+    def get_entity_126_by_id(self, entity_id: int) -> Optional[HostelsModelEntity126]:
+        return self.db.query(HostelsModelEntity126).filter(HostelsModelEntity126.id == entity_id).first()
+
+    def create_entity_126(self, payload: HostelsSchemaEntity126Create) -> HostelsModelEntity126:
+        db_obj = HostelsModelEntity126(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_126(self, entity_id: int, payload: HostelsSchemaEntity126Update) -> Optional[HostelsModelEntity126]:
+        db_obj = self.get_entity_126_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_126(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_126_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_127_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity127]:
+        return self.db.query(HostelsModelEntity127).offset(skip).limit(limit).all()
+
+    def get_entity_127_by_id(self, entity_id: int) -> Optional[HostelsModelEntity127]:
+        return self.db.query(HostelsModelEntity127).filter(HostelsModelEntity127.id == entity_id).first()
+
+    def create_entity_127(self, payload: HostelsSchemaEntity127Create) -> HostelsModelEntity127:
+        db_obj = HostelsModelEntity127(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_127(self, entity_id: int, payload: HostelsSchemaEntity127Update) -> Optional[HostelsModelEntity127]:
+        db_obj = self.get_entity_127_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_127(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_127_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_128_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity128]:
+        return self.db.query(HostelsModelEntity128).offset(skip).limit(limit).all()
+
+    def get_entity_128_by_id(self, entity_id: int) -> Optional[HostelsModelEntity128]:
+        return self.db.query(HostelsModelEntity128).filter(HostelsModelEntity128.id == entity_id).first()
+
+    def create_entity_128(self, payload: HostelsSchemaEntity128Create) -> HostelsModelEntity128:
+        db_obj = HostelsModelEntity128(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_128(self, entity_id: int, payload: HostelsSchemaEntity128Update) -> Optional[HostelsModelEntity128]:
+        db_obj = self.get_entity_128_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_128(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_128_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_129_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity129]:
+        return self.db.query(HostelsModelEntity129).offset(skip).limit(limit).all()
+
+    def get_entity_129_by_id(self, entity_id: int) -> Optional[HostelsModelEntity129]:
+        return self.db.query(HostelsModelEntity129).filter(HostelsModelEntity129.id == entity_id).first()
+
+    def create_entity_129(self, payload: HostelsSchemaEntity129Create) -> HostelsModelEntity129:
+        db_obj = HostelsModelEntity129(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_129(self, entity_id: int, payload: HostelsSchemaEntity129Update) -> Optional[HostelsModelEntity129]:
+        db_obj = self.get_entity_129_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_129(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_129_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_130_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity130]:
+        return self.db.query(HostelsModelEntity130).offset(skip).limit(limit).all()
+
+    def get_entity_130_by_id(self, entity_id: int) -> Optional[HostelsModelEntity130]:
+        return self.db.query(HostelsModelEntity130).filter(HostelsModelEntity130.id == entity_id).first()
+
+    def create_entity_130(self, payload: HostelsSchemaEntity130Create) -> HostelsModelEntity130:
+        db_obj = HostelsModelEntity130(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_130(self, entity_id: int, payload: HostelsSchemaEntity130Update) -> Optional[HostelsModelEntity130]:
+        db_obj = self.get_entity_130_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_130(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_130_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_131_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity131]:
+        return self.db.query(HostelsModelEntity131).offset(skip).limit(limit).all()
+
+    def get_entity_131_by_id(self, entity_id: int) -> Optional[HostelsModelEntity131]:
+        return self.db.query(HostelsModelEntity131).filter(HostelsModelEntity131.id == entity_id).first()
+
+    def create_entity_131(self, payload: HostelsSchemaEntity131Create) -> HostelsModelEntity131:
+        db_obj = HostelsModelEntity131(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_131(self, entity_id: int, payload: HostelsSchemaEntity131Update) -> Optional[HostelsModelEntity131]:
+        db_obj = self.get_entity_131_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_131(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_131_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_132_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity132]:
+        return self.db.query(HostelsModelEntity132).offset(skip).limit(limit).all()
+
+    def get_entity_132_by_id(self, entity_id: int) -> Optional[HostelsModelEntity132]:
+        return self.db.query(HostelsModelEntity132).filter(HostelsModelEntity132.id == entity_id).first()
+
+    def create_entity_132(self, payload: HostelsSchemaEntity132Create) -> HostelsModelEntity132:
+        db_obj = HostelsModelEntity132(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_132(self, entity_id: int, payload: HostelsSchemaEntity132Update) -> Optional[HostelsModelEntity132]:
+        db_obj = self.get_entity_132_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_132(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_132_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_133_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity133]:
+        return self.db.query(HostelsModelEntity133).offset(skip).limit(limit).all()
+
+    def get_entity_133_by_id(self, entity_id: int) -> Optional[HostelsModelEntity133]:
+        return self.db.query(HostelsModelEntity133).filter(HostelsModelEntity133.id == entity_id).first()
+
+    def create_entity_133(self, payload: HostelsSchemaEntity133Create) -> HostelsModelEntity133:
+        db_obj = HostelsModelEntity133(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_133(self, entity_id: int, payload: HostelsSchemaEntity133Update) -> Optional[HostelsModelEntity133]:
+        db_obj = self.get_entity_133_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_133(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_133_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_134_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity134]:
+        return self.db.query(HostelsModelEntity134).offset(skip).limit(limit).all()
+
+    def get_entity_134_by_id(self, entity_id: int) -> Optional[HostelsModelEntity134]:
+        return self.db.query(HostelsModelEntity134).filter(HostelsModelEntity134.id == entity_id).first()
+
+    def create_entity_134(self, payload: HostelsSchemaEntity134Create) -> HostelsModelEntity134:
+        db_obj = HostelsModelEntity134(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_134(self, entity_id: int, payload: HostelsSchemaEntity134Update) -> Optional[HostelsModelEntity134]:
+        db_obj = self.get_entity_134_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_134(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_134_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_135_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity135]:
+        return self.db.query(HostelsModelEntity135).offset(skip).limit(limit).all()
+
+    def get_entity_135_by_id(self, entity_id: int) -> Optional[HostelsModelEntity135]:
+        return self.db.query(HostelsModelEntity135).filter(HostelsModelEntity135.id == entity_id).first()
+
+    def create_entity_135(self, payload: HostelsSchemaEntity135Create) -> HostelsModelEntity135:
+        db_obj = HostelsModelEntity135(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_135(self, entity_id: int, payload: HostelsSchemaEntity135Update) -> Optional[HostelsModelEntity135]:
+        db_obj = self.get_entity_135_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_135(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_135_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_136_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity136]:
+        return self.db.query(HostelsModelEntity136).offset(skip).limit(limit).all()
+
+    def get_entity_136_by_id(self, entity_id: int) -> Optional[HostelsModelEntity136]:
+        return self.db.query(HostelsModelEntity136).filter(HostelsModelEntity136.id == entity_id).first()
+
+    def create_entity_136(self, payload: HostelsSchemaEntity136Create) -> HostelsModelEntity136:
+        db_obj = HostelsModelEntity136(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_136(self, entity_id: int, payload: HostelsSchemaEntity136Update) -> Optional[HostelsModelEntity136]:
+        db_obj = self.get_entity_136_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_136(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_136_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_137_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity137]:
+        return self.db.query(HostelsModelEntity137).offset(skip).limit(limit).all()
+
+    def get_entity_137_by_id(self, entity_id: int) -> Optional[HostelsModelEntity137]:
+        return self.db.query(HostelsModelEntity137).filter(HostelsModelEntity137.id == entity_id).first()
+
+    def create_entity_137(self, payload: HostelsSchemaEntity137Create) -> HostelsModelEntity137:
+        db_obj = HostelsModelEntity137(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_137(self, entity_id: int, payload: HostelsSchemaEntity137Update) -> Optional[HostelsModelEntity137]:
+        db_obj = self.get_entity_137_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_137(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_137_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_138_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity138]:
+        return self.db.query(HostelsModelEntity138).offset(skip).limit(limit).all()
+
+    def get_entity_138_by_id(self, entity_id: int) -> Optional[HostelsModelEntity138]:
+        return self.db.query(HostelsModelEntity138).filter(HostelsModelEntity138.id == entity_id).first()
+
+    def create_entity_138(self, payload: HostelsSchemaEntity138Create) -> HostelsModelEntity138:
+        db_obj = HostelsModelEntity138(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_138(self, entity_id: int, payload: HostelsSchemaEntity138Update) -> Optional[HostelsModelEntity138]:
+        db_obj = self.get_entity_138_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_138(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_138_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_139_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity139]:
+        return self.db.query(HostelsModelEntity139).offset(skip).limit(limit).all()
+
+    def get_entity_139_by_id(self, entity_id: int) -> Optional[HostelsModelEntity139]:
+        return self.db.query(HostelsModelEntity139).filter(HostelsModelEntity139.id == entity_id).first()
+
+    def create_entity_139(self, payload: HostelsSchemaEntity139Create) -> HostelsModelEntity139:
+        db_obj = HostelsModelEntity139(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_139(self, entity_id: int, payload: HostelsSchemaEntity139Update) -> Optional[HostelsModelEntity139]:
+        db_obj = self.get_entity_139_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_139(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_139_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_140_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity140]:
+        return self.db.query(HostelsModelEntity140).offset(skip).limit(limit).all()
+
+    def get_entity_140_by_id(self, entity_id: int) -> Optional[HostelsModelEntity140]:
+        return self.db.query(HostelsModelEntity140).filter(HostelsModelEntity140.id == entity_id).first()
+
+    def create_entity_140(self, payload: HostelsSchemaEntity140Create) -> HostelsModelEntity140:
+        db_obj = HostelsModelEntity140(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_140(self, entity_id: int, payload: HostelsSchemaEntity140Update) -> Optional[HostelsModelEntity140]:
+        db_obj = self.get_entity_140_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_140(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_140_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_141_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity141]:
+        return self.db.query(HostelsModelEntity141).offset(skip).limit(limit).all()
+
+    def get_entity_141_by_id(self, entity_id: int) -> Optional[HostelsModelEntity141]:
+        return self.db.query(HostelsModelEntity141).filter(HostelsModelEntity141.id == entity_id).first()
+
+    def create_entity_141(self, payload: HostelsSchemaEntity141Create) -> HostelsModelEntity141:
+        db_obj = HostelsModelEntity141(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_141(self, entity_id: int, payload: HostelsSchemaEntity141Update) -> Optional[HostelsModelEntity141]:
+        db_obj = self.get_entity_141_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_141(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_141_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_142_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity142]:
+        return self.db.query(HostelsModelEntity142).offset(skip).limit(limit).all()
+
+    def get_entity_142_by_id(self, entity_id: int) -> Optional[HostelsModelEntity142]:
+        return self.db.query(HostelsModelEntity142).filter(HostelsModelEntity142.id == entity_id).first()
+
+    def create_entity_142(self, payload: HostelsSchemaEntity142Create) -> HostelsModelEntity142:
+        db_obj = HostelsModelEntity142(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_142(self, entity_id: int, payload: HostelsSchemaEntity142Update) -> Optional[HostelsModelEntity142]:
+        db_obj = self.get_entity_142_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_142(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_142_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_143_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity143]:
+        return self.db.query(HostelsModelEntity143).offset(skip).limit(limit).all()
+
+    def get_entity_143_by_id(self, entity_id: int) -> Optional[HostelsModelEntity143]:
+        return self.db.query(HostelsModelEntity143).filter(HostelsModelEntity143.id == entity_id).first()
+
+    def create_entity_143(self, payload: HostelsSchemaEntity143Create) -> HostelsModelEntity143:
+        db_obj = HostelsModelEntity143(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_143(self, entity_id: int, payload: HostelsSchemaEntity143Update) -> Optional[HostelsModelEntity143]:
+        db_obj = self.get_entity_143_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_143(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_143_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_144_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity144]:
+        return self.db.query(HostelsModelEntity144).offset(skip).limit(limit).all()
+
+    def get_entity_144_by_id(self, entity_id: int) -> Optional[HostelsModelEntity144]:
+        return self.db.query(HostelsModelEntity144).filter(HostelsModelEntity144.id == entity_id).first()
+
+    def create_entity_144(self, payload: HostelsSchemaEntity144Create) -> HostelsModelEntity144:
+        db_obj = HostelsModelEntity144(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_144(self, entity_id: int, payload: HostelsSchemaEntity144Update) -> Optional[HostelsModelEntity144]:
+        db_obj = self.get_entity_144_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_144(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_144_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_145_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity145]:
+        return self.db.query(HostelsModelEntity145).offset(skip).limit(limit).all()
+
+    def get_entity_145_by_id(self, entity_id: int) -> Optional[HostelsModelEntity145]:
+        return self.db.query(HostelsModelEntity145).filter(HostelsModelEntity145.id == entity_id).first()
+
+    def create_entity_145(self, payload: HostelsSchemaEntity145Create) -> HostelsModelEntity145:
+        db_obj = HostelsModelEntity145(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_145(self, entity_id: int, payload: HostelsSchemaEntity145Update) -> Optional[HostelsModelEntity145]:
+        db_obj = self.get_entity_145_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_145(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_145_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_146_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity146]:
+        return self.db.query(HostelsModelEntity146).offset(skip).limit(limit).all()
+
+    def get_entity_146_by_id(self, entity_id: int) -> Optional[HostelsModelEntity146]:
+        return self.db.query(HostelsModelEntity146).filter(HostelsModelEntity146.id == entity_id).first()
+
+    def create_entity_146(self, payload: HostelsSchemaEntity146Create) -> HostelsModelEntity146:
+        db_obj = HostelsModelEntity146(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_146(self, entity_id: int, payload: HostelsSchemaEntity146Update) -> Optional[HostelsModelEntity146]:
+        db_obj = self.get_entity_146_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_146(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_146_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_147_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity147]:
+        return self.db.query(HostelsModelEntity147).offset(skip).limit(limit).all()
+
+    def get_entity_147_by_id(self, entity_id: int) -> Optional[HostelsModelEntity147]:
+        return self.db.query(HostelsModelEntity147).filter(HostelsModelEntity147.id == entity_id).first()
+
+    def create_entity_147(self, payload: HostelsSchemaEntity147Create) -> HostelsModelEntity147:
+        db_obj = HostelsModelEntity147(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_147(self, entity_id: int, payload: HostelsSchemaEntity147Update) -> Optional[HostelsModelEntity147]:
+        db_obj = self.get_entity_147_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_147(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_147_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_148_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity148]:
+        return self.db.query(HostelsModelEntity148).offset(skip).limit(limit).all()
+
+    def get_entity_148_by_id(self, entity_id: int) -> Optional[HostelsModelEntity148]:
+        return self.db.query(HostelsModelEntity148).filter(HostelsModelEntity148.id == entity_id).first()
+
+    def create_entity_148(self, payload: HostelsSchemaEntity148Create) -> HostelsModelEntity148:
+        db_obj = HostelsModelEntity148(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_148(self, entity_id: int, payload: HostelsSchemaEntity148Update) -> Optional[HostelsModelEntity148]:
+        db_obj = self.get_entity_148_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_148(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_148_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_149_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity149]:
+        return self.db.query(HostelsModelEntity149).offset(skip).limit(limit).all()
+
+    def get_entity_149_by_id(self, entity_id: int) -> Optional[HostelsModelEntity149]:
+        return self.db.query(HostelsModelEntity149).filter(HostelsModelEntity149.id == entity_id).first()
+
+    def create_entity_149(self, payload: HostelsSchemaEntity149Create) -> HostelsModelEntity149:
+        db_obj = HostelsModelEntity149(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_149(self, entity_id: int, payload: HostelsSchemaEntity149Update) -> Optional[HostelsModelEntity149]:
+        db_obj = self.get_entity_149_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_149(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_149_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_150_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity150]:
+        return self.db.query(HostelsModelEntity150).offset(skip).limit(limit).all()
+
+    def get_entity_150_by_id(self, entity_id: int) -> Optional[HostelsModelEntity150]:
+        return self.db.query(HostelsModelEntity150).filter(HostelsModelEntity150.id == entity_id).first()
+
+    def create_entity_150(self, payload: HostelsSchemaEntity150Create) -> HostelsModelEntity150:
+        db_obj = HostelsModelEntity150(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_150(self, entity_id: int, payload: HostelsSchemaEntity150Update) -> Optional[HostelsModelEntity150]:
+        db_obj = self.get_entity_150_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_150(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_150_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_151_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity151]:
+        return self.db.query(HostelsModelEntity151).offset(skip).limit(limit).all()
+
+    def get_entity_151_by_id(self, entity_id: int) -> Optional[HostelsModelEntity151]:
+        return self.db.query(HostelsModelEntity151).filter(HostelsModelEntity151.id == entity_id).first()
+
+    def create_entity_151(self, payload: HostelsSchemaEntity151Create) -> HostelsModelEntity151:
+        db_obj = HostelsModelEntity151(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_151(self, entity_id: int, payload: HostelsSchemaEntity151Update) -> Optional[HostelsModelEntity151]:
+        db_obj = self.get_entity_151_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_151(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_151_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_152_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity152]:
+        return self.db.query(HostelsModelEntity152).offset(skip).limit(limit).all()
+
+    def get_entity_152_by_id(self, entity_id: int) -> Optional[HostelsModelEntity152]:
+        return self.db.query(HostelsModelEntity152).filter(HostelsModelEntity152.id == entity_id).first()
+
+    def create_entity_152(self, payload: HostelsSchemaEntity152Create) -> HostelsModelEntity152:
+        db_obj = HostelsModelEntity152(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_152(self, entity_id: int, payload: HostelsSchemaEntity152Update) -> Optional[HostelsModelEntity152]:
+        db_obj = self.get_entity_152_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_152(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_152_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_153_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity153]:
+        return self.db.query(HostelsModelEntity153).offset(skip).limit(limit).all()
+
+    def get_entity_153_by_id(self, entity_id: int) -> Optional[HostelsModelEntity153]:
+        return self.db.query(HostelsModelEntity153).filter(HostelsModelEntity153.id == entity_id).first()
+
+    def create_entity_153(self, payload: HostelsSchemaEntity153Create) -> HostelsModelEntity153:
+        db_obj = HostelsModelEntity153(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_153(self, entity_id: int, payload: HostelsSchemaEntity153Update) -> Optional[HostelsModelEntity153]:
+        db_obj = self.get_entity_153_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_153(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_153_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_154_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity154]:
+        return self.db.query(HostelsModelEntity154).offset(skip).limit(limit).all()
+
+    def get_entity_154_by_id(self, entity_id: int) -> Optional[HostelsModelEntity154]:
+        return self.db.query(HostelsModelEntity154).filter(HostelsModelEntity154.id == entity_id).first()
+
+    def create_entity_154(self, payload: HostelsSchemaEntity154Create) -> HostelsModelEntity154:
+        db_obj = HostelsModelEntity154(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_154(self, entity_id: int, payload: HostelsSchemaEntity154Update) -> Optional[HostelsModelEntity154]:
+        db_obj = self.get_entity_154_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_154(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_154_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_155_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity155]:
+        return self.db.query(HostelsModelEntity155).offset(skip).limit(limit).all()
+
+    def get_entity_155_by_id(self, entity_id: int) -> Optional[HostelsModelEntity155]:
+        return self.db.query(HostelsModelEntity155).filter(HostelsModelEntity155.id == entity_id).first()
+
+    def create_entity_155(self, payload: HostelsSchemaEntity155Create) -> HostelsModelEntity155:
+        db_obj = HostelsModelEntity155(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_155(self, entity_id: int, payload: HostelsSchemaEntity155Update) -> Optional[HostelsModelEntity155]:
+        db_obj = self.get_entity_155_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_155(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_155_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_156_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity156]:
+        return self.db.query(HostelsModelEntity156).offset(skip).limit(limit).all()
+
+    def get_entity_156_by_id(self, entity_id: int) -> Optional[HostelsModelEntity156]:
+        return self.db.query(HostelsModelEntity156).filter(HostelsModelEntity156.id == entity_id).first()
+
+    def create_entity_156(self, payload: HostelsSchemaEntity156Create) -> HostelsModelEntity156:
+        db_obj = HostelsModelEntity156(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_156(self, entity_id: int, payload: HostelsSchemaEntity156Update) -> Optional[HostelsModelEntity156]:
+        db_obj = self.get_entity_156_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_156(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_156_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_157_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity157]:
+        return self.db.query(HostelsModelEntity157).offset(skip).limit(limit).all()
+
+    def get_entity_157_by_id(self, entity_id: int) -> Optional[HostelsModelEntity157]:
+        return self.db.query(HostelsModelEntity157).filter(HostelsModelEntity157.id == entity_id).first()
+
+    def create_entity_157(self, payload: HostelsSchemaEntity157Create) -> HostelsModelEntity157:
+        db_obj = HostelsModelEntity157(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_157(self, entity_id: int, payload: HostelsSchemaEntity157Update) -> Optional[HostelsModelEntity157]:
+        db_obj = self.get_entity_157_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_157(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_157_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_158_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity158]:
+        return self.db.query(HostelsModelEntity158).offset(skip).limit(limit).all()
+
+    def get_entity_158_by_id(self, entity_id: int) -> Optional[HostelsModelEntity158]:
+        return self.db.query(HostelsModelEntity158).filter(HostelsModelEntity158.id == entity_id).first()
+
+    def create_entity_158(self, payload: HostelsSchemaEntity158Create) -> HostelsModelEntity158:
+        db_obj = HostelsModelEntity158(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_158(self, entity_id: int, payload: HostelsSchemaEntity158Update) -> Optional[HostelsModelEntity158]:
+        db_obj = self.get_entity_158_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_158(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_158_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_159_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity159]:
+        return self.db.query(HostelsModelEntity159).offset(skip).limit(limit).all()
+
+    def get_entity_159_by_id(self, entity_id: int) -> Optional[HostelsModelEntity159]:
+        return self.db.query(HostelsModelEntity159).filter(HostelsModelEntity159.id == entity_id).first()
+
+    def create_entity_159(self, payload: HostelsSchemaEntity159Create) -> HostelsModelEntity159:
+        db_obj = HostelsModelEntity159(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_159(self, entity_id: int, payload: HostelsSchemaEntity159Update) -> Optional[HostelsModelEntity159]:
+        db_obj = self.get_entity_159_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_159(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_159_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_160_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity160]:
+        return self.db.query(HostelsModelEntity160).offset(skip).limit(limit).all()
+
+    def get_entity_160_by_id(self, entity_id: int) -> Optional[HostelsModelEntity160]:
+        return self.db.query(HostelsModelEntity160).filter(HostelsModelEntity160.id == entity_id).first()
+
+    def create_entity_160(self, payload: HostelsSchemaEntity160Create) -> HostelsModelEntity160:
+        db_obj = HostelsModelEntity160(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_160(self, entity_id: int, payload: HostelsSchemaEntity160Update) -> Optional[HostelsModelEntity160]:
+        db_obj = self.get_entity_160_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_160(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_160_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_161_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity161]:
+        return self.db.query(HostelsModelEntity161).offset(skip).limit(limit).all()
+
+    def get_entity_161_by_id(self, entity_id: int) -> Optional[HostelsModelEntity161]:
+        return self.db.query(HostelsModelEntity161).filter(HostelsModelEntity161.id == entity_id).first()
+
+    def create_entity_161(self, payload: HostelsSchemaEntity161Create) -> HostelsModelEntity161:
+        db_obj = HostelsModelEntity161(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_161(self, entity_id: int, payload: HostelsSchemaEntity161Update) -> Optional[HostelsModelEntity161]:
+        db_obj = self.get_entity_161_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_161(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_161_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_162_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity162]:
+        return self.db.query(HostelsModelEntity162).offset(skip).limit(limit).all()
+
+    def get_entity_162_by_id(self, entity_id: int) -> Optional[HostelsModelEntity162]:
+        return self.db.query(HostelsModelEntity162).filter(HostelsModelEntity162.id == entity_id).first()
+
+    def create_entity_162(self, payload: HostelsSchemaEntity162Create) -> HostelsModelEntity162:
+        db_obj = HostelsModelEntity162(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_162(self, entity_id: int, payload: HostelsSchemaEntity162Update) -> Optional[HostelsModelEntity162]:
+        db_obj = self.get_entity_162_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_162(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_162_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_163_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity163]:
+        return self.db.query(HostelsModelEntity163).offset(skip).limit(limit).all()
+
+    def get_entity_163_by_id(self, entity_id: int) -> Optional[HostelsModelEntity163]:
+        return self.db.query(HostelsModelEntity163).filter(HostelsModelEntity163.id == entity_id).first()
+
+    def create_entity_163(self, payload: HostelsSchemaEntity163Create) -> HostelsModelEntity163:
+        db_obj = HostelsModelEntity163(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_163(self, entity_id: int, payload: HostelsSchemaEntity163Update) -> Optional[HostelsModelEntity163]:
+        db_obj = self.get_entity_163_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_163(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_163_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_164_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity164]:
+        return self.db.query(HostelsModelEntity164).offset(skip).limit(limit).all()
+
+    def get_entity_164_by_id(self, entity_id: int) -> Optional[HostelsModelEntity164]:
+        return self.db.query(HostelsModelEntity164).filter(HostelsModelEntity164.id == entity_id).first()
+
+    def create_entity_164(self, payload: HostelsSchemaEntity164Create) -> HostelsModelEntity164:
+        db_obj = HostelsModelEntity164(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_164(self, entity_id: int, payload: HostelsSchemaEntity164Update) -> Optional[HostelsModelEntity164]:
+        db_obj = self.get_entity_164_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_164(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_164_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_165_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity165]:
+        return self.db.query(HostelsModelEntity165).offset(skip).limit(limit).all()
+
+    def get_entity_165_by_id(self, entity_id: int) -> Optional[HostelsModelEntity165]:
+        return self.db.query(HostelsModelEntity165).filter(HostelsModelEntity165.id == entity_id).first()
+
+    def create_entity_165(self, payload: HostelsSchemaEntity165Create) -> HostelsModelEntity165:
+        db_obj = HostelsModelEntity165(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_165(self, entity_id: int, payload: HostelsSchemaEntity165Update) -> Optional[HostelsModelEntity165]:
+        db_obj = self.get_entity_165_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_165(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_165_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_166_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity166]:
+        return self.db.query(HostelsModelEntity166).offset(skip).limit(limit).all()
+
+    def get_entity_166_by_id(self, entity_id: int) -> Optional[HostelsModelEntity166]:
+        return self.db.query(HostelsModelEntity166).filter(HostelsModelEntity166.id == entity_id).first()
+
+    def create_entity_166(self, payload: HostelsSchemaEntity166Create) -> HostelsModelEntity166:
+        db_obj = HostelsModelEntity166(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_166(self, entity_id: int, payload: HostelsSchemaEntity166Update) -> Optional[HostelsModelEntity166]:
+        db_obj = self.get_entity_166_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_166(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_166_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_167_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity167]:
+        return self.db.query(HostelsModelEntity167).offset(skip).limit(limit).all()
+
+    def get_entity_167_by_id(self, entity_id: int) -> Optional[HostelsModelEntity167]:
+        return self.db.query(HostelsModelEntity167).filter(HostelsModelEntity167.id == entity_id).first()
+
+    def create_entity_167(self, payload: HostelsSchemaEntity167Create) -> HostelsModelEntity167:
+        db_obj = HostelsModelEntity167(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_167(self, entity_id: int, payload: HostelsSchemaEntity167Update) -> Optional[HostelsModelEntity167]:
+        db_obj = self.get_entity_167_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_167(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_167_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_168_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity168]:
+        return self.db.query(HostelsModelEntity168).offset(skip).limit(limit).all()
+
+    def get_entity_168_by_id(self, entity_id: int) -> Optional[HostelsModelEntity168]:
+        return self.db.query(HostelsModelEntity168).filter(HostelsModelEntity168.id == entity_id).first()
+
+    def create_entity_168(self, payload: HostelsSchemaEntity168Create) -> HostelsModelEntity168:
+        db_obj = HostelsModelEntity168(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_168(self, entity_id: int, payload: HostelsSchemaEntity168Update) -> Optional[HostelsModelEntity168]:
+        db_obj = self.get_entity_168_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_168(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_168_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_169_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity169]:
+        return self.db.query(HostelsModelEntity169).offset(skip).limit(limit).all()
+
+    def get_entity_169_by_id(self, entity_id: int) -> Optional[HostelsModelEntity169]:
+        return self.db.query(HostelsModelEntity169).filter(HostelsModelEntity169.id == entity_id).first()
+
+    def create_entity_169(self, payload: HostelsSchemaEntity169Create) -> HostelsModelEntity169:
+        db_obj = HostelsModelEntity169(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_169(self, entity_id: int, payload: HostelsSchemaEntity169Update) -> Optional[HostelsModelEntity169]:
+        db_obj = self.get_entity_169_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_169(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_169_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_170_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity170]:
+        return self.db.query(HostelsModelEntity170).offset(skip).limit(limit).all()
+
+    def get_entity_170_by_id(self, entity_id: int) -> Optional[HostelsModelEntity170]:
+        return self.db.query(HostelsModelEntity170).filter(HostelsModelEntity170.id == entity_id).first()
+
+    def create_entity_170(self, payload: HostelsSchemaEntity170Create) -> HostelsModelEntity170:
+        db_obj = HostelsModelEntity170(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_170(self, entity_id: int, payload: HostelsSchemaEntity170Update) -> Optional[HostelsModelEntity170]:
+        db_obj = self.get_entity_170_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_170(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_170_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_171_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity171]:
+        return self.db.query(HostelsModelEntity171).offset(skip).limit(limit).all()
+
+    def get_entity_171_by_id(self, entity_id: int) -> Optional[HostelsModelEntity171]:
+        return self.db.query(HostelsModelEntity171).filter(HostelsModelEntity171.id == entity_id).first()
+
+    def create_entity_171(self, payload: HostelsSchemaEntity171Create) -> HostelsModelEntity171:
+        db_obj = HostelsModelEntity171(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_171(self, entity_id: int, payload: HostelsSchemaEntity171Update) -> Optional[HostelsModelEntity171]:
+        db_obj = self.get_entity_171_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_171(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_171_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_172_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity172]:
+        return self.db.query(HostelsModelEntity172).offset(skip).limit(limit).all()
+
+    def get_entity_172_by_id(self, entity_id: int) -> Optional[HostelsModelEntity172]:
+        return self.db.query(HostelsModelEntity172).filter(HostelsModelEntity172.id == entity_id).first()
+
+    def create_entity_172(self, payload: HostelsSchemaEntity172Create) -> HostelsModelEntity172:
+        db_obj = HostelsModelEntity172(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_172(self, entity_id: int, payload: HostelsSchemaEntity172Update) -> Optional[HostelsModelEntity172]:
+        db_obj = self.get_entity_172_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_172(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_172_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_173_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity173]:
+        return self.db.query(HostelsModelEntity173).offset(skip).limit(limit).all()
+
+    def get_entity_173_by_id(self, entity_id: int) -> Optional[HostelsModelEntity173]:
+        return self.db.query(HostelsModelEntity173).filter(HostelsModelEntity173.id == entity_id).first()
+
+    def create_entity_173(self, payload: HostelsSchemaEntity173Create) -> HostelsModelEntity173:
+        db_obj = HostelsModelEntity173(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_173(self, entity_id: int, payload: HostelsSchemaEntity173Update) -> Optional[HostelsModelEntity173]:
+        db_obj = self.get_entity_173_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_173(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_173_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_174_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity174]:
+        return self.db.query(HostelsModelEntity174).offset(skip).limit(limit).all()
+
+    def get_entity_174_by_id(self, entity_id: int) -> Optional[HostelsModelEntity174]:
+        return self.db.query(HostelsModelEntity174).filter(HostelsModelEntity174.id == entity_id).first()
+
+    def create_entity_174(self, payload: HostelsSchemaEntity174Create) -> HostelsModelEntity174:
+        db_obj = HostelsModelEntity174(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_174(self, entity_id: int, payload: HostelsSchemaEntity174Update) -> Optional[HostelsModelEntity174]:
+        db_obj = self.get_entity_174_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_174(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_174_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_175_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity175]:
+        return self.db.query(HostelsModelEntity175).offset(skip).limit(limit).all()
+
+    def get_entity_175_by_id(self, entity_id: int) -> Optional[HostelsModelEntity175]:
+        return self.db.query(HostelsModelEntity175).filter(HostelsModelEntity175.id == entity_id).first()
+
+    def create_entity_175(self, payload: HostelsSchemaEntity175Create) -> HostelsModelEntity175:
+        db_obj = HostelsModelEntity175(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_175(self, entity_id: int, payload: HostelsSchemaEntity175Update) -> Optional[HostelsModelEntity175]:
+        db_obj = self.get_entity_175_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_175(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_175_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_176_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity176]:
+        return self.db.query(HostelsModelEntity176).offset(skip).limit(limit).all()
+
+    def get_entity_176_by_id(self, entity_id: int) -> Optional[HostelsModelEntity176]:
+        return self.db.query(HostelsModelEntity176).filter(HostelsModelEntity176.id == entity_id).first()
+
+    def create_entity_176(self, payload: HostelsSchemaEntity176Create) -> HostelsModelEntity176:
+        db_obj = HostelsModelEntity176(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_176(self, entity_id: int, payload: HostelsSchemaEntity176Update) -> Optional[HostelsModelEntity176]:
+        db_obj = self.get_entity_176_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_176(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_176_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_177_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity177]:
+        return self.db.query(HostelsModelEntity177).offset(skip).limit(limit).all()
+
+    def get_entity_177_by_id(self, entity_id: int) -> Optional[HostelsModelEntity177]:
+        return self.db.query(HostelsModelEntity177).filter(HostelsModelEntity177.id == entity_id).first()
+
+    def create_entity_177(self, payload: HostelsSchemaEntity177Create) -> HostelsModelEntity177:
+        db_obj = HostelsModelEntity177(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_177(self, entity_id: int, payload: HostelsSchemaEntity177Update) -> Optional[HostelsModelEntity177]:
+        db_obj = self.get_entity_177_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_177(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_177_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_178_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity178]:
+        return self.db.query(HostelsModelEntity178).offset(skip).limit(limit).all()
+
+    def get_entity_178_by_id(self, entity_id: int) -> Optional[HostelsModelEntity178]:
+        return self.db.query(HostelsModelEntity178).filter(HostelsModelEntity178.id == entity_id).first()
+
+    def create_entity_178(self, payload: HostelsSchemaEntity178Create) -> HostelsModelEntity178:
+        db_obj = HostelsModelEntity178(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_178(self, entity_id: int, payload: HostelsSchemaEntity178Update) -> Optional[HostelsModelEntity178]:
+        db_obj = self.get_entity_178_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_178(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_178_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_179_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity179]:
+        return self.db.query(HostelsModelEntity179).offset(skip).limit(limit).all()
+
+    def get_entity_179_by_id(self, entity_id: int) -> Optional[HostelsModelEntity179]:
+        return self.db.query(HostelsModelEntity179).filter(HostelsModelEntity179.id == entity_id).first()
+
+    def create_entity_179(self, payload: HostelsSchemaEntity179Create) -> HostelsModelEntity179:
+        db_obj = HostelsModelEntity179(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_179(self, entity_id: int, payload: HostelsSchemaEntity179Update) -> Optional[HostelsModelEntity179]:
+        db_obj = self.get_entity_179_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_179(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_179_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_180_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity180]:
+        return self.db.query(HostelsModelEntity180).offset(skip).limit(limit).all()
+
+    def get_entity_180_by_id(self, entity_id: int) -> Optional[HostelsModelEntity180]:
+        return self.db.query(HostelsModelEntity180).filter(HostelsModelEntity180.id == entity_id).first()
+
+    def create_entity_180(self, payload: HostelsSchemaEntity180Create) -> HostelsModelEntity180:
+        db_obj = HostelsModelEntity180(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_180(self, entity_id: int, payload: HostelsSchemaEntity180Update) -> Optional[HostelsModelEntity180]:
+        db_obj = self.get_entity_180_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_180(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_180_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_181_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity181]:
+        return self.db.query(HostelsModelEntity181).offset(skip).limit(limit).all()
+
+    def get_entity_181_by_id(self, entity_id: int) -> Optional[HostelsModelEntity181]:
+        return self.db.query(HostelsModelEntity181).filter(HostelsModelEntity181.id == entity_id).first()
+
+    def create_entity_181(self, payload: HostelsSchemaEntity181Create) -> HostelsModelEntity181:
+        db_obj = HostelsModelEntity181(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_181(self, entity_id: int, payload: HostelsSchemaEntity181Update) -> Optional[HostelsModelEntity181]:
+        db_obj = self.get_entity_181_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_181(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_181_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_182_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity182]:
+        return self.db.query(HostelsModelEntity182).offset(skip).limit(limit).all()
+
+    def get_entity_182_by_id(self, entity_id: int) -> Optional[HostelsModelEntity182]:
+        return self.db.query(HostelsModelEntity182).filter(HostelsModelEntity182.id == entity_id).first()
+
+    def create_entity_182(self, payload: HostelsSchemaEntity182Create) -> HostelsModelEntity182:
+        db_obj = HostelsModelEntity182(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_182(self, entity_id: int, payload: HostelsSchemaEntity182Update) -> Optional[HostelsModelEntity182]:
+        db_obj = self.get_entity_182_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_182(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_182_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_183_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity183]:
+        return self.db.query(HostelsModelEntity183).offset(skip).limit(limit).all()
+
+    def get_entity_183_by_id(self, entity_id: int) -> Optional[HostelsModelEntity183]:
+        return self.db.query(HostelsModelEntity183).filter(HostelsModelEntity183.id == entity_id).first()
+
+    def create_entity_183(self, payload: HostelsSchemaEntity183Create) -> HostelsModelEntity183:
+        db_obj = HostelsModelEntity183(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_183(self, entity_id: int, payload: HostelsSchemaEntity183Update) -> Optional[HostelsModelEntity183]:
+        db_obj = self.get_entity_183_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_183(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_183_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_184_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity184]:
+        return self.db.query(HostelsModelEntity184).offset(skip).limit(limit).all()
+
+    def get_entity_184_by_id(self, entity_id: int) -> Optional[HostelsModelEntity184]:
+        return self.db.query(HostelsModelEntity184).filter(HostelsModelEntity184.id == entity_id).first()
+
+    def create_entity_184(self, payload: HostelsSchemaEntity184Create) -> HostelsModelEntity184:
+        db_obj = HostelsModelEntity184(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_184(self, entity_id: int, payload: HostelsSchemaEntity184Update) -> Optional[HostelsModelEntity184]:
+        db_obj = self.get_entity_184_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_184(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_184_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_185_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity185]:
+        return self.db.query(HostelsModelEntity185).offset(skip).limit(limit).all()
+
+    def get_entity_185_by_id(self, entity_id: int) -> Optional[HostelsModelEntity185]:
+        return self.db.query(HostelsModelEntity185).filter(HostelsModelEntity185.id == entity_id).first()
+
+    def create_entity_185(self, payload: HostelsSchemaEntity185Create) -> HostelsModelEntity185:
+        db_obj = HostelsModelEntity185(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_185(self, entity_id: int, payload: HostelsSchemaEntity185Update) -> Optional[HostelsModelEntity185]:
+        db_obj = self.get_entity_185_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_185(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_185_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_186_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity186]:
+        return self.db.query(HostelsModelEntity186).offset(skip).limit(limit).all()
+
+    def get_entity_186_by_id(self, entity_id: int) -> Optional[HostelsModelEntity186]:
+        return self.db.query(HostelsModelEntity186).filter(HostelsModelEntity186.id == entity_id).first()
+
+    def create_entity_186(self, payload: HostelsSchemaEntity186Create) -> HostelsModelEntity186:
+        db_obj = HostelsModelEntity186(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_186(self, entity_id: int, payload: HostelsSchemaEntity186Update) -> Optional[HostelsModelEntity186]:
+        db_obj = self.get_entity_186_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_186(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_186_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_187_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity187]:
+        return self.db.query(HostelsModelEntity187).offset(skip).limit(limit).all()
+
+    def get_entity_187_by_id(self, entity_id: int) -> Optional[HostelsModelEntity187]:
+        return self.db.query(HostelsModelEntity187).filter(HostelsModelEntity187.id == entity_id).first()
+
+    def create_entity_187(self, payload: HostelsSchemaEntity187Create) -> HostelsModelEntity187:
+        db_obj = HostelsModelEntity187(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_187(self, entity_id: int, payload: HostelsSchemaEntity187Update) -> Optional[HostelsModelEntity187]:
+        db_obj = self.get_entity_187_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_187(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_187_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_188_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity188]:
+        return self.db.query(HostelsModelEntity188).offset(skip).limit(limit).all()
+
+    def get_entity_188_by_id(self, entity_id: int) -> Optional[HostelsModelEntity188]:
+        return self.db.query(HostelsModelEntity188).filter(HostelsModelEntity188.id == entity_id).first()
+
+    def create_entity_188(self, payload: HostelsSchemaEntity188Create) -> HostelsModelEntity188:
+        db_obj = HostelsModelEntity188(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_188(self, entity_id: int, payload: HostelsSchemaEntity188Update) -> Optional[HostelsModelEntity188]:
+        db_obj = self.get_entity_188_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_188(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_188_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_189_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity189]:
+        return self.db.query(HostelsModelEntity189).offset(skip).limit(limit).all()
+
+    def get_entity_189_by_id(self, entity_id: int) -> Optional[HostelsModelEntity189]:
+        return self.db.query(HostelsModelEntity189).filter(HostelsModelEntity189.id == entity_id).first()
+
+    def create_entity_189(self, payload: HostelsSchemaEntity189Create) -> HostelsModelEntity189:
+        db_obj = HostelsModelEntity189(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_189(self, entity_id: int, payload: HostelsSchemaEntity189Update) -> Optional[HostelsModelEntity189]:
+        db_obj = self.get_entity_189_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_189(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_189_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_190_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity190]:
+        return self.db.query(HostelsModelEntity190).offset(skip).limit(limit).all()
+
+    def get_entity_190_by_id(self, entity_id: int) -> Optional[HostelsModelEntity190]:
+        return self.db.query(HostelsModelEntity190).filter(HostelsModelEntity190.id == entity_id).first()
+
+    def create_entity_190(self, payload: HostelsSchemaEntity190Create) -> HostelsModelEntity190:
+        db_obj = HostelsModelEntity190(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_190(self, entity_id: int, payload: HostelsSchemaEntity190Update) -> Optional[HostelsModelEntity190]:
+        db_obj = self.get_entity_190_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_190(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_190_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_191_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity191]:
+        return self.db.query(HostelsModelEntity191).offset(skip).limit(limit).all()
+
+    def get_entity_191_by_id(self, entity_id: int) -> Optional[HostelsModelEntity191]:
+        return self.db.query(HostelsModelEntity191).filter(HostelsModelEntity191.id == entity_id).first()
+
+    def create_entity_191(self, payload: HostelsSchemaEntity191Create) -> HostelsModelEntity191:
+        db_obj = HostelsModelEntity191(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_191(self, entity_id: int, payload: HostelsSchemaEntity191Update) -> Optional[HostelsModelEntity191]:
+        db_obj = self.get_entity_191_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_191(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_191_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_192_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity192]:
+        return self.db.query(HostelsModelEntity192).offset(skip).limit(limit).all()
+
+    def get_entity_192_by_id(self, entity_id: int) -> Optional[HostelsModelEntity192]:
+        return self.db.query(HostelsModelEntity192).filter(HostelsModelEntity192.id == entity_id).first()
+
+    def create_entity_192(self, payload: HostelsSchemaEntity192Create) -> HostelsModelEntity192:
+        db_obj = HostelsModelEntity192(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_192(self, entity_id: int, payload: HostelsSchemaEntity192Update) -> Optional[HostelsModelEntity192]:
+        db_obj = self.get_entity_192_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_192(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_192_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_193_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity193]:
+        return self.db.query(HostelsModelEntity193).offset(skip).limit(limit).all()
+
+    def get_entity_193_by_id(self, entity_id: int) -> Optional[HostelsModelEntity193]:
+        return self.db.query(HostelsModelEntity193).filter(HostelsModelEntity193.id == entity_id).first()
+
+    def create_entity_193(self, payload: HostelsSchemaEntity193Create) -> HostelsModelEntity193:
+        db_obj = HostelsModelEntity193(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_193(self, entity_id: int, payload: HostelsSchemaEntity193Update) -> Optional[HostelsModelEntity193]:
+        db_obj = self.get_entity_193_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_193(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_193_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_194_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity194]:
+        return self.db.query(HostelsModelEntity194).offset(skip).limit(limit).all()
+
+    def get_entity_194_by_id(self, entity_id: int) -> Optional[HostelsModelEntity194]:
+        return self.db.query(HostelsModelEntity194).filter(HostelsModelEntity194.id == entity_id).first()
+
+    def create_entity_194(self, payload: HostelsSchemaEntity194Create) -> HostelsModelEntity194:
+        db_obj = HostelsModelEntity194(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_194(self, entity_id: int, payload: HostelsSchemaEntity194Update) -> Optional[HostelsModelEntity194]:
+        db_obj = self.get_entity_194_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_194(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_194_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_195_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity195]:
+        return self.db.query(HostelsModelEntity195).offset(skip).limit(limit).all()
+
+    def get_entity_195_by_id(self, entity_id: int) -> Optional[HostelsModelEntity195]:
+        return self.db.query(HostelsModelEntity195).filter(HostelsModelEntity195.id == entity_id).first()
+
+    def create_entity_195(self, payload: HostelsSchemaEntity195Create) -> HostelsModelEntity195:
+        db_obj = HostelsModelEntity195(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_195(self, entity_id: int, payload: HostelsSchemaEntity195Update) -> Optional[HostelsModelEntity195]:
+        db_obj = self.get_entity_195_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_195(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_195_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_196_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity196]:
+        return self.db.query(HostelsModelEntity196).offset(skip).limit(limit).all()
+
+    def get_entity_196_by_id(self, entity_id: int) -> Optional[HostelsModelEntity196]:
+        return self.db.query(HostelsModelEntity196).filter(HostelsModelEntity196.id == entity_id).first()
+
+    def create_entity_196(self, payload: HostelsSchemaEntity196Create) -> HostelsModelEntity196:
+        db_obj = HostelsModelEntity196(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_196(self, entity_id: int, payload: HostelsSchemaEntity196Update) -> Optional[HostelsModelEntity196]:
+        db_obj = self.get_entity_196_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_196(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_196_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_197_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity197]:
+        return self.db.query(HostelsModelEntity197).offset(skip).limit(limit).all()
+
+    def get_entity_197_by_id(self, entity_id: int) -> Optional[HostelsModelEntity197]:
+        return self.db.query(HostelsModelEntity197).filter(HostelsModelEntity197.id == entity_id).first()
+
+    def create_entity_197(self, payload: HostelsSchemaEntity197Create) -> HostelsModelEntity197:
+        db_obj = HostelsModelEntity197(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_197(self, entity_id: int, payload: HostelsSchemaEntity197Update) -> Optional[HostelsModelEntity197]:
+        db_obj = self.get_entity_197_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_197(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_197_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_198_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity198]:
+        return self.db.query(HostelsModelEntity198).offset(skip).limit(limit).all()
+
+    def get_entity_198_by_id(self, entity_id: int) -> Optional[HostelsModelEntity198]:
+        return self.db.query(HostelsModelEntity198).filter(HostelsModelEntity198.id == entity_id).first()
+
+    def create_entity_198(self, payload: HostelsSchemaEntity198Create) -> HostelsModelEntity198:
+        db_obj = HostelsModelEntity198(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_198(self, entity_id: int, payload: HostelsSchemaEntity198Update) -> Optional[HostelsModelEntity198]:
+        db_obj = self.get_entity_198_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_198(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_198_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_199_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity199]:
+        return self.db.query(HostelsModelEntity199).offset(skip).limit(limit).all()
+
+    def get_entity_199_by_id(self, entity_id: int) -> Optional[HostelsModelEntity199]:
+        return self.db.query(HostelsModelEntity199).filter(HostelsModelEntity199.id == entity_id).first()
+
+    def create_entity_199(self, payload: HostelsSchemaEntity199Create) -> HostelsModelEntity199:
+        db_obj = HostelsModelEntity199(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_199(self, entity_id: int, payload: HostelsSchemaEntity199Update) -> Optional[HostelsModelEntity199]:
+        db_obj = self.get_entity_199_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_199(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_199_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_200_list(self, skip: int = 0, limit: int = 100) -> List[HostelsModelEntity200]:
+        return self.db.query(HostelsModelEntity200).offset(skip).limit(limit).all()
+
+    def get_entity_200_by_id(self, entity_id: int) -> Optional[HostelsModelEntity200]:
+        return self.db.query(HostelsModelEntity200).filter(HostelsModelEntity200.id == entity_id).first()
+
+    def create_entity_200(self, payload: HostelsSchemaEntity200Create) -> HostelsModelEntity200:
+        db_obj = HostelsModelEntity200(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_200(self, entity_id: int, payload: HostelsSchemaEntity200Update) -> Optional[HostelsModelEntity200]:
+        db_obj = self.get_entity_200_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_200(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_200_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+

@@ -1206,3 +1206,803 @@ class HealthRepository120:
     def find_by_code(self, code: str) -> Optional[HealthModelEntity120]:
         return self.db.query(HealthModelEntity120).filter(HealthModelEntity120.entity_code == code).first()
 
+class HealthRepository121:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity121]:
+        return self.db.query(HealthModelEntity121).filter(HealthModelEntity121.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity121]:
+        return self.db.query(HealthModelEntity121).filter(HealthModelEntity121.entity_code == code).first()
+
+class HealthRepository122:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity122]:
+        return self.db.query(HealthModelEntity122).filter(HealthModelEntity122.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity122]:
+        return self.db.query(HealthModelEntity122).filter(HealthModelEntity122.entity_code == code).first()
+
+class HealthRepository123:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity123]:
+        return self.db.query(HealthModelEntity123).filter(HealthModelEntity123.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity123]:
+        return self.db.query(HealthModelEntity123).filter(HealthModelEntity123.entity_code == code).first()
+
+class HealthRepository124:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity124]:
+        return self.db.query(HealthModelEntity124).filter(HealthModelEntity124.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity124]:
+        return self.db.query(HealthModelEntity124).filter(HealthModelEntity124.entity_code == code).first()
+
+class HealthRepository125:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity125]:
+        return self.db.query(HealthModelEntity125).filter(HealthModelEntity125.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity125]:
+        return self.db.query(HealthModelEntity125).filter(HealthModelEntity125.entity_code == code).first()
+
+class HealthRepository126:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity126]:
+        return self.db.query(HealthModelEntity126).filter(HealthModelEntity126.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity126]:
+        return self.db.query(HealthModelEntity126).filter(HealthModelEntity126.entity_code == code).first()
+
+class HealthRepository127:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity127]:
+        return self.db.query(HealthModelEntity127).filter(HealthModelEntity127.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity127]:
+        return self.db.query(HealthModelEntity127).filter(HealthModelEntity127.entity_code == code).first()
+
+class HealthRepository128:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity128]:
+        return self.db.query(HealthModelEntity128).filter(HealthModelEntity128.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity128]:
+        return self.db.query(HealthModelEntity128).filter(HealthModelEntity128.entity_code == code).first()
+
+class HealthRepository129:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity129]:
+        return self.db.query(HealthModelEntity129).filter(HealthModelEntity129.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity129]:
+        return self.db.query(HealthModelEntity129).filter(HealthModelEntity129.entity_code == code).first()
+
+class HealthRepository130:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity130]:
+        return self.db.query(HealthModelEntity130).filter(HealthModelEntity130.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity130]:
+        return self.db.query(HealthModelEntity130).filter(HealthModelEntity130.entity_code == code).first()
+
+class HealthRepository131:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity131]:
+        return self.db.query(HealthModelEntity131).filter(HealthModelEntity131.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity131]:
+        return self.db.query(HealthModelEntity131).filter(HealthModelEntity131.entity_code == code).first()
+
+class HealthRepository132:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity132]:
+        return self.db.query(HealthModelEntity132).filter(HealthModelEntity132.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity132]:
+        return self.db.query(HealthModelEntity132).filter(HealthModelEntity132.entity_code == code).first()
+
+class HealthRepository133:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity133]:
+        return self.db.query(HealthModelEntity133).filter(HealthModelEntity133.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity133]:
+        return self.db.query(HealthModelEntity133).filter(HealthModelEntity133.entity_code == code).first()
+
+class HealthRepository134:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity134]:
+        return self.db.query(HealthModelEntity134).filter(HealthModelEntity134.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity134]:
+        return self.db.query(HealthModelEntity134).filter(HealthModelEntity134.entity_code == code).first()
+
+class HealthRepository135:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity135]:
+        return self.db.query(HealthModelEntity135).filter(HealthModelEntity135.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity135]:
+        return self.db.query(HealthModelEntity135).filter(HealthModelEntity135.entity_code == code).first()
+
+class HealthRepository136:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity136]:
+        return self.db.query(HealthModelEntity136).filter(HealthModelEntity136.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity136]:
+        return self.db.query(HealthModelEntity136).filter(HealthModelEntity136.entity_code == code).first()
+
+class HealthRepository137:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity137]:
+        return self.db.query(HealthModelEntity137).filter(HealthModelEntity137.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity137]:
+        return self.db.query(HealthModelEntity137).filter(HealthModelEntity137.entity_code == code).first()
+
+class HealthRepository138:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity138]:
+        return self.db.query(HealthModelEntity138).filter(HealthModelEntity138.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity138]:
+        return self.db.query(HealthModelEntity138).filter(HealthModelEntity138.entity_code == code).first()
+
+class HealthRepository139:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity139]:
+        return self.db.query(HealthModelEntity139).filter(HealthModelEntity139.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity139]:
+        return self.db.query(HealthModelEntity139).filter(HealthModelEntity139.entity_code == code).first()
+
+class HealthRepository140:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity140]:
+        return self.db.query(HealthModelEntity140).filter(HealthModelEntity140.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity140]:
+        return self.db.query(HealthModelEntity140).filter(HealthModelEntity140.entity_code == code).first()
+
+class HealthRepository141:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity141]:
+        return self.db.query(HealthModelEntity141).filter(HealthModelEntity141.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity141]:
+        return self.db.query(HealthModelEntity141).filter(HealthModelEntity141.entity_code == code).first()
+
+class HealthRepository142:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity142]:
+        return self.db.query(HealthModelEntity142).filter(HealthModelEntity142.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity142]:
+        return self.db.query(HealthModelEntity142).filter(HealthModelEntity142.entity_code == code).first()
+
+class HealthRepository143:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity143]:
+        return self.db.query(HealthModelEntity143).filter(HealthModelEntity143.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity143]:
+        return self.db.query(HealthModelEntity143).filter(HealthModelEntity143.entity_code == code).first()
+
+class HealthRepository144:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity144]:
+        return self.db.query(HealthModelEntity144).filter(HealthModelEntity144.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity144]:
+        return self.db.query(HealthModelEntity144).filter(HealthModelEntity144.entity_code == code).first()
+
+class HealthRepository145:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity145]:
+        return self.db.query(HealthModelEntity145).filter(HealthModelEntity145.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity145]:
+        return self.db.query(HealthModelEntity145).filter(HealthModelEntity145.entity_code == code).first()
+
+class HealthRepository146:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity146]:
+        return self.db.query(HealthModelEntity146).filter(HealthModelEntity146.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity146]:
+        return self.db.query(HealthModelEntity146).filter(HealthModelEntity146.entity_code == code).first()
+
+class HealthRepository147:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity147]:
+        return self.db.query(HealthModelEntity147).filter(HealthModelEntity147.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity147]:
+        return self.db.query(HealthModelEntity147).filter(HealthModelEntity147.entity_code == code).first()
+
+class HealthRepository148:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity148]:
+        return self.db.query(HealthModelEntity148).filter(HealthModelEntity148.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity148]:
+        return self.db.query(HealthModelEntity148).filter(HealthModelEntity148.entity_code == code).first()
+
+class HealthRepository149:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity149]:
+        return self.db.query(HealthModelEntity149).filter(HealthModelEntity149.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity149]:
+        return self.db.query(HealthModelEntity149).filter(HealthModelEntity149.entity_code == code).first()
+
+class HealthRepository150:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity150]:
+        return self.db.query(HealthModelEntity150).filter(HealthModelEntity150.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity150]:
+        return self.db.query(HealthModelEntity150).filter(HealthModelEntity150.entity_code == code).first()
+
+class HealthRepository151:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity151]:
+        return self.db.query(HealthModelEntity151).filter(HealthModelEntity151.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity151]:
+        return self.db.query(HealthModelEntity151).filter(HealthModelEntity151.entity_code == code).first()
+
+class HealthRepository152:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity152]:
+        return self.db.query(HealthModelEntity152).filter(HealthModelEntity152.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity152]:
+        return self.db.query(HealthModelEntity152).filter(HealthModelEntity152.entity_code == code).first()
+
+class HealthRepository153:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity153]:
+        return self.db.query(HealthModelEntity153).filter(HealthModelEntity153.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity153]:
+        return self.db.query(HealthModelEntity153).filter(HealthModelEntity153.entity_code == code).first()
+
+class HealthRepository154:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity154]:
+        return self.db.query(HealthModelEntity154).filter(HealthModelEntity154.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity154]:
+        return self.db.query(HealthModelEntity154).filter(HealthModelEntity154.entity_code == code).first()
+
+class HealthRepository155:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity155]:
+        return self.db.query(HealthModelEntity155).filter(HealthModelEntity155.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity155]:
+        return self.db.query(HealthModelEntity155).filter(HealthModelEntity155.entity_code == code).first()
+
+class HealthRepository156:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity156]:
+        return self.db.query(HealthModelEntity156).filter(HealthModelEntity156.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity156]:
+        return self.db.query(HealthModelEntity156).filter(HealthModelEntity156.entity_code == code).first()
+
+class HealthRepository157:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity157]:
+        return self.db.query(HealthModelEntity157).filter(HealthModelEntity157.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity157]:
+        return self.db.query(HealthModelEntity157).filter(HealthModelEntity157.entity_code == code).first()
+
+class HealthRepository158:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity158]:
+        return self.db.query(HealthModelEntity158).filter(HealthModelEntity158.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity158]:
+        return self.db.query(HealthModelEntity158).filter(HealthModelEntity158.entity_code == code).first()
+
+class HealthRepository159:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity159]:
+        return self.db.query(HealthModelEntity159).filter(HealthModelEntity159.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity159]:
+        return self.db.query(HealthModelEntity159).filter(HealthModelEntity159.entity_code == code).first()
+
+class HealthRepository160:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity160]:
+        return self.db.query(HealthModelEntity160).filter(HealthModelEntity160.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity160]:
+        return self.db.query(HealthModelEntity160).filter(HealthModelEntity160.entity_code == code).first()
+
+class HealthRepository161:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity161]:
+        return self.db.query(HealthModelEntity161).filter(HealthModelEntity161.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity161]:
+        return self.db.query(HealthModelEntity161).filter(HealthModelEntity161.entity_code == code).first()
+
+class HealthRepository162:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity162]:
+        return self.db.query(HealthModelEntity162).filter(HealthModelEntity162.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity162]:
+        return self.db.query(HealthModelEntity162).filter(HealthModelEntity162.entity_code == code).first()
+
+class HealthRepository163:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity163]:
+        return self.db.query(HealthModelEntity163).filter(HealthModelEntity163.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity163]:
+        return self.db.query(HealthModelEntity163).filter(HealthModelEntity163.entity_code == code).first()
+
+class HealthRepository164:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity164]:
+        return self.db.query(HealthModelEntity164).filter(HealthModelEntity164.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity164]:
+        return self.db.query(HealthModelEntity164).filter(HealthModelEntity164.entity_code == code).first()
+
+class HealthRepository165:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity165]:
+        return self.db.query(HealthModelEntity165).filter(HealthModelEntity165.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity165]:
+        return self.db.query(HealthModelEntity165).filter(HealthModelEntity165.entity_code == code).first()
+
+class HealthRepository166:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity166]:
+        return self.db.query(HealthModelEntity166).filter(HealthModelEntity166.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity166]:
+        return self.db.query(HealthModelEntity166).filter(HealthModelEntity166.entity_code == code).first()
+
+class HealthRepository167:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity167]:
+        return self.db.query(HealthModelEntity167).filter(HealthModelEntity167.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity167]:
+        return self.db.query(HealthModelEntity167).filter(HealthModelEntity167.entity_code == code).first()
+
+class HealthRepository168:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity168]:
+        return self.db.query(HealthModelEntity168).filter(HealthModelEntity168.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity168]:
+        return self.db.query(HealthModelEntity168).filter(HealthModelEntity168.entity_code == code).first()
+
+class HealthRepository169:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity169]:
+        return self.db.query(HealthModelEntity169).filter(HealthModelEntity169.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity169]:
+        return self.db.query(HealthModelEntity169).filter(HealthModelEntity169.entity_code == code).first()
+
+class HealthRepository170:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity170]:
+        return self.db.query(HealthModelEntity170).filter(HealthModelEntity170.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity170]:
+        return self.db.query(HealthModelEntity170).filter(HealthModelEntity170.entity_code == code).first()
+
+class HealthRepository171:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity171]:
+        return self.db.query(HealthModelEntity171).filter(HealthModelEntity171.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity171]:
+        return self.db.query(HealthModelEntity171).filter(HealthModelEntity171.entity_code == code).first()
+
+class HealthRepository172:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity172]:
+        return self.db.query(HealthModelEntity172).filter(HealthModelEntity172.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity172]:
+        return self.db.query(HealthModelEntity172).filter(HealthModelEntity172.entity_code == code).first()
+
+class HealthRepository173:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity173]:
+        return self.db.query(HealthModelEntity173).filter(HealthModelEntity173.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity173]:
+        return self.db.query(HealthModelEntity173).filter(HealthModelEntity173.entity_code == code).first()
+
+class HealthRepository174:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity174]:
+        return self.db.query(HealthModelEntity174).filter(HealthModelEntity174.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity174]:
+        return self.db.query(HealthModelEntity174).filter(HealthModelEntity174.entity_code == code).first()
+
+class HealthRepository175:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity175]:
+        return self.db.query(HealthModelEntity175).filter(HealthModelEntity175.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity175]:
+        return self.db.query(HealthModelEntity175).filter(HealthModelEntity175.entity_code == code).first()
+
+class HealthRepository176:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity176]:
+        return self.db.query(HealthModelEntity176).filter(HealthModelEntity176.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity176]:
+        return self.db.query(HealthModelEntity176).filter(HealthModelEntity176.entity_code == code).first()
+
+class HealthRepository177:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity177]:
+        return self.db.query(HealthModelEntity177).filter(HealthModelEntity177.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity177]:
+        return self.db.query(HealthModelEntity177).filter(HealthModelEntity177.entity_code == code).first()
+
+class HealthRepository178:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity178]:
+        return self.db.query(HealthModelEntity178).filter(HealthModelEntity178.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity178]:
+        return self.db.query(HealthModelEntity178).filter(HealthModelEntity178.entity_code == code).first()
+
+class HealthRepository179:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity179]:
+        return self.db.query(HealthModelEntity179).filter(HealthModelEntity179.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity179]:
+        return self.db.query(HealthModelEntity179).filter(HealthModelEntity179.entity_code == code).first()
+
+class HealthRepository180:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity180]:
+        return self.db.query(HealthModelEntity180).filter(HealthModelEntity180.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity180]:
+        return self.db.query(HealthModelEntity180).filter(HealthModelEntity180.entity_code == code).first()
+
+class HealthRepository181:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity181]:
+        return self.db.query(HealthModelEntity181).filter(HealthModelEntity181.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity181]:
+        return self.db.query(HealthModelEntity181).filter(HealthModelEntity181.entity_code == code).first()
+
+class HealthRepository182:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity182]:
+        return self.db.query(HealthModelEntity182).filter(HealthModelEntity182.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity182]:
+        return self.db.query(HealthModelEntity182).filter(HealthModelEntity182.entity_code == code).first()
+
+class HealthRepository183:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity183]:
+        return self.db.query(HealthModelEntity183).filter(HealthModelEntity183.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity183]:
+        return self.db.query(HealthModelEntity183).filter(HealthModelEntity183.entity_code == code).first()
+
+class HealthRepository184:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity184]:
+        return self.db.query(HealthModelEntity184).filter(HealthModelEntity184.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity184]:
+        return self.db.query(HealthModelEntity184).filter(HealthModelEntity184.entity_code == code).first()
+
+class HealthRepository185:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity185]:
+        return self.db.query(HealthModelEntity185).filter(HealthModelEntity185.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity185]:
+        return self.db.query(HealthModelEntity185).filter(HealthModelEntity185.entity_code == code).first()
+
+class HealthRepository186:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity186]:
+        return self.db.query(HealthModelEntity186).filter(HealthModelEntity186.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity186]:
+        return self.db.query(HealthModelEntity186).filter(HealthModelEntity186.entity_code == code).first()
+
+class HealthRepository187:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity187]:
+        return self.db.query(HealthModelEntity187).filter(HealthModelEntity187.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity187]:
+        return self.db.query(HealthModelEntity187).filter(HealthModelEntity187.entity_code == code).first()
+
+class HealthRepository188:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity188]:
+        return self.db.query(HealthModelEntity188).filter(HealthModelEntity188.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity188]:
+        return self.db.query(HealthModelEntity188).filter(HealthModelEntity188.entity_code == code).first()
+
+class HealthRepository189:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity189]:
+        return self.db.query(HealthModelEntity189).filter(HealthModelEntity189.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity189]:
+        return self.db.query(HealthModelEntity189).filter(HealthModelEntity189.entity_code == code).first()
+
+class HealthRepository190:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity190]:
+        return self.db.query(HealthModelEntity190).filter(HealthModelEntity190.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity190]:
+        return self.db.query(HealthModelEntity190).filter(HealthModelEntity190.entity_code == code).first()
+
+class HealthRepository191:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity191]:
+        return self.db.query(HealthModelEntity191).filter(HealthModelEntity191.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity191]:
+        return self.db.query(HealthModelEntity191).filter(HealthModelEntity191.entity_code == code).first()
+
+class HealthRepository192:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity192]:
+        return self.db.query(HealthModelEntity192).filter(HealthModelEntity192.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity192]:
+        return self.db.query(HealthModelEntity192).filter(HealthModelEntity192.entity_code == code).first()
+
+class HealthRepository193:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity193]:
+        return self.db.query(HealthModelEntity193).filter(HealthModelEntity193.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity193]:
+        return self.db.query(HealthModelEntity193).filter(HealthModelEntity193.entity_code == code).first()
+
+class HealthRepository194:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity194]:
+        return self.db.query(HealthModelEntity194).filter(HealthModelEntity194.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity194]:
+        return self.db.query(HealthModelEntity194).filter(HealthModelEntity194.entity_code == code).first()
+
+class HealthRepository195:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity195]:
+        return self.db.query(HealthModelEntity195).filter(HealthModelEntity195.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity195]:
+        return self.db.query(HealthModelEntity195).filter(HealthModelEntity195.entity_code == code).first()
+
+class HealthRepository196:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity196]:
+        return self.db.query(HealthModelEntity196).filter(HealthModelEntity196.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity196]:
+        return self.db.query(HealthModelEntity196).filter(HealthModelEntity196.entity_code == code).first()
+
+class HealthRepository197:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity197]:
+        return self.db.query(HealthModelEntity197).filter(HealthModelEntity197.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity197]:
+        return self.db.query(HealthModelEntity197).filter(HealthModelEntity197.entity_code == code).first()
+
+class HealthRepository198:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity198]:
+        return self.db.query(HealthModelEntity198).filter(HealthModelEntity198.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity198]:
+        return self.db.query(HealthModelEntity198).filter(HealthModelEntity198.entity_code == code).first()
+
+class HealthRepository199:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity199]:
+        return self.db.query(HealthModelEntity199).filter(HealthModelEntity199.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity199]:
+        return self.db.query(HealthModelEntity199).filter(HealthModelEntity199.entity_code == code).first()
+
+class HealthRepository200:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HealthModelEntity200]:
+        return self.db.query(HealthModelEntity200).filter(HealthModelEntity200.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HealthModelEntity200]:
+        return self.db.query(HealthModelEntity200).filter(HealthModelEntity200.entity_code == code).first()
+

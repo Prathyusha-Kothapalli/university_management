@@ -3486,3 +3486,2323 @@ class ResearchSchemaEntity120Response(ResearchSchemaEntity120Base):
 
     model_config = ConfigDict(from_attributes=True)
 
+class ResearchSchemaEntity121Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 121")
+    category: str = Field(default="Category_121", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=121 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity121Create(ResearchSchemaEntity121Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity121Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity121Response(ResearchSchemaEntity121Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity122Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 122")
+    category: str = Field(default="Category_122", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=122 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity122Create(ResearchSchemaEntity122Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity122Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity122Response(ResearchSchemaEntity122Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity123Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 123")
+    category: str = Field(default="Category_123", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=123 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity123Create(ResearchSchemaEntity123Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity123Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity123Response(ResearchSchemaEntity123Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity124Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 124")
+    category: str = Field(default="Category_124", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=124 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity124Create(ResearchSchemaEntity124Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity124Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity124Response(ResearchSchemaEntity124Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity125Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 125")
+    category: str = Field(default="Category_125", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=125 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity125Create(ResearchSchemaEntity125Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity125Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity125Response(ResearchSchemaEntity125Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity126Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 126")
+    category: str = Field(default="Category_126", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=126 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity126Create(ResearchSchemaEntity126Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity126Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity126Response(ResearchSchemaEntity126Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity127Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 127")
+    category: str = Field(default="Category_127", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=127 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity127Create(ResearchSchemaEntity127Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity127Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity127Response(ResearchSchemaEntity127Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity128Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 128")
+    category: str = Field(default="Category_128", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=128 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity128Create(ResearchSchemaEntity128Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity128Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity128Response(ResearchSchemaEntity128Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity129Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 129")
+    category: str = Field(default="Category_129", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=129 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity129Create(ResearchSchemaEntity129Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity129Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity129Response(ResearchSchemaEntity129Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity130Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 130")
+    category: str = Field(default="Category_130", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=130 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity130Create(ResearchSchemaEntity130Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity130Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity130Response(ResearchSchemaEntity130Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity131Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 131")
+    category: str = Field(default="Category_131", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=131 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity131Create(ResearchSchemaEntity131Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity131Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity131Response(ResearchSchemaEntity131Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity132Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 132")
+    category: str = Field(default="Category_132", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=132 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity132Create(ResearchSchemaEntity132Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity132Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity132Response(ResearchSchemaEntity132Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity133Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 133")
+    category: str = Field(default="Category_133", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=133 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity133Create(ResearchSchemaEntity133Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity133Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity133Response(ResearchSchemaEntity133Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity134Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 134")
+    category: str = Field(default="Category_134", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=134 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity134Create(ResearchSchemaEntity134Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity134Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity134Response(ResearchSchemaEntity134Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity135Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 135")
+    category: str = Field(default="Category_135", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=135 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity135Create(ResearchSchemaEntity135Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity135Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity135Response(ResearchSchemaEntity135Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity136Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 136")
+    category: str = Field(default="Category_136", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=136 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity136Create(ResearchSchemaEntity136Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity136Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity136Response(ResearchSchemaEntity136Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity137Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 137")
+    category: str = Field(default="Category_137", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=137 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity137Create(ResearchSchemaEntity137Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity137Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity137Response(ResearchSchemaEntity137Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity138Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 138")
+    category: str = Field(default="Category_138", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=138 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity138Create(ResearchSchemaEntity138Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity138Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity138Response(ResearchSchemaEntity138Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity139Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 139")
+    category: str = Field(default="Category_139", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=139 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity139Create(ResearchSchemaEntity139Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity139Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity139Response(ResearchSchemaEntity139Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity140Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 140")
+    category: str = Field(default="Category_140", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=140 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity140Create(ResearchSchemaEntity140Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity140Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity140Response(ResearchSchemaEntity140Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity141Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 141")
+    category: str = Field(default="Category_141", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=141 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity141Create(ResearchSchemaEntity141Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity141Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity141Response(ResearchSchemaEntity141Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity142Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 142")
+    category: str = Field(default="Category_142", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=142 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity142Create(ResearchSchemaEntity142Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity142Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity142Response(ResearchSchemaEntity142Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity143Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 143")
+    category: str = Field(default="Category_143", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=143 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity143Create(ResearchSchemaEntity143Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity143Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity143Response(ResearchSchemaEntity143Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity144Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 144")
+    category: str = Field(default="Category_144", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=144 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity144Create(ResearchSchemaEntity144Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity144Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity144Response(ResearchSchemaEntity144Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity145Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 145")
+    category: str = Field(default="Category_145", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=145 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity145Create(ResearchSchemaEntity145Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity145Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity145Response(ResearchSchemaEntity145Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity146Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 146")
+    category: str = Field(default="Category_146", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=146 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity146Create(ResearchSchemaEntity146Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity146Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity146Response(ResearchSchemaEntity146Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity147Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 147")
+    category: str = Field(default="Category_147", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=147 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity147Create(ResearchSchemaEntity147Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity147Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity147Response(ResearchSchemaEntity147Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity148Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 148")
+    category: str = Field(default="Category_148", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=148 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity148Create(ResearchSchemaEntity148Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity148Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity148Response(ResearchSchemaEntity148Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity149Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 149")
+    category: str = Field(default="Category_149", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=149 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity149Create(ResearchSchemaEntity149Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity149Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity149Response(ResearchSchemaEntity149Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity150Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 150")
+    category: str = Field(default="Category_150", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=150 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity150Create(ResearchSchemaEntity150Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity150Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity150Response(ResearchSchemaEntity150Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity151Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 151")
+    category: str = Field(default="Category_151", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=151 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity151Create(ResearchSchemaEntity151Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity151Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity151Response(ResearchSchemaEntity151Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity152Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 152")
+    category: str = Field(default="Category_152", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=152 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity152Create(ResearchSchemaEntity152Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity152Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity152Response(ResearchSchemaEntity152Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity153Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 153")
+    category: str = Field(default="Category_153", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=153 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity153Create(ResearchSchemaEntity153Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity153Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity153Response(ResearchSchemaEntity153Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity154Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 154")
+    category: str = Field(default="Category_154", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=154 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity154Create(ResearchSchemaEntity154Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity154Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity154Response(ResearchSchemaEntity154Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity155Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 155")
+    category: str = Field(default="Category_155", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=155 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity155Create(ResearchSchemaEntity155Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity155Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity155Response(ResearchSchemaEntity155Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity156Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 156")
+    category: str = Field(default="Category_156", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=156 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity156Create(ResearchSchemaEntity156Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity156Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity156Response(ResearchSchemaEntity156Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity157Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 157")
+    category: str = Field(default="Category_157", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=157 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity157Create(ResearchSchemaEntity157Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity157Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity157Response(ResearchSchemaEntity157Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity158Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 158")
+    category: str = Field(default="Category_158", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=158 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity158Create(ResearchSchemaEntity158Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity158Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity158Response(ResearchSchemaEntity158Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity159Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 159")
+    category: str = Field(default="Category_159", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=159 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity159Create(ResearchSchemaEntity159Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity159Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity159Response(ResearchSchemaEntity159Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity160Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 160")
+    category: str = Field(default="Category_160", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=160 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity160Create(ResearchSchemaEntity160Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity160Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity160Response(ResearchSchemaEntity160Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity161Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 161")
+    category: str = Field(default="Category_161", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=161 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity161Create(ResearchSchemaEntity161Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity161Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity161Response(ResearchSchemaEntity161Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity162Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 162")
+    category: str = Field(default="Category_162", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=162 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity162Create(ResearchSchemaEntity162Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity162Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity162Response(ResearchSchemaEntity162Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity163Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 163")
+    category: str = Field(default="Category_163", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=163 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity163Create(ResearchSchemaEntity163Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity163Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity163Response(ResearchSchemaEntity163Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity164Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 164")
+    category: str = Field(default="Category_164", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=164 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity164Create(ResearchSchemaEntity164Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity164Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity164Response(ResearchSchemaEntity164Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity165Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 165")
+    category: str = Field(default="Category_165", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=165 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity165Create(ResearchSchemaEntity165Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity165Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity165Response(ResearchSchemaEntity165Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity166Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 166")
+    category: str = Field(default="Category_166", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=166 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity166Create(ResearchSchemaEntity166Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity166Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity166Response(ResearchSchemaEntity166Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity167Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 167")
+    category: str = Field(default="Category_167", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=167 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity167Create(ResearchSchemaEntity167Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity167Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity167Response(ResearchSchemaEntity167Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity168Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 168")
+    category: str = Field(default="Category_168", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=168 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity168Create(ResearchSchemaEntity168Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity168Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity168Response(ResearchSchemaEntity168Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity169Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 169")
+    category: str = Field(default="Category_169", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=169 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity169Create(ResearchSchemaEntity169Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity169Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity169Response(ResearchSchemaEntity169Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity170Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 170")
+    category: str = Field(default="Category_170", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=170 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity170Create(ResearchSchemaEntity170Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity170Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity170Response(ResearchSchemaEntity170Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity171Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 171")
+    category: str = Field(default="Category_171", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=171 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity171Create(ResearchSchemaEntity171Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity171Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity171Response(ResearchSchemaEntity171Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity172Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 172")
+    category: str = Field(default="Category_172", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=172 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity172Create(ResearchSchemaEntity172Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity172Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity172Response(ResearchSchemaEntity172Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity173Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 173")
+    category: str = Field(default="Category_173", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=173 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity173Create(ResearchSchemaEntity173Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity173Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity173Response(ResearchSchemaEntity173Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity174Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 174")
+    category: str = Field(default="Category_174", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=174 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity174Create(ResearchSchemaEntity174Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity174Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity174Response(ResearchSchemaEntity174Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity175Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 175")
+    category: str = Field(default="Category_175", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=175 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity175Create(ResearchSchemaEntity175Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity175Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity175Response(ResearchSchemaEntity175Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity176Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 176")
+    category: str = Field(default="Category_176", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=176 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity176Create(ResearchSchemaEntity176Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity176Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity176Response(ResearchSchemaEntity176Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity177Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 177")
+    category: str = Field(default="Category_177", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=177 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity177Create(ResearchSchemaEntity177Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity177Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity177Response(ResearchSchemaEntity177Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity178Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 178")
+    category: str = Field(default="Category_178", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=178 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity178Create(ResearchSchemaEntity178Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity178Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity178Response(ResearchSchemaEntity178Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity179Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 179")
+    category: str = Field(default="Category_179", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=179 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity179Create(ResearchSchemaEntity179Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity179Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity179Response(ResearchSchemaEntity179Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity180Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 180")
+    category: str = Field(default="Category_180", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=180 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity180Create(ResearchSchemaEntity180Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity180Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity180Response(ResearchSchemaEntity180Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity181Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 181")
+    category: str = Field(default="Category_181", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=181 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity181Create(ResearchSchemaEntity181Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity181Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity181Response(ResearchSchemaEntity181Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity182Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 182")
+    category: str = Field(default="Category_182", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=182 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity182Create(ResearchSchemaEntity182Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity182Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity182Response(ResearchSchemaEntity182Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity183Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 183")
+    category: str = Field(default="Category_183", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=183 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity183Create(ResearchSchemaEntity183Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity183Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity183Response(ResearchSchemaEntity183Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity184Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 184")
+    category: str = Field(default="Category_184", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=184 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity184Create(ResearchSchemaEntity184Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity184Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity184Response(ResearchSchemaEntity184Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity185Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 185")
+    category: str = Field(default="Category_185", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=185 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity185Create(ResearchSchemaEntity185Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity185Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity185Response(ResearchSchemaEntity185Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity186Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 186")
+    category: str = Field(default="Category_186", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=186 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity186Create(ResearchSchemaEntity186Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity186Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity186Response(ResearchSchemaEntity186Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity187Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 187")
+    category: str = Field(default="Category_187", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=187 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity187Create(ResearchSchemaEntity187Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity187Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity187Response(ResearchSchemaEntity187Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity188Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 188")
+    category: str = Field(default="Category_188", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=188 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity188Create(ResearchSchemaEntity188Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity188Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity188Response(ResearchSchemaEntity188Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity189Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 189")
+    category: str = Field(default="Category_189", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=189 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity189Create(ResearchSchemaEntity189Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity189Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity189Response(ResearchSchemaEntity189Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity190Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 190")
+    category: str = Field(default="Category_190", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=190 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity190Create(ResearchSchemaEntity190Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity190Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity190Response(ResearchSchemaEntity190Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity191Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 191")
+    category: str = Field(default="Category_191", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=191 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity191Create(ResearchSchemaEntity191Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity191Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity191Response(ResearchSchemaEntity191Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity192Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 192")
+    category: str = Field(default="Category_192", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=192 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity192Create(ResearchSchemaEntity192Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity192Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity192Response(ResearchSchemaEntity192Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity193Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 193")
+    category: str = Field(default="Category_193", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=193 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity193Create(ResearchSchemaEntity193Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity193Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity193Response(ResearchSchemaEntity193Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity194Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 194")
+    category: str = Field(default="Category_194", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=194 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity194Create(ResearchSchemaEntity194Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity194Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity194Response(ResearchSchemaEntity194Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity195Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 195")
+    category: str = Field(default="Category_195", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=195 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity195Create(ResearchSchemaEntity195Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity195Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity195Response(ResearchSchemaEntity195Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity196Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 196")
+    category: str = Field(default="Category_196", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=196 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity196Create(ResearchSchemaEntity196Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity196Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity196Response(ResearchSchemaEntity196Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity197Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 197")
+    category: str = Field(default="Category_197", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=197 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity197Create(ResearchSchemaEntity197Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity197Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity197Response(ResearchSchemaEntity197Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity198Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 198")
+    category: str = Field(default="Category_198", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=198 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity198Create(ResearchSchemaEntity198Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity198Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity198Response(ResearchSchemaEntity198Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity199Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 199")
+    category: str = Field(default="Category_199", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=199 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity199Create(ResearchSchemaEntity199Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity199Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity199Response(ResearchSchemaEntity199Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ResearchSchemaEntity200Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 200")
+    category: str = Field(default="Category_200", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=200 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ResearchSchemaEntity200Create(ResearchSchemaEntity200Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ResearchSchemaEntity200Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ResearchSchemaEntity200Response(ResearchSchemaEntity200Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+

@@ -2171,3 +2171,1443 @@ def create_entity_120(payload: ExamsSchemaEntity120Create, db: Session = Depends
     srv = ExamsDomainService(db)
     return srv.create_entity_120(payload)
 
+@router.get("/entity-121", response_model=List[ExamsSchemaEntity121Response])
+def list_entities_121(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_121_list(skip=skip, limit=limit)
+
+@router.get("/entity-121/{entity_id}", response_model=ExamsSchemaEntity121Response)
+def get_entity_121(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_121_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 121 not found")
+    return res
+
+@router.post("/entity-121", response_model=ExamsSchemaEntity121Response, status_code=201)
+def create_entity_121(payload: ExamsSchemaEntity121Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_121(payload)
+
+@router.get("/entity-122", response_model=List[ExamsSchemaEntity122Response])
+def list_entities_122(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_122_list(skip=skip, limit=limit)
+
+@router.get("/entity-122/{entity_id}", response_model=ExamsSchemaEntity122Response)
+def get_entity_122(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_122_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 122 not found")
+    return res
+
+@router.post("/entity-122", response_model=ExamsSchemaEntity122Response, status_code=201)
+def create_entity_122(payload: ExamsSchemaEntity122Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_122(payload)
+
+@router.get("/entity-123", response_model=List[ExamsSchemaEntity123Response])
+def list_entities_123(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_123_list(skip=skip, limit=limit)
+
+@router.get("/entity-123/{entity_id}", response_model=ExamsSchemaEntity123Response)
+def get_entity_123(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_123_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 123 not found")
+    return res
+
+@router.post("/entity-123", response_model=ExamsSchemaEntity123Response, status_code=201)
+def create_entity_123(payload: ExamsSchemaEntity123Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_123(payload)
+
+@router.get("/entity-124", response_model=List[ExamsSchemaEntity124Response])
+def list_entities_124(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_124_list(skip=skip, limit=limit)
+
+@router.get("/entity-124/{entity_id}", response_model=ExamsSchemaEntity124Response)
+def get_entity_124(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_124_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 124 not found")
+    return res
+
+@router.post("/entity-124", response_model=ExamsSchemaEntity124Response, status_code=201)
+def create_entity_124(payload: ExamsSchemaEntity124Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_124(payload)
+
+@router.get("/entity-125", response_model=List[ExamsSchemaEntity125Response])
+def list_entities_125(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_125_list(skip=skip, limit=limit)
+
+@router.get("/entity-125/{entity_id}", response_model=ExamsSchemaEntity125Response)
+def get_entity_125(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_125_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 125 not found")
+    return res
+
+@router.post("/entity-125", response_model=ExamsSchemaEntity125Response, status_code=201)
+def create_entity_125(payload: ExamsSchemaEntity125Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_125(payload)
+
+@router.get("/entity-126", response_model=List[ExamsSchemaEntity126Response])
+def list_entities_126(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_126_list(skip=skip, limit=limit)
+
+@router.get("/entity-126/{entity_id}", response_model=ExamsSchemaEntity126Response)
+def get_entity_126(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_126_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 126 not found")
+    return res
+
+@router.post("/entity-126", response_model=ExamsSchemaEntity126Response, status_code=201)
+def create_entity_126(payload: ExamsSchemaEntity126Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_126(payload)
+
+@router.get("/entity-127", response_model=List[ExamsSchemaEntity127Response])
+def list_entities_127(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_127_list(skip=skip, limit=limit)
+
+@router.get("/entity-127/{entity_id}", response_model=ExamsSchemaEntity127Response)
+def get_entity_127(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_127_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 127 not found")
+    return res
+
+@router.post("/entity-127", response_model=ExamsSchemaEntity127Response, status_code=201)
+def create_entity_127(payload: ExamsSchemaEntity127Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_127(payload)
+
+@router.get("/entity-128", response_model=List[ExamsSchemaEntity128Response])
+def list_entities_128(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_128_list(skip=skip, limit=limit)
+
+@router.get("/entity-128/{entity_id}", response_model=ExamsSchemaEntity128Response)
+def get_entity_128(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_128_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 128 not found")
+    return res
+
+@router.post("/entity-128", response_model=ExamsSchemaEntity128Response, status_code=201)
+def create_entity_128(payload: ExamsSchemaEntity128Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_128(payload)
+
+@router.get("/entity-129", response_model=List[ExamsSchemaEntity129Response])
+def list_entities_129(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_129_list(skip=skip, limit=limit)
+
+@router.get("/entity-129/{entity_id}", response_model=ExamsSchemaEntity129Response)
+def get_entity_129(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_129_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 129 not found")
+    return res
+
+@router.post("/entity-129", response_model=ExamsSchemaEntity129Response, status_code=201)
+def create_entity_129(payload: ExamsSchemaEntity129Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_129(payload)
+
+@router.get("/entity-130", response_model=List[ExamsSchemaEntity130Response])
+def list_entities_130(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_130_list(skip=skip, limit=limit)
+
+@router.get("/entity-130/{entity_id}", response_model=ExamsSchemaEntity130Response)
+def get_entity_130(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_130_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 130 not found")
+    return res
+
+@router.post("/entity-130", response_model=ExamsSchemaEntity130Response, status_code=201)
+def create_entity_130(payload: ExamsSchemaEntity130Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_130(payload)
+
+@router.get("/entity-131", response_model=List[ExamsSchemaEntity131Response])
+def list_entities_131(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_131_list(skip=skip, limit=limit)
+
+@router.get("/entity-131/{entity_id}", response_model=ExamsSchemaEntity131Response)
+def get_entity_131(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_131_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 131 not found")
+    return res
+
+@router.post("/entity-131", response_model=ExamsSchemaEntity131Response, status_code=201)
+def create_entity_131(payload: ExamsSchemaEntity131Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_131(payload)
+
+@router.get("/entity-132", response_model=List[ExamsSchemaEntity132Response])
+def list_entities_132(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_132_list(skip=skip, limit=limit)
+
+@router.get("/entity-132/{entity_id}", response_model=ExamsSchemaEntity132Response)
+def get_entity_132(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_132_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 132 not found")
+    return res
+
+@router.post("/entity-132", response_model=ExamsSchemaEntity132Response, status_code=201)
+def create_entity_132(payload: ExamsSchemaEntity132Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_132(payload)
+
+@router.get("/entity-133", response_model=List[ExamsSchemaEntity133Response])
+def list_entities_133(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_133_list(skip=skip, limit=limit)
+
+@router.get("/entity-133/{entity_id}", response_model=ExamsSchemaEntity133Response)
+def get_entity_133(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_133_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 133 not found")
+    return res
+
+@router.post("/entity-133", response_model=ExamsSchemaEntity133Response, status_code=201)
+def create_entity_133(payload: ExamsSchemaEntity133Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_133(payload)
+
+@router.get("/entity-134", response_model=List[ExamsSchemaEntity134Response])
+def list_entities_134(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_134_list(skip=skip, limit=limit)
+
+@router.get("/entity-134/{entity_id}", response_model=ExamsSchemaEntity134Response)
+def get_entity_134(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_134_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 134 not found")
+    return res
+
+@router.post("/entity-134", response_model=ExamsSchemaEntity134Response, status_code=201)
+def create_entity_134(payload: ExamsSchemaEntity134Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_134(payload)
+
+@router.get("/entity-135", response_model=List[ExamsSchemaEntity135Response])
+def list_entities_135(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_135_list(skip=skip, limit=limit)
+
+@router.get("/entity-135/{entity_id}", response_model=ExamsSchemaEntity135Response)
+def get_entity_135(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_135_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 135 not found")
+    return res
+
+@router.post("/entity-135", response_model=ExamsSchemaEntity135Response, status_code=201)
+def create_entity_135(payload: ExamsSchemaEntity135Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_135(payload)
+
+@router.get("/entity-136", response_model=List[ExamsSchemaEntity136Response])
+def list_entities_136(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_136_list(skip=skip, limit=limit)
+
+@router.get("/entity-136/{entity_id}", response_model=ExamsSchemaEntity136Response)
+def get_entity_136(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_136_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 136 not found")
+    return res
+
+@router.post("/entity-136", response_model=ExamsSchemaEntity136Response, status_code=201)
+def create_entity_136(payload: ExamsSchemaEntity136Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_136(payload)
+
+@router.get("/entity-137", response_model=List[ExamsSchemaEntity137Response])
+def list_entities_137(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_137_list(skip=skip, limit=limit)
+
+@router.get("/entity-137/{entity_id}", response_model=ExamsSchemaEntity137Response)
+def get_entity_137(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_137_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 137 not found")
+    return res
+
+@router.post("/entity-137", response_model=ExamsSchemaEntity137Response, status_code=201)
+def create_entity_137(payload: ExamsSchemaEntity137Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_137(payload)
+
+@router.get("/entity-138", response_model=List[ExamsSchemaEntity138Response])
+def list_entities_138(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_138_list(skip=skip, limit=limit)
+
+@router.get("/entity-138/{entity_id}", response_model=ExamsSchemaEntity138Response)
+def get_entity_138(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_138_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 138 not found")
+    return res
+
+@router.post("/entity-138", response_model=ExamsSchemaEntity138Response, status_code=201)
+def create_entity_138(payload: ExamsSchemaEntity138Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_138(payload)
+
+@router.get("/entity-139", response_model=List[ExamsSchemaEntity139Response])
+def list_entities_139(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_139_list(skip=skip, limit=limit)
+
+@router.get("/entity-139/{entity_id}", response_model=ExamsSchemaEntity139Response)
+def get_entity_139(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_139_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 139 not found")
+    return res
+
+@router.post("/entity-139", response_model=ExamsSchemaEntity139Response, status_code=201)
+def create_entity_139(payload: ExamsSchemaEntity139Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_139(payload)
+
+@router.get("/entity-140", response_model=List[ExamsSchemaEntity140Response])
+def list_entities_140(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_140_list(skip=skip, limit=limit)
+
+@router.get("/entity-140/{entity_id}", response_model=ExamsSchemaEntity140Response)
+def get_entity_140(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_140_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 140 not found")
+    return res
+
+@router.post("/entity-140", response_model=ExamsSchemaEntity140Response, status_code=201)
+def create_entity_140(payload: ExamsSchemaEntity140Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_140(payload)
+
+@router.get("/entity-141", response_model=List[ExamsSchemaEntity141Response])
+def list_entities_141(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_141_list(skip=skip, limit=limit)
+
+@router.get("/entity-141/{entity_id}", response_model=ExamsSchemaEntity141Response)
+def get_entity_141(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_141_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 141 not found")
+    return res
+
+@router.post("/entity-141", response_model=ExamsSchemaEntity141Response, status_code=201)
+def create_entity_141(payload: ExamsSchemaEntity141Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_141(payload)
+
+@router.get("/entity-142", response_model=List[ExamsSchemaEntity142Response])
+def list_entities_142(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_142_list(skip=skip, limit=limit)
+
+@router.get("/entity-142/{entity_id}", response_model=ExamsSchemaEntity142Response)
+def get_entity_142(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_142_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 142 not found")
+    return res
+
+@router.post("/entity-142", response_model=ExamsSchemaEntity142Response, status_code=201)
+def create_entity_142(payload: ExamsSchemaEntity142Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_142(payload)
+
+@router.get("/entity-143", response_model=List[ExamsSchemaEntity143Response])
+def list_entities_143(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_143_list(skip=skip, limit=limit)
+
+@router.get("/entity-143/{entity_id}", response_model=ExamsSchemaEntity143Response)
+def get_entity_143(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_143_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 143 not found")
+    return res
+
+@router.post("/entity-143", response_model=ExamsSchemaEntity143Response, status_code=201)
+def create_entity_143(payload: ExamsSchemaEntity143Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_143(payload)
+
+@router.get("/entity-144", response_model=List[ExamsSchemaEntity144Response])
+def list_entities_144(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_144_list(skip=skip, limit=limit)
+
+@router.get("/entity-144/{entity_id}", response_model=ExamsSchemaEntity144Response)
+def get_entity_144(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_144_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 144 not found")
+    return res
+
+@router.post("/entity-144", response_model=ExamsSchemaEntity144Response, status_code=201)
+def create_entity_144(payload: ExamsSchemaEntity144Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_144(payload)
+
+@router.get("/entity-145", response_model=List[ExamsSchemaEntity145Response])
+def list_entities_145(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_145_list(skip=skip, limit=limit)
+
+@router.get("/entity-145/{entity_id}", response_model=ExamsSchemaEntity145Response)
+def get_entity_145(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_145_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 145 not found")
+    return res
+
+@router.post("/entity-145", response_model=ExamsSchemaEntity145Response, status_code=201)
+def create_entity_145(payload: ExamsSchemaEntity145Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_145(payload)
+
+@router.get("/entity-146", response_model=List[ExamsSchemaEntity146Response])
+def list_entities_146(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_146_list(skip=skip, limit=limit)
+
+@router.get("/entity-146/{entity_id}", response_model=ExamsSchemaEntity146Response)
+def get_entity_146(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_146_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 146 not found")
+    return res
+
+@router.post("/entity-146", response_model=ExamsSchemaEntity146Response, status_code=201)
+def create_entity_146(payload: ExamsSchemaEntity146Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_146(payload)
+
+@router.get("/entity-147", response_model=List[ExamsSchemaEntity147Response])
+def list_entities_147(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_147_list(skip=skip, limit=limit)
+
+@router.get("/entity-147/{entity_id}", response_model=ExamsSchemaEntity147Response)
+def get_entity_147(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_147_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 147 not found")
+    return res
+
+@router.post("/entity-147", response_model=ExamsSchemaEntity147Response, status_code=201)
+def create_entity_147(payload: ExamsSchemaEntity147Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_147(payload)
+
+@router.get("/entity-148", response_model=List[ExamsSchemaEntity148Response])
+def list_entities_148(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_148_list(skip=skip, limit=limit)
+
+@router.get("/entity-148/{entity_id}", response_model=ExamsSchemaEntity148Response)
+def get_entity_148(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_148_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 148 not found")
+    return res
+
+@router.post("/entity-148", response_model=ExamsSchemaEntity148Response, status_code=201)
+def create_entity_148(payload: ExamsSchemaEntity148Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_148(payload)
+
+@router.get("/entity-149", response_model=List[ExamsSchemaEntity149Response])
+def list_entities_149(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_149_list(skip=skip, limit=limit)
+
+@router.get("/entity-149/{entity_id}", response_model=ExamsSchemaEntity149Response)
+def get_entity_149(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_149_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 149 not found")
+    return res
+
+@router.post("/entity-149", response_model=ExamsSchemaEntity149Response, status_code=201)
+def create_entity_149(payload: ExamsSchemaEntity149Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_149(payload)
+
+@router.get("/entity-150", response_model=List[ExamsSchemaEntity150Response])
+def list_entities_150(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_150_list(skip=skip, limit=limit)
+
+@router.get("/entity-150/{entity_id}", response_model=ExamsSchemaEntity150Response)
+def get_entity_150(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_150_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 150 not found")
+    return res
+
+@router.post("/entity-150", response_model=ExamsSchemaEntity150Response, status_code=201)
+def create_entity_150(payload: ExamsSchemaEntity150Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_150(payload)
+
+@router.get("/entity-151", response_model=List[ExamsSchemaEntity151Response])
+def list_entities_151(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_151_list(skip=skip, limit=limit)
+
+@router.get("/entity-151/{entity_id}", response_model=ExamsSchemaEntity151Response)
+def get_entity_151(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_151_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 151 not found")
+    return res
+
+@router.post("/entity-151", response_model=ExamsSchemaEntity151Response, status_code=201)
+def create_entity_151(payload: ExamsSchemaEntity151Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_151(payload)
+
+@router.get("/entity-152", response_model=List[ExamsSchemaEntity152Response])
+def list_entities_152(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_152_list(skip=skip, limit=limit)
+
+@router.get("/entity-152/{entity_id}", response_model=ExamsSchemaEntity152Response)
+def get_entity_152(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_152_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 152 not found")
+    return res
+
+@router.post("/entity-152", response_model=ExamsSchemaEntity152Response, status_code=201)
+def create_entity_152(payload: ExamsSchemaEntity152Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_152(payload)
+
+@router.get("/entity-153", response_model=List[ExamsSchemaEntity153Response])
+def list_entities_153(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_153_list(skip=skip, limit=limit)
+
+@router.get("/entity-153/{entity_id}", response_model=ExamsSchemaEntity153Response)
+def get_entity_153(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_153_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 153 not found")
+    return res
+
+@router.post("/entity-153", response_model=ExamsSchemaEntity153Response, status_code=201)
+def create_entity_153(payload: ExamsSchemaEntity153Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_153(payload)
+
+@router.get("/entity-154", response_model=List[ExamsSchemaEntity154Response])
+def list_entities_154(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_154_list(skip=skip, limit=limit)
+
+@router.get("/entity-154/{entity_id}", response_model=ExamsSchemaEntity154Response)
+def get_entity_154(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_154_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 154 not found")
+    return res
+
+@router.post("/entity-154", response_model=ExamsSchemaEntity154Response, status_code=201)
+def create_entity_154(payload: ExamsSchemaEntity154Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_154(payload)
+
+@router.get("/entity-155", response_model=List[ExamsSchemaEntity155Response])
+def list_entities_155(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_155_list(skip=skip, limit=limit)
+
+@router.get("/entity-155/{entity_id}", response_model=ExamsSchemaEntity155Response)
+def get_entity_155(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_155_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 155 not found")
+    return res
+
+@router.post("/entity-155", response_model=ExamsSchemaEntity155Response, status_code=201)
+def create_entity_155(payload: ExamsSchemaEntity155Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_155(payload)
+
+@router.get("/entity-156", response_model=List[ExamsSchemaEntity156Response])
+def list_entities_156(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_156_list(skip=skip, limit=limit)
+
+@router.get("/entity-156/{entity_id}", response_model=ExamsSchemaEntity156Response)
+def get_entity_156(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_156_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 156 not found")
+    return res
+
+@router.post("/entity-156", response_model=ExamsSchemaEntity156Response, status_code=201)
+def create_entity_156(payload: ExamsSchemaEntity156Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_156(payload)
+
+@router.get("/entity-157", response_model=List[ExamsSchemaEntity157Response])
+def list_entities_157(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_157_list(skip=skip, limit=limit)
+
+@router.get("/entity-157/{entity_id}", response_model=ExamsSchemaEntity157Response)
+def get_entity_157(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_157_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 157 not found")
+    return res
+
+@router.post("/entity-157", response_model=ExamsSchemaEntity157Response, status_code=201)
+def create_entity_157(payload: ExamsSchemaEntity157Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_157(payload)
+
+@router.get("/entity-158", response_model=List[ExamsSchemaEntity158Response])
+def list_entities_158(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_158_list(skip=skip, limit=limit)
+
+@router.get("/entity-158/{entity_id}", response_model=ExamsSchemaEntity158Response)
+def get_entity_158(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_158_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 158 not found")
+    return res
+
+@router.post("/entity-158", response_model=ExamsSchemaEntity158Response, status_code=201)
+def create_entity_158(payload: ExamsSchemaEntity158Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_158(payload)
+
+@router.get("/entity-159", response_model=List[ExamsSchemaEntity159Response])
+def list_entities_159(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_159_list(skip=skip, limit=limit)
+
+@router.get("/entity-159/{entity_id}", response_model=ExamsSchemaEntity159Response)
+def get_entity_159(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_159_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 159 not found")
+    return res
+
+@router.post("/entity-159", response_model=ExamsSchemaEntity159Response, status_code=201)
+def create_entity_159(payload: ExamsSchemaEntity159Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_159(payload)
+
+@router.get("/entity-160", response_model=List[ExamsSchemaEntity160Response])
+def list_entities_160(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_160_list(skip=skip, limit=limit)
+
+@router.get("/entity-160/{entity_id}", response_model=ExamsSchemaEntity160Response)
+def get_entity_160(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_160_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 160 not found")
+    return res
+
+@router.post("/entity-160", response_model=ExamsSchemaEntity160Response, status_code=201)
+def create_entity_160(payload: ExamsSchemaEntity160Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_160(payload)
+
+@router.get("/entity-161", response_model=List[ExamsSchemaEntity161Response])
+def list_entities_161(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_161_list(skip=skip, limit=limit)
+
+@router.get("/entity-161/{entity_id}", response_model=ExamsSchemaEntity161Response)
+def get_entity_161(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_161_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 161 not found")
+    return res
+
+@router.post("/entity-161", response_model=ExamsSchemaEntity161Response, status_code=201)
+def create_entity_161(payload: ExamsSchemaEntity161Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_161(payload)
+
+@router.get("/entity-162", response_model=List[ExamsSchemaEntity162Response])
+def list_entities_162(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_162_list(skip=skip, limit=limit)
+
+@router.get("/entity-162/{entity_id}", response_model=ExamsSchemaEntity162Response)
+def get_entity_162(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_162_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 162 not found")
+    return res
+
+@router.post("/entity-162", response_model=ExamsSchemaEntity162Response, status_code=201)
+def create_entity_162(payload: ExamsSchemaEntity162Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_162(payload)
+
+@router.get("/entity-163", response_model=List[ExamsSchemaEntity163Response])
+def list_entities_163(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_163_list(skip=skip, limit=limit)
+
+@router.get("/entity-163/{entity_id}", response_model=ExamsSchemaEntity163Response)
+def get_entity_163(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_163_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 163 not found")
+    return res
+
+@router.post("/entity-163", response_model=ExamsSchemaEntity163Response, status_code=201)
+def create_entity_163(payload: ExamsSchemaEntity163Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_163(payload)
+
+@router.get("/entity-164", response_model=List[ExamsSchemaEntity164Response])
+def list_entities_164(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_164_list(skip=skip, limit=limit)
+
+@router.get("/entity-164/{entity_id}", response_model=ExamsSchemaEntity164Response)
+def get_entity_164(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_164_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 164 not found")
+    return res
+
+@router.post("/entity-164", response_model=ExamsSchemaEntity164Response, status_code=201)
+def create_entity_164(payload: ExamsSchemaEntity164Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_164(payload)
+
+@router.get("/entity-165", response_model=List[ExamsSchemaEntity165Response])
+def list_entities_165(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_165_list(skip=skip, limit=limit)
+
+@router.get("/entity-165/{entity_id}", response_model=ExamsSchemaEntity165Response)
+def get_entity_165(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_165_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 165 not found")
+    return res
+
+@router.post("/entity-165", response_model=ExamsSchemaEntity165Response, status_code=201)
+def create_entity_165(payload: ExamsSchemaEntity165Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_165(payload)
+
+@router.get("/entity-166", response_model=List[ExamsSchemaEntity166Response])
+def list_entities_166(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_166_list(skip=skip, limit=limit)
+
+@router.get("/entity-166/{entity_id}", response_model=ExamsSchemaEntity166Response)
+def get_entity_166(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_166_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 166 not found")
+    return res
+
+@router.post("/entity-166", response_model=ExamsSchemaEntity166Response, status_code=201)
+def create_entity_166(payload: ExamsSchemaEntity166Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_166(payload)
+
+@router.get("/entity-167", response_model=List[ExamsSchemaEntity167Response])
+def list_entities_167(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_167_list(skip=skip, limit=limit)
+
+@router.get("/entity-167/{entity_id}", response_model=ExamsSchemaEntity167Response)
+def get_entity_167(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_167_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 167 not found")
+    return res
+
+@router.post("/entity-167", response_model=ExamsSchemaEntity167Response, status_code=201)
+def create_entity_167(payload: ExamsSchemaEntity167Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_167(payload)
+
+@router.get("/entity-168", response_model=List[ExamsSchemaEntity168Response])
+def list_entities_168(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_168_list(skip=skip, limit=limit)
+
+@router.get("/entity-168/{entity_id}", response_model=ExamsSchemaEntity168Response)
+def get_entity_168(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_168_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 168 not found")
+    return res
+
+@router.post("/entity-168", response_model=ExamsSchemaEntity168Response, status_code=201)
+def create_entity_168(payload: ExamsSchemaEntity168Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_168(payload)
+
+@router.get("/entity-169", response_model=List[ExamsSchemaEntity169Response])
+def list_entities_169(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_169_list(skip=skip, limit=limit)
+
+@router.get("/entity-169/{entity_id}", response_model=ExamsSchemaEntity169Response)
+def get_entity_169(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_169_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 169 not found")
+    return res
+
+@router.post("/entity-169", response_model=ExamsSchemaEntity169Response, status_code=201)
+def create_entity_169(payload: ExamsSchemaEntity169Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_169(payload)
+
+@router.get("/entity-170", response_model=List[ExamsSchemaEntity170Response])
+def list_entities_170(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_170_list(skip=skip, limit=limit)
+
+@router.get("/entity-170/{entity_id}", response_model=ExamsSchemaEntity170Response)
+def get_entity_170(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_170_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 170 not found")
+    return res
+
+@router.post("/entity-170", response_model=ExamsSchemaEntity170Response, status_code=201)
+def create_entity_170(payload: ExamsSchemaEntity170Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_170(payload)
+
+@router.get("/entity-171", response_model=List[ExamsSchemaEntity171Response])
+def list_entities_171(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_171_list(skip=skip, limit=limit)
+
+@router.get("/entity-171/{entity_id}", response_model=ExamsSchemaEntity171Response)
+def get_entity_171(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_171_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 171 not found")
+    return res
+
+@router.post("/entity-171", response_model=ExamsSchemaEntity171Response, status_code=201)
+def create_entity_171(payload: ExamsSchemaEntity171Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_171(payload)
+
+@router.get("/entity-172", response_model=List[ExamsSchemaEntity172Response])
+def list_entities_172(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_172_list(skip=skip, limit=limit)
+
+@router.get("/entity-172/{entity_id}", response_model=ExamsSchemaEntity172Response)
+def get_entity_172(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_172_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 172 not found")
+    return res
+
+@router.post("/entity-172", response_model=ExamsSchemaEntity172Response, status_code=201)
+def create_entity_172(payload: ExamsSchemaEntity172Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_172(payload)
+
+@router.get("/entity-173", response_model=List[ExamsSchemaEntity173Response])
+def list_entities_173(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_173_list(skip=skip, limit=limit)
+
+@router.get("/entity-173/{entity_id}", response_model=ExamsSchemaEntity173Response)
+def get_entity_173(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_173_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 173 not found")
+    return res
+
+@router.post("/entity-173", response_model=ExamsSchemaEntity173Response, status_code=201)
+def create_entity_173(payload: ExamsSchemaEntity173Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_173(payload)
+
+@router.get("/entity-174", response_model=List[ExamsSchemaEntity174Response])
+def list_entities_174(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_174_list(skip=skip, limit=limit)
+
+@router.get("/entity-174/{entity_id}", response_model=ExamsSchemaEntity174Response)
+def get_entity_174(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_174_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 174 not found")
+    return res
+
+@router.post("/entity-174", response_model=ExamsSchemaEntity174Response, status_code=201)
+def create_entity_174(payload: ExamsSchemaEntity174Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_174(payload)
+
+@router.get("/entity-175", response_model=List[ExamsSchemaEntity175Response])
+def list_entities_175(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_175_list(skip=skip, limit=limit)
+
+@router.get("/entity-175/{entity_id}", response_model=ExamsSchemaEntity175Response)
+def get_entity_175(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_175_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 175 not found")
+    return res
+
+@router.post("/entity-175", response_model=ExamsSchemaEntity175Response, status_code=201)
+def create_entity_175(payload: ExamsSchemaEntity175Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_175(payload)
+
+@router.get("/entity-176", response_model=List[ExamsSchemaEntity176Response])
+def list_entities_176(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_176_list(skip=skip, limit=limit)
+
+@router.get("/entity-176/{entity_id}", response_model=ExamsSchemaEntity176Response)
+def get_entity_176(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_176_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 176 not found")
+    return res
+
+@router.post("/entity-176", response_model=ExamsSchemaEntity176Response, status_code=201)
+def create_entity_176(payload: ExamsSchemaEntity176Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_176(payload)
+
+@router.get("/entity-177", response_model=List[ExamsSchemaEntity177Response])
+def list_entities_177(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_177_list(skip=skip, limit=limit)
+
+@router.get("/entity-177/{entity_id}", response_model=ExamsSchemaEntity177Response)
+def get_entity_177(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_177_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 177 not found")
+    return res
+
+@router.post("/entity-177", response_model=ExamsSchemaEntity177Response, status_code=201)
+def create_entity_177(payload: ExamsSchemaEntity177Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_177(payload)
+
+@router.get("/entity-178", response_model=List[ExamsSchemaEntity178Response])
+def list_entities_178(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_178_list(skip=skip, limit=limit)
+
+@router.get("/entity-178/{entity_id}", response_model=ExamsSchemaEntity178Response)
+def get_entity_178(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_178_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 178 not found")
+    return res
+
+@router.post("/entity-178", response_model=ExamsSchemaEntity178Response, status_code=201)
+def create_entity_178(payload: ExamsSchemaEntity178Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_178(payload)
+
+@router.get("/entity-179", response_model=List[ExamsSchemaEntity179Response])
+def list_entities_179(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_179_list(skip=skip, limit=limit)
+
+@router.get("/entity-179/{entity_id}", response_model=ExamsSchemaEntity179Response)
+def get_entity_179(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_179_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 179 not found")
+    return res
+
+@router.post("/entity-179", response_model=ExamsSchemaEntity179Response, status_code=201)
+def create_entity_179(payload: ExamsSchemaEntity179Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_179(payload)
+
+@router.get("/entity-180", response_model=List[ExamsSchemaEntity180Response])
+def list_entities_180(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_180_list(skip=skip, limit=limit)
+
+@router.get("/entity-180/{entity_id}", response_model=ExamsSchemaEntity180Response)
+def get_entity_180(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_180_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 180 not found")
+    return res
+
+@router.post("/entity-180", response_model=ExamsSchemaEntity180Response, status_code=201)
+def create_entity_180(payload: ExamsSchemaEntity180Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_180(payload)
+
+@router.get("/entity-181", response_model=List[ExamsSchemaEntity181Response])
+def list_entities_181(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_181_list(skip=skip, limit=limit)
+
+@router.get("/entity-181/{entity_id}", response_model=ExamsSchemaEntity181Response)
+def get_entity_181(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_181_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 181 not found")
+    return res
+
+@router.post("/entity-181", response_model=ExamsSchemaEntity181Response, status_code=201)
+def create_entity_181(payload: ExamsSchemaEntity181Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_181(payload)
+
+@router.get("/entity-182", response_model=List[ExamsSchemaEntity182Response])
+def list_entities_182(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_182_list(skip=skip, limit=limit)
+
+@router.get("/entity-182/{entity_id}", response_model=ExamsSchemaEntity182Response)
+def get_entity_182(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_182_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 182 not found")
+    return res
+
+@router.post("/entity-182", response_model=ExamsSchemaEntity182Response, status_code=201)
+def create_entity_182(payload: ExamsSchemaEntity182Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_182(payload)
+
+@router.get("/entity-183", response_model=List[ExamsSchemaEntity183Response])
+def list_entities_183(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_183_list(skip=skip, limit=limit)
+
+@router.get("/entity-183/{entity_id}", response_model=ExamsSchemaEntity183Response)
+def get_entity_183(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_183_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 183 not found")
+    return res
+
+@router.post("/entity-183", response_model=ExamsSchemaEntity183Response, status_code=201)
+def create_entity_183(payload: ExamsSchemaEntity183Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_183(payload)
+
+@router.get("/entity-184", response_model=List[ExamsSchemaEntity184Response])
+def list_entities_184(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_184_list(skip=skip, limit=limit)
+
+@router.get("/entity-184/{entity_id}", response_model=ExamsSchemaEntity184Response)
+def get_entity_184(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_184_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 184 not found")
+    return res
+
+@router.post("/entity-184", response_model=ExamsSchemaEntity184Response, status_code=201)
+def create_entity_184(payload: ExamsSchemaEntity184Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_184(payload)
+
+@router.get("/entity-185", response_model=List[ExamsSchemaEntity185Response])
+def list_entities_185(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_185_list(skip=skip, limit=limit)
+
+@router.get("/entity-185/{entity_id}", response_model=ExamsSchemaEntity185Response)
+def get_entity_185(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_185_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 185 not found")
+    return res
+
+@router.post("/entity-185", response_model=ExamsSchemaEntity185Response, status_code=201)
+def create_entity_185(payload: ExamsSchemaEntity185Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_185(payload)
+
+@router.get("/entity-186", response_model=List[ExamsSchemaEntity186Response])
+def list_entities_186(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_186_list(skip=skip, limit=limit)
+
+@router.get("/entity-186/{entity_id}", response_model=ExamsSchemaEntity186Response)
+def get_entity_186(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_186_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 186 not found")
+    return res
+
+@router.post("/entity-186", response_model=ExamsSchemaEntity186Response, status_code=201)
+def create_entity_186(payload: ExamsSchemaEntity186Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_186(payload)
+
+@router.get("/entity-187", response_model=List[ExamsSchemaEntity187Response])
+def list_entities_187(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_187_list(skip=skip, limit=limit)
+
+@router.get("/entity-187/{entity_id}", response_model=ExamsSchemaEntity187Response)
+def get_entity_187(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_187_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 187 not found")
+    return res
+
+@router.post("/entity-187", response_model=ExamsSchemaEntity187Response, status_code=201)
+def create_entity_187(payload: ExamsSchemaEntity187Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_187(payload)
+
+@router.get("/entity-188", response_model=List[ExamsSchemaEntity188Response])
+def list_entities_188(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_188_list(skip=skip, limit=limit)
+
+@router.get("/entity-188/{entity_id}", response_model=ExamsSchemaEntity188Response)
+def get_entity_188(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_188_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 188 not found")
+    return res
+
+@router.post("/entity-188", response_model=ExamsSchemaEntity188Response, status_code=201)
+def create_entity_188(payload: ExamsSchemaEntity188Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_188(payload)
+
+@router.get("/entity-189", response_model=List[ExamsSchemaEntity189Response])
+def list_entities_189(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_189_list(skip=skip, limit=limit)
+
+@router.get("/entity-189/{entity_id}", response_model=ExamsSchemaEntity189Response)
+def get_entity_189(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_189_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 189 not found")
+    return res
+
+@router.post("/entity-189", response_model=ExamsSchemaEntity189Response, status_code=201)
+def create_entity_189(payload: ExamsSchemaEntity189Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_189(payload)
+
+@router.get("/entity-190", response_model=List[ExamsSchemaEntity190Response])
+def list_entities_190(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_190_list(skip=skip, limit=limit)
+
+@router.get("/entity-190/{entity_id}", response_model=ExamsSchemaEntity190Response)
+def get_entity_190(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_190_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 190 not found")
+    return res
+
+@router.post("/entity-190", response_model=ExamsSchemaEntity190Response, status_code=201)
+def create_entity_190(payload: ExamsSchemaEntity190Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_190(payload)
+
+@router.get("/entity-191", response_model=List[ExamsSchemaEntity191Response])
+def list_entities_191(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_191_list(skip=skip, limit=limit)
+
+@router.get("/entity-191/{entity_id}", response_model=ExamsSchemaEntity191Response)
+def get_entity_191(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_191_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 191 not found")
+    return res
+
+@router.post("/entity-191", response_model=ExamsSchemaEntity191Response, status_code=201)
+def create_entity_191(payload: ExamsSchemaEntity191Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_191(payload)
+
+@router.get("/entity-192", response_model=List[ExamsSchemaEntity192Response])
+def list_entities_192(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_192_list(skip=skip, limit=limit)
+
+@router.get("/entity-192/{entity_id}", response_model=ExamsSchemaEntity192Response)
+def get_entity_192(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_192_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 192 not found")
+    return res
+
+@router.post("/entity-192", response_model=ExamsSchemaEntity192Response, status_code=201)
+def create_entity_192(payload: ExamsSchemaEntity192Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_192(payload)
+
+@router.get("/entity-193", response_model=List[ExamsSchemaEntity193Response])
+def list_entities_193(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_193_list(skip=skip, limit=limit)
+
+@router.get("/entity-193/{entity_id}", response_model=ExamsSchemaEntity193Response)
+def get_entity_193(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_193_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 193 not found")
+    return res
+
+@router.post("/entity-193", response_model=ExamsSchemaEntity193Response, status_code=201)
+def create_entity_193(payload: ExamsSchemaEntity193Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_193(payload)
+
+@router.get("/entity-194", response_model=List[ExamsSchemaEntity194Response])
+def list_entities_194(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_194_list(skip=skip, limit=limit)
+
+@router.get("/entity-194/{entity_id}", response_model=ExamsSchemaEntity194Response)
+def get_entity_194(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_194_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 194 not found")
+    return res
+
+@router.post("/entity-194", response_model=ExamsSchemaEntity194Response, status_code=201)
+def create_entity_194(payload: ExamsSchemaEntity194Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_194(payload)
+
+@router.get("/entity-195", response_model=List[ExamsSchemaEntity195Response])
+def list_entities_195(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_195_list(skip=skip, limit=limit)
+
+@router.get("/entity-195/{entity_id}", response_model=ExamsSchemaEntity195Response)
+def get_entity_195(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_195_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 195 not found")
+    return res
+
+@router.post("/entity-195", response_model=ExamsSchemaEntity195Response, status_code=201)
+def create_entity_195(payload: ExamsSchemaEntity195Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_195(payload)
+
+@router.get("/entity-196", response_model=List[ExamsSchemaEntity196Response])
+def list_entities_196(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_196_list(skip=skip, limit=limit)
+
+@router.get("/entity-196/{entity_id}", response_model=ExamsSchemaEntity196Response)
+def get_entity_196(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_196_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 196 not found")
+    return res
+
+@router.post("/entity-196", response_model=ExamsSchemaEntity196Response, status_code=201)
+def create_entity_196(payload: ExamsSchemaEntity196Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_196(payload)
+
+@router.get("/entity-197", response_model=List[ExamsSchemaEntity197Response])
+def list_entities_197(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_197_list(skip=skip, limit=limit)
+
+@router.get("/entity-197/{entity_id}", response_model=ExamsSchemaEntity197Response)
+def get_entity_197(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_197_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 197 not found")
+    return res
+
+@router.post("/entity-197", response_model=ExamsSchemaEntity197Response, status_code=201)
+def create_entity_197(payload: ExamsSchemaEntity197Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_197(payload)
+
+@router.get("/entity-198", response_model=List[ExamsSchemaEntity198Response])
+def list_entities_198(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_198_list(skip=skip, limit=limit)
+
+@router.get("/entity-198/{entity_id}", response_model=ExamsSchemaEntity198Response)
+def get_entity_198(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_198_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 198 not found")
+    return res
+
+@router.post("/entity-198", response_model=ExamsSchemaEntity198Response, status_code=201)
+def create_entity_198(payload: ExamsSchemaEntity198Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_198(payload)
+
+@router.get("/entity-199", response_model=List[ExamsSchemaEntity199Response])
+def list_entities_199(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_199_list(skip=skip, limit=limit)
+
+@router.get("/entity-199/{entity_id}", response_model=ExamsSchemaEntity199Response)
+def get_entity_199(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_199_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 199 not found")
+    return res
+
+@router.post("/entity-199", response_model=ExamsSchemaEntity199Response, status_code=201)
+def create_entity_199(payload: ExamsSchemaEntity199Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_199(payload)
+
+@router.get("/entity-200", response_model=List[ExamsSchemaEntity200Response])
+def list_entities_200(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.get_entity_200_list(skip=skip, limit=limit)
+
+@router.get("/entity-200/{entity_id}", response_model=ExamsSchemaEntity200Response)
+def get_entity_200(entity_id: int, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    res = srv.get_entity_200_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 200 not found")
+    return res
+
+@router.post("/entity-200", response_model=ExamsSchemaEntity200Response, status_code=201)
+def create_entity_200(payload: ExamsSchemaEntity200Create, db: Session = Depends(get_db)):
+    srv = ExamsDomainService(db)
+    return srv.create_entity_200(payload)
+

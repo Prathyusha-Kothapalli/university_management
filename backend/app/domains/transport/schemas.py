@@ -3486,3 +3486,2323 @@ class TransportSchemaEntity120Response(TransportSchemaEntity120Base):
 
     model_config = ConfigDict(from_attributes=True)
 
+class TransportSchemaEntity121Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 121")
+    category: str = Field(default="Category_121", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=121 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity121Create(TransportSchemaEntity121Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity121Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity121Response(TransportSchemaEntity121Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity122Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 122")
+    category: str = Field(default="Category_122", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=122 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity122Create(TransportSchemaEntity122Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity122Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity122Response(TransportSchemaEntity122Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity123Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 123")
+    category: str = Field(default="Category_123", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=123 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity123Create(TransportSchemaEntity123Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity123Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity123Response(TransportSchemaEntity123Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity124Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 124")
+    category: str = Field(default="Category_124", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=124 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity124Create(TransportSchemaEntity124Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity124Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity124Response(TransportSchemaEntity124Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity125Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 125")
+    category: str = Field(default="Category_125", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=125 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity125Create(TransportSchemaEntity125Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity125Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity125Response(TransportSchemaEntity125Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity126Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 126")
+    category: str = Field(default="Category_126", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=126 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity126Create(TransportSchemaEntity126Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity126Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity126Response(TransportSchemaEntity126Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity127Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 127")
+    category: str = Field(default="Category_127", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=127 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity127Create(TransportSchemaEntity127Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity127Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity127Response(TransportSchemaEntity127Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity128Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 128")
+    category: str = Field(default="Category_128", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=128 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity128Create(TransportSchemaEntity128Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity128Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity128Response(TransportSchemaEntity128Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity129Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 129")
+    category: str = Field(default="Category_129", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=129 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity129Create(TransportSchemaEntity129Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity129Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity129Response(TransportSchemaEntity129Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity130Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 130")
+    category: str = Field(default="Category_130", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=130 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity130Create(TransportSchemaEntity130Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity130Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity130Response(TransportSchemaEntity130Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity131Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 131")
+    category: str = Field(default="Category_131", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=131 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity131Create(TransportSchemaEntity131Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity131Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity131Response(TransportSchemaEntity131Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity132Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 132")
+    category: str = Field(default="Category_132", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=132 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity132Create(TransportSchemaEntity132Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity132Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity132Response(TransportSchemaEntity132Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity133Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 133")
+    category: str = Field(default="Category_133", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=133 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity133Create(TransportSchemaEntity133Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity133Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity133Response(TransportSchemaEntity133Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity134Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 134")
+    category: str = Field(default="Category_134", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=134 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity134Create(TransportSchemaEntity134Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity134Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity134Response(TransportSchemaEntity134Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity135Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 135")
+    category: str = Field(default="Category_135", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=135 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity135Create(TransportSchemaEntity135Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity135Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity135Response(TransportSchemaEntity135Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity136Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 136")
+    category: str = Field(default="Category_136", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=136 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity136Create(TransportSchemaEntity136Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity136Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity136Response(TransportSchemaEntity136Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity137Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 137")
+    category: str = Field(default="Category_137", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=137 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity137Create(TransportSchemaEntity137Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity137Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity137Response(TransportSchemaEntity137Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity138Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 138")
+    category: str = Field(default="Category_138", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=138 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity138Create(TransportSchemaEntity138Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity138Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity138Response(TransportSchemaEntity138Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity139Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 139")
+    category: str = Field(default="Category_139", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=139 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity139Create(TransportSchemaEntity139Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity139Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity139Response(TransportSchemaEntity139Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity140Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 140")
+    category: str = Field(default="Category_140", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=140 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity140Create(TransportSchemaEntity140Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity140Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity140Response(TransportSchemaEntity140Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity141Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 141")
+    category: str = Field(default="Category_141", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=141 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity141Create(TransportSchemaEntity141Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity141Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity141Response(TransportSchemaEntity141Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity142Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 142")
+    category: str = Field(default="Category_142", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=142 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity142Create(TransportSchemaEntity142Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity142Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity142Response(TransportSchemaEntity142Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity143Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 143")
+    category: str = Field(default="Category_143", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=143 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity143Create(TransportSchemaEntity143Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity143Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity143Response(TransportSchemaEntity143Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity144Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 144")
+    category: str = Field(default="Category_144", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=144 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity144Create(TransportSchemaEntity144Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity144Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity144Response(TransportSchemaEntity144Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity145Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 145")
+    category: str = Field(default="Category_145", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=145 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity145Create(TransportSchemaEntity145Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity145Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity145Response(TransportSchemaEntity145Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity146Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 146")
+    category: str = Field(default="Category_146", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=146 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity146Create(TransportSchemaEntity146Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity146Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity146Response(TransportSchemaEntity146Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity147Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 147")
+    category: str = Field(default="Category_147", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=147 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity147Create(TransportSchemaEntity147Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity147Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity147Response(TransportSchemaEntity147Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity148Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 148")
+    category: str = Field(default="Category_148", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=148 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity148Create(TransportSchemaEntity148Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity148Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity148Response(TransportSchemaEntity148Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity149Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 149")
+    category: str = Field(default="Category_149", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=149 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity149Create(TransportSchemaEntity149Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity149Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity149Response(TransportSchemaEntity149Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity150Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 150")
+    category: str = Field(default="Category_150", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=150 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity150Create(TransportSchemaEntity150Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity150Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity150Response(TransportSchemaEntity150Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity151Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 151")
+    category: str = Field(default="Category_151", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=151 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity151Create(TransportSchemaEntity151Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity151Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity151Response(TransportSchemaEntity151Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity152Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 152")
+    category: str = Field(default="Category_152", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=152 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity152Create(TransportSchemaEntity152Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity152Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity152Response(TransportSchemaEntity152Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity153Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 153")
+    category: str = Field(default="Category_153", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=153 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity153Create(TransportSchemaEntity153Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity153Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity153Response(TransportSchemaEntity153Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity154Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 154")
+    category: str = Field(default="Category_154", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=154 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity154Create(TransportSchemaEntity154Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity154Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity154Response(TransportSchemaEntity154Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity155Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 155")
+    category: str = Field(default="Category_155", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=155 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity155Create(TransportSchemaEntity155Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity155Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity155Response(TransportSchemaEntity155Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity156Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 156")
+    category: str = Field(default="Category_156", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=156 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity156Create(TransportSchemaEntity156Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity156Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity156Response(TransportSchemaEntity156Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity157Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 157")
+    category: str = Field(default="Category_157", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=157 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity157Create(TransportSchemaEntity157Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity157Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity157Response(TransportSchemaEntity157Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity158Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 158")
+    category: str = Field(default="Category_158", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=158 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity158Create(TransportSchemaEntity158Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity158Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity158Response(TransportSchemaEntity158Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity159Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 159")
+    category: str = Field(default="Category_159", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=159 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity159Create(TransportSchemaEntity159Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity159Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity159Response(TransportSchemaEntity159Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity160Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 160")
+    category: str = Field(default="Category_160", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=160 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity160Create(TransportSchemaEntity160Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity160Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity160Response(TransportSchemaEntity160Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity161Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 161")
+    category: str = Field(default="Category_161", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=161 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity161Create(TransportSchemaEntity161Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity161Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity161Response(TransportSchemaEntity161Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity162Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 162")
+    category: str = Field(default="Category_162", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=162 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity162Create(TransportSchemaEntity162Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity162Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity162Response(TransportSchemaEntity162Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity163Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 163")
+    category: str = Field(default="Category_163", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=163 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity163Create(TransportSchemaEntity163Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity163Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity163Response(TransportSchemaEntity163Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity164Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 164")
+    category: str = Field(default="Category_164", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=164 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity164Create(TransportSchemaEntity164Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity164Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity164Response(TransportSchemaEntity164Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity165Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 165")
+    category: str = Field(default="Category_165", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=165 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity165Create(TransportSchemaEntity165Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity165Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity165Response(TransportSchemaEntity165Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity166Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 166")
+    category: str = Field(default="Category_166", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=166 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity166Create(TransportSchemaEntity166Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity166Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity166Response(TransportSchemaEntity166Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity167Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 167")
+    category: str = Field(default="Category_167", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=167 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity167Create(TransportSchemaEntity167Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity167Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity167Response(TransportSchemaEntity167Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity168Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 168")
+    category: str = Field(default="Category_168", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=168 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity168Create(TransportSchemaEntity168Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity168Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity168Response(TransportSchemaEntity168Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity169Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 169")
+    category: str = Field(default="Category_169", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=169 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity169Create(TransportSchemaEntity169Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity169Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity169Response(TransportSchemaEntity169Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity170Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 170")
+    category: str = Field(default="Category_170", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=170 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity170Create(TransportSchemaEntity170Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity170Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity170Response(TransportSchemaEntity170Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity171Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 171")
+    category: str = Field(default="Category_171", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=171 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity171Create(TransportSchemaEntity171Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity171Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity171Response(TransportSchemaEntity171Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity172Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 172")
+    category: str = Field(default="Category_172", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=172 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity172Create(TransportSchemaEntity172Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity172Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity172Response(TransportSchemaEntity172Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity173Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 173")
+    category: str = Field(default="Category_173", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=173 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity173Create(TransportSchemaEntity173Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity173Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity173Response(TransportSchemaEntity173Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity174Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 174")
+    category: str = Field(default="Category_174", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=174 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity174Create(TransportSchemaEntity174Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity174Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity174Response(TransportSchemaEntity174Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity175Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 175")
+    category: str = Field(default="Category_175", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=175 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity175Create(TransportSchemaEntity175Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity175Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity175Response(TransportSchemaEntity175Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity176Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 176")
+    category: str = Field(default="Category_176", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=176 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity176Create(TransportSchemaEntity176Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity176Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity176Response(TransportSchemaEntity176Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity177Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 177")
+    category: str = Field(default="Category_177", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=177 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity177Create(TransportSchemaEntity177Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity177Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity177Response(TransportSchemaEntity177Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity178Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 178")
+    category: str = Field(default="Category_178", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=178 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity178Create(TransportSchemaEntity178Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity178Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity178Response(TransportSchemaEntity178Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity179Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 179")
+    category: str = Field(default="Category_179", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=179 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity179Create(TransportSchemaEntity179Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity179Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity179Response(TransportSchemaEntity179Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity180Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 180")
+    category: str = Field(default="Category_180", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=180 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity180Create(TransportSchemaEntity180Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity180Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity180Response(TransportSchemaEntity180Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity181Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 181")
+    category: str = Field(default="Category_181", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=181 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity181Create(TransportSchemaEntity181Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity181Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity181Response(TransportSchemaEntity181Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity182Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 182")
+    category: str = Field(default="Category_182", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=182 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity182Create(TransportSchemaEntity182Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity182Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity182Response(TransportSchemaEntity182Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity183Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 183")
+    category: str = Field(default="Category_183", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=183 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity183Create(TransportSchemaEntity183Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity183Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity183Response(TransportSchemaEntity183Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity184Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 184")
+    category: str = Field(default="Category_184", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=184 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity184Create(TransportSchemaEntity184Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity184Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity184Response(TransportSchemaEntity184Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity185Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 185")
+    category: str = Field(default="Category_185", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=185 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity185Create(TransportSchemaEntity185Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity185Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity185Response(TransportSchemaEntity185Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity186Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 186")
+    category: str = Field(default="Category_186", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=186 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity186Create(TransportSchemaEntity186Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity186Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity186Response(TransportSchemaEntity186Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity187Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 187")
+    category: str = Field(default="Category_187", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=187 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity187Create(TransportSchemaEntity187Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity187Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity187Response(TransportSchemaEntity187Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity188Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 188")
+    category: str = Field(default="Category_188", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=188 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity188Create(TransportSchemaEntity188Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity188Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity188Response(TransportSchemaEntity188Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity189Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 189")
+    category: str = Field(default="Category_189", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=189 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity189Create(TransportSchemaEntity189Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity189Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity189Response(TransportSchemaEntity189Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity190Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 190")
+    category: str = Field(default="Category_190", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=190 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity190Create(TransportSchemaEntity190Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity190Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity190Response(TransportSchemaEntity190Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity191Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 191")
+    category: str = Field(default="Category_191", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=191 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity191Create(TransportSchemaEntity191Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity191Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity191Response(TransportSchemaEntity191Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity192Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 192")
+    category: str = Field(default="Category_192", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=192 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity192Create(TransportSchemaEntity192Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity192Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity192Response(TransportSchemaEntity192Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity193Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 193")
+    category: str = Field(default="Category_193", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=193 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity193Create(TransportSchemaEntity193Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity193Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity193Response(TransportSchemaEntity193Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity194Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 194")
+    category: str = Field(default="Category_194", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=194 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity194Create(TransportSchemaEntity194Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity194Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity194Response(TransportSchemaEntity194Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity195Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 195")
+    category: str = Field(default="Category_195", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=195 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity195Create(TransportSchemaEntity195Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity195Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity195Response(TransportSchemaEntity195Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity196Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 196")
+    category: str = Field(default="Category_196", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=196 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity196Create(TransportSchemaEntity196Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity196Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity196Response(TransportSchemaEntity196Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity197Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 197")
+    category: str = Field(default="Category_197", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=197 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity197Create(TransportSchemaEntity197Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity197Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity197Response(TransportSchemaEntity197Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity198Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 198")
+    category: str = Field(default="Category_198", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=198 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity198Create(TransportSchemaEntity198Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity198Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity198Response(TransportSchemaEntity198Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity199Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 199")
+    category: str = Field(default="Category_199", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=199 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity199Create(TransportSchemaEntity199Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity199Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity199Response(TransportSchemaEntity199Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class TransportSchemaEntity200Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 200")
+    category: str = Field(default="Category_200", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=200 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class TransportSchemaEntity200Create(TransportSchemaEntity200Base):
+    entity_code: str = Field(..., max_length=100)
+
+class TransportSchemaEntity200Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class TransportSchemaEntity200Response(TransportSchemaEntity200Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+

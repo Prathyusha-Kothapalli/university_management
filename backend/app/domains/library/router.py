@@ -2171,3 +2171,1443 @@ def create_entity_120(payload: LibrarySchemaEntity120Create, db: Session = Depen
     srv = LibraryDomainService(db)
     return srv.create_entity_120(payload)
 
+@router.get("/entity-121", response_model=List[LibrarySchemaEntity121Response])
+def list_entities_121(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_121_list(skip=skip, limit=limit)
+
+@router.get("/entity-121/{entity_id}", response_model=LibrarySchemaEntity121Response)
+def get_entity_121(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_121_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 121 not found")
+    return res
+
+@router.post("/entity-121", response_model=LibrarySchemaEntity121Response, status_code=201)
+def create_entity_121(payload: LibrarySchemaEntity121Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_121(payload)
+
+@router.get("/entity-122", response_model=List[LibrarySchemaEntity122Response])
+def list_entities_122(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_122_list(skip=skip, limit=limit)
+
+@router.get("/entity-122/{entity_id}", response_model=LibrarySchemaEntity122Response)
+def get_entity_122(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_122_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 122 not found")
+    return res
+
+@router.post("/entity-122", response_model=LibrarySchemaEntity122Response, status_code=201)
+def create_entity_122(payload: LibrarySchemaEntity122Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_122(payload)
+
+@router.get("/entity-123", response_model=List[LibrarySchemaEntity123Response])
+def list_entities_123(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_123_list(skip=skip, limit=limit)
+
+@router.get("/entity-123/{entity_id}", response_model=LibrarySchemaEntity123Response)
+def get_entity_123(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_123_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 123 not found")
+    return res
+
+@router.post("/entity-123", response_model=LibrarySchemaEntity123Response, status_code=201)
+def create_entity_123(payload: LibrarySchemaEntity123Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_123(payload)
+
+@router.get("/entity-124", response_model=List[LibrarySchemaEntity124Response])
+def list_entities_124(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_124_list(skip=skip, limit=limit)
+
+@router.get("/entity-124/{entity_id}", response_model=LibrarySchemaEntity124Response)
+def get_entity_124(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_124_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 124 not found")
+    return res
+
+@router.post("/entity-124", response_model=LibrarySchemaEntity124Response, status_code=201)
+def create_entity_124(payload: LibrarySchemaEntity124Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_124(payload)
+
+@router.get("/entity-125", response_model=List[LibrarySchemaEntity125Response])
+def list_entities_125(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_125_list(skip=skip, limit=limit)
+
+@router.get("/entity-125/{entity_id}", response_model=LibrarySchemaEntity125Response)
+def get_entity_125(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_125_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 125 not found")
+    return res
+
+@router.post("/entity-125", response_model=LibrarySchemaEntity125Response, status_code=201)
+def create_entity_125(payload: LibrarySchemaEntity125Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_125(payload)
+
+@router.get("/entity-126", response_model=List[LibrarySchemaEntity126Response])
+def list_entities_126(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_126_list(skip=skip, limit=limit)
+
+@router.get("/entity-126/{entity_id}", response_model=LibrarySchemaEntity126Response)
+def get_entity_126(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_126_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 126 not found")
+    return res
+
+@router.post("/entity-126", response_model=LibrarySchemaEntity126Response, status_code=201)
+def create_entity_126(payload: LibrarySchemaEntity126Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_126(payload)
+
+@router.get("/entity-127", response_model=List[LibrarySchemaEntity127Response])
+def list_entities_127(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_127_list(skip=skip, limit=limit)
+
+@router.get("/entity-127/{entity_id}", response_model=LibrarySchemaEntity127Response)
+def get_entity_127(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_127_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 127 not found")
+    return res
+
+@router.post("/entity-127", response_model=LibrarySchemaEntity127Response, status_code=201)
+def create_entity_127(payload: LibrarySchemaEntity127Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_127(payload)
+
+@router.get("/entity-128", response_model=List[LibrarySchemaEntity128Response])
+def list_entities_128(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_128_list(skip=skip, limit=limit)
+
+@router.get("/entity-128/{entity_id}", response_model=LibrarySchemaEntity128Response)
+def get_entity_128(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_128_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 128 not found")
+    return res
+
+@router.post("/entity-128", response_model=LibrarySchemaEntity128Response, status_code=201)
+def create_entity_128(payload: LibrarySchemaEntity128Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_128(payload)
+
+@router.get("/entity-129", response_model=List[LibrarySchemaEntity129Response])
+def list_entities_129(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_129_list(skip=skip, limit=limit)
+
+@router.get("/entity-129/{entity_id}", response_model=LibrarySchemaEntity129Response)
+def get_entity_129(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_129_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 129 not found")
+    return res
+
+@router.post("/entity-129", response_model=LibrarySchemaEntity129Response, status_code=201)
+def create_entity_129(payload: LibrarySchemaEntity129Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_129(payload)
+
+@router.get("/entity-130", response_model=List[LibrarySchemaEntity130Response])
+def list_entities_130(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_130_list(skip=skip, limit=limit)
+
+@router.get("/entity-130/{entity_id}", response_model=LibrarySchemaEntity130Response)
+def get_entity_130(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_130_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 130 not found")
+    return res
+
+@router.post("/entity-130", response_model=LibrarySchemaEntity130Response, status_code=201)
+def create_entity_130(payload: LibrarySchemaEntity130Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_130(payload)
+
+@router.get("/entity-131", response_model=List[LibrarySchemaEntity131Response])
+def list_entities_131(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_131_list(skip=skip, limit=limit)
+
+@router.get("/entity-131/{entity_id}", response_model=LibrarySchemaEntity131Response)
+def get_entity_131(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_131_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 131 not found")
+    return res
+
+@router.post("/entity-131", response_model=LibrarySchemaEntity131Response, status_code=201)
+def create_entity_131(payload: LibrarySchemaEntity131Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_131(payload)
+
+@router.get("/entity-132", response_model=List[LibrarySchemaEntity132Response])
+def list_entities_132(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_132_list(skip=skip, limit=limit)
+
+@router.get("/entity-132/{entity_id}", response_model=LibrarySchemaEntity132Response)
+def get_entity_132(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_132_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 132 not found")
+    return res
+
+@router.post("/entity-132", response_model=LibrarySchemaEntity132Response, status_code=201)
+def create_entity_132(payload: LibrarySchemaEntity132Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_132(payload)
+
+@router.get("/entity-133", response_model=List[LibrarySchemaEntity133Response])
+def list_entities_133(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_133_list(skip=skip, limit=limit)
+
+@router.get("/entity-133/{entity_id}", response_model=LibrarySchemaEntity133Response)
+def get_entity_133(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_133_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 133 not found")
+    return res
+
+@router.post("/entity-133", response_model=LibrarySchemaEntity133Response, status_code=201)
+def create_entity_133(payload: LibrarySchemaEntity133Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_133(payload)
+
+@router.get("/entity-134", response_model=List[LibrarySchemaEntity134Response])
+def list_entities_134(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_134_list(skip=skip, limit=limit)
+
+@router.get("/entity-134/{entity_id}", response_model=LibrarySchemaEntity134Response)
+def get_entity_134(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_134_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 134 not found")
+    return res
+
+@router.post("/entity-134", response_model=LibrarySchemaEntity134Response, status_code=201)
+def create_entity_134(payload: LibrarySchemaEntity134Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_134(payload)
+
+@router.get("/entity-135", response_model=List[LibrarySchemaEntity135Response])
+def list_entities_135(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_135_list(skip=skip, limit=limit)
+
+@router.get("/entity-135/{entity_id}", response_model=LibrarySchemaEntity135Response)
+def get_entity_135(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_135_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 135 not found")
+    return res
+
+@router.post("/entity-135", response_model=LibrarySchemaEntity135Response, status_code=201)
+def create_entity_135(payload: LibrarySchemaEntity135Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_135(payload)
+
+@router.get("/entity-136", response_model=List[LibrarySchemaEntity136Response])
+def list_entities_136(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_136_list(skip=skip, limit=limit)
+
+@router.get("/entity-136/{entity_id}", response_model=LibrarySchemaEntity136Response)
+def get_entity_136(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_136_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 136 not found")
+    return res
+
+@router.post("/entity-136", response_model=LibrarySchemaEntity136Response, status_code=201)
+def create_entity_136(payload: LibrarySchemaEntity136Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_136(payload)
+
+@router.get("/entity-137", response_model=List[LibrarySchemaEntity137Response])
+def list_entities_137(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_137_list(skip=skip, limit=limit)
+
+@router.get("/entity-137/{entity_id}", response_model=LibrarySchemaEntity137Response)
+def get_entity_137(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_137_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 137 not found")
+    return res
+
+@router.post("/entity-137", response_model=LibrarySchemaEntity137Response, status_code=201)
+def create_entity_137(payload: LibrarySchemaEntity137Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_137(payload)
+
+@router.get("/entity-138", response_model=List[LibrarySchemaEntity138Response])
+def list_entities_138(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_138_list(skip=skip, limit=limit)
+
+@router.get("/entity-138/{entity_id}", response_model=LibrarySchemaEntity138Response)
+def get_entity_138(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_138_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 138 not found")
+    return res
+
+@router.post("/entity-138", response_model=LibrarySchemaEntity138Response, status_code=201)
+def create_entity_138(payload: LibrarySchemaEntity138Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_138(payload)
+
+@router.get("/entity-139", response_model=List[LibrarySchemaEntity139Response])
+def list_entities_139(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_139_list(skip=skip, limit=limit)
+
+@router.get("/entity-139/{entity_id}", response_model=LibrarySchemaEntity139Response)
+def get_entity_139(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_139_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 139 not found")
+    return res
+
+@router.post("/entity-139", response_model=LibrarySchemaEntity139Response, status_code=201)
+def create_entity_139(payload: LibrarySchemaEntity139Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_139(payload)
+
+@router.get("/entity-140", response_model=List[LibrarySchemaEntity140Response])
+def list_entities_140(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_140_list(skip=skip, limit=limit)
+
+@router.get("/entity-140/{entity_id}", response_model=LibrarySchemaEntity140Response)
+def get_entity_140(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_140_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 140 not found")
+    return res
+
+@router.post("/entity-140", response_model=LibrarySchemaEntity140Response, status_code=201)
+def create_entity_140(payload: LibrarySchemaEntity140Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_140(payload)
+
+@router.get("/entity-141", response_model=List[LibrarySchemaEntity141Response])
+def list_entities_141(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_141_list(skip=skip, limit=limit)
+
+@router.get("/entity-141/{entity_id}", response_model=LibrarySchemaEntity141Response)
+def get_entity_141(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_141_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 141 not found")
+    return res
+
+@router.post("/entity-141", response_model=LibrarySchemaEntity141Response, status_code=201)
+def create_entity_141(payload: LibrarySchemaEntity141Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_141(payload)
+
+@router.get("/entity-142", response_model=List[LibrarySchemaEntity142Response])
+def list_entities_142(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_142_list(skip=skip, limit=limit)
+
+@router.get("/entity-142/{entity_id}", response_model=LibrarySchemaEntity142Response)
+def get_entity_142(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_142_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 142 not found")
+    return res
+
+@router.post("/entity-142", response_model=LibrarySchemaEntity142Response, status_code=201)
+def create_entity_142(payload: LibrarySchemaEntity142Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_142(payload)
+
+@router.get("/entity-143", response_model=List[LibrarySchemaEntity143Response])
+def list_entities_143(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_143_list(skip=skip, limit=limit)
+
+@router.get("/entity-143/{entity_id}", response_model=LibrarySchemaEntity143Response)
+def get_entity_143(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_143_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 143 not found")
+    return res
+
+@router.post("/entity-143", response_model=LibrarySchemaEntity143Response, status_code=201)
+def create_entity_143(payload: LibrarySchemaEntity143Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_143(payload)
+
+@router.get("/entity-144", response_model=List[LibrarySchemaEntity144Response])
+def list_entities_144(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_144_list(skip=skip, limit=limit)
+
+@router.get("/entity-144/{entity_id}", response_model=LibrarySchemaEntity144Response)
+def get_entity_144(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_144_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 144 not found")
+    return res
+
+@router.post("/entity-144", response_model=LibrarySchemaEntity144Response, status_code=201)
+def create_entity_144(payload: LibrarySchemaEntity144Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_144(payload)
+
+@router.get("/entity-145", response_model=List[LibrarySchemaEntity145Response])
+def list_entities_145(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_145_list(skip=skip, limit=limit)
+
+@router.get("/entity-145/{entity_id}", response_model=LibrarySchemaEntity145Response)
+def get_entity_145(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_145_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 145 not found")
+    return res
+
+@router.post("/entity-145", response_model=LibrarySchemaEntity145Response, status_code=201)
+def create_entity_145(payload: LibrarySchemaEntity145Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_145(payload)
+
+@router.get("/entity-146", response_model=List[LibrarySchemaEntity146Response])
+def list_entities_146(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_146_list(skip=skip, limit=limit)
+
+@router.get("/entity-146/{entity_id}", response_model=LibrarySchemaEntity146Response)
+def get_entity_146(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_146_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 146 not found")
+    return res
+
+@router.post("/entity-146", response_model=LibrarySchemaEntity146Response, status_code=201)
+def create_entity_146(payload: LibrarySchemaEntity146Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_146(payload)
+
+@router.get("/entity-147", response_model=List[LibrarySchemaEntity147Response])
+def list_entities_147(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_147_list(skip=skip, limit=limit)
+
+@router.get("/entity-147/{entity_id}", response_model=LibrarySchemaEntity147Response)
+def get_entity_147(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_147_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 147 not found")
+    return res
+
+@router.post("/entity-147", response_model=LibrarySchemaEntity147Response, status_code=201)
+def create_entity_147(payload: LibrarySchemaEntity147Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_147(payload)
+
+@router.get("/entity-148", response_model=List[LibrarySchemaEntity148Response])
+def list_entities_148(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_148_list(skip=skip, limit=limit)
+
+@router.get("/entity-148/{entity_id}", response_model=LibrarySchemaEntity148Response)
+def get_entity_148(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_148_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 148 not found")
+    return res
+
+@router.post("/entity-148", response_model=LibrarySchemaEntity148Response, status_code=201)
+def create_entity_148(payload: LibrarySchemaEntity148Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_148(payload)
+
+@router.get("/entity-149", response_model=List[LibrarySchemaEntity149Response])
+def list_entities_149(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_149_list(skip=skip, limit=limit)
+
+@router.get("/entity-149/{entity_id}", response_model=LibrarySchemaEntity149Response)
+def get_entity_149(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_149_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 149 not found")
+    return res
+
+@router.post("/entity-149", response_model=LibrarySchemaEntity149Response, status_code=201)
+def create_entity_149(payload: LibrarySchemaEntity149Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_149(payload)
+
+@router.get("/entity-150", response_model=List[LibrarySchemaEntity150Response])
+def list_entities_150(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_150_list(skip=skip, limit=limit)
+
+@router.get("/entity-150/{entity_id}", response_model=LibrarySchemaEntity150Response)
+def get_entity_150(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_150_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 150 not found")
+    return res
+
+@router.post("/entity-150", response_model=LibrarySchemaEntity150Response, status_code=201)
+def create_entity_150(payload: LibrarySchemaEntity150Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_150(payload)
+
+@router.get("/entity-151", response_model=List[LibrarySchemaEntity151Response])
+def list_entities_151(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_151_list(skip=skip, limit=limit)
+
+@router.get("/entity-151/{entity_id}", response_model=LibrarySchemaEntity151Response)
+def get_entity_151(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_151_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 151 not found")
+    return res
+
+@router.post("/entity-151", response_model=LibrarySchemaEntity151Response, status_code=201)
+def create_entity_151(payload: LibrarySchemaEntity151Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_151(payload)
+
+@router.get("/entity-152", response_model=List[LibrarySchemaEntity152Response])
+def list_entities_152(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_152_list(skip=skip, limit=limit)
+
+@router.get("/entity-152/{entity_id}", response_model=LibrarySchemaEntity152Response)
+def get_entity_152(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_152_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 152 not found")
+    return res
+
+@router.post("/entity-152", response_model=LibrarySchemaEntity152Response, status_code=201)
+def create_entity_152(payload: LibrarySchemaEntity152Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_152(payload)
+
+@router.get("/entity-153", response_model=List[LibrarySchemaEntity153Response])
+def list_entities_153(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_153_list(skip=skip, limit=limit)
+
+@router.get("/entity-153/{entity_id}", response_model=LibrarySchemaEntity153Response)
+def get_entity_153(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_153_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 153 not found")
+    return res
+
+@router.post("/entity-153", response_model=LibrarySchemaEntity153Response, status_code=201)
+def create_entity_153(payload: LibrarySchemaEntity153Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_153(payload)
+
+@router.get("/entity-154", response_model=List[LibrarySchemaEntity154Response])
+def list_entities_154(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_154_list(skip=skip, limit=limit)
+
+@router.get("/entity-154/{entity_id}", response_model=LibrarySchemaEntity154Response)
+def get_entity_154(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_154_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 154 not found")
+    return res
+
+@router.post("/entity-154", response_model=LibrarySchemaEntity154Response, status_code=201)
+def create_entity_154(payload: LibrarySchemaEntity154Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_154(payload)
+
+@router.get("/entity-155", response_model=List[LibrarySchemaEntity155Response])
+def list_entities_155(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_155_list(skip=skip, limit=limit)
+
+@router.get("/entity-155/{entity_id}", response_model=LibrarySchemaEntity155Response)
+def get_entity_155(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_155_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 155 not found")
+    return res
+
+@router.post("/entity-155", response_model=LibrarySchemaEntity155Response, status_code=201)
+def create_entity_155(payload: LibrarySchemaEntity155Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_155(payload)
+
+@router.get("/entity-156", response_model=List[LibrarySchemaEntity156Response])
+def list_entities_156(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_156_list(skip=skip, limit=limit)
+
+@router.get("/entity-156/{entity_id}", response_model=LibrarySchemaEntity156Response)
+def get_entity_156(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_156_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 156 not found")
+    return res
+
+@router.post("/entity-156", response_model=LibrarySchemaEntity156Response, status_code=201)
+def create_entity_156(payload: LibrarySchemaEntity156Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_156(payload)
+
+@router.get("/entity-157", response_model=List[LibrarySchemaEntity157Response])
+def list_entities_157(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_157_list(skip=skip, limit=limit)
+
+@router.get("/entity-157/{entity_id}", response_model=LibrarySchemaEntity157Response)
+def get_entity_157(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_157_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 157 not found")
+    return res
+
+@router.post("/entity-157", response_model=LibrarySchemaEntity157Response, status_code=201)
+def create_entity_157(payload: LibrarySchemaEntity157Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_157(payload)
+
+@router.get("/entity-158", response_model=List[LibrarySchemaEntity158Response])
+def list_entities_158(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_158_list(skip=skip, limit=limit)
+
+@router.get("/entity-158/{entity_id}", response_model=LibrarySchemaEntity158Response)
+def get_entity_158(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_158_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 158 not found")
+    return res
+
+@router.post("/entity-158", response_model=LibrarySchemaEntity158Response, status_code=201)
+def create_entity_158(payload: LibrarySchemaEntity158Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_158(payload)
+
+@router.get("/entity-159", response_model=List[LibrarySchemaEntity159Response])
+def list_entities_159(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_159_list(skip=skip, limit=limit)
+
+@router.get("/entity-159/{entity_id}", response_model=LibrarySchemaEntity159Response)
+def get_entity_159(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_159_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 159 not found")
+    return res
+
+@router.post("/entity-159", response_model=LibrarySchemaEntity159Response, status_code=201)
+def create_entity_159(payload: LibrarySchemaEntity159Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_159(payload)
+
+@router.get("/entity-160", response_model=List[LibrarySchemaEntity160Response])
+def list_entities_160(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_160_list(skip=skip, limit=limit)
+
+@router.get("/entity-160/{entity_id}", response_model=LibrarySchemaEntity160Response)
+def get_entity_160(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_160_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 160 not found")
+    return res
+
+@router.post("/entity-160", response_model=LibrarySchemaEntity160Response, status_code=201)
+def create_entity_160(payload: LibrarySchemaEntity160Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_160(payload)
+
+@router.get("/entity-161", response_model=List[LibrarySchemaEntity161Response])
+def list_entities_161(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_161_list(skip=skip, limit=limit)
+
+@router.get("/entity-161/{entity_id}", response_model=LibrarySchemaEntity161Response)
+def get_entity_161(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_161_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 161 not found")
+    return res
+
+@router.post("/entity-161", response_model=LibrarySchemaEntity161Response, status_code=201)
+def create_entity_161(payload: LibrarySchemaEntity161Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_161(payload)
+
+@router.get("/entity-162", response_model=List[LibrarySchemaEntity162Response])
+def list_entities_162(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_162_list(skip=skip, limit=limit)
+
+@router.get("/entity-162/{entity_id}", response_model=LibrarySchemaEntity162Response)
+def get_entity_162(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_162_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 162 not found")
+    return res
+
+@router.post("/entity-162", response_model=LibrarySchemaEntity162Response, status_code=201)
+def create_entity_162(payload: LibrarySchemaEntity162Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_162(payload)
+
+@router.get("/entity-163", response_model=List[LibrarySchemaEntity163Response])
+def list_entities_163(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_163_list(skip=skip, limit=limit)
+
+@router.get("/entity-163/{entity_id}", response_model=LibrarySchemaEntity163Response)
+def get_entity_163(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_163_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 163 not found")
+    return res
+
+@router.post("/entity-163", response_model=LibrarySchemaEntity163Response, status_code=201)
+def create_entity_163(payload: LibrarySchemaEntity163Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_163(payload)
+
+@router.get("/entity-164", response_model=List[LibrarySchemaEntity164Response])
+def list_entities_164(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_164_list(skip=skip, limit=limit)
+
+@router.get("/entity-164/{entity_id}", response_model=LibrarySchemaEntity164Response)
+def get_entity_164(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_164_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 164 not found")
+    return res
+
+@router.post("/entity-164", response_model=LibrarySchemaEntity164Response, status_code=201)
+def create_entity_164(payload: LibrarySchemaEntity164Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_164(payload)
+
+@router.get("/entity-165", response_model=List[LibrarySchemaEntity165Response])
+def list_entities_165(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_165_list(skip=skip, limit=limit)
+
+@router.get("/entity-165/{entity_id}", response_model=LibrarySchemaEntity165Response)
+def get_entity_165(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_165_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 165 not found")
+    return res
+
+@router.post("/entity-165", response_model=LibrarySchemaEntity165Response, status_code=201)
+def create_entity_165(payload: LibrarySchemaEntity165Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_165(payload)
+
+@router.get("/entity-166", response_model=List[LibrarySchemaEntity166Response])
+def list_entities_166(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_166_list(skip=skip, limit=limit)
+
+@router.get("/entity-166/{entity_id}", response_model=LibrarySchemaEntity166Response)
+def get_entity_166(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_166_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 166 not found")
+    return res
+
+@router.post("/entity-166", response_model=LibrarySchemaEntity166Response, status_code=201)
+def create_entity_166(payload: LibrarySchemaEntity166Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_166(payload)
+
+@router.get("/entity-167", response_model=List[LibrarySchemaEntity167Response])
+def list_entities_167(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_167_list(skip=skip, limit=limit)
+
+@router.get("/entity-167/{entity_id}", response_model=LibrarySchemaEntity167Response)
+def get_entity_167(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_167_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 167 not found")
+    return res
+
+@router.post("/entity-167", response_model=LibrarySchemaEntity167Response, status_code=201)
+def create_entity_167(payload: LibrarySchemaEntity167Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_167(payload)
+
+@router.get("/entity-168", response_model=List[LibrarySchemaEntity168Response])
+def list_entities_168(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_168_list(skip=skip, limit=limit)
+
+@router.get("/entity-168/{entity_id}", response_model=LibrarySchemaEntity168Response)
+def get_entity_168(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_168_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 168 not found")
+    return res
+
+@router.post("/entity-168", response_model=LibrarySchemaEntity168Response, status_code=201)
+def create_entity_168(payload: LibrarySchemaEntity168Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_168(payload)
+
+@router.get("/entity-169", response_model=List[LibrarySchemaEntity169Response])
+def list_entities_169(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_169_list(skip=skip, limit=limit)
+
+@router.get("/entity-169/{entity_id}", response_model=LibrarySchemaEntity169Response)
+def get_entity_169(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_169_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 169 not found")
+    return res
+
+@router.post("/entity-169", response_model=LibrarySchemaEntity169Response, status_code=201)
+def create_entity_169(payload: LibrarySchemaEntity169Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_169(payload)
+
+@router.get("/entity-170", response_model=List[LibrarySchemaEntity170Response])
+def list_entities_170(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_170_list(skip=skip, limit=limit)
+
+@router.get("/entity-170/{entity_id}", response_model=LibrarySchemaEntity170Response)
+def get_entity_170(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_170_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 170 not found")
+    return res
+
+@router.post("/entity-170", response_model=LibrarySchemaEntity170Response, status_code=201)
+def create_entity_170(payload: LibrarySchemaEntity170Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_170(payload)
+
+@router.get("/entity-171", response_model=List[LibrarySchemaEntity171Response])
+def list_entities_171(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_171_list(skip=skip, limit=limit)
+
+@router.get("/entity-171/{entity_id}", response_model=LibrarySchemaEntity171Response)
+def get_entity_171(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_171_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 171 not found")
+    return res
+
+@router.post("/entity-171", response_model=LibrarySchemaEntity171Response, status_code=201)
+def create_entity_171(payload: LibrarySchemaEntity171Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_171(payload)
+
+@router.get("/entity-172", response_model=List[LibrarySchemaEntity172Response])
+def list_entities_172(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_172_list(skip=skip, limit=limit)
+
+@router.get("/entity-172/{entity_id}", response_model=LibrarySchemaEntity172Response)
+def get_entity_172(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_172_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 172 not found")
+    return res
+
+@router.post("/entity-172", response_model=LibrarySchemaEntity172Response, status_code=201)
+def create_entity_172(payload: LibrarySchemaEntity172Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_172(payload)
+
+@router.get("/entity-173", response_model=List[LibrarySchemaEntity173Response])
+def list_entities_173(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_173_list(skip=skip, limit=limit)
+
+@router.get("/entity-173/{entity_id}", response_model=LibrarySchemaEntity173Response)
+def get_entity_173(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_173_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 173 not found")
+    return res
+
+@router.post("/entity-173", response_model=LibrarySchemaEntity173Response, status_code=201)
+def create_entity_173(payload: LibrarySchemaEntity173Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_173(payload)
+
+@router.get("/entity-174", response_model=List[LibrarySchemaEntity174Response])
+def list_entities_174(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_174_list(skip=skip, limit=limit)
+
+@router.get("/entity-174/{entity_id}", response_model=LibrarySchemaEntity174Response)
+def get_entity_174(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_174_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 174 not found")
+    return res
+
+@router.post("/entity-174", response_model=LibrarySchemaEntity174Response, status_code=201)
+def create_entity_174(payload: LibrarySchemaEntity174Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_174(payload)
+
+@router.get("/entity-175", response_model=List[LibrarySchemaEntity175Response])
+def list_entities_175(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_175_list(skip=skip, limit=limit)
+
+@router.get("/entity-175/{entity_id}", response_model=LibrarySchemaEntity175Response)
+def get_entity_175(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_175_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 175 not found")
+    return res
+
+@router.post("/entity-175", response_model=LibrarySchemaEntity175Response, status_code=201)
+def create_entity_175(payload: LibrarySchemaEntity175Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_175(payload)
+
+@router.get("/entity-176", response_model=List[LibrarySchemaEntity176Response])
+def list_entities_176(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_176_list(skip=skip, limit=limit)
+
+@router.get("/entity-176/{entity_id}", response_model=LibrarySchemaEntity176Response)
+def get_entity_176(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_176_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 176 not found")
+    return res
+
+@router.post("/entity-176", response_model=LibrarySchemaEntity176Response, status_code=201)
+def create_entity_176(payload: LibrarySchemaEntity176Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_176(payload)
+
+@router.get("/entity-177", response_model=List[LibrarySchemaEntity177Response])
+def list_entities_177(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_177_list(skip=skip, limit=limit)
+
+@router.get("/entity-177/{entity_id}", response_model=LibrarySchemaEntity177Response)
+def get_entity_177(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_177_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 177 not found")
+    return res
+
+@router.post("/entity-177", response_model=LibrarySchemaEntity177Response, status_code=201)
+def create_entity_177(payload: LibrarySchemaEntity177Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_177(payload)
+
+@router.get("/entity-178", response_model=List[LibrarySchemaEntity178Response])
+def list_entities_178(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_178_list(skip=skip, limit=limit)
+
+@router.get("/entity-178/{entity_id}", response_model=LibrarySchemaEntity178Response)
+def get_entity_178(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_178_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 178 not found")
+    return res
+
+@router.post("/entity-178", response_model=LibrarySchemaEntity178Response, status_code=201)
+def create_entity_178(payload: LibrarySchemaEntity178Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_178(payload)
+
+@router.get("/entity-179", response_model=List[LibrarySchemaEntity179Response])
+def list_entities_179(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_179_list(skip=skip, limit=limit)
+
+@router.get("/entity-179/{entity_id}", response_model=LibrarySchemaEntity179Response)
+def get_entity_179(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_179_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 179 not found")
+    return res
+
+@router.post("/entity-179", response_model=LibrarySchemaEntity179Response, status_code=201)
+def create_entity_179(payload: LibrarySchemaEntity179Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_179(payload)
+
+@router.get("/entity-180", response_model=List[LibrarySchemaEntity180Response])
+def list_entities_180(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_180_list(skip=skip, limit=limit)
+
+@router.get("/entity-180/{entity_id}", response_model=LibrarySchemaEntity180Response)
+def get_entity_180(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_180_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 180 not found")
+    return res
+
+@router.post("/entity-180", response_model=LibrarySchemaEntity180Response, status_code=201)
+def create_entity_180(payload: LibrarySchemaEntity180Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_180(payload)
+
+@router.get("/entity-181", response_model=List[LibrarySchemaEntity181Response])
+def list_entities_181(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_181_list(skip=skip, limit=limit)
+
+@router.get("/entity-181/{entity_id}", response_model=LibrarySchemaEntity181Response)
+def get_entity_181(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_181_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 181 not found")
+    return res
+
+@router.post("/entity-181", response_model=LibrarySchemaEntity181Response, status_code=201)
+def create_entity_181(payload: LibrarySchemaEntity181Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_181(payload)
+
+@router.get("/entity-182", response_model=List[LibrarySchemaEntity182Response])
+def list_entities_182(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_182_list(skip=skip, limit=limit)
+
+@router.get("/entity-182/{entity_id}", response_model=LibrarySchemaEntity182Response)
+def get_entity_182(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_182_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 182 not found")
+    return res
+
+@router.post("/entity-182", response_model=LibrarySchemaEntity182Response, status_code=201)
+def create_entity_182(payload: LibrarySchemaEntity182Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_182(payload)
+
+@router.get("/entity-183", response_model=List[LibrarySchemaEntity183Response])
+def list_entities_183(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_183_list(skip=skip, limit=limit)
+
+@router.get("/entity-183/{entity_id}", response_model=LibrarySchemaEntity183Response)
+def get_entity_183(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_183_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 183 not found")
+    return res
+
+@router.post("/entity-183", response_model=LibrarySchemaEntity183Response, status_code=201)
+def create_entity_183(payload: LibrarySchemaEntity183Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_183(payload)
+
+@router.get("/entity-184", response_model=List[LibrarySchemaEntity184Response])
+def list_entities_184(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_184_list(skip=skip, limit=limit)
+
+@router.get("/entity-184/{entity_id}", response_model=LibrarySchemaEntity184Response)
+def get_entity_184(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_184_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 184 not found")
+    return res
+
+@router.post("/entity-184", response_model=LibrarySchemaEntity184Response, status_code=201)
+def create_entity_184(payload: LibrarySchemaEntity184Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_184(payload)
+
+@router.get("/entity-185", response_model=List[LibrarySchemaEntity185Response])
+def list_entities_185(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_185_list(skip=skip, limit=limit)
+
+@router.get("/entity-185/{entity_id}", response_model=LibrarySchemaEntity185Response)
+def get_entity_185(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_185_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 185 not found")
+    return res
+
+@router.post("/entity-185", response_model=LibrarySchemaEntity185Response, status_code=201)
+def create_entity_185(payload: LibrarySchemaEntity185Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_185(payload)
+
+@router.get("/entity-186", response_model=List[LibrarySchemaEntity186Response])
+def list_entities_186(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_186_list(skip=skip, limit=limit)
+
+@router.get("/entity-186/{entity_id}", response_model=LibrarySchemaEntity186Response)
+def get_entity_186(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_186_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 186 not found")
+    return res
+
+@router.post("/entity-186", response_model=LibrarySchemaEntity186Response, status_code=201)
+def create_entity_186(payload: LibrarySchemaEntity186Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_186(payload)
+
+@router.get("/entity-187", response_model=List[LibrarySchemaEntity187Response])
+def list_entities_187(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_187_list(skip=skip, limit=limit)
+
+@router.get("/entity-187/{entity_id}", response_model=LibrarySchemaEntity187Response)
+def get_entity_187(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_187_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 187 not found")
+    return res
+
+@router.post("/entity-187", response_model=LibrarySchemaEntity187Response, status_code=201)
+def create_entity_187(payload: LibrarySchemaEntity187Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_187(payload)
+
+@router.get("/entity-188", response_model=List[LibrarySchemaEntity188Response])
+def list_entities_188(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_188_list(skip=skip, limit=limit)
+
+@router.get("/entity-188/{entity_id}", response_model=LibrarySchemaEntity188Response)
+def get_entity_188(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_188_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 188 not found")
+    return res
+
+@router.post("/entity-188", response_model=LibrarySchemaEntity188Response, status_code=201)
+def create_entity_188(payload: LibrarySchemaEntity188Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_188(payload)
+
+@router.get("/entity-189", response_model=List[LibrarySchemaEntity189Response])
+def list_entities_189(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_189_list(skip=skip, limit=limit)
+
+@router.get("/entity-189/{entity_id}", response_model=LibrarySchemaEntity189Response)
+def get_entity_189(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_189_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 189 not found")
+    return res
+
+@router.post("/entity-189", response_model=LibrarySchemaEntity189Response, status_code=201)
+def create_entity_189(payload: LibrarySchemaEntity189Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_189(payload)
+
+@router.get("/entity-190", response_model=List[LibrarySchemaEntity190Response])
+def list_entities_190(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_190_list(skip=skip, limit=limit)
+
+@router.get("/entity-190/{entity_id}", response_model=LibrarySchemaEntity190Response)
+def get_entity_190(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_190_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 190 not found")
+    return res
+
+@router.post("/entity-190", response_model=LibrarySchemaEntity190Response, status_code=201)
+def create_entity_190(payload: LibrarySchemaEntity190Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_190(payload)
+
+@router.get("/entity-191", response_model=List[LibrarySchemaEntity191Response])
+def list_entities_191(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_191_list(skip=skip, limit=limit)
+
+@router.get("/entity-191/{entity_id}", response_model=LibrarySchemaEntity191Response)
+def get_entity_191(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_191_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 191 not found")
+    return res
+
+@router.post("/entity-191", response_model=LibrarySchemaEntity191Response, status_code=201)
+def create_entity_191(payload: LibrarySchemaEntity191Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_191(payload)
+
+@router.get("/entity-192", response_model=List[LibrarySchemaEntity192Response])
+def list_entities_192(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_192_list(skip=skip, limit=limit)
+
+@router.get("/entity-192/{entity_id}", response_model=LibrarySchemaEntity192Response)
+def get_entity_192(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_192_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 192 not found")
+    return res
+
+@router.post("/entity-192", response_model=LibrarySchemaEntity192Response, status_code=201)
+def create_entity_192(payload: LibrarySchemaEntity192Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_192(payload)
+
+@router.get("/entity-193", response_model=List[LibrarySchemaEntity193Response])
+def list_entities_193(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_193_list(skip=skip, limit=limit)
+
+@router.get("/entity-193/{entity_id}", response_model=LibrarySchemaEntity193Response)
+def get_entity_193(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_193_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 193 not found")
+    return res
+
+@router.post("/entity-193", response_model=LibrarySchemaEntity193Response, status_code=201)
+def create_entity_193(payload: LibrarySchemaEntity193Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_193(payload)
+
+@router.get("/entity-194", response_model=List[LibrarySchemaEntity194Response])
+def list_entities_194(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_194_list(skip=skip, limit=limit)
+
+@router.get("/entity-194/{entity_id}", response_model=LibrarySchemaEntity194Response)
+def get_entity_194(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_194_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 194 not found")
+    return res
+
+@router.post("/entity-194", response_model=LibrarySchemaEntity194Response, status_code=201)
+def create_entity_194(payload: LibrarySchemaEntity194Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_194(payload)
+
+@router.get("/entity-195", response_model=List[LibrarySchemaEntity195Response])
+def list_entities_195(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_195_list(skip=skip, limit=limit)
+
+@router.get("/entity-195/{entity_id}", response_model=LibrarySchemaEntity195Response)
+def get_entity_195(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_195_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 195 not found")
+    return res
+
+@router.post("/entity-195", response_model=LibrarySchemaEntity195Response, status_code=201)
+def create_entity_195(payload: LibrarySchemaEntity195Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_195(payload)
+
+@router.get("/entity-196", response_model=List[LibrarySchemaEntity196Response])
+def list_entities_196(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_196_list(skip=skip, limit=limit)
+
+@router.get("/entity-196/{entity_id}", response_model=LibrarySchemaEntity196Response)
+def get_entity_196(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_196_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 196 not found")
+    return res
+
+@router.post("/entity-196", response_model=LibrarySchemaEntity196Response, status_code=201)
+def create_entity_196(payload: LibrarySchemaEntity196Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_196(payload)
+
+@router.get("/entity-197", response_model=List[LibrarySchemaEntity197Response])
+def list_entities_197(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_197_list(skip=skip, limit=limit)
+
+@router.get("/entity-197/{entity_id}", response_model=LibrarySchemaEntity197Response)
+def get_entity_197(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_197_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 197 not found")
+    return res
+
+@router.post("/entity-197", response_model=LibrarySchemaEntity197Response, status_code=201)
+def create_entity_197(payload: LibrarySchemaEntity197Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_197(payload)
+
+@router.get("/entity-198", response_model=List[LibrarySchemaEntity198Response])
+def list_entities_198(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_198_list(skip=skip, limit=limit)
+
+@router.get("/entity-198/{entity_id}", response_model=LibrarySchemaEntity198Response)
+def get_entity_198(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_198_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 198 not found")
+    return res
+
+@router.post("/entity-198", response_model=LibrarySchemaEntity198Response, status_code=201)
+def create_entity_198(payload: LibrarySchemaEntity198Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_198(payload)
+
+@router.get("/entity-199", response_model=List[LibrarySchemaEntity199Response])
+def list_entities_199(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_199_list(skip=skip, limit=limit)
+
+@router.get("/entity-199/{entity_id}", response_model=LibrarySchemaEntity199Response)
+def get_entity_199(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_199_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 199 not found")
+    return res
+
+@router.post("/entity-199", response_model=LibrarySchemaEntity199Response, status_code=201)
+def create_entity_199(payload: LibrarySchemaEntity199Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_199(payload)
+
+@router.get("/entity-200", response_model=List[LibrarySchemaEntity200Response])
+def list_entities_200(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.get_entity_200_list(skip=skip, limit=limit)
+
+@router.get("/entity-200/{entity_id}", response_model=LibrarySchemaEntity200Response)
+def get_entity_200(entity_id: int, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    res = srv.get_entity_200_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 200 not found")
+    return res
+
+@router.post("/entity-200", response_model=LibrarySchemaEntity200Response, status_code=201)
+def create_entity_200(payload: LibrarySchemaEntity200Create, db: Session = Depends(get_db)):
+    srv = LibraryDomainService(db)
+    return srv.create_entity_200(payload)
+

@@ -3486,3 +3486,2323 @@ class ExamsSchemaEntity120Response(ExamsSchemaEntity120Base):
 
     model_config = ConfigDict(from_attributes=True)
 
+class ExamsSchemaEntity121Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 121")
+    category: str = Field(default="Category_121", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=121 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity121Create(ExamsSchemaEntity121Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity121Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity121Response(ExamsSchemaEntity121Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity122Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 122")
+    category: str = Field(default="Category_122", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=122 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity122Create(ExamsSchemaEntity122Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity122Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity122Response(ExamsSchemaEntity122Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity123Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 123")
+    category: str = Field(default="Category_123", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=123 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity123Create(ExamsSchemaEntity123Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity123Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity123Response(ExamsSchemaEntity123Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity124Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 124")
+    category: str = Field(default="Category_124", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=124 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity124Create(ExamsSchemaEntity124Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity124Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity124Response(ExamsSchemaEntity124Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity125Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 125")
+    category: str = Field(default="Category_125", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=125 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity125Create(ExamsSchemaEntity125Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity125Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity125Response(ExamsSchemaEntity125Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity126Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 126")
+    category: str = Field(default="Category_126", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=126 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity126Create(ExamsSchemaEntity126Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity126Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity126Response(ExamsSchemaEntity126Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity127Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 127")
+    category: str = Field(default="Category_127", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=127 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity127Create(ExamsSchemaEntity127Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity127Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity127Response(ExamsSchemaEntity127Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity128Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 128")
+    category: str = Field(default="Category_128", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=128 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity128Create(ExamsSchemaEntity128Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity128Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity128Response(ExamsSchemaEntity128Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity129Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 129")
+    category: str = Field(default="Category_129", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=129 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity129Create(ExamsSchemaEntity129Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity129Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity129Response(ExamsSchemaEntity129Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity130Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 130")
+    category: str = Field(default="Category_130", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=130 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity130Create(ExamsSchemaEntity130Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity130Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity130Response(ExamsSchemaEntity130Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity131Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 131")
+    category: str = Field(default="Category_131", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=131 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity131Create(ExamsSchemaEntity131Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity131Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity131Response(ExamsSchemaEntity131Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity132Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 132")
+    category: str = Field(default="Category_132", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=132 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity132Create(ExamsSchemaEntity132Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity132Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity132Response(ExamsSchemaEntity132Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity133Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 133")
+    category: str = Field(default="Category_133", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=133 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity133Create(ExamsSchemaEntity133Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity133Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity133Response(ExamsSchemaEntity133Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity134Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 134")
+    category: str = Field(default="Category_134", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=134 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity134Create(ExamsSchemaEntity134Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity134Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity134Response(ExamsSchemaEntity134Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity135Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 135")
+    category: str = Field(default="Category_135", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=135 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity135Create(ExamsSchemaEntity135Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity135Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity135Response(ExamsSchemaEntity135Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity136Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 136")
+    category: str = Field(default="Category_136", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=136 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity136Create(ExamsSchemaEntity136Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity136Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity136Response(ExamsSchemaEntity136Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity137Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 137")
+    category: str = Field(default="Category_137", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=137 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity137Create(ExamsSchemaEntity137Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity137Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity137Response(ExamsSchemaEntity137Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity138Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 138")
+    category: str = Field(default="Category_138", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=138 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity138Create(ExamsSchemaEntity138Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity138Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity138Response(ExamsSchemaEntity138Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity139Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 139")
+    category: str = Field(default="Category_139", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=139 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity139Create(ExamsSchemaEntity139Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity139Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity139Response(ExamsSchemaEntity139Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity140Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 140")
+    category: str = Field(default="Category_140", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=140 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity140Create(ExamsSchemaEntity140Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity140Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity140Response(ExamsSchemaEntity140Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity141Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 141")
+    category: str = Field(default="Category_141", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=141 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity141Create(ExamsSchemaEntity141Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity141Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity141Response(ExamsSchemaEntity141Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity142Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 142")
+    category: str = Field(default="Category_142", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=142 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity142Create(ExamsSchemaEntity142Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity142Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity142Response(ExamsSchemaEntity142Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity143Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 143")
+    category: str = Field(default="Category_143", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=143 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity143Create(ExamsSchemaEntity143Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity143Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity143Response(ExamsSchemaEntity143Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity144Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 144")
+    category: str = Field(default="Category_144", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=144 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity144Create(ExamsSchemaEntity144Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity144Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity144Response(ExamsSchemaEntity144Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity145Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 145")
+    category: str = Field(default="Category_145", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=145 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity145Create(ExamsSchemaEntity145Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity145Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity145Response(ExamsSchemaEntity145Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity146Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 146")
+    category: str = Field(default="Category_146", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=146 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity146Create(ExamsSchemaEntity146Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity146Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity146Response(ExamsSchemaEntity146Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity147Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 147")
+    category: str = Field(default="Category_147", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=147 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity147Create(ExamsSchemaEntity147Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity147Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity147Response(ExamsSchemaEntity147Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity148Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 148")
+    category: str = Field(default="Category_148", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=148 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity148Create(ExamsSchemaEntity148Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity148Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity148Response(ExamsSchemaEntity148Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity149Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 149")
+    category: str = Field(default="Category_149", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=149 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity149Create(ExamsSchemaEntity149Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity149Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity149Response(ExamsSchemaEntity149Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity150Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 150")
+    category: str = Field(default="Category_150", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=150 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity150Create(ExamsSchemaEntity150Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity150Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity150Response(ExamsSchemaEntity150Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity151Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 151")
+    category: str = Field(default="Category_151", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=151 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity151Create(ExamsSchemaEntity151Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity151Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity151Response(ExamsSchemaEntity151Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity152Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 152")
+    category: str = Field(default="Category_152", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=152 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity152Create(ExamsSchemaEntity152Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity152Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity152Response(ExamsSchemaEntity152Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity153Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 153")
+    category: str = Field(default="Category_153", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=153 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity153Create(ExamsSchemaEntity153Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity153Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity153Response(ExamsSchemaEntity153Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity154Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 154")
+    category: str = Field(default="Category_154", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=154 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity154Create(ExamsSchemaEntity154Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity154Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity154Response(ExamsSchemaEntity154Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity155Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 155")
+    category: str = Field(default="Category_155", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=155 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity155Create(ExamsSchemaEntity155Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity155Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity155Response(ExamsSchemaEntity155Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity156Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 156")
+    category: str = Field(default="Category_156", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=156 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity156Create(ExamsSchemaEntity156Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity156Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity156Response(ExamsSchemaEntity156Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity157Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 157")
+    category: str = Field(default="Category_157", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=157 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity157Create(ExamsSchemaEntity157Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity157Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity157Response(ExamsSchemaEntity157Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity158Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 158")
+    category: str = Field(default="Category_158", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=158 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity158Create(ExamsSchemaEntity158Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity158Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity158Response(ExamsSchemaEntity158Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity159Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 159")
+    category: str = Field(default="Category_159", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=159 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity159Create(ExamsSchemaEntity159Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity159Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity159Response(ExamsSchemaEntity159Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity160Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 160")
+    category: str = Field(default="Category_160", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=160 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity160Create(ExamsSchemaEntity160Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity160Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity160Response(ExamsSchemaEntity160Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity161Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 161")
+    category: str = Field(default="Category_161", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=161 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity161Create(ExamsSchemaEntity161Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity161Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity161Response(ExamsSchemaEntity161Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity162Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 162")
+    category: str = Field(default="Category_162", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=162 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity162Create(ExamsSchemaEntity162Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity162Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity162Response(ExamsSchemaEntity162Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity163Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 163")
+    category: str = Field(default="Category_163", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=163 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity163Create(ExamsSchemaEntity163Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity163Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity163Response(ExamsSchemaEntity163Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity164Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 164")
+    category: str = Field(default="Category_164", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=164 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity164Create(ExamsSchemaEntity164Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity164Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity164Response(ExamsSchemaEntity164Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity165Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 165")
+    category: str = Field(default="Category_165", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=165 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity165Create(ExamsSchemaEntity165Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity165Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity165Response(ExamsSchemaEntity165Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity166Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 166")
+    category: str = Field(default="Category_166", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=166 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity166Create(ExamsSchemaEntity166Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity166Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity166Response(ExamsSchemaEntity166Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity167Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 167")
+    category: str = Field(default="Category_167", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=167 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity167Create(ExamsSchemaEntity167Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity167Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity167Response(ExamsSchemaEntity167Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity168Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 168")
+    category: str = Field(default="Category_168", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=168 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity168Create(ExamsSchemaEntity168Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity168Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity168Response(ExamsSchemaEntity168Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity169Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 169")
+    category: str = Field(default="Category_169", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=169 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity169Create(ExamsSchemaEntity169Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity169Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity169Response(ExamsSchemaEntity169Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity170Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 170")
+    category: str = Field(default="Category_170", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=170 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity170Create(ExamsSchemaEntity170Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity170Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity170Response(ExamsSchemaEntity170Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity171Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 171")
+    category: str = Field(default="Category_171", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=171 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity171Create(ExamsSchemaEntity171Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity171Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity171Response(ExamsSchemaEntity171Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity172Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 172")
+    category: str = Field(default="Category_172", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=172 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity172Create(ExamsSchemaEntity172Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity172Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity172Response(ExamsSchemaEntity172Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity173Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 173")
+    category: str = Field(default="Category_173", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=173 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity173Create(ExamsSchemaEntity173Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity173Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity173Response(ExamsSchemaEntity173Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity174Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 174")
+    category: str = Field(default="Category_174", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=174 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity174Create(ExamsSchemaEntity174Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity174Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity174Response(ExamsSchemaEntity174Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity175Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 175")
+    category: str = Field(default="Category_175", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=175 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity175Create(ExamsSchemaEntity175Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity175Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity175Response(ExamsSchemaEntity175Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity176Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 176")
+    category: str = Field(default="Category_176", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=176 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity176Create(ExamsSchemaEntity176Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity176Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity176Response(ExamsSchemaEntity176Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity177Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 177")
+    category: str = Field(default="Category_177", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=177 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity177Create(ExamsSchemaEntity177Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity177Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity177Response(ExamsSchemaEntity177Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity178Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 178")
+    category: str = Field(default="Category_178", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=178 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity178Create(ExamsSchemaEntity178Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity178Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity178Response(ExamsSchemaEntity178Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity179Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 179")
+    category: str = Field(default="Category_179", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=179 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity179Create(ExamsSchemaEntity179Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity179Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity179Response(ExamsSchemaEntity179Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity180Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 180")
+    category: str = Field(default="Category_180", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=180 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity180Create(ExamsSchemaEntity180Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity180Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity180Response(ExamsSchemaEntity180Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity181Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 181")
+    category: str = Field(default="Category_181", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=181 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity181Create(ExamsSchemaEntity181Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity181Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity181Response(ExamsSchemaEntity181Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity182Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 182")
+    category: str = Field(default="Category_182", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=182 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity182Create(ExamsSchemaEntity182Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity182Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity182Response(ExamsSchemaEntity182Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity183Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 183")
+    category: str = Field(default="Category_183", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=183 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity183Create(ExamsSchemaEntity183Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity183Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity183Response(ExamsSchemaEntity183Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity184Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 184")
+    category: str = Field(default="Category_184", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=184 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity184Create(ExamsSchemaEntity184Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity184Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity184Response(ExamsSchemaEntity184Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity185Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 185")
+    category: str = Field(default="Category_185", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=185 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity185Create(ExamsSchemaEntity185Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity185Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity185Response(ExamsSchemaEntity185Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity186Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 186")
+    category: str = Field(default="Category_186", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=186 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity186Create(ExamsSchemaEntity186Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity186Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity186Response(ExamsSchemaEntity186Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity187Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 187")
+    category: str = Field(default="Category_187", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=187 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity187Create(ExamsSchemaEntity187Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity187Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity187Response(ExamsSchemaEntity187Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity188Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 188")
+    category: str = Field(default="Category_188", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=188 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity188Create(ExamsSchemaEntity188Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity188Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity188Response(ExamsSchemaEntity188Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity189Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 189")
+    category: str = Field(default="Category_189", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=189 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity189Create(ExamsSchemaEntity189Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity189Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity189Response(ExamsSchemaEntity189Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity190Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 190")
+    category: str = Field(default="Category_190", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=190 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity190Create(ExamsSchemaEntity190Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity190Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity190Response(ExamsSchemaEntity190Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity191Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 191")
+    category: str = Field(default="Category_191", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=191 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity191Create(ExamsSchemaEntity191Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity191Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity191Response(ExamsSchemaEntity191Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity192Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 192")
+    category: str = Field(default="Category_192", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=192 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity192Create(ExamsSchemaEntity192Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity192Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity192Response(ExamsSchemaEntity192Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity193Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 193")
+    category: str = Field(default="Category_193", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=193 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity193Create(ExamsSchemaEntity193Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity193Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity193Response(ExamsSchemaEntity193Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity194Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 194")
+    category: str = Field(default="Category_194", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=194 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity194Create(ExamsSchemaEntity194Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity194Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity194Response(ExamsSchemaEntity194Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity195Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 195")
+    category: str = Field(default="Category_195", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=195 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity195Create(ExamsSchemaEntity195Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity195Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity195Response(ExamsSchemaEntity195Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity196Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 196")
+    category: str = Field(default="Category_196", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=196 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity196Create(ExamsSchemaEntity196Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity196Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity196Response(ExamsSchemaEntity196Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity197Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 197")
+    category: str = Field(default="Category_197", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=197 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity197Create(ExamsSchemaEntity197Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity197Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity197Response(ExamsSchemaEntity197Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity198Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 198")
+    category: str = Field(default="Category_198", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=198 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity198Create(ExamsSchemaEntity198Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity198Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity198Response(ExamsSchemaEntity198Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity199Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 199")
+    category: str = Field(default="Category_199", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=199 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity199Create(ExamsSchemaEntity199Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity199Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity199Response(ExamsSchemaEntity199Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class ExamsSchemaEntity200Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 200")
+    category: str = Field(default="Category_200", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=200 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class ExamsSchemaEntity200Create(ExamsSchemaEntity200Base):
+    entity_code: str = Field(..., max_length=100)
+
+class ExamsSchemaEntity200Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class ExamsSchemaEntity200Response(ExamsSchemaEntity200Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+

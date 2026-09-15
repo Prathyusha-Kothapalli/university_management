@@ -4811,3 +4811,3203 @@ class HrDomainService:
         self.db.commit()
         return True
 
+    def get_entity_121_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity121]:
+        return self.db.query(HrModelEntity121).offset(skip).limit(limit).all()
+
+    def get_entity_121_by_id(self, entity_id: int) -> Optional[HrModelEntity121]:
+        return self.db.query(HrModelEntity121).filter(HrModelEntity121.id == entity_id).first()
+
+    def create_entity_121(self, payload: HrSchemaEntity121Create) -> HrModelEntity121:
+        db_obj = HrModelEntity121(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_121(self, entity_id: int, payload: HrSchemaEntity121Update) -> Optional[HrModelEntity121]:
+        db_obj = self.get_entity_121_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_121(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_121_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_122_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity122]:
+        return self.db.query(HrModelEntity122).offset(skip).limit(limit).all()
+
+    def get_entity_122_by_id(self, entity_id: int) -> Optional[HrModelEntity122]:
+        return self.db.query(HrModelEntity122).filter(HrModelEntity122.id == entity_id).first()
+
+    def create_entity_122(self, payload: HrSchemaEntity122Create) -> HrModelEntity122:
+        db_obj = HrModelEntity122(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_122(self, entity_id: int, payload: HrSchemaEntity122Update) -> Optional[HrModelEntity122]:
+        db_obj = self.get_entity_122_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_122(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_122_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_123_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity123]:
+        return self.db.query(HrModelEntity123).offset(skip).limit(limit).all()
+
+    def get_entity_123_by_id(self, entity_id: int) -> Optional[HrModelEntity123]:
+        return self.db.query(HrModelEntity123).filter(HrModelEntity123.id == entity_id).first()
+
+    def create_entity_123(self, payload: HrSchemaEntity123Create) -> HrModelEntity123:
+        db_obj = HrModelEntity123(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_123(self, entity_id: int, payload: HrSchemaEntity123Update) -> Optional[HrModelEntity123]:
+        db_obj = self.get_entity_123_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_123(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_123_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_124_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity124]:
+        return self.db.query(HrModelEntity124).offset(skip).limit(limit).all()
+
+    def get_entity_124_by_id(self, entity_id: int) -> Optional[HrModelEntity124]:
+        return self.db.query(HrModelEntity124).filter(HrModelEntity124.id == entity_id).first()
+
+    def create_entity_124(self, payload: HrSchemaEntity124Create) -> HrModelEntity124:
+        db_obj = HrModelEntity124(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_124(self, entity_id: int, payload: HrSchemaEntity124Update) -> Optional[HrModelEntity124]:
+        db_obj = self.get_entity_124_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_124(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_124_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_125_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity125]:
+        return self.db.query(HrModelEntity125).offset(skip).limit(limit).all()
+
+    def get_entity_125_by_id(self, entity_id: int) -> Optional[HrModelEntity125]:
+        return self.db.query(HrModelEntity125).filter(HrModelEntity125.id == entity_id).first()
+
+    def create_entity_125(self, payload: HrSchemaEntity125Create) -> HrModelEntity125:
+        db_obj = HrModelEntity125(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_125(self, entity_id: int, payload: HrSchemaEntity125Update) -> Optional[HrModelEntity125]:
+        db_obj = self.get_entity_125_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_125(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_125_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_126_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity126]:
+        return self.db.query(HrModelEntity126).offset(skip).limit(limit).all()
+
+    def get_entity_126_by_id(self, entity_id: int) -> Optional[HrModelEntity126]:
+        return self.db.query(HrModelEntity126).filter(HrModelEntity126.id == entity_id).first()
+
+    def create_entity_126(self, payload: HrSchemaEntity126Create) -> HrModelEntity126:
+        db_obj = HrModelEntity126(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_126(self, entity_id: int, payload: HrSchemaEntity126Update) -> Optional[HrModelEntity126]:
+        db_obj = self.get_entity_126_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_126(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_126_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_127_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity127]:
+        return self.db.query(HrModelEntity127).offset(skip).limit(limit).all()
+
+    def get_entity_127_by_id(self, entity_id: int) -> Optional[HrModelEntity127]:
+        return self.db.query(HrModelEntity127).filter(HrModelEntity127.id == entity_id).first()
+
+    def create_entity_127(self, payload: HrSchemaEntity127Create) -> HrModelEntity127:
+        db_obj = HrModelEntity127(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_127(self, entity_id: int, payload: HrSchemaEntity127Update) -> Optional[HrModelEntity127]:
+        db_obj = self.get_entity_127_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_127(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_127_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_128_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity128]:
+        return self.db.query(HrModelEntity128).offset(skip).limit(limit).all()
+
+    def get_entity_128_by_id(self, entity_id: int) -> Optional[HrModelEntity128]:
+        return self.db.query(HrModelEntity128).filter(HrModelEntity128.id == entity_id).first()
+
+    def create_entity_128(self, payload: HrSchemaEntity128Create) -> HrModelEntity128:
+        db_obj = HrModelEntity128(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_128(self, entity_id: int, payload: HrSchemaEntity128Update) -> Optional[HrModelEntity128]:
+        db_obj = self.get_entity_128_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_128(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_128_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_129_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity129]:
+        return self.db.query(HrModelEntity129).offset(skip).limit(limit).all()
+
+    def get_entity_129_by_id(self, entity_id: int) -> Optional[HrModelEntity129]:
+        return self.db.query(HrModelEntity129).filter(HrModelEntity129.id == entity_id).first()
+
+    def create_entity_129(self, payload: HrSchemaEntity129Create) -> HrModelEntity129:
+        db_obj = HrModelEntity129(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_129(self, entity_id: int, payload: HrSchemaEntity129Update) -> Optional[HrModelEntity129]:
+        db_obj = self.get_entity_129_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_129(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_129_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_130_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity130]:
+        return self.db.query(HrModelEntity130).offset(skip).limit(limit).all()
+
+    def get_entity_130_by_id(self, entity_id: int) -> Optional[HrModelEntity130]:
+        return self.db.query(HrModelEntity130).filter(HrModelEntity130.id == entity_id).first()
+
+    def create_entity_130(self, payload: HrSchemaEntity130Create) -> HrModelEntity130:
+        db_obj = HrModelEntity130(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_130(self, entity_id: int, payload: HrSchemaEntity130Update) -> Optional[HrModelEntity130]:
+        db_obj = self.get_entity_130_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_130(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_130_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_131_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity131]:
+        return self.db.query(HrModelEntity131).offset(skip).limit(limit).all()
+
+    def get_entity_131_by_id(self, entity_id: int) -> Optional[HrModelEntity131]:
+        return self.db.query(HrModelEntity131).filter(HrModelEntity131.id == entity_id).first()
+
+    def create_entity_131(self, payload: HrSchemaEntity131Create) -> HrModelEntity131:
+        db_obj = HrModelEntity131(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_131(self, entity_id: int, payload: HrSchemaEntity131Update) -> Optional[HrModelEntity131]:
+        db_obj = self.get_entity_131_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_131(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_131_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_132_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity132]:
+        return self.db.query(HrModelEntity132).offset(skip).limit(limit).all()
+
+    def get_entity_132_by_id(self, entity_id: int) -> Optional[HrModelEntity132]:
+        return self.db.query(HrModelEntity132).filter(HrModelEntity132.id == entity_id).first()
+
+    def create_entity_132(self, payload: HrSchemaEntity132Create) -> HrModelEntity132:
+        db_obj = HrModelEntity132(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_132(self, entity_id: int, payload: HrSchemaEntity132Update) -> Optional[HrModelEntity132]:
+        db_obj = self.get_entity_132_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_132(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_132_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_133_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity133]:
+        return self.db.query(HrModelEntity133).offset(skip).limit(limit).all()
+
+    def get_entity_133_by_id(self, entity_id: int) -> Optional[HrModelEntity133]:
+        return self.db.query(HrModelEntity133).filter(HrModelEntity133.id == entity_id).first()
+
+    def create_entity_133(self, payload: HrSchemaEntity133Create) -> HrModelEntity133:
+        db_obj = HrModelEntity133(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_133(self, entity_id: int, payload: HrSchemaEntity133Update) -> Optional[HrModelEntity133]:
+        db_obj = self.get_entity_133_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_133(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_133_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_134_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity134]:
+        return self.db.query(HrModelEntity134).offset(skip).limit(limit).all()
+
+    def get_entity_134_by_id(self, entity_id: int) -> Optional[HrModelEntity134]:
+        return self.db.query(HrModelEntity134).filter(HrModelEntity134.id == entity_id).first()
+
+    def create_entity_134(self, payload: HrSchemaEntity134Create) -> HrModelEntity134:
+        db_obj = HrModelEntity134(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_134(self, entity_id: int, payload: HrSchemaEntity134Update) -> Optional[HrModelEntity134]:
+        db_obj = self.get_entity_134_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_134(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_134_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_135_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity135]:
+        return self.db.query(HrModelEntity135).offset(skip).limit(limit).all()
+
+    def get_entity_135_by_id(self, entity_id: int) -> Optional[HrModelEntity135]:
+        return self.db.query(HrModelEntity135).filter(HrModelEntity135.id == entity_id).first()
+
+    def create_entity_135(self, payload: HrSchemaEntity135Create) -> HrModelEntity135:
+        db_obj = HrModelEntity135(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_135(self, entity_id: int, payload: HrSchemaEntity135Update) -> Optional[HrModelEntity135]:
+        db_obj = self.get_entity_135_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_135(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_135_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_136_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity136]:
+        return self.db.query(HrModelEntity136).offset(skip).limit(limit).all()
+
+    def get_entity_136_by_id(self, entity_id: int) -> Optional[HrModelEntity136]:
+        return self.db.query(HrModelEntity136).filter(HrModelEntity136.id == entity_id).first()
+
+    def create_entity_136(self, payload: HrSchemaEntity136Create) -> HrModelEntity136:
+        db_obj = HrModelEntity136(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_136(self, entity_id: int, payload: HrSchemaEntity136Update) -> Optional[HrModelEntity136]:
+        db_obj = self.get_entity_136_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_136(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_136_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_137_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity137]:
+        return self.db.query(HrModelEntity137).offset(skip).limit(limit).all()
+
+    def get_entity_137_by_id(self, entity_id: int) -> Optional[HrModelEntity137]:
+        return self.db.query(HrModelEntity137).filter(HrModelEntity137.id == entity_id).first()
+
+    def create_entity_137(self, payload: HrSchemaEntity137Create) -> HrModelEntity137:
+        db_obj = HrModelEntity137(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_137(self, entity_id: int, payload: HrSchemaEntity137Update) -> Optional[HrModelEntity137]:
+        db_obj = self.get_entity_137_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_137(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_137_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_138_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity138]:
+        return self.db.query(HrModelEntity138).offset(skip).limit(limit).all()
+
+    def get_entity_138_by_id(self, entity_id: int) -> Optional[HrModelEntity138]:
+        return self.db.query(HrModelEntity138).filter(HrModelEntity138.id == entity_id).first()
+
+    def create_entity_138(self, payload: HrSchemaEntity138Create) -> HrModelEntity138:
+        db_obj = HrModelEntity138(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_138(self, entity_id: int, payload: HrSchemaEntity138Update) -> Optional[HrModelEntity138]:
+        db_obj = self.get_entity_138_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_138(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_138_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_139_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity139]:
+        return self.db.query(HrModelEntity139).offset(skip).limit(limit).all()
+
+    def get_entity_139_by_id(self, entity_id: int) -> Optional[HrModelEntity139]:
+        return self.db.query(HrModelEntity139).filter(HrModelEntity139.id == entity_id).first()
+
+    def create_entity_139(self, payload: HrSchemaEntity139Create) -> HrModelEntity139:
+        db_obj = HrModelEntity139(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_139(self, entity_id: int, payload: HrSchemaEntity139Update) -> Optional[HrModelEntity139]:
+        db_obj = self.get_entity_139_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_139(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_139_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_140_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity140]:
+        return self.db.query(HrModelEntity140).offset(skip).limit(limit).all()
+
+    def get_entity_140_by_id(self, entity_id: int) -> Optional[HrModelEntity140]:
+        return self.db.query(HrModelEntity140).filter(HrModelEntity140.id == entity_id).first()
+
+    def create_entity_140(self, payload: HrSchemaEntity140Create) -> HrModelEntity140:
+        db_obj = HrModelEntity140(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_140(self, entity_id: int, payload: HrSchemaEntity140Update) -> Optional[HrModelEntity140]:
+        db_obj = self.get_entity_140_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_140(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_140_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_141_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity141]:
+        return self.db.query(HrModelEntity141).offset(skip).limit(limit).all()
+
+    def get_entity_141_by_id(self, entity_id: int) -> Optional[HrModelEntity141]:
+        return self.db.query(HrModelEntity141).filter(HrModelEntity141.id == entity_id).first()
+
+    def create_entity_141(self, payload: HrSchemaEntity141Create) -> HrModelEntity141:
+        db_obj = HrModelEntity141(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_141(self, entity_id: int, payload: HrSchemaEntity141Update) -> Optional[HrModelEntity141]:
+        db_obj = self.get_entity_141_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_141(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_141_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_142_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity142]:
+        return self.db.query(HrModelEntity142).offset(skip).limit(limit).all()
+
+    def get_entity_142_by_id(self, entity_id: int) -> Optional[HrModelEntity142]:
+        return self.db.query(HrModelEntity142).filter(HrModelEntity142.id == entity_id).first()
+
+    def create_entity_142(self, payload: HrSchemaEntity142Create) -> HrModelEntity142:
+        db_obj = HrModelEntity142(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_142(self, entity_id: int, payload: HrSchemaEntity142Update) -> Optional[HrModelEntity142]:
+        db_obj = self.get_entity_142_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_142(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_142_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_143_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity143]:
+        return self.db.query(HrModelEntity143).offset(skip).limit(limit).all()
+
+    def get_entity_143_by_id(self, entity_id: int) -> Optional[HrModelEntity143]:
+        return self.db.query(HrModelEntity143).filter(HrModelEntity143.id == entity_id).first()
+
+    def create_entity_143(self, payload: HrSchemaEntity143Create) -> HrModelEntity143:
+        db_obj = HrModelEntity143(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_143(self, entity_id: int, payload: HrSchemaEntity143Update) -> Optional[HrModelEntity143]:
+        db_obj = self.get_entity_143_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_143(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_143_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_144_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity144]:
+        return self.db.query(HrModelEntity144).offset(skip).limit(limit).all()
+
+    def get_entity_144_by_id(self, entity_id: int) -> Optional[HrModelEntity144]:
+        return self.db.query(HrModelEntity144).filter(HrModelEntity144.id == entity_id).first()
+
+    def create_entity_144(self, payload: HrSchemaEntity144Create) -> HrModelEntity144:
+        db_obj = HrModelEntity144(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_144(self, entity_id: int, payload: HrSchemaEntity144Update) -> Optional[HrModelEntity144]:
+        db_obj = self.get_entity_144_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_144(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_144_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_145_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity145]:
+        return self.db.query(HrModelEntity145).offset(skip).limit(limit).all()
+
+    def get_entity_145_by_id(self, entity_id: int) -> Optional[HrModelEntity145]:
+        return self.db.query(HrModelEntity145).filter(HrModelEntity145.id == entity_id).first()
+
+    def create_entity_145(self, payload: HrSchemaEntity145Create) -> HrModelEntity145:
+        db_obj = HrModelEntity145(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_145(self, entity_id: int, payload: HrSchemaEntity145Update) -> Optional[HrModelEntity145]:
+        db_obj = self.get_entity_145_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_145(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_145_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_146_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity146]:
+        return self.db.query(HrModelEntity146).offset(skip).limit(limit).all()
+
+    def get_entity_146_by_id(self, entity_id: int) -> Optional[HrModelEntity146]:
+        return self.db.query(HrModelEntity146).filter(HrModelEntity146.id == entity_id).first()
+
+    def create_entity_146(self, payload: HrSchemaEntity146Create) -> HrModelEntity146:
+        db_obj = HrModelEntity146(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_146(self, entity_id: int, payload: HrSchemaEntity146Update) -> Optional[HrModelEntity146]:
+        db_obj = self.get_entity_146_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_146(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_146_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_147_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity147]:
+        return self.db.query(HrModelEntity147).offset(skip).limit(limit).all()
+
+    def get_entity_147_by_id(self, entity_id: int) -> Optional[HrModelEntity147]:
+        return self.db.query(HrModelEntity147).filter(HrModelEntity147.id == entity_id).first()
+
+    def create_entity_147(self, payload: HrSchemaEntity147Create) -> HrModelEntity147:
+        db_obj = HrModelEntity147(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_147(self, entity_id: int, payload: HrSchemaEntity147Update) -> Optional[HrModelEntity147]:
+        db_obj = self.get_entity_147_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_147(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_147_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_148_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity148]:
+        return self.db.query(HrModelEntity148).offset(skip).limit(limit).all()
+
+    def get_entity_148_by_id(self, entity_id: int) -> Optional[HrModelEntity148]:
+        return self.db.query(HrModelEntity148).filter(HrModelEntity148.id == entity_id).first()
+
+    def create_entity_148(self, payload: HrSchemaEntity148Create) -> HrModelEntity148:
+        db_obj = HrModelEntity148(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_148(self, entity_id: int, payload: HrSchemaEntity148Update) -> Optional[HrModelEntity148]:
+        db_obj = self.get_entity_148_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_148(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_148_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_149_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity149]:
+        return self.db.query(HrModelEntity149).offset(skip).limit(limit).all()
+
+    def get_entity_149_by_id(self, entity_id: int) -> Optional[HrModelEntity149]:
+        return self.db.query(HrModelEntity149).filter(HrModelEntity149.id == entity_id).first()
+
+    def create_entity_149(self, payload: HrSchemaEntity149Create) -> HrModelEntity149:
+        db_obj = HrModelEntity149(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_149(self, entity_id: int, payload: HrSchemaEntity149Update) -> Optional[HrModelEntity149]:
+        db_obj = self.get_entity_149_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_149(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_149_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_150_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity150]:
+        return self.db.query(HrModelEntity150).offset(skip).limit(limit).all()
+
+    def get_entity_150_by_id(self, entity_id: int) -> Optional[HrModelEntity150]:
+        return self.db.query(HrModelEntity150).filter(HrModelEntity150.id == entity_id).first()
+
+    def create_entity_150(self, payload: HrSchemaEntity150Create) -> HrModelEntity150:
+        db_obj = HrModelEntity150(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_150(self, entity_id: int, payload: HrSchemaEntity150Update) -> Optional[HrModelEntity150]:
+        db_obj = self.get_entity_150_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_150(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_150_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_151_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity151]:
+        return self.db.query(HrModelEntity151).offset(skip).limit(limit).all()
+
+    def get_entity_151_by_id(self, entity_id: int) -> Optional[HrModelEntity151]:
+        return self.db.query(HrModelEntity151).filter(HrModelEntity151.id == entity_id).first()
+
+    def create_entity_151(self, payload: HrSchemaEntity151Create) -> HrModelEntity151:
+        db_obj = HrModelEntity151(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_151(self, entity_id: int, payload: HrSchemaEntity151Update) -> Optional[HrModelEntity151]:
+        db_obj = self.get_entity_151_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_151(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_151_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_152_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity152]:
+        return self.db.query(HrModelEntity152).offset(skip).limit(limit).all()
+
+    def get_entity_152_by_id(self, entity_id: int) -> Optional[HrModelEntity152]:
+        return self.db.query(HrModelEntity152).filter(HrModelEntity152.id == entity_id).first()
+
+    def create_entity_152(self, payload: HrSchemaEntity152Create) -> HrModelEntity152:
+        db_obj = HrModelEntity152(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_152(self, entity_id: int, payload: HrSchemaEntity152Update) -> Optional[HrModelEntity152]:
+        db_obj = self.get_entity_152_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_152(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_152_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_153_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity153]:
+        return self.db.query(HrModelEntity153).offset(skip).limit(limit).all()
+
+    def get_entity_153_by_id(self, entity_id: int) -> Optional[HrModelEntity153]:
+        return self.db.query(HrModelEntity153).filter(HrModelEntity153.id == entity_id).first()
+
+    def create_entity_153(self, payload: HrSchemaEntity153Create) -> HrModelEntity153:
+        db_obj = HrModelEntity153(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_153(self, entity_id: int, payload: HrSchemaEntity153Update) -> Optional[HrModelEntity153]:
+        db_obj = self.get_entity_153_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_153(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_153_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_154_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity154]:
+        return self.db.query(HrModelEntity154).offset(skip).limit(limit).all()
+
+    def get_entity_154_by_id(self, entity_id: int) -> Optional[HrModelEntity154]:
+        return self.db.query(HrModelEntity154).filter(HrModelEntity154.id == entity_id).first()
+
+    def create_entity_154(self, payload: HrSchemaEntity154Create) -> HrModelEntity154:
+        db_obj = HrModelEntity154(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_154(self, entity_id: int, payload: HrSchemaEntity154Update) -> Optional[HrModelEntity154]:
+        db_obj = self.get_entity_154_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_154(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_154_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_155_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity155]:
+        return self.db.query(HrModelEntity155).offset(skip).limit(limit).all()
+
+    def get_entity_155_by_id(self, entity_id: int) -> Optional[HrModelEntity155]:
+        return self.db.query(HrModelEntity155).filter(HrModelEntity155.id == entity_id).first()
+
+    def create_entity_155(self, payload: HrSchemaEntity155Create) -> HrModelEntity155:
+        db_obj = HrModelEntity155(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_155(self, entity_id: int, payload: HrSchemaEntity155Update) -> Optional[HrModelEntity155]:
+        db_obj = self.get_entity_155_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_155(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_155_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_156_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity156]:
+        return self.db.query(HrModelEntity156).offset(skip).limit(limit).all()
+
+    def get_entity_156_by_id(self, entity_id: int) -> Optional[HrModelEntity156]:
+        return self.db.query(HrModelEntity156).filter(HrModelEntity156.id == entity_id).first()
+
+    def create_entity_156(self, payload: HrSchemaEntity156Create) -> HrModelEntity156:
+        db_obj = HrModelEntity156(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_156(self, entity_id: int, payload: HrSchemaEntity156Update) -> Optional[HrModelEntity156]:
+        db_obj = self.get_entity_156_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_156(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_156_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_157_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity157]:
+        return self.db.query(HrModelEntity157).offset(skip).limit(limit).all()
+
+    def get_entity_157_by_id(self, entity_id: int) -> Optional[HrModelEntity157]:
+        return self.db.query(HrModelEntity157).filter(HrModelEntity157.id == entity_id).first()
+
+    def create_entity_157(self, payload: HrSchemaEntity157Create) -> HrModelEntity157:
+        db_obj = HrModelEntity157(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_157(self, entity_id: int, payload: HrSchemaEntity157Update) -> Optional[HrModelEntity157]:
+        db_obj = self.get_entity_157_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_157(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_157_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_158_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity158]:
+        return self.db.query(HrModelEntity158).offset(skip).limit(limit).all()
+
+    def get_entity_158_by_id(self, entity_id: int) -> Optional[HrModelEntity158]:
+        return self.db.query(HrModelEntity158).filter(HrModelEntity158.id == entity_id).first()
+
+    def create_entity_158(self, payload: HrSchemaEntity158Create) -> HrModelEntity158:
+        db_obj = HrModelEntity158(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_158(self, entity_id: int, payload: HrSchemaEntity158Update) -> Optional[HrModelEntity158]:
+        db_obj = self.get_entity_158_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_158(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_158_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_159_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity159]:
+        return self.db.query(HrModelEntity159).offset(skip).limit(limit).all()
+
+    def get_entity_159_by_id(self, entity_id: int) -> Optional[HrModelEntity159]:
+        return self.db.query(HrModelEntity159).filter(HrModelEntity159.id == entity_id).first()
+
+    def create_entity_159(self, payload: HrSchemaEntity159Create) -> HrModelEntity159:
+        db_obj = HrModelEntity159(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_159(self, entity_id: int, payload: HrSchemaEntity159Update) -> Optional[HrModelEntity159]:
+        db_obj = self.get_entity_159_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_159(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_159_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_160_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity160]:
+        return self.db.query(HrModelEntity160).offset(skip).limit(limit).all()
+
+    def get_entity_160_by_id(self, entity_id: int) -> Optional[HrModelEntity160]:
+        return self.db.query(HrModelEntity160).filter(HrModelEntity160.id == entity_id).first()
+
+    def create_entity_160(self, payload: HrSchemaEntity160Create) -> HrModelEntity160:
+        db_obj = HrModelEntity160(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_160(self, entity_id: int, payload: HrSchemaEntity160Update) -> Optional[HrModelEntity160]:
+        db_obj = self.get_entity_160_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_160(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_160_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_161_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity161]:
+        return self.db.query(HrModelEntity161).offset(skip).limit(limit).all()
+
+    def get_entity_161_by_id(self, entity_id: int) -> Optional[HrModelEntity161]:
+        return self.db.query(HrModelEntity161).filter(HrModelEntity161.id == entity_id).first()
+
+    def create_entity_161(self, payload: HrSchemaEntity161Create) -> HrModelEntity161:
+        db_obj = HrModelEntity161(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_161(self, entity_id: int, payload: HrSchemaEntity161Update) -> Optional[HrModelEntity161]:
+        db_obj = self.get_entity_161_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_161(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_161_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_162_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity162]:
+        return self.db.query(HrModelEntity162).offset(skip).limit(limit).all()
+
+    def get_entity_162_by_id(self, entity_id: int) -> Optional[HrModelEntity162]:
+        return self.db.query(HrModelEntity162).filter(HrModelEntity162.id == entity_id).first()
+
+    def create_entity_162(self, payload: HrSchemaEntity162Create) -> HrModelEntity162:
+        db_obj = HrModelEntity162(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_162(self, entity_id: int, payload: HrSchemaEntity162Update) -> Optional[HrModelEntity162]:
+        db_obj = self.get_entity_162_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_162(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_162_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_163_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity163]:
+        return self.db.query(HrModelEntity163).offset(skip).limit(limit).all()
+
+    def get_entity_163_by_id(self, entity_id: int) -> Optional[HrModelEntity163]:
+        return self.db.query(HrModelEntity163).filter(HrModelEntity163.id == entity_id).first()
+
+    def create_entity_163(self, payload: HrSchemaEntity163Create) -> HrModelEntity163:
+        db_obj = HrModelEntity163(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_163(self, entity_id: int, payload: HrSchemaEntity163Update) -> Optional[HrModelEntity163]:
+        db_obj = self.get_entity_163_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_163(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_163_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_164_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity164]:
+        return self.db.query(HrModelEntity164).offset(skip).limit(limit).all()
+
+    def get_entity_164_by_id(self, entity_id: int) -> Optional[HrModelEntity164]:
+        return self.db.query(HrModelEntity164).filter(HrModelEntity164.id == entity_id).first()
+
+    def create_entity_164(self, payload: HrSchemaEntity164Create) -> HrModelEntity164:
+        db_obj = HrModelEntity164(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_164(self, entity_id: int, payload: HrSchemaEntity164Update) -> Optional[HrModelEntity164]:
+        db_obj = self.get_entity_164_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_164(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_164_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_165_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity165]:
+        return self.db.query(HrModelEntity165).offset(skip).limit(limit).all()
+
+    def get_entity_165_by_id(self, entity_id: int) -> Optional[HrModelEntity165]:
+        return self.db.query(HrModelEntity165).filter(HrModelEntity165.id == entity_id).first()
+
+    def create_entity_165(self, payload: HrSchemaEntity165Create) -> HrModelEntity165:
+        db_obj = HrModelEntity165(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_165(self, entity_id: int, payload: HrSchemaEntity165Update) -> Optional[HrModelEntity165]:
+        db_obj = self.get_entity_165_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_165(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_165_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_166_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity166]:
+        return self.db.query(HrModelEntity166).offset(skip).limit(limit).all()
+
+    def get_entity_166_by_id(self, entity_id: int) -> Optional[HrModelEntity166]:
+        return self.db.query(HrModelEntity166).filter(HrModelEntity166.id == entity_id).first()
+
+    def create_entity_166(self, payload: HrSchemaEntity166Create) -> HrModelEntity166:
+        db_obj = HrModelEntity166(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_166(self, entity_id: int, payload: HrSchemaEntity166Update) -> Optional[HrModelEntity166]:
+        db_obj = self.get_entity_166_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_166(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_166_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_167_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity167]:
+        return self.db.query(HrModelEntity167).offset(skip).limit(limit).all()
+
+    def get_entity_167_by_id(self, entity_id: int) -> Optional[HrModelEntity167]:
+        return self.db.query(HrModelEntity167).filter(HrModelEntity167.id == entity_id).first()
+
+    def create_entity_167(self, payload: HrSchemaEntity167Create) -> HrModelEntity167:
+        db_obj = HrModelEntity167(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_167(self, entity_id: int, payload: HrSchemaEntity167Update) -> Optional[HrModelEntity167]:
+        db_obj = self.get_entity_167_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_167(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_167_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_168_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity168]:
+        return self.db.query(HrModelEntity168).offset(skip).limit(limit).all()
+
+    def get_entity_168_by_id(self, entity_id: int) -> Optional[HrModelEntity168]:
+        return self.db.query(HrModelEntity168).filter(HrModelEntity168.id == entity_id).first()
+
+    def create_entity_168(self, payload: HrSchemaEntity168Create) -> HrModelEntity168:
+        db_obj = HrModelEntity168(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_168(self, entity_id: int, payload: HrSchemaEntity168Update) -> Optional[HrModelEntity168]:
+        db_obj = self.get_entity_168_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_168(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_168_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_169_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity169]:
+        return self.db.query(HrModelEntity169).offset(skip).limit(limit).all()
+
+    def get_entity_169_by_id(self, entity_id: int) -> Optional[HrModelEntity169]:
+        return self.db.query(HrModelEntity169).filter(HrModelEntity169.id == entity_id).first()
+
+    def create_entity_169(self, payload: HrSchemaEntity169Create) -> HrModelEntity169:
+        db_obj = HrModelEntity169(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_169(self, entity_id: int, payload: HrSchemaEntity169Update) -> Optional[HrModelEntity169]:
+        db_obj = self.get_entity_169_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_169(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_169_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_170_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity170]:
+        return self.db.query(HrModelEntity170).offset(skip).limit(limit).all()
+
+    def get_entity_170_by_id(self, entity_id: int) -> Optional[HrModelEntity170]:
+        return self.db.query(HrModelEntity170).filter(HrModelEntity170.id == entity_id).first()
+
+    def create_entity_170(self, payload: HrSchemaEntity170Create) -> HrModelEntity170:
+        db_obj = HrModelEntity170(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_170(self, entity_id: int, payload: HrSchemaEntity170Update) -> Optional[HrModelEntity170]:
+        db_obj = self.get_entity_170_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_170(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_170_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_171_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity171]:
+        return self.db.query(HrModelEntity171).offset(skip).limit(limit).all()
+
+    def get_entity_171_by_id(self, entity_id: int) -> Optional[HrModelEntity171]:
+        return self.db.query(HrModelEntity171).filter(HrModelEntity171.id == entity_id).first()
+
+    def create_entity_171(self, payload: HrSchemaEntity171Create) -> HrModelEntity171:
+        db_obj = HrModelEntity171(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_171(self, entity_id: int, payload: HrSchemaEntity171Update) -> Optional[HrModelEntity171]:
+        db_obj = self.get_entity_171_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_171(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_171_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_172_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity172]:
+        return self.db.query(HrModelEntity172).offset(skip).limit(limit).all()
+
+    def get_entity_172_by_id(self, entity_id: int) -> Optional[HrModelEntity172]:
+        return self.db.query(HrModelEntity172).filter(HrModelEntity172.id == entity_id).first()
+
+    def create_entity_172(self, payload: HrSchemaEntity172Create) -> HrModelEntity172:
+        db_obj = HrModelEntity172(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_172(self, entity_id: int, payload: HrSchemaEntity172Update) -> Optional[HrModelEntity172]:
+        db_obj = self.get_entity_172_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_172(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_172_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_173_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity173]:
+        return self.db.query(HrModelEntity173).offset(skip).limit(limit).all()
+
+    def get_entity_173_by_id(self, entity_id: int) -> Optional[HrModelEntity173]:
+        return self.db.query(HrModelEntity173).filter(HrModelEntity173.id == entity_id).first()
+
+    def create_entity_173(self, payload: HrSchemaEntity173Create) -> HrModelEntity173:
+        db_obj = HrModelEntity173(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_173(self, entity_id: int, payload: HrSchemaEntity173Update) -> Optional[HrModelEntity173]:
+        db_obj = self.get_entity_173_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_173(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_173_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_174_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity174]:
+        return self.db.query(HrModelEntity174).offset(skip).limit(limit).all()
+
+    def get_entity_174_by_id(self, entity_id: int) -> Optional[HrModelEntity174]:
+        return self.db.query(HrModelEntity174).filter(HrModelEntity174.id == entity_id).first()
+
+    def create_entity_174(self, payload: HrSchemaEntity174Create) -> HrModelEntity174:
+        db_obj = HrModelEntity174(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_174(self, entity_id: int, payload: HrSchemaEntity174Update) -> Optional[HrModelEntity174]:
+        db_obj = self.get_entity_174_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_174(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_174_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_175_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity175]:
+        return self.db.query(HrModelEntity175).offset(skip).limit(limit).all()
+
+    def get_entity_175_by_id(self, entity_id: int) -> Optional[HrModelEntity175]:
+        return self.db.query(HrModelEntity175).filter(HrModelEntity175.id == entity_id).first()
+
+    def create_entity_175(self, payload: HrSchemaEntity175Create) -> HrModelEntity175:
+        db_obj = HrModelEntity175(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_175(self, entity_id: int, payload: HrSchemaEntity175Update) -> Optional[HrModelEntity175]:
+        db_obj = self.get_entity_175_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_175(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_175_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_176_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity176]:
+        return self.db.query(HrModelEntity176).offset(skip).limit(limit).all()
+
+    def get_entity_176_by_id(self, entity_id: int) -> Optional[HrModelEntity176]:
+        return self.db.query(HrModelEntity176).filter(HrModelEntity176.id == entity_id).first()
+
+    def create_entity_176(self, payload: HrSchemaEntity176Create) -> HrModelEntity176:
+        db_obj = HrModelEntity176(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_176(self, entity_id: int, payload: HrSchemaEntity176Update) -> Optional[HrModelEntity176]:
+        db_obj = self.get_entity_176_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_176(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_176_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_177_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity177]:
+        return self.db.query(HrModelEntity177).offset(skip).limit(limit).all()
+
+    def get_entity_177_by_id(self, entity_id: int) -> Optional[HrModelEntity177]:
+        return self.db.query(HrModelEntity177).filter(HrModelEntity177.id == entity_id).first()
+
+    def create_entity_177(self, payload: HrSchemaEntity177Create) -> HrModelEntity177:
+        db_obj = HrModelEntity177(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_177(self, entity_id: int, payload: HrSchemaEntity177Update) -> Optional[HrModelEntity177]:
+        db_obj = self.get_entity_177_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_177(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_177_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_178_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity178]:
+        return self.db.query(HrModelEntity178).offset(skip).limit(limit).all()
+
+    def get_entity_178_by_id(self, entity_id: int) -> Optional[HrModelEntity178]:
+        return self.db.query(HrModelEntity178).filter(HrModelEntity178.id == entity_id).first()
+
+    def create_entity_178(self, payload: HrSchemaEntity178Create) -> HrModelEntity178:
+        db_obj = HrModelEntity178(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_178(self, entity_id: int, payload: HrSchemaEntity178Update) -> Optional[HrModelEntity178]:
+        db_obj = self.get_entity_178_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_178(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_178_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_179_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity179]:
+        return self.db.query(HrModelEntity179).offset(skip).limit(limit).all()
+
+    def get_entity_179_by_id(self, entity_id: int) -> Optional[HrModelEntity179]:
+        return self.db.query(HrModelEntity179).filter(HrModelEntity179.id == entity_id).first()
+
+    def create_entity_179(self, payload: HrSchemaEntity179Create) -> HrModelEntity179:
+        db_obj = HrModelEntity179(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_179(self, entity_id: int, payload: HrSchemaEntity179Update) -> Optional[HrModelEntity179]:
+        db_obj = self.get_entity_179_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_179(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_179_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_180_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity180]:
+        return self.db.query(HrModelEntity180).offset(skip).limit(limit).all()
+
+    def get_entity_180_by_id(self, entity_id: int) -> Optional[HrModelEntity180]:
+        return self.db.query(HrModelEntity180).filter(HrModelEntity180.id == entity_id).first()
+
+    def create_entity_180(self, payload: HrSchemaEntity180Create) -> HrModelEntity180:
+        db_obj = HrModelEntity180(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_180(self, entity_id: int, payload: HrSchemaEntity180Update) -> Optional[HrModelEntity180]:
+        db_obj = self.get_entity_180_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_180(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_180_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_181_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity181]:
+        return self.db.query(HrModelEntity181).offset(skip).limit(limit).all()
+
+    def get_entity_181_by_id(self, entity_id: int) -> Optional[HrModelEntity181]:
+        return self.db.query(HrModelEntity181).filter(HrModelEntity181.id == entity_id).first()
+
+    def create_entity_181(self, payload: HrSchemaEntity181Create) -> HrModelEntity181:
+        db_obj = HrModelEntity181(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_181(self, entity_id: int, payload: HrSchemaEntity181Update) -> Optional[HrModelEntity181]:
+        db_obj = self.get_entity_181_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_181(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_181_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_182_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity182]:
+        return self.db.query(HrModelEntity182).offset(skip).limit(limit).all()
+
+    def get_entity_182_by_id(self, entity_id: int) -> Optional[HrModelEntity182]:
+        return self.db.query(HrModelEntity182).filter(HrModelEntity182.id == entity_id).first()
+
+    def create_entity_182(self, payload: HrSchemaEntity182Create) -> HrModelEntity182:
+        db_obj = HrModelEntity182(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_182(self, entity_id: int, payload: HrSchemaEntity182Update) -> Optional[HrModelEntity182]:
+        db_obj = self.get_entity_182_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_182(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_182_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_183_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity183]:
+        return self.db.query(HrModelEntity183).offset(skip).limit(limit).all()
+
+    def get_entity_183_by_id(self, entity_id: int) -> Optional[HrModelEntity183]:
+        return self.db.query(HrModelEntity183).filter(HrModelEntity183.id == entity_id).first()
+
+    def create_entity_183(self, payload: HrSchemaEntity183Create) -> HrModelEntity183:
+        db_obj = HrModelEntity183(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_183(self, entity_id: int, payload: HrSchemaEntity183Update) -> Optional[HrModelEntity183]:
+        db_obj = self.get_entity_183_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_183(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_183_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_184_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity184]:
+        return self.db.query(HrModelEntity184).offset(skip).limit(limit).all()
+
+    def get_entity_184_by_id(self, entity_id: int) -> Optional[HrModelEntity184]:
+        return self.db.query(HrModelEntity184).filter(HrModelEntity184.id == entity_id).first()
+
+    def create_entity_184(self, payload: HrSchemaEntity184Create) -> HrModelEntity184:
+        db_obj = HrModelEntity184(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_184(self, entity_id: int, payload: HrSchemaEntity184Update) -> Optional[HrModelEntity184]:
+        db_obj = self.get_entity_184_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_184(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_184_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_185_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity185]:
+        return self.db.query(HrModelEntity185).offset(skip).limit(limit).all()
+
+    def get_entity_185_by_id(self, entity_id: int) -> Optional[HrModelEntity185]:
+        return self.db.query(HrModelEntity185).filter(HrModelEntity185.id == entity_id).first()
+
+    def create_entity_185(self, payload: HrSchemaEntity185Create) -> HrModelEntity185:
+        db_obj = HrModelEntity185(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_185(self, entity_id: int, payload: HrSchemaEntity185Update) -> Optional[HrModelEntity185]:
+        db_obj = self.get_entity_185_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_185(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_185_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_186_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity186]:
+        return self.db.query(HrModelEntity186).offset(skip).limit(limit).all()
+
+    def get_entity_186_by_id(self, entity_id: int) -> Optional[HrModelEntity186]:
+        return self.db.query(HrModelEntity186).filter(HrModelEntity186.id == entity_id).first()
+
+    def create_entity_186(self, payload: HrSchemaEntity186Create) -> HrModelEntity186:
+        db_obj = HrModelEntity186(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_186(self, entity_id: int, payload: HrSchemaEntity186Update) -> Optional[HrModelEntity186]:
+        db_obj = self.get_entity_186_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_186(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_186_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_187_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity187]:
+        return self.db.query(HrModelEntity187).offset(skip).limit(limit).all()
+
+    def get_entity_187_by_id(self, entity_id: int) -> Optional[HrModelEntity187]:
+        return self.db.query(HrModelEntity187).filter(HrModelEntity187.id == entity_id).first()
+
+    def create_entity_187(self, payload: HrSchemaEntity187Create) -> HrModelEntity187:
+        db_obj = HrModelEntity187(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_187(self, entity_id: int, payload: HrSchemaEntity187Update) -> Optional[HrModelEntity187]:
+        db_obj = self.get_entity_187_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_187(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_187_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_188_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity188]:
+        return self.db.query(HrModelEntity188).offset(skip).limit(limit).all()
+
+    def get_entity_188_by_id(self, entity_id: int) -> Optional[HrModelEntity188]:
+        return self.db.query(HrModelEntity188).filter(HrModelEntity188.id == entity_id).first()
+
+    def create_entity_188(self, payload: HrSchemaEntity188Create) -> HrModelEntity188:
+        db_obj = HrModelEntity188(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_188(self, entity_id: int, payload: HrSchemaEntity188Update) -> Optional[HrModelEntity188]:
+        db_obj = self.get_entity_188_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_188(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_188_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_189_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity189]:
+        return self.db.query(HrModelEntity189).offset(skip).limit(limit).all()
+
+    def get_entity_189_by_id(self, entity_id: int) -> Optional[HrModelEntity189]:
+        return self.db.query(HrModelEntity189).filter(HrModelEntity189.id == entity_id).first()
+
+    def create_entity_189(self, payload: HrSchemaEntity189Create) -> HrModelEntity189:
+        db_obj = HrModelEntity189(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_189(self, entity_id: int, payload: HrSchemaEntity189Update) -> Optional[HrModelEntity189]:
+        db_obj = self.get_entity_189_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_189(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_189_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_190_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity190]:
+        return self.db.query(HrModelEntity190).offset(skip).limit(limit).all()
+
+    def get_entity_190_by_id(self, entity_id: int) -> Optional[HrModelEntity190]:
+        return self.db.query(HrModelEntity190).filter(HrModelEntity190.id == entity_id).first()
+
+    def create_entity_190(self, payload: HrSchemaEntity190Create) -> HrModelEntity190:
+        db_obj = HrModelEntity190(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_190(self, entity_id: int, payload: HrSchemaEntity190Update) -> Optional[HrModelEntity190]:
+        db_obj = self.get_entity_190_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_190(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_190_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_191_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity191]:
+        return self.db.query(HrModelEntity191).offset(skip).limit(limit).all()
+
+    def get_entity_191_by_id(self, entity_id: int) -> Optional[HrModelEntity191]:
+        return self.db.query(HrModelEntity191).filter(HrModelEntity191.id == entity_id).first()
+
+    def create_entity_191(self, payload: HrSchemaEntity191Create) -> HrModelEntity191:
+        db_obj = HrModelEntity191(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_191(self, entity_id: int, payload: HrSchemaEntity191Update) -> Optional[HrModelEntity191]:
+        db_obj = self.get_entity_191_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_191(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_191_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_192_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity192]:
+        return self.db.query(HrModelEntity192).offset(skip).limit(limit).all()
+
+    def get_entity_192_by_id(self, entity_id: int) -> Optional[HrModelEntity192]:
+        return self.db.query(HrModelEntity192).filter(HrModelEntity192.id == entity_id).first()
+
+    def create_entity_192(self, payload: HrSchemaEntity192Create) -> HrModelEntity192:
+        db_obj = HrModelEntity192(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_192(self, entity_id: int, payload: HrSchemaEntity192Update) -> Optional[HrModelEntity192]:
+        db_obj = self.get_entity_192_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_192(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_192_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_193_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity193]:
+        return self.db.query(HrModelEntity193).offset(skip).limit(limit).all()
+
+    def get_entity_193_by_id(self, entity_id: int) -> Optional[HrModelEntity193]:
+        return self.db.query(HrModelEntity193).filter(HrModelEntity193.id == entity_id).first()
+
+    def create_entity_193(self, payload: HrSchemaEntity193Create) -> HrModelEntity193:
+        db_obj = HrModelEntity193(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_193(self, entity_id: int, payload: HrSchemaEntity193Update) -> Optional[HrModelEntity193]:
+        db_obj = self.get_entity_193_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_193(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_193_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_194_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity194]:
+        return self.db.query(HrModelEntity194).offset(skip).limit(limit).all()
+
+    def get_entity_194_by_id(self, entity_id: int) -> Optional[HrModelEntity194]:
+        return self.db.query(HrModelEntity194).filter(HrModelEntity194.id == entity_id).first()
+
+    def create_entity_194(self, payload: HrSchemaEntity194Create) -> HrModelEntity194:
+        db_obj = HrModelEntity194(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_194(self, entity_id: int, payload: HrSchemaEntity194Update) -> Optional[HrModelEntity194]:
+        db_obj = self.get_entity_194_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_194(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_194_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_195_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity195]:
+        return self.db.query(HrModelEntity195).offset(skip).limit(limit).all()
+
+    def get_entity_195_by_id(self, entity_id: int) -> Optional[HrModelEntity195]:
+        return self.db.query(HrModelEntity195).filter(HrModelEntity195.id == entity_id).first()
+
+    def create_entity_195(self, payload: HrSchemaEntity195Create) -> HrModelEntity195:
+        db_obj = HrModelEntity195(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_195(self, entity_id: int, payload: HrSchemaEntity195Update) -> Optional[HrModelEntity195]:
+        db_obj = self.get_entity_195_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_195(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_195_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_196_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity196]:
+        return self.db.query(HrModelEntity196).offset(skip).limit(limit).all()
+
+    def get_entity_196_by_id(self, entity_id: int) -> Optional[HrModelEntity196]:
+        return self.db.query(HrModelEntity196).filter(HrModelEntity196.id == entity_id).first()
+
+    def create_entity_196(self, payload: HrSchemaEntity196Create) -> HrModelEntity196:
+        db_obj = HrModelEntity196(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_196(self, entity_id: int, payload: HrSchemaEntity196Update) -> Optional[HrModelEntity196]:
+        db_obj = self.get_entity_196_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_196(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_196_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_197_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity197]:
+        return self.db.query(HrModelEntity197).offset(skip).limit(limit).all()
+
+    def get_entity_197_by_id(self, entity_id: int) -> Optional[HrModelEntity197]:
+        return self.db.query(HrModelEntity197).filter(HrModelEntity197.id == entity_id).first()
+
+    def create_entity_197(self, payload: HrSchemaEntity197Create) -> HrModelEntity197:
+        db_obj = HrModelEntity197(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_197(self, entity_id: int, payload: HrSchemaEntity197Update) -> Optional[HrModelEntity197]:
+        db_obj = self.get_entity_197_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_197(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_197_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_198_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity198]:
+        return self.db.query(HrModelEntity198).offset(skip).limit(limit).all()
+
+    def get_entity_198_by_id(self, entity_id: int) -> Optional[HrModelEntity198]:
+        return self.db.query(HrModelEntity198).filter(HrModelEntity198.id == entity_id).first()
+
+    def create_entity_198(self, payload: HrSchemaEntity198Create) -> HrModelEntity198:
+        db_obj = HrModelEntity198(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_198(self, entity_id: int, payload: HrSchemaEntity198Update) -> Optional[HrModelEntity198]:
+        db_obj = self.get_entity_198_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_198(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_198_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_199_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity199]:
+        return self.db.query(HrModelEntity199).offset(skip).limit(limit).all()
+
+    def get_entity_199_by_id(self, entity_id: int) -> Optional[HrModelEntity199]:
+        return self.db.query(HrModelEntity199).filter(HrModelEntity199.id == entity_id).first()
+
+    def create_entity_199(self, payload: HrSchemaEntity199Create) -> HrModelEntity199:
+        db_obj = HrModelEntity199(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_199(self, entity_id: int, payload: HrSchemaEntity199Update) -> Optional[HrModelEntity199]:
+        db_obj = self.get_entity_199_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_199(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_199_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_200_list(self, skip: int = 0, limit: int = 100) -> List[HrModelEntity200]:
+        return self.db.query(HrModelEntity200).offset(skip).limit(limit).all()
+
+    def get_entity_200_by_id(self, entity_id: int) -> Optional[HrModelEntity200]:
+        return self.db.query(HrModelEntity200).filter(HrModelEntity200.id == entity_id).first()
+
+    def create_entity_200(self, payload: HrSchemaEntity200Create) -> HrModelEntity200:
+        db_obj = HrModelEntity200(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_200(self, entity_id: int, payload: HrSchemaEntity200Update) -> Optional[HrModelEntity200]:
+        db_obj = self.get_entity_200_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_200(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_200_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+

@@ -1206,3 +1206,803 @@ class HostelsRepository120:
     def find_by_code(self, code: str) -> Optional[HostelsModelEntity120]:
         return self.db.query(HostelsModelEntity120).filter(HostelsModelEntity120.entity_code == code).first()
 
+class HostelsRepository121:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity121]:
+        return self.db.query(HostelsModelEntity121).filter(HostelsModelEntity121.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity121]:
+        return self.db.query(HostelsModelEntity121).filter(HostelsModelEntity121.entity_code == code).first()
+
+class HostelsRepository122:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity122]:
+        return self.db.query(HostelsModelEntity122).filter(HostelsModelEntity122.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity122]:
+        return self.db.query(HostelsModelEntity122).filter(HostelsModelEntity122.entity_code == code).first()
+
+class HostelsRepository123:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity123]:
+        return self.db.query(HostelsModelEntity123).filter(HostelsModelEntity123.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity123]:
+        return self.db.query(HostelsModelEntity123).filter(HostelsModelEntity123.entity_code == code).first()
+
+class HostelsRepository124:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity124]:
+        return self.db.query(HostelsModelEntity124).filter(HostelsModelEntity124.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity124]:
+        return self.db.query(HostelsModelEntity124).filter(HostelsModelEntity124.entity_code == code).first()
+
+class HostelsRepository125:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity125]:
+        return self.db.query(HostelsModelEntity125).filter(HostelsModelEntity125.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity125]:
+        return self.db.query(HostelsModelEntity125).filter(HostelsModelEntity125.entity_code == code).first()
+
+class HostelsRepository126:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity126]:
+        return self.db.query(HostelsModelEntity126).filter(HostelsModelEntity126.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity126]:
+        return self.db.query(HostelsModelEntity126).filter(HostelsModelEntity126.entity_code == code).first()
+
+class HostelsRepository127:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity127]:
+        return self.db.query(HostelsModelEntity127).filter(HostelsModelEntity127.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity127]:
+        return self.db.query(HostelsModelEntity127).filter(HostelsModelEntity127.entity_code == code).first()
+
+class HostelsRepository128:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity128]:
+        return self.db.query(HostelsModelEntity128).filter(HostelsModelEntity128.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity128]:
+        return self.db.query(HostelsModelEntity128).filter(HostelsModelEntity128.entity_code == code).first()
+
+class HostelsRepository129:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity129]:
+        return self.db.query(HostelsModelEntity129).filter(HostelsModelEntity129.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity129]:
+        return self.db.query(HostelsModelEntity129).filter(HostelsModelEntity129.entity_code == code).first()
+
+class HostelsRepository130:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity130]:
+        return self.db.query(HostelsModelEntity130).filter(HostelsModelEntity130.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity130]:
+        return self.db.query(HostelsModelEntity130).filter(HostelsModelEntity130.entity_code == code).first()
+
+class HostelsRepository131:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity131]:
+        return self.db.query(HostelsModelEntity131).filter(HostelsModelEntity131.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity131]:
+        return self.db.query(HostelsModelEntity131).filter(HostelsModelEntity131.entity_code == code).first()
+
+class HostelsRepository132:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity132]:
+        return self.db.query(HostelsModelEntity132).filter(HostelsModelEntity132.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity132]:
+        return self.db.query(HostelsModelEntity132).filter(HostelsModelEntity132.entity_code == code).first()
+
+class HostelsRepository133:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity133]:
+        return self.db.query(HostelsModelEntity133).filter(HostelsModelEntity133.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity133]:
+        return self.db.query(HostelsModelEntity133).filter(HostelsModelEntity133.entity_code == code).first()
+
+class HostelsRepository134:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity134]:
+        return self.db.query(HostelsModelEntity134).filter(HostelsModelEntity134.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity134]:
+        return self.db.query(HostelsModelEntity134).filter(HostelsModelEntity134.entity_code == code).first()
+
+class HostelsRepository135:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity135]:
+        return self.db.query(HostelsModelEntity135).filter(HostelsModelEntity135.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity135]:
+        return self.db.query(HostelsModelEntity135).filter(HostelsModelEntity135.entity_code == code).first()
+
+class HostelsRepository136:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity136]:
+        return self.db.query(HostelsModelEntity136).filter(HostelsModelEntity136.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity136]:
+        return self.db.query(HostelsModelEntity136).filter(HostelsModelEntity136.entity_code == code).first()
+
+class HostelsRepository137:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity137]:
+        return self.db.query(HostelsModelEntity137).filter(HostelsModelEntity137.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity137]:
+        return self.db.query(HostelsModelEntity137).filter(HostelsModelEntity137.entity_code == code).first()
+
+class HostelsRepository138:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity138]:
+        return self.db.query(HostelsModelEntity138).filter(HostelsModelEntity138.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity138]:
+        return self.db.query(HostelsModelEntity138).filter(HostelsModelEntity138.entity_code == code).first()
+
+class HostelsRepository139:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity139]:
+        return self.db.query(HostelsModelEntity139).filter(HostelsModelEntity139.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity139]:
+        return self.db.query(HostelsModelEntity139).filter(HostelsModelEntity139.entity_code == code).first()
+
+class HostelsRepository140:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity140]:
+        return self.db.query(HostelsModelEntity140).filter(HostelsModelEntity140.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity140]:
+        return self.db.query(HostelsModelEntity140).filter(HostelsModelEntity140.entity_code == code).first()
+
+class HostelsRepository141:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity141]:
+        return self.db.query(HostelsModelEntity141).filter(HostelsModelEntity141.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity141]:
+        return self.db.query(HostelsModelEntity141).filter(HostelsModelEntity141.entity_code == code).first()
+
+class HostelsRepository142:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity142]:
+        return self.db.query(HostelsModelEntity142).filter(HostelsModelEntity142.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity142]:
+        return self.db.query(HostelsModelEntity142).filter(HostelsModelEntity142.entity_code == code).first()
+
+class HostelsRepository143:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity143]:
+        return self.db.query(HostelsModelEntity143).filter(HostelsModelEntity143.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity143]:
+        return self.db.query(HostelsModelEntity143).filter(HostelsModelEntity143.entity_code == code).first()
+
+class HostelsRepository144:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity144]:
+        return self.db.query(HostelsModelEntity144).filter(HostelsModelEntity144.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity144]:
+        return self.db.query(HostelsModelEntity144).filter(HostelsModelEntity144.entity_code == code).first()
+
+class HostelsRepository145:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity145]:
+        return self.db.query(HostelsModelEntity145).filter(HostelsModelEntity145.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity145]:
+        return self.db.query(HostelsModelEntity145).filter(HostelsModelEntity145.entity_code == code).first()
+
+class HostelsRepository146:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity146]:
+        return self.db.query(HostelsModelEntity146).filter(HostelsModelEntity146.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity146]:
+        return self.db.query(HostelsModelEntity146).filter(HostelsModelEntity146.entity_code == code).first()
+
+class HostelsRepository147:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity147]:
+        return self.db.query(HostelsModelEntity147).filter(HostelsModelEntity147.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity147]:
+        return self.db.query(HostelsModelEntity147).filter(HostelsModelEntity147.entity_code == code).first()
+
+class HostelsRepository148:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity148]:
+        return self.db.query(HostelsModelEntity148).filter(HostelsModelEntity148.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity148]:
+        return self.db.query(HostelsModelEntity148).filter(HostelsModelEntity148.entity_code == code).first()
+
+class HostelsRepository149:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity149]:
+        return self.db.query(HostelsModelEntity149).filter(HostelsModelEntity149.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity149]:
+        return self.db.query(HostelsModelEntity149).filter(HostelsModelEntity149.entity_code == code).first()
+
+class HostelsRepository150:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity150]:
+        return self.db.query(HostelsModelEntity150).filter(HostelsModelEntity150.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity150]:
+        return self.db.query(HostelsModelEntity150).filter(HostelsModelEntity150.entity_code == code).first()
+
+class HostelsRepository151:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity151]:
+        return self.db.query(HostelsModelEntity151).filter(HostelsModelEntity151.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity151]:
+        return self.db.query(HostelsModelEntity151).filter(HostelsModelEntity151.entity_code == code).first()
+
+class HostelsRepository152:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity152]:
+        return self.db.query(HostelsModelEntity152).filter(HostelsModelEntity152.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity152]:
+        return self.db.query(HostelsModelEntity152).filter(HostelsModelEntity152.entity_code == code).first()
+
+class HostelsRepository153:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity153]:
+        return self.db.query(HostelsModelEntity153).filter(HostelsModelEntity153.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity153]:
+        return self.db.query(HostelsModelEntity153).filter(HostelsModelEntity153.entity_code == code).first()
+
+class HostelsRepository154:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity154]:
+        return self.db.query(HostelsModelEntity154).filter(HostelsModelEntity154.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity154]:
+        return self.db.query(HostelsModelEntity154).filter(HostelsModelEntity154.entity_code == code).first()
+
+class HostelsRepository155:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity155]:
+        return self.db.query(HostelsModelEntity155).filter(HostelsModelEntity155.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity155]:
+        return self.db.query(HostelsModelEntity155).filter(HostelsModelEntity155.entity_code == code).first()
+
+class HostelsRepository156:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity156]:
+        return self.db.query(HostelsModelEntity156).filter(HostelsModelEntity156.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity156]:
+        return self.db.query(HostelsModelEntity156).filter(HostelsModelEntity156.entity_code == code).first()
+
+class HostelsRepository157:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity157]:
+        return self.db.query(HostelsModelEntity157).filter(HostelsModelEntity157.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity157]:
+        return self.db.query(HostelsModelEntity157).filter(HostelsModelEntity157.entity_code == code).first()
+
+class HostelsRepository158:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity158]:
+        return self.db.query(HostelsModelEntity158).filter(HostelsModelEntity158.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity158]:
+        return self.db.query(HostelsModelEntity158).filter(HostelsModelEntity158.entity_code == code).first()
+
+class HostelsRepository159:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity159]:
+        return self.db.query(HostelsModelEntity159).filter(HostelsModelEntity159.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity159]:
+        return self.db.query(HostelsModelEntity159).filter(HostelsModelEntity159.entity_code == code).first()
+
+class HostelsRepository160:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity160]:
+        return self.db.query(HostelsModelEntity160).filter(HostelsModelEntity160.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity160]:
+        return self.db.query(HostelsModelEntity160).filter(HostelsModelEntity160.entity_code == code).first()
+
+class HostelsRepository161:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity161]:
+        return self.db.query(HostelsModelEntity161).filter(HostelsModelEntity161.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity161]:
+        return self.db.query(HostelsModelEntity161).filter(HostelsModelEntity161.entity_code == code).first()
+
+class HostelsRepository162:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity162]:
+        return self.db.query(HostelsModelEntity162).filter(HostelsModelEntity162.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity162]:
+        return self.db.query(HostelsModelEntity162).filter(HostelsModelEntity162.entity_code == code).first()
+
+class HostelsRepository163:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity163]:
+        return self.db.query(HostelsModelEntity163).filter(HostelsModelEntity163.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity163]:
+        return self.db.query(HostelsModelEntity163).filter(HostelsModelEntity163.entity_code == code).first()
+
+class HostelsRepository164:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity164]:
+        return self.db.query(HostelsModelEntity164).filter(HostelsModelEntity164.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity164]:
+        return self.db.query(HostelsModelEntity164).filter(HostelsModelEntity164.entity_code == code).first()
+
+class HostelsRepository165:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity165]:
+        return self.db.query(HostelsModelEntity165).filter(HostelsModelEntity165.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity165]:
+        return self.db.query(HostelsModelEntity165).filter(HostelsModelEntity165.entity_code == code).first()
+
+class HostelsRepository166:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity166]:
+        return self.db.query(HostelsModelEntity166).filter(HostelsModelEntity166.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity166]:
+        return self.db.query(HostelsModelEntity166).filter(HostelsModelEntity166.entity_code == code).first()
+
+class HostelsRepository167:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity167]:
+        return self.db.query(HostelsModelEntity167).filter(HostelsModelEntity167.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity167]:
+        return self.db.query(HostelsModelEntity167).filter(HostelsModelEntity167.entity_code == code).first()
+
+class HostelsRepository168:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity168]:
+        return self.db.query(HostelsModelEntity168).filter(HostelsModelEntity168.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity168]:
+        return self.db.query(HostelsModelEntity168).filter(HostelsModelEntity168.entity_code == code).first()
+
+class HostelsRepository169:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity169]:
+        return self.db.query(HostelsModelEntity169).filter(HostelsModelEntity169.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity169]:
+        return self.db.query(HostelsModelEntity169).filter(HostelsModelEntity169.entity_code == code).first()
+
+class HostelsRepository170:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity170]:
+        return self.db.query(HostelsModelEntity170).filter(HostelsModelEntity170.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity170]:
+        return self.db.query(HostelsModelEntity170).filter(HostelsModelEntity170.entity_code == code).first()
+
+class HostelsRepository171:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity171]:
+        return self.db.query(HostelsModelEntity171).filter(HostelsModelEntity171.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity171]:
+        return self.db.query(HostelsModelEntity171).filter(HostelsModelEntity171.entity_code == code).first()
+
+class HostelsRepository172:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity172]:
+        return self.db.query(HostelsModelEntity172).filter(HostelsModelEntity172.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity172]:
+        return self.db.query(HostelsModelEntity172).filter(HostelsModelEntity172.entity_code == code).first()
+
+class HostelsRepository173:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity173]:
+        return self.db.query(HostelsModelEntity173).filter(HostelsModelEntity173.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity173]:
+        return self.db.query(HostelsModelEntity173).filter(HostelsModelEntity173.entity_code == code).first()
+
+class HostelsRepository174:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity174]:
+        return self.db.query(HostelsModelEntity174).filter(HostelsModelEntity174.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity174]:
+        return self.db.query(HostelsModelEntity174).filter(HostelsModelEntity174.entity_code == code).first()
+
+class HostelsRepository175:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity175]:
+        return self.db.query(HostelsModelEntity175).filter(HostelsModelEntity175.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity175]:
+        return self.db.query(HostelsModelEntity175).filter(HostelsModelEntity175.entity_code == code).first()
+
+class HostelsRepository176:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity176]:
+        return self.db.query(HostelsModelEntity176).filter(HostelsModelEntity176.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity176]:
+        return self.db.query(HostelsModelEntity176).filter(HostelsModelEntity176.entity_code == code).first()
+
+class HostelsRepository177:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity177]:
+        return self.db.query(HostelsModelEntity177).filter(HostelsModelEntity177.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity177]:
+        return self.db.query(HostelsModelEntity177).filter(HostelsModelEntity177.entity_code == code).first()
+
+class HostelsRepository178:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity178]:
+        return self.db.query(HostelsModelEntity178).filter(HostelsModelEntity178.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity178]:
+        return self.db.query(HostelsModelEntity178).filter(HostelsModelEntity178.entity_code == code).first()
+
+class HostelsRepository179:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity179]:
+        return self.db.query(HostelsModelEntity179).filter(HostelsModelEntity179.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity179]:
+        return self.db.query(HostelsModelEntity179).filter(HostelsModelEntity179.entity_code == code).first()
+
+class HostelsRepository180:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity180]:
+        return self.db.query(HostelsModelEntity180).filter(HostelsModelEntity180.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity180]:
+        return self.db.query(HostelsModelEntity180).filter(HostelsModelEntity180.entity_code == code).first()
+
+class HostelsRepository181:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity181]:
+        return self.db.query(HostelsModelEntity181).filter(HostelsModelEntity181.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity181]:
+        return self.db.query(HostelsModelEntity181).filter(HostelsModelEntity181.entity_code == code).first()
+
+class HostelsRepository182:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity182]:
+        return self.db.query(HostelsModelEntity182).filter(HostelsModelEntity182.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity182]:
+        return self.db.query(HostelsModelEntity182).filter(HostelsModelEntity182.entity_code == code).first()
+
+class HostelsRepository183:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity183]:
+        return self.db.query(HostelsModelEntity183).filter(HostelsModelEntity183.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity183]:
+        return self.db.query(HostelsModelEntity183).filter(HostelsModelEntity183.entity_code == code).first()
+
+class HostelsRepository184:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity184]:
+        return self.db.query(HostelsModelEntity184).filter(HostelsModelEntity184.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity184]:
+        return self.db.query(HostelsModelEntity184).filter(HostelsModelEntity184.entity_code == code).first()
+
+class HostelsRepository185:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity185]:
+        return self.db.query(HostelsModelEntity185).filter(HostelsModelEntity185.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity185]:
+        return self.db.query(HostelsModelEntity185).filter(HostelsModelEntity185.entity_code == code).first()
+
+class HostelsRepository186:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity186]:
+        return self.db.query(HostelsModelEntity186).filter(HostelsModelEntity186.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity186]:
+        return self.db.query(HostelsModelEntity186).filter(HostelsModelEntity186.entity_code == code).first()
+
+class HostelsRepository187:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity187]:
+        return self.db.query(HostelsModelEntity187).filter(HostelsModelEntity187.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity187]:
+        return self.db.query(HostelsModelEntity187).filter(HostelsModelEntity187.entity_code == code).first()
+
+class HostelsRepository188:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity188]:
+        return self.db.query(HostelsModelEntity188).filter(HostelsModelEntity188.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity188]:
+        return self.db.query(HostelsModelEntity188).filter(HostelsModelEntity188.entity_code == code).first()
+
+class HostelsRepository189:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity189]:
+        return self.db.query(HostelsModelEntity189).filter(HostelsModelEntity189.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity189]:
+        return self.db.query(HostelsModelEntity189).filter(HostelsModelEntity189.entity_code == code).first()
+
+class HostelsRepository190:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity190]:
+        return self.db.query(HostelsModelEntity190).filter(HostelsModelEntity190.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity190]:
+        return self.db.query(HostelsModelEntity190).filter(HostelsModelEntity190.entity_code == code).first()
+
+class HostelsRepository191:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity191]:
+        return self.db.query(HostelsModelEntity191).filter(HostelsModelEntity191.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity191]:
+        return self.db.query(HostelsModelEntity191).filter(HostelsModelEntity191.entity_code == code).first()
+
+class HostelsRepository192:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity192]:
+        return self.db.query(HostelsModelEntity192).filter(HostelsModelEntity192.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity192]:
+        return self.db.query(HostelsModelEntity192).filter(HostelsModelEntity192.entity_code == code).first()
+
+class HostelsRepository193:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity193]:
+        return self.db.query(HostelsModelEntity193).filter(HostelsModelEntity193.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity193]:
+        return self.db.query(HostelsModelEntity193).filter(HostelsModelEntity193.entity_code == code).first()
+
+class HostelsRepository194:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity194]:
+        return self.db.query(HostelsModelEntity194).filter(HostelsModelEntity194.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity194]:
+        return self.db.query(HostelsModelEntity194).filter(HostelsModelEntity194.entity_code == code).first()
+
+class HostelsRepository195:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity195]:
+        return self.db.query(HostelsModelEntity195).filter(HostelsModelEntity195.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity195]:
+        return self.db.query(HostelsModelEntity195).filter(HostelsModelEntity195.entity_code == code).first()
+
+class HostelsRepository196:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity196]:
+        return self.db.query(HostelsModelEntity196).filter(HostelsModelEntity196.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity196]:
+        return self.db.query(HostelsModelEntity196).filter(HostelsModelEntity196.entity_code == code).first()
+
+class HostelsRepository197:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity197]:
+        return self.db.query(HostelsModelEntity197).filter(HostelsModelEntity197.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity197]:
+        return self.db.query(HostelsModelEntity197).filter(HostelsModelEntity197.entity_code == code).first()
+
+class HostelsRepository198:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity198]:
+        return self.db.query(HostelsModelEntity198).filter(HostelsModelEntity198.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity198]:
+        return self.db.query(HostelsModelEntity198).filter(HostelsModelEntity198.entity_code == code).first()
+
+class HostelsRepository199:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity199]:
+        return self.db.query(HostelsModelEntity199).filter(HostelsModelEntity199.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity199]:
+        return self.db.query(HostelsModelEntity199).filter(HostelsModelEntity199.entity_code == code).first()
+
+class HostelsRepository200:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HostelsModelEntity200]:
+        return self.db.query(HostelsModelEntity200).filter(HostelsModelEntity200.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HostelsModelEntity200]:
+        return self.db.query(HostelsModelEntity200).filter(HostelsModelEntity200.entity_code == code).first()
+

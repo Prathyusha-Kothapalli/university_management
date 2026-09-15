@@ -4811,3 +4811,3203 @@ class ResearchDomainService:
         self.db.commit()
         return True
 
+    def get_entity_121_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity121]:
+        return self.db.query(ResearchModelEntity121).offset(skip).limit(limit).all()
+
+    def get_entity_121_by_id(self, entity_id: int) -> Optional[ResearchModelEntity121]:
+        return self.db.query(ResearchModelEntity121).filter(ResearchModelEntity121.id == entity_id).first()
+
+    def create_entity_121(self, payload: ResearchSchemaEntity121Create) -> ResearchModelEntity121:
+        db_obj = ResearchModelEntity121(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_121(self, entity_id: int, payload: ResearchSchemaEntity121Update) -> Optional[ResearchModelEntity121]:
+        db_obj = self.get_entity_121_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_121(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_121_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_122_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity122]:
+        return self.db.query(ResearchModelEntity122).offset(skip).limit(limit).all()
+
+    def get_entity_122_by_id(self, entity_id: int) -> Optional[ResearchModelEntity122]:
+        return self.db.query(ResearchModelEntity122).filter(ResearchModelEntity122.id == entity_id).first()
+
+    def create_entity_122(self, payload: ResearchSchemaEntity122Create) -> ResearchModelEntity122:
+        db_obj = ResearchModelEntity122(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_122(self, entity_id: int, payload: ResearchSchemaEntity122Update) -> Optional[ResearchModelEntity122]:
+        db_obj = self.get_entity_122_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_122(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_122_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_123_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity123]:
+        return self.db.query(ResearchModelEntity123).offset(skip).limit(limit).all()
+
+    def get_entity_123_by_id(self, entity_id: int) -> Optional[ResearchModelEntity123]:
+        return self.db.query(ResearchModelEntity123).filter(ResearchModelEntity123.id == entity_id).first()
+
+    def create_entity_123(self, payload: ResearchSchemaEntity123Create) -> ResearchModelEntity123:
+        db_obj = ResearchModelEntity123(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_123(self, entity_id: int, payload: ResearchSchemaEntity123Update) -> Optional[ResearchModelEntity123]:
+        db_obj = self.get_entity_123_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_123(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_123_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_124_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity124]:
+        return self.db.query(ResearchModelEntity124).offset(skip).limit(limit).all()
+
+    def get_entity_124_by_id(self, entity_id: int) -> Optional[ResearchModelEntity124]:
+        return self.db.query(ResearchModelEntity124).filter(ResearchModelEntity124.id == entity_id).first()
+
+    def create_entity_124(self, payload: ResearchSchemaEntity124Create) -> ResearchModelEntity124:
+        db_obj = ResearchModelEntity124(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_124(self, entity_id: int, payload: ResearchSchemaEntity124Update) -> Optional[ResearchModelEntity124]:
+        db_obj = self.get_entity_124_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_124(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_124_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_125_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity125]:
+        return self.db.query(ResearchModelEntity125).offset(skip).limit(limit).all()
+
+    def get_entity_125_by_id(self, entity_id: int) -> Optional[ResearchModelEntity125]:
+        return self.db.query(ResearchModelEntity125).filter(ResearchModelEntity125.id == entity_id).first()
+
+    def create_entity_125(self, payload: ResearchSchemaEntity125Create) -> ResearchModelEntity125:
+        db_obj = ResearchModelEntity125(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_125(self, entity_id: int, payload: ResearchSchemaEntity125Update) -> Optional[ResearchModelEntity125]:
+        db_obj = self.get_entity_125_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_125(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_125_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_126_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity126]:
+        return self.db.query(ResearchModelEntity126).offset(skip).limit(limit).all()
+
+    def get_entity_126_by_id(self, entity_id: int) -> Optional[ResearchModelEntity126]:
+        return self.db.query(ResearchModelEntity126).filter(ResearchModelEntity126.id == entity_id).first()
+
+    def create_entity_126(self, payload: ResearchSchemaEntity126Create) -> ResearchModelEntity126:
+        db_obj = ResearchModelEntity126(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_126(self, entity_id: int, payload: ResearchSchemaEntity126Update) -> Optional[ResearchModelEntity126]:
+        db_obj = self.get_entity_126_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_126(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_126_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_127_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity127]:
+        return self.db.query(ResearchModelEntity127).offset(skip).limit(limit).all()
+
+    def get_entity_127_by_id(self, entity_id: int) -> Optional[ResearchModelEntity127]:
+        return self.db.query(ResearchModelEntity127).filter(ResearchModelEntity127.id == entity_id).first()
+
+    def create_entity_127(self, payload: ResearchSchemaEntity127Create) -> ResearchModelEntity127:
+        db_obj = ResearchModelEntity127(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_127(self, entity_id: int, payload: ResearchSchemaEntity127Update) -> Optional[ResearchModelEntity127]:
+        db_obj = self.get_entity_127_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_127(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_127_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_128_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity128]:
+        return self.db.query(ResearchModelEntity128).offset(skip).limit(limit).all()
+
+    def get_entity_128_by_id(self, entity_id: int) -> Optional[ResearchModelEntity128]:
+        return self.db.query(ResearchModelEntity128).filter(ResearchModelEntity128.id == entity_id).first()
+
+    def create_entity_128(self, payload: ResearchSchemaEntity128Create) -> ResearchModelEntity128:
+        db_obj = ResearchModelEntity128(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_128(self, entity_id: int, payload: ResearchSchemaEntity128Update) -> Optional[ResearchModelEntity128]:
+        db_obj = self.get_entity_128_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_128(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_128_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_129_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity129]:
+        return self.db.query(ResearchModelEntity129).offset(skip).limit(limit).all()
+
+    def get_entity_129_by_id(self, entity_id: int) -> Optional[ResearchModelEntity129]:
+        return self.db.query(ResearchModelEntity129).filter(ResearchModelEntity129.id == entity_id).first()
+
+    def create_entity_129(self, payload: ResearchSchemaEntity129Create) -> ResearchModelEntity129:
+        db_obj = ResearchModelEntity129(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_129(self, entity_id: int, payload: ResearchSchemaEntity129Update) -> Optional[ResearchModelEntity129]:
+        db_obj = self.get_entity_129_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_129(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_129_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_130_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity130]:
+        return self.db.query(ResearchModelEntity130).offset(skip).limit(limit).all()
+
+    def get_entity_130_by_id(self, entity_id: int) -> Optional[ResearchModelEntity130]:
+        return self.db.query(ResearchModelEntity130).filter(ResearchModelEntity130.id == entity_id).first()
+
+    def create_entity_130(self, payload: ResearchSchemaEntity130Create) -> ResearchModelEntity130:
+        db_obj = ResearchModelEntity130(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_130(self, entity_id: int, payload: ResearchSchemaEntity130Update) -> Optional[ResearchModelEntity130]:
+        db_obj = self.get_entity_130_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_130(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_130_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_131_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity131]:
+        return self.db.query(ResearchModelEntity131).offset(skip).limit(limit).all()
+
+    def get_entity_131_by_id(self, entity_id: int) -> Optional[ResearchModelEntity131]:
+        return self.db.query(ResearchModelEntity131).filter(ResearchModelEntity131.id == entity_id).first()
+
+    def create_entity_131(self, payload: ResearchSchemaEntity131Create) -> ResearchModelEntity131:
+        db_obj = ResearchModelEntity131(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_131(self, entity_id: int, payload: ResearchSchemaEntity131Update) -> Optional[ResearchModelEntity131]:
+        db_obj = self.get_entity_131_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_131(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_131_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_132_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity132]:
+        return self.db.query(ResearchModelEntity132).offset(skip).limit(limit).all()
+
+    def get_entity_132_by_id(self, entity_id: int) -> Optional[ResearchModelEntity132]:
+        return self.db.query(ResearchModelEntity132).filter(ResearchModelEntity132.id == entity_id).first()
+
+    def create_entity_132(self, payload: ResearchSchemaEntity132Create) -> ResearchModelEntity132:
+        db_obj = ResearchModelEntity132(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_132(self, entity_id: int, payload: ResearchSchemaEntity132Update) -> Optional[ResearchModelEntity132]:
+        db_obj = self.get_entity_132_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_132(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_132_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_133_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity133]:
+        return self.db.query(ResearchModelEntity133).offset(skip).limit(limit).all()
+
+    def get_entity_133_by_id(self, entity_id: int) -> Optional[ResearchModelEntity133]:
+        return self.db.query(ResearchModelEntity133).filter(ResearchModelEntity133.id == entity_id).first()
+
+    def create_entity_133(self, payload: ResearchSchemaEntity133Create) -> ResearchModelEntity133:
+        db_obj = ResearchModelEntity133(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_133(self, entity_id: int, payload: ResearchSchemaEntity133Update) -> Optional[ResearchModelEntity133]:
+        db_obj = self.get_entity_133_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_133(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_133_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_134_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity134]:
+        return self.db.query(ResearchModelEntity134).offset(skip).limit(limit).all()
+
+    def get_entity_134_by_id(self, entity_id: int) -> Optional[ResearchModelEntity134]:
+        return self.db.query(ResearchModelEntity134).filter(ResearchModelEntity134.id == entity_id).first()
+
+    def create_entity_134(self, payload: ResearchSchemaEntity134Create) -> ResearchModelEntity134:
+        db_obj = ResearchModelEntity134(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_134(self, entity_id: int, payload: ResearchSchemaEntity134Update) -> Optional[ResearchModelEntity134]:
+        db_obj = self.get_entity_134_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_134(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_134_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_135_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity135]:
+        return self.db.query(ResearchModelEntity135).offset(skip).limit(limit).all()
+
+    def get_entity_135_by_id(self, entity_id: int) -> Optional[ResearchModelEntity135]:
+        return self.db.query(ResearchModelEntity135).filter(ResearchModelEntity135.id == entity_id).first()
+
+    def create_entity_135(self, payload: ResearchSchemaEntity135Create) -> ResearchModelEntity135:
+        db_obj = ResearchModelEntity135(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_135(self, entity_id: int, payload: ResearchSchemaEntity135Update) -> Optional[ResearchModelEntity135]:
+        db_obj = self.get_entity_135_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_135(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_135_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_136_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity136]:
+        return self.db.query(ResearchModelEntity136).offset(skip).limit(limit).all()
+
+    def get_entity_136_by_id(self, entity_id: int) -> Optional[ResearchModelEntity136]:
+        return self.db.query(ResearchModelEntity136).filter(ResearchModelEntity136.id == entity_id).first()
+
+    def create_entity_136(self, payload: ResearchSchemaEntity136Create) -> ResearchModelEntity136:
+        db_obj = ResearchModelEntity136(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_136(self, entity_id: int, payload: ResearchSchemaEntity136Update) -> Optional[ResearchModelEntity136]:
+        db_obj = self.get_entity_136_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_136(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_136_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_137_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity137]:
+        return self.db.query(ResearchModelEntity137).offset(skip).limit(limit).all()
+
+    def get_entity_137_by_id(self, entity_id: int) -> Optional[ResearchModelEntity137]:
+        return self.db.query(ResearchModelEntity137).filter(ResearchModelEntity137.id == entity_id).first()
+
+    def create_entity_137(self, payload: ResearchSchemaEntity137Create) -> ResearchModelEntity137:
+        db_obj = ResearchModelEntity137(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_137(self, entity_id: int, payload: ResearchSchemaEntity137Update) -> Optional[ResearchModelEntity137]:
+        db_obj = self.get_entity_137_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_137(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_137_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_138_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity138]:
+        return self.db.query(ResearchModelEntity138).offset(skip).limit(limit).all()
+
+    def get_entity_138_by_id(self, entity_id: int) -> Optional[ResearchModelEntity138]:
+        return self.db.query(ResearchModelEntity138).filter(ResearchModelEntity138.id == entity_id).first()
+
+    def create_entity_138(self, payload: ResearchSchemaEntity138Create) -> ResearchModelEntity138:
+        db_obj = ResearchModelEntity138(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_138(self, entity_id: int, payload: ResearchSchemaEntity138Update) -> Optional[ResearchModelEntity138]:
+        db_obj = self.get_entity_138_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_138(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_138_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_139_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity139]:
+        return self.db.query(ResearchModelEntity139).offset(skip).limit(limit).all()
+
+    def get_entity_139_by_id(self, entity_id: int) -> Optional[ResearchModelEntity139]:
+        return self.db.query(ResearchModelEntity139).filter(ResearchModelEntity139.id == entity_id).first()
+
+    def create_entity_139(self, payload: ResearchSchemaEntity139Create) -> ResearchModelEntity139:
+        db_obj = ResearchModelEntity139(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_139(self, entity_id: int, payload: ResearchSchemaEntity139Update) -> Optional[ResearchModelEntity139]:
+        db_obj = self.get_entity_139_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_139(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_139_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_140_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity140]:
+        return self.db.query(ResearchModelEntity140).offset(skip).limit(limit).all()
+
+    def get_entity_140_by_id(self, entity_id: int) -> Optional[ResearchModelEntity140]:
+        return self.db.query(ResearchModelEntity140).filter(ResearchModelEntity140.id == entity_id).first()
+
+    def create_entity_140(self, payload: ResearchSchemaEntity140Create) -> ResearchModelEntity140:
+        db_obj = ResearchModelEntity140(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_140(self, entity_id: int, payload: ResearchSchemaEntity140Update) -> Optional[ResearchModelEntity140]:
+        db_obj = self.get_entity_140_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_140(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_140_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_141_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity141]:
+        return self.db.query(ResearchModelEntity141).offset(skip).limit(limit).all()
+
+    def get_entity_141_by_id(self, entity_id: int) -> Optional[ResearchModelEntity141]:
+        return self.db.query(ResearchModelEntity141).filter(ResearchModelEntity141.id == entity_id).first()
+
+    def create_entity_141(self, payload: ResearchSchemaEntity141Create) -> ResearchModelEntity141:
+        db_obj = ResearchModelEntity141(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_141(self, entity_id: int, payload: ResearchSchemaEntity141Update) -> Optional[ResearchModelEntity141]:
+        db_obj = self.get_entity_141_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_141(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_141_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_142_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity142]:
+        return self.db.query(ResearchModelEntity142).offset(skip).limit(limit).all()
+
+    def get_entity_142_by_id(self, entity_id: int) -> Optional[ResearchModelEntity142]:
+        return self.db.query(ResearchModelEntity142).filter(ResearchModelEntity142.id == entity_id).first()
+
+    def create_entity_142(self, payload: ResearchSchemaEntity142Create) -> ResearchModelEntity142:
+        db_obj = ResearchModelEntity142(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_142(self, entity_id: int, payload: ResearchSchemaEntity142Update) -> Optional[ResearchModelEntity142]:
+        db_obj = self.get_entity_142_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_142(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_142_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_143_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity143]:
+        return self.db.query(ResearchModelEntity143).offset(skip).limit(limit).all()
+
+    def get_entity_143_by_id(self, entity_id: int) -> Optional[ResearchModelEntity143]:
+        return self.db.query(ResearchModelEntity143).filter(ResearchModelEntity143.id == entity_id).first()
+
+    def create_entity_143(self, payload: ResearchSchemaEntity143Create) -> ResearchModelEntity143:
+        db_obj = ResearchModelEntity143(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_143(self, entity_id: int, payload: ResearchSchemaEntity143Update) -> Optional[ResearchModelEntity143]:
+        db_obj = self.get_entity_143_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_143(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_143_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_144_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity144]:
+        return self.db.query(ResearchModelEntity144).offset(skip).limit(limit).all()
+
+    def get_entity_144_by_id(self, entity_id: int) -> Optional[ResearchModelEntity144]:
+        return self.db.query(ResearchModelEntity144).filter(ResearchModelEntity144.id == entity_id).first()
+
+    def create_entity_144(self, payload: ResearchSchemaEntity144Create) -> ResearchModelEntity144:
+        db_obj = ResearchModelEntity144(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_144(self, entity_id: int, payload: ResearchSchemaEntity144Update) -> Optional[ResearchModelEntity144]:
+        db_obj = self.get_entity_144_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_144(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_144_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_145_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity145]:
+        return self.db.query(ResearchModelEntity145).offset(skip).limit(limit).all()
+
+    def get_entity_145_by_id(self, entity_id: int) -> Optional[ResearchModelEntity145]:
+        return self.db.query(ResearchModelEntity145).filter(ResearchModelEntity145.id == entity_id).first()
+
+    def create_entity_145(self, payload: ResearchSchemaEntity145Create) -> ResearchModelEntity145:
+        db_obj = ResearchModelEntity145(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_145(self, entity_id: int, payload: ResearchSchemaEntity145Update) -> Optional[ResearchModelEntity145]:
+        db_obj = self.get_entity_145_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_145(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_145_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_146_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity146]:
+        return self.db.query(ResearchModelEntity146).offset(skip).limit(limit).all()
+
+    def get_entity_146_by_id(self, entity_id: int) -> Optional[ResearchModelEntity146]:
+        return self.db.query(ResearchModelEntity146).filter(ResearchModelEntity146.id == entity_id).first()
+
+    def create_entity_146(self, payload: ResearchSchemaEntity146Create) -> ResearchModelEntity146:
+        db_obj = ResearchModelEntity146(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_146(self, entity_id: int, payload: ResearchSchemaEntity146Update) -> Optional[ResearchModelEntity146]:
+        db_obj = self.get_entity_146_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_146(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_146_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_147_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity147]:
+        return self.db.query(ResearchModelEntity147).offset(skip).limit(limit).all()
+
+    def get_entity_147_by_id(self, entity_id: int) -> Optional[ResearchModelEntity147]:
+        return self.db.query(ResearchModelEntity147).filter(ResearchModelEntity147.id == entity_id).first()
+
+    def create_entity_147(self, payload: ResearchSchemaEntity147Create) -> ResearchModelEntity147:
+        db_obj = ResearchModelEntity147(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_147(self, entity_id: int, payload: ResearchSchemaEntity147Update) -> Optional[ResearchModelEntity147]:
+        db_obj = self.get_entity_147_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_147(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_147_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_148_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity148]:
+        return self.db.query(ResearchModelEntity148).offset(skip).limit(limit).all()
+
+    def get_entity_148_by_id(self, entity_id: int) -> Optional[ResearchModelEntity148]:
+        return self.db.query(ResearchModelEntity148).filter(ResearchModelEntity148.id == entity_id).first()
+
+    def create_entity_148(self, payload: ResearchSchemaEntity148Create) -> ResearchModelEntity148:
+        db_obj = ResearchModelEntity148(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_148(self, entity_id: int, payload: ResearchSchemaEntity148Update) -> Optional[ResearchModelEntity148]:
+        db_obj = self.get_entity_148_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_148(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_148_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_149_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity149]:
+        return self.db.query(ResearchModelEntity149).offset(skip).limit(limit).all()
+
+    def get_entity_149_by_id(self, entity_id: int) -> Optional[ResearchModelEntity149]:
+        return self.db.query(ResearchModelEntity149).filter(ResearchModelEntity149.id == entity_id).first()
+
+    def create_entity_149(self, payload: ResearchSchemaEntity149Create) -> ResearchModelEntity149:
+        db_obj = ResearchModelEntity149(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_149(self, entity_id: int, payload: ResearchSchemaEntity149Update) -> Optional[ResearchModelEntity149]:
+        db_obj = self.get_entity_149_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_149(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_149_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_150_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity150]:
+        return self.db.query(ResearchModelEntity150).offset(skip).limit(limit).all()
+
+    def get_entity_150_by_id(self, entity_id: int) -> Optional[ResearchModelEntity150]:
+        return self.db.query(ResearchModelEntity150).filter(ResearchModelEntity150.id == entity_id).first()
+
+    def create_entity_150(self, payload: ResearchSchemaEntity150Create) -> ResearchModelEntity150:
+        db_obj = ResearchModelEntity150(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_150(self, entity_id: int, payload: ResearchSchemaEntity150Update) -> Optional[ResearchModelEntity150]:
+        db_obj = self.get_entity_150_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_150(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_150_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_151_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity151]:
+        return self.db.query(ResearchModelEntity151).offset(skip).limit(limit).all()
+
+    def get_entity_151_by_id(self, entity_id: int) -> Optional[ResearchModelEntity151]:
+        return self.db.query(ResearchModelEntity151).filter(ResearchModelEntity151.id == entity_id).first()
+
+    def create_entity_151(self, payload: ResearchSchemaEntity151Create) -> ResearchModelEntity151:
+        db_obj = ResearchModelEntity151(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_151(self, entity_id: int, payload: ResearchSchemaEntity151Update) -> Optional[ResearchModelEntity151]:
+        db_obj = self.get_entity_151_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_151(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_151_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_152_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity152]:
+        return self.db.query(ResearchModelEntity152).offset(skip).limit(limit).all()
+
+    def get_entity_152_by_id(self, entity_id: int) -> Optional[ResearchModelEntity152]:
+        return self.db.query(ResearchModelEntity152).filter(ResearchModelEntity152.id == entity_id).first()
+
+    def create_entity_152(self, payload: ResearchSchemaEntity152Create) -> ResearchModelEntity152:
+        db_obj = ResearchModelEntity152(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_152(self, entity_id: int, payload: ResearchSchemaEntity152Update) -> Optional[ResearchModelEntity152]:
+        db_obj = self.get_entity_152_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_152(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_152_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_153_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity153]:
+        return self.db.query(ResearchModelEntity153).offset(skip).limit(limit).all()
+
+    def get_entity_153_by_id(self, entity_id: int) -> Optional[ResearchModelEntity153]:
+        return self.db.query(ResearchModelEntity153).filter(ResearchModelEntity153.id == entity_id).first()
+
+    def create_entity_153(self, payload: ResearchSchemaEntity153Create) -> ResearchModelEntity153:
+        db_obj = ResearchModelEntity153(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_153(self, entity_id: int, payload: ResearchSchemaEntity153Update) -> Optional[ResearchModelEntity153]:
+        db_obj = self.get_entity_153_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_153(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_153_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_154_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity154]:
+        return self.db.query(ResearchModelEntity154).offset(skip).limit(limit).all()
+
+    def get_entity_154_by_id(self, entity_id: int) -> Optional[ResearchModelEntity154]:
+        return self.db.query(ResearchModelEntity154).filter(ResearchModelEntity154.id == entity_id).first()
+
+    def create_entity_154(self, payload: ResearchSchemaEntity154Create) -> ResearchModelEntity154:
+        db_obj = ResearchModelEntity154(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_154(self, entity_id: int, payload: ResearchSchemaEntity154Update) -> Optional[ResearchModelEntity154]:
+        db_obj = self.get_entity_154_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_154(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_154_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_155_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity155]:
+        return self.db.query(ResearchModelEntity155).offset(skip).limit(limit).all()
+
+    def get_entity_155_by_id(self, entity_id: int) -> Optional[ResearchModelEntity155]:
+        return self.db.query(ResearchModelEntity155).filter(ResearchModelEntity155.id == entity_id).first()
+
+    def create_entity_155(self, payload: ResearchSchemaEntity155Create) -> ResearchModelEntity155:
+        db_obj = ResearchModelEntity155(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_155(self, entity_id: int, payload: ResearchSchemaEntity155Update) -> Optional[ResearchModelEntity155]:
+        db_obj = self.get_entity_155_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_155(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_155_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_156_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity156]:
+        return self.db.query(ResearchModelEntity156).offset(skip).limit(limit).all()
+
+    def get_entity_156_by_id(self, entity_id: int) -> Optional[ResearchModelEntity156]:
+        return self.db.query(ResearchModelEntity156).filter(ResearchModelEntity156.id == entity_id).first()
+
+    def create_entity_156(self, payload: ResearchSchemaEntity156Create) -> ResearchModelEntity156:
+        db_obj = ResearchModelEntity156(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_156(self, entity_id: int, payload: ResearchSchemaEntity156Update) -> Optional[ResearchModelEntity156]:
+        db_obj = self.get_entity_156_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_156(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_156_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_157_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity157]:
+        return self.db.query(ResearchModelEntity157).offset(skip).limit(limit).all()
+
+    def get_entity_157_by_id(self, entity_id: int) -> Optional[ResearchModelEntity157]:
+        return self.db.query(ResearchModelEntity157).filter(ResearchModelEntity157.id == entity_id).first()
+
+    def create_entity_157(self, payload: ResearchSchemaEntity157Create) -> ResearchModelEntity157:
+        db_obj = ResearchModelEntity157(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_157(self, entity_id: int, payload: ResearchSchemaEntity157Update) -> Optional[ResearchModelEntity157]:
+        db_obj = self.get_entity_157_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_157(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_157_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_158_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity158]:
+        return self.db.query(ResearchModelEntity158).offset(skip).limit(limit).all()
+
+    def get_entity_158_by_id(self, entity_id: int) -> Optional[ResearchModelEntity158]:
+        return self.db.query(ResearchModelEntity158).filter(ResearchModelEntity158.id == entity_id).first()
+
+    def create_entity_158(self, payload: ResearchSchemaEntity158Create) -> ResearchModelEntity158:
+        db_obj = ResearchModelEntity158(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_158(self, entity_id: int, payload: ResearchSchemaEntity158Update) -> Optional[ResearchModelEntity158]:
+        db_obj = self.get_entity_158_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_158(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_158_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_159_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity159]:
+        return self.db.query(ResearchModelEntity159).offset(skip).limit(limit).all()
+
+    def get_entity_159_by_id(self, entity_id: int) -> Optional[ResearchModelEntity159]:
+        return self.db.query(ResearchModelEntity159).filter(ResearchModelEntity159.id == entity_id).first()
+
+    def create_entity_159(self, payload: ResearchSchemaEntity159Create) -> ResearchModelEntity159:
+        db_obj = ResearchModelEntity159(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_159(self, entity_id: int, payload: ResearchSchemaEntity159Update) -> Optional[ResearchModelEntity159]:
+        db_obj = self.get_entity_159_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_159(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_159_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_160_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity160]:
+        return self.db.query(ResearchModelEntity160).offset(skip).limit(limit).all()
+
+    def get_entity_160_by_id(self, entity_id: int) -> Optional[ResearchModelEntity160]:
+        return self.db.query(ResearchModelEntity160).filter(ResearchModelEntity160.id == entity_id).first()
+
+    def create_entity_160(self, payload: ResearchSchemaEntity160Create) -> ResearchModelEntity160:
+        db_obj = ResearchModelEntity160(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_160(self, entity_id: int, payload: ResearchSchemaEntity160Update) -> Optional[ResearchModelEntity160]:
+        db_obj = self.get_entity_160_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_160(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_160_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_161_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity161]:
+        return self.db.query(ResearchModelEntity161).offset(skip).limit(limit).all()
+
+    def get_entity_161_by_id(self, entity_id: int) -> Optional[ResearchModelEntity161]:
+        return self.db.query(ResearchModelEntity161).filter(ResearchModelEntity161.id == entity_id).first()
+
+    def create_entity_161(self, payload: ResearchSchemaEntity161Create) -> ResearchModelEntity161:
+        db_obj = ResearchModelEntity161(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_161(self, entity_id: int, payload: ResearchSchemaEntity161Update) -> Optional[ResearchModelEntity161]:
+        db_obj = self.get_entity_161_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_161(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_161_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_162_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity162]:
+        return self.db.query(ResearchModelEntity162).offset(skip).limit(limit).all()
+
+    def get_entity_162_by_id(self, entity_id: int) -> Optional[ResearchModelEntity162]:
+        return self.db.query(ResearchModelEntity162).filter(ResearchModelEntity162.id == entity_id).first()
+
+    def create_entity_162(self, payload: ResearchSchemaEntity162Create) -> ResearchModelEntity162:
+        db_obj = ResearchModelEntity162(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_162(self, entity_id: int, payload: ResearchSchemaEntity162Update) -> Optional[ResearchModelEntity162]:
+        db_obj = self.get_entity_162_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_162(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_162_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_163_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity163]:
+        return self.db.query(ResearchModelEntity163).offset(skip).limit(limit).all()
+
+    def get_entity_163_by_id(self, entity_id: int) -> Optional[ResearchModelEntity163]:
+        return self.db.query(ResearchModelEntity163).filter(ResearchModelEntity163.id == entity_id).first()
+
+    def create_entity_163(self, payload: ResearchSchemaEntity163Create) -> ResearchModelEntity163:
+        db_obj = ResearchModelEntity163(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_163(self, entity_id: int, payload: ResearchSchemaEntity163Update) -> Optional[ResearchModelEntity163]:
+        db_obj = self.get_entity_163_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_163(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_163_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_164_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity164]:
+        return self.db.query(ResearchModelEntity164).offset(skip).limit(limit).all()
+
+    def get_entity_164_by_id(self, entity_id: int) -> Optional[ResearchModelEntity164]:
+        return self.db.query(ResearchModelEntity164).filter(ResearchModelEntity164.id == entity_id).first()
+
+    def create_entity_164(self, payload: ResearchSchemaEntity164Create) -> ResearchModelEntity164:
+        db_obj = ResearchModelEntity164(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_164(self, entity_id: int, payload: ResearchSchemaEntity164Update) -> Optional[ResearchModelEntity164]:
+        db_obj = self.get_entity_164_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_164(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_164_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_165_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity165]:
+        return self.db.query(ResearchModelEntity165).offset(skip).limit(limit).all()
+
+    def get_entity_165_by_id(self, entity_id: int) -> Optional[ResearchModelEntity165]:
+        return self.db.query(ResearchModelEntity165).filter(ResearchModelEntity165.id == entity_id).first()
+
+    def create_entity_165(self, payload: ResearchSchemaEntity165Create) -> ResearchModelEntity165:
+        db_obj = ResearchModelEntity165(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_165(self, entity_id: int, payload: ResearchSchemaEntity165Update) -> Optional[ResearchModelEntity165]:
+        db_obj = self.get_entity_165_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_165(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_165_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_166_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity166]:
+        return self.db.query(ResearchModelEntity166).offset(skip).limit(limit).all()
+
+    def get_entity_166_by_id(self, entity_id: int) -> Optional[ResearchModelEntity166]:
+        return self.db.query(ResearchModelEntity166).filter(ResearchModelEntity166.id == entity_id).first()
+
+    def create_entity_166(self, payload: ResearchSchemaEntity166Create) -> ResearchModelEntity166:
+        db_obj = ResearchModelEntity166(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_166(self, entity_id: int, payload: ResearchSchemaEntity166Update) -> Optional[ResearchModelEntity166]:
+        db_obj = self.get_entity_166_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_166(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_166_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_167_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity167]:
+        return self.db.query(ResearchModelEntity167).offset(skip).limit(limit).all()
+
+    def get_entity_167_by_id(self, entity_id: int) -> Optional[ResearchModelEntity167]:
+        return self.db.query(ResearchModelEntity167).filter(ResearchModelEntity167.id == entity_id).first()
+
+    def create_entity_167(self, payload: ResearchSchemaEntity167Create) -> ResearchModelEntity167:
+        db_obj = ResearchModelEntity167(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_167(self, entity_id: int, payload: ResearchSchemaEntity167Update) -> Optional[ResearchModelEntity167]:
+        db_obj = self.get_entity_167_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_167(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_167_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_168_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity168]:
+        return self.db.query(ResearchModelEntity168).offset(skip).limit(limit).all()
+
+    def get_entity_168_by_id(self, entity_id: int) -> Optional[ResearchModelEntity168]:
+        return self.db.query(ResearchModelEntity168).filter(ResearchModelEntity168.id == entity_id).first()
+
+    def create_entity_168(self, payload: ResearchSchemaEntity168Create) -> ResearchModelEntity168:
+        db_obj = ResearchModelEntity168(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_168(self, entity_id: int, payload: ResearchSchemaEntity168Update) -> Optional[ResearchModelEntity168]:
+        db_obj = self.get_entity_168_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_168(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_168_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_169_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity169]:
+        return self.db.query(ResearchModelEntity169).offset(skip).limit(limit).all()
+
+    def get_entity_169_by_id(self, entity_id: int) -> Optional[ResearchModelEntity169]:
+        return self.db.query(ResearchModelEntity169).filter(ResearchModelEntity169.id == entity_id).first()
+
+    def create_entity_169(self, payload: ResearchSchemaEntity169Create) -> ResearchModelEntity169:
+        db_obj = ResearchModelEntity169(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_169(self, entity_id: int, payload: ResearchSchemaEntity169Update) -> Optional[ResearchModelEntity169]:
+        db_obj = self.get_entity_169_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_169(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_169_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_170_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity170]:
+        return self.db.query(ResearchModelEntity170).offset(skip).limit(limit).all()
+
+    def get_entity_170_by_id(self, entity_id: int) -> Optional[ResearchModelEntity170]:
+        return self.db.query(ResearchModelEntity170).filter(ResearchModelEntity170.id == entity_id).first()
+
+    def create_entity_170(self, payload: ResearchSchemaEntity170Create) -> ResearchModelEntity170:
+        db_obj = ResearchModelEntity170(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_170(self, entity_id: int, payload: ResearchSchemaEntity170Update) -> Optional[ResearchModelEntity170]:
+        db_obj = self.get_entity_170_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_170(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_170_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_171_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity171]:
+        return self.db.query(ResearchModelEntity171).offset(skip).limit(limit).all()
+
+    def get_entity_171_by_id(self, entity_id: int) -> Optional[ResearchModelEntity171]:
+        return self.db.query(ResearchModelEntity171).filter(ResearchModelEntity171.id == entity_id).first()
+
+    def create_entity_171(self, payload: ResearchSchemaEntity171Create) -> ResearchModelEntity171:
+        db_obj = ResearchModelEntity171(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_171(self, entity_id: int, payload: ResearchSchemaEntity171Update) -> Optional[ResearchModelEntity171]:
+        db_obj = self.get_entity_171_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_171(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_171_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_172_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity172]:
+        return self.db.query(ResearchModelEntity172).offset(skip).limit(limit).all()
+
+    def get_entity_172_by_id(self, entity_id: int) -> Optional[ResearchModelEntity172]:
+        return self.db.query(ResearchModelEntity172).filter(ResearchModelEntity172.id == entity_id).first()
+
+    def create_entity_172(self, payload: ResearchSchemaEntity172Create) -> ResearchModelEntity172:
+        db_obj = ResearchModelEntity172(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_172(self, entity_id: int, payload: ResearchSchemaEntity172Update) -> Optional[ResearchModelEntity172]:
+        db_obj = self.get_entity_172_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_172(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_172_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_173_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity173]:
+        return self.db.query(ResearchModelEntity173).offset(skip).limit(limit).all()
+
+    def get_entity_173_by_id(self, entity_id: int) -> Optional[ResearchModelEntity173]:
+        return self.db.query(ResearchModelEntity173).filter(ResearchModelEntity173.id == entity_id).first()
+
+    def create_entity_173(self, payload: ResearchSchemaEntity173Create) -> ResearchModelEntity173:
+        db_obj = ResearchModelEntity173(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_173(self, entity_id: int, payload: ResearchSchemaEntity173Update) -> Optional[ResearchModelEntity173]:
+        db_obj = self.get_entity_173_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_173(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_173_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_174_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity174]:
+        return self.db.query(ResearchModelEntity174).offset(skip).limit(limit).all()
+
+    def get_entity_174_by_id(self, entity_id: int) -> Optional[ResearchModelEntity174]:
+        return self.db.query(ResearchModelEntity174).filter(ResearchModelEntity174.id == entity_id).first()
+
+    def create_entity_174(self, payload: ResearchSchemaEntity174Create) -> ResearchModelEntity174:
+        db_obj = ResearchModelEntity174(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_174(self, entity_id: int, payload: ResearchSchemaEntity174Update) -> Optional[ResearchModelEntity174]:
+        db_obj = self.get_entity_174_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_174(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_174_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_175_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity175]:
+        return self.db.query(ResearchModelEntity175).offset(skip).limit(limit).all()
+
+    def get_entity_175_by_id(self, entity_id: int) -> Optional[ResearchModelEntity175]:
+        return self.db.query(ResearchModelEntity175).filter(ResearchModelEntity175.id == entity_id).first()
+
+    def create_entity_175(self, payload: ResearchSchemaEntity175Create) -> ResearchModelEntity175:
+        db_obj = ResearchModelEntity175(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_175(self, entity_id: int, payload: ResearchSchemaEntity175Update) -> Optional[ResearchModelEntity175]:
+        db_obj = self.get_entity_175_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_175(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_175_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_176_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity176]:
+        return self.db.query(ResearchModelEntity176).offset(skip).limit(limit).all()
+
+    def get_entity_176_by_id(self, entity_id: int) -> Optional[ResearchModelEntity176]:
+        return self.db.query(ResearchModelEntity176).filter(ResearchModelEntity176.id == entity_id).first()
+
+    def create_entity_176(self, payload: ResearchSchemaEntity176Create) -> ResearchModelEntity176:
+        db_obj = ResearchModelEntity176(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_176(self, entity_id: int, payload: ResearchSchemaEntity176Update) -> Optional[ResearchModelEntity176]:
+        db_obj = self.get_entity_176_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_176(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_176_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_177_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity177]:
+        return self.db.query(ResearchModelEntity177).offset(skip).limit(limit).all()
+
+    def get_entity_177_by_id(self, entity_id: int) -> Optional[ResearchModelEntity177]:
+        return self.db.query(ResearchModelEntity177).filter(ResearchModelEntity177.id == entity_id).first()
+
+    def create_entity_177(self, payload: ResearchSchemaEntity177Create) -> ResearchModelEntity177:
+        db_obj = ResearchModelEntity177(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_177(self, entity_id: int, payload: ResearchSchemaEntity177Update) -> Optional[ResearchModelEntity177]:
+        db_obj = self.get_entity_177_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_177(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_177_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_178_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity178]:
+        return self.db.query(ResearchModelEntity178).offset(skip).limit(limit).all()
+
+    def get_entity_178_by_id(self, entity_id: int) -> Optional[ResearchModelEntity178]:
+        return self.db.query(ResearchModelEntity178).filter(ResearchModelEntity178.id == entity_id).first()
+
+    def create_entity_178(self, payload: ResearchSchemaEntity178Create) -> ResearchModelEntity178:
+        db_obj = ResearchModelEntity178(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_178(self, entity_id: int, payload: ResearchSchemaEntity178Update) -> Optional[ResearchModelEntity178]:
+        db_obj = self.get_entity_178_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_178(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_178_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_179_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity179]:
+        return self.db.query(ResearchModelEntity179).offset(skip).limit(limit).all()
+
+    def get_entity_179_by_id(self, entity_id: int) -> Optional[ResearchModelEntity179]:
+        return self.db.query(ResearchModelEntity179).filter(ResearchModelEntity179.id == entity_id).first()
+
+    def create_entity_179(self, payload: ResearchSchemaEntity179Create) -> ResearchModelEntity179:
+        db_obj = ResearchModelEntity179(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_179(self, entity_id: int, payload: ResearchSchemaEntity179Update) -> Optional[ResearchModelEntity179]:
+        db_obj = self.get_entity_179_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_179(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_179_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_180_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity180]:
+        return self.db.query(ResearchModelEntity180).offset(skip).limit(limit).all()
+
+    def get_entity_180_by_id(self, entity_id: int) -> Optional[ResearchModelEntity180]:
+        return self.db.query(ResearchModelEntity180).filter(ResearchModelEntity180.id == entity_id).first()
+
+    def create_entity_180(self, payload: ResearchSchemaEntity180Create) -> ResearchModelEntity180:
+        db_obj = ResearchModelEntity180(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_180(self, entity_id: int, payload: ResearchSchemaEntity180Update) -> Optional[ResearchModelEntity180]:
+        db_obj = self.get_entity_180_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_180(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_180_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_181_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity181]:
+        return self.db.query(ResearchModelEntity181).offset(skip).limit(limit).all()
+
+    def get_entity_181_by_id(self, entity_id: int) -> Optional[ResearchModelEntity181]:
+        return self.db.query(ResearchModelEntity181).filter(ResearchModelEntity181.id == entity_id).first()
+
+    def create_entity_181(self, payload: ResearchSchemaEntity181Create) -> ResearchModelEntity181:
+        db_obj = ResearchModelEntity181(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_181(self, entity_id: int, payload: ResearchSchemaEntity181Update) -> Optional[ResearchModelEntity181]:
+        db_obj = self.get_entity_181_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_181(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_181_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_182_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity182]:
+        return self.db.query(ResearchModelEntity182).offset(skip).limit(limit).all()
+
+    def get_entity_182_by_id(self, entity_id: int) -> Optional[ResearchModelEntity182]:
+        return self.db.query(ResearchModelEntity182).filter(ResearchModelEntity182.id == entity_id).first()
+
+    def create_entity_182(self, payload: ResearchSchemaEntity182Create) -> ResearchModelEntity182:
+        db_obj = ResearchModelEntity182(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_182(self, entity_id: int, payload: ResearchSchemaEntity182Update) -> Optional[ResearchModelEntity182]:
+        db_obj = self.get_entity_182_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_182(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_182_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_183_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity183]:
+        return self.db.query(ResearchModelEntity183).offset(skip).limit(limit).all()
+
+    def get_entity_183_by_id(self, entity_id: int) -> Optional[ResearchModelEntity183]:
+        return self.db.query(ResearchModelEntity183).filter(ResearchModelEntity183.id == entity_id).first()
+
+    def create_entity_183(self, payload: ResearchSchemaEntity183Create) -> ResearchModelEntity183:
+        db_obj = ResearchModelEntity183(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_183(self, entity_id: int, payload: ResearchSchemaEntity183Update) -> Optional[ResearchModelEntity183]:
+        db_obj = self.get_entity_183_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_183(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_183_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_184_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity184]:
+        return self.db.query(ResearchModelEntity184).offset(skip).limit(limit).all()
+
+    def get_entity_184_by_id(self, entity_id: int) -> Optional[ResearchModelEntity184]:
+        return self.db.query(ResearchModelEntity184).filter(ResearchModelEntity184.id == entity_id).first()
+
+    def create_entity_184(self, payload: ResearchSchemaEntity184Create) -> ResearchModelEntity184:
+        db_obj = ResearchModelEntity184(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_184(self, entity_id: int, payload: ResearchSchemaEntity184Update) -> Optional[ResearchModelEntity184]:
+        db_obj = self.get_entity_184_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_184(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_184_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_185_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity185]:
+        return self.db.query(ResearchModelEntity185).offset(skip).limit(limit).all()
+
+    def get_entity_185_by_id(self, entity_id: int) -> Optional[ResearchModelEntity185]:
+        return self.db.query(ResearchModelEntity185).filter(ResearchModelEntity185.id == entity_id).first()
+
+    def create_entity_185(self, payload: ResearchSchemaEntity185Create) -> ResearchModelEntity185:
+        db_obj = ResearchModelEntity185(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_185(self, entity_id: int, payload: ResearchSchemaEntity185Update) -> Optional[ResearchModelEntity185]:
+        db_obj = self.get_entity_185_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_185(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_185_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_186_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity186]:
+        return self.db.query(ResearchModelEntity186).offset(skip).limit(limit).all()
+
+    def get_entity_186_by_id(self, entity_id: int) -> Optional[ResearchModelEntity186]:
+        return self.db.query(ResearchModelEntity186).filter(ResearchModelEntity186.id == entity_id).first()
+
+    def create_entity_186(self, payload: ResearchSchemaEntity186Create) -> ResearchModelEntity186:
+        db_obj = ResearchModelEntity186(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_186(self, entity_id: int, payload: ResearchSchemaEntity186Update) -> Optional[ResearchModelEntity186]:
+        db_obj = self.get_entity_186_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_186(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_186_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_187_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity187]:
+        return self.db.query(ResearchModelEntity187).offset(skip).limit(limit).all()
+
+    def get_entity_187_by_id(self, entity_id: int) -> Optional[ResearchModelEntity187]:
+        return self.db.query(ResearchModelEntity187).filter(ResearchModelEntity187.id == entity_id).first()
+
+    def create_entity_187(self, payload: ResearchSchemaEntity187Create) -> ResearchModelEntity187:
+        db_obj = ResearchModelEntity187(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_187(self, entity_id: int, payload: ResearchSchemaEntity187Update) -> Optional[ResearchModelEntity187]:
+        db_obj = self.get_entity_187_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_187(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_187_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_188_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity188]:
+        return self.db.query(ResearchModelEntity188).offset(skip).limit(limit).all()
+
+    def get_entity_188_by_id(self, entity_id: int) -> Optional[ResearchModelEntity188]:
+        return self.db.query(ResearchModelEntity188).filter(ResearchModelEntity188.id == entity_id).first()
+
+    def create_entity_188(self, payload: ResearchSchemaEntity188Create) -> ResearchModelEntity188:
+        db_obj = ResearchModelEntity188(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_188(self, entity_id: int, payload: ResearchSchemaEntity188Update) -> Optional[ResearchModelEntity188]:
+        db_obj = self.get_entity_188_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_188(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_188_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_189_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity189]:
+        return self.db.query(ResearchModelEntity189).offset(skip).limit(limit).all()
+
+    def get_entity_189_by_id(self, entity_id: int) -> Optional[ResearchModelEntity189]:
+        return self.db.query(ResearchModelEntity189).filter(ResearchModelEntity189.id == entity_id).first()
+
+    def create_entity_189(self, payload: ResearchSchemaEntity189Create) -> ResearchModelEntity189:
+        db_obj = ResearchModelEntity189(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_189(self, entity_id: int, payload: ResearchSchemaEntity189Update) -> Optional[ResearchModelEntity189]:
+        db_obj = self.get_entity_189_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_189(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_189_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_190_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity190]:
+        return self.db.query(ResearchModelEntity190).offset(skip).limit(limit).all()
+
+    def get_entity_190_by_id(self, entity_id: int) -> Optional[ResearchModelEntity190]:
+        return self.db.query(ResearchModelEntity190).filter(ResearchModelEntity190.id == entity_id).first()
+
+    def create_entity_190(self, payload: ResearchSchemaEntity190Create) -> ResearchModelEntity190:
+        db_obj = ResearchModelEntity190(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_190(self, entity_id: int, payload: ResearchSchemaEntity190Update) -> Optional[ResearchModelEntity190]:
+        db_obj = self.get_entity_190_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_190(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_190_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_191_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity191]:
+        return self.db.query(ResearchModelEntity191).offset(skip).limit(limit).all()
+
+    def get_entity_191_by_id(self, entity_id: int) -> Optional[ResearchModelEntity191]:
+        return self.db.query(ResearchModelEntity191).filter(ResearchModelEntity191.id == entity_id).first()
+
+    def create_entity_191(self, payload: ResearchSchemaEntity191Create) -> ResearchModelEntity191:
+        db_obj = ResearchModelEntity191(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_191(self, entity_id: int, payload: ResearchSchemaEntity191Update) -> Optional[ResearchModelEntity191]:
+        db_obj = self.get_entity_191_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_191(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_191_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_192_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity192]:
+        return self.db.query(ResearchModelEntity192).offset(skip).limit(limit).all()
+
+    def get_entity_192_by_id(self, entity_id: int) -> Optional[ResearchModelEntity192]:
+        return self.db.query(ResearchModelEntity192).filter(ResearchModelEntity192.id == entity_id).first()
+
+    def create_entity_192(self, payload: ResearchSchemaEntity192Create) -> ResearchModelEntity192:
+        db_obj = ResearchModelEntity192(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_192(self, entity_id: int, payload: ResearchSchemaEntity192Update) -> Optional[ResearchModelEntity192]:
+        db_obj = self.get_entity_192_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_192(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_192_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_193_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity193]:
+        return self.db.query(ResearchModelEntity193).offset(skip).limit(limit).all()
+
+    def get_entity_193_by_id(self, entity_id: int) -> Optional[ResearchModelEntity193]:
+        return self.db.query(ResearchModelEntity193).filter(ResearchModelEntity193.id == entity_id).first()
+
+    def create_entity_193(self, payload: ResearchSchemaEntity193Create) -> ResearchModelEntity193:
+        db_obj = ResearchModelEntity193(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_193(self, entity_id: int, payload: ResearchSchemaEntity193Update) -> Optional[ResearchModelEntity193]:
+        db_obj = self.get_entity_193_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_193(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_193_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_194_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity194]:
+        return self.db.query(ResearchModelEntity194).offset(skip).limit(limit).all()
+
+    def get_entity_194_by_id(self, entity_id: int) -> Optional[ResearchModelEntity194]:
+        return self.db.query(ResearchModelEntity194).filter(ResearchModelEntity194.id == entity_id).first()
+
+    def create_entity_194(self, payload: ResearchSchemaEntity194Create) -> ResearchModelEntity194:
+        db_obj = ResearchModelEntity194(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_194(self, entity_id: int, payload: ResearchSchemaEntity194Update) -> Optional[ResearchModelEntity194]:
+        db_obj = self.get_entity_194_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_194(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_194_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_195_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity195]:
+        return self.db.query(ResearchModelEntity195).offset(skip).limit(limit).all()
+
+    def get_entity_195_by_id(self, entity_id: int) -> Optional[ResearchModelEntity195]:
+        return self.db.query(ResearchModelEntity195).filter(ResearchModelEntity195.id == entity_id).first()
+
+    def create_entity_195(self, payload: ResearchSchemaEntity195Create) -> ResearchModelEntity195:
+        db_obj = ResearchModelEntity195(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_195(self, entity_id: int, payload: ResearchSchemaEntity195Update) -> Optional[ResearchModelEntity195]:
+        db_obj = self.get_entity_195_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_195(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_195_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_196_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity196]:
+        return self.db.query(ResearchModelEntity196).offset(skip).limit(limit).all()
+
+    def get_entity_196_by_id(self, entity_id: int) -> Optional[ResearchModelEntity196]:
+        return self.db.query(ResearchModelEntity196).filter(ResearchModelEntity196.id == entity_id).first()
+
+    def create_entity_196(self, payload: ResearchSchemaEntity196Create) -> ResearchModelEntity196:
+        db_obj = ResearchModelEntity196(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_196(self, entity_id: int, payload: ResearchSchemaEntity196Update) -> Optional[ResearchModelEntity196]:
+        db_obj = self.get_entity_196_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_196(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_196_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_197_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity197]:
+        return self.db.query(ResearchModelEntity197).offset(skip).limit(limit).all()
+
+    def get_entity_197_by_id(self, entity_id: int) -> Optional[ResearchModelEntity197]:
+        return self.db.query(ResearchModelEntity197).filter(ResearchModelEntity197.id == entity_id).first()
+
+    def create_entity_197(self, payload: ResearchSchemaEntity197Create) -> ResearchModelEntity197:
+        db_obj = ResearchModelEntity197(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_197(self, entity_id: int, payload: ResearchSchemaEntity197Update) -> Optional[ResearchModelEntity197]:
+        db_obj = self.get_entity_197_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_197(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_197_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_198_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity198]:
+        return self.db.query(ResearchModelEntity198).offset(skip).limit(limit).all()
+
+    def get_entity_198_by_id(self, entity_id: int) -> Optional[ResearchModelEntity198]:
+        return self.db.query(ResearchModelEntity198).filter(ResearchModelEntity198.id == entity_id).first()
+
+    def create_entity_198(self, payload: ResearchSchemaEntity198Create) -> ResearchModelEntity198:
+        db_obj = ResearchModelEntity198(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_198(self, entity_id: int, payload: ResearchSchemaEntity198Update) -> Optional[ResearchModelEntity198]:
+        db_obj = self.get_entity_198_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_198(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_198_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_199_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity199]:
+        return self.db.query(ResearchModelEntity199).offset(skip).limit(limit).all()
+
+    def get_entity_199_by_id(self, entity_id: int) -> Optional[ResearchModelEntity199]:
+        return self.db.query(ResearchModelEntity199).filter(ResearchModelEntity199.id == entity_id).first()
+
+    def create_entity_199(self, payload: ResearchSchemaEntity199Create) -> ResearchModelEntity199:
+        db_obj = ResearchModelEntity199(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_199(self, entity_id: int, payload: ResearchSchemaEntity199Update) -> Optional[ResearchModelEntity199]:
+        db_obj = self.get_entity_199_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_199(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_199_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_200_list(self, skip: int = 0, limit: int = 100) -> List[ResearchModelEntity200]:
+        return self.db.query(ResearchModelEntity200).offset(skip).limit(limit).all()
+
+    def get_entity_200_by_id(self, entity_id: int) -> Optional[ResearchModelEntity200]:
+        return self.db.query(ResearchModelEntity200).filter(ResearchModelEntity200.id == entity_id).first()
+
+    def create_entity_200(self, payload: ResearchSchemaEntity200Create) -> ResearchModelEntity200:
+        db_obj = ResearchModelEntity200(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_200(self, entity_id: int, payload: ResearchSchemaEntity200Update) -> Optional[ResearchModelEntity200]:
+        db_obj = self.get_entity_200_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_200(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_200_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+

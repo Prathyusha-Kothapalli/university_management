@@ -3728,3 +3728,2483 @@ class ResearchModelEntity120(Base):
             "updated_at": self.updated_at.isoformat() if self.updated_at else None
         }
 
+class ResearchModelEntity121(Base):
+    __tablename__ = "research_entity_121"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_121")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=121 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity122(Base):
+    __tablename__ = "research_entity_122"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_122")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=122 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity123(Base):
+    __tablename__ = "research_entity_123"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_123")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=123 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity124(Base):
+    __tablename__ = "research_entity_124"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_124")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=124 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity125(Base):
+    __tablename__ = "research_entity_125"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_125")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=125 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity126(Base):
+    __tablename__ = "research_entity_126"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_126")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=126 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity127(Base):
+    __tablename__ = "research_entity_127"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_127")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=127 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity128(Base):
+    __tablename__ = "research_entity_128"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_128")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=128 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity129(Base):
+    __tablename__ = "research_entity_129"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_129")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=129 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity130(Base):
+    __tablename__ = "research_entity_130"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_130")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=130 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity131(Base):
+    __tablename__ = "research_entity_131"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_131")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=131 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity132(Base):
+    __tablename__ = "research_entity_132"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_132")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=132 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity133(Base):
+    __tablename__ = "research_entity_133"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_133")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=133 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity134(Base):
+    __tablename__ = "research_entity_134"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_134")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=134 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity135(Base):
+    __tablename__ = "research_entity_135"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_135")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=135 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity136(Base):
+    __tablename__ = "research_entity_136"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_136")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=136 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity137(Base):
+    __tablename__ = "research_entity_137"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_137")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=137 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity138(Base):
+    __tablename__ = "research_entity_138"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_138")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=138 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity139(Base):
+    __tablename__ = "research_entity_139"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_139")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=139 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity140(Base):
+    __tablename__ = "research_entity_140"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_140")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=140 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity141(Base):
+    __tablename__ = "research_entity_141"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_141")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=141 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity142(Base):
+    __tablename__ = "research_entity_142"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_142")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=142 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity143(Base):
+    __tablename__ = "research_entity_143"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_143")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=143 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity144(Base):
+    __tablename__ = "research_entity_144"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_144")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=144 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity145(Base):
+    __tablename__ = "research_entity_145"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_145")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=145 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity146(Base):
+    __tablename__ = "research_entity_146"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_146")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=146 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity147(Base):
+    __tablename__ = "research_entity_147"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_147")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=147 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity148(Base):
+    __tablename__ = "research_entity_148"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_148")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=148 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity149(Base):
+    __tablename__ = "research_entity_149"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_149")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=149 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity150(Base):
+    __tablename__ = "research_entity_150"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_150")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=150 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity151(Base):
+    __tablename__ = "research_entity_151"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_151")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=151 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity152(Base):
+    __tablename__ = "research_entity_152"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_152")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=152 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity153(Base):
+    __tablename__ = "research_entity_153"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_153")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=153 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity154(Base):
+    __tablename__ = "research_entity_154"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_154")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=154 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity155(Base):
+    __tablename__ = "research_entity_155"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_155")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=155 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity156(Base):
+    __tablename__ = "research_entity_156"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_156")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=156 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity157(Base):
+    __tablename__ = "research_entity_157"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_157")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=157 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity158(Base):
+    __tablename__ = "research_entity_158"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_158")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=158 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity159(Base):
+    __tablename__ = "research_entity_159"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_159")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=159 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity160(Base):
+    __tablename__ = "research_entity_160"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_160")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=160 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity161(Base):
+    __tablename__ = "research_entity_161"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_161")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=161 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity162(Base):
+    __tablename__ = "research_entity_162"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_162")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=162 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity163(Base):
+    __tablename__ = "research_entity_163"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_163")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=163 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity164(Base):
+    __tablename__ = "research_entity_164"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_164")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=164 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity165(Base):
+    __tablename__ = "research_entity_165"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_165")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=165 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity166(Base):
+    __tablename__ = "research_entity_166"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_166")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=166 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity167(Base):
+    __tablename__ = "research_entity_167"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_167")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=167 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity168(Base):
+    __tablename__ = "research_entity_168"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_168")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=168 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity169(Base):
+    __tablename__ = "research_entity_169"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_169")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=169 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity170(Base):
+    __tablename__ = "research_entity_170"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_170")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=170 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity171(Base):
+    __tablename__ = "research_entity_171"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_171")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=171 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity172(Base):
+    __tablename__ = "research_entity_172"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_172")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=172 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity173(Base):
+    __tablename__ = "research_entity_173"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_173")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=173 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity174(Base):
+    __tablename__ = "research_entity_174"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_174")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=174 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity175(Base):
+    __tablename__ = "research_entity_175"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_175")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=175 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity176(Base):
+    __tablename__ = "research_entity_176"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_176")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=176 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity177(Base):
+    __tablename__ = "research_entity_177"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_177")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=177 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity178(Base):
+    __tablename__ = "research_entity_178"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_178")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=178 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity179(Base):
+    __tablename__ = "research_entity_179"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_179")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=179 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity180(Base):
+    __tablename__ = "research_entity_180"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_180")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=180 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity181(Base):
+    __tablename__ = "research_entity_181"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_181")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=181 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity182(Base):
+    __tablename__ = "research_entity_182"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_182")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=182 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity183(Base):
+    __tablename__ = "research_entity_183"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_183")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=183 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity184(Base):
+    __tablename__ = "research_entity_184"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_184")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=184 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity185(Base):
+    __tablename__ = "research_entity_185"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_185")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=185 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity186(Base):
+    __tablename__ = "research_entity_186"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_186")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=186 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity187(Base):
+    __tablename__ = "research_entity_187"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_187")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=187 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity188(Base):
+    __tablename__ = "research_entity_188"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_188")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=188 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity189(Base):
+    __tablename__ = "research_entity_189"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_189")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=189 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity190(Base):
+    __tablename__ = "research_entity_190"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_190")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=190 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity191(Base):
+    __tablename__ = "research_entity_191"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_191")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=191 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity192(Base):
+    __tablename__ = "research_entity_192"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_192")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=192 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity193(Base):
+    __tablename__ = "research_entity_193"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_193")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=193 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity194(Base):
+    __tablename__ = "research_entity_194"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_194")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=194 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity195(Base):
+    __tablename__ = "research_entity_195"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_195")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=195 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity196(Base):
+    __tablename__ = "research_entity_196"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_196")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=196 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity197(Base):
+    __tablename__ = "research_entity_197"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_197")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=197 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity198(Base):
+    __tablename__ = "research_entity_198"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_198")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=198 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity199(Base):
+    __tablename__ = "research_entity_199"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_199")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=199 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+
+class ResearchModelEntity200(Base):
+    __tablename__ = "research_entity_200"
+
+    id: Mapped[int] = mapped_column(Integer, primary_key=True, index=True, autoincrement=True)
+    entity_code: Mapped[str] = mapped_column(String(100), unique=True, index=True, nullable=False)
+    name: Mapped[str] = mapped_column(String(255), nullable=False)
+    category: Mapped[str] = mapped_column(String(100), default="Category_200")
+    description: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
+    value_amount: Mapped[float] = mapped_column(Float, default=200 * 100.5)
+    is_active: Mapped[bool] = mapped_column(Boolean, default=True)
+    status_flag: Mapped[str] = mapped_column(String(50), default="ACTIVE")
+    attributes_json: Mapped[Optional[dict]] = mapped_column(JSON, default=dict)
+    
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            "id": self.id,
+            "entity_code": self.entity_code,
+            "name": self.name,
+            "category": self.category,
+            "description": self.description,
+            "value_amount": self.value_amount,
+            "is_active": self.is_active,
+            "status_flag": self.status_flag,
+            "attributes_json": self.attributes_json,
+            "created_at": self.created_at.isoformat() if self.created_at else None,
+            "updated_at": self.updated_at.isoformat() if self.updated_at else None
+        }
+

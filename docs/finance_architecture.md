@@ -1,14 +1,8 @@
-# Finance, Billing & Payroll Architecture Documentation
+# Finance, Billing & Payroll Architecture Specs
 
 ## Overview
 Tuition fee structure, installment plans, scholarship allocations, faculty payroll ledgers, vendor invoicing, financial audit logs, tax compliance.
 
-## System Specifications
-- Module Key: `finance`
-- Platform Layers: Backend (FastAPI), Web (React/TS), Mobile (Flutter), AI Engine (Python ML)
-- Data Schemas: SQLAlchemy models with PostgreSQL database engine.
-
-## API Contracts
-- `GET /finance/` - List entities
-- `GET /finance/{id}` - Get entity by ID
-- `POST /finance/` - Create new entity
+## System Contracts
+- Domain Key: `finance`
+- Target Platforms: Backend, Web, Mobile, AI

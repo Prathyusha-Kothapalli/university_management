@@ -1300,3 +1300,653 @@ class SportsCardWidget50 extends StatelessWidget {
   }
 }
 
+class SportsCardWidget51 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget51({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #51"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget52 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget52({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #52"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget53 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget53({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #53"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget54 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget54({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #54"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget55 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget55({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #55"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget56 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget56({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #56"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget57 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget57({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #57"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget58 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget58({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #58"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget59 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget59({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #59"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget60 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget60({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #60"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget61 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget61({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #61"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget62 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget62({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #62"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget63 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget63({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #63"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget64 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget64({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #64"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget65 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget65({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #65"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget66 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget66({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #66"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget67 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget67({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #67"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget68 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget68({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #68"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget69 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget69({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #69"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget70 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget70({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #70"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget71 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget71({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #71"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget72 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget72({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #72"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget73 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget73({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #73"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget74 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget74({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #74"),
+        ],
+      ),
+    );
+  }
+}
+
+class SportsCardWidget75 extends StatelessWidget {
+  final String title;
+  const SportsCardWidget75({Key? key, required this.title}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.all(16),
+      margin: const EdgeInsets.only(bottom: 12),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(12),
+        boxShadow: [BoxShadow(color: Colors.black12, blurRadius: 4)],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
+          const SizedBox(height: 8),
+          Text("Mobile domain widget component #75"),
+        ],
+      ),
+    );
+  }
+}
+

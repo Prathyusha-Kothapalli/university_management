@@ -3486,3 +3486,2323 @@ class DashboardsSchemaEntity120Response(DashboardsSchemaEntity120Base):
 
     model_config = ConfigDict(from_attributes=True)
 
+class DashboardsSchemaEntity121Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 121")
+    category: str = Field(default="Category_121", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=121 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity121Create(DashboardsSchemaEntity121Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity121Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity121Response(DashboardsSchemaEntity121Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity122Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 122")
+    category: str = Field(default="Category_122", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=122 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity122Create(DashboardsSchemaEntity122Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity122Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity122Response(DashboardsSchemaEntity122Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity123Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 123")
+    category: str = Field(default="Category_123", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=123 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity123Create(DashboardsSchemaEntity123Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity123Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity123Response(DashboardsSchemaEntity123Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity124Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 124")
+    category: str = Field(default="Category_124", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=124 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity124Create(DashboardsSchemaEntity124Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity124Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity124Response(DashboardsSchemaEntity124Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity125Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 125")
+    category: str = Field(default="Category_125", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=125 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity125Create(DashboardsSchemaEntity125Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity125Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity125Response(DashboardsSchemaEntity125Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity126Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 126")
+    category: str = Field(default="Category_126", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=126 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity126Create(DashboardsSchemaEntity126Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity126Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity126Response(DashboardsSchemaEntity126Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity127Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 127")
+    category: str = Field(default="Category_127", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=127 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity127Create(DashboardsSchemaEntity127Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity127Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity127Response(DashboardsSchemaEntity127Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity128Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 128")
+    category: str = Field(default="Category_128", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=128 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity128Create(DashboardsSchemaEntity128Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity128Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity128Response(DashboardsSchemaEntity128Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity129Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 129")
+    category: str = Field(default="Category_129", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=129 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity129Create(DashboardsSchemaEntity129Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity129Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity129Response(DashboardsSchemaEntity129Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity130Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 130")
+    category: str = Field(default="Category_130", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=130 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity130Create(DashboardsSchemaEntity130Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity130Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity130Response(DashboardsSchemaEntity130Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity131Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 131")
+    category: str = Field(default="Category_131", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=131 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity131Create(DashboardsSchemaEntity131Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity131Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity131Response(DashboardsSchemaEntity131Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity132Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 132")
+    category: str = Field(default="Category_132", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=132 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity132Create(DashboardsSchemaEntity132Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity132Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity132Response(DashboardsSchemaEntity132Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity133Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 133")
+    category: str = Field(default="Category_133", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=133 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity133Create(DashboardsSchemaEntity133Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity133Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity133Response(DashboardsSchemaEntity133Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity134Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 134")
+    category: str = Field(default="Category_134", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=134 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity134Create(DashboardsSchemaEntity134Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity134Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity134Response(DashboardsSchemaEntity134Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity135Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 135")
+    category: str = Field(default="Category_135", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=135 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity135Create(DashboardsSchemaEntity135Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity135Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity135Response(DashboardsSchemaEntity135Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity136Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 136")
+    category: str = Field(default="Category_136", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=136 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity136Create(DashboardsSchemaEntity136Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity136Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity136Response(DashboardsSchemaEntity136Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity137Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 137")
+    category: str = Field(default="Category_137", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=137 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity137Create(DashboardsSchemaEntity137Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity137Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity137Response(DashboardsSchemaEntity137Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity138Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 138")
+    category: str = Field(default="Category_138", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=138 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity138Create(DashboardsSchemaEntity138Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity138Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity138Response(DashboardsSchemaEntity138Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity139Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 139")
+    category: str = Field(default="Category_139", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=139 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity139Create(DashboardsSchemaEntity139Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity139Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity139Response(DashboardsSchemaEntity139Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity140Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 140")
+    category: str = Field(default="Category_140", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=140 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity140Create(DashboardsSchemaEntity140Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity140Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity140Response(DashboardsSchemaEntity140Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity141Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 141")
+    category: str = Field(default="Category_141", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=141 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity141Create(DashboardsSchemaEntity141Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity141Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity141Response(DashboardsSchemaEntity141Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity142Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 142")
+    category: str = Field(default="Category_142", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=142 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity142Create(DashboardsSchemaEntity142Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity142Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity142Response(DashboardsSchemaEntity142Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity143Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 143")
+    category: str = Field(default="Category_143", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=143 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity143Create(DashboardsSchemaEntity143Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity143Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity143Response(DashboardsSchemaEntity143Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity144Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 144")
+    category: str = Field(default="Category_144", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=144 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity144Create(DashboardsSchemaEntity144Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity144Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity144Response(DashboardsSchemaEntity144Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity145Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 145")
+    category: str = Field(default="Category_145", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=145 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity145Create(DashboardsSchemaEntity145Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity145Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity145Response(DashboardsSchemaEntity145Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity146Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 146")
+    category: str = Field(default="Category_146", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=146 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity146Create(DashboardsSchemaEntity146Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity146Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity146Response(DashboardsSchemaEntity146Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity147Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 147")
+    category: str = Field(default="Category_147", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=147 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity147Create(DashboardsSchemaEntity147Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity147Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity147Response(DashboardsSchemaEntity147Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity148Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 148")
+    category: str = Field(default="Category_148", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=148 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity148Create(DashboardsSchemaEntity148Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity148Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity148Response(DashboardsSchemaEntity148Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity149Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 149")
+    category: str = Field(default="Category_149", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=149 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity149Create(DashboardsSchemaEntity149Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity149Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity149Response(DashboardsSchemaEntity149Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity150Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 150")
+    category: str = Field(default="Category_150", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=150 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity150Create(DashboardsSchemaEntity150Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity150Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity150Response(DashboardsSchemaEntity150Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity151Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 151")
+    category: str = Field(default="Category_151", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=151 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity151Create(DashboardsSchemaEntity151Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity151Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity151Response(DashboardsSchemaEntity151Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity152Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 152")
+    category: str = Field(default="Category_152", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=152 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity152Create(DashboardsSchemaEntity152Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity152Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity152Response(DashboardsSchemaEntity152Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity153Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 153")
+    category: str = Field(default="Category_153", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=153 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity153Create(DashboardsSchemaEntity153Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity153Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity153Response(DashboardsSchemaEntity153Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity154Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 154")
+    category: str = Field(default="Category_154", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=154 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity154Create(DashboardsSchemaEntity154Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity154Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity154Response(DashboardsSchemaEntity154Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity155Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 155")
+    category: str = Field(default="Category_155", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=155 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity155Create(DashboardsSchemaEntity155Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity155Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity155Response(DashboardsSchemaEntity155Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity156Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 156")
+    category: str = Field(default="Category_156", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=156 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity156Create(DashboardsSchemaEntity156Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity156Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity156Response(DashboardsSchemaEntity156Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity157Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 157")
+    category: str = Field(default="Category_157", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=157 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity157Create(DashboardsSchemaEntity157Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity157Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity157Response(DashboardsSchemaEntity157Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity158Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 158")
+    category: str = Field(default="Category_158", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=158 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity158Create(DashboardsSchemaEntity158Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity158Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity158Response(DashboardsSchemaEntity158Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity159Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 159")
+    category: str = Field(default="Category_159", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=159 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity159Create(DashboardsSchemaEntity159Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity159Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity159Response(DashboardsSchemaEntity159Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity160Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 160")
+    category: str = Field(default="Category_160", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=160 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity160Create(DashboardsSchemaEntity160Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity160Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity160Response(DashboardsSchemaEntity160Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity161Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 161")
+    category: str = Field(default="Category_161", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=161 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity161Create(DashboardsSchemaEntity161Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity161Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity161Response(DashboardsSchemaEntity161Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity162Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 162")
+    category: str = Field(default="Category_162", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=162 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity162Create(DashboardsSchemaEntity162Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity162Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity162Response(DashboardsSchemaEntity162Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity163Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 163")
+    category: str = Field(default="Category_163", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=163 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity163Create(DashboardsSchemaEntity163Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity163Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity163Response(DashboardsSchemaEntity163Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity164Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 164")
+    category: str = Field(default="Category_164", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=164 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity164Create(DashboardsSchemaEntity164Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity164Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity164Response(DashboardsSchemaEntity164Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity165Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 165")
+    category: str = Field(default="Category_165", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=165 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity165Create(DashboardsSchemaEntity165Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity165Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity165Response(DashboardsSchemaEntity165Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity166Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 166")
+    category: str = Field(default="Category_166", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=166 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity166Create(DashboardsSchemaEntity166Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity166Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity166Response(DashboardsSchemaEntity166Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity167Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 167")
+    category: str = Field(default="Category_167", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=167 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity167Create(DashboardsSchemaEntity167Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity167Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity167Response(DashboardsSchemaEntity167Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity168Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 168")
+    category: str = Field(default="Category_168", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=168 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity168Create(DashboardsSchemaEntity168Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity168Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity168Response(DashboardsSchemaEntity168Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity169Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 169")
+    category: str = Field(default="Category_169", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=169 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity169Create(DashboardsSchemaEntity169Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity169Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity169Response(DashboardsSchemaEntity169Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity170Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 170")
+    category: str = Field(default="Category_170", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=170 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity170Create(DashboardsSchemaEntity170Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity170Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity170Response(DashboardsSchemaEntity170Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity171Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 171")
+    category: str = Field(default="Category_171", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=171 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity171Create(DashboardsSchemaEntity171Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity171Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity171Response(DashboardsSchemaEntity171Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity172Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 172")
+    category: str = Field(default="Category_172", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=172 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity172Create(DashboardsSchemaEntity172Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity172Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity172Response(DashboardsSchemaEntity172Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity173Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 173")
+    category: str = Field(default="Category_173", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=173 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity173Create(DashboardsSchemaEntity173Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity173Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity173Response(DashboardsSchemaEntity173Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity174Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 174")
+    category: str = Field(default="Category_174", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=174 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity174Create(DashboardsSchemaEntity174Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity174Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity174Response(DashboardsSchemaEntity174Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity175Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 175")
+    category: str = Field(default="Category_175", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=175 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity175Create(DashboardsSchemaEntity175Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity175Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity175Response(DashboardsSchemaEntity175Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity176Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 176")
+    category: str = Field(default="Category_176", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=176 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity176Create(DashboardsSchemaEntity176Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity176Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity176Response(DashboardsSchemaEntity176Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity177Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 177")
+    category: str = Field(default="Category_177", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=177 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity177Create(DashboardsSchemaEntity177Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity177Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity177Response(DashboardsSchemaEntity177Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity178Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 178")
+    category: str = Field(default="Category_178", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=178 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity178Create(DashboardsSchemaEntity178Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity178Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity178Response(DashboardsSchemaEntity178Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity179Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 179")
+    category: str = Field(default="Category_179", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=179 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity179Create(DashboardsSchemaEntity179Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity179Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity179Response(DashboardsSchemaEntity179Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity180Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 180")
+    category: str = Field(default="Category_180", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=180 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity180Create(DashboardsSchemaEntity180Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity180Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity180Response(DashboardsSchemaEntity180Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity181Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 181")
+    category: str = Field(default="Category_181", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=181 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity181Create(DashboardsSchemaEntity181Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity181Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity181Response(DashboardsSchemaEntity181Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity182Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 182")
+    category: str = Field(default="Category_182", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=182 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity182Create(DashboardsSchemaEntity182Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity182Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity182Response(DashboardsSchemaEntity182Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity183Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 183")
+    category: str = Field(default="Category_183", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=183 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity183Create(DashboardsSchemaEntity183Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity183Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity183Response(DashboardsSchemaEntity183Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity184Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 184")
+    category: str = Field(default="Category_184", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=184 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity184Create(DashboardsSchemaEntity184Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity184Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity184Response(DashboardsSchemaEntity184Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity185Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 185")
+    category: str = Field(default="Category_185", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=185 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity185Create(DashboardsSchemaEntity185Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity185Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity185Response(DashboardsSchemaEntity185Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity186Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 186")
+    category: str = Field(default="Category_186", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=186 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity186Create(DashboardsSchemaEntity186Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity186Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity186Response(DashboardsSchemaEntity186Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity187Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 187")
+    category: str = Field(default="Category_187", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=187 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity187Create(DashboardsSchemaEntity187Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity187Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity187Response(DashboardsSchemaEntity187Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity188Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 188")
+    category: str = Field(default="Category_188", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=188 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity188Create(DashboardsSchemaEntity188Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity188Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity188Response(DashboardsSchemaEntity188Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity189Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 189")
+    category: str = Field(default="Category_189", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=189 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity189Create(DashboardsSchemaEntity189Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity189Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity189Response(DashboardsSchemaEntity189Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity190Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 190")
+    category: str = Field(default="Category_190", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=190 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity190Create(DashboardsSchemaEntity190Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity190Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity190Response(DashboardsSchemaEntity190Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity191Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 191")
+    category: str = Field(default="Category_191", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=191 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity191Create(DashboardsSchemaEntity191Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity191Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity191Response(DashboardsSchemaEntity191Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity192Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 192")
+    category: str = Field(default="Category_192", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=192 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity192Create(DashboardsSchemaEntity192Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity192Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity192Response(DashboardsSchemaEntity192Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity193Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 193")
+    category: str = Field(default="Category_193", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=193 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity193Create(DashboardsSchemaEntity193Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity193Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity193Response(DashboardsSchemaEntity193Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity194Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 194")
+    category: str = Field(default="Category_194", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=194 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity194Create(DashboardsSchemaEntity194Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity194Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity194Response(DashboardsSchemaEntity194Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity195Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 195")
+    category: str = Field(default="Category_195", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=195 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity195Create(DashboardsSchemaEntity195Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity195Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity195Response(DashboardsSchemaEntity195Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity196Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 196")
+    category: str = Field(default="Category_196", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=196 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity196Create(DashboardsSchemaEntity196Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity196Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity196Response(DashboardsSchemaEntity196Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity197Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 197")
+    category: str = Field(default="Category_197", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=197 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity197Create(DashboardsSchemaEntity197Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity197Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity197Response(DashboardsSchemaEntity197Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity198Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 198")
+    category: str = Field(default="Category_198", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=198 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity198Create(DashboardsSchemaEntity198Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity198Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity198Response(DashboardsSchemaEntity198Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity199Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 199")
+    category: str = Field(default="Category_199", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=199 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity199Create(DashboardsSchemaEntity199Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity199Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity199Response(DashboardsSchemaEntity199Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class DashboardsSchemaEntity200Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 200")
+    category: str = Field(default="Category_200", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=200 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class DashboardsSchemaEntity200Create(DashboardsSchemaEntity200Base):
+    entity_code: str = Field(..., max_length=100)
+
+class DashboardsSchemaEntity200Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class DashboardsSchemaEntity200Response(DashboardsSchemaEntity200Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+

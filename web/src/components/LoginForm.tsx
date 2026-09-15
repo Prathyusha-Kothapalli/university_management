@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import { useAuth } from '../features/auth/AuthContext';
 
-export const LoginForm: React.FC = () => {
+interface LoginFormProps {
+  onOpenMobileView?: () => void;
+}
+
+export const LoginForm: React.FC<LoginFormProps> = ({ onOpenMobileView }) => {
   const { login, registerTenant, error, clearError } = useAuth();
   const [activeTab, setActiveTab] = useState<'login' | 'register-tenant'>('login');
   const [isLoading, setIsLoading] = useState(false);

@@ -2,8 +2,8 @@ import React from 'react';
 import { useAuth } from '../features/auth/AuthContext';
 
 interface NavbarProps {
-  currentView: 'dashboard' | 'study_assistant';
-  onViewChange: (view: 'dashboard' | 'study_assistant') => void;
+  currentView: 'dashboard' | 'study_assistant' | 'mobile_simulator';
+  onViewChange: (view: 'dashboard' | 'study_assistant' | 'mobile_simulator') => void;
   onToggleBot?: () => void;
   isBotOpen?: boolean;
 }
@@ -39,21 +39,23 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, onViewChange, onTog
 
   return (
     <header style={{
-      backgroundColor: 'rgba(15, 23, 42, 0.85)',
-      backdropFilter: 'blur(12px)',
-      WebkitBackdropFilter: 'blur(12px)',
-      borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
-      padding: '0.65rem 1.75rem',
+      backgroundColor: 'rgba(15, 23, 42, 0.92)',
+      backdropFilter: 'blur(16px)',
+      WebkitBackdropFilter: 'blur(16px)',
+      borderBottom: '1px solid rgba(255, 255, 255, 0.1)',
+      padding: '0.65rem 1.25rem',
       display: 'flex',
+      flexWrap: 'wrap',
+      gap: '0.75rem',
       alignItems: 'center',
       justifyContent: 'space-between',
       position: 'sticky',
       top: 0,
       zIndex: 100,
-      boxShadow: '0 4px 20px -5px rgba(0, 0, 0, 0.3)'
+      boxShadow: '0 4px 20px -5px rgba(0, 0, 0, 0.4)'
     }}>
       {/* Brand & Campus Info */}
-      <div style={{ display: 'flex', alignItems: 'center', gap: '1.75rem' }}>
+      <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flexWrap: 'wrap' }}>
         <div
           style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', cursor: 'pointer' }}
           onClick={() => onViewChange('dashboard')}
@@ -133,6 +135,27 @@ export const Navbar: React.FC<NavbarProps> = ({ currentView, onViewChange, onTog
           >
             <span>📖</span>
             <span>Full Workspace</span>
+          </button>
+
+          <button
+            onClick={() => onViewChange('mobile_simulator')}
+            style={{
+              backgroundColor: currentView === 'mobile_simulator' ? 'rgba(99, 102, 241, 0.2)' : 'transparent',
+              color: currentView === 'mobile_simulator' ? '#818cf8' : '#94a3b8',
+              border: currentView === 'mobile_simulator' ? '1px solid rgba(99, 102, 241, 0.4)' : '1px solid transparent',
+              padding: '0.45rem 0.9rem',
+              borderRadius: '8px',
+              fontSize: '0.82rem',
+              fontWeight: 600,
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.4rem',
+              transition: 'all 0.15s ease'
+            }}
+          >
+            <span>📱</span>
+            <span>Flutter Mobile View</span>
           </button>
 
           {onToggleBot && (

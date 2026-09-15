@@ -520,3 +520,523 @@ export const ResearchComponent40: React.FC<{ title?: string }> = ({ title }) => 
   );
 };
 
+export const ResearchComponent41: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #41"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #41.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 451</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent42: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #42"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #42.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 462</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent43: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #43"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #43.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 473</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent44: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #44"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #44.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 484</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent45: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #45"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #45.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 495</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent46: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #46"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #46.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 506</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent47: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #47"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #47.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 517</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent48: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #48"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #48.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 528</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent49: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #49"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #49.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 539</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent50: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #50"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #50.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 550</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent51: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #51"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #51.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 561</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent52: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #52"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #52.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 572</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent53: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #53"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #53.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 583</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent54: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #54"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #54.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 594</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent55: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #55"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #55.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 605</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent56: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #56"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #56.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 616</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent57: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #57"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #57.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 627</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent58: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #58"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #58.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 638</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent59: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #59"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #59.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 649</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent60: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #60"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #60.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 660</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent61: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #61"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #61.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 671</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent62: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #62"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #62.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 682</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent63: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #63"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #63.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 693</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent64: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #64"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #64.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 704</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent65: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #65"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #65.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 715</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent66: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #66"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #66.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 726</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent67: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #67"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #67.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 737</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent68: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #68"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #68.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 748</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent69: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #69"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #69.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 759</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent70: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #70"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #70.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 770</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent71: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #71"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #71.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 781</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent72: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #72"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #72.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 792</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent73: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #73"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #73.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 803</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent74: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #74"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #74.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 814</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent75: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #75"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #75.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 825</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent76: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #76"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #76.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 836</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent77: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #77"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #77.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 847</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent78: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #78"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #78.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 858</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent79: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #79"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #79.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 869</span>
+      </div>
+    </div>
+  );
+};
+
+export const ResearchComponent80: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Research, Grants & Lab Inventory Component #80"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #80.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 880</span>
+      </div>
+    </div>
+  );
+};
+

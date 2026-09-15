@@ -1,67 +1,32 @@
-import 'package:flutter/material.dart';
-import 'academics_model.dart';
+import "package:flutter/material.dart";
+import "academics_models.dart";
 
-class AcademicsScreen extends StatefulWidget {
-  const AcademicsScreen({Key? key}) : super(key: key);
-
+class AcademicsMainScreen extends StatefulWidget {
+  const AcademicsMainScreen({Key? key}) : super(key: key);
   @override
-  State<AcademicsScreen> createState() => _AcademicsScreenState();
+  State<AcademicsMainScreen> createState() => _AcademicsMainScreenState();
 }
 
-class _AcademicsScreenState extends State<AcademicsScreen> {
-  final List<AcademicsModel> _items = [
-    AcademicsModel(
-      id: 1,
-      entityCode: 'ACADEMICS_M01',
-      name: 'Academic & Curriculum Management Primary Record',
-      category: 'Mobile',
-      status: 'ACTIVE',
-      createdAt: DateTime.now(),
-    ),
-    AcademicsModel(
-      id: 2,
-      entityCode: 'ACADEMICS_M02',
-      name: 'Academic & Curriculum Management Secondary Sync',
-      category: 'System',
-      status: 'ACTIVE',
-      createdAt: DateTime.now(),
-    ),
-  ];
-
+class _AcademicsMainScreenState extends State<AcademicsMainScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Academic & Curriculum Management'),
-        backgroundColor: Colors.indigo,
-      ),
+      appBar: AppBar(title: const Text("Academic & Curriculum Management"), backgroundColor: Colors.indigo),
       body: ListView.builder(
-        itemCount: _items.length,
+        itemCount: 30,
         padding: const EdgeInsets.all(16),
         itemBuilder: (context, index) {
-          final item = _items[index];
           return Card(
             elevation: 2,
             margin: const EdgeInsets.only(bottom: 12),
             child: ListTile(
-              leading: CircleAvatar(
-                backgroundColor: Colors.indigo.shade100,
-                child: Text(item.entityCode.substring(0, 2)),
-              ),
-              title: Text(item.name, style: const TextStyle(fontWeight: FontWeight.bold)),
-              subtitle: Text('${item.category} • ${item.status}'),
+              leading: CircleAvatar(backgroundColor: Colors.indigo.shade100, child: Text("${index + 1}")),
+              title: Text("Academic & Curriculum Management Record #${index + 1}", style: const TextStyle(fontWeight: FontWeight.bold)),
+              subtitle: Text("Code: ACADEMICS-M-${index + 100}"),
               trailing: const Icon(Icons.arrow_forward_ios, size: 16),
-              onTap: () {
-                // Navigate to details
-              },
             ),
           );
         },
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: Colors.indigo,
-        child: const Icon(Icons.add),
       ),
     );
   }

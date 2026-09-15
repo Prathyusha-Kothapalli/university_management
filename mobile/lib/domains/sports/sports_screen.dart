@@ -13,7 +13,7 @@ class _SportsMainScreenState extends State<SportsMainScreen> {
     return Scaffold(
       appBar: AppBar(title: const Text("Sports & Extracurricular Activities"), backgroundColor: Colors.indigo),
       body: ListView.builder(
-        itemCount: 30,
+        itemCount: 50,
         padding: const EdgeInsets.all(16),
         itemBuilder: (context, index) {
           return Card(

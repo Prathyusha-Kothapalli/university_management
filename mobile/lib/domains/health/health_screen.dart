@@ -13,7 +13,7 @@ class _HealthMainScreenState extends State<HealthMainScreen> {
     return Scaffold(
       appBar: AppBar(title: const Text("Campus Health & Clinic Management"), backgroundColor: Colors.indigo),
       body: ListView.builder(
-        itemCount: 30,
+        itemCount: 50,
         padding: const EdgeInsets.all(16),
         itemBuilder: (context, index) {
           return Card(

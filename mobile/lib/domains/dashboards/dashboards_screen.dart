@@ -13,7 +13,7 @@ class _DashboardsMainScreenState extends State<DashboardsMainScreen> {
     return Scaffold(
       appBar: AppBar(title: const Text("Executive & Departmental Dashboards"), backgroundColor: Colors.indigo),
       body: ListView.builder(
-        itemCount: 30,
+        itemCount: 50,
         padding: const EdgeInsets.all(16),
         itemBuilder: (context, index) {
           return Card(

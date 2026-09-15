@@ -443,6 +443,216 @@ export const DashboardsDashboardView: React.FC = () => {
           </div>
           <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
         </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #60</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-60 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #61</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-61 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #62</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-62 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #63</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-63 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #64</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-64 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #65</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-65 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #66</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-66 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #67</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-67 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #68</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-68 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #69</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-69 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #70</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-70 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #71</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-71 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #72</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-72 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #73</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-73 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #74</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-74 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #75</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-75 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #76</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-76 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #77</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-77 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #78</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-78 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #79</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-79 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #80</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-80 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #81</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-81 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #82</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-82 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #83</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-83 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #84</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-84 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #85</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-85 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #86</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-86 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #87</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-87 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #88</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-88 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Executive & Departmental Dashboards Record #89</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: DASHBOARDS-REC-89 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
       </div>
     </div>
   );

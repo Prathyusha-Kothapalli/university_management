@@ -2302,3 +2302,1153 @@ export interface IDashboardsItem100Payload {
   is_active?: boolean;
 }
 
+export interface IDashboardsItem101 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem101Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem102 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem102Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem103 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem103Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem104 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem104Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem105 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem105Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem106 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem106Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem107 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem107Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem108 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem108Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem109 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem109Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem110 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem110Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem111 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem111Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem112 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem112Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem113 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem113Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem114 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem114Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem115 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem115Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem116 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem116Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem117 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem117Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem118 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem118Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem119 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem119Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem120 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem120Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem121 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem121Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem122 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem122Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem123 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem123Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem124 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem124Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem125 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem125Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem126 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem126Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem127 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem127Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem128 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem128Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem129 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem129Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem130 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem130Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem131 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem131Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem132 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem132Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem133 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem133Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem134 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem134Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem135 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem135Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem136 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem136Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem137 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem137Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem138 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem138Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem139 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem139Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem140 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem140Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem141 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem141Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem142 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem142Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem143 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem143Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem144 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem144Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem145 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem145Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem146 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem146Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem147 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem147Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem148 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem148Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem149 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem149Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IDashboardsItem150 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IDashboardsItem150Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+

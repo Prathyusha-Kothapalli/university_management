@@ -1,351 +1,286 @@
-import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
-import { useAuth } from '../hooks/useAuth';
-import { UserRole } from '../types';
-import { useTheme } from '../hooks/useTheme';
-import { useToast } from '../hooks/useToast';
-import { Modal } from './Modal';
-import { Bell, Sun, Moon, LogOut, User as UserIcon, RefreshCw, Search, Command, ArrowRight } from 'lucide-react';
+import React from 'react';
+import { useAuth } from '../features/auth/AuthContext';
 
-export const Navbar: React.FC = () => {
-  const { user, role, logout, switchRole } = useAuth();
-  const { theme, toggleTheme } = useTheme();
-  const { showToast } = useToast();
-  const navigate = useNavigate();
+interface NavbarProps {
+  currentView: 'dashboard' | 'study_assistant';
+  onViewChange: (view: 'dashboard' | 'study_assistant') => void;
+  onToggleBot?: () => void;
+  isBotOpen?: boolean;
+}
 
-  const [showNotifications, setShowNotifications] = useState(false);
-  const [isCommandPaletteOpen, setIsCommandPaletteOpen] = useState(false);
-  const [cmdSearchQuery, setCmdSearchQuery] = useState('');
+export const Navbar: React.FC<NavbarProps> = ({ currentView, onViewChange, onToggleBot, isBotOpen }) => {
+  const { user, tenant, logout } = useAuth();
 
-  // Keyboard shortcut Ctrl+K / Cmd+K listener
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
-        e.preventDefault();
-        setIsCommandPaletteOpen((prev) => !prev);
-      }
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
-
-  const handleRoleToggle = () => {
-    const nextRole: UserRole = role === 'student' ? 'faculty' : role === 'faculty' ? 'hod' : role === 'hod' ? 'parent' : role === 'parent' ? 'librarian' : role === 'librarian' ? 'admin' : 'student';
-    switchRole(nextRole);
-    const targetPath =
-      nextRole === 'admin'
-        ? '/admin/dashboard'
-        : nextRole === 'faculty'
-        ? '/faculty/dashboard'
-        : nextRole === 'hod'
-        ? '/hod/dashboard'
-        : nextRole === 'parent'
-        ? '/parent/dashboard'
-        : nextRole === 'librarian'
-        ? '/librarian/dashboard'
-        : '/dashboard';
-    navigate(targetPath);
-    showToast(`Switched active portal view to ${nextRole.toUpperCase()}`, 'info');
+  const getRoleBadgeStyle = (role?: string) => {
+    switch (role) {
+      case 'SUPER_ADMIN':
+        return { bg: 'rgba(239, 68, 68, 0.15)', border: 'rgba(239, 68, 68, 0.4)', text: '#fca5a5' };
+      case 'UNIVERSITY_ADMIN':
+        return { bg: 'rgba(245, 158, 11, 0.15)', border: 'rgba(245, 158, 11, 0.4)', text: '#fcd34d' };
+      case 'FACULTY':
+        return { bg: 'rgba(59, 130, 246, 0.15)', border: 'rgba(59, 130, 246, 0.4)', text: '#93c5fd' };
+      case 'STUDENT':
+        return { bg: 'rgba(16, 185, 129, 0.15)', border: 'rgba(16, 185, 129, 0.4)', text: '#6ee7b7' };
+      case 'STAFF':
+        return { bg: 'rgba(168, 85, 247, 0.15)', border: 'rgba(168, 85, 247, 0.4)', text: '#d8b4fe' };
+      default:
+        return { bg: 'rgba(100, 116, 139, 0.15)', border: 'rgba(100, 116, 139, 0.4)', text: '#cbd5e1' };
+    }
   };
 
-  const handleLogout = () => {
-    logout();
-    showToast('Signed out of UniSphere AI', 'info');
-    navigate('/login');
+  const getInitials = (name?: string) => {
+    if (!name) return 'U';
+    const parts = name.trim().split(' ');
+    if (parts.length >= 2) return `${parts[0][0]}${parts[1][0]}`.toUpperCase();
+    return name.slice(0, 2).toUpperCase();
   };
 
-  const quickNavLinks = [
-    { label: 'Dashboard & KPIs', path: '/dashboard', cat: 'Overview' },
-    { label: 'Parent & Guardian Portal', path: '/parent/dashboard', cat: 'Parent Portal' },
-    { label: 'HOD Department Portal', path: '/hod/dashboard', cat: 'Management' },
-    { label: 'Librarian Operations Dashboard', path: '/librarian/dashboard', cat: 'Management' },
-    { label: 'Academics & Courses', path: '/academics', cat: 'Academics' },
-    { label: 'Assignments & Study Notes', path: '/learning', cat: 'Learning' },
-    { label: 'Exams, Grades & Transcripts', path: '/exams', cat: 'Exams' },
-    { label: 'Fee Structures & Payment Gateway', path: '/finance', cat: 'Finance' },
-    { label: 'Library Catalog Search', path: '/library', cat: 'Library' },
-    { label: 'Hostel & Transport Services', path: '/facilities', cat: 'Facilities' },
-    { label: 'Placement Drives Directory', path: '/placements', cat: 'Careers' },
-    { label: 'AI Assistant Copilot', path: '/ai', cat: 'AI Tools' },
-    { label: 'User Profile & Document Vault', path: '/profile', cat: 'Profile' },
-  ];
-
-  const filteredNavLinks = quickNavLinks.filter((link) =>
-    link.label.toLowerCase().includes(cmdSearchQuery.toLowerCase()) ||
-    link.cat.toLowerCase().includes(cmdSearchQuery.toLowerCase())
-  );
+  const badgeStyle = getRoleBadgeStyle(user?.role);
 
   return (
-    <header
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-        padding: '0.75rem 1.75rem',
-        backgroundColor: 'rgba(15, 23, 42, 0.95)',
-        backdropFilter: 'blur(16px)',
-        borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
-        position: 'sticky',
-        top: 0,
-        zIndex: 100,
-        height: '65px',
-      }}
-    >
-      {/* Brand Logo & Name */}
-      <div
-        onClick={() => navigate('/dashboard')}
-        style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer' }}
-      >
-        <img
-          src="/logo.png"
-          alt="UniSphere AI Logo"
-          style={{
-            width: '38px',
-            height: '38px',
-            objectFit: 'contain',
-            filter: 'drop-shadow(0 4px 10px rgba(37, 99, 235, 0.5))',
-          }}
-        />
-        <div>
-          <div style={{ fontWeight: 800, fontSize: '1.15rem', color: '#f8fafc', letterSpacing: '-0.3px' }}>
-            UniSphere <span style={{ color: '#38bdf8' }}>AI</span>
+    <header style={{
+      backgroundColor: 'rgba(15, 23, 42, 0.85)',
+      backdropFilter: 'blur(12px)',
+      WebkitBackdropFilter: 'blur(12px)',
+      borderBottom: '1px solid rgba(255, 255, 255, 0.08)',
+      padding: '0.65rem 1.75rem',
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      position: 'sticky',
+      top: 0,
+      zIndex: 100,
+      boxShadow: '0 4px 20px -5px rgba(0, 0, 0, 0.3)'
+    }}>
+      {/* Brand & Campus Info */}
+      <div style={{ display: 'flex', alignItems: 'center', gap: '1.75rem' }}>
+        <div
+          style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', cursor: 'pointer' }}
+          onClick={() => onViewChange('dashboard')}
+        >
+          <div style={{
+            width: '36px',
+            height: '36px',
+            borderRadius: '10px',
+            background: 'linear-gradient(135deg, #0284c7 0%, #6366f1 100%)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontWeight: 800,
+            fontSize: '1.1rem',
+            color: '#ffffff',
+            boxShadow: '0 0 15px rgba(2, 132, 199, 0.4)'
+          }}>
+            U
           </div>
-          <div style={{ fontSize: '0.7rem', color: '#94a3b8', letterSpacing: '0.3px' }}>
-            Smart Campus SPA Portal
+          <div>
+            <div style={{ fontSize: '1.15rem', fontWeight: 800, letterSpacing: '-0.02em', color: '#f8fafc', lineHeight: 1.2 }}>
+              UniSphere<span style={{ color: '#38bdf8' }}>.ai</span>
+            </div>
+            <div style={{ fontSize: '0.65rem', color: '#64748b', fontWeight: 600, letterSpacing: '0.04em', textTransform: 'uppercase' }}>
+              Academic Ecosystem
+            </div>
           </div>
         </div>
-      </div>
 
-      {/* Center Command Palette Search Bar */}
-      {user && (
-        <nav style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-          {(user.role === 'faculty'
-            ? [
-                { id: 'dashboard', label: 'Dashboard' },
-                { id: 'courses', label: 'Teaching Courses' },
-                { id: 'schedule', label: 'Timetable' },
-                { id: 'announcements', label: 'Announcements 📢' },
-                { id: 'profile', label: 'My Profile' },
-              ]
-            : [
-                { id: 'dashboard', label: 'Dashboard' },
-                { id: 'courses', label: 'Courses' },
-                { id: 'schedule', label: 'Timetable' },
-                { id: 'placements', label: 'Placements 💼' },
-                { id: 'announcements', label: 'Announcements 📢' },
-                { id: 'profile', label: 'My Profile' },
-              ]
-          ).map((item) => (
+        {/* View Switcher Tabs */}
+        <div style={{
+          display: 'flex',
+          backgroundColor: 'rgba(2, 6, 23, 0.6)',
+          padding: '0.25rem',
+          borderRadius: '10px',
+          border: '1px solid rgba(255, 255, 255, 0.06)',
+          alignItems: 'center',
+          gap: '0.2rem'
+        }}>
+          <button
+            onClick={() => onViewChange('dashboard')}
+            style={{
+              backgroundColor: currentView === 'dashboard' ? 'rgba(56, 189, 248, 0.15)' : 'transparent',
+              color: currentView === 'dashboard' ? '#38bdf8' : '#94a3b8',
+              border: currentView === 'dashboard' ? '1px solid rgba(56, 189, 248, 0.3)' : '1px solid transparent',
+              padding: '0.45rem 0.9rem',
+              borderRadius: '8px',
+              fontSize: '0.82rem',
+              fontWeight: 600,
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.4rem',
+              transition: 'all 0.15s ease'
+            }}
+          >
+            <span>🏛️</span>
+            <span>{user ? 'Campus Portal' : 'Sign In / Portals'}</span>
+          </button>
+
+          <button
+            onClick={() => onViewChange('study_assistant')}
+            style={{
+              backgroundColor: currentView === 'study_assistant' ? 'rgba(56, 189, 248, 0.15)' : 'transparent',
+              color: currentView === 'study_assistant' ? '#38bdf8' : '#94a3b8',
+              border: currentView === 'study_assistant' ? '1px solid rgba(56, 189, 248, 0.3)' : '1px solid transparent',
+              padding: '0.45rem 0.9rem',
+              borderRadius: '8px',
+              fontSize: '0.82rem',
+              fontWeight: 600,
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.4rem',
+              transition: 'all 0.15s ease'
+            }}
+          >
+            <span>📖</span>
+            <span>Full Workspace</span>
+          </button>
+
+          {onToggleBot && (
             <button
-              onClick={toggleTheme}
-              title={`Switch to ${theme === 'dark' ? 'Light' : 'Dark'} mode`}
+              onClick={onToggleBot}
+              title="Toggle Floating AI Study Bot"
               style={{
-                background: currentView === item.id ? 'rgba(37, 99, 235, 0.2)' : 'transparent',
-                color: currentView === item.id ? '#38bdf8' : '#94a3b8',
-                border: currentView === item.id ? '1px solid rgba(56, 189, 248, 0.3)' : '1px solid transparent',
-                padding: '7px 14px',
+                backgroundColor: isBotOpen ? 'rgba(99, 102, 241, 0.25)' : 'rgba(56, 189, 248, 0.1)',
+                color: isBotOpen ? '#a5b4fc' : '#38bdf8',
+                border: isBotOpen ? '1px solid rgba(99, 102, 241, 0.4)' : '1px solid rgba(56, 189, 248, 0.25)',
+                padding: '0.45rem 0.85rem',
                 borderRadius: '8px',
-                fontSize: '0.85rem',
-                fontWeight: currentView === item.id ? 700 : 500,
-                cursor: 'pointer',
-                transition: 'all 0.2s',
-                whiteSpace: 'nowrap',
-              }}
-            >
-              {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
-            </button>
-
-            {/* Notifications Button */}
-            <div style={{ position: 'relative' }}>
-              <button
-                onClick={() => setShowNotifications(!showNotifications)}
-                style={{
-                  background: 'rgba(255, 255, 255, 0.05)',
-                  border: '1px solid rgba(255, 255, 255, 0.1)',
-                  color: '#e2e8f0',
-                  padding: '7px',
-                  borderRadius: '8px',
-                  cursor: 'pointer',
-                  display: 'flex',
-                  alignItems: 'center',
-                  position: 'relative',
-                }}
-              >
-                <Bell size={16} />
-                <span
-                  style={{
-                    position: 'absolute',
-                    top: '4px',
-                    right: '4px',
-                    width: '8px',
-                    height: '8px',
-                    borderRadius: '50%',
-                    backgroundColor: '#ef4444',
-                  }}
-                />
-              </button>
-
-              {/* Notifications Dropdown */}
-              {showNotifications && (
-                <div
-                  style={{
-                    position: 'absolute',
-                    top: '42px',
-                    right: 0,
-                    width: '300px',
-                    backgroundColor: '#0f172a',
-                    border: '1px solid rgba(255, 255, 255, 0.12)',
-                    borderRadius: '12px',
-                    boxShadow: '0 10px 30px rgba(0,0,0,0.5)',
-                    padding: '12px',
-                    zIndex: 200,
-                  }}
-                >
-                  <div style={{ fontWeight: 700, fontSize: '0.85rem', color: '#f8fafc', marginBottom: '8px', borderBottom: '1px solid rgba(255,255,255,0.08)', paddingBottom: '6px' }}>
-                    Notifications
-                  </div>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', fontSize: '0.8rem' }}>
-                    <div style={{ color: '#cbd5e1', padding: '6px', borderRadius: '6px', background: 'rgba(255,255,255,0.03)' }}>
-                      <strong>CS301 Assignment Posted</strong>
-                      <div style={{ fontSize: '0.72rem', color: '#94a3b8' }}>Due in 5 days</div>
-                    </div>
-                    <div style={{ color: '#cbd5e1', padding: '6px', borderRadius: '6px', background: 'rgba(255,255,255,0.03)' }}>
-                      <strong>Placement Drive Registered</strong>
-                      <div style={{ fontSize: '0.72rem', color: '#94a3b8' }}>Google AI Systems Engineer</div>
-                    </div>
-                  </div>
-                </div>
-              )}
-            </div>
-
-            {/* User Profile Pill */}
-            <div
-              onClick={() => navigate('/profile')}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: '10px',
-                cursor: 'pointer',
-                padding: '4px 10px',
-                borderRadius: '24px',
-                background: 'rgba(255, 255, 255, 0.05)',
-                border: '1px solid rgba(255, 255, 255, 0.08)',
-              }}
-            >
-              <div
-                style={{
-                  width: '30px',
-                  height: '30px',
-                  borderRadius: '50%',
-                  background: '#2563eb',
-                  color: '#ffffff',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontWeight: 700,
-                  fontSize: '0.85rem',
-                }}
-              >
-                {user.full_name ? user.full_name.charAt(0) : <UserIcon size={16} />}
-              </div>
-              <div style={{ textAlign: 'left', display: 'flex', flexDirection: 'column' }}>
-                <span style={{ fontSize: '0.85rem', fontWeight: 600, color: '#f8fafc' }}>
-                  {user.full_name || user.name || 'User'}
-                </span>
-                <span style={{ fontSize: '0.68rem', color: '#94a3b8' }}>
-                  {user.studentId || user.email}
-                </span>
-              </div>
-            </div>
-
-            {/* Logout Button */}
-            <button
-              onClick={handleLogout}
-              title="Sign Out"
-              style={{
-                background: 'rgba(239, 68, 68, 0.15)',
-                border: '1px solid rgba(239, 68, 68, 0.3)',
-                color: '#f87171',
-                padding: '7px 12px',
-                borderRadius: '8px',
+                fontSize: '0.82rem',
+                fontWeight: 700,
                 cursor: 'pointer',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '6px',
-                fontSize: '0.8rem',
-                fontWeight: 600,
+                gap: '0.35rem',
+                transition: 'all 0.15s ease'
               }}
             >
-              <LogOut size={15} />
-              <span>Exit</span>
+              <span>✨</span>
+              <span>{isBotOpen ? 'Bot Open' : 'AI Bot Widget'}</span>
             </button>
-          </>
+          )}
+        </div>
+
+        {/* Active Campus Tag */}
+        {tenant && (
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.5rem',
+            backgroundColor: 'rgba(30, 41, 59, 0.6)',
+            padding: '0.35rem 0.85rem',
+            borderRadius: '8px',
+            border: '1px solid rgba(255, 255, 255, 0.08)',
+            fontSize: '0.8rem'
+          }}>
+            <span style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#10b981' }} />
+            <span style={{ color: '#94a3b8' }}>Campus:</span>
+            <span style={{ fontWeight: 600, color: '#f8fafc' }}>{tenant.name}</span>
+            <span style={{
+              backgroundColor: 'rgba(2, 132, 199, 0.2)',
+              color: '#38bdf8',
+              border: '1px solid rgba(2, 132, 199, 0.3)',
+              padding: '0.1rem 0.45rem',
+              borderRadius: '4px',
+              fontSize: '0.7rem',
+              fontWeight: 700
+            }}>
+              {tenant.code}
+            </span>
+          </div>
         )}
       </div>
 
-      {/* Global Command Palette Modal */}
-      <Modal
-        isOpen={isCommandPaletteOpen}
-        onClose={() => setIsCommandPaletteOpen(false)}
-        title="UniSphere Command Palette"
-        maxWidth="500px"
-      >
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-          <div style={{ position: 'relative', display: 'flex', alignItems: 'center' }}>
-            <Search size={16} style={{ position: 'absolute', left: '12px', color: '#38bdf8' }} />
-            <input
-              type="text"
-              autoFocus
-              placeholder="Search page or command..."
-              value={cmdSearchQuery}
-              onChange={(e) => setCmdSearchQuery(e.target.value)}
-              style={{
-                width: '100%',
-                padding: '10px 12px 10px 38px',
-                backgroundColor: 'rgba(15, 23, 42, 0.9)',
-                border: '1px solid rgba(56, 189, 248, 0.4)',
-                borderRadius: '10px',
-                color: '#f8fafc',
-                fontSize: '0.9rem',
-                outline: 'none',
-              }}
-            />
+      {/* User Profile & Actions */}
+      {user ? (
+        <div style={{ display: 'flex', alignItems: 'center', gap: '1.25rem' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+            <div style={{
+              width: '36px',
+              height: '36px',
+              borderRadius: '50%',
+              background: 'linear-gradient(135deg, #1e293b 0%, #334155 100%)',
+              border: '2px solid rgba(56, 189, 248, 0.4)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontWeight: 700,
+              fontSize: '0.82rem',
+              color: '#38bdf8'
+            }}>
+              {getInitials(user.full_name)}
+            </div>
+
+            <div style={{ textAlign: 'left' }}>
+              <div style={{ fontWeight: 600, fontSize: '0.86rem', color: '#f8fafc' }}>
+                {user.full_name}
+              </div>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', marginTop: '0.1rem' }}>
+                <span style={{
+                  backgroundColor: badgeStyle.bg,
+                  color: badgeStyle.text,
+                  border: `1px solid ${badgeStyle.border}`,
+                  fontSize: '0.65rem',
+                  fontWeight: 700,
+                  padding: '0.05rem 0.45rem',
+                  borderRadius: '9999px',
+                  letterSpacing: '0.02em'
+                }}>
+                  {user.role.replace('_', ' ')}
+                </span>
+                <span style={{ fontSize: '0.72rem', color: '#64748b' }}>{user.email}</span>
+              </div>
+            </div>
           </div>
 
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '6px', maxHeight: '300px', overflowY: 'auto' }}>
-            {filteredNavLinks.map((item, idx) => (
-              <button
-                key={idx}
-                onClick={() => {
-                  setIsCommandPaletteOpen(false);
-                  navigate(item.path);
-                }}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  padding: '10px 12px',
-                  borderRadius: '8px',
-                  border: '1px solid rgba(255, 255, 255, 0.05)',
-                  backgroundColor: 'rgba(255, 255, 255, 0.02)',
-                  color: '#e2e8f0',
-                  fontSize: '0.85rem',
-                  cursor: 'pointer',
-                  textAlign: 'left',
-                }}
-              >
-                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-                  <Command size={14} style={{ color: '#a855f7' }} />
-                  <span>{item.label}</span>
-                </div>
-                <span style={{ fontSize: '0.75rem', color: '#38bdf8', display: 'flex', alignItems: 'center', gap: '4px' }}>
-                  {item.cat} <ArrowRight size={12} />
-                </span>
-              </button>
-            ))}
-          </div>
+          <button
+            onClick={logout}
+            style={{
+              backgroundColor: 'rgba(239, 68, 68, 0.1)',
+              color: '#fca5a5',
+              border: '1px solid rgba(239, 68, 68, 0.25)',
+              padding: '0.45rem 0.85rem',
+              borderRadius: '8px',
+              cursor: 'pointer',
+              fontWeight: 600,
+              fontSize: '0.8rem',
+              transition: 'all 0.15s ease'
+            }}
+            onMouseOver={(e) => {
+              e.currentTarget.style.backgroundColor = 'rgba(239, 68, 68, 0.2)';
+              e.currentTarget.style.borderColor = 'rgba(239, 68, 68, 0.5)';
+            }}
+            onMouseOut={(e) => {
+              e.currentTarget.style.backgroundColor = 'rgba(239, 68, 68, 0.1)';
+              e.currentTarget.style.borderColor = 'rgba(239, 68, 68, 0.25)';
+            }}
+          >
+            Sign Out
+          </button>
         </div>
-      </Modal>
+      ) : (
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
+          <button
+            onClick={() => onViewChange('dashboard')}
+            style={{
+              background: 'linear-gradient(135deg, #0284c7 0%, #0369a1 100%)',
+              color: '#ffffff',
+              border: '1px solid rgba(56, 189, 248, 0.3)',
+              padding: '0.45rem 1rem',
+              borderRadius: '8px',
+              cursor: 'pointer',
+              fontWeight: 700,
+              fontSize: '0.82rem',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.4rem',
+              boxShadow: '0 2px 8px rgba(2, 132, 199, 0.25)'
+            }}
+          >
+            <span>🔐</span>
+            <span>Sign In / Demo Accounts</span>
+          </button>
+        </div>
+      )}
     </header>
   );
 };

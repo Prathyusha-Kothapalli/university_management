@@ -1,64 +1,21 @@
+from contextlib import asynccontextmanager
 from fastapi import FastAPI
 
-from app.api.v1.auth import router as auth_router
-from app.api.v1.users import router as users_router
-from app.api.v1.universities import router as universities_router
-from app.api.v1.campuses import router as campuses_router
-from app.api.v1.departments import router as departments_router
-from app.api.v1.programs import router as programs_router
-from app.api.v1.academic_years import router as academic_years_router
-from app.api.v1.semesters import router as semesters_router
-from app.api.v1.students import router as students_router
-from app.api.v1.faculty import router as faculty_router
-from app.api.v1.courses import router as courses_router
-from app.api.v1.assignments import router as assignments_router
+from app.core.config import settings
+from app.database.session import init_db
+from app.api.v1 import api_v1_router
 
-from app.api.v1.assignment_submissions import router as assignment_submissions_router
-from app.api.v1.learning_materials import router as learning_materials_router
-from app.api.v1.exams import router as exams_router
-from app.api.v1.exam_schedules import router as exam_schedules_router
-from app.api.v1.exam_results import router as exam_results_router
-from app.api.v1.transcripts import router as transcripts_router
-from app.api.v1.fee_structures import router as fee_structures_router
-from app.api.v1.student_fees import router as student_fees_router
-from app.api.v1.payments import router as payments_router
-from app.api.v1.library_books import router as library_books_router
-from app.api.v1.book_issues import router as book_issues_router
-from app.api.v1.library_fines import router as library_fines_router
-from app.api.v1.hostels import router as hostels_router
-from app.api.v1.hostel_rooms import router as hostel_rooms_router
-from app.api.v1.hostel_allocations import router as hostel_allocations_router
-from app.api.v1.transport_routes import router as transport_routes_router
-from app.api.v1.transport_vehicles import router as transport_vehicles_router
-from app.api.v1.transport_allocations import router as transport_allocations_router
-from app.api.v1.placement_drives import router as placement_drives_router
-from app.api.v1.placement_applications import router as placement_applications_router
-from app.api.v1.notifications import router as notifications_router
-from app.api.v1.documents import router as documents_router
-from app.api.v1.ai_conversations import router as ai_conversations_router
-from app.api.v1.ai_messages import router as ai_messages_router
-from app.api.v1.tenants import router as tenants_router
-from app.api.v1.curriculum import router as curriculum_router
-from app.api.v1.exam_attempts import router as exam_attempts_router
-from app.api.v1.payment_gateways import router as payment_gateways_router
-from app.api.v1.ai_copilot import router as ai_copilot_router
-from app.api.v1.student_requests import router as student_requests_router
-from app.api.v1.guardians import router as guardians_router
-from app.api.v1.department_budgets import router as department_budgets_router
-from app.api.v1.accreditation import router as accreditation_router
-from app.api.v1.transport_maintenance import router as transport_maintenance_router
-from app.api.v1.attendance_records import router as attendance_records_router
-from app.api.v1.admissions import router as batch1_admissions_router
-from app.api.v1.scholarships import router as batch1_scholarships_router
-from app.api.v1.academic_advising import router as batch1_academic_advising_router
-from app.api.v1.graduation_audit import router as batch1_graduation_audit_router
-from app.api.v1.clubs_organizations import router as batch1_clubs_organizations_router
-from app.api.v1.approval_workflows import router as batch1_approval_workflows_router
-from app.api.v1.digital_certificates import router as batch1_digital_certificates_router
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    # Initialize database tables and default seed data
+    init_db()
+    yield
 
 app = FastAPI(
-    title="UniSphere AI Backend",
-    version="1.0.0"
+    title=settings.PROJECT_NAME,
+    version=settings.VERSION,
+    openapi_url=f"{settings.API_V1_STR}/openapi.json",
+    lifespan=lifespan
 )
 
 app.include_router(batch1_admissions_router, prefix="/api/v1")
@@ -74,6 +31,17 @@ app.include_router(
     prefix="/api/v1"
 )
 
+# Include API v1 router
+app.include_router(api_v1_router, prefix=settings.API_V1_STR)
+
+@app.get("/")
+def read_root():
+    return {
+        "status": "healthy",
+        "service": settings.PROJECT_NAME,
+        "version": settings.VERSION,
+        "message": "Welcome to UniSphere AI Multi-Tenant Platform Backend API Foundation"
+    }
 
 app.include_router(
     auth_router,
@@ -399,5 +367,7 @@ app.include_router(
 def health_check():
     return {
         "status": "ok",
-        "service": "UniSphere AI Backend"
+        "service": "backend",
+        "environment": settings.ENVIRONMENT
     }
+

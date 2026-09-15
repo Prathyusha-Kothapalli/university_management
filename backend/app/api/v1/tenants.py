@@ -1,95 +1,114 @@
-import uuid
-from typing import Dict, Any, Optional
-from uuid import UUID
-
-from fastapi import APIRouter, Depends, HTTPException, Header
-from pydantic import BaseModel
+from typing import List, Any
+from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
-
 from app.database.session import get_db
-from app.core.tenancy import tenant_manager
+from app.models.tenant import Tenant
+from app.models.user import User, UserRole
+from app.schemas.tenant import TenantOut, TenantCreate, TenantUpdate
+from app.core.deps import get_current_active_user, require_roles, enforce_tenant_isolation
 
-router = APIRouter(
-    prefix="/tenants",
-    tags=["Multi-Tenancy"]
-)
+router = APIRouter(prefix="/tenants", tags=["Tenants"])
 
+@router.get("", response_model=List[TenantOut])
+def list_tenants(
+    current_user: User = Depends(get_current_active_user),
+    db: Session = Depends(get_db)
+) -> Any:
+    """
+    List universities/tenants.
+    - Super Admin: Returns all tenants.
+    - University Admin / Faculty / Student: Returns their own tenant institution only.
+    """
+    if current_user.role == UserRole.SUPER_ADMIN:
+        return db.query(Tenant).order_by(Tenant.created_at.desc()).all()
+    
+    if current_user.tenant_id:
+        tenant = db.query(Tenant).filter(Tenant.id == current_user.tenant_id).first()
+        return [tenant] if tenant else []
+    
+    return []
 
-class TenantCreateRequest(BaseModel):
-    name: str
-    slug: str
-    admin_email: str
-    domain_cname: Optional[str] = None
+@router.get("/{tenant_id}", response_model=TenantOut)
+def get_tenant_by_id(
+    tenant_id: str,
+    current_user: User = Depends(get_current_active_user),
+    db: Session = Depends(get_db)
+) -> Any:
+    """
+    Get detailed information for a specific tenant.
+    """
+    enforce_tenant_isolation(current_user, tenant_id)
+    tenant = db.query(Tenant).filter(Tenant.id == tenant_id).first()
+    if not tenant:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Tenant institution not found",
+        )
+    return tenant
 
+@router.post("", response_model=TenantOut, status_code=status.HTTP_201_CREATED)
+def create_tenant(
+    tenant_in: TenantCreate,
+    current_user: User = Depends(require_roles(UserRole.SUPER_ADMIN)),
+    db: Session = Depends(get_db)
+) -> Any:
+    """
+    Create a new tenant institution (Restricted to Super Admin).
+    """
+    existing = db.query(Tenant).filter(
+        (Tenant.code == tenant_in.code.upper()) | 
+        (Tenant.name == tenant_in.name)
+    ).first()
+    if existing:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=f"Tenant with code '{tenant_in.code}' or name '{tenant_in.name}' already exists",
+        )
+    
+    tenant = Tenant(
+        name=tenant_in.name,
+        code=tenant_in.code.upper(),
+        domain=tenant_in.domain.lower() if tenant_in.domain else None,
+        description=tenant_in.description,
+        is_active=tenant_in.is_active
+    )
+    db.add(tenant)
+    db.commit()
+    db.refresh(tenant)
+    return tenant
 
-class FeatureFlagUpdateRequest(BaseModel):
-    feature_name: str
-    enabled: bool
+@router.put("/{tenant_id}", response_model=TenantOut)
+def update_tenant(
+    tenant_id: str,
+    tenant_in: TenantUpdate,
+    current_user: User = Depends(require_roles(UserRole.SUPER_ADMIN, UserRole.UNIVERSITY_ADMIN)),
+    db: Session = Depends(get_db)
+) -> Any:
+    """
+    Update tenant institution details.
+    """
+    enforce_tenant_isolation(current_user, tenant_id)
+    tenant = db.query(Tenant).filter(Tenant.id == tenant_id).first()
+    if not tenant:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Tenant institution not found",
+        )
+    
+    if tenant_in.name is not None:
+        tenant.name = tenant_in.name
+    if tenant_in.code is not None:
+        tenant.code = tenant_in.code.upper()
+    if tenant_in.domain is not None:
+        tenant.domain = tenant_in.domain.lower() if tenant_in.domain else None
+    if tenant_in.description is not None:
+        tenant.description = tenant_in.description
+    
+    # Only Super Admin can deactivate an entire university
+    if tenant_in.is_active is not None and current_user.role == UserRole.SUPER_ADMIN:
+        tenant.is_active = tenant_in.is_active
 
+    db.commit()
+    db.refresh(tenant)
+    return tenant
 
-# In-memory tenant registry for fast lookup & execution
-TENANTS_REGISTRY = {
-    "default": {
-        "id": "tenant-001",
-        "name": "UniSphere Global University",
-        "slug": "global",
-        "schema_name": "public",
-        "status": "ACTIVE"
-    }
-}
-
-
-@router.post("/")
-def register_tenant(req: TenantCreateRequest, db: Session = Depends(get_db)):
-    if req.slug in TENANTS_REGISTRY:
-        raise HTTPException(status_code=400, detail="Tenant with this slug already exists")
-
-    schema_name = tenant_manager.sanitize_schema_name(req.slug)
-    tenant_id = str(uuid.uuid4())
-
-    entry = {
-        "id": tenant_id,
-        "name": req.name,
-        "slug": req.slug,
-        "schema_name": schema_name,
-        "admin_email": req.admin_email,
-        "domain_cname": req.domain_cname or f"{req.slug}.unisphere.edu",
-        "status": "PROVISIONED",
-        "created_at": "2026-09-11T12:00:00Z"
-    }
-
-    TENANTS_REGISTRY[req.slug] = entry
-    tenant_manager.set_tenant_schema(db, req.slug)
-
-    return {
-        "message": "Tenant provisioned successfully",
-        "tenant": entry,
-        "feature_flags": tenant_manager.get_feature_flags(req.slug)
-    }
-
-
-@router.get("/")
-def list_tenants():
-    return {
-        "total_tenants": len(TENANTS_REGISTRY),
-        "tenants": list(TENANTS_REGISTRY.values())
-    }
-
-
-@router.get("/{tenant_slug}/feature-flags")
-def get_tenant_feature_flags(tenant_slug: str):
-    flags = tenant_manager.get_feature_flags(tenant_slug)
-    return {
-        "tenant_slug": tenant_slug,
-        "feature_flags": flags
-    }
-
-
-@router.put("/{tenant_slug}/feature-flags")
-def update_tenant_feature_flag(tenant_slug: str, req: FeatureFlagUpdateRequest):
-    updated = tenant_manager.set_feature_flag(tenant_slug, req.feature_name, req.enabled)
-    return {
-        "message": f"Feature flag '{req.feature_name}' updated to {req.enabled}",
-        "tenant_slug": tenant_slug,
-        "feature_flags": updated
-    }

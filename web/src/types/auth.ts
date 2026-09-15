@@ -1,75 +1,54 @@
-<<<<<<< HEAD
-export type UserRole = 'student' | 'faculty' | 'admin';
+export type UserRole = 'SUPER_ADMIN' | 'UNIVERSITY_ADMIN' | 'FACULTY' | 'STUDENT' | 'STAFF';
+
+export interface Tenant {
+  id: string;
+  name: string;
+  code: string;
+  domain?: string | null;
+  description?: string | null;
+  is_active: boolean;
+  created_at: string;
+  updated_at: string;
+}
 
 export interface User {
   id: string;
-  name: string;
   email: string;
-  phone?: string;
+  full_name: string;
   role: UserRole;
-  department: string;
-  studentId: string;
-  enrolledYear?: string;
-  gpa: number;
-  attendanceRate: number;
-  creditsEarned?: number;
-  totalCredits?: number;
-}
-
-export interface ScheduleItem {
-  id: string;
-  code: string;
-  title: string;
-  time: string;
-  day: string;
-  room: string;
-  instructor: string;
-  color: string;
-  status: 'Ongoing' | 'Upcoming' | 'Completed';
-}
-
-export interface Course {
-  id: string;
-  code: string;
-  title: string;
-  credits: number;
-  instructor: string;
-  progress: number;
-  schedule: string;
-  grade?: string;
-}
-
-export interface Announcement {
-  id: string;
-  title: string;
-  date: string;
-  category: 'Exam' | 'Academic' | 'Campus' | 'Fee' | 'Placement' | 'Faculty';
-  content: string;
-<<<<<<< HEAD
-=======
-import { User } from './user';
-
-export interface LoginCredentials {
-  email: string;
-  password?: string;
-  rememberMe?: boolean;
+  tenant_id?: string | null;
+  department?: string | null;
+  phone_number?: string | null;
+  is_active: boolean;
+  created_at: string;
+  updated_at: string;
+  tenant?: Tenant | null;
 }
 
 export interface AuthResponse {
+  access_token: string;
+  token_type: string;
   user: User;
-  token?: string;
-  refreshToken?: string;
-  expiresIn?: number;
 }
 
-export interface AuthState {
-  user: User | null;
-  isAuthenticated: boolean;
-  loading: boolean;
-  error: string | null;
->>>>>>> origin/web
-=======
-  author?: string;
-  targetRole?: 'all' | 'student' | 'faculty';
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
+export interface RegisterTenantData {
+  tenant_name: string;
+  tenant_code: string;
+  tenant_domain?: string;
+  tenant_description?: string;
+  admin_email: string;
+  admin_password: string;
+  admin_name: string;
+  admin_department?: string;
 }
+
+export interface RegisterUserData {
+  email: string;
+  password: string;
+  full_name: string;
+  role: UserRole;
+  tenant_id?: string;
+  department?: string;
+  phone_number?: string;
+}
+

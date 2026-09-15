@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 /// User role enum
 enum UserRole {
   student,
@@ -58,33 +50,16 @@ enum UserRole {
 }
 
 /// User domain model representing an authenticated university member.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 class User {
   final String id;
   final String name;
   final String email;
   final String? phone;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   final String role; // 'student', 'faculty', 'admin'
   final String? department;
   final String? studentId;
   final String? avatarUrl;
   final DateTime? createdAt;
-=======
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   final UserRole role;
   final String? department;
   final String? studentId;
@@ -92,32 +67,18 @@ class User {
   final String? enrolledYear;
   final double? gpa;
   final double? attendanceRate;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   final String role; // 'student', 'faculty', 'admin'
   final String? department;
   final String? studentId;
   final String? avatarUrl;
   final DateTime? createdAt;
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
   final DateTime? createdAt;
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
   const User({
     required this.id,
     required this.name,
     required this.email,
     this.phone,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     this.role = UserRole.student,
     this.department,
     this.studentId,
@@ -153,10 +114,6 @@ class User {
       enrolledYear: json['enrolled_year'] as String? ?? '2024 - 2028',
       gpa: (json['gpa'] as num?)?.toDouble() ?? 3.82,
       attendanceRate: (json['attendance_rate'] as num?)?.toDouble() ?? 94.5,
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/web
     this.role = 'student',
     this.department,
     this.studentId,
@@ -189,10 +146,6 @@ class User {
       studentId: json['student_id']?.toString() ?? json['studentId']?.toString(),
       avatarUrl: json['avatar_url']?.toString() ?? json['avatarUrl']?.toString(),
       createdAt: json['created_at'] != null ? DateTime.tryParse(json['created_at'].toString()) : null,
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
-=======
     this.role = UserRole.student,
     this.department,
     this.studentId,
@@ -215,11 +168,7 @@ class User {
       enrolledYear: json['enrolled_year'] as String? ?? '2024 - 2028',
       gpa: (json['gpa'] as num?)?.toDouble() ?? 3.82,
       attendanceRate: (json['attendance_rate'] as num?)?.toDouble() ?? 94.5,
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
       createdAt: json['created_at'] != null ? DateTime.tryParse(json['created_at'].toString()) : null,
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     );
   }
 
@@ -230,42 +179,25 @@ class User {
       'full_name': name,
       'email': email,
       'phone': phone,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
       'role': role,
       'department': department,
       'student_id': studentId,
       'avatar_url': avatarUrl,
       'created_at': createdAt?.toIso8601String(),
-=======
->>>>>>> origin/web
       'role': role.name,
-=======
       'role': role.roleString,
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       'department': department,
       'student_id': studentId,
       'avatar_url': avatarUrl,
       'enrolled_year': enrolledYear,
       'gpa': gpa,
       'attendance_rate': attendanceRate,
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
       'role': role,
       'department': department,
       'student_id': studentId,
       'avatar_url': avatarUrl,
       'created_at': createdAt?.toIso8601String(),
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
       'created_at': createdAt?.toIso8601String(),
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     };
   }
 
@@ -274,19 +206,11 @@ class User {
     String? name,
     String? email,
     String? phone,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     String? role,
     String? department,
     String? studentId,
     String? avatarUrl,
     DateTime? createdAt,
-=======
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     UserRole? role,
     String? department,
     String? studentId,
@@ -294,21 +218,12 @@ class User {
     String? enrolledYear,
     double? gpa,
     double? attendanceRate,
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     String? role,
     String? department,
     String? studentId,
     String? avatarUrl,
     DateTime? createdAt,
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
     DateTime? createdAt,
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   }) {
     return User(
       id: id ?? this.id,
@@ -319,17 +234,11 @@ class User {
       department: department ?? this.department,
       studentId: studentId ?? this.studentId,
       avatarUrl: avatarUrl ?? this.avatarUrl,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       enrolledYear: enrolledYear ?? this.enrolledYear,
       gpa: gpa ?? this.gpa,
       attendanceRate: attendanceRate ?? this.attendanceRate,
     );
   }
-=======
-=======
->>>>>>> origin/web
       createdAt: createdAt ?? this.createdAt,
     );
   }
@@ -344,23 +253,15 @@ class User {
 
   @override
   int get hashCode => id.hashCode ^ email.hashCode;
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
-=======
       enrolledYear: enrolledYear ?? this.enrolledYear,
       gpa: gpa ?? this.gpa,
       attendanceRate: attendanceRate ?? this.attendanceRate,
     );
   }
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
       enrolledYear: enrolledYear ?? this.enrolledYear,
       gpa: gpa ?? this.gpa,
       attendanceRate: attendanceRate ?? this.attendanceRate,
       createdAt: createdAt ?? this.createdAt,
     );
   }
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 }

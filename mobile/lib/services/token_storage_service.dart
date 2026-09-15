@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 /// Service interface and implementation for secure JWT token persistence.
 ///
 /// Follows security best practice:
@@ -61,11 +58,6 @@ class TokenStorageService {
   /// Clear all secure storage
   Future<void> clearAll() async {
     await deleteToken();
-=======
-=======
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 import 'dart:convert';
 import '../core/constants/app_constants.dart';
 import '../models/user.dart';
@@ -143,17 +135,12 @@ class TokenStorageService {
   Future<void> clearAuthData() async {
     await deleteToken();
     await deleteUser();
-<<<<<<< HEAD
     // Intentionally keep saved email if Remember Me is checked, otherwise wipe
     final remember = await getRememberMe();
     if (!remember) {
       await _storage.delete(AppConstants.savedEmailKey);
       await _storage.delete(AppConstants.rememberMeKey);
     }
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
-=======
 /// Service interface and implementation for secure JWT token persistence.
 ///
 /// Follows security best practice:
@@ -214,9 +201,6 @@ class TokenStorageService {
   /// Clear all secure storage
   Future<void> clearAll() async {
     await deleteToken();
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
     await _storage.delete(AppConstants.savedEmailKey);
     await _storage.delete(AppConstants.rememberMeKey);
   }
@@ -224,6 +208,5 @@ class TokenStorageService {
   Future<void> clearAll() async {
     await clearAuthData();
     await _storage.clear();
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   }
 }

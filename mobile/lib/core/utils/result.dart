@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 /// Generic Result monad for clean error/success handling without messy try/catches in UI.
 class Result<T> {
   final T? data;
@@ -31,10 +26,6 @@ class Result<T> {
       return onFailure(error ?? 'An unexpected error occurred');
     }
   }
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/web
 sealed class Result<T, E> {
   const Result();
 
@@ -50,14 +41,11 @@ sealed class Result<T, E> {
         Success() => null,
         Failure(:final error) => error,
       };
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
   R when<R>({
     required R Function(T data) success,
     required R Function(String error) failure,
   }) =>
-<<<<<<< HEAD
       switch (this) {
         Success(:final data) => success(data),
         Failure(:final error) => failure(error),
@@ -72,10 +60,6 @@ class Success<T, E> extends Result<T, E> {
 class Failure<T, E> extends Result<T, E> {
   final E error;
   const Failure(this.error);
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
-=======
 /// Generic Result monad for clean error/success handling without messy try/catches in UI.
 class Result<T> {
   final T? data;
@@ -100,9 +84,5 @@ class Result<T> {
       return onFailure(error ?? 'An unexpected error occurred');
     }
   }
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
       fold(onSuccess: success, onFailure: failure);
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 }

@@ -1,12 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 import 'dart:async';
 import '../core/network/api_exceptions.dart';
-=======
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 import '../models/campus_features.dart';
 import '../models/login_request.dart';
 import '../models/login_response.dart';
@@ -425,10 +418,6 @@ class MockDataService {
     } else {
       return 'I am your UniSphere AI Campus Assistant. You can ask me about class timetables, attendance requirements, exam schedules, placement eligibility, or academic regulations!';
     }
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/web
 import 'dart:async';
 import '../models/login_request.dart';
 import '../models/login_response.dart';
@@ -436,10 +425,7 @@ import '../models/register_request.dart';
 import '../models/user.dart';
 import '../models/user_profile.dart';
 import '../core/network/api_exceptions.dart';
-=======
-<<<<<<< HEAD
   }
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
   // Mock In-Memory User Database
   static final List<User> _mockUsers = [
@@ -545,17 +531,8 @@ import '../core/network/api_exceptions.dart';
       _mockUsers[idx] = updated;
     }
     return updated;
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
-=======
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   }
-=======
   }
-=======
 import '../models/user.dart';
 import '../models/login_response.dart';
 
@@ -675,6 +652,4 @@ class MockDataService {
           'colorHex': 0xFFEC4899,
         },
       ];
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
 }

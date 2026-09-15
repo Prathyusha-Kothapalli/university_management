@@ -1,37 +1,20 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 import '../core/network/api_exceptions.dart';
 import '../core/utils/result.dart';
-=======
 import '../core/constants/api_constants.dart';
 import '../core/network/api_exceptions.dart';
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
 import '../core/constants/api_constants.dart';
 import '../core/network/api_exceptions.dart';
-=======
 import '../core/network/api_exceptions.dart';
 import '../core/utils/result.dart';
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
 import 'dart:async';
 import '../core/constants/api_constants.dart';
-=======
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 import '../core/network/api_exceptions.dart';
 import '../core/utils/result.dart';
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 import '../models/login_request.dart';
 import '../models/login_response.dart';
 import '../models/register_request.dart';
 import '../models/user.dart';
 import '../services/api_service.dart';
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 import '../services/mock_data_service.dart';
 import '../services/token_storage_service.dart';
 
@@ -39,13 +22,7 @@ class AuthRepository {
   final ApiService _apiService;
   final TokenStorageService _tokenStorage;
   final bool _forceMock;
-=======
->>>>>>> origin/web
-=======
 import '../services/mock_data_service.dart';
-=======
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 import '../services/storage_service.dart';
 import '../services/token_storage_service.dart';
 
@@ -54,9 +31,6 @@ class AuthRepository {
   final ApiService apiService;
   final TokenStorageService tokenStorage;
   final StorageService storageService;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 import '../services/mock_data_service.dart';
 import '../services/token_storage_service.dart';
 
@@ -64,23 +38,11 @@ class AuthRepository {
   final ApiService _apiService;
   final TokenStorageService _tokenStorage;
   final bool _forceMock;
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
   final bool _forceMock;
-=======
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
   AuthRepository({
     ApiService? apiService,
     TokenStorageService? tokenStorage,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     bool forceMock = ApiConstants.forceMockMode,
   })  : _apiService = apiService ?? ApiService(tokenStorage: tokenStorage),
         _tokenStorage = tokenStorage ?? TokenStorageService(),
@@ -180,12 +142,7 @@ class AuthRepository {
 
   Future<String?> getSavedEmail() => _tokenStorage.getSavedEmail();
   Future<bool> getRememberMe() => _tokenStorage.getRememberMe();
-=======
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     StorageService? storageService,
-<<<<<<< HEAD
     bool forceMock = ApiConstants.forceMockMode,
   })  : apiService = apiService ?? ApiService(tokenStorage: tokenStorage),
         tokenStorage = tokenStorage ?? TokenStorageService(),
@@ -253,7 +210,6 @@ class AuthRepository {
       final request = LoginRequest(email: email, password: password, rememberMe: rememberMe);
       final response = await login(request);
       return Result.success(response.user);
-=======
   })  : apiService = apiService ?? ApiService(),
         tokenStorage = tokenStorage ?? TokenStorageService(),
         storageService = storageService ?? StorageService();
@@ -281,7 +237,6 @@ class AuthRepository {
 
       await storageService.saveUser(user);
       return Result.success(user);
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     } on ApiException catch (e) {
       return Result.failure(e.message);
     } catch (e) {
@@ -289,7 +244,6 @@ class AuthRepository {
     }
   }
 
-<<<<<<< HEAD
   /// Register new user account
   Future<LoginResponse> register(RegisterRequest request) async {
     if (_forceMock) {
@@ -317,7 +271,6 @@ class AuthRepository {
     try {
       final response = await register(request);
       return Result.success(response.user);
-=======
   /// Register new user account.
   Future<Result<User>> register(RegisterRequest request) async {
     try {
@@ -341,7 +294,6 @@ class AuthRepository {
 
       await storageService.saveUser(user);
       return Result.success(user);
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     } on ApiException catch (e) {
       return Result.failure(e.message);
     } catch (e) {
@@ -349,8 +301,6 @@ class AuthRepository {
     }
   }
 
-<<<<<<< HEAD
-=======
   /// Check whether the user has a valid active session.
   Future<User?> checkAuth() async {
     final hasToken = await tokenStorage.hasToken();
@@ -380,13 +330,11 @@ class AuthRepository {
     }
   }
 
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
   /// Terminate session and remove all tokens.
   Future<void> logout() async {
     try {
       await apiService.logout();
     } catch (_) {
-<<<<<<< HEAD
       // Ignored if network unavailable
     } finally {
       await tokenStorage.deleteToken();
@@ -412,16 +360,12 @@ class AuthRepository {
 
   Future<String?> getSavedEmail() => tokenStorage.getSavedEmail();
   Future<bool> getRememberMe() => tokenStorage.getRememberMe();
-=======
       // Continue clearing local storage even if network fails
     } finally {
       await tokenStorage.deleteToken();
       await storageService.removeUser();
     }
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     bool forceMock = ApiConstants.forceMockMode,
   })  : _apiService = apiService ?? ApiService(tokenStorage: tokenStorage),
         _tokenStorage = tokenStorage ?? TokenStorageService(),
@@ -521,11 +465,4 @@ class AuthRepository {
 
   Future<String?> getSavedEmail() => _tokenStorage.getSavedEmail();
   Future<bool> getRememberMe() => _tokenStorage.getRememberMe();
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 }

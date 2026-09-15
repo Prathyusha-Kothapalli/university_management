@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 /// Centralized API configuration for UniSphere AI Mobile Application.
 ///
 /// ============================================================================
@@ -38,10 +33,6 @@ class ApiConstants {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
   };
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/web
 /// ============================================================================
 /// BACKEND API CONFIGURATION
 /// ============================================================================
@@ -59,18 +50,11 @@ class ApiConstants {
   // EDIT HERE: Set your backend API URL
   // --------------------------------------------------------------------------
   static const String API_BASE_URL = "http://10.0.2.2:8000/api/v1";
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
   static const String headerContentType = 'Content-Type';
   static const String headerAuthorization = 'Authorization';
   static const String contentTypeJson = 'application/json';
   static const String bearerPrefix = 'Bearer ';
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
-=======
 /// Centralized API configuration for UniSphere AI Mobile Application.
 ///
 /// ============================================================================
@@ -97,8 +81,4 @@ class ApiConstants {
     'Content-Type': 'application/json',
     'Accept': 'application/json',
   };
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 }

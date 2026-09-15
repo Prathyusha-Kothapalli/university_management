@@ -1,35 +1,20 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 import '../../core/constants/route_constants.dart';
-=======
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 import '../../core/theme/app_colors.dart';
 import '../../models/user.dart';
 import '../../state/auth_state.dart';
 import '../../state/profile_state.dart';
 import '../../widgets/custom_button.dart';
-<<<<<<< HEAD
 import '../../widgets/loading_indicator.dart';
 import '../../widgets/user_avatar.dart';
-=======
 import '../../widgets/user_avatar.dart';
 import '../auth/login_screen.dart';
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 import 'edit_profile_dialog.dart';
 
 /// User Profile Screen with details inspection, editing modal, and secure logout.
 class ProfileScreen extends StatefulWidget {
   final AuthState authState;
-<<<<<<< HEAD
   final ProfileState? profileState;
-=======
-<<<<<<< HEAD
-=======
->>>>>>> origin/web
 import '../../core/constants/route_constants.dart';
 import '../../core/theme/app_colors.dart';
 import '../../state/auth_state.dart';
@@ -42,10 +27,6 @@ import 'edit_profile_dialog.dart';
 class ProfileScreen extends StatefulWidget {
   final AuthState authState;
   final ProfileState profileState;
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
-=======
 import '../../core/theme/app_colors.dart';
 import '../../models/user.dart';
 import '../../state/auth_state.dart';
@@ -58,32 +39,14 @@ import 'edit_profile_dialog.dart';
 /// User Profile Screen with details inspection, editing modal, and secure logout.
 class ProfileScreen extends StatefulWidget {
   final AuthState authState;
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
   const ProfileScreen({
     super.key,
     required this.authState,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     required this.profileState,
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
     required this.profileState,
-=======
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
     this.profileState,
-=======
     required this.profileState,
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   });
 
   @override
@@ -91,11 +54,6 @@ class ProfileScreen extends StatefulWidget {
 }
 
 class _ProfileScreenState extends State<ProfileScreen> {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   late final ProfileState _profileState;
   bool _createdOwnProfileState = false;
 
@@ -117,7 +75,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
 
   @override
   void dispose() {
-<<<<<<< HEAD
     _profileState.dispose();
     super.dispose();
   }
@@ -132,20 +89,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.of(ctx).pop(false),
-=======
-=======
->>>>>>> origin/web
   @override
   void initState() {
     super.initState();
     final user = widget.authState.currentUser;
     if (user != null && widget.profileState.profile == null) {
       widget.profileState.loadProfile(user);
-=======
-<<<<<<< HEAD
     if (_createdOwnProfileState) {
       _profileState.dispose();
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     }
     super.dispose();
   }
@@ -171,12 +122,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
     }
   }
 
-=======
     _profileState.dispose();
     super.dispose();
   }
 
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
   Future<void> _handleLogoutConfirmation() async {
     final shouldLogout = await showDialog<bool>(
       context: context,
@@ -186,12 +135,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         content: const Text('Are you sure you want to log out of your university account?'),
         actions: [
           TextButton(
-<<<<<<< HEAD
             onPressed: () => Navigator.of(ctx).pop(),
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
-=======
   late final ProfileState _profileState;
 
   @override
@@ -216,11 +160,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.of(ctx).pop(false),
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
             onPressed: () => Navigator.of(ctx).pop(false),
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
             child: const Text('Cancel'),
           ),
           ElevatedButton(
@@ -228,14 +168,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
               backgroundColor: AppColors.error,
               foregroundColor: Colors.white,
             ),
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
             onPressed: () => Navigator.of(ctx).pop(true),
             child: const Text('Sign Out'),
-=======
-=======
->>>>>>> origin/web
             onPressed: () async {
               Navigator.of(ctx).pop();
               await widget.authState.logout();
@@ -247,30 +181,14 @@ class _ProfileScreenState extends State<ProfileScreen> {
               }
             },
             child: const Text('Logout'),
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
-=======
             onPressed: () => Navigator.of(ctx).pop(true),
             child: const Text('Sign Out'),
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
             onPressed: () => Navigator.of(ctx).pop(true),
             child: const Text('Sign Out'),
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
           ),
         ],
       ),
     );
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
     if (shouldLogout == true && mounted) {
       await widget.authState.logout();
@@ -281,25 +199,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
         );
       }
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   }
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/web
     final user = widget.authState.currentUser;
     final profile = widget.profileState.profile;
     final isLoading = widget.profileState.isLoading;
@@ -310,33 +213,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
       );
     }
 
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
-=======
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
-=======
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     return Scaffold(
       backgroundColor: AppColors.backgroundLight,
       appBar: AppBar(
         title: const Text('User Profile'),
         actions: [
           IconButton(
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
             icon: const Icon(Icons.edit_outlined),
             tooltip: 'Edit Profile',
             onPressed: _showEditDialog,
           ),
-<<<<<<< HEAD
         ],
       ),
       body: SafeArea(
@@ -536,13 +422,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 color: AppColors.textPrimaryLight,
                 fontWeight: FontWeight.w600,
               ),
-=======
->>>>>>> origin/web
-=======
           IconButton(
-=======
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
             icon: const Icon(Icons.logout_rounded, color: AppColors.error),
             tooltip: 'Sign Out',
             onPressed: _handleLogoutConfirmation,
@@ -711,9 +591,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
           );
         },
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
             icon: const Icon(Icons.edit_outlined),
             tooltip: 'Edit Profile',
             onPressed: _showEditDialog,
@@ -851,20 +728,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   ],
                 ),
               ),
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       ),
     );
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> origin/web
   Widget _buildInfoTile({
     required IconData icon,
     required String label,
@@ -905,10 +772,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   ),
                 ),
               ],
-<<<<<<< HEAD
-=======
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   Widget _buildSectionCard({
     required String title,
     required IconData icon,
@@ -946,8 +809,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
   }
 
-=======
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
   Widget _buildInfoTile({
     required IconData icon,
     required String label,
@@ -955,11 +816,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
     Color? valueColor,
   }) {
     return Padding(
-<<<<<<< HEAD
       padding: const EdgeInsets.symmetric(vertical: 4),
-=======
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
       child: Row(
         children: [
           Container(
@@ -968,17 +826,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
               color: AppColors.surfaceElevatedLight,
               borderRadius: BorderRadius.circular(10),
             ),
-<<<<<<< HEAD
             child: Icon(icon, size: 18, color: AppColors.primary),
           ),
           const SizedBox(width: 14),
-=======
             child: Icon(icon, size: 20, color: AppColors.primary),
           ),
           const SizedBox(width: 16),
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
           Expanded(
-<<<<<<< HEAD
             child: Text(
               value,
               style: const TextStyle(
@@ -986,11 +840,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 color: AppColors.textPrimaryLight,
                 fontWeight: FontWeight.w600,
               ),
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -1005,17 +854,13 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 Text(
                   value,
                   style: TextStyle(
-<<<<<<< HEAD
                     fontSize: 14,
-=======
                     fontSize: 15,
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
                     fontWeight: FontWeight.w600,
                     color: valueColor ?? AppColors.textPrimaryLight,
                   ),
                 ),
               ],
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
             ),
           ),
         ],

@@ -1,12 +1,5 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 import 'dart:async';
 import '../core/constants/api_constants.dart';
-=======
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 import '../core/network/api_exceptions.dart';
 import '../core/utils/result.dart';
 import '../models/user.dart';
@@ -65,7 +58,6 @@ class UserRepository {
     }
   }
 
-<<<<<<< HEAD
   /// Update profile details
   Future<User> updateProfile(User currentUser, {String? name, String? phone}) async {
     if (_forceMock) {
@@ -93,7 +85,6 @@ class UserRepository {
       await tokenStorage.saveUser(updated);
       await storageService.saveUser(updated);
       return updated;
-=======
   /// Update profile details (e.g. name, phone)
   Future<Result<User>> updateProfile({
     required String name,
@@ -112,10 +103,6 @@ class UserRepository {
       return Result.failure(e.message);
     } catch (e) {
       return Result.failure('Failed to update profile: $e');
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/web
 import '../core/constants/api_constants.dart';
 import '../core/network/api_exceptions.dart';
 import '../models/user.dart';
@@ -182,10 +169,6 @@ class UserRepository {
       final updated = await MockDataService.mockUpdateProfile(currentUser, name: name, phone: phone);
       await _tokenStorage.saveUser(updated);
       return updated;
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
-=======
 import '../core/network/api_exceptions.dart';
 import '../core/utils/result.dart';
 import '../models/user.dart';
@@ -234,11 +217,6 @@ class UserRepository {
       return Result.failure(e.message);
     } catch (e) {
       return Result.failure('Failed to update profile: $e');
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     }
   }
 }

@@ -1,40 +1,23 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 import '../core/network/api_client.dart';
 import '../core/network/api_endpoints.dart';
 import '../core/network/api_exceptions.dart';
-=======
 import '../core/constants/api_constants.dart';
 import '../core/network/api_client.dart';
 import '../core/network/api_endpoints.dart';
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
 import '../core/constants/api_constants.dart';
 import '../core/network/api_client.dart';
 import '../core/network/api_endpoints.dart';
-=======
 import '../core/network/api_client.dart';
 import '../core/network/api_endpoints.dart';
 import '../core/network/api_exceptions.dart';
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
 import '../core/constants/api_constants.dart';
-=======
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 import '../core/network/api_client.dart';
 import '../core/network/api_endpoints.dart';
 import '../core/network/api_exceptions.dart';
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 import '../models/login_request.dart';
 import '../models/login_response.dart';
 import '../models/register_request.dart';
 import '../models/user.dart';
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 import '../models/user_profile.dart';
 import 'token_storage_service.dart';
 
@@ -91,13 +74,7 @@ class ApiService {
       body: body,
     );
     return User.fromJson(response as Map<String, dynamic>);
-=======
->>>>>>> origin/web
-=======
 import '../models/user_profile.dart';
-=======
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 import 'mock_data_service.dart';
 import 'token_storage_service.dart';
 
@@ -225,12 +202,9 @@ class ApiService {
     try {
       await apiClient.post(ApiEndpoints.logout);
     } catch (_) {
-<<<<<<< HEAD
       // Ignore network errors on logout
     }
-<<<<<<< HEAD
   }
-=======
 import '../models/user_profile.dart';
 import 'token_storage_service.dart';
 
@@ -268,16 +242,10 @@ class ApiService {
     try {
       await _client.post(ApiEndpoints.logout);
     } catch (_) {
-=======
-<<<<<<< HEAD
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       // Non-fatal if backend token invalidation is unreachable
-=======
       // Ignore network errors on logout
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     }
   }
-<<<<<<< HEAD
 
   Future<UserProfile> getUserProfile() async {
     final response = await _client.get(ApiEndpoints.currentUser);
@@ -295,11 +263,5 @@ class ApiService {
     );
     return User.fromJson(response as Map<String, dynamic>);
   }
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
->>>>>>> 29907a7 (added flutter)
   }
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 }

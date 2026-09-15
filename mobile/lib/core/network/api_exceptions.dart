@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 /// Base class for all API and Network exceptions.
 class ApiException implements Exception {
   final String message;
@@ -59,16 +54,12 @@ class NotFoundException extends ApiException {
 
 /// Thrown on 400 or 422 validation errors.
 class ValidationException extends ApiException {
-<<<<<<< HEAD
   final Map<String, List<String>> errors;
 
   const ValidationException(
     String message, {
     this.errors = const {},
   }) : super(message, statusCode: 422);
-=======
-=======
->>>>>>> origin/web
 class ApiException implements Exception {
   final String message;
   final int? statusCode;
@@ -116,8 +107,6 @@ class NotFoundException extends ApiException {
 }
 
 class ValidationException extends ApiException {
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   final Map<String, dynamic>? errors;
 
   const ValidationException([
@@ -131,12 +120,7 @@ class ServerException extends ApiException {
   const ServerException([
     String message = 'Server encountered an error. Please try again later.',
     int? statusCode,
-<<<<<<< HEAD
   }) : super(message: message, statusCode: statusCode ?? 500);
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
-=======
 /// Base class for all API and Network exceptions.
 class ApiException implements Exception {
   final String message;
@@ -193,9 +177,5 @@ class ValidationException extends ApiException {
     String message, {
     this.errors = const {},
   }) : super(message, statusCode: 422);
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
   ]) : super(message, statusCode ?? 500);
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 }

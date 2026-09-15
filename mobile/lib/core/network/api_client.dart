@@ -1,10 +1,6 @@
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 import 'package:http/http.dart' as http;
 
 import '../constants/api_constants.dart';
@@ -34,11 +30,7 @@ class ApiClient {
       return uri.replace(
         queryParameters: queryParameters.map((k, v) => MapEntry(k, v.toString())),
       );
-=======
->>>>>>> origin/web
-=======
 import 'package:http/http.dart' as http;
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
 import '../constants/api_constants.dart';
 import '../../services/token_storage_service.dart';
@@ -56,7 +48,6 @@ class ApiClient {
     http.Client? httpClient,
   })  : baseUrl = baseUrl ?? ApiConstants.apiBaseUrl,
         tokenStorage = tokenStorage ?? TokenStorageService(),
-<<<<<<< HEAD
         _httpClient = httpClient ??
             (HttpClient()
               ..connectionTimeout =
@@ -71,8 +62,6 @@ class ApiClient {
     if (queryParams != null && queryParams.isNotEmpty) {
       final stringParams = queryParams.map((k, v) => MapEntry(k, v.toString()));
       return uri.replace(queryParameters: stringParams);
-<<<<<<< HEAD
-=======
 import 'package:http/http.dart' as http;
 
 import '../constants/api_constants.dart';
@@ -90,8 +79,6 @@ class ApiClient {
     http.Client? httpClient,
     this.tokenProvider,
   })  : baseUrl = baseUrl ?? ApiConstants.API_BASE_URL,
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
         _httpClient = httpClient ?? http.Client();
 
   Uri _buildUri(String path, [Map<String, dynamic>? queryParameters]) {
@@ -104,21 +91,10 @@ class ApiClient {
       return uri.replace(
         queryParameters: queryParameters.map((k, v) => MapEntry(k, v.toString())),
       );
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     }
     return uri;
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   Future<Map<String, String>> _buildHeaders([Map<String, String>? customHeaders]) async {
     final headers = <String, String>{
       ApiConstants.headerContentType: ApiConstants.contentTypeJson,
@@ -291,8 +267,6 @@ class ApiClient {
 
   void close() {
     _httpClient.close();
-=======
->>>>>>> origin/web
   Future<void> _applyHeaders(HttpClientRequest request, Map<String, String>? customHeaders) async {
     // Default headers
     request.headers.set(HttpHeaders.contentTypeHeader, 'application/json; charset=UTF-8');
@@ -480,12 +454,8 @@ class ApiClient {
     } catch (e) {
       throw ApiException('Unexpected network error: $e');
     }
-<<<<<<< HEAD
-=======
   Future<Map<String, String>> _buildHeaders([Map<String, String>? customHeaders]) async {
-=======
   Future<Map<String, String>> _buildHeaders(Map<String, String>? customHeaders) async {
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     final headers = <String, String>{
       'Content-Type': 'application/json; charset=UTF-8',
       'Accept': 'application/json',
@@ -643,12 +613,5 @@ class ApiClient {
 
   void close() {
     _httpClient.close();
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   }
 }

@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 class Validators {
   static final RegExp _emailRegExp = RegExp(
     r'^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$',
@@ -9,10 +5,6 @@ class Validators {
 
   static final RegExp _phoneRegExp = RegExp(
     r'^\+?[0-9\s\-\(\)]{7,18}$',
-=======
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 /// Form field validation utilities.
 class Validators {
   Validators._();
@@ -22,10 +14,7 @@ class Validators {
   );
 
   static final RegExp _phoneRegExp = RegExp(
-<<<<<<< HEAD
     r'^\+?[0-9\s\-()]{7,15}$',
-<<<<<<< HEAD
-=======
 class Validators {
   static final RegExp _emailRegExp = RegExp(
     r'^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$',
@@ -33,13 +22,7 @@ class Validators {
 
   static final RegExp _phoneRegExp = RegExp(
     r'^\+?[0-9\s\-\(\)]{7,18}$',
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
     r'^\+?[0-9\s\-()]{7,18}$',
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   );
 
   static String? validateRequired(String? value, [String fieldName = 'Field']) {
@@ -54,22 +37,11 @@ class Validators {
       return 'Full name is required';
     }
     if (value.trim().length < 2) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       return 'Name must be at least 2 characters';
-=======
       return 'Name must be at least 2 characters long';
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
       return 'Name must be at least 2 characters long';
-=======
       return 'Name must be at least 2 characters';
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
       return 'Name must be at least 2 characters long';
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     }
     return null;
   }
@@ -78,25 +50,14 @@ class Validators {
     if (value == null || value.trim().isEmpty) {
       return 'Email address is required';
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     if (!_emailRegExp.hasMatch(value.trim())) {
-=======
     final trimmed = value.trim();
     if (!_emailRegExp.hasMatch(trimmed)) {
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
     final trimmed = value.trim();
     if (!_emailRegExp.hasMatch(trimmed)) {
-=======
     if (!_emailRegExp.hasMatch(value.trim())) {
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
     final trimmed = value.trim();
     if (!_emailRegExp.hasMatch(trimmed)) {
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       return 'Please enter a valid email address';
     }
     return null;
@@ -112,38 +73,21 @@ class Validators {
     return null;
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   static String? validateConfirmPassword(String? confirmPassword, String? password) {
     if (confirmPassword == null || confirmPassword.isEmpty) {
       return 'Please confirm your password';
     }
     if (confirmPassword != password) {
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/web
   static String? validateConfirmPassword(String? value, String? originalPassword) {
     if (value == null || value.isEmpty) {
       return 'Please confirm your password';
     }
     if (value != originalPassword) {
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
-=======
   static String? validateConfirmPassword(String? confirmPassword, String? password) {
     if (confirmPassword == null || confirmPassword.isEmpty) {
       return 'Please confirm your password';
     }
     if (confirmPassword != password) {
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       return 'Passwords do not match';
     }
     return null;
@@ -153,27 +97,16 @@ class Validators {
     if (value == null || value.trim().isEmpty) {
       return 'Phone number is required';
     }
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     if (!_phoneRegExp.hasMatch(value.trim())) {
-=======
     final trimmed = value.trim();
     if (!_phoneRegExp.hasMatch(trimmed)) {
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
     final trimmed = value.trim();
     if (!_phoneRegExp.hasMatch(trimmed)) {
-=======
     if (!_phoneRegExp.hasMatch(value.trim())) {
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
     final trimmed = value.trim();
     // Count actual digits: require at least 7 digits
     final digitCount = trimmed.replaceAll(RegExp(r'\D'), '').length;
     if (digitCount < 7 || !_phoneRegExp.hasMatch(trimmed)) {
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       return 'Please enter a valid phone number';
     }
     return null;

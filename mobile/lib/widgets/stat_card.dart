@@ -1,49 +1,25 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
 import '../core/theme/app_colors.dart';
 
 /// KPI/Statistic card for student/faculty dashboards.
-=======
 
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
 
-=======
 import '../core/theme/app_colors.dart';
 
 /// KPI/Statistic card for student/faculty dashboards.
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
 import '../core/theme/app_colors.dart';
 
 /// KPI/Statistic card for student/faculty dashboards.
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 class StatCard extends StatelessWidget {
   final String title;
   final String value;
   final String? subtitle;
   final IconData icon;
   final Color color;
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   final Color backgroundColor;
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
   final Color backgroundColor;
-=======
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
   final Color? backgroundColor;
-=======
   final Color backgroundColor;
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
   const StatCard({
     super.key,
@@ -51,41 +27,18 @@ class StatCard extends StatelessWidget {
     required this.value,
     this.subtitle,
     required this.icon,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     this.color = AppColors.primary,
-<<<<<<< HEAD
     this.backgroundColor,
-=======
-<<<<<<< HEAD
     required this.color,
     required this.backgroundColor,
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
     required this.color,
     required this.backgroundColor,
-=======
     this.color = AppColors.primary,
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   });
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
     final bg = backgroundColor ?? color.withOpacity(0.12);
-=======
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     return Card(
       elevation: 0,
       shape: RoundedRectangleBorder(
@@ -142,10 +95,6 @@ class StatCard extends StatelessWidget {
             ],
           ],
         ),
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/web
     return Container(
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
@@ -207,10 +156,6 @@ class StatCard extends StatelessWidget {
             overflow: TextOverflow.ellipsis,
           ),
         ],
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
-=======
     return Card(
       elevation: 0,
       shape: RoundedRectangleBorder(
@@ -267,10 +212,6 @@ class StatCard extends StatelessWidget {
             ],
           ],
         ),
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       ),
     );
   }

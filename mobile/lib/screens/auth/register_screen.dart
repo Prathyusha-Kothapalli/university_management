@@ -1,51 +1,22 @@
 import 'package:flutter/material.dart';
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 import '../../core/constants/route_constants.dart';
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
 import '../../core/constants/route_constants.dart';
-=======
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
 import '../../core/constants/route_constants.dart';
-=======
 import '../../core/constants/app_constants.dart';
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 import '../../core/theme/app_colors.dart';
 import '../../core/utils/validators.dart';
 import '../../state/auth_state.dart';
 import '../../widgets/custom_button.dart';
 import '../../widgets/custom_text_field.dart';
 import '../../widgets/error_card.dart';
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-import '../home/home_screen.dart';
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
-
-<<<<<<< HEAD
-/// Complete, responsive Registration Screen.
-=======
-<<<<<<< HEAD
-
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
-
-=======
 import '../home/home_screen.dart';
 
 /// Complete, responsive Registration Screen.
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
+
+
+import '../home/home_screen.dart';
+
+/// Complete, responsive Registration Screen.
 class RegisterScreen extends StatefulWidget {
   final AuthState authState;
 
@@ -79,35 +50,17 @@ class _RegisterScreenState extends State<RegisterScreen> {
   }
 
   Future<void> _handleRegister() async {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     if (!_formKey.currentState!.validate()) return;
-=======
-=======
->>>>>>> origin/web
-=======
     widget.authState.clearError();
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     if (!_formKey.currentState!.validate()) {
       return;
     }
 
     FocusScope.of(context).unfocus();
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
-=======
     if (!_formKey.currentState!.validate()) return;
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
-=======
     setState(() {
       _localError = null;
     });
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
     if (!_formKey.currentState!.validate()) return;
 
@@ -121,31 +74,17 @@ class _RegisterScreenState extends State<RegisterScreen> {
     setState(() {
       _isLoading = true;
     });
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
 
     final success = await widget.authState.register(
       fullName: _fullNameController.text.trim(),
       email: _emailController.text.trim(),
       password: _passwordController.text,
       role: _selectedRole,
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
       department: _selectedRole == 'faculty' ? 'Academic Faculty' : 'Undergraduate Studies',
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
       department: _selectedRole == 'faculty' ? 'Academic Faculty' : 'Undergraduate Studies',
-=======
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
       department: _selectedRole == 'faculty'
           ? 'Academic Faculty'
           : 'Undergraduate Studies',
-=======
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
     );
 
     setState(() {
@@ -153,98 +92,53 @@ class _RegisterScreenState extends State<RegisterScreen> {
     });
 
     if (success && mounted) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
       Navigator.of(context).pushAndRemoveUntil(
         MaterialPageRoute(
           builder: (_) => HomeScreen(authState: widget.authState),
         ),
-=======
-=======
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Account registered successfully!'),
           backgroundColor: AppColors.success,
         ),
       );
-<<<<<<< HEAD
       Navigator.of(context).pushNamedAndRemoveUntil(
         RouteConstants.home,
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
-=======
       Navigator.of(context).pushAndRemoveUntil(
         MaterialPageRoute(
           builder: (_) => HomeScreen(authState: widget.authState),
         ),
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
         (route) => false,
       );
-=======
       Navigator.of(context).pop();
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     }
   }
 
   @override
   Widget build(BuildContext context) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
     final authState = widget.authState;
-=======
     final isLoading = widget.authState.isLoading;
     final errorMessage = widget.authState.errorMessage;
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
     final isLoading = widget.authState.isLoading;
     final errorMessage = widget.authState.errorMessage;
-=======
     final authState = widget.authState;
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
     final isLoading = widget.authState.isLoading;
     final errorMessage = widget.authState.errorMessage;
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
     return Scaffold(
       backgroundColor: AppColors.backgroundLight,
       appBar: AppBar(
         title: const Text('Create Account'),
         leading: IconButton(
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
           icon: const Icon(Icons.arrow_back_ios_new_rounded, size: 20),
-=======
           icon: const Icon(Icons.arrow_back_rounded),
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
           icon: const Icon(Icons.arrow_back_rounded),
-=======
           icon: const Icon(Icons.arrow_back_ios_new_rounded, size: 20),
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
           icon: const Icon(Icons.arrow_back_rounded),
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
           onPressed: () => Navigator.of(context).pop(),
         ),
       ),
       body: SafeArea(
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
         child: AnimatedBuilder(
           animation: authState,
           builder: (context, _) {
@@ -262,7 +156,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                         fontWeight: FontWeight.w700,
                         color: AppColors.textPrimaryLight,
                       ),
-=======
         child: Center(
           child: SingleChildScrollView(
             padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
@@ -285,13 +178,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     style: TextStyle(
                       fontSize: 13,
                       color: AppColors.textSecondaryLight,
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
                     ),
-=======
-<<<<<<< HEAD
-=======
->>>>>>> origin/web
-=======
     return Scaffold(
       backgroundColor: AppColors.backgroundLight,
       appBar: AppBar(
@@ -300,7 +187,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
         elevation: 0,
       ),
       body: SafeArea(
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
         child: SingleChildScrollView(
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
           child: Form(
@@ -322,11 +208,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   style: TextStyle(
                     fontSize: 14,
                     color: AppColors.textSecondaryLight,
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
                   ),
                   const SizedBox(height: 20),
 
-<<<<<<< HEAD
                   // Role Picker Segment
                   Container(
                     decoration: BoxDecoration(
@@ -483,7 +367,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ),
                 ],
               ),
-=======
                 if (_localError != null || widget.authState.errorMessage != null)
                   ErrorCard(
                     message: _localError ?? widget.authState.errorMessage!,
@@ -562,7 +445,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   isLoading: _isLoading,
                   icon: Icons.person_add_alt_1_rounded,
                 ),
-<<<<<<< HEAD
                 const SizedBox(height: 20),
 
                 // Back to Login link
@@ -571,10 +453,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   children: [
                     const Text(
                       'Already registered? ',
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
-=======
         child: AnimatedBuilder(
           animation: authState,
           builder: (context, _) {
@@ -596,16 +474,11 @@ class _RegisterScreenState extends State<RegisterScreen> {
                     const SizedBox(height: 4),
                     const Text(
                       'Register for unified campus access and resources',
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
                       style: TextStyle(
                         fontSize: 14,
                         color: AppColors.textSecondaryLight,
                       ),
                     ),
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                     GestureDetector(
                       onTap: () {
                         widget.authState.clearError();
@@ -626,8 +499,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
               ],
             ),
           ),
-=======
->>>>>>> origin/web
                     const SizedBox(height: 20),
 
                     // Error Notification Banner
@@ -788,8 +659,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
               ),
             );
           },
-<<<<<<< HEAD
-=======
                     GestureDetector(
                       onTap: () {
                         widget.authState.clearError();
@@ -807,19 +676,9 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   ],
                 ),
                 const SizedBox(height: 16),
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
               ],
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
             ),
           ),
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
         ),
       ),
     );

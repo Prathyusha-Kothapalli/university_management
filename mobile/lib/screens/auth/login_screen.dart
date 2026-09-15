@@ -1,48 +1,20 @@
 import 'package:flutter/material.dart';
 import '../../core/constants/app_constants.dart';
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 import '../../core/constants/route_constants.dart';
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
 import '../../core/constants/route_constants.dart';
-=======
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
 import '../../core/constants/route_constants.dart';
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 import '../../core/theme/app_colors.dart';
 import '../../core/utils/validators.dart';
 import '../../state/auth_state.dart';
 import '../../widgets/custom_button.dart';
 import '../../widgets/custom_text_field.dart';
 import '../../widgets/error_card.dart';
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
-=======
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 import '../home/home_screen.dart';
 import 'register_screen.dart';
 
 /// Complete, responsive Login Screen.
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 class LoginScreen extends StatefulWidget {
   final AuthState authState;
 
@@ -57,16 +29,8 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   final _formKey = GlobalKey<FormState>();
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
-=======
-=======
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   late final TextEditingController _emailController;
   late final TextEditingController _passwordController;
   bool _rememberMe = false;
@@ -80,21 +44,10 @@ class _LoginScreenState extends State<LoginScreen> {
     );
     _passwordController = TextEditingController();
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
-=======
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
-=======
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
   @override
   void dispose() {
@@ -103,10 +56,6 @@ class _LoginScreenState extends State<LoginScreen> {
     super.dispose();
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   void _fillQuickDemo(String role) {
     setState(() {
       if (role == 'student') {
@@ -121,14 +70,10 @@ class _LoginScreenState extends State<LoginScreen> {
     widget.authState.clearError();
   }
 
-=======
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   Future<void> _handleLogin() async {
     widget.authState.clearError();
     if (!_formKey.currentState!.validate()) return;
 
-<<<<<<< HEAD
     FocusScope.of(context).unfocus();
 
     final success = await widget.authState.login(
@@ -142,7 +87,6 @@ class _LoginScreenState extends State<LoginScreen> {
       Navigator.of(context).pushNamedAndRemoveUntil(
         RouteConstants.home,
         (route) => false,
-=======
     final success = await widget.authState.login(
       _emailController.text.trim(),
       _passwordController.text,
@@ -153,10 +97,6 @@ class _LoginScreenState extends State<LoginScreen> {
         MaterialPageRoute(
           builder: (_) => HomeScreen(authState: widget.authState),
         ),
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/web
   void _fillDemoCredentials() {
     setState(() {
       _emailController.text = AppConstants.demoEmail;
@@ -186,10 +126,6 @@ class _LoginScreenState extends State<LoginScreen> {
       Navigator.of(context).pushNamedAndRemoveUntil(
         RouteConstants.home,
         (route) => false,
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
-=======
   Future<void> _handleLogin() async {
     widget.authState.clearError();
     if (!_formKey.currentState!.validate()) return;
@@ -204,30 +140,16 @@ class _LoginScreenState extends State<LoginScreen> {
         MaterialPageRoute(
           builder: (_) => HomeScreen(authState: widget.authState),
         ),
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
       );
     }
   }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   @override
   Widget build(BuildContext context) {
     final isLoading = widget.authState.isLoading;
     final errorMessage = widget.authState.errorMessage;
-=======
->>>>>>> origin/web
-=======
   @override
   Widget build(BuildContext context) {
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
   void _fillQuickDemo(String role) {
     setState(() {
       if (role == 'student') {
@@ -243,29 +165,14 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     final authState = widget.authState;
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
   @override
   Widget build(BuildContext context) {
     final isLoading = widget.authState.isLoading;
     final errorMessage = widget.authState.errorMessage;
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
 
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
     return Scaffold(
       backgroundColor: AppColors.backgroundLight,
       body: SafeArea(
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
         child: AnimatedBuilder(
           animation: widget.authState,
           builder: (context, _) {
@@ -317,10 +224,6 @@ class _LoginScreenState extends State<LoginScreen> {
                       const Text(
                         'Sign in to access your student or faculty portal',
                         textAlign: TextAlign.center,
-<<<<<<< HEAD
-=======
-=======
->>>>>>> origin/web
         child: Center(
           child: SingleChildScrollView(
             padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 20),
@@ -540,10 +443,6 @@ class _LoginScreenState extends State<LoginScreen> {
                     children: [
                       const Text(
                         "Don't have an account? ",
-<<<<<<< HEAD
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
-=======
         child: AnimatedBuilder(
           animation: authState,
           builder: (context, _) {
@@ -597,19 +496,11 @@ class _LoginScreenState extends State<LoginScreen> {
                       const Text(
                         'Sign in to access your student or faculty portal',
                         textAlign: TextAlign.center,
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
                         style: TextStyle(
                           fontSize: 14,
                           color: AppColors.textSecondaryLight,
                         ),
                       ),
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                       GestureDetector(
                         onTap: () {
                           widget.authState.clearError();
@@ -630,11 +521,6 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
           ),
-=======
->>>>>>> origin/web
-=======
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
                       const SizedBox(height: 28),
 
                       // Error Alert Banner
@@ -676,7 +562,6 @@ class _LoginScreenState extends State<LoginScreen> {
                         isLoading: authState.isLoading,
                         icon: Icons.login_rounded,
                       ),
->>>>>>> 7121f436592fb7bf0e48800a4e83cf8d44066dc9
                       const SizedBox(height: 20),
 
                       // Quick Demo Autofill Helper Card
@@ -863,9 +748,6 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             );
           },
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
                       GestureDetector(
                         onTap: () {
                           widget.authState.clearError();
@@ -886,12 +768,6 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
             ),
           ),
->>>>>>> 6a60e1207df8248e24833e44ec6880a1db598bfd
-=======
->>>>>>> 29907a7 (added flutter)
->>>>>>> origin/web
-=======
->>>>>>> 629409c69cda5a877356a91a0a657f327d20f689
         ),
       ),
     );

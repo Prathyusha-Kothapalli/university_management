@@ -57,12 +57,10 @@ void main() async {
 class UniSphereApp extends StatelessWidget {
   final AuthState authState;
   final ProfileState profileState;
-  final ProfileState profileState;
 
   const UniSphereApp({
     super.key,
     required this.authState,
-    required this.profileState,
     required this.profileState,
   });
 

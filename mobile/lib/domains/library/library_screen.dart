@@ -13,7 +13,7 @@ class _LibraryMainScreenState extends State<LibraryMainScreen> {
     return Scaffold(
       appBar: AppBar(title: const Text("Library & Digital Repositories"), backgroundColor: Colors.indigo),
       body: ListView.builder(
-        itemCount: 50,
+        itemCount: 75,
         padding: const EdgeInsets.all(16),
         itemBuilder: (context, index) {
           return Card(

@@ -1804,3 +1804,453 @@ def test_health_entity_200_schema_validation():
     assert obj.entity_code == "TEST_HEALTH_200"
     assert obj.value_amount == 200 * 100.5
 
+def test_health_entity_201_schema_validation():
+    obj = HealthSchemaEntity201Create(
+        entity_code="TEST_HEALTH_201",
+        name="Test Entity 201",
+        value_amount=201 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_201"
+    assert obj.value_amount == 201 * 100.5
+
+def test_health_entity_202_schema_validation():
+    obj = HealthSchemaEntity202Create(
+        entity_code="TEST_HEALTH_202",
+        name="Test Entity 202",
+        value_amount=202 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_202"
+    assert obj.value_amount == 202 * 100.5
+
+def test_health_entity_203_schema_validation():
+    obj = HealthSchemaEntity203Create(
+        entity_code="TEST_HEALTH_203",
+        name="Test Entity 203",
+        value_amount=203 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_203"
+    assert obj.value_amount == 203 * 100.5
+
+def test_health_entity_204_schema_validation():
+    obj = HealthSchemaEntity204Create(
+        entity_code="TEST_HEALTH_204",
+        name="Test Entity 204",
+        value_amount=204 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_204"
+    assert obj.value_amount == 204 * 100.5
+
+def test_health_entity_205_schema_validation():
+    obj = HealthSchemaEntity205Create(
+        entity_code="TEST_HEALTH_205",
+        name="Test Entity 205",
+        value_amount=205 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_205"
+    assert obj.value_amount == 205 * 100.5
+
+def test_health_entity_206_schema_validation():
+    obj = HealthSchemaEntity206Create(
+        entity_code="TEST_HEALTH_206",
+        name="Test Entity 206",
+        value_amount=206 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_206"
+    assert obj.value_amount == 206 * 100.5
+
+def test_health_entity_207_schema_validation():
+    obj = HealthSchemaEntity207Create(
+        entity_code="TEST_HEALTH_207",
+        name="Test Entity 207",
+        value_amount=207 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_207"
+    assert obj.value_amount == 207 * 100.5
+
+def test_health_entity_208_schema_validation():
+    obj = HealthSchemaEntity208Create(
+        entity_code="TEST_HEALTH_208",
+        name="Test Entity 208",
+        value_amount=208 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_208"
+    assert obj.value_amount == 208 * 100.5
+
+def test_health_entity_209_schema_validation():
+    obj = HealthSchemaEntity209Create(
+        entity_code="TEST_HEALTH_209",
+        name="Test Entity 209",
+        value_amount=209 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_209"
+    assert obj.value_amount == 209 * 100.5
+
+def test_health_entity_210_schema_validation():
+    obj = HealthSchemaEntity210Create(
+        entity_code="TEST_HEALTH_210",
+        name="Test Entity 210",
+        value_amount=210 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_210"
+    assert obj.value_amount == 210 * 100.5
+
+def test_health_entity_211_schema_validation():
+    obj = HealthSchemaEntity211Create(
+        entity_code="TEST_HEALTH_211",
+        name="Test Entity 211",
+        value_amount=211 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_211"
+    assert obj.value_amount == 211 * 100.5
+
+def test_health_entity_212_schema_validation():
+    obj = HealthSchemaEntity212Create(
+        entity_code="TEST_HEALTH_212",
+        name="Test Entity 212",
+        value_amount=212 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_212"
+    assert obj.value_amount == 212 * 100.5
+
+def test_health_entity_213_schema_validation():
+    obj = HealthSchemaEntity213Create(
+        entity_code="TEST_HEALTH_213",
+        name="Test Entity 213",
+        value_amount=213 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_213"
+    assert obj.value_amount == 213 * 100.5
+
+def test_health_entity_214_schema_validation():
+    obj = HealthSchemaEntity214Create(
+        entity_code="TEST_HEALTH_214",
+        name="Test Entity 214",
+        value_amount=214 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_214"
+    assert obj.value_amount == 214 * 100.5
+
+def test_health_entity_215_schema_validation():
+    obj = HealthSchemaEntity215Create(
+        entity_code="TEST_HEALTH_215",
+        name="Test Entity 215",
+        value_amount=215 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_215"
+    assert obj.value_amount == 215 * 100.5
+
+def test_health_entity_216_schema_validation():
+    obj = HealthSchemaEntity216Create(
+        entity_code="TEST_HEALTH_216",
+        name="Test Entity 216",
+        value_amount=216 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_216"
+    assert obj.value_amount == 216 * 100.5
+
+def test_health_entity_217_schema_validation():
+    obj = HealthSchemaEntity217Create(
+        entity_code="TEST_HEALTH_217",
+        name="Test Entity 217",
+        value_amount=217 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_217"
+    assert obj.value_amount == 217 * 100.5
+
+def test_health_entity_218_schema_validation():
+    obj = HealthSchemaEntity218Create(
+        entity_code="TEST_HEALTH_218",
+        name="Test Entity 218",
+        value_amount=218 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_218"
+    assert obj.value_amount == 218 * 100.5
+
+def test_health_entity_219_schema_validation():
+    obj = HealthSchemaEntity219Create(
+        entity_code="TEST_HEALTH_219",
+        name="Test Entity 219",
+        value_amount=219 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_219"
+    assert obj.value_amount == 219 * 100.5
+
+def test_health_entity_220_schema_validation():
+    obj = HealthSchemaEntity220Create(
+        entity_code="TEST_HEALTH_220",
+        name="Test Entity 220",
+        value_amount=220 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_220"
+    assert obj.value_amount == 220 * 100.5
+
+def test_health_entity_221_schema_validation():
+    obj = HealthSchemaEntity221Create(
+        entity_code="TEST_HEALTH_221",
+        name="Test Entity 221",
+        value_amount=221 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_221"
+    assert obj.value_amount == 221 * 100.5
+
+def test_health_entity_222_schema_validation():
+    obj = HealthSchemaEntity222Create(
+        entity_code="TEST_HEALTH_222",
+        name="Test Entity 222",
+        value_amount=222 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_222"
+    assert obj.value_amount == 222 * 100.5
+
+def test_health_entity_223_schema_validation():
+    obj = HealthSchemaEntity223Create(
+        entity_code="TEST_HEALTH_223",
+        name="Test Entity 223",
+        value_amount=223 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_223"
+    assert obj.value_amount == 223 * 100.5
+
+def test_health_entity_224_schema_validation():
+    obj = HealthSchemaEntity224Create(
+        entity_code="TEST_HEALTH_224",
+        name="Test Entity 224",
+        value_amount=224 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_224"
+    assert obj.value_amount == 224 * 100.5
+
+def test_health_entity_225_schema_validation():
+    obj = HealthSchemaEntity225Create(
+        entity_code="TEST_HEALTH_225",
+        name="Test Entity 225",
+        value_amount=225 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_225"
+    assert obj.value_amount == 225 * 100.5
+
+def test_health_entity_226_schema_validation():
+    obj = HealthSchemaEntity226Create(
+        entity_code="TEST_HEALTH_226",
+        name="Test Entity 226",
+        value_amount=226 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_226"
+    assert obj.value_amount == 226 * 100.5
+
+def test_health_entity_227_schema_validation():
+    obj = HealthSchemaEntity227Create(
+        entity_code="TEST_HEALTH_227",
+        name="Test Entity 227",
+        value_amount=227 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_227"
+    assert obj.value_amount == 227 * 100.5
+
+def test_health_entity_228_schema_validation():
+    obj = HealthSchemaEntity228Create(
+        entity_code="TEST_HEALTH_228",
+        name="Test Entity 228",
+        value_amount=228 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_228"
+    assert obj.value_amount == 228 * 100.5
+
+def test_health_entity_229_schema_validation():
+    obj = HealthSchemaEntity229Create(
+        entity_code="TEST_HEALTH_229",
+        name="Test Entity 229",
+        value_amount=229 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_229"
+    assert obj.value_amount == 229 * 100.5
+
+def test_health_entity_230_schema_validation():
+    obj = HealthSchemaEntity230Create(
+        entity_code="TEST_HEALTH_230",
+        name="Test Entity 230",
+        value_amount=230 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_230"
+    assert obj.value_amount == 230 * 100.5
+
+def test_health_entity_231_schema_validation():
+    obj = HealthSchemaEntity231Create(
+        entity_code="TEST_HEALTH_231",
+        name="Test Entity 231",
+        value_amount=231 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_231"
+    assert obj.value_amount == 231 * 100.5
+
+def test_health_entity_232_schema_validation():
+    obj = HealthSchemaEntity232Create(
+        entity_code="TEST_HEALTH_232",
+        name="Test Entity 232",
+        value_amount=232 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_232"
+    assert obj.value_amount == 232 * 100.5
+
+def test_health_entity_233_schema_validation():
+    obj = HealthSchemaEntity233Create(
+        entity_code="TEST_HEALTH_233",
+        name="Test Entity 233",
+        value_amount=233 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_233"
+    assert obj.value_amount == 233 * 100.5
+
+def test_health_entity_234_schema_validation():
+    obj = HealthSchemaEntity234Create(
+        entity_code="TEST_HEALTH_234",
+        name="Test Entity 234",
+        value_amount=234 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_234"
+    assert obj.value_amount == 234 * 100.5
+
+def test_health_entity_235_schema_validation():
+    obj = HealthSchemaEntity235Create(
+        entity_code="TEST_HEALTH_235",
+        name="Test Entity 235",
+        value_amount=235 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_235"
+    assert obj.value_amount == 235 * 100.5
+
+def test_health_entity_236_schema_validation():
+    obj = HealthSchemaEntity236Create(
+        entity_code="TEST_HEALTH_236",
+        name="Test Entity 236",
+        value_amount=236 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_236"
+    assert obj.value_amount == 236 * 100.5
+
+def test_health_entity_237_schema_validation():
+    obj = HealthSchemaEntity237Create(
+        entity_code="TEST_HEALTH_237",
+        name="Test Entity 237",
+        value_amount=237 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_237"
+    assert obj.value_amount == 237 * 100.5
+
+def test_health_entity_238_schema_validation():
+    obj = HealthSchemaEntity238Create(
+        entity_code="TEST_HEALTH_238",
+        name="Test Entity 238",
+        value_amount=238 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_238"
+    assert obj.value_amount == 238 * 100.5
+
+def test_health_entity_239_schema_validation():
+    obj = HealthSchemaEntity239Create(
+        entity_code="TEST_HEALTH_239",
+        name="Test Entity 239",
+        value_amount=239 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_239"
+    assert obj.value_amount == 239 * 100.5
+
+def test_health_entity_240_schema_validation():
+    obj = HealthSchemaEntity240Create(
+        entity_code="TEST_HEALTH_240",
+        name="Test Entity 240",
+        value_amount=240 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_240"
+    assert obj.value_amount == 240 * 100.5
+
+def test_health_entity_241_schema_validation():
+    obj = HealthSchemaEntity241Create(
+        entity_code="TEST_HEALTH_241",
+        name="Test Entity 241",
+        value_amount=241 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_241"
+    assert obj.value_amount == 241 * 100.5
+
+def test_health_entity_242_schema_validation():
+    obj = HealthSchemaEntity242Create(
+        entity_code="TEST_HEALTH_242",
+        name="Test Entity 242",
+        value_amount=242 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_242"
+    assert obj.value_amount == 242 * 100.5
+
+def test_health_entity_243_schema_validation():
+    obj = HealthSchemaEntity243Create(
+        entity_code="TEST_HEALTH_243",
+        name="Test Entity 243",
+        value_amount=243 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_243"
+    assert obj.value_amount == 243 * 100.5
+
+def test_health_entity_244_schema_validation():
+    obj = HealthSchemaEntity244Create(
+        entity_code="TEST_HEALTH_244",
+        name="Test Entity 244",
+        value_amount=244 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_244"
+    assert obj.value_amount == 244 * 100.5
+
+def test_health_entity_245_schema_validation():
+    obj = HealthSchemaEntity245Create(
+        entity_code="TEST_HEALTH_245",
+        name="Test Entity 245",
+        value_amount=245 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_245"
+    assert obj.value_amount == 245 * 100.5
+
+def test_health_entity_246_schema_validation():
+    obj = HealthSchemaEntity246Create(
+        entity_code="TEST_HEALTH_246",
+        name="Test Entity 246",
+        value_amount=246 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_246"
+    assert obj.value_amount == 246 * 100.5
+
+def test_health_entity_247_schema_validation():
+    obj = HealthSchemaEntity247Create(
+        entity_code="TEST_HEALTH_247",
+        name="Test Entity 247",
+        value_amount=247 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_247"
+    assert obj.value_amount == 247 * 100.5
+
+def test_health_entity_248_schema_validation():
+    obj = HealthSchemaEntity248Create(
+        entity_code="TEST_HEALTH_248",
+        name="Test Entity 248",
+        value_amount=248 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_248"
+    assert obj.value_amount == 248 * 100.5
+
+def test_health_entity_249_schema_validation():
+    obj = HealthSchemaEntity249Create(
+        entity_code="TEST_HEALTH_249",
+        name="Test Entity 249",
+        value_amount=249 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_249"
+    assert obj.value_amount == 249 * 100.5
+
+def test_health_entity_250_schema_validation():
+    obj = HealthSchemaEntity250Create(
+        entity_code="TEST_HEALTH_250",
+        name="Test Entity 250",
+        value_amount=250 * 100.5
+    )
+    assert obj.entity_code == "TEST_HEALTH_250"
+    assert obj.value_amount == 250 * 100.5
+

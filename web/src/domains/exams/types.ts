@@ -2302,3 +2302,1153 @@ export interface IExamsItem100Payload {
   is_active?: boolean;
 }
 
+export interface IExamsItem101 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem101Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem102 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem102Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem103 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem103Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem104 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem104Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem105 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem105Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem106 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem106Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem107 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem107Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem108 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem108Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem109 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem109Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem110 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem110Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem111 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem111Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem112 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem112Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem113 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem113Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem114 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem114Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem115 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem115Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem116 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem116Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem117 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem117Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem118 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem118Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem119 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem119Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem120 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem120Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem121 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem121Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem122 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem122Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem123 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem123Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem124 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem124Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem125 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem125Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem126 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem126Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem127 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem127Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem128 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem128Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem129 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem129Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem130 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem130Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem131 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem131Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem132 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem132Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem133 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem133Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem134 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem134Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem135 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem135Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem136 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem136Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem137 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem137Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem138 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem138Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem139 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem139Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem140 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem140Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem141 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem141Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem142 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem142Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem143 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem143Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem144 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem144Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem145 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem145Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem146 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem146Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem147 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem147Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem148 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem148Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem149 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem149Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IExamsItem150 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IExamsItem150Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+

@@ -750,3 +750,753 @@ export const HealthFormModal30: React.FC<{ isOpen: boolean; onClose: () => void 
   );
 };
 
+export const HealthFormModal31: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #31</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal32: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #32</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal33: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #33</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal34: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #34</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal35: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #35</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal36: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #36</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal37: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #37</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal38: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #38</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal39: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #39</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal40: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #40</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal41: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #41</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal42: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #42</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal43: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #43</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal44: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #44</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal45: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #45</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal46: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #46</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal47: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #47</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal48: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #48</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal49: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #49</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal50: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #50</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal51: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #51</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal52: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #52</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal53: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #53</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal54: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #54</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal55: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #55</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal56: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #56</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal57: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #57</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal58: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #58</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal59: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #59</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HealthFormModal60: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Campus Health & Clinic Management Form #60</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+

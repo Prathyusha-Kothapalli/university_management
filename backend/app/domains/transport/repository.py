@@ -506,3 +506,703 @@ class TransportRepository50:
     def find_by_code(self, code: str) -> Optional[TransportModelEntity50]:
         return self.db.query(TransportModelEntity50).filter(TransportModelEntity50.entity_code == code).first()
 
+class TransportRepository51:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity51]:
+        return self.db.query(TransportModelEntity51).filter(TransportModelEntity51.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity51]:
+        return self.db.query(TransportModelEntity51).filter(TransportModelEntity51.entity_code == code).first()
+
+class TransportRepository52:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity52]:
+        return self.db.query(TransportModelEntity52).filter(TransportModelEntity52.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity52]:
+        return self.db.query(TransportModelEntity52).filter(TransportModelEntity52.entity_code == code).first()
+
+class TransportRepository53:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity53]:
+        return self.db.query(TransportModelEntity53).filter(TransportModelEntity53.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity53]:
+        return self.db.query(TransportModelEntity53).filter(TransportModelEntity53.entity_code == code).first()
+
+class TransportRepository54:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity54]:
+        return self.db.query(TransportModelEntity54).filter(TransportModelEntity54.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity54]:
+        return self.db.query(TransportModelEntity54).filter(TransportModelEntity54.entity_code == code).first()
+
+class TransportRepository55:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity55]:
+        return self.db.query(TransportModelEntity55).filter(TransportModelEntity55.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity55]:
+        return self.db.query(TransportModelEntity55).filter(TransportModelEntity55.entity_code == code).first()
+
+class TransportRepository56:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity56]:
+        return self.db.query(TransportModelEntity56).filter(TransportModelEntity56.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity56]:
+        return self.db.query(TransportModelEntity56).filter(TransportModelEntity56.entity_code == code).first()
+
+class TransportRepository57:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity57]:
+        return self.db.query(TransportModelEntity57).filter(TransportModelEntity57.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity57]:
+        return self.db.query(TransportModelEntity57).filter(TransportModelEntity57.entity_code == code).first()
+
+class TransportRepository58:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity58]:
+        return self.db.query(TransportModelEntity58).filter(TransportModelEntity58.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity58]:
+        return self.db.query(TransportModelEntity58).filter(TransportModelEntity58.entity_code == code).first()
+
+class TransportRepository59:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity59]:
+        return self.db.query(TransportModelEntity59).filter(TransportModelEntity59.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity59]:
+        return self.db.query(TransportModelEntity59).filter(TransportModelEntity59.entity_code == code).first()
+
+class TransportRepository60:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity60]:
+        return self.db.query(TransportModelEntity60).filter(TransportModelEntity60.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity60]:
+        return self.db.query(TransportModelEntity60).filter(TransportModelEntity60.entity_code == code).first()
+
+class TransportRepository61:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity61]:
+        return self.db.query(TransportModelEntity61).filter(TransportModelEntity61.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity61]:
+        return self.db.query(TransportModelEntity61).filter(TransportModelEntity61.entity_code == code).first()
+
+class TransportRepository62:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity62]:
+        return self.db.query(TransportModelEntity62).filter(TransportModelEntity62.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity62]:
+        return self.db.query(TransportModelEntity62).filter(TransportModelEntity62.entity_code == code).first()
+
+class TransportRepository63:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity63]:
+        return self.db.query(TransportModelEntity63).filter(TransportModelEntity63.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity63]:
+        return self.db.query(TransportModelEntity63).filter(TransportModelEntity63.entity_code == code).first()
+
+class TransportRepository64:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity64]:
+        return self.db.query(TransportModelEntity64).filter(TransportModelEntity64.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity64]:
+        return self.db.query(TransportModelEntity64).filter(TransportModelEntity64.entity_code == code).first()
+
+class TransportRepository65:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity65]:
+        return self.db.query(TransportModelEntity65).filter(TransportModelEntity65.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity65]:
+        return self.db.query(TransportModelEntity65).filter(TransportModelEntity65.entity_code == code).first()
+
+class TransportRepository66:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity66]:
+        return self.db.query(TransportModelEntity66).filter(TransportModelEntity66.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity66]:
+        return self.db.query(TransportModelEntity66).filter(TransportModelEntity66.entity_code == code).first()
+
+class TransportRepository67:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity67]:
+        return self.db.query(TransportModelEntity67).filter(TransportModelEntity67.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity67]:
+        return self.db.query(TransportModelEntity67).filter(TransportModelEntity67.entity_code == code).first()
+
+class TransportRepository68:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity68]:
+        return self.db.query(TransportModelEntity68).filter(TransportModelEntity68.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity68]:
+        return self.db.query(TransportModelEntity68).filter(TransportModelEntity68.entity_code == code).first()
+
+class TransportRepository69:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity69]:
+        return self.db.query(TransportModelEntity69).filter(TransportModelEntity69.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity69]:
+        return self.db.query(TransportModelEntity69).filter(TransportModelEntity69.entity_code == code).first()
+
+class TransportRepository70:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity70]:
+        return self.db.query(TransportModelEntity70).filter(TransportModelEntity70.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity70]:
+        return self.db.query(TransportModelEntity70).filter(TransportModelEntity70.entity_code == code).first()
+
+class TransportRepository71:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity71]:
+        return self.db.query(TransportModelEntity71).filter(TransportModelEntity71.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity71]:
+        return self.db.query(TransportModelEntity71).filter(TransportModelEntity71.entity_code == code).first()
+
+class TransportRepository72:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity72]:
+        return self.db.query(TransportModelEntity72).filter(TransportModelEntity72.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity72]:
+        return self.db.query(TransportModelEntity72).filter(TransportModelEntity72.entity_code == code).first()
+
+class TransportRepository73:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity73]:
+        return self.db.query(TransportModelEntity73).filter(TransportModelEntity73.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity73]:
+        return self.db.query(TransportModelEntity73).filter(TransportModelEntity73.entity_code == code).first()
+
+class TransportRepository74:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity74]:
+        return self.db.query(TransportModelEntity74).filter(TransportModelEntity74.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity74]:
+        return self.db.query(TransportModelEntity74).filter(TransportModelEntity74.entity_code == code).first()
+
+class TransportRepository75:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity75]:
+        return self.db.query(TransportModelEntity75).filter(TransportModelEntity75.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity75]:
+        return self.db.query(TransportModelEntity75).filter(TransportModelEntity75.entity_code == code).first()
+
+class TransportRepository76:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity76]:
+        return self.db.query(TransportModelEntity76).filter(TransportModelEntity76.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity76]:
+        return self.db.query(TransportModelEntity76).filter(TransportModelEntity76.entity_code == code).first()
+
+class TransportRepository77:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity77]:
+        return self.db.query(TransportModelEntity77).filter(TransportModelEntity77.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity77]:
+        return self.db.query(TransportModelEntity77).filter(TransportModelEntity77.entity_code == code).first()
+
+class TransportRepository78:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity78]:
+        return self.db.query(TransportModelEntity78).filter(TransportModelEntity78.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity78]:
+        return self.db.query(TransportModelEntity78).filter(TransportModelEntity78.entity_code == code).first()
+
+class TransportRepository79:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity79]:
+        return self.db.query(TransportModelEntity79).filter(TransportModelEntity79.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity79]:
+        return self.db.query(TransportModelEntity79).filter(TransportModelEntity79.entity_code == code).first()
+
+class TransportRepository80:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity80]:
+        return self.db.query(TransportModelEntity80).filter(TransportModelEntity80.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity80]:
+        return self.db.query(TransportModelEntity80).filter(TransportModelEntity80.entity_code == code).first()
+
+class TransportRepository81:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity81]:
+        return self.db.query(TransportModelEntity81).filter(TransportModelEntity81.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity81]:
+        return self.db.query(TransportModelEntity81).filter(TransportModelEntity81.entity_code == code).first()
+
+class TransportRepository82:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity82]:
+        return self.db.query(TransportModelEntity82).filter(TransportModelEntity82.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity82]:
+        return self.db.query(TransportModelEntity82).filter(TransportModelEntity82.entity_code == code).first()
+
+class TransportRepository83:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity83]:
+        return self.db.query(TransportModelEntity83).filter(TransportModelEntity83.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity83]:
+        return self.db.query(TransportModelEntity83).filter(TransportModelEntity83.entity_code == code).first()
+
+class TransportRepository84:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity84]:
+        return self.db.query(TransportModelEntity84).filter(TransportModelEntity84.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity84]:
+        return self.db.query(TransportModelEntity84).filter(TransportModelEntity84.entity_code == code).first()
+
+class TransportRepository85:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity85]:
+        return self.db.query(TransportModelEntity85).filter(TransportModelEntity85.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity85]:
+        return self.db.query(TransportModelEntity85).filter(TransportModelEntity85.entity_code == code).first()
+
+class TransportRepository86:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity86]:
+        return self.db.query(TransportModelEntity86).filter(TransportModelEntity86.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity86]:
+        return self.db.query(TransportModelEntity86).filter(TransportModelEntity86.entity_code == code).first()
+
+class TransportRepository87:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity87]:
+        return self.db.query(TransportModelEntity87).filter(TransportModelEntity87.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity87]:
+        return self.db.query(TransportModelEntity87).filter(TransportModelEntity87.entity_code == code).first()
+
+class TransportRepository88:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity88]:
+        return self.db.query(TransportModelEntity88).filter(TransportModelEntity88.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity88]:
+        return self.db.query(TransportModelEntity88).filter(TransportModelEntity88.entity_code == code).first()
+
+class TransportRepository89:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity89]:
+        return self.db.query(TransportModelEntity89).filter(TransportModelEntity89.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity89]:
+        return self.db.query(TransportModelEntity89).filter(TransportModelEntity89.entity_code == code).first()
+
+class TransportRepository90:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity90]:
+        return self.db.query(TransportModelEntity90).filter(TransportModelEntity90.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity90]:
+        return self.db.query(TransportModelEntity90).filter(TransportModelEntity90.entity_code == code).first()
+
+class TransportRepository91:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity91]:
+        return self.db.query(TransportModelEntity91).filter(TransportModelEntity91.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity91]:
+        return self.db.query(TransportModelEntity91).filter(TransportModelEntity91.entity_code == code).first()
+
+class TransportRepository92:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity92]:
+        return self.db.query(TransportModelEntity92).filter(TransportModelEntity92.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity92]:
+        return self.db.query(TransportModelEntity92).filter(TransportModelEntity92.entity_code == code).first()
+
+class TransportRepository93:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity93]:
+        return self.db.query(TransportModelEntity93).filter(TransportModelEntity93.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity93]:
+        return self.db.query(TransportModelEntity93).filter(TransportModelEntity93.entity_code == code).first()
+
+class TransportRepository94:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity94]:
+        return self.db.query(TransportModelEntity94).filter(TransportModelEntity94.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity94]:
+        return self.db.query(TransportModelEntity94).filter(TransportModelEntity94.entity_code == code).first()
+
+class TransportRepository95:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity95]:
+        return self.db.query(TransportModelEntity95).filter(TransportModelEntity95.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity95]:
+        return self.db.query(TransportModelEntity95).filter(TransportModelEntity95.entity_code == code).first()
+
+class TransportRepository96:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity96]:
+        return self.db.query(TransportModelEntity96).filter(TransportModelEntity96.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity96]:
+        return self.db.query(TransportModelEntity96).filter(TransportModelEntity96.entity_code == code).first()
+
+class TransportRepository97:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity97]:
+        return self.db.query(TransportModelEntity97).filter(TransportModelEntity97.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity97]:
+        return self.db.query(TransportModelEntity97).filter(TransportModelEntity97.entity_code == code).first()
+
+class TransportRepository98:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity98]:
+        return self.db.query(TransportModelEntity98).filter(TransportModelEntity98.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity98]:
+        return self.db.query(TransportModelEntity98).filter(TransportModelEntity98.entity_code == code).first()
+
+class TransportRepository99:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity99]:
+        return self.db.query(TransportModelEntity99).filter(TransportModelEntity99.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity99]:
+        return self.db.query(TransportModelEntity99).filter(TransportModelEntity99.entity_code == code).first()
+
+class TransportRepository100:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity100]:
+        return self.db.query(TransportModelEntity100).filter(TransportModelEntity100.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity100]:
+        return self.db.query(TransportModelEntity100).filter(TransportModelEntity100.entity_code == code).first()
+
+class TransportRepository101:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity101]:
+        return self.db.query(TransportModelEntity101).filter(TransportModelEntity101.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity101]:
+        return self.db.query(TransportModelEntity101).filter(TransportModelEntity101.entity_code == code).first()
+
+class TransportRepository102:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity102]:
+        return self.db.query(TransportModelEntity102).filter(TransportModelEntity102.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity102]:
+        return self.db.query(TransportModelEntity102).filter(TransportModelEntity102.entity_code == code).first()
+
+class TransportRepository103:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity103]:
+        return self.db.query(TransportModelEntity103).filter(TransportModelEntity103.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity103]:
+        return self.db.query(TransportModelEntity103).filter(TransportModelEntity103.entity_code == code).first()
+
+class TransportRepository104:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity104]:
+        return self.db.query(TransportModelEntity104).filter(TransportModelEntity104.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity104]:
+        return self.db.query(TransportModelEntity104).filter(TransportModelEntity104.entity_code == code).first()
+
+class TransportRepository105:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity105]:
+        return self.db.query(TransportModelEntity105).filter(TransportModelEntity105.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity105]:
+        return self.db.query(TransportModelEntity105).filter(TransportModelEntity105.entity_code == code).first()
+
+class TransportRepository106:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity106]:
+        return self.db.query(TransportModelEntity106).filter(TransportModelEntity106.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity106]:
+        return self.db.query(TransportModelEntity106).filter(TransportModelEntity106.entity_code == code).first()
+
+class TransportRepository107:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity107]:
+        return self.db.query(TransportModelEntity107).filter(TransportModelEntity107.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity107]:
+        return self.db.query(TransportModelEntity107).filter(TransportModelEntity107.entity_code == code).first()
+
+class TransportRepository108:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity108]:
+        return self.db.query(TransportModelEntity108).filter(TransportModelEntity108.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity108]:
+        return self.db.query(TransportModelEntity108).filter(TransportModelEntity108.entity_code == code).first()
+
+class TransportRepository109:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity109]:
+        return self.db.query(TransportModelEntity109).filter(TransportModelEntity109.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity109]:
+        return self.db.query(TransportModelEntity109).filter(TransportModelEntity109.entity_code == code).first()
+
+class TransportRepository110:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity110]:
+        return self.db.query(TransportModelEntity110).filter(TransportModelEntity110.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity110]:
+        return self.db.query(TransportModelEntity110).filter(TransportModelEntity110.entity_code == code).first()
+
+class TransportRepository111:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity111]:
+        return self.db.query(TransportModelEntity111).filter(TransportModelEntity111.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity111]:
+        return self.db.query(TransportModelEntity111).filter(TransportModelEntity111.entity_code == code).first()
+
+class TransportRepository112:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity112]:
+        return self.db.query(TransportModelEntity112).filter(TransportModelEntity112.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity112]:
+        return self.db.query(TransportModelEntity112).filter(TransportModelEntity112.entity_code == code).first()
+
+class TransportRepository113:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity113]:
+        return self.db.query(TransportModelEntity113).filter(TransportModelEntity113.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity113]:
+        return self.db.query(TransportModelEntity113).filter(TransportModelEntity113.entity_code == code).first()
+
+class TransportRepository114:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity114]:
+        return self.db.query(TransportModelEntity114).filter(TransportModelEntity114.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity114]:
+        return self.db.query(TransportModelEntity114).filter(TransportModelEntity114.entity_code == code).first()
+
+class TransportRepository115:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity115]:
+        return self.db.query(TransportModelEntity115).filter(TransportModelEntity115.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity115]:
+        return self.db.query(TransportModelEntity115).filter(TransportModelEntity115.entity_code == code).first()
+
+class TransportRepository116:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity116]:
+        return self.db.query(TransportModelEntity116).filter(TransportModelEntity116.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity116]:
+        return self.db.query(TransportModelEntity116).filter(TransportModelEntity116.entity_code == code).first()
+
+class TransportRepository117:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity117]:
+        return self.db.query(TransportModelEntity117).filter(TransportModelEntity117.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity117]:
+        return self.db.query(TransportModelEntity117).filter(TransportModelEntity117.entity_code == code).first()
+
+class TransportRepository118:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity118]:
+        return self.db.query(TransportModelEntity118).filter(TransportModelEntity118.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity118]:
+        return self.db.query(TransportModelEntity118).filter(TransportModelEntity118.entity_code == code).first()
+
+class TransportRepository119:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity119]:
+        return self.db.query(TransportModelEntity119).filter(TransportModelEntity119.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity119]:
+        return self.db.query(TransportModelEntity119).filter(TransportModelEntity119.entity_code == code).first()
+
+class TransportRepository120:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[TransportModelEntity120]:
+        return self.db.query(TransportModelEntity120).filter(TransportModelEntity120.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[TransportModelEntity120]:
+        return self.db.query(TransportModelEntity120).filter(TransportModelEntity120.entity_code == code).first()
+

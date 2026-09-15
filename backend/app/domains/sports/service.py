@@ -2011,3 +2011,2803 @@ class SportsDomainService:
         self.db.commit()
         return True
 
+    def get_entity_51_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity51]:
+        return self.db.query(SportsModelEntity51).offset(skip).limit(limit).all()
+
+    def get_entity_51_by_id(self, entity_id: int) -> Optional[SportsModelEntity51]:
+        return self.db.query(SportsModelEntity51).filter(SportsModelEntity51.id == entity_id).first()
+
+    def create_entity_51(self, payload: SportsSchemaEntity51Create) -> SportsModelEntity51:
+        db_obj = SportsModelEntity51(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_51(self, entity_id: int, payload: SportsSchemaEntity51Update) -> Optional[SportsModelEntity51]:
+        db_obj = self.get_entity_51_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_51(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_51_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_52_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity52]:
+        return self.db.query(SportsModelEntity52).offset(skip).limit(limit).all()
+
+    def get_entity_52_by_id(self, entity_id: int) -> Optional[SportsModelEntity52]:
+        return self.db.query(SportsModelEntity52).filter(SportsModelEntity52.id == entity_id).first()
+
+    def create_entity_52(self, payload: SportsSchemaEntity52Create) -> SportsModelEntity52:
+        db_obj = SportsModelEntity52(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_52(self, entity_id: int, payload: SportsSchemaEntity52Update) -> Optional[SportsModelEntity52]:
+        db_obj = self.get_entity_52_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_52(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_52_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_53_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity53]:
+        return self.db.query(SportsModelEntity53).offset(skip).limit(limit).all()
+
+    def get_entity_53_by_id(self, entity_id: int) -> Optional[SportsModelEntity53]:
+        return self.db.query(SportsModelEntity53).filter(SportsModelEntity53.id == entity_id).first()
+
+    def create_entity_53(self, payload: SportsSchemaEntity53Create) -> SportsModelEntity53:
+        db_obj = SportsModelEntity53(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_53(self, entity_id: int, payload: SportsSchemaEntity53Update) -> Optional[SportsModelEntity53]:
+        db_obj = self.get_entity_53_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_53(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_53_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_54_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity54]:
+        return self.db.query(SportsModelEntity54).offset(skip).limit(limit).all()
+
+    def get_entity_54_by_id(self, entity_id: int) -> Optional[SportsModelEntity54]:
+        return self.db.query(SportsModelEntity54).filter(SportsModelEntity54.id == entity_id).first()
+
+    def create_entity_54(self, payload: SportsSchemaEntity54Create) -> SportsModelEntity54:
+        db_obj = SportsModelEntity54(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_54(self, entity_id: int, payload: SportsSchemaEntity54Update) -> Optional[SportsModelEntity54]:
+        db_obj = self.get_entity_54_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_54(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_54_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_55_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity55]:
+        return self.db.query(SportsModelEntity55).offset(skip).limit(limit).all()
+
+    def get_entity_55_by_id(self, entity_id: int) -> Optional[SportsModelEntity55]:
+        return self.db.query(SportsModelEntity55).filter(SportsModelEntity55.id == entity_id).first()
+
+    def create_entity_55(self, payload: SportsSchemaEntity55Create) -> SportsModelEntity55:
+        db_obj = SportsModelEntity55(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_55(self, entity_id: int, payload: SportsSchemaEntity55Update) -> Optional[SportsModelEntity55]:
+        db_obj = self.get_entity_55_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_55(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_55_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_56_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity56]:
+        return self.db.query(SportsModelEntity56).offset(skip).limit(limit).all()
+
+    def get_entity_56_by_id(self, entity_id: int) -> Optional[SportsModelEntity56]:
+        return self.db.query(SportsModelEntity56).filter(SportsModelEntity56.id == entity_id).first()
+
+    def create_entity_56(self, payload: SportsSchemaEntity56Create) -> SportsModelEntity56:
+        db_obj = SportsModelEntity56(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_56(self, entity_id: int, payload: SportsSchemaEntity56Update) -> Optional[SportsModelEntity56]:
+        db_obj = self.get_entity_56_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_56(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_56_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_57_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity57]:
+        return self.db.query(SportsModelEntity57).offset(skip).limit(limit).all()
+
+    def get_entity_57_by_id(self, entity_id: int) -> Optional[SportsModelEntity57]:
+        return self.db.query(SportsModelEntity57).filter(SportsModelEntity57.id == entity_id).first()
+
+    def create_entity_57(self, payload: SportsSchemaEntity57Create) -> SportsModelEntity57:
+        db_obj = SportsModelEntity57(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_57(self, entity_id: int, payload: SportsSchemaEntity57Update) -> Optional[SportsModelEntity57]:
+        db_obj = self.get_entity_57_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_57(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_57_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_58_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity58]:
+        return self.db.query(SportsModelEntity58).offset(skip).limit(limit).all()
+
+    def get_entity_58_by_id(self, entity_id: int) -> Optional[SportsModelEntity58]:
+        return self.db.query(SportsModelEntity58).filter(SportsModelEntity58.id == entity_id).first()
+
+    def create_entity_58(self, payload: SportsSchemaEntity58Create) -> SportsModelEntity58:
+        db_obj = SportsModelEntity58(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_58(self, entity_id: int, payload: SportsSchemaEntity58Update) -> Optional[SportsModelEntity58]:
+        db_obj = self.get_entity_58_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_58(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_58_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_59_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity59]:
+        return self.db.query(SportsModelEntity59).offset(skip).limit(limit).all()
+
+    def get_entity_59_by_id(self, entity_id: int) -> Optional[SportsModelEntity59]:
+        return self.db.query(SportsModelEntity59).filter(SportsModelEntity59.id == entity_id).first()
+
+    def create_entity_59(self, payload: SportsSchemaEntity59Create) -> SportsModelEntity59:
+        db_obj = SportsModelEntity59(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_59(self, entity_id: int, payload: SportsSchemaEntity59Update) -> Optional[SportsModelEntity59]:
+        db_obj = self.get_entity_59_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_59(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_59_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_60_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity60]:
+        return self.db.query(SportsModelEntity60).offset(skip).limit(limit).all()
+
+    def get_entity_60_by_id(self, entity_id: int) -> Optional[SportsModelEntity60]:
+        return self.db.query(SportsModelEntity60).filter(SportsModelEntity60.id == entity_id).first()
+
+    def create_entity_60(self, payload: SportsSchemaEntity60Create) -> SportsModelEntity60:
+        db_obj = SportsModelEntity60(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_60(self, entity_id: int, payload: SportsSchemaEntity60Update) -> Optional[SportsModelEntity60]:
+        db_obj = self.get_entity_60_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_60(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_60_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_61_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity61]:
+        return self.db.query(SportsModelEntity61).offset(skip).limit(limit).all()
+
+    def get_entity_61_by_id(self, entity_id: int) -> Optional[SportsModelEntity61]:
+        return self.db.query(SportsModelEntity61).filter(SportsModelEntity61.id == entity_id).first()
+
+    def create_entity_61(self, payload: SportsSchemaEntity61Create) -> SportsModelEntity61:
+        db_obj = SportsModelEntity61(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_61(self, entity_id: int, payload: SportsSchemaEntity61Update) -> Optional[SportsModelEntity61]:
+        db_obj = self.get_entity_61_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_61(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_61_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_62_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity62]:
+        return self.db.query(SportsModelEntity62).offset(skip).limit(limit).all()
+
+    def get_entity_62_by_id(self, entity_id: int) -> Optional[SportsModelEntity62]:
+        return self.db.query(SportsModelEntity62).filter(SportsModelEntity62.id == entity_id).first()
+
+    def create_entity_62(self, payload: SportsSchemaEntity62Create) -> SportsModelEntity62:
+        db_obj = SportsModelEntity62(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_62(self, entity_id: int, payload: SportsSchemaEntity62Update) -> Optional[SportsModelEntity62]:
+        db_obj = self.get_entity_62_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_62(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_62_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_63_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity63]:
+        return self.db.query(SportsModelEntity63).offset(skip).limit(limit).all()
+
+    def get_entity_63_by_id(self, entity_id: int) -> Optional[SportsModelEntity63]:
+        return self.db.query(SportsModelEntity63).filter(SportsModelEntity63.id == entity_id).first()
+
+    def create_entity_63(self, payload: SportsSchemaEntity63Create) -> SportsModelEntity63:
+        db_obj = SportsModelEntity63(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_63(self, entity_id: int, payload: SportsSchemaEntity63Update) -> Optional[SportsModelEntity63]:
+        db_obj = self.get_entity_63_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_63(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_63_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_64_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity64]:
+        return self.db.query(SportsModelEntity64).offset(skip).limit(limit).all()
+
+    def get_entity_64_by_id(self, entity_id: int) -> Optional[SportsModelEntity64]:
+        return self.db.query(SportsModelEntity64).filter(SportsModelEntity64.id == entity_id).first()
+
+    def create_entity_64(self, payload: SportsSchemaEntity64Create) -> SportsModelEntity64:
+        db_obj = SportsModelEntity64(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_64(self, entity_id: int, payload: SportsSchemaEntity64Update) -> Optional[SportsModelEntity64]:
+        db_obj = self.get_entity_64_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_64(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_64_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_65_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity65]:
+        return self.db.query(SportsModelEntity65).offset(skip).limit(limit).all()
+
+    def get_entity_65_by_id(self, entity_id: int) -> Optional[SportsModelEntity65]:
+        return self.db.query(SportsModelEntity65).filter(SportsModelEntity65.id == entity_id).first()
+
+    def create_entity_65(self, payload: SportsSchemaEntity65Create) -> SportsModelEntity65:
+        db_obj = SportsModelEntity65(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_65(self, entity_id: int, payload: SportsSchemaEntity65Update) -> Optional[SportsModelEntity65]:
+        db_obj = self.get_entity_65_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_65(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_65_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_66_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity66]:
+        return self.db.query(SportsModelEntity66).offset(skip).limit(limit).all()
+
+    def get_entity_66_by_id(self, entity_id: int) -> Optional[SportsModelEntity66]:
+        return self.db.query(SportsModelEntity66).filter(SportsModelEntity66.id == entity_id).first()
+
+    def create_entity_66(self, payload: SportsSchemaEntity66Create) -> SportsModelEntity66:
+        db_obj = SportsModelEntity66(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_66(self, entity_id: int, payload: SportsSchemaEntity66Update) -> Optional[SportsModelEntity66]:
+        db_obj = self.get_entity_66_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_66(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_66_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_67_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity67]:
+        return self.db.query(SportsModelEntity67).offset(skip).limit(limit).all()
+
+    def get_entity_67_by_id(self, entity_id: int) -> Optional[SportsModelEntity67]:
+        return self.db.query(SportsModelEntity67).filter(SportsModelEntity67.id == entity_id).first()
+
+    def create_entity_67(self, payload: SportsSchemaEntity67Create) -> SportsModelEntity67:
+        db_obj = SportsModelEntity67(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_67(self, entity_id: int, payload: SportsSchemaEntity67Update) -> Optional[SportsModelEntity67]:
+        db_obj = self.get_entity_67_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_67(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_67_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_68_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity68]:
+        return self.db.query(SportsModelEntity68).offset(skip).limit(limit).all()
+
+    def get_entity_68_by_id(self, entity_id: int) -> Optional[SportsModelEntity68]:
+        return self.db.query(SportsModelEntity68).filter(SportsModelEntity68.id == entity_id).first()
+
+    def create_entity_68(self, payload: SportsSchemaEntity68Create) -> SportsModelEntity68:
+        db_obj = SportsModelEntity68(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_68(self, entity_id: int, payload: SportsSchemaEntity68Update) -> Optional[SportsModelEntity68]:
+        db_obj = self.get_entity_68_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_68(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_68_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_69_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity69]:
+        return self.db.query(SportsModelEntity69).offset(skip).limit(limit).all()
+
+    def get_entity_69_by_id(self, entity_id: int) -> Optional[SportsModelEntity69]:
+        return self.db.query(SportsModelEntity69).filter(SportsModelEntity69.id == entity_id).first()
+
+    def create_entity_69(self, payload: SportsSchemaEntity69Create) -> SportsModelEntity69:
+        db_obj = SportsModelEntity69(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_69(self, entity_id: int, payload: SportsSchemaEntity69Update) -> Optional[SportsModelEntity69]:
+        db_obj = self.get_entity_69_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_69(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_69_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_70_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity70]:
+        return self.db.query(SportsModelEntity70).offset(skip).limit(limit).all()
+
+    def get_entity_70_by_id(self, entity_id: int) -> Optional[SportsModelEntity70]:
+        return self.db.query(SportsModelEntity70).filter(SportsModelEntity70.id == entity_id).first()
+
+    def create_entity_70(self, payload: SportsSchemaEntity70Create) -> SportsModelEntity70:
+        db_obj = SportsModelEntity70(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_70(self, entity_id: int, payload: SportsSchemaEntity70Update) -> Optional[SportsModelEntity70]:
+        db_obj = self.get_entity_70_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_70(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_70_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_71_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity71]:
+        return self.db.query(SportsModelEntity71).offset(skip).limit(limit).all()
+
+    def get_entity_71_by_id(self, entity_id: int) -> Optional[SportsModelEntity71]:
+        return self.db.query(SportsModelEntity71).filter(SportsModelEntity71.id == entity_id).first()
+
+    def create_entity_71(self, payload: SportsSchemaEntity71Create) -> SportsModelEntity71:
+        db_obj = SportsModelEntity71(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_71(self, entity_id: int, payload: SportsSchemaEntity71Update) -> Optional[SportsModelEntity71]:
+        db_obj = self.get_entity_71_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_71(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_71_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_72_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity72]:
+        return self.db.query(SportsModelEntity72).offset(skip).limit(limit).all()
+
+    def get_entity_72_by_id(self, entity_id: int) -> Optional[SportsModelEntity72]:
+        return self.db.query(SportsModelEntity72).filter(SportsModelEntity72.id == entity_id).first()
+
+    def create_entity_72(self, payload: SportsSchemaEntity72Create) -> SportsModelEntity72:
+        db_obj = SportsModelEntity72(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_72(self, entity_id: int, payload: SportsSchemaEntity72Update) -> Optional[SportsModelEntity72]:
+        db_obj = self.get_entity_72_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_72(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_72_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_73_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity73]:
+        return self.db.query(SportsModelEntity73).offset(skip).limit(limit).all()
+
+    def get_entity_73_by_id(self, entity_id: int) -> Optional[SportsModelEntity73]:
+        return self.db.query(SportsModelEntity73).filter(SportsModelEntity73.id == entity_id).first()
+
+    def create_entity_73(self, payload: SportsSchemaEntity73Create) -> SportsModelEntity73:
+        db_obj = SportsModelEntity73(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_73(self, entity_id: int, payload: SportsSchemaEntity73Update) -> Optional[SportsModelEntity73]:
+        db_obj = self.get_entity_73_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_73(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_73_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_74_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity74]:
+        return self.db.query(SportsModelEntity74).offset(skip).limit(limit).all()
+
+    def get_entity_74_by_id(self, entity_id: int) -> Optional[SportsModelEntity74]:
+        return self.db.query(SportsModelEntity74).filter(SportsModelEntity74.id == entity_id).first()
+
+    def create_entity_74(self, payload: SportsSchemaEntity74Create) -> SportsModelEntity74:
+        db_obj = SportsModelEntity74(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_74(self, entity_id: int, payload: SportsSchemaEntity74Update) -> Optional[SportsModelEntity74]:
+        db_obj = self.get_entity_74_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_74(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_74_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_75_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity75]:
+        return self.db.query(SportsModelEntity75).offset(skip).limit(limit).all()
+
+    def get_entity_75_by_id(self, entity_id: int) -> Optional[SportsModelEntity75]:
+        return self.db.query(SportsModelEntity75).filter(SportsModelEntity75.id == entity_id).first()
+
+    def create_entity_75(self, payload: SportsSchemaEntity75Create) -> SportsModelEntity75:
+        db_obj = SportsModelEntity75(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_75(self, entity_id: int, payload: SportsSchemaEntity75Update) -> Optional[SportsModelEntity75]:
+        db_obj = self.get_entity_75_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_75(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_75_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_76_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity76]:
+        return self.db.query(SportsModelEntity76).offset(skip).limit(limit).all()
+
+    def get_entity_76_by_id(self, entity_id: int) -> Optional[SportsModelEntity76]:
+        return self.db.query(SportsModelEntity76).filter(SportsModelEntity76.id == entity_id).first()
+
+    def create_entity_76(self, payload: SportsSchemaEntity76Create) -> SportsModelEntity76:
+        db_obj = SportsModelEntity76(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_76(self, entity_id: int, payload: SportsSchemaEntity76Update) -> Optional[SportsModelEntity76]:
+        db_obj = self.get_entity_76_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_76(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_76_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_77_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity77]:
+        return self.db.query(SportsModelEntity77).offset(skip).limit(limit).all()
+
+    def get_entity_77_by_id(self, entity_id: int) -> Optional[SportsModelEntity77]:
+        return self.db.query(SportsModelEntity77).filter(SportsModelEntity77.id == entity_id).first()
+
+    def create_entity_77(self, payload: SportsSchemaEntity77Create) -> SportsModelEntity77:
+        db_obj = SportsModelEntity77(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_77(self, entity_id: int, payload: SportsSchemaEntity77Update) -> Optional[SportsModelEntity77]:
+        db_obj = self.get_entity_77_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_77(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_77_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_78_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity78]:
+        return self.db.query(SportsModelEntity78).offset(skip).limit(limit).all()
+
+    def get_entity_78_by_id(self, entity_id: int) -> Optional[SportsModelEntity78]:
+        return self.db.query(SportsModelEntity78).filter(SportsModelEntity78.id == entity_id).first()
+
+    def create_entity_78(self, payload: SportsSchemaEntity78Create) -> SportsModelEntity78:
+        db_obj = SportsModelEntity78(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_78(self, entity_id: int, payload: SportsSchemaEntity78Update) -> Optional[SportsModelEntity78]:
+        db_obj = self.get_entity_78_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_78(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_78_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_79_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity79]:
+        return self.db.query(SportsModelEntity79).offset(skip).limit(limit).all()
+
+    def get_entity_79_by_id(self, entity_id: int) -> Optional[SportsModelEntity79]:
+        return self.db.query(SportsModelEntity79).filter(SportsModelEntity79.id == entity_id).first()
+
+    def create_entity_79(self, payload: SportsSchemaEntity79Create) -> SportsModelEntity79:
+        db_obj = SportsModelEntity79(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_79(self, entity_id: int, payload: SportsSchemaEntity79Update) -> Optional[SportsModelEntity79]:
+        db_obj = self.get_entity_79_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_79(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_79_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_80_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity80]:
+        return self.db.query(SportsModelEntity80).offset(skip).limit(limit).all()
+
+    def get_entity_80_by_id(self, entity_id: int) -> Optional[SportsModelEntity80]:
+        return self.db.query(SportsModelEntity80).filter(SportsModelEntity80.id == entity_id).first()
+
+    def create_entity_80(self, payload: SportsSchemaEntity80Create) -> SportsModelEntity80:
+        db_obj = SportsModelEntity80(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_80(self, entity_id: int, payload: SportsSchemaEntity80Update) -> Optional[SportsModelEntity80]:
+        db_obj = self.get_entity_80_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_80(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_80_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_81_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity81]:
+        return self.db.query(SportsModelEntity81).offset(skip).limit(limit).all()
+
+    def get_entity_81_by_id(self, entity_id: int) -> Optional[SportsModelEntity81]:
+        return self.db.query(SportsModelEntity81).filter(SportsModelEntity81.id == entity_id).first()
+
+    def create_entity_81(self, payload: SportsSchemaEntity81Create) -> SportsModelEntity81:
+        db_obj = SportsModelEntity81(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_81(self, entity_id: int, payload: SportsSchemaEntity81Update) -> Optional[SportsModelEntity81]:
+        db_obj = self.get_entity_81_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_81(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_81_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_82_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity82]:
+        return self.db.query(SportsModelEntity82).offset(skip).limit(limit).all()
+
+    def get_entity_82_by_id(self, entity_id: int) -> Optional[SportsModelEntity82]:
+        return self.db.query(SportsModelEntity82).filter(SportsModelEntity82.id == entity_id).first()
+
+    def create_entity_82(self, payload: SportsSchemaEntity82Create) -> SportsModelEntity82:
+        db_obj = SportsModelEntity82(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_82(self, entity_id: int, payload: SportsSchemaEntity82Update) -> Optional[SportsModelEntity82]:
+        db_obj = self.get_entity_82_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_82(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_82_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_83_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity83]:
+        return self.db.query(SportsModelEntity83).offset(skip).limit(limit).all()
+
+    def get_entity_83_by_id(self, entity_id: int) -> Optional[SportsModelEntity83]:
+        return self.db.query(SportsModelEntity83).filter(SportsModelEntity83.id == entity_id).first()
+
+    def create_entity_83(self, payload: SportsSchemaEntity83Create) -> SportsModelEntity83:
+        db_obj = SportsModelEntity83(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_83(self, entity_id: int, payload: SportsSchemaEntity83Update) -> Optional[SportsModelEntity83]:
+        db_obj = self.get_entity_83_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_83(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_83_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_84_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity84]:
+        return self.db.query(SportsModelEntity84).offset(skip).limit(limit).all()
+
+    def get_entity_84_by_id(self, entity_id: int) -> Optional[SportsModelEntity84]:
+        return self.db.query(SportsModelEntity84).filter(SportsModelEntity84.id == entity_id).first()
+
+    def create_entity_84(self, payload: SportsSchemaEntity84Create) -> SportsModelEntity84:
+        db_obj = SportsModelEntity84(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_84(self, entity_id: int, payload: SportsSchemaEntity84Update) -> Optional[SportsModelEntity84]:
+        db_obj = self.get_entity_84_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_84(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_84_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_85_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity85]:
+        return self.db.query(SportsModelEntity85).offset(skip).limit(limit).all()
+
+    def get_entity_85_by_id(self, entity_id: int) -> Optional[SportsModelEntity85]:
+        return self.db.query(SportsModelEntity85).filter(SportsModelEntity85.id == entity_id).first()
+
+    def create_entity_85(self, payload: SportsSchemaEntity85Create) -> SportsModelEntity85:
+        db_obj = SportsModelEntity85(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_85(self, entity_id: int, payload: SportsSchemaEntity85Update) -> Optional[SportsModelEntity85]:
+        db_obj = self.get_entity_85_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_85(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_85_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_86_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity86]:
+        return self.db.query(SportsModelEntity86).offset(skip).limit(limit).all()
+
+    def get_entity_86_by_id(self, entity_id: int) -> Optional[SportsModelEntity86]:
+        return self.db.query(SportsModelEntity86).filter(SportsModelEntity86.id == entity_id).first()
+
+    def create_entity_86(self, payload: SportsSchemaEntity86Create) -> SportsModelEntity86:
+        db_obj = SportsModelEntity86(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_86(self, entity_id: int, payload: SportsSchemaEntity86Update) -> Optional[SportsModelEntity86]:
+        db_obj = self.get_entity_86_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_86(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_86_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_87_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity87]:
+        return self.db.query(SportsModelEntity87).offset(skip).limit(limit).all()
+
+    def get_entity_87_by_id(self, entity_id: int) -> Optional[SportsModelEntity87]:
+        return self.db.query(SportsModelEntity87).filter(SportsModelEntity87.id == entity_id).first()
+
+    def create_entity_87(self, payload: SportsSchemaEntity87Create) -> SportsModelEntity87:
+        db_obj = SportsModelEntity87(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_87(self, entity_id: int, payload: SportsSchemaEntity87Update) -> Optional[SportsModelEntity87]:
+        db_obj = self.get_entity_87_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_87(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_87_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_88_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity88]:
+        return self.db.query(SportsModelEntity88).offset(skip).limit(limit).all()
+
+    def get_entity_88_by_id(self, entity_id: int) -> Optional[SportsModelEntity88]:
+        return self.db.query(SportsModelEntity88).filter(SportsModelEntity88.id == entity_id).first()
+
+    def create_entity_88(self, payload: SportsSchemaEntity88Create) -> SportsModelEntity88:
+        db_obj = SportsModelEntity88(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_88(self, entity_id: int, payload: SportsSchemaEntity88Update) -> Optional[SportsModelEntity88]:
+        db_obj = self.get_entity_88_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_88(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_88_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_89_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity89]:
+        return self.db.query(SportsModelEntity89).offset(skip).limit(limit).all()
+
+    def get_entity_89_by_id(self, entity_id: int) -> Optional[SportsModelEntity89]:
+        return self.db.query(SportsModelEntity89).filter(SportsModelEntity89.id == entity_id).first()
+
+    def create_entity_89(self, payload: SportsSchemaEntity89Create) -> SportsModelEntity89:
+        db_obj = SportsModelEntity89(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_89(self, entity_id: int, payload: SportsSchemaEntity89Update) -> Optional[SportsModelEntity89]:
+        db_obj = self.get_entity_89_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_89(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_89_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_90_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity90]:
+        return self.db.query(SportsModelEntity90).offset(skip).limit(limit).all()
+
+    def get_entity_90_by_id(self, entity_id: int) -> Optional[SportsModelEntity90]:
+        return self.db.query(SportsModelEntity90).filter(SportsModelEntity90.id == entity_id).first()
+
+    def create_entity_90(self, payload: SportsSchemaEntity90Create) -> SportsModelEntity90:
+        db_obj = SportsModelEntity90(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_90(self, entity_id: int, payload: SportsSchemaEntity90Update) -> Optional[SportsModelEntity90]:
+        db_obj = self.get_entity_90_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_90(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_90_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_91_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity91]:
+        return self.db.query(SportsModelEntity91).offset(skip).limit(limit).all()
+
+    def get_entity_91_by_id(self, entity_id: int) -> Optional[SportsModelEntity91]:
+        return self.db.query(SportsModelEntity91).filter(SportsModelEntity91.id == entity_id).first()
+
+    def create_entity_91(self, payload: SportsSchemaEntity91Create) -> SportsModelEntity91:
+        db_obj = SportsModelEntity91(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_91(self, entity_id: int, payload: SportsSchemaEntity91Update) -> Optional[SportsModelEntity91]:
+        db_obj = self.get_entity_91_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_91(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_91_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_92_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity92]:
+        return self.db.query(SportsModelEntity92).offset(skip).limit(limit).all()
+
+    def get_entity_92_by_id(self, entity_id: int) -> Optional[SportsModelEntity92]:
+        return self.db.query(SportsModelEntity92).filter(SportsModelEntity92.id == entity_id).first()
+
+    def create_entity_92(self, payload: SportsSchemaEntity92Create) -> SportsModelEntity92:
+        db_obj = SportsModelEntity92(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_92(self, entity_id: int, payload: SportsSchemaEntity92Update) -> Optional[SportsModelEntity92]:
+        db_obj = self.get_entity_92_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_92(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_92_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_93_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity93]:
+        return self.db.query(SportsModelEntity93).offset(skip).limit(limit).all()
+
+    def get_entity_93_by_id(self, entity_id: int) -> Optional[SportsModelEntity93]:
+        return self.db.query(SportsModelEntity93).filter(SportsModelEntity93.id == entity_id).first()
+
+    def create_entity_93(self, payload: SportsSchemaEntity93Create) -> SportsModelEntity93:
+        db_obj = SportsModelEntity93(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_93(self, entity_id: int, payload: SportsSchemaEntity93Update) -> Optional[SportsModelEntity93]:
+        db_obj = self.get_entity_93_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_93(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_93_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_94_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity94]:
+        return self.db.query(SportsModelEntity94).offset(skip).limit(limit).all()
+
+    def get_entity_94_by_id(self, entity_id: int) -> Optional[SportsModelEntity94]:
+        return self.db.query(SportsModelEntity94).filter(SportsModelEntity94.id == entity_id).first()
+
+    def create_entity_94(self, payload: SportsSchemaEntity94Create) -> SportsModelEntity94:
+        db_obj = SportsModelEntity94(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_94(self, entity_id: int, payload: SportsSchemaEntity94Update) -> Optional[SportsModelEntity94]:
+        db_obj = self.get_entity_94_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_94(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_94_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_95_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity95]:
+        return self.db.query(SportsModelEntity95).offset(skip).limit(limit).all()
+
+    def get_entity_95_by_id(self, entity_id: int) -> Optional[SportsModelEntity95]:
+        return self.db.query(SportsModelEntity95).filter(SportsModelEntity95.id == entity_id).first()
+
+    def create_entity_95(self, payload: SportsSchemaEntity95Create) -> SportsModelEntity95:
+        db_obj = SportsModelEntity95(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_95(self, entity_id: int, payload: SportsSchemaEntity95Update) -> Optional[SportsModelEntity95]:
+        db_obj = self.get_entity_95_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_95(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_95_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_96_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity96]:
+        return self.db.query(SportsModelEntity96).offset(skip).limit(limit).all()
+
+    def get_entity_96_by_id(self, entity_id: int) -> Optional[SportsModelEntity96]:
+        return self.db.query(SportsModelEntity96).filter(SportsModelEntity96.id == entity_id).first()
+
+    def create_entity_96(self, payload: SportsSchemaEntity96Create) -> SportsModelEntity96:
+        db_obj = SportsModelEntity96(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_96(self, entity_id: int, payload: SportsSchemaEntity96Update) -> Optional[SportsModelEntity96]:
+        db_obj = self.get_entity_96_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_96(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_96_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_97_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity97]:
+        return self.db.query(SportsModelEntity97).offset(skip).limit(limit).all()
+
+    def get_entity_97_by_id(self, entity_id: int) -> Optional[SportsModelEntity97]:
+        return self.db.query(SportsModelEntity97).filter(SportsModelEntity97.id == entity_id).first()
+
+    def create_entity_97(self, payload: SportsSchemaEntity97Create) -> SportsModelEntity97:
+        db_obj = SportsModelEntity97(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_97(self, entity_id: int, payload: SportsSchemaEntity97Update) -> Optional[SportsModelEntity97]:
+        db_obj = self.get_entity_97_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_97(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_97_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_98_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity98]:
+        return self.db.query(SportsModelEntity98).offset(skip).limit(limit).all()
+
+    def get_entity_98_by_id(self, entity_id: int) -> Optional[SportsModelEntity98]:
+        return self.db.query(SportsModelEntity98).filter(SportsModelEntity98.id == entity_id).first()
+
+    def create_entity_98(self, payload: SportsSchemaEntity98Create) -> SportsModelEntity98:
+        db_obj = SportsModelEntity98(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_98(self, entity_id: int, payload: SportsSchemaEntity98Update) -> Optional[SportsModelEntity98]:
+        db_obj = self.get_entity_98_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_98(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_98_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_99_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity99]:
+        return self.db.query(SportsModelEntity99).offset(skip).limit(limit).all()
+
+    def get_entity_99_by_id(self, entity_id: int) -> Optional[SportsModelEntity99]:
+        return self.db.query(SportsModelEntity99).filter(SportsModelEntity99.id == entity_id).first()
+
+    def create_entity_99(self, payload: SportsSchemaEntity99Create) -> SportsModelEntity99:
+        db_obj = SportsModelEntity99(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_99(self, entity_id: int, payload: SportsSchemaEntity99Update) -> Optional[SportsModelEntity99]:
+        db_obj = self.get_entity_99_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_99(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_99_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_100_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity100]:
+        return self.db.query(SportsModelEntity100).offset(skip).limit(limit).all()
+
+    def get_entity_100_by_id(self, entity_id: int) -> Optional[SportsModelEntity100]:
+        return self.db.query(SportsModelEntity100).filter(SportsModelEntity100.id == entity_id).first()
+
+    def create_entity_100(self, payload: SportsSchemaEntity100Create) -> SportsModelEntity100:
+        db_obj = SportsModelEntity100(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_100(self, entity_id: int, payload: SportsSchemaEntity100Update) -> Optional[SportsModelEntity100]:
+        db_obj = self.get_entity_100_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_100(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_100_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_101_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity101]:
+        return self.db.query(SportsModelEntity101).offset(skip).limit(limit).all()
+
+    def get_entity_101_by_id(self, entity_id: int) -> Optional[SportsModelEntity101]:
+        return self.db.query(SportsModelEntity101).filter(SportsModelEntity101.id == entity_id).first()
+
+    def create_entity_101(self, payload: SportsSchemaEntity101Create) -> SportsModelEntity101:
+        db_obj = SportsModelEntity101(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_101(self, entity_id: int, payload: SportsSchemaEntity101Update) -> Optional[SportsModelEntity101]:
+        db_obj = self.get_entity_101_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_101(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_101_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_102_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity102]:
+        return self.db.query(SportsModelEntity102).offset(skip).limit(limit).all()
+
+    def get_entity_102_by_id(self, entity_id: int) -> Optional[SportsModelEntity102]:
+        return self.db.query(SportsModelEntity102).filter(SportsModelEntity102.id == entity_id).first()
+
+    def create_entity_102(self, payload: SportsSchemaEntity102Create) -> SportsModelEntity102:
+        db_obj = SportsModelEntity102(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_102(self, entity_id: int, payload: SportsSchemaEntity102Update) -> Optional[SportsModelEntity102]:
+        db_obj = self.get_entity_102_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_102(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_102_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_103_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity103]:
+        return self.db.query(SportsModelEntity103).offset(skip).limit(limit).all()
+
+    def get_entity_103_by_id(self, entity_id: int) -> Optional[SportsModelEntity103]:
+        return self.db.query(SportsModelEntity103).filter(SportsModelEntity103.id == entity_id).first()
+
+    def create_entity_103(self, payload: SportsSchemaEntity103Create) -> SportsModelEntity103:
+        db_obj = SportsModelEntity103(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_103(self, entity_id: int, payload: SportsSchemaEntity103Update) -> Optional[SportsModelEntity103]:
+        db_obj = self.get_entity_103_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_103(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_103_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_104_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity104]:
+        return self.db.query(SportsModelEntity104).offset(skip).limit(limit).all()
+
+    def get_entity_104_by_id(self, entity_id: int) -> Optional[SportsModelEntity104]:
+        return self.db.query(SportsModelEntity104).filter(SportsModelEntity104.id == entity_id).first()
+
+    def create_entity_104(self, payload: SportsSchemaEntity104Create) -> SportsModelEntity104:
+        db_obj = SportsModelEntity104(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_104(self, entity_id: int, payload: SportsSchemaEntity104Update) -> Optional[SportsModelEntity104]:
+        db_obj = self.get_entity_104_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_104(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_104_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_105_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity105]:
+        return self.db.query(SportsModelEntity105).offset(skip).limit(limit).all()
+
+    def get_entity_105_by_id(self, entity_id: int) -> Optional[SportsModelEntity105]:
+        return self.db.query(SportsModelEntity105).filter(SportsModelEntity105.id == entity_id).first()
+
+    def create_entity_105(self, payload: SportsSchemaEntity105Create) -> SportsModelEntity105:
+        db_obj = SportsModelEntity105(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_105(self, entity_id: int, payload: SportsSchemaEntity105Update) -> Optional[SportsModelEntity105]:
+        db_obj = self.get_entity_105_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_105(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_105_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_106_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity106]:
+        return self.db.query(SportsModelEntity106).offset(skip).limit(limit).all()
+
+    def get_entity_106_by_id(self, entity_id: int) -> Optional[SportsModelEntity106]:
+        return self.db.query(SportsModelEntity106).filter(SportsModelEntity106.id == entity_id).first()
+
+    def create_entity_106(self, payload: SportsSchemaEntity106Create) -> SportsModelEntity106:
+        db_obj = SportsModelEntity106(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_106(self, entity_id: int, payload: SportsSchemaEntity106Update) -> Optional[SportsModelEntity106]:
+        db_obj = self.get_entity_106_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_106(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_106_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_107_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity107]:
+        return self.db.query(SportsModelEntity107).offset(skip).limit(limit).all()
+
+    def get_entity_107_by_id(self, entity_id: int) -> Optional[SportsModelEntity107]:
+        return self.db.query(SportsModelEntity107).filter(SportsModelEntity107.id == entity_id).first()
+
+    def create_entity_107(self, payload: SportsSchemaEntity107Create) -> SportsModelEntity107:
+        db_obj = SportsModelEntity107(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_107(self, entity_id: int, payload: SportsSchemaEntity107Update) -> Optional[SportsModelEntity107]:
+        db_obj = self.get_entity_107_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_107(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_107_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_108_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity108]:
+        return self.db.query(SportsModelEntity108).offset(skip).limit(limit).all()
+
+    def get_entity_108_by_id(self, entity_id: int) -> Optional[SportsModelEntity108]:
+        return self.db.query(SportsModelEntity108).filter(SportsModelEntity108.id == entity_id).first()
+
+    def create_entity_108(self, payload: SportsSchemaEntity108Create) -> SportsModelEntity108:
+        db_obj = SportsModelEntity108(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_108(self, entity_id: int, payload: SportsSchemaEntity108Update) -> Optional[SportsModelEntity108]:
+        db_obj = self.get_entity_108_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_108(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_108_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_109_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity109]:
+        return self.db.query(SportsModelEntity109).offset(skip).limit(limit).all()
+
+    def get_entity_109_by_id(self, entity_id: int) -> Optional[SportsModelEntity109]:
+        return self.db.query(SportsModelEntity109).filter(SportsModelEntity109.id == entity_id).first()
+
+    def create_entity_109(self, payload: SportsSchemaEntity109Create) -> SportsModelEntity109:
+        db_obj = SportsModelEntity109(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_109(self, entity_id: int, payload: SportsSchemaEntity109Update) -> Optional[SportsModelEntity109]:
+        db_obj = self.get_entity_109_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_109(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_109_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_110_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity110]:
+        return self.db.query(SportsModelEntity110).offset(skip).limit(limit).all()
+
+    def get_entity_110_by_id(self, entity_id: int) -> Optional[SportsModelEntity110]:
+        return self.db.query(SportsModelEntity110).filter(SportsModelEntity110.id == entity_id).first()
+
+    def create_entity_110(self, payload: SportsSchemaEntity110Create) -> SportsModelEntity110:
+        db_obj = SportsModelEntity110(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_110(self, entity_id: int, payload: SportsSchemaEntity110Update) -> Optional[SportsModelEntity110]:
+        db_obj = self.get_entity_110_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_110(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_110_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_111_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity111]:
+        return self.db.query(SportsModelEntity111).offset(skip).limit(limit).all()
+
+    def get_entity_111_by_id(self, entity_id: int) -> Optional[SportsModelEntity111]:
+        return self.db.query(SportsModelEntity111).filter(SportsModelEntity111.id == entity_id).first()
+
+    def create_entity_111(self, payload: SportsSchemaEntity111Create) -> SportsModelEntity111:
+        db_obj = SportsModelEntity111(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_111(self, entity_id: int, payload: SportsSchemaEntity111Update) -> Optional[SportsModelEntity111]:
+        db_obj = self.get_entity_111_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_111(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_111_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_112_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity112]:
+        return self.db.query(SportsModelEntity112).offset(skip).limit(limit).all()
+
+    def get_entity_112_by_id(self, entity_id: int) -> Optional[SportsModelEntity112]:
+        return self.db.query(SportsModelEntity112).filter(SportsModelEntity112.id == entity_id).first()
+
+    def create_entity_112(self, payload: SportsSchemaEntity112Create) -> SportsModelEntity112:
+        db_obj = SportsModelEntity112(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_112(self, entity_id: int, payload: SportsSchemaEntity112Update) -> Optional[SportsModelEntity112]:
+        db_obj = self.get_entity_112_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_112(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_112_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_113_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity113]:
+        return self.db.query(SportsModelEntity113).offset(skip).limit(limit).all()
+
+    def get_entity_113_by_id(self, entity_id: int) -> Optional[SportsModelEntity113]:
+        return self.db.query(SportsModelEntity113).filter(SportsModelEntity113.id == entity_id).first()
+
+    def create_entity_113(self, payload: SportsSchemaEntity113Create) -> SportsModelEntity113:
+        db_obj = SportsModelEntity113(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_113(self, entity_id: int, payload: SportsSchemaEntity113Update) -> Optional[SportsModelEntity113]:
+        db_obj = self.get_entity_113_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_113(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_113_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_114_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity114]:
+        return self.db.query(SportsModelEntity114).offset(skip).limit(limit).all()
+
+    def get_entity_114_by_id(self, entity_id: int) -> Optional[SportsModelEntity114]:
+        return self.db.query(SportsModelEntity114).filter(SportsModelEntity114.id == entity_id).first()
+
+    def create_entity_114(self, payload: SportsSchemaEntity114Create) -> SportsModelEntity114:
+        db_obj = SportsModelEntity114(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_114(self, entity_id: int, payload: SportsSchemaEntity114Update) -> Optional[SportsModelEntity114]:
+        db_obj = self.get_entity_114_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_114(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_114_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_115_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity115]:
+        return self.db.query(SportsModelEntity115).offset(skip).limit(limit).all()
+
+    def get_entity_115_by_id(self, entity_id: int) -> Optional[SportsModelEntity115]:
+        return self.db.query(SportsModelEntity115).filter(SportsModelEntity115.id == entity_id).first()
+
+    def create_entity_115(self, payload: SportsSchemaEntity115Create) -> SportsModelEntity115:
+        db_obj = SportsModelEntity115(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_115(self, entity_id: int, payload: SportsSchemaEntity115Update) -> Optional[SportsModelEntity115]:
+        db_obj = self.get_entity_115_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_115(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_115_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_116_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity116]:
+        return self.db.query(SportsModelEntity116).offset(skip).limit(limit).all()
+
+    def get_entity_116_by_id(self, entity_id: int) -> Optional[SportsModelEntity116]:
+        return self.db.query(SportsModelEntity116).filter(SportsModelEntity116.id == entity_id).first()
+
+    def create_entity_116(self, payload: SportsSchemaEntity116Create) -> SportsModelEntity116:
+        db_obj = SportsModelEntity116(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_116(self, entity_id: int, payload: SportsSchemaEntity116Update) -> Optional[SportsModelEntity116]:
+        db_obj = self.get_entity_116_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_116(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_116_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_117_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity117]:
+        return self.db.query(SportsModelEntity117).offset(skip).limit(limit).all()
+
+    def get_entity_117_by_id(self, entity_id: int) -> Optional[SportsModelEntity117]:
+        return self.db.query(SportsModelEntity117).filter(SportsModelEntity117.id == entity_id).first()
+
+    def create_entity_117(self, payload: SportsSchemaEntity117Create) -> SportsModelEntity117:
+        db_obj = SportsModelEntity117(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_117(self, entity_id: int, payload: SportsSchemaEntity117Update) -> Optional[SportsModelEntity117]:
+        db_obj = self.get_entity_117_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_117(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_117_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_118_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity118]:
+        return self.db.query(SportsModelEntity118).offset(skip).limit(limit).all()
+
+    def get_entity_118_by_id(self, entity_id: int) -> Optional[SportsModelEntity118]:
+        return self.db.query(SportsModelEntity118).filter(SportsModelEntity118.id == entity_id).first()
+
+    def create_entity_118(self, payload: SportsSchemaEntity118Create) -> SportsModelEntity118:
+        db_obj = SportsModelEntity118(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_118(self, entity_id: int, payload: SportsSchemaEntity118Update) -> Optional[SportsModelEntity118]:
+        db_obj = self.get_entity_118_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_118(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_118_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_119_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity119]:
+        return self.db.query(SportsModelEntity119).offset(skip).limit(limit).all()
+
+    def get_entity_119_by_id(self, entity_id: int) -> Optional[SportsModelEntity119]:
+        return self.db.query(SportsModelEntity119).filter(SportsModelEntity119.id == entity_id).first()
+
+    def create_entity_119(self, payload: SportsSchemaEntity119Create) -> SportsModelEntity119:
+        db_obj = SportsModelEntity119(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_119(self, entity_id: int, payload: SportsSchemaEntity119Update) -> Optional[SportsModelEntity119]:
+        db_obj = self.get_entity_119_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_119(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_119_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_120_list(self, skip: int = 0, limit: int = 100) -> List[SportsModelEntity120]:
+        return self.db.query(SportsModelEntity120).offset(skip).limit(limit).all()
+
+    def get_entity_120_by_id(self, entity_id: int) -> Optional[SportsModelEntity120]:
+        return self.db.query(SportsModelEntity120).filter(SportsModelEntity120.id == entity_id).first()
+
+    def create_entity_120(self, payload: SportsSchemaEntity120Create) -> SportsModelEntity120:
+        db_obj = SportsModelEntity120(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_120(self, entity_id: int, payload: SportsSchemaEntity120Update) -> Optional[SportsModelEntity120]:
+        db_obj = self.get_entity_120_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_120(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_120_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+

@@ -1456,3 +1456,2033 @@ class PlacementsSchemaEntity50Response(PlacementsSchemaEntity50Base):
 
     model_config = ConfigDict(from_attributes=True)
 
+class PlacementsSchemaEntity51Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 51")
+    category: str = Field(default="Category_51", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=51 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity51Create(PlacementsSchemaEntity51Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity51Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity51Response(PlacementsSchemaEntity51Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity52Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 52")
+    category: str = Field(default="Category_52", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=52 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity52Create(PlacementsSchemaEntity52Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity52Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity52Response(PlacementsSchemaEntity52Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity53Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 53")
+    category: str = Field(default="Category_53", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=53 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity53Create(PlacementsSchemaEntity53Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity53Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity53Response(PlacementsSchemaEntity53Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity54Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 54")
+    category: str = Field(default="Category_54", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=54 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity54Create(PlacementsSchemaEntity54Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity54Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity54Response(PlacementsSchemaEntity54Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity55Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 55")
+    category: str = Field(default="Category_55", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=55 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity55Create(PlacementsSchemaEntity55Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity55Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity55Response(PlacementsSchemaEntity55Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity56Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 56")
+    category: str = Field(default="Category_56", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=56 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity56Create(PlacementsSchemaEntity56Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity56Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity56Response(PlacementsSchemaEntity56Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity57Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 57")
+    category: str = Field(default="Category_57", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=57 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity57Create(PlacementsSchemaEntity57Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity57Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity57Response(PlacementsSchemaEntity57Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity58Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 58")
+    category: str = Field(default="Category_58", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=58 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity58Create(PlacementsSchemaEntity58Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity58Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity58Response(PlacementsSchemaEntity58Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity59Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 59")
+    category: str = Field(default="Category_59", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=59 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity59Create(PlacementsSchemaEntity59Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity59Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity59Response(PlacementsSchemaEntity59Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity60Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 60")
+    category: str = Field(default="Category_60", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=60 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity60Create(PlacementsSchemaEntity60Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity60Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity60Response(PlacementsSchemaEntity60Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity61Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 61")
+    category: str = Field(default="Category_61", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=61 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity61Create(PlacementsSchemaEntity61Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity61Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity61Response(PlacementsSchemaEntity61Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity62Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 62")
+    category: str = Field(default="Category_62", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=62 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity62Create(PlacementsSchemaEntity62Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity62Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity62Response(PlacementsSchemaEntity62Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity63Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 63")
+    category: str = Field(default="Category_63", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=63 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity63Create(PlacementsSchemaEntity63Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity63Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity63Response(PlacementsSchemaEntity63Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity64Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 64")
+    category: str = Field(default="Category_64", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=64 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity64Create(PlacementsSchemaEntity64Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity64Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity64Response(PlacementsSchemaEntity64Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity65Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 65")
+    category: str = Field(default="Category_65", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=65 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity65Create(PlacementsSchemaEntity65Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity65Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity65Response(PlacementsSchemaEntity65Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity66Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 66")
+    category: str = Field(default="Category_66", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=66 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity66Create(PlacementsSchemaEntity66Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity66Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity66Response(PlacementsSchemaEntity66Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity67Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 67")
+    category: str = Field(default="Category_67", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=67 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity67Create(PlacementsSchemaEntity67Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity67Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity67Response(PlacementsSchemaEntity67Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity68Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 68")
+    category: str = Field(default="Category_68", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=68 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity68Create(PlacementsSchemaEntity68Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity68Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity68Response(PlacementsSchemaEntity68Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity69Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 69")
+    category: str = Field(default="Category_69", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=69 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity69Create(PlacementsSchemaEntity69Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity69Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity69Response(PlacementsSchemaEntity69Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity70Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 70")
+    category: str = Field(default="Category_70", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=70 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity70Create(PlacementsSchemaEntity70Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity70Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity70Response(PlacementsSchemaEntity70Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity71Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 71")
+    category: str = Field(default="Category_71", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=71 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity71Create(PlacementsSchemaEntity71Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity71Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity71Response(PlacementsSchemaEntity71Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity72Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 72")
+    category: str = Field(default="Category_72", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=72 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity72Create(PlacementsSchemaEntity72Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity72Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity72Response(PlacementsSchemaEntity72Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity73Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 73")
+    category: str = Field(default="Category_73", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=73 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity73Create(PlacementsSchemaEntity73Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity73Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity73Response(PlacementsSchemaEntity73Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity74Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 74")
+    category: str = Field(default="Category_74", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=74 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity74Create(PlacementsSchemaEntity74Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity74Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity74Response(PlacementsSchemaEntity74Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity75Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 75")
+    category: str = Field(default="Category_75", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=75 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity75Create(PlacementsSchemaEntity75Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity75Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity75Response(PlacementsSchemaEntity75Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity76Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 76")
+    category: str = Field(default="Category_76", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=76 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity76Create(PlacementsSchemaEntity76Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity76Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity76Response(PlacementsSchemaEntity76Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity77Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 77")
+    category: str = Field(default="Category_77", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=77 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity77Create(PlacementsSchemaEntity77Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity77Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity77Response(PlacementsSchemaEntity77Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity78Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 78")
+    category: str = Field(default="Category_78", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=78 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity78Create(PlacementsSchemaEntity78Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity78Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity78Response(PlacementsSchemaEntity78Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity79Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 79")
+    category: str = Field(default="Category_79", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=79 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity79Create(PlacementsSchemaEntity79Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity79Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity79Response(PlacementsSchemaEntity79Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity80Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 80")
+    category: str = Field(default="Category_80", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=80 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity80Create(PlacementsSchemaEntity80Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity80Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity80Response(PlacementsSchemaEntity80Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity81Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 81")
+    category: str = Field(default="Category_81", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=81 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity81Create(PlacementsSchemaEntity81Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity81Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity81Response(PlacementsSchemaEntity81Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity82Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 82")
+    category: str = Field(default="Category_82", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=82 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity82Create(PlacementsSchemaEntity82Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity82Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity82Response(PlacementsSchemaEntity82Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity83Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 83")
+    category: str = Field(default="Category_83", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=83 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity83Create(PlacementsSchemaEntity83Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity83Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity83Response(PlacementsSchemaEntity83Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity84Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 84")
+    category: str = Field(default="Category_84", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=84 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity84Create(PlacementsSchemaEntity84Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity84Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity84Response(PlacementsSchemaEntity84Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity85Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 85")
+    category: str = Field(default="Category_85", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=85 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity85Create(PlacementsSchemaEntity85Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity85Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity85Response(PlacementsSchemaEntity85Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity86Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 86")
+    category: str = Field(default="Category_86", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=86 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity86Create(PlacementsSchemaEntity86Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity86Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity86Response(PlacementsSchemaEntity86Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity87Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 87")
+    category: str = Field(default="Category_87", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=87 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity87Create(PlacementsSchemaEntity87Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity87Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity87Response(PlacementsSchemaEntity87Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity88Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 88")
+    category: str = Field(default="Category_88", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=88 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity88Create(PlacementsSchemaEntity88Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity88Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity88Response(PlacementsSchemaEntity88Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity89Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 89")
+    category: str = Field(default="Category_89", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=89 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity89Create(PlacementsSchemaEntity89Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity89Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity89Response(PlacementsSchemaEntity89Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity90Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 90")
+    category: str = Field(default="Category_90", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=90 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity90Create(PlacementsSchemaEntity90Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity90Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity90Response(PlacementsSchemaEntity90Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity91Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 91")
+    category: str = Field(default="Category_91", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=91 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity91Create(PlacementsSchemaEntity91Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity91Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity91Response(PlacementsSchemaEntity91Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity92Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 92")
+    category: str = Field(default="Category_92", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=92 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity92Create(PlacementsSchemaEntity92Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity92Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity92Response(PlacementsSchemaEntity92Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity93Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 93")
+    category: str = Field(default="Category_93", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=93 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity93Create(PlacementsSchemaEntity93Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity93Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity93Response(PlacementsSchemaEntity93Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity94Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 94")
+    category: str = Field(default="Category_94", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=94 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity94Create(PlacementsSchemaEntity94Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity94Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity94Response(PlacementsSchemaEntity94Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity95Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 95")
+    category: str = Field(default="Category_95", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=95 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity95Create(PlacementsSchemaEntity95Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity95Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity95Response(PlacementsSchemaEntity95Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity96Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 96")
+    category: str = Field(default="Category_96", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=96 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity96Create(PlacementsSchemaEntity96Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity96Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity96Response(PlacementsSchemaEntity96Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity97Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 97")
+    category: str = Field(default="Category_97", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=97 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity97Create(PlacementsSchemaEntity97Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity97Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity97Response(PlacementsSchemaEntity97Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity98Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 98")
+    category: str = Field(default="Category_98", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=98 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity98Create(PlacementsSchemaEntity98Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity98Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity98Response(PlacementsSchemaEntity98Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity99Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 99")
+    category: str = Field(default="Category_99", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=99 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity99Create(PlacementsSchemaEntity99Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity99Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity99Response(PlacementsSchemaEntity99Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity100Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 100")
+    category: str = Field(default="Category_100", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=100 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity100Create(PlacementsSchemaEntity100Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity100Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity100Response(PlacementsSchemaEntity100Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity101Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 101")
+    category: str = Field(default="Category_101", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=101 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity101Create(PlacementsSchemaEntity101Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity101Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity101Response(PlacementsSchemaEntity101Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity102Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 102")
+    category: str = Field(default="Category_102", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=102 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity102Create(PlacementsSchemaEntity102Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity102Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity102Response(PlacementsSchemaEntity102Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity103Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 103")
+    category: str = Field(default="Category_103", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=103 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity103Create(PlacementsSchemaEntity103Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity103Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity103Response(PlacementsSchemaEntity103Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity104Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 104")
+    category: str = Field(default="Category_104", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=104 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity104Create(PlacementsSchemaEntity104Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity104Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity104Response(PlacementsSchemaEntity104Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity105Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 105")
+    category: str = Field(default="Category_105", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=105 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity105Create(PlacementsSchemaEntity105Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity105Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity105Response(PlacementsSchemaEntity105Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity106Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 106")
+    category: str = Field(default="Category_106", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=106 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity106Create(PlacementsSchemaEntity106Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity106Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity106Response(PlacementsSchemaEntity106Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity107Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 107")
+    category: str = Field(default="Category_107", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=107 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity107Create(PlacementsSchemaEntity107Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity107Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity107Response(PlacementsSchemaEntity107Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity108Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 108")
+    category: str = Field(default="Category_108", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=108 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity108Create(PlacementsSchemaEntity108Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity108Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity108Response(PlacementsSchemaEntity108Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity109Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 109")
+    category: str = Field(default="Category_109", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=109 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity109Create(PlacementsSchemaEntity109Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity109Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity109Response(PlacementsSchemaEntity109Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity110Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 110")
+    category: str = Field(default="Category_110", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=110 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity110Create(PlacementsSchemaEntity110Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity110Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity110Response(PlacementsSchemaEntity110Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity111Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 111")
+    category: str = Field(default="Category_111", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=111 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity111Create(PlacementsSchemaEntity111Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity111Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity111Response(PlacementsSchemaEntity111Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity112Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 112")
+    category: str = Field(default="Category_112", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=112 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity112Create(PlacementsSchemaEntity112Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity112Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity112Response(PlacementsSchemaEntity112Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity113Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 113")
+    category: str = Field(default="Category_113", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=113 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity113Create(PlacementsSchemaEntity113Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity113Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity113Response(PlacementsSchemaEntity113Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity114Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 114")
+    category: str = Field(default="Category_114", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=114 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity114Create(PlacementsSchemaEntity114Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity114Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity114Response(PlacementsSchemaEntity114Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity115Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 115")
+    category: str = Field(default="Category_115", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=115 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity115Create(PlacementsSchemaEntity115Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity115Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity115Response(PlacementsSchemaEntity115Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity116Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 116")
+    category: str = Field(default="Category_116", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=116 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity116Create(PlacementsSchemaEntity116Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity116Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity116Response(PlacementsSchemaEntity116Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity117Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 117")
+    category: str = Field(default="Category_117", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=117 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity117Create(PlacementsSchemaEntity117Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity117Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity117Response(PlacementsSchemaEntity117Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity118Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 118")
+    category: str = Field(default="Category_118", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=118 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity118Create(PlacementsSchemaEntity118Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity118Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity118Response(PlacementsSchemaEntity118Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity119Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 119")
+    category: str = Field(default="Category_119", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=119 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity119Create(PlacementsSchemaEntity119Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity119Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity119Response(PlacementsSchemaEntity119Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class PlacementsSchemaEntity120Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 120")
+    category: str = Field(default="Category_120", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=120 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class PlacementsSchemaEntity120Create(PlacementsSchemaEntity120Base):
+    entity_code: str = Field(..., max_length=100)
+
+class PlacementsSchemaEntity120Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class PlacementsSchemaEntity120Response(PlacementsSchemaEntity120Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+

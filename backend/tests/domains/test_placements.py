@@ -454,3 +454,633 @@ def test_placements_entity_50_schema_validation():
     assert obj.entity_code == "TEST_PLACEMENTS_50"
     assert obj.value_amount == 50 * 100.5
 
+def test_placements_entity_51_schema_validation():
+    obj = PlacementsSchemaEntity51Create(
+        entity_code="TEST_PLACEMENTS_51",
+        name="Test Entity 51",
+        value_amount=51 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_51"
+    assert obj.value_amount == 51 * 100.5
+
+def test_placements_entity_52_schema_validation():
+    obj = PlacementsSchemaEntity52Create(
+        entity_code="TEST_PLACEMENTS_52",
+        name="Test Entity 52",
+        value_amount=52 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_52"
+    assert obj.value_amount == 52 * 100.5
+
+def test_placements_entity_53_schema_validation():
+    obj = PlacementsSchemaEntity53Create(
+        entity_code="TEST_PLACEMENTS_53",
+        name="Test Entity 53",
+        value_amount=53 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_53"
+    assert obj.value_amount == 53 * 100.5
+
+def test_placements_entity_54_schema_validation():
+    obj = PlacementsSchemaEntity54Create(
+        entity_code="TEST_PLACEMENTS_54",
+        name="Test Entity 54",
+        value_amount=54 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_54"
+    assert obj.value_amount == 54 * 100.5
+
+def test_placements_entity_55_schema_validation():
+    obj = PlacementsSchemaEntity55Create(
+        entity_code="TEST_PLACEMENTS_55",
+        name="Test Entity 55",
+        value_amount=55 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_55"
+    assert obj.value_amount == 55 * 100.5
+
+def test_placements_entity_56_schema_validation():
+    obj = PlacementsSchemaEntity56Create(
+        entity_code="TEST_PLACEMENTS_56",
+        name="Test Entity 56",
+        value_amount=56 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_56"
+    assert obj.value_amount == 56 * 100.5
+
+def test_placements_entity_57_schema_validation():
+    obj = PlacementsSchemaEntity57Create(
+        entity_code="TEST_PLACEMENTS_57",
+        name="Test Entity 57",
+        value_amount=57 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_57"
+    assert obj.value_amount == 57 * 100.5
+
+def test_placements_entity_58_schema_validation():
+    obj = PlacementsSchemaEntity58Create(
+        entity_code="TEST_PLACEMENTS_58",
+        name="Test Entity 58",
+        value_amount=58 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_58"
+    assert obj.value_amount == 58 * 100.5
+
+def test_placements_entity_59_schema_validation():
+    obj = PlacementsSchemaEntity59Create(
+        entity_code="TEST_PLACEMENTS_59",
+        name="Test Entity 59",
+        value_amount=59 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_59"
+    assert obj.value_amount == 59 * 100.5
+
+def test_placements_entity_60_schema_validation():
+    obj = PlacementsSchemaEntity60Create(
+        entity_code="TEST_PLACEMENTS_60",
+        name="Test Entity 60",
+        value_amount=60 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_60"
+    assert obj.value_amount == 60 * 100.5
+
+def test_placements_entity_61_schema_validation():
+    obj = PlacementsSchemaEntity61Create(
+        entity_code="TEST_PLACEMENTS_61",
+        name="Test Entity 61",
+        value_amount=61 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_61"
+    assert obj.value_amount == 61 * 100.5
+
+def test_placements_entity_62_schema_validation():
+    obj = PlacementsSchemaEntity62Create(
+        entity_code="TEST_PLACEMENTS_62",
+        name="Test Entity 62",
+        value_amount=62 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_62"
+    assert obj.value_amount == 62 * 100.5
+
+def test_placements_entity_63_schema_validation():
+    obj = PlacementsSchemaEntity63Create(
+        entity_code="TEST_PLACEMENTS_63",
+        name="Test Entity 63",
+        value_amount=63 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_63"
+    assert obj.value_amount == 63 * 100.5
+
+def test_placements_entity_64_schema_validation():
+    obj = PlacementsSchemaEntity64Create(
+        entity_code="TEST_PLACEMENTS_64",
+        name="Test Entity 64",
+        value_amount=64 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_64"
+    assert obj.value_amount == 64 * 100.5
+
+def test_placements_entity_65_schema_validation():
+    obj = PlacementsSchemaEntity65Create(
+        entity_code="TEST_PLACEMENTS_65",
+        name="Test Entity 65",
+        value_amount=65 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_65"
+    assert obj.value_amount == 65 * 100.5
+
+def test_placements_entity_66_schema_validation():
+    obj = PlacementsSchemaEntity66Create(
+        entity_code="TEST_PLACEMENTS_66",
+        name="Test Entity 66",
+        value_amount=66 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_66"
+    assert obj.value_amount == 66 * 100.5
+
+def test_placements_entity_67_schema_validation():
+    obj = PlacementsSchemaEntity67Create(
+        entity_code="TEST_PLACEMENTS_67",
+        name="Test Entity 67",
+        value_amount=67 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_67"
+    assert obj.value_amount == 67 * 100.5
+
+def test_placements_entity_68_schema_validation():
+    obj = PlacementsSchemaEntity68Create(
+        entity_code="TEST_PLACEMENTS_68",
+        name="Test Entity 68",
+        value_amount=68 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_68"
+    assert obj.value_amount == 68 * 100.5
+
+def test_placements_entity_69_schema_validation():
+    obj = PlacementsSchemaEntity69Create(
+        entity_code="TEST_PLACEMENTS_69",
+        name="Test Entity 69",
+        value_amount=69 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_69"
+    assert obj.value_amount == 69 * 100.5
+
+def test_placements_entity_70_schema_validation():
+    obj = PlacementsSchemaEntity70Create(
+        entity_code="TEST_PLACEMENTS_70",
+        name="Test Entity 70",
+        value_amount=70 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_70"
+    assert obj.value_amount == 70 * 100.5
+
+def test_placements_entity_71_schema_validation():
+    obj = PlacementsSchemaEntity71Create(
+        entity_code="TEST_PLACEMENTS_71",
+        name="Test Entity 71",
+        value_amount=71 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_71"
+    assert obj.value_amount == 71 * 100.5
+
+def test_placements_entity_72_schema_validation():
+    obj = PlacementsSchemaEntity72Create(
+        entity_code="TEST_PLACEMENTS_72",
+        name="Test Entity 72",
+        value_amount=72 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_72"
+    assert obj.value_amount == 72 * 100.5
+
+def test_placements_entity_73_schema_validation():
+    obj = PlacementsSchemaEntity73Create(
+        entity_code="TEST_PLACEMENTS_73",
+        name="Test Entity 73",
+        value_amount=73 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_73"
+    assert obj.value_amount == 73 * 100.5
+
+def test_placements_entity_74_schema_validation():
+    obj = PlacementsSchemaEntity74Create(
+        entity_code="TEST_PLACEMENTS_74",
+        name="Test Entity 74",
+        value_amount=74 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_74"
+    assert obj.value_amount == 74 * 100.5
+
+def test_placements_entity_75_schema_validation():
+    obj = PlacementsSchemaEntity75Create(
+        entity_code="TEST_PLACEMENTS_75",
+        name="Test Entity 75",
+        value_amount=75 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_75"
+    assert obj.value_amount == 75 * 100.5
+
+def test_placements_entity_76_schema_validation():
+    obj = PlacementsSchemaEntity76Create(
+        entity_code="TEST_PLACEMENTS_76",
+        name="Test Entity 76",
+        value_amount=76 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_76"
+    assert obj.value_amount == 76 * 100.5
+
+def test_placements_entity_77_schema_validation():
+    obj = PlacementsSchemaEntity77Create(
+        entity_code="TEST_PLACEMENTS_77",
+        name="Test Entity 77",
+        value_amount=77 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_77"
+    assert obj.value_amount == 77 * 100.5
+
+def test_placements_entity_78_schema_validation():
+    obj = PlacementsSchemaEntity78Create(
+        entity_code="TEST_PLACEMENTS_78",
+        name="Test Entity 78",
+        value_amount=78 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_78"
+    assert obj.value_amount == 78 * 100.5
+
+def test_placements_entity_79_schema_validation():
+    obj = PlacementsSchemaEntity79Create(
+        entity_code="TEST_PLACEMENTS_79",
+        name="Test Entity 79",
+        value_amount=79 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_79"
+    assert obj.value_amount == 79 * 100.5
+
+def test_placements_entity_80_schema_validation():
+    obj = PlacementsSchemaEntity80Create(
+        entity_code="TEST_PLACEMENTS_80",
+        name="Test Entity 80",
+        value_amount=80 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_80"
+    assert obj.value_amount == 80 * 100.5
+
+def test_placements_entity_81_schema_validation():
+    obj = PlacementsSchemaEntity81Create(
+        entity_code="TEST_PLACEMENTS_81",
+        name="Test Entity 81",
+        value_amount=81 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_81"
+    assert obj.value_amount == 81 * 100.5
+
+def test_placements_entity_82_schema_validation():
+    obj = PlacementsSchemaEntity82Create(
+        entity_code="TEST_PLACEMENTS_82",
+        name="Test Entity 82",
+        value_amount=82 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_82"
+    assert obj.value_amount == 82 * 100.5
+
+def test_placements_entity_83_schema_validation():
+    obj = PlacementsSchemaEntity83Create(
+        entity_code="TEST_PLACEMENTS_83",
+        name="Test Entity 83",
+        value_amount=83 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_83"
+    assert obj.value_amount == 83 * 100.5
+
+def test_placements_entity_84_schema_validation():
+    obj = PlacementsSchemaEntity84Create(
+        entity_code="TEST_PLACEMENTS_84",
+        name="Test Entity 84",
+        value_amount=84 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_84"
+    assert obj.value_amount == 84 * 100.5
+
+def test_placements_entity_85_schema_validation():
+    obj = PlacementsSchemaEntity85Create(
+        entity_code="TEST_PLACEMENTS_85",
+        name="Test Entity 85",
+        value_amount=85 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_85"
+    assert obj.value_amount == 85 * 100.5
+
+def test_placements_entity_86_schema_validation():
+    obj = PlacementsSchemaEntity86Create(
+        entity_code="TEST_PLACEMENTS_86",
+        name="Test Entity 86",
+        value_amount=86 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_86"
+    assert obj.value_amount == 86 * 100.5
+
+def test_placements_entity_87_schema_validation():
+    obj = PlacementsSchemaEntity87Create(
+        entity_code="TEST_PLACEMENTS_87",
+        name="Test Entity 87",
+        value_amount=87 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_87"
+    assert obj.value_amount == 87 * 100.5
+
+def test_placements_entity_88_schema_validation():
+    obj = PlacementsSchemaEntity88Create(
+        entity_code="TEST_PLACEMENTS_88",
+        name="Test Entity 88",
+        value_amount=88 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_88"
+    assert obj.value_amount == 88 * 100.5
+
+def test_placements_entity_89_schema_validation():
+    obj = PlacementsSchemaEntity89Create(
+        entity_code="TEST_PLACEMENTS_89",
+        name="Test Entity 89",
+        value_amount=89 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_89"
+    assert obj.value_amount == 89 * 100.5
+
+def test_placements_entity_90_schema_validation():
+    obj = PlacementsSchemaEntity90Create(
+        entity_code="TEST_PLACEMENTS_90",
+        name="Test Entity 90",
+        value_amount=90 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_90"
+    assert obj.value_amount == 90 * 100.5
+
+def test_placements_entity_91_schema_validation():
+    obj = PlacementsSchemaEntity91Create(
+        entity_code="TEST_PLACEMENTS_91",
+        name="Test Entity 91",
+        value_amount=91 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_91"
+    assert obj.value_amount == 91 * 100.5
+
+def test_placements_entity_92_schema_validation():
+    obj = PlacementsSchemaEntity92Create(
+        entity_code="TEST_PLACEMENTS_92",
+        name="Test Entity 92",
+        value_amount=92 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_92"
+    assert obj.value_amount == 92 * 100.5
+
+def test_placements_entity_93_schema_validation():
+    obj = PlacementsSchemaEntity93Create(
+        entity_code="TEST_PLACEMENTS_93",
+        name="Test Entity 93",
+        value_amount=93 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_93"
+    assert obj.value_amount == 93 * 100.5
+
+def test_placements_entity_94_schema_validation():
+    obj = PlacementsSchemaEntity94Create(
+        entity_code="TEST_PLACEMENTS_94",
+        name="Test Entity 94",
+        value_amount=94 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_94"
+    assert obj.value_amount == 94 * 100.5
+
+def test_placements_entity_95_schema_validation():
+    obj = PlacementsSchemaEntity95Create(
+        entity_code="TEST_PLACEMENTS_95",
+        name="Test Entity 95",
+        value_amount=95 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_95"
+    assert obj.value_amount == 95 * 100.5
+
+def test_placements_entity_96_schema_validation():
+    obj = PlacementsSchemaEntity96Create(
+        entity_code="TEST_PLACEMENTS_96",
+        name="Test Entity 96",
+        value_amount=96 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_96"
+    assert obj.value_amount == 96 * 100.5
+
+def test_placements_entity_97_schema_validation():
+    obj = PlacementsSchemaEntity97Create(
+        entity_code="TEST_PLACEMENTS_97",
+        name="Test Entity 97",
+        value_amount=97 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_97"
+    assert obj.value_amount == 97 * 100.5
+
+def test_placements_entity_98_schema_validation():
+    obj = PlacementsSchemaEntity98Create(
+        entity_code="TEST_PLACEMENTS_98",
+        name="Test Entity 98",
+        value_amount=98 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_98"
+    assert obj.value_amount == 98 * 100.5
+
+def test_placements_entity_99_schema_validation():
+    obj = PlacementsSchemaEntity99Create(
+        entity_code="TEST_PLACEMENTS_99",
+        name="Test Entity 99",
+        value_amount=99 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_99"
+    assert obj.value_amount == 99 * 100.5
+
+def test_placements_entity_100_schema_validation():
+    obj = PlacementsSchemaEntity100Create(
+        entity_code="TEST_PLACEMENTS_100",
+        name="Test Entity 100",
+        value_amount=100 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_100"
+    assert obj.value_amount == 100 * 100.5
+
+def test_placements_entity_101_schema_validation():
+    obj = PlacementsSchemaEntity101Create(
+        entity_code="TEST_PLACEMENTS_101",
+        name="Test Entity 101",
+        value_amount=101 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_101"
+    assert obj.value_amount == 101 * 100.5
+
+def test_placements_entity_102_schema_validation():
+    obj = PlacementsSchemaEntity102Create(
+        entity_code="TEST_PLACEMENTS_102",
+        name="Test Entity 102",
+        value_amount=102 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_102"
+    assert obj.value_amount == 102 * 100.5
+
+def test_placements_entity_103_schema_validation():
+    obj = PlacementsSchemaEntity103Create(
+        entity_code="TEST_PLACEMENTS_103",
+        name="Test Entity 103",
+        value_amount=103 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_103"
+    assert obj.value_amount == 103 * 100.5
+
+def test_placements_entity_104_schema_validation():
+    obj = PlacementsSchemaEntity104Create(
+        entity_code="TEST_PLACEMENTS_104",
+        name="Test Entity 104",
+        value_amount=104 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_104"
+    assert obj.value_amount == 104 * 100.5
+
+def test_placements_entity_105_schema_validation():
+    obj = PlacementsSchemaEntity105Create(
+        entity_code="TEST_PLACEMENTS_105",
+        name="Test Entity 105",
+        value_amount=105 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_105"
+    assert obj.value_amount == 105 * 100.5
+
+def test_placements_entity_106_schema_validation():
+    obj = PlacementsSchemaEntity106Create(
+        entity_code="TEST_PLACEMENTS_106",
+        name="Test Entity 106",
+        value_amount=106 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_106"
+    assert obj.value_amount == 106 * 100.5
+
+def test_placements_entity_107_schema_validation():
+    obj = PlacementsSchemaEntity107Create(
+        entity_code="TEST_PLACEMENTS_107",
+        name="Test Entity 107",
+        value_amount=107 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_107"
+    assert obj.value_amount == 107 * 100.5
+
+def test_placements_entity_108_schema_validation():
+    obj = PlacementsSchemaEntity108Create(
+        entity_code="TEST_PLACEMENTS_108",
+        name="Test Entity 108",
+        value_amount=108 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_108"
+    assert obj.value_amount == 108 * 100.5
+
+def test_placements_entity_109_schema_validation():
+    obj = PlacementsSchemaEntity109Create(
+        entity_code="TEST_PLACEMENTS_109",
+        name="Test Entity 109",
+        value_amount=109 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_109"
+    assert obj.value_amount == 109 * 100.5
+
+def test_placements_entity_110_schema_validation():
+    obj = PlacementsSchemaEntity110Create(
+        entity_code="TEST_PLACEMENTS_110",
+        name="Test Entity 110",
+        value_amount=110 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_110"
+    assert obj.value_amount == 110 * 100.5
+
+def test_placements_entity_111_schema_validation():
+    obj = PlacementsSchemaEntity111Create(
+        entity_code="TEST_PLACEMENTS_111",
+        name="Test Entity 111",
+        value_amount=111 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_111"
+    assert obj.value_amount == 111 * 100.5
+
+def test_placements_entity_112_schema_validation():
+    obj = PlacementsSchemaEntity112Create(
+        entity_code="TEST_PLACEMENTS_112",
+        name="Test Entity 112",
+        value_amount=112 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_112"
+    assert obj.value_amount == 112 * 100.5
+
+def test_placements_entity_113_schema_validation():
+    obj = PlacementsSchemaEntity113Create(
+        entity_code="TEST_PLACEMENTS_113",
+        name="Test Entity 113",
+        value_amount=113 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_113"
+    assert obj.value_amount == 113 * 100.5
+
+def test_placements_entity_114_schema_validation():
+    obj = PlacementsSchemaEntity114Create(
+        entity_code="TEST_PLACEMENTS_114",
+        name="Test Entity 114",
+        value_amount=114 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_114"
+    assert obj.value_amount == 114 * 100.5
+
+def test_placements_entity_115_schema_validation():
+    obj = PlacementsSchemaEntity115Create(
+        entity_code="TEST_PLACEMENTS_115",
+        name="Test Entity 115",
+        value_amount=115 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_115"
+    assert obj.value_amount == 115 * 100.5
+
+def test_placements_entity_116_schema_validation():
+    obj = PlacementsSchemaEntity116Create(
+        entity_code="TEST_PLACEMENTS_116",
+        name="Test Entity 116",
+        value_amount=116 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_116"
+    assert obj.value_amount == 116 * 100.5
+
+def test_placements_entity_117_schema_validation():
+    obj = PlacementsSchemaEntity117Create(
+        entity_code="TEST_PLACEMENTS_117",
+        name="Test Entity 117",
+        value_amount=117 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_117"
+    assert obj.value_amount == 117 * 100.5
+
+def test_placements_entity_118_schema_validation():
+    obj = PlacementsSchemaEntity118Create(
+        entity_code="TEST_PLACEMENTS_118",
+        name="Test Entity 118",
+        value_amount=118 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_118"
+    assert obj.value_amount == 118 * 100.5
+
+def test_placements_entity_119_schema_validation():
+    obj = PlacementsSchemaEntity119Create(
+        entity_code="TEST_PLACEMENTS_119",
+        name="Test Entity 119",
+        value_amount=119 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_119"
+    assert obj.value_amount == 119 * 100.5
+
+def test_placements_entity_120_schema_validation():
+    obj = PlacementsSchemaEntity120Create(
+        entity_code="TEST_PLACEMENTS_120",
+        name="Test Entity 120",
+        value_amount=120 * 100.5
+    )
+    assert obj.entity_code == "TEST_PLACEMENTS_120"
+    assert obj.value_amount == 120 * 100.5
+

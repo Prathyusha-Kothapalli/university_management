@@ -454,3 +454,633 @@ def test_exams_entity_50_schema_validation():
     assert obj.entity_code == "TEST_EXAMS_50"
     assert obj.value_amount == 50 * 100.5
 
+def test_exams_entity_51_schema_validation():
+    obj = ExamsSchemaEntity51Create(
+        entity_code="TEST_EXAMS_51",
+        name="Test Entity 51",
+        value_amount=51 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_51"
+    assert obj.value_amount == 51 * 100.5
+
+def test_exams_entity_52_schema_validation():
+    obj = ExamsSchemaEntity52Create(
+        entity_code="TEST_EXAMS_52",
+        name="Test Entity 52",
+        value_amount=52 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_52"
+    assert obj.value_amount == 52 * 100.5
+
+def test_exams_entity_53_schema_validation():
+    obj = ExamsSchemaEntity53Create(
+        entity_code="TEST_EXAMS_53",
+        name="Test Entity 53",
+        value_amount=53 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_53"
+    assert obj.value_amount == 53 * 100.5
+
+def test_exams_entity_54_schema_validation():
+    obj = ExamsSchemaEntity54Create(
+        entity_code="TEST_EXAMS_54",
+        name="Test Entity 54",
+        value_amount=54 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_54"
+    assert obj.value_amount == 54 * 100.5
+
+def test_exams_entity_55_schema_validation():
+    obj = ExamsSchemaEntity55Create(
+        entity_code="TEST_EXAMS_55",
+        name="Test Entity 55",
+        value_amount=55 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_55"
+    assert obj.value_amount == 55 * 100.5
+
+def test_exams_entity_56_schema_validation():
+    obj = ExamsSchemaEntity56Create(
+        entity_code="TEST_EXAMS_56",
+        name="Test Entity 56",
+        value_amount=56 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_56"
+    assert obj.value_amount == 56 * 100.5
+
+def test_exams_entity_57_schema_validation():
+    obj = ExamsSchemaEntity57Create(
+        entity_code="TEST_EXAMS_57",
+        name="Test Entity 57",
+        value_amount=57 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_57"
+    assert obj.value_amount == 57 * 100.5
+
+def test_exams_entity_58_schema_validation():
+    obj = ExamsSchemaEntity58Create(
+        entity_code="TEST_EXAMS_58",
+        name="Test Entity 58",
+        value_amount=58 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_58"
+    assert obj.value_amount == 58 * 100.5
+
+def test_exams_entity_59_schema_validation():
+    obj = ExamsSchemaEntity59Create(
+        entity_code="TEST_EXAMS_59",
+        name="Test Entity 59",
+        value_amount=59 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_59"
+    assert obj.value_amount == 59 * 100.5
+
+def test_exams_entity_60_schema_validation():
+    obj = ExamsSchemaEntity60Create(
+        entity_code="TEST_EXAMS_60",
+        name="Test Entity 60",
+        value_amount=60 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_60"
+    assert obj.value_amount == 60 * 100.5
+
+def test_exams_entity_61_schema_validation():
+    obj = ExamsSchemaEntity61Create(
+        entity_code="TEST_EXAMS_61",
+        name="Test Entity 61",
+        value_amount=61 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_61"
+    assert obj.value_amount == 61 * 100.5
+
+def test_exams_entity_62_schema_validation():
+    obj = ExamsSchemaEntity62Create(
+        entity_code="TEST_EXAMS_62",
+        name="Test Entity 62",
+        value_amount=62 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_62"
+    assert obj.value_amount == 62 * 100.5
+
+def test_exams_entity_63_schema_validation():
+    obj = ExamsSchemaEntity63Create(
+        entity_code="TEST_EXAMS_63",
+        name="Test Entity 63",
+        value_amount=63 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_63"
+    assert obj.value_amount == 63 * 100.5
+
+def test_exams_entity_64_schema_validation():
+    obj = ExamsSchemaEntity64Create(
+        entity_code="TEST_EXAMS_64",
+        name="Test Entity 64",
+        value_amount=64 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_64"
+    assert obj.value_amount == 64 * 100.5
+
+def test_exams_entity_65_schema_validation():
+    obj = ExamsSchemaEntity65Create(
+        entity_code="TEST_EXAMS_65",
+        name="Test Entity 65",
+        value_amount=65 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_65"
+    assert obj.value_amount == 65 * 100.5
+
+def test_exams_entity_66_schema_validation():
+    obj = ExamsSchemaEntity66Create(
+        entity_code="TEST_EXAMS_66",
+        name="Test Entity 66",
+        value_amount=66 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_66"
+    assert obj.value_amount == 66 * 100.5
+
+def test_exams_entity_67_schema_validation():
+    obj = ExamsSchemaEntity67Create(
+        entity_code="TEST_EXAMS_67",
+        name="Test Entity 67",
+        value_amount=67 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_67"
+    assert obj.value_amount == 67 * 100.5
+
+def test_exams_entity_68_schema_validation():
+    obj = ExamsSchemaEntity68Create(
+        entity_code="TEST_EXAMS_68",
+        name="Test Entity 68",
+        value_amount=68 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_68"
+    assert obj.value_amount == 68 * 100.5
+
+def test_exams_entity_69_schema_validation():
+    obj = ExamsSchemaEntity69Create(
+        entity_code="TEST_EXAMS_69",
+        name="Test Entity 69",
+        value_amount=69 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_69"
+    assert obj.value_amount == 69 * 100.5
+
+def test_exams_entity_70_schema_validation():
+    obj = ExamsSchemaEntity70Create(
+        entity_code="TEST_EXAMS_70",
+        name="Test Entity 70",
+        value_amount=70 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_70"
+    assert obj.value_amount == 70 * 100.5
+
+def test_exams_entity_71_schema_validation():
+    obj = ExamsSchemaEntity71Create(
+        entity_code="TEST_EXAMS_71",
+        name="Test Entity 71",
+        value_amount=71 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_71"
+    assert obj.value_amount == 71 * 100.5
+
+def test_exams_entity_72_schema_validation():
+    obj = ExamsSchemaEntity72Create(
+        entity_code="TEST_EXAMS_72",
+        name="Test Entity 72",
+        value_amount=72 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_72"
+    assert obj.value_amount == 72 * 100.5
+
+def test_exams_entity_73_schema_validation():
+    obj = ExamsSchemaEntity73Create(
+        entity_code="TEST_EXAMS_73",
+        name="Test Entity 73",
+        value_amount=73 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_73"
+    assert obj.value_amount == 73 * 100.5
+
+def test_exams_entity_74_schema_validation():
+    obj = ExamsSchemaEntity74Create(
+        entity_code="TEST_EXAMS_74",
+        name="Test Entity 74",
+        value_amount=74 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_74"
+    assert obj.value_amount == 74 * 100.5
+
+def test_exams_entity_75_schema_validation():
+    obj = ExamsSchemaEntity75Create(
+        entity_code="TEST_EXAMS_75",
+        name="Test Entity 75",
+        value_amount=75 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_75"
+    assert obj.value_amount == 75 * 100.5
+
+def test_exams_entity_76_schema_validation():
+    obj = ExamsSchemaEntity76Create(
+        entity_code="TEST_EXAMS_76",
+        name="Test Entity 76",
+        value_amount=76 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_76"
+    assert obj.value_amount == 76 * 100.5
+
+def test_exams_entity_77_schema_validation():
+    obj = ExamsSchemaEntity77Create(
+        entity_code="TEST_EXAMS_77",
+        name="Test Entity 77",
+        value_amount=77 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_77"
+    assert obj.value_amount == 77 * 100.5
+
+def test_exams_entity_78_schema_validation():
+    obj = ExamsSchemaEntity78Create(
+        entity_code="TEST_EXAMS_78",
+        name="Test Entity 78",
+        value_amount=78 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_78"
+    assert obj.value_amount == 78 * 100.5
+
+def test_exams_entity_79_schema_validation():
+    obj = ExamsSchemaEntity79Create(
+        entity_code="TEST_EXAMS_79",
+        name="Test Entity 79",
+        value_amount=79 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_79"
+    assert obj.value_amount == 79 * 100.5
+
+def test_exams_entity_80_schema_validation():
+    obj = ExamsSchemaEntity80Create(
+        entity_code="TEST_EXAMS_80",
+        name="Test Entity 80",
+        value_amount=80 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_80"
+    assert obj.value_amount == 80 * 100.5
+
+def test_exams_entity_81_schema_validation():
+    obj = ExamsSchemaEntity81Create(
+        entity_code="TEST_EXAMS_81",
+        name="Test Entity 81",
+        value_amount=81 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_81"
+    assert obj.value_amount == 81 * 100.5
+
+def test_exams_entity_82_schema_validation():
+    obj = ExamsSchemaEntity82Create(
+        entity_code="TEST_EXAMS_82",
+        name="Test Entity 82",
+        value_amount=82 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_82"
+    assert obj.value_amount == 82 * 100.5
+
+def test_exams_entity_83_schema_validation():
+    obj = ExamsSchemaEntity83Create(
+        entity_code="TEST_EXAMS_83",
+        name="Test Entity 83",
+        value_amount=83 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_83"
+    assert obj.value_amount == 83 * 100.5
+
+def test_exams_entity_84_schema_validation():
+    obj = ExamsSchemaEntity84Create(
+        entity_code="TEST_EXAMS_84",
+        name="Test Entity 84",
+        value_amount=84 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_84"
+    assert obj.value_amount == 84 * 100.5
+
+def test_exams_entity_85_schema_validation():
+    obj = ExamsSchemaEntity85Create(
+        entity_code="TEST_EXAMS_85",
+        name="Test Entity 85",
+        value_amount=85 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_85"
+    assert obj.value_amount == 85 * 100.5
+
+def test_exams_entity_86_schema_validation():
+    obj = ExamsSchemaEntity86Create(
+        entity_code="TEST_EXAMS_86",
+        name="Test Entity 86",
+        value_amount=86 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_86"
+    assert obj.value_amount == 86 * 100.5
+
+def test_exams_entity_87_schema_validation():
+    obj = ExamsSchemaEntity87Create(
+        entity_code="TEST_EXAMS_87",
+        name="Test Entity 87",
+        value_amount=87 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_87"
+    assert obj.value_amount == 87 * 100.5
+
+def test_exams_entity_88_schema_validation():
+    obj = ExamsSchemaEntity88Create(
+        entity_code="TEST_EXAMS_88",
+        name="Test Entity 88",
+        value_amount=88 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_88"
+    assert obj.value_amount == 88 * 100.5
+
+def test_exams_entity_89_schema_validation():
+    obj = ExamsSchemaEntity89Create(
+        entity_code="TEST_EXAMS_89",
+        name="Test Entity 89",
+        value_amount=89 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_89"
+    assert obj.value_amount == 89 * 100.5
+
+def test_exams_entity_90_schema_validation():
+    obj = ExamsSchemaEntity90Create(
+        entity_code="TEST_EXAMS_90",
+        name="Test Entity 90",
+        value_amount=90 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_90"
+    assert obj.value_amount == 90 * 100.5
+
+def test_exams_entity_91_schema_validation():
+    obj = ExamsSchemaEntity91Create(
+        entity_code="TEST_EXAMS_91",
+        name="Test Entity 91",
+        value_amount=91 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_91"
+    assert obj.value_amount == 91 * 100.5
+
+def test_exams_entity_92_schema_validation():
+    obj = ExamsSchemaEntity92Create(
+        entity_code="TEST_EXAMS_92",
+        name="Test Entity 92",
+        value_amount=92 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_92"
+    assert obj.value_amount == 92 * 100.5
+
+def test_exams_entity_93_schema_validation():
+    obj = ExamsSchemaEntity93Create(
+        entity_code="TEST_EXAMS_93",
+        name="Test Entity 93",
+        value_amount=93 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_93"
+    assert obj.value_amount == 93 * 100.5
+
+def test_exams_entity_94_schema_validation():
+    obj = ExamsSchemaEntity94Create(
+        entity_code="TEST_EXAMS_94",
+        name="Test Entity 94",
+        value_amount=94 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_94"
+    assert obj.value_amount == 94 * 100.5
+
+def test_exams_entity_95_schema_validation():
+    obj = ExamsSchemaEntity95Create(
+        entity_code="TEST_EXAMS_95",
+        name="Test Entity 95",
+        value_amount=95 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_95"
+    assert obj.value_amount == 95 * 100.5
+
+def test_exams_entity_96_schema_validation():
+    obj = ExamsSchemaEntity96Create(
+        entity_code="TEST_EXAMS_96",
+        name="Test Entity 96",
+        value_amount=96 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_96"
+    assert obj.value_amount == 96 * 100.5
+
+def test_exams_entity_97_schema_validation():
+    obj = ExamsSchemaEntity97Create(
+        entity_code="TEST_EXAMS_97",
+        name="Test Entity 97",
+        value_amount=97 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_97"
+    assert obj.value_amount == 97 * 100.5
+
+def test_exams_entity_98_schema_validation():
+    obj = ExamsSchemaEntity98Create(
+        entity_code="TEST_EXAMS_98",
+        name="Test Entity 98",
+        value_amount=98 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_98"
+    assert obj.value_amount == 98 * 100.5
+
+def test_exams_entity_99_schema_validation():
+    obj = ExamsSchemaEntity99Create(
+        entity_code="TEST_EXAMS_99",
+        name="Test Entity 99",
+        value_amount=99 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_99"
+    assert obj.value_amount == 99 * 100.5
+
+def test_exams_entity_100_schema_validation():
+    obj = ExamsSchemaEntity100Create(
+        entity_code="TEST_EXAMS_100",
+        name="Test Entity 100",
+        value_amount=100 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_100"
+    assert obj.value_amount == 100 * 100.5
+
+def test_exams_entity_101_schema_validation():
+    obj = ExamsSchemaEntity101Create(
+        entity_code="TEST_EXAMS_101",
+        name="Test Entity 101",
+        value_amount=101 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_101"
+    assert obj.value_amount == 101 * 100.5
+
+def test_exams_entity_102_schema_validation():
+    obj = ExamsSchemaEntity102Create(
+        entity_code="TEST_EXAMS_102",
+        name="Test Entity 102",
+        value_amount=102 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_102"
+    assert obj.value_amount == 102 * 100.5
+
+def test_exams_entity_103_schema_validation():
+    obj = ExamsSchemaEntity103Create(
+        entity_code="TEST_EXAMS_103",
+        name="Test Entity 103",
+        value_amount=103 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_103"
+    assert obj.value_amount == 103 * 100.5
+
+def test_exams_entity_104_schema_validation():
+    obj = ExamsSchemaEntity104Create(
+        entity_code="TEST_EXAMS_104",
+        name="Test Entity 104",
+        value_amount=104 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_104"
+    assert obj.value_amount == 104 * 100.5
+
+def test_exams_entity_105_schema_validation():
+    obj = ExamsSchemaEntity105Create(
+        entity_code="TEST_EXAMS_105",
+        name="Test Entity 105",
+        value_amount=105 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_105"
+    assert obj.value_amount == 105 * 100.5
+
+def test_exams_entity_106_schema_validation():
+    obj = ExamsSchemaEntity106Create(
+        entity_code="TEST_EXAMS_106",
+        name="Test Entity 106",
+        value_amount=106 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_106"
+    assert obj.value_amount == 106 * 100.5
+
+def test_exams_entity_107_schema_validation():
+    obj = ExamsSchemaEntity107Create(
+        entity_code="TEST_EXAMS_107",
+        name="Test Entity 107",
+        value_amount=107 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_107"
+    assert obj.value_amount == 107 * 100.5
+
+def test_exams_entity_108_schema_validation():
+    obj = ExamsSchemaEntity108Create(
+        entity_code="TEST_EXAMS_108",
+        name="Test Entity 108",
+        value_amount=108 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_108"
+    assert obj.value_amount == 108 * 100.5
+
+def test_exams_entity_109_schema_validation():
+    obj = ExamsSchemaEntity109Create(
+        entity_code="TEST_EXAMS_109",
+        name="Test Entity 109",
+        value_amount=109 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_109"
+    assert obj.value_amount == 109 * 100.5
+
+def test_exams_entity_110_schema_validation():
+    obj = ExamsSchemaEntity110Create(
+        entity_code="TEST_EXAMS_110",
+        name="Test Entity 110",
+        value_amount=110 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_110"
+    assert obj.value_amount == 110 * 100.5
+
+def test_exams_entity_111_schema_validation():
+    obj = ExamsSchemaEntity111Create(
+        entity_code="TEST_EXAMS_111",
+        name="Test Entity 111",
+        value_amount=111 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_111"
+    assert obj.value_amount == 111 * 100.5
+
+def test_exams_entity_112_schema_validation():
+    obj = ExamsSchemaEntity112Create(
+        entity_code="TEST_EXAMS_112",
+        name="Test Entity 112",
+        value_amount=112 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_112"
+    assert obj.value_amount == 112 * 100.5
+
+def test_exams_entity_113_schema_validation():
+    obj = ExamsSchemaEntity113Create(
+        entity_code="TEST_EXAMS_113",
+        name="Test Entity 113",
+        value_amount=113 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_113"
+    assert obj.value_amount == 113 * 100.5
+
+def test_exams_entity_114_schema_validation():
+    obj = ExamsSchemaEntity114Create(
+        entity_code="TEST_EXAMS_114",
+        name="Test Entity 114",
+        value_amount=114 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_114"
+    assert obj.value_amount == 114 * 100.5
+
+def test_exams_entity_115_schema_validation():
+    obj = ExamsSchemaEntity115Create(
+        entity_code="TEST_EXAMS_115",
+        name="Test Entity 115",
+        value_amount=115 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_115"
+    assert obj.value_amount == 115 * 100.5
+
+def test_exams_entity_116_schema_validation():
+    obj = ExamsSchemaEntity116Create(
+        entity_code="TEST_EXAMS_116",
+        name="Test Entity 116",
+        value_amount=116 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_116"
+    assert obj.value_amount == 116 * 100.5
+
+def test_exams_entity_117_schema_validation():
+    obj = ExamsSchemaEntity117Create(
+        entity_code="TEST_EXAMS_117",
+        name="Test Entity 117",
+        value_amount=117 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_117"
+    assert obj.value_amount == 117 * 100.5
+
+def test_exams_entity_118_schema_validation():
+    obj = ExamsSchemaEntity118Create(
+        entity_code="TEST_EXAMS_118",
+        name="Test Entity 118",
+        value_amount=118 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_118"
+    assert obj.value_amount == 118 * 100.5
+
+def test_exams_entity_119_schema_validation():
+    obj = ExamsSchemaEntity119Create(
+        entity_code="TEST_EXAMS_119",
+        name="Test Entity 119",
+        value_amount=119 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_119"
+    assert obj.value_amount == 119 * 100.5
+
+def test_exams_entity_120_schema_validation():
+    obj = ExamsSchemaEntity120Create(
+        entity_code="TEST_EXAMS_120",
+        name="Test Entity 120",
+        value_amount=120 * 100.5
+    )
+    assert obj.entity_code == "TEST_EXAMS_120"
+    assert obj.value_amount == 120 * 100.5
+

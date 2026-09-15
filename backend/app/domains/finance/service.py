@@ -2011,3 +2011,2803 @@ class FinanceDomainService:
         self.db.commit()
         return True
 
+    def get_entity_51_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity51]:
+        return self.db.query(FinanceModelEntity51).offset(skip).limit(limit).all()
+
+    def get_entity_51_by_id(self, entity_id: int) -> Optional[FinanceModelEntity51]:
+        return self.db.query(FinanceModelEntity51).filter(FinanceModelEntity51.id == entity_id).first()
+
+    def create_entity_51(self, payload: FinanceSchemaEntity51Create) -> FinanceModelEntity51:
+        db_obj = FinanceModelEntity51(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_51(self, entity_id: int, payload: FinanceSchemaEntity51Update) -> Optional[FinanceModelEntity51]:
+        db_obj = self.get_entity_51_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_51(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_51_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_52_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity52]:
+        return self.db.query(FinanceModelEntity52).offset(skip).limit(limit).all()
+
+    def get_entity_52_by_id(self, entity_id: int) -> Optional[FinanceModelEntity52]:
+        return self.db.query(FinanceModelEntity52).filter(FinanceModelEntity52.id == entity_id).first()
+
+    def create_entity_52(self, payload: FinanceSchemaEntity52Create) -> FinanceModelEntity52:
+        db_obj = FinanceModelEntity52(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_52(self, entity_id: int, payload: FinanceSchemaEntity52Update) -> Optional[FinanceModelEntity52]:
+        db_obj = self.get_entity_52_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_52(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_52_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_53_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity53]:
+        return self.db.query(FinanceModelEntity53).offset(skip).limit(limit).all()
+
+    def get_entity_53_by_id(self, entity_id: int) -> Optional[FinanceModelEntity53]:
+        return self.db.query(FinanceModelEntity53).filter(FinanceModelEntity53.id == entity_id).first()
+
+    def create_entity_53(self, payload: FinanceSchemaEntity53Create) -> FinanceModelEntity53:
+        db_obj = FinanceModelEntity53(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_53(self, entity_id: int, payload: FinanceSchemaEntity53Update) -> Optional[FinanceModelEntity53]:
+        db_obj = self.get_entity_53_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_53(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_53_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_54_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity54]:
+        return self.db.query(FinanceModelEntity54).offset(skip).limit(limit).all()
+
+    def get_entity_54_by_id(self, entity_id: int) -> Optional[FinanceModelEntity54]:
+        return self.db.query(FinanceModelEntity54).filter(FinanceModelEntity54.id == entity_id).first()
+
+    def create_entity_54(self, payload: FinanceSchemaEntity54Create) -> FinanceModelEntity54:
+        db_obj = FinanceModelEntity54(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_54(self, entity_id: int, payload: FinanceSchemaEntity54Update) -> Optional[FinanceModelEntity54]:
+        db_obj = self.get_entity_54_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_54(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_54_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_55_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity55]:
+        return self.db.query(FinanceModelEntity55).offset(skip).limit(limit).all()
+
+    def get_entity_55_by_id(self, entity_id: int) -> Optional[FinanceModelEntity55]:
+        return self.db.query(FinanceModelEntity55).filter(FinanceModelEntity55.id == entity_id).first()
+
+    def create_entity_55(self, payload: FinanceSchemaEntity55Create) -> FinanceModelEntity55:
+        db_obj = FinanceModelEntity55(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_55(self, entity_id: int, payload: FinanceSchemaEntity55Update) -> Optional[FinanceModelEntity55]:
+        db_obj = self.get_entity_55_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_55(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_55_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_56_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity56]:
+        return self.db.query(FinanceModelEntity56).offset(skip).limit(limit).all()
+
+    def get_entity_56_by_id(self, entity_id: int) -> Optional[FinanceModelEntity56]:
+        return self.db.query(FinanceModelEntity56).filter(FinanceModelEntity56.id == entity_id).first()
+
+    def create_entity_56(self, payload: FinanceSchemaEntity56Create) -> FinanceModelEntity56:
+        db_obj = FinanceModelEntity56(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_56(self, entity_id: int, payload: FinanceSchemaEntity56Update) -> Optional[FinanceModelEntity56]:
+        db_obj = self.get_entity_56_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_56(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_56_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_57_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity57]:
+        return self.db.query(FinanceModelEntity57).offset(skip).limit(limit).all()
+
+    def get_entity_57_by_id(self, entity_id: int) -> Optional[FinanceModelEntity57]:
+        return self.db.query(FinanceModelEntity57).filter(FinanceModelEntity57.id == entity_id).first()
+
+    def create_entity_57(self, payload: FinanceSchemaEntity57Create) -> FinanceModelEntity57:
+        db_obj = FinanceModelEntity57(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_57(self, entity_id: int, payload: FinanceSchemaEntity57Update) -> Optional[FinanceModelEntity57]:
+        db_obj = self.get_entity_57_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_57(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_57_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_58_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity58]:
+        return self.db.query(FinanceModelEntity58).offset(skip).limit(limit).all()
+
+    def get_entity_58_by_id(self, entity_id: int) -> Optional[FinanceModelEntity58]:
+        return self.db.query(FinanceModelEntity58).filter(FinanceModelEntity58.id == entity_id).first()
+
+    def create_entity_58(self, payload: FinanceSchemaEntity58Create) -> FinanceModelEntity58:
+        db_obj = FinanceModelEntity58(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_58(self, entity_id: int, payload: FinanceSchemaEntity58Update) -> Optional[FinanceModelEntity58]:
+        db_obj = self.get_entity_58_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_58(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_58_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_59_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity59]:
+        return self.db.query(FinanceModelEntity59).offset(skip).limit(limit).all()
+
+    def get_entity_59_by_id(self, entity_id: int) -> Optional[FinanceModelEntity59]:
+        return self.db.query(FinanceModelEntity59).filter(FinanceModelEntity59.id == entity_id).first()
+
+    def create_entity_59(self, payload: FinanceSchemaEntity59Create) -> FinanceModelEntity59:
+        db_obj = FinanceModelEntity59(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_59(self, entity_id: int, payload: FinanceSchemaEntity59Update) -> Optional[FinanceModelEntity59]:
+        db_obj = self.get_entity_59_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_59(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_59_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_60_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity60]:
+        return self.db.query(FinanceModelEntity60).offset(skip).limit(limit).all()
+
+    def get_entity_60_by_id(self, entity_id: int) -> Optional[FinanceModelEntity60]:
+        return self.db.query(FinanceModelEntity60).filter(FinanceModelEntity60.id == entity_id).first()
+
+    def create_entity_60(self, payload: FinanceSchemaEntity60Create) -> FinanceModelEntity60:
+        db_obj = FinanceModelEntity60(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_60(self, entity_id: int, payload: FinanceSchemaEntity60Update) -> Optional[FinanceModelEntity60]:
+        db_obj = self.get_entity_60_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_60(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_60_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_61_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity61]:
+        return self.db.query(FinanceModelEntity61).offset(skip).limit(limit).all()
+
+    def get_entity_61_by_id(self, entity_id: int) -> Optional[FinanceModelEntity61]:
+        return self.db.query(FinanceModelEntity61).filter(FinanceModelEntity61.id == entity_id).first()
+
+    def create_entity_61(self, payload: FinanceSchemaEntity61Create) -> FinanceModelEntity61:
+        db_obj = FinanceModelEntity61(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_61(self, entity_id: int, payload: FinanceSchemaEntity61Update) -> Optional[FinanceModelEntity61]:
+        db_obj = self.get_entity_61_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_61(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_61_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_62_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity62]:
+        return self.db.query(FinanceModelEntity62).offset(skip).limit(limit).all()
+
+    def get_entity_62_by_id(self, entity_id: int) -> Optional[FinanceModelEntity62]:
+        return self.db.query(FinanceModelEntity62).filter(FinanceModelEntity62.id == entity_id).first()
+
+    def create_entity_62(self, payload: FinanceSchemaEntity62Create) -> FinanceModelEntity62:
+        db_obj = FinanceModelEntity62(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_62(self, entity_id: int, payload: FinanceSchemaEntity62Update) -> Optional[FinanceModelEntity62]:
+        db_obj = self.get_entity_62_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_62(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_62_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_63_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity63]:
+        return self.db.query(FinanceModelEntity63).offset(skip).limit(limit).all()
+
+    def get_entity_63_by_id(self, entity_id: int) -> Optional[FinanceModelEntity63]:
+        return self.db.query(FinanceModelEntity63).filter(FinanceModelEntity63.id == entity_id).first()
+
+    def create_entity_63(self, payload: FinanceSchemaEntity63Create) -> FinanceModelEntity63:
+        db_obj = FinanceModelEntity63(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_63(self, entity_id: int, payload: FinanceSchemaEntity63Update) -> Optional[FinanceModelEntity63]:
+        db_obj = self.get_entity_63_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_63(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_63_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_64_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity64]:
+        return self.db.query(FinanceModelEntity64).offset(skip).limit(limit).all()
+
+    def get_entity_64_by_id(self, entity_id: int) -> Optional[FinanceModelEntity64]:
+        return self.db.query(FinanceModelEntity64).filter(FinanceModelEntity64.id == entity_id).first()
+
+    def create_entity_64(self, payload: FinanceSchemaEntity64Create) -> FinanceModelEntity64:
+        db_obj = FinanceModelEntity64(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_64(self, entity_id: int, payload: FinanceSchemaEntity64Update) -> Optional[FinanceModelEntity64]:
+        db_obj = self.get_entity_64_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_64(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_64_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_65_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity65]:
+        return self.db.query(FinanceModelEntity65).offset(skip).limit(limit).all()
+
+    def get_entity_65_by_id(self, entity_id: int) -> Optional[FinanceModelEntity65]:
+        return self.db.query(FinanceModelEntity65).filter(FinanceModelEntity65.id == entity_id).first()
+
+    def create_entity_65(self, payload: FinanceSchemaEntity65Create) -> FinanceModelEntity65:
+        db_obj = FinanceModelEntity65(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_65(self, entity_id: int, payload: FinanceSchemaEntity65Update) -> Optional[FinanceModelEntity65]:
+        db_obj = self.get_entity_65_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_65(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_65_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_66_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity66]:
+        return self.db.query(FinanceModelEntity66).offset(skip).limit(limit).all()
+
+    def get_entity_66_by_id(self, entity_id: int) -> Optional[FinanceModelEntity66]:
+        return self.db.query(FinanceModelEntity66).filter(FinanceModelEntity66.id == entity_id).first()
+
+    def create_entity_66(self, payload: FinanceSchemaEntity66Create) -> FinanceModelEntity66:
+        db_obj = FinanceModelEntity66(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_66(self, entity_id: int, payload: FinanceSchemaEntity66Update) -> Optional[FinanceModelEntity66]:
+        db_obj = self.get_entity_66_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_66(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_66_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_67_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity67]:
+        return self.db.query(FinanceModelEntity67).offset(skip).limit(limit).all()
+
+    def get_entity_67_by_id(self, entity_id: int) -> Optional[FinanceModelEntity67]:
+        return self.db.query(FinanceModelEntity67).filter(FinanceModelEntity67.id == entity_id).first()
+
+    def create_entity_67(self, payload: FinanceSchemaEntity67Create) -> FinanceModelEntity67:
+        db_obj = FinanceModelEntity67(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_67(self, entity_id: int, payload: FinanceSchemaEntity67Update) -> Optional[FinanceModelEntity67]:
+        db_obj = self.get_entity_67_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_67(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_67_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_68_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity68]:
+        return self.db.query(FinanceModelEntity68).offset(skip).limit(limit).all()
+
+    def get_entity_68_by_id(self, entity_id: int) -> Optional[FinanceModelEntity68]:
+        return self.db.query(FinanceModelEntity68).filter(FinanceModelEntity68.id == entity_id).first()
+
+    def create_entity_68(self, payload: FinanceSchemaEntity68Create) -> FinanceModelEntity68:
+        db_obj = FinanceModelEntity68(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_68(self, entity_id: int, payload: FinanceSchemaEntity68Update) -> Optional[FinanceModelEntity68]:
+        db_obj = self.get_entity_68_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_68(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_68_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_69_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity69]:
+        return self.db.query(FinanceModelEntity69).offset(skip).limit(limit).all()
+
+    def get_entity_69_by_id(self, entity_id: int) -> Optional[FinanceModelEntity69]:
+        return self.db.query(FinanceModelEntity69).filter(FinanceModelEntity69.id == entity_id).first()
+
+    def create_entity_69(self, payload: FinanceSchemaEntity69Create) -> FinanceModelEntity69:
+        db_obj = FinanceModelEntity69(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_69(self, entity_id: int, payload: FinanceSchemaEntity69Update) -> Optional[FinanceModelEntity69]:
+        db_obj = self.get_entity_69_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_69(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_69_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_70_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity70]:
+        return self.db.query(FinanceModelEntity70).offset(skip).limit(limit).all()
+
+    def get_entity_70_by_id(self, entity_id: int) -> Optional[FinanceModelEntity70]:
+        return self.db.query(FinanceModelEntity70).filter(FinanceModelEntity70.id == entity_id).first()
+
+    def create_entity_70(self, payload: FinanceSchemaEntity70Create) -> FinanceModelEntity70:
+        db_obj = FinanceModelEntity70(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_70(self, entity_id: int, payload: FinanceSchemaEntity70Update) -> Optional[FinanceModelEntity70]:
+        db_obj = self.get_entity_70_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_70(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_70_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_71_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity71]:
+        return self.db.query(FinanceModelEntity71).offset(skip).limit(limit).all()
+
+    def get_entity_71_by_id(self, entity_id: int) -> Optional[FinanceModelEntity71]:
+        return self.db.query(FinanceModelEntity71).filter(FinanceModelEntity71.id == entity_id).first()
+
+    def create_entity_71(self, payload: FinanceSchemaEntity71Create) -> FinanceModelEntity71:
+        db_obj = FinanceModelEntity71(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_71(self, entity_id: int, payload: FinanceSchemaEntity71Update) -> Optional[FinanceModelEntity71]:
+        db_obj = self.get_entity_71_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_71(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_71_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_72_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity72]:
+        return self.db.query(FinanceModelEntity72).offset(skip).limit(limit).all()
+
+    def get_entity_72_by_id(self, entity_id: int) -> Optional[FinanceModelEntity72]:
+        return self.db.query(FinanceModelEntity72).filter(FinanceModelEntity72.id == entity_id).first()
+
+    def create_entity_72(self, payload: FinanceSchemaEntity72Create) -> FinanceModelEntity72:
+        db_obj = FinanceModelEntity72(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_72(self, entity_id: int, payload: FinanceSchemaEntity72Update) -> Optional[FinanceModelEntity72]:
+        db_obj = self.get_entity_72_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_72(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_72_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_73_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity73]:
+        return self.db.query(FinanceModelEntity73).offset(skip).limit(limit).all()
+
+    def get_entity_73_by_id(self, entity_id: int) -> Optional[FinanceModelEntity73]:
+        return self.db.query(FinanceModelEntity73).filter(FinanceModelEntity73.id == entity_id).first()
+
+    def create_entity_73(self, payload: FinanceSchemaEntity73Create) -> FinanceModelEntity73:
+        db_obj = FinanceModelEntity73(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_73(self, entity_id: int, payload: FinanceSchemaEntity73Update) -> Optional[FinanceModelEntity73]:
+        db_obj = self.get_entity_73_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_73(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_73_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_74_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity74]:
+        return self.db.query(FinanceModelEntity74).offset(skip).limit(limit).all()
+
+    def get_entity_74_by_id(self, entity_id: int) -> Optional[FinanceModelEntity74]:
+        return self.db.query(FinanceModelEntity74).filter(FinanceModelEntity74.id == entity_id).first()
+
+    def create_entity_74(self, payload: FinanceSchemaEntity74Create) -> FinanceModelEntity74:
+        db_obj = FinanceModelEntity74(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_74(self, entity_id: int, payload: FinanceSchemaEntity74Update) -> Optional[FinanceModelEntity74]:
+        db_obj = self.get_entity_74_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_74(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_74_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_75_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity75]:
+        return self.db.query(FinanceModelEntity75).offset(skip).limit(limit).all()
+
+    def get_entity_75_by_id(self, entity_id: int) -> Optional[FinanceModelEntity75]:
+        return self.db.query(FinanceModelEntity75).filter(FinanceModelEntity75.id == entity_id).first()
+
+    def create_entity_75(self, payload: FinanceSchemaEntity75Create) -> FinanceModelEntity75:
+        db_obj = FinanceModelEntity75(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_75(self, entity_id: int, payload: FinanceSchemaEntity75Update) -> Optional[FinanceModelEntity75]:
+        db_obj = self.get_entity_75_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_75(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_75_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_76_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity76]:
+        return self.db.query(FinanceModelEntity76).offset(skip).limit(limit).all()
+
+    def get_entity_76_by_id(self, entity_id: int) -> Optional[FinanceModelEntity76]:
+        return self.db.query(FinanceModelEntity76).filter(FinanceModelEntity76.id == entity_id).first()
+
+    def create_entity_76(self, payload: FinanceSchemaEntity76Create) -> FinanceModelEntity76:
+        db_obj = FinanceModelEntity76(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_76(self, entity_id: int, payload: FinanceSchemaEntity76Update) -> Optional[FinanceModelEntity76]:
+        db_obj = self.get_entity_76_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_76(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_76_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_77_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity77]:
+        return self.db.query(FinanceModelEntity77).offset(skip).limit(limit).all()
+
+    def get_entity_77_by_id(self, entity_id: int) -> Optional[FinanceModelEntity77]:
+        return self.db.query(FinanceModelEntity77).filter(FinanceModelEntity77.id == entity_id).first()
+
+    def create_entity_77(self, payload: FinanceSchemaEntity77Create) -> FinanceModelEntity77:
+        db_obj = FinanceModelEntity77(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_77(self, entity_id: int, payload: FinanceSchemaEntity77Update) -> Optional[FinanceModelEntity77]:
+        db_obj = self.get_entity_77_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_77(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_77_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_78_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity78]:
+        return self.db.query(FinanceModelEntity78).offset(skip).limit(limit).all()
+
+    def get_entity_78_by_id(self, entity_id: int) -> Optional[FinanceModelEntity78]:
+        return self.db.query(FinanceModelEntity78).filter(FinanceModelEntity78.id == entity_id).first()
+
+    def create_entity_78(self, payload: FinanceSchemaEntity78Create) -> FinanceModelEntity78:
+        db_obj = FinanceModelEntity78(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_78(self, entity_id: int, payload: FinanceSchemaEntity78Update) -> Optional[FinanceModelEntity78]:
+        db_obj = self.get_entity_78_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_78(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_78_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_79_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity79]:
+        return self.db.query(FinanceModelEntity79).offset(skip).limit(limit).all()
+
+    def get_entity_79_by_id(self, entity_id: int) -> Optional[FinanceModelEntity79]:
+        return self.db.query(FinanceModelEntity79).filter(FinanceModelEntity79.id == entity_id).first()
+
+    def create_entity_79(self, payload: FinanceSchemaEntity79Create) -> FinanceModelEntity79:
+        db_obj = FinanceModelEntity79(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_79(self, entity_id: int, payload: FinanceSchemaEntity79Update) -> Optional[FinanceModelEntity79]:
+        db_obj = self.get_entity_79_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_79(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_79_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_80_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity80]:
+        return self.db.query(FinanceModelEntity80).offset(skip).limit(limit).all()
+
+    def get_entity_80_by_id(self, entity_id: int) -> Optional[FinanceModelEntity80]:
+        return self.db.query(FinanceModelEntity80).filter(FinanceModelEntity80.id == entity_id).first()
+
+    def create_entity_80(self, payload: FinanceSchemaEntity80Create) -> FinanceModelEntity80:
+        db_obj = FinanceModelEntity80(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_80(self, entity_id: int, payload: FinanceSchemaEntity80Update) -> Optional[FinanceModelEntity80]:
+        db_obj = self.get_entity_80_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_80(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_80_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_81_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity81]:
+        return self.db.query(FinanceModelEntity81).offset(skip).limit(limit).all()
+
+    def get_entity_81_by_id(self, entity_id: int) -> Optional[FinanceModelEntity81]:
+        return self.db.query(FinanceModelEntity81).filter(FinanceModelEntity81.id == entity_id).first()
+
+    def create_entity_81(self, payload: FinanceSchemaEntity81Create) -> FinanceModelEntity81:
+        db_obj = FinanceModelEntity81(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_81(self, entity_id: int, payload: FinanceSchemaEntity81Update) -> Optional[FinanceModelEntity81]:
+        db_obj = self.get_entity_81_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_81(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_81_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_82_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity82]:
+        return self.db.query(FinanceModelEntity82).offset(skip).limit(limit).all()
+
+    def get_entity_82_by_id(self, entity_id: int) -> Optional[FinanceModelEntity82]:
+        return self.db.query(FinanceModelEntity82).filter(FinanceModelEntity82.id == entity_id).first()
+
+    def create_entity_82(self, payload: FinanceSchemaEntity82Create) -> FinanceModelEntity82:
+        db_obj = FinanceModelEntity82(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_82(self, entity_id: int, payload: FinanceSchemaEntity82Update) -> Optional[FinanceModelEntity82]:
+        db_obj = self.get_entity_82_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_82(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_82_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_83_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity83]:
+        return self.db.query(FinanceModelEntity83).offset(skip).limit(limit).all()
+
+    def get_entity_83_by_id(self, entity_id: int) -> Optional[FinanceModelEntity83]:
+        return self.db.query(FinanceModelEntity83).filter(FinanceModelEntity83.id == entity_id).first()
+
+    def create_entity_83(self, payload: FinanceSchemaEntity83Create) -> FinanceModelEntity83:
+        db_obj = FinanceModelEntity83(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_83(self, entity_id: int, payload: FinanceSchemaEntity83Update) -> Optional[FinanceModelEntity83]:
+        db_obj = self.get_entity_83_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_83(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_83_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_84_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity84]:
+        return self.db.query(FinanceModelEntity84).offset(skip).limit(limit).all()
+
+    def get_entity_84_by_id(self, entity_id: int) -> Optional[FinanceModelEntity84]:
+        return self.db.query(FinanceModelEntity84).filter(FinanceModelEntity84.id == entity_id).first()
+
+    def create_entity_84(self, payload: FinanceSchemaEntity84Create) -> FinanceModelEntity84:
+        db_obj = FinanceModelEntity84(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_84(self, entity_id: int, payload: FinanceSchemaEntity84Update) -> Optional[FinanceModelEntity84]:
+        db_obj = self.get_entity_84_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_84(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_84_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_85_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity85]:
+        return self.db.query(FinanceModelEntity85).offset(skip).limit(limit).all()
+
+    def get_entity_85_by_id(self, entity_id: int) -> Optional[FinanceModelEntity85]:
+        return self.db.query(FinanceModelEntity85).filter(FinanceModelEntity85.id == entity_id).first()
+
+    def create_entity_85(self, payload: FinanceSchemaEntity85Create) -> FinanceModelEntity85:
+        db_obj = FinanceModelEntity85(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_85(self, entity_id: int, payload: FinanceSchemaEntity85Update) -> Optional[FinanceModelEntity85]:
+        db_obj = self.get_entity_85_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_85(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_85_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_86_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity86]:
+        return self.db.query(FinanceModelEntity86).offset(skip).limit(limit).all()
+
+    def get_entity_86_by_id(self, entity_id: int) -> Optional[FinanceModelEntity86]:
+        return self.db.query(FinanceModelEntity86).filter(FinanceModelEntity86.id == entity_id).first()
+
+    def create_entity_86(self, payload: FinanceSchemaEntity86Create) -> FinanceModelEntity86:
+        db_obj = FinanceModelEntity86(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_86(self, entity_id: int, payload: FinanceSchemaEntity86Update) -> Optional[FinanceModelEntity86]:
+        db_obj = self.get_entity_86_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_86(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_86_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_87_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity87]:
+        return self.db.query(FinanceModelEntity87).offset(skip).limit(limit).all()
+
+    def get_entity_87_by_id(self, entity_id: int) -> Optional[FinanceModelEntity87]:
+        return self.db.query(FinanceModelEntity87).filter(FinanceModelEntity87.id == entity_id).first()
+
+    def create_entity_87(self, payload: FinanceSchemaEntity87Create) -> FinanceModelEntity87:
+        db_obj = FinanceModelEntity87(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_87(self, entity_id: int, payload: FinanceSchemaEntity87Update) -> Optional[FinanceModelEntity87]:
+        db_obj = self.get_entity_87_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_87(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_87_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_88_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity88]:
+        return self.db.query(FinanceModelEntity88).offset(skip).limit(limit).all()
+
+    def get_entity_88_by_id(self, entity_id: int) -> Optional[FinanceModelEntity88]:
+        return self.db.query(FinanceModelEntity88).filter(FinanceModelEntity88.id == entity_id).first()
+
+    def create_entity_88(self, payload: FinanceSchemaEntity88Create) -> FinanceModelEntity88:
+        db_obj = FinanceModelEntity88(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_88(self, entity_id: int, payload: FinanceSchemaEntity88Update) -> Optional[FinanceModelEntity88]:
+        db_obj = self.get_entity_88_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_88(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_88_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_89_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity89]:
+        return self.db.query(FinanceModelEntity89).offset(skip).limit(limit).all()
+
+    def get_entity_89_by_id(self, entity_id: int) -> Optional[FinanceModelEntity89]:
+        return self.db.query(FinanceModelEntity89).filter(FinanceModelEntity89.id == entity_id).first()
+
+    def create_entity_89(self, payload: FinanceSchemaEntity89Create) -> FinanceModelEntity89:
+        db_obj = FinanceModelEntity89(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_89(self, entity_id: int, payload: FinanceSchemaEntity89Update) -> Optional[FinanceModelEntity89]:
+        db_obj = self.get_entity_89_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_89(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_89_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_90_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity90]:
+        return self.db.query(FinanceModelEntity90).offset(skip).limit(limit).all()
+
+    def get_entity_90_by_id(self, entity_id: int) -> Optional[FinanceModelEntity90]:
+        return self.db.query(FinanceModelEntity90).filter(FinanceModelEntity90.id == entity_id).first()
+
+    def create_entity_90(self, payload: FinanceSchemaEntity90Create) -> FinanceModelEntity90:
+        db_obj = FinanceModelEntity90(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_90(self, entity_id: int, payload: FinanceSchemaEntity90Update) -> Optional[FinanceModelEntity90]:
+        db_obj = self.get_entity_90_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_90(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_90_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_91_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity91]:
+        return self.db.query(FinanceModelEntity91).offset(skip).limit(limit).all()
+
+    def get_entity_91_by_id(self, entity_id: int) -> Optional[FinanceModelEntity91]:
+        return self.db.query(FinanceModelEntity91).filter(FinanceModelEntity91.id == entity_id).first()
+
+    def create_entity_91(self, payload: FinanceSchemaEntity91Create) -> FinanceModelEntity91:
+        db_obj = FinanceModelEntity91(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_91(self, entity_id: int, payload: FinanceSchemaEntity91Update) -> Optional[FinanceModelEntity91]:
+        db_obj = self.get_entity_91_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_91(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_91_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_92_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity92]:
+        return self.db.query(FinanceModelEntity92).offset(skip).limit(limit).all()
+
+    def get_entity_92_by_id(self, entity_id: int) -> Optional[FinanceModelEntity92]:
+        return self.db.query(FinanceModelEntity92).filter(FinanceModelEntity92.id == entity_id).first()
+
+    def create_entity_92(self, payload: FinanceSchemaEntity92Create) -> FinanceModelEntity92:
+        db_obj = FinanceModelEntity92(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_92(self, entity_id: int, payload: FinanceSchemaEntity92Update) -> Optional[FinanceModelEntity92]:
+        db_obj = self.get_entity_92_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_92(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_92_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_93_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity93]:
+        return self.db.query(FinanceModelEntity93).offset(skip).limit(limit).all()
+
+    def get_entity_93_by_id(self, entity_id: int) -> Optional[FinanceModelEntity93]:
+        return self.db.query(FinanceModelEntity93).filter(FinanceModelEntity93.id == entity_id).first()
+
+    def create_entity_93(self, payload: FinanceSchemaEntity93Create) -> FinanceModelEntity93:
+        db_obj = FinanceModelEntity93(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_93(self, entity_id: int, payload: FinanceSchemaEntity93Update) -> Optional[FinanceModelEntity93]:
+        db_obj = self.get_entity_93_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_93(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_93_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_94_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity94]:
+        return self.db.query(FinanceModelEntity94).offset(skip).limit(limit).all()
+
+    def get_entity_94_by_id(self, entity_id: int) -> Optional[FinanceModelEntity94]:
+        return self.db.query(FinanceModelEntity94).filter(FinanceModelEntity94.id == entity_id).first()
+
+    def create_entity_94(self, payload: FinanceSchemaEntity94Create) -> FinanceModelEntity94:
+        db_obj = FinanceModelEntity94(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_94(self, entity_id: int, payload: FinanceSchemaEntity94Update) -> Optional[FinanceModelEntity94]:
+        db_obj = self.get_entity_94_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_94(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_94_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_95_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity95]:
+        return self.db.query(FinanceModelEntity95).offset(skip).limit(limit).all()
+
+    def get_entity_95_by_id(self, entity_id: int) -> Optional[FinanceModelEntity95]:
+        return self.db.query(FinanceModelEntity95).filter(FinanceModelEntity95.id == entity_id).first()
+
+    def create_entity_95(self, payload: FinanceSchemaEntity95Create) -> FinanceModelEntity95:
+        db_obj = FinanceModelEntity95(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_95(self, entity_id: int, payload: FinanceSchemaEntity95Update) -> Optional[FinanceModelEntity95]:
+        db_obj = self.get_entity_95_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_95(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_95_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_96_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity96]:
+        return self.db.query(FinanceModelEntity96).offset(skip).limit(limit).all()
+
+    def get_entity_96_by_id(self, entity_id: int) -> Optional[FinanceModelEntity96]:
+        return self.db.query(FinanceModelEntity96).filter(FinanceModelEntity96.id == entity_id).first()
+
+    def create_entity_96(self, payload: FinanceSchemaEntity96Create) -> FinanceModelEntity96:
+        db_obj = FinanceModelEntity96(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_96(self, entity_id: int, payload: FinanceSchemaEntity96Update) -> Optional[FinanceModelEntity96]:
+        db_obj = self.get_entity_96_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_96(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_96_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_97_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity97]:
+        return self.db.query(FinanceModelEntity97).offset(skip).limit(limit).all()
+
+    def get_entity_97_by_id(self, entity_id: int) -> Optional[FinanceModelEntity97]:
+        return self.db.query(FinanceModelEntity97).filter(FinanceModelEntity97.id == entity_id).first()
+
+    def create_entity_97(self, payload: FinanceSchemaEntity97Create) -> FinanceModelEntity97:
+        db_obj = FinanceModelEntity97(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_97(self, entity_id: int, payload: FinanceSchemaEntity97Update) -> Optional[FinanceModelEntity97]:
+        db_obj = self.get_entity_97_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_97(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_97_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_98_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity98]:
+        return self.db.query(FinanceModelEntity98).offset(skip).limit(limit).all()
+
+    def get_entity_98_by_id(self, entity_id: int) -> Optional[FinanceModelEntity98]:
+        return self.db.query(FinanceModelEntity98).filter(FinanceModelEntity98.id == entity_id).first()
+
+    def create_entity_98(self, payload: FinanceSchemaEntity98Create) -> FinanceModelEntity98:
+        db_obj = FinanceModelEntity98(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_98(self, entity_id: int, payload: FinanceSchemaEntity98Update) -> Optional[FinanceModelEntity98]:
+        db_obj = self.get_entity_98_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_98(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_98_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_99_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity99]:
+        return self.db.query(FinanceModelEntity99).offset(skip).limit(limit).all()
+
+    def get_entity_99_by_id(self, entity_id: int) -> Optional[FinanceModelEntity99]:
+        return self.db.query(FinanceModelEntity99).filter(FinanceModelEntity99.id == entity_id).first()
+
+    def create_entity_99(self, payload: FinanceSchemaEntity99Create) -> FinanceModelEntity99:
+        db_obj = FinanceModelEntity99(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_99(self, entity_id: int, payload: FinanceSchemaEntity99Update) -> Optional[FinanceModelEntity99]:
+        db_obj = self.get_entity_99_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_99(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_99_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_100_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity100]:
+        return self.db.query(FinanceModelEntity100).offset(skip).limit(limit).all()
+
+    def get_entity_100_by_id(self, entity_id: int) -> Optional[FinanceModelEntity100]:
+        return self.db.query(FinanceModelEntity100).filter(FinanceModelEntity100.id == entity_id).first()
+
+    def create_entity_100(self, payload: FinanceSchemaEntity100Create) -> FinanceModelEntity100:
+        db_obj = FinanceModelEntity100(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_100(self, entity_id: int, payload: FinanceSchemaEntity100Update) -> Optional[FinanceModelEntity100]:
+        db_obj = self.get_entity_100_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_100(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_100_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_101_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity101]:
+        return self.db.query(FinanceModelEntity101).offset(skip).limit(limit).all()
+
+    def get_entity_101_by_id(self, entity_id: int) -> Optional[FinanceModelEntity101]:
+        return self.db.query(FinanceModelEntity101).filter(FinanceModelEntity101.id == entity_id).first()
+
+    def create_entity_101(self, payload: FinanceSchemaEntity101Create) -> FinanceModelEntity101:
+        db_obj = FinanceModelEntity101(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_101(self, entity_id: int, payload: FinanceSchemaEntity101Update) -> Optional[FinanceModelEntity101]:
+        db_obj = self.get_entity_101_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_101(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_101_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_102_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity102]:
+        return self.db.query(FinanceModelEntity102).offset(skip).limit(limit).all()
+
+    def get_entity_102_by_id(self, entity_id: int) -> Optional[FinanceModelEntity102]:
+        return self.db.query(FinanceModelEntity102).filter(FinanceModelEntity102.id == entity_id).first()
+
+    def create_entity_102(self, payload: FinanceSchemaEntity102Create) -> FinanceModelEntity102:
+        db_obj = FinanceModelEntity102(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_102(self, entity_id: int, payload: FinanceSchemaEntity102Update) -> Optional[FinanceModelEntity102]:
+        db_obj = self.get_entity_102_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_102(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_102_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_103_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity103]:
+        return self.db.query(FinanceModelEntity103).offset(skip).limit(limit).all()
+
+    def get_entity_103_by_id(self, entity_id: int) -> Optional[FinanceModelEntity103]:
+        return self.db.query(FinanceModelEntity103).filter(FinanceModelEntity103.id == entity_id).first()
+
+    def create_entity_103(self, payload: FinanceSchemaEntity103Create) -> FinanceModelEntity103:
+        db_obj = FinanceModelEntity103(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_103(self, entity_id: int, payload: FinanceSchemaEntity103Update) -> Optional[FinanceModelEntity103]:
+        db_obj = self.get_entity_103_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_103(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_103_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_104_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity104]:
+        return self.db.query(FinanceModelEntity104).offset(skip).limit(limit).all()
+
+    def get_entity_104_by_id(self, entity_id: int) -> Optional[FinanceModelEntity104]:
+        return self.db.query(FinanceModelEntity104).filter(FinanceModelEntity104.id == entity_id).first()
+
+    def create_entity_104(self, payload: FinanceSchemaEntity104Create) -> FinanceModelEntity104:
+        db_obj = FinanceModelEntity104(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_104(self, entity_id: int, payload: FinanceSchemaEntity104Update) -> Optional[FinanceModelEntity104]:
+        db_obj = self.get_entity_104_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_104(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_104_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_105_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity105]:
+        return self.db.query(FinanceModelEntity105).offset(skip).limit(limit).all()
+
+    def get_entity_105_by_id(self, entity_id: int) -> Optional[FinanceModelEntity105]:
+        return self.db.query(FinanceModelEntity105).filter(FinanceModelEntity105.id == entity_id).first()
+
+    def create_entity_105(self, payload: FinanceSchemaEntity105Create) -> FinanceModelEntity105:
+        db_obj = FinanceModelEntity105(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_105(self, entity_id: int, payload: FinanceSchemaEntity105Update) -> Optional[FinanceModelEntity105]:
+        db_obj = self.get_entity_105_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_105(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_105_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_106_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity106]:
+        return self.db.query(FinanceModelEntity106).offset(skip).limit(limit).all()
+
+    def get_entity_106_by_id(self, entity_id: int) -> Optional[FinanceModelEntity106]:
+        return self.db.query(FinanceModelEntity106).filter(FinanceModelEntity106.id == entity_id).first()
+
+    def create_entity_106(self, payload: FinanceSchemaEntity106Create) -> FinanceModelEntity106:
+        db_obj = FinanceModelEntity106(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_106(self, entity_id: int, payload: FinanceSchemaEntity106Update) -> Optional[FinanceModelEntity106]:
+        db_obj = self.get_entity_106_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_106(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_106_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_107_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity107]:
+        return self.db.query(FinanceModelEntity107).offset(skip).limit(limit).all()
+
+    def get_entity_107_by_id(self, entity_id: int) -> Optional[FinanceModelEntity107]:
+        return self.db.query(FinanceModelEntity107).filter(FinanceModelEntity107.id == entity_id).first()
+
+    def create_entity_107(self, payload: FinanceSchemaEntity107Create) -> FinanceModelEntity107:
+        db_obj = FinanceModelEntity107(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_107(self, entity_id: int, payload: FinanceSchemaEntity107Update) -> Optional[FinanceModelEntity107]:
+        db_obj = self.get_entity_107_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_107(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_107_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_108_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity108]:
+        return self.db.query(FinanceModelEntity108).offset(skip).limit(limit).all()
+
+    def get_entity_108_by_id(self, entity_id: int) -> Optional[FinanceModelEntity108]:
+        return self.db.query(FinanceModelEntity108).filter(FinanceModelEntity108.id == entity_id).first()
+
+    def create_entity_108(self, payload: FinanceSchemaEntity108Create) -> FinanceModelEntity108:
+        db_obj = FinanceModelEntity108(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_108(self, entity_id: int, payload: FinanceSchemaEntity108Update) -> Optional[FinanceModelEntity108]:
+        db_obj = self.get_entity_108_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_108(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_108_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_109_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity109]:
+        return self.db.query(FinanceModelEntity109).offset(skip).limit(limit).all()
+
+    def get_entity_109_by_id(self, entity_id: int) -> Optional[FinanceModelEntity109]:
+        return self.db.query(FinanceModelEntity109).filter(FinanceModelEntity109.id == entity_id).first()
+
+    def create_entity_109(self, payload: FinanceSchemaEntity109Create) -> FinanceModelEntity109:
+        db_obj = FinanceModelEntity109(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_109(self, entity_id: int, payload: FinanceSchemaEntity109Update) -> Optional[FinanceModelEntity109]:
+        db_obj = self.get_entity_109_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_109(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_109_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_110_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity110]:
+        return self.db.query(FinanceModelEntity110).offset(skip).limit(limit).all()
+
+    def get_entity_110_by_id(self, entity_id: int) -> Optional[FinanceModelEntity110]:
+        return self.db.query(FinanceModelEntity110).filter(FinanceModelEntity110.id == entity_id).first()
+
+    def create_entity_110(self, payload: FinanceSchemaEntity110Create) -> FinanceModelEntity110:
+        db_obj = FinanceModelEntity110(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_110(self, entity_id: int, payload: FinanceSchemaEntity110Update) -> Optional[FinanceModelEntity110]:
+        db_obj = self.get_entity_110_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_110(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_110_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_111_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity111]:
+        return self.db.query(FinanceModelEntity111).offset(skip).limit(limit).all()
+
+    def get_entity_111_by_id(self, entity_id: int) -> Optional[FinanceModelEntity111]:
+        return self.db.query(FinanceModelEntity111).filter(FinanceModelEntity111.id == entity_id).first()
+
+    def create_entity_111(self, payload: FinanceSchemaEntity111Create) -> FinanceModelEntity111:
+        db_obj = FinanceModelEntity111(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_111(self, entity_id: int, payload: FinanceSchemaEntity111Update) -> Optional[FinanceModelEntity111]:
+        db_obj = self.get_entity_111_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_111(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_111_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_112_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity112]:
+        return self.db.query(FinanceModelEntity112).offset(skip).limit(limit).all()
+
+    def get_entity_112_by_id(self, entity_id: int) -> Optional[FinanceModelEntity112]:
+        return self.db.query(FinanceModelEntity112).filter(FinanceModelEntity112.id == entity_id).first()
+
+    def create_entity_112(self, payload: FinanceSchemaEntity112Create) -> FinanceModelEntity112:
+        db_obj = FinanceModelEntity112(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_112(self, entity_id: int, payload: FinanceSchemaEntity112Update) -> Optional[FinanceModelEntity112]:
+        db_obj = self.get_entity_112_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_112(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_112_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_113_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity113]:
+        return self.db.query(FinanceModelEntity113).offset(skip).limit(limit).all()
+
+    def get_entity_113_by_id(self, entity_id: int) -> Optional[FinanceModelEntity113]:
+        return self.db.query(FinanceModelEntity113).filter(FinanceModelEntity113.id == entity_id).first()
+
+    def create_entity_113(self, payload: FinanceSchemaEntity113Create) -> FinanceModelEntity113:
+        db_obj = FinanceModelEntity113(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_113(self, entity_id: int, payload: FinanceSchemaEntity113Update) -> Optional[FinanceModelEntity113]:
+        db_obj = self.get_entity_113_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_113(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_113_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_114_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity114]:
+        return self.db.query(FinanceModelEntity114).offset(skip).limit(limit).all()
+
+    def get_entity_114_by_id(self, entity_id: int) -> Optional[FinanceModelEntity114]:
+        return self.db.query(FinanceModelEntity114).filter(FinanceModelEntity114.id == entity_id).first()
+
+    def create_entity_114(self, payload: FinanceSchemaEntity114Create) -> FinanceModelEntity114:
+        db_obj = FinanceModelEntity114(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_114(self, entity_id: int, payload: FinanceSchemaEntity114Update) -> Optional[FinanceModelEntity114]:
+        db_obj = self.get_entity_114_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_114(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_114_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_115_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity115]:
+        return self.db.query(FinanceModelEntity115).offset(skip).limit(limit).all()
+
+    def get_entity_115_by_id(self, entity_id: int) -> Optional[FinanceModelEntity115]:
+        return self.db.query(FinanceModelEntity115).filter(FinanceModelEntity115.id == entity_id).first()
+
+    def create_entity_115(self, payload: FinanceSchemaEntity115Create) -> FinanceModelEntity115:
+        db_obj = FinanceModelEntity115(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_115(self, entity_id: int, payload: FinanceSchemaEntity115Update) -> Optional[FinanceModelEntity115]:
+        db_obj = self.get_entity_115_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_115(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_115_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_116_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity116]:
+        return self.db.query(FinanceModelEntity116).offset(skip).limit(limit).all()
+
+    def get_entity_116_by_id(self, entity_id: int) -> Optional[FinanceModelEntity116]:
+        return self.db.query(FinanceModelEntity116).filter(FinanceModelEntity116.id == entity_id).first()
+
+    def create_entity_116(self, payload: FinanceSchemaEntity116Create) -> FinanceModelEntity116:
+        db_obj = FinanceModelEntity116(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_116(self, entity_id: int, payload: FinanceSchemaEntity116Update) -> Optional[FinanceModelEntity116]:
+        db_obj = self.get_entity_116_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_116(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_116_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_117_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity117]:
+        return self.db.query(FinanceModelEntity117).offset(skip).limit(limit).all()
+
+    def get_entity_117_by_id(self, entity_id: int) -> Optional[FinanceModelEntity117]:
+        return self.db.query(FinanceModelEntity117).filter(FinanceModelEntity117.id == entity_id).first()
+
+    def create_entity_117(self, payload: FinanceSchemaEntity117Create) -> FinanceModelEntity117:
+        db_obj = FinanceModelEntity117(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_117(self, entity_id: int, payload: FinanceSchemaEntity117Update) -> Optional[FinanceModelEntity117]:
+        db_obj = self.get_entity_117_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_117(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_117_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_118_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity118]:
+        return self.db.query(FinanceModelEntity118).offset(skip).limit(limit).all()
+
+    def get_entity_118_by_id(self, entity_id: int) -> Optional[FinanceModelEntity118]:
+        return self.db.query(FinanceModelEntity118).filter(FinanceModelEntity118.id == entity_id).first()
+
+    def create_entity_118(self, payload: FinanceSchemaEntity118Create) -> FinanceModelEntity118:
+        db_obj = FinanceModelEntity118(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_118(self, entity_id: int, payload: FinanceSchemaEntity118Update) -> Optional[FinanceModelEntity118]:
+        db_obj = self.get_entity_118_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_118(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_118_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_119_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity119]:
+        return self.db.query(FinanceModelEntity119).offset(skip).limit(limit).all()
+
+    def get_entity_119_by_id(self, entity_id: int) -> Optional[FinanceModelEntity119]:
+        return self.db.query(FinanceModelEntity119).filter(FinanceModelEntity119.id == entity_id).first()
+
+    def create_entity_119(self, payload: FinanceSchemaEntity119Create) -> FinanceModelEntity119:
+        db_obj = FinanceModelEntity119(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_119(self, entity_id: int, payload: FinanceSchemaEntity119Update) -> Optional[FinanceModelEntity119]:
+        db_obj = self.get_entity_119_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_119(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_119_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_120_list(self, skip: int = 0, limit: int = 100) -> List[FinanceModelEntity120]:
+        return self.db.query(FinanceModelEntity120).offset(skip).limit(limit).all()
+
+    def get_entity_120_by_id(self, entity_id: int) -> Optional[FinanceModelEntity120]:
+        return self.db.query(FinanceModelEntity120).filter(FinanceModelEntity120.id == entity_id).first()
+
+    def create_entity_120(self, payload: FinanceSchemaEntity120Create) -> FinanceModelEntity120:
+        db_obj = FinanceModelEntity120(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_120(self, entity_id: int, payload: FinanceSchemaEntity120Update) -> Optional[FinanceModelEntity120]:
+        db_obj = self.get_entity_120_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_120(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_120_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+

@@ -454,3 +454,633 @@ def test_library_entity_50_schema_validation():
     assert obj.entity_code == "TEST_LIBRARY_50"
     assert obj.value_amount == 50 * 100.5
 
+def test_library_entity_51_schema_validation():
+    obj = LibrarySchemaEntity51Create(
+        entity_code="TEST_LIBRARY_51",
+        name="Test Entity 51",
+        value_amount=51 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_51"
+    assert obj.value_amount == 51 * 100.5
+
+def test_library_entity_52_schema_validation():
+    obj = LibrarySchemaEntity52Create(
+        entity_code="TEST_LIBRARY_52",
+        name="Test Entity 52",
+        value_amount=52 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_52"
+    assert obj.value_amount == 52 * 100.5
+
+def test_library_entity_53_schema_validation():
+    obj = LibrarySchemaEntity53Create(
+        entity_code="TEST_LIBRARY_53",
+        name="Test Entity 53",
+        value_amount=53 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_53"
+    assert obj.value_amount == 53 * 100.5
+
+def test_library_entity_54_schema_validation():
+    obj = LibrarySchemaEntity54Create(
+        entity_code="TEST_LIBRARY_54",
+        name="Test Entity 54",
+        value_amount=54 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_54"
+    assert obj.value_amount == 54 * 100.5
+
+def test_library_entity_55_schema_validation():
+    obj = LibrarySchemaEntity55Create(
+        entity_code="TEST_LIBRARY_55",
+        name="Test Entity 55",
+        value_amount=55 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_55"
+    assert obj.value_amount == 55 * 100.5
+
+def test_library_entity_56_schema_validation():
+    obj = LibrarySchemaEntity56Create(
+        entity_code="TEST_LIBRARY_56",
+        name="Test Entity 56",
+        value_amount=56 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_56"
+    assert obj.value_amount == 56 * 100.5
+
+def test_library_entity_57_schema_validation():
+    obj = LibrarySchemaEntity57Create(
+        entity_code="TEST_LIBRARY_57",
+        name="Test Entity 57",
+        value_amount=57 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_57"
+    assert obj.value_amount == 57 * 100.5
+
+def test_library_entity_58_schema_validation():
+    obj = LibrarySchemaEntity58Create(
+        entity_code="TEST_LIBRARY_58",
+        name="Test Entity 58",
+        value_amount=58 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_58"
+    assert obj.value_amount == 58 * 100.5
+
+def test_library_entity_59_schema_validation():
+    obj = LibrarySchemaEntity59Create(
+        entity_code="TEST_LIBRARY_59",
+        name="Test Entity 59",
+        value_amount=59 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_59"
+    assert obj.value_amount == 59 * 100.5
+
+def test_library_entity_60_schema_validation():
+    obj = LibrarySchemaEntity60Create(
+        entity_code="TEST_LIBRARY_60",
+        name="Test Entity 60",
+        value_amount=60 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_60"
+    assert obj.value_amount == 60 * 100.5
+
+def test_library_entity_61_schema_validation():
+    obj = LibrarySchemaEntity61Create(
+        entity_code="TEST_LIBRARY_61",
+        name="Test Entity 61",
+        value_amount=61 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_61"
+    assert obj.value_amount == 61 * 100.5
+
+def test_library_entity_62_schema_validation():
+    obj = LibrarySchemaEntity62Create(
+        entity_code="TEST_LIBRARY_62",
+        name="Test Entity 62",
+        value_amount=62 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_62"
+    assert obj.value_amount == 62 * 100.5
+
+def test_library_entity_63_schema_validation():
+    obj = LibrarySchemaEntity63Create(
+        entity_code="TEST_LIBRARY_63",
+        name="Test Entity 63",
+        value_amount=63 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_63"
+    assert obj.value_amount == 63 * 100.5
+
+def test_library_entity_64_schema_validation():
+    obj = LibrarySchemaEntity64Create(
+        entity_code="TEST_LIBRARY_64",
+        name="Test Entity 64",
+        value_amount=64 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_64"
+    assert obj.value_amount == 64 * 100.5
+
+def test_library_entity_65_schema_validation():
+    obj = LibrarySchemaEntity65Create(
+        entity_code="TEST_LIBRARY_65",
+        name="Test Entity 65",
+        value_amount=65 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_65"
+    assert obj.value_amount == 65 * 100.5
+
+def test_library_entity_66_schema_validation():
+    obj = LibrarySchemaEntity66Create(
+        entity_code="TEST_LIBRARY_66",
+        name="Test Entity 66",
+        value_amount=66 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_66"
+    assert obj.value_amount == 66 * 100.5
+
+def test_library_entity_67_schema_validation():
+    obj = LibrarySchemaEntity67Create(
+        entity_code="TEST_LIBRARY_67",
+        name="Test Entity 67",
+        value_amount=67 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_67"
+    assert obj.value_amount == 67 * 100.5
+
+def test_library_entity_68_schema_validation():
+    obj = LibrarySchemaEntity68Create(
+        entity_code="TEST_LIBRARY_68",
+        name="Test Entity 68",
+        value_amount=68 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_68"
+    assert obj.value_amount == 68 * 100.5
+
+def test_library_entity_69_schema_validation():
+    obj = LibrarySchemaEntity69Create(
+        entity_code="TEST_LIBRARY_69",
+        name="Test Entity 69",
+        value_amount=69 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_69"
+    assert obj.value_amount == 69 * 100.5
+
+def test_library_entity_70_schema_validation():
+    obj = LibrarySchemaEntity70Create(
+        entity_code="TEST_LIBRARY_70",
+        name="Test Entity 70",
+        value_amount=70 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_70"
+    assert obj.value_amount == 70 * 100.5
+
+def test_library_entity_71_schema_validation():
+    obj = LibrarySchemaEntity71Create(
+        entity_code="TEST_LIBRARY_71",
+        name="Test Entity 71",
+        value_amount=71 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_71"
+    assert obj.value_amount == 71 * 100.5
+
+def test_library_entity_72_schema_validation():
+    obj = LibrarySchemaEntity72Create(
+        entity_code="TEST_LIBRARY_72",
+        name="Test Entity 72",
+        value_amount=72 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_72"
+    assert obj.value_amount == 72 * 100.5
+
+def test_library_entity_73_schema_validation():
+    obj = LibrarySchemaEntity73Create(
+        entity_code="TEST_LIBRARY_73",
+        name="Test Entity 73",
+        value_amount=73 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_73"
+    assert obj.value_amount == 73 * 100.5
+
+def test_library_entity_74_schema_validation():
+    obj = LibrarySchemaEntity74Create(
+        entity_code="TEST_LIBRARY_74",
+        name="Test Entity 74",
+        value_amount=74 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_74"
+    assert obj.value_amount == 74 * 100.5
+
+def test_library_entity_75_schema_validation():
+    obj = LibrarySchemaEntity75Create(
+        entity_code="TEST_LIBRARY_75",
+        name="Test Entity 75",
+        value_amount=75 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_75"
+    assert obj.value_amount == 75 * 100.5
+
+def test_library_entity_76_schema_validation():
+    obj = LibrarySchemaEntity76Create(
+        entity_code="TEST_LIBRARY_76",
+        name="Test Entity 76",
+        value_amount=76 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_76"
+    assert obj.value_amount == 76 * 100.5
+
+def test_library_entity_77_schema_validation():
+    obj = LibrarySchemaEntity77Create(
+        entity_code="TEST_LIBRARY_77",
+        name="Test Entity 77",
+        value_amount=77 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_77"
+    assert obj.value_amount == 77 * 100.5
+
+def test_library_entity_78_schema_validation():
+    obj = LibrarySchemaEntity78Create(
+        entity_code="TEST_LIBRARY_78",
+        name="Test Entity 78",
+        value_amount=78 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_78"
+    assert obj.value_amount == 78 * 100.5
+
+def test_library_entity_79_schema_validation():
+    obj = LibrarySchemaEntity79Create(
+        entity_code="TEST_LIBRARY_79",
+        name="Test Entity 79",
+        value_amount=79 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_79"
+    assert obj.value_amount == 79 * 100.5
+
+def test_library_entity_80_schema_validation():
+    obj = LibrarySchemaEntity80Create(
+        entity_code="TEST_LIBRARY_80",
+        name="Test Entity 80",
+        value_amount=80 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_80"
+    assert obj.value_amount == 80 * 100.5
+
+def test_library_entity_81_schema_validation():
+    obj = LibrarySchemaEntity81Create(
+        entity_code="TEST_LIBRARY_81",
+        name="Test Entity 81",
+        value_amount=81 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_81"
+    assert obj.value_amount == 81 * 100.5
+
+def test_library_entity_82_schema_validation():
+    obj = LibrarySchemaEntity82Create(
+        entity_code="TEST_LIBRARY_82",
+        name="Test Entity 82",
+        value_amount=82 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_82"
+    assert obj.value_amount == 82 * 100.5
+
+def test_library_entity_83_schema_validation():
+    obj = LibrarySchemaEntity83Create(
+        entity_code="TEST_LIBRARY_83",
+        name="Test Entity 83",
+        value_amount=83 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_83"
+    assert obj.value_amount == 83 * 100.5
+
+def test_library_entity_84_schema_validation():
+    obj = LibrarySchemaEntity84Create(
+        entity_code="TEST_LIBRARY_84",
+        name="Test Entity 84",
+        value_amount=84 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_84"
+    assert obj.value_amount == 84 * 100.5
+
+def test_library_entity_85_schema_validation():
+    obj = LibrarySchemaEntity85Create(
+        entity_code="TEST_LIBRARY_85",
+        name="Test Entity 85",
+        value_amount=85 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_85"
+    assert obj.value_amount == 85 * 100.5
+
+def test_library_entity_86_schema_validation():
+    obj = LibrarySchemaEntity86Create(
+        entity_code="TEST_LIBRARY_86",
+        name="Test Entity 86",
+        value_amount=86 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_86"
+    assert obj.value_amount == 86 * 100.5
+
+def test_library_entity_87_schema_validation():
+    obj = LibrarySchemaEntity87Create(
+        entity_code="TEST_LIBRARY_87",
+        name="Test Entity 87",
+        value_amount=87 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_87"
+    assert obj.value_amount == 87 * 100.5
+
+def test_library_entity_88_schema_validation():
+    obj = LibrarySchemaEntity88Create(
+        entity_code="TEST_LIBRARY_88",
+        name="Test Entity 88",
+        value_amount=88 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_88"
+    assert obj.value_amount == 88 * 100.5
+
+def test_library_entity_89_schema_validation():
+    obj = LibrarySchemaEntity89Create(
+        entity_code="TEST_LIBRARY_89",
+        name="Test Entity 89",
+        value_amount=89 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_89"
+    assert obj.value_amount == 89 * 100.5
+
+def test_library_entity_90_schema_validation():
+    obj = LibrarySchemaEntity90Create(
+        entity_code="TEST_LIBRARY_90",
+        name="Test Entity 90",
+        value_amount=90 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_90"
+    assert obj.value_amount == 90 * 100.5
+
+def test_library_entity_91_schema_validation():
+    obj = LibrarySchemaEntity91Create(
+        entity_code="TEST_LIBRARY_91",
+        name="Test Entity 91",
+        value_amount=91 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_91"
+    assert obj.value_amount == 91 * 100.5
+
+def test_library_entity_92_schema_validation():
+    obj = LibrarySchemaEntity92Create(
+        entity_code="TEST_LIBRARY_92",
+        name="Test Entity 92",
+        value_amount=92 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_92"
+    assert obj.value_amount == 92 * 100.5
+
+def test_library_entity_93_schema_validation():
+    obj = LibrarySchemaEntity93Create(
+        entity_code="TEST_LIBRARY_93",
+        name="Test Entity 93",
+        value_amount=93 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_93"
+    assert obj.value_amount == 93 * 100.5
+
+def test_library_entity_94_schema_validation():
+    obj = LibrarySchemaEntity94Create(
+        entity_code="TEST_LIBRARY_94",
+        name="Test Entity 94",
+        value_amount=94 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_94"
+    assert obj.value_amount == 94 * 100.5
+
+def test_library_entity_95_schema_validation():
+    obj = LibrarySchemaEntity95Create(
+        entity_code="TEST_LIBRARY_95",
+        name="Test Entity 95",
+        value_amount=95 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_95"
+    assert obj.value_amount == 95 * 100.5
+
+def test_library_entity_96_schema_validation():
+    obj = LibrarySchemaEntity96Create(
+        entity_code="TEST_LIBRARY_96",
+        name="Test Entity 96",
+        value_amount=96 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_96"
+    assert obj.value_amount == 96 * 100.5
+
+def test_library_entity_97_schema_validation():
+    obj = LibrarySchemaEntity97Create(
+        entity_code="TEST_LIBRARY_97",
+        name="Test Entity 97",
+        value_amount=97 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_97"
+    assert obj.value_amount == 97 * 100.5
+
+def test_library_entity_98_schema_validation():
+    obj = LibrarySchemaEntity98Create(
+        entity_code="TEST_LIBRARY_98",
+        name="Test Entity 98",
+        value_amount=98 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_98"
+    assert obj.value_amount == 98 * 100.5
+
+def test_library_entity_99_schema_validation():
+    obj = LibrarySchemaEntity99Create(
+        entity_code="TEST_LIBRARY_99",
+        name="Test Entity 99",
+        value_amount=99 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_99"
+    assert obj.value_amount == 99 * 100.5
+
+def test_library_entity_100_schema_validation():
+    obj = LibrarySchemaEntity100Create(
+        entity_code="TEST_LIBRARY_100",
+        name="Test Entity 100",
+        value_amount=100 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_100"
+    assert obj.value_amount == 100 * 100.5
+
+def test_library_entity_101_schema_validation():
+    obj = LibrarySchemaEntity101Create(
+        entity_code="TEST_LIBRARY_101",
+        name="Test Entity 101",
+        value_amount=101 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_101"
+    assert obj.value_amount == 101 * 100.5
+
+def test_library_entity_102_schema_validation():
+    obj = LibrarySchemaEntity102Create(
+        entity_code="TEST_LIBRARY_102",
+        name="Test Entity 102",
+        value_amount=102 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_102"
+    assert obj.value_amount == 102 * 100.5
+
+def test_library_entity_103_schema_validation():
+    obj = LibrarySchemaEntity103Create(
+        entity_code="TEST_LIBRARY_103",
+        name="Test Entity 103",
+        value_amount=103 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_103"
+    assert obj.value_amount == 103 * 100.5
+
+def test_library_entity_104_schema_validation():
+    obj = LibrarySchemaEntity104Create(
+        entity_code="TEST_LIBRARY_104",
+        name="Test Entity 104",
+        value_amount=104 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_104"
+    assert obj.value_amount == 104 * 100.5
+
+def test_library_entity_105_schema_validation():
+    obj = LibrarySchemaEntity105Create(
+        entity_code="TEST_LIBRARY_105",
+        name="Test Entity 105",
+        value_amount=105 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_105"
+    assert obj.value_amount == 105 * 100.5
+
+def test_library_entity_106_schema_validation():
+    obj = LibrarySchemaEntity106Create(
+        entity_code="TEST_LIBRARY_106",
+        name="Test Entity 106",
+        value_amount=106 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_106"
+    assert obj.value_amount == 106 * 100.5
+
+def test_library_entity_107_schema_validation():
+    obj = LibrarySchemaEntity107Create(
+        entity_code="TEST_LIBRARY_107",
+        name="Test Entity 107",
+        value_amount=107 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_107"
+    assert obj.value_amount == 107 * 100.5
+
+def test_library_entity_108_schema_validation():
+    obj = LibrarySchemaEntity108Create(
+        entity_code="TEST_LIBRARY_108",
+        name="Test Entity 108",
+        value_amount=108 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_108"
+    assert obj.value_amount == 108 * 100.5
+
+def test_library_entity_109_schema_validation():
+    obj = LibrarySchemaEntity109Create(
+        entity_code="TEST_LIBRARY_109",
+        name="Test Entity 109",
+        value_amount=109 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_109"
+    assert obj.value_amount == 109 * 100.5
+
+def test_library_entity_110_schema_validation():
+    obj = LibrarySchemaEntity110Create(
+        entity_code="TEST_LIBRARY_110",
+        name="Test Entity 110",
+        value_amount=110 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_110"
+    assert obj.value_amount == 110 * 100.5
+
+def test_library_entity_111_schema_validation():
+    obj = LibrarySchemaEntity111Create(
+        entity_code="TEST_LIBRARY_111",
+        name="Test Entity 111",
+        value_amount=111 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_111"
+    assert obj.value_amount == 111 * 100.5
+
+def test_library_entity_112_schema_validation():
+    obj = LibrarySchemaEntity112Create(
+        entity_code="TEST_LIBRARY_112",
+        name="Test Entity 112",
+        value_amount=112 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_112"
+    assert obj.value_amount == 112 * 100.5
+
+def test_library_entity_113_schema_validation():
+    obj = LibrarySchemaEntity113Create(
+        entity_code="TEST_LIBRARY_113",
+        name="Test Entity 113",
+        value_amount=113 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_113"
+    assert obj.value_amount == 113 * 100.5
+
+def test_library_entity_114_schema_validation():
+    obj = LibrarySchemaEntity114Create(
+        entity_code="TEST_LIBRARY_114",
+        name="Test Entity 114",
+        value_amount=114 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_114"
+    assert obj.value_amount == 114 * 100.5
+
+def test_library_entity_115_schema_validation():
+    obj = LibrarySchemaEntity115Create(
+        entity_code="TEST_LIBRARY_115",
+        name="Test Entity 115",
+        value_amount=115 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_115"
+    assert obj.value_amount == 115 * 100.5
+
+def test_library_entity_116_schema_validation():
+    obj = LibrarySchemaEntity116Create(
+        entity_code="TEST_LIBRARY_116",
+        name="Test Entity 116",
+        value_amount=116 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_116"
+    assert obj.value_amount == 116 * 100.5
+
+def test_library_entity_117_schema_validation():
+    obj = LibrarySchemaEntity117Create(
+        entity_code="TEST_LIBRARY_117",
+        name="Test Entity 117",
+        value_amount=117 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_117"
+    assert obj.value_amount == 117 * 100.5
+
+def test_library_entity_118_schema_validation():
+    obj = LibrarySchemaEntity118Create(
+        entity_code="TEST_LIBRARY_118",
+        name="Test Entity 118",
+        value_amount=118 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_118"
+    assert obj.value_amount == 118 * 100.5
+
+def test_library_entity_119_schema_validation():
+    obj = LibrarySchemaEntity119Create(
+        entity_code="TEST_LIBRARY_119",
+        name="Test Entity 119",
+        value_amount=119 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_119"
+    assert obj.value_amount == 119 * 100.5
+
+def test_library_entity_120_schema_validation():
+    obj = LibrarySchemaEntity120Create(
+        entity_code="TEST_LIBRARY_120",
+        name="Test Entity 120",
+        value_amount=120 * 100.5
+    )
+    assert obj.entity_code == "TEST_LIBRARY_120"
+    assert obj.value_amount == 120 * 100.5
+

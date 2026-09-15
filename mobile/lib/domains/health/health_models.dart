@@ -5041,3 +5041,1263 @@ class HealthFlutterModel120 {
   };
 }
 
+class HealthFlutterModel121 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel121({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel121.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel121(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel122 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel122({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel122.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel122(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel123 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel123({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel123.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel123(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel124 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel124({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel124.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel124(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel125 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel125({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel125.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel125(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel126 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel126({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel126.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel126(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel127 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel127({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel127.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel127(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel128 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel128({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel128.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel128(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel129 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel129({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel129.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel129(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel130 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel130({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel130.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel130(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel131 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel131({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel131.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel131(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel132 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel132({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel132.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel132(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel133 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel133({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel133.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel133(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel134 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel134({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel134.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel134(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel135 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel135({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel135.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel135(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel136 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel136({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel136.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel136(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel137 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel137({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel137.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel137(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel138 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel138({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel138.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel138(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel139 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel139({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel139.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel139(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel140 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel140({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel140.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel140(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel141 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel141({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel141.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel141(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel142 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel142({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel142.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel142(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel143 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel143({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel143.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel143(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel144 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel144({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel144.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel144(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel145 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel145({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel145.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel145(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel146 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel146({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel146.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel146(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel147 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel147({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel147.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel147(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel148 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel148({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel148.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel148(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel149 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel149({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel149.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel149(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+
+class HealthFlutterModel150 {
+  final int id;
+  final String entityCode;
+  final String name;
+  final String category;
+  final double valueAmount;
+  final bool isActive;
+  final DateTime createdAt;
+
+  HealthFlutterModel150({
+    required this.id,
+    required this.entityCode,
+    required this.name,
+    required this.category,
+    required this.valueAmount,
+    required this.isActive,
+    required this.createdAt,
+  });
+
+  factory HealthFlutterModel150.fromJson(Map<String, dynamic> json) {
+    return HealthFlutterModel150(
+      id: json['id'] ?? 0,
+      entityCode: json['entity_code'] ?? '',
+      name: json['name'] ?? '',
+      category: json['category'] ?? 'General',
+      valueAmount: (json['value_amount'] ?? 0.0).toDouble(),
+      isActive: json['is_active'] ?? true,
+      createdAt: DateTime.parse(json['created_at'] ?? DateTime.now().toIso8601String()),
+    );
+  }
+
+  Map<String, dynamic> toJson() => {
+    'id': id,
+    'entity_code': entityCode,
+    'name': name,
+    'category': category,
+    'value_amount': valueAmount,
+    'is_active': isActive,
+    'created_at': createdAt.toIso8601String(),
+  };
+}
+

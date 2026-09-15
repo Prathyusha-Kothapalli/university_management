@@ -1,47 +1,91 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { AuthProvider, useAuth } from './features/auth/AuthContext';
+import { Navbar } from './components/Navbar';
+import { LoginForm } from './components/LoginForm';
+import { SuperAdminDashboard } from './components/SuperAdminDashboard';
+import { UniversityAdminDashboard } from './components/UniversityAdminDashboard';
+import { UserPortalView } from './components/UserPortalView';
+import { AIStudyAssistant } from './components/AIStudyAssistant';
+import { AIBotWidget } from './components/AIBotWidget';
 
-export const App: React.FC = () => {
+const MainContent: React.FC<{ currentView: 'dashboard' | 'study_assistant' }> = ({ currentView }) => {
+  const { user, isLoading } = useAuth();
+
+  if (isLoading) {
+    return (
+      <div style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        minHeight: '80vh',
+        color: '#94a3b8',
+        fontSize: '1.1rem'
+      }}>
+        Loading UniSphere AI secure session...
+      </div>
+    );
+  }
+
+  if (currentView === 'study_assistant') {
+    return <AIStudyAssistant />;
+  }
+
+  if (!user) {
+    return <LoginForm />;
+  }
+
+  // Role-based dashboard views
+  switch (user.role) {
+    case 'SUPER_ADMIN':
+      return <SuperAdminDashboard />;
+    case 'UNIVERSITY_ADMIN':
+      return <UniversityAdminDashboard />;
+    case 'FACULTY':
+    case 'STUDENT':
+    case 'STAFF':
+    default:
+      return <UserPortalView />;
+  }
+};
+
+const AppContent: React.FC = () => {
+  const [currentView, setCurrentView] = useState<'dashboard' | 'study_assistant'>('dashboard');
+  const [isBotOpen, setIsBotOpen] = useState<boolean>(false);
+
   return (
     <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
       minHeight: '100vh',
-      padding: '2rem',
       backgroundColor: '#0f172a',
       color: '#f8fafc',
-      fontFamily: 'system-ui, -apple-system, sans-serif'
+      fontFamily: 'system-ui, -apple-system, sans-serif',
+      position: 'relative'
     }}>
-      <div style={{
-        backgroundColor: '#1e293b',
-        padding: '3rem',
-        borderRadius: '1rem',
-        boxShadow: '0 20px 25px -5px rgba(0, 0, 0, 0.3)',
-        maxWidth: '600px',
-        textAlign: 'center',
-        border: '1px solid #334155'
-      }}>
-        <h1 style={{ fontSize: '2.5rem', marginBottom: '1rem', color: '#38bdf8' }}>
-          UniSphere AI
-        </h1>
-        <p style={{ fontSize: '1.2rem', color: '#94a3b8', marginBottom: '1.5rem' }}>
-          Multi-Tenant University Management Platform
-        </p>
-        <div style={{
-          padding: '0.75rem 1.5rem',
-          backgroundColor: '#0369a1',
-          color: '#ffffff',
-          borderRadius: '0.5rem',
-          display: 'inline-block',
-          fontWeight: 600,
-          fontSize: '0.9rem'
-        }}>
-          Web Frontend Foundation Ready
-        </div>
-      </div>
+      <Navbar
+        currentView={currentView}
+        onViewChange={setCurrentView}
+        onToggleBot={() => setIsBotOpen(prev => !prev)}
+        isBotOpen={isBotOpen}
+      />
+      <main>
+        <MainContent currentView={currentView} />
+      </main>
+
+      {/* Floating AI Bot Assistant Feature across the whole site */}
+      <AIBotWidget
+        isOpen={isBotOpen}
+        onToggle={() => setIsBotOpen(prev => !prev)}
+      />
     </div>
   );
 };
 
+export const App: React.FC = () => {
+  return (
+    <AuthProvider>
+      <AppContent />
+    </AuthProvider>
+  );
+};
+
 export default App;
+

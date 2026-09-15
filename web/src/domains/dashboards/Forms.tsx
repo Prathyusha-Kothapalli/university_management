@@ -750,3 +750,753 @@ export const DashboardsFormModal30: React.FC<{ isOpen: boolean; onClose: () => v
   );
 };
 
+export const DashboardsFormModal31: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #31</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal32: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #32</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal33: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #33</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal34: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #34</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal35: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #35</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal36: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #36</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal37: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #37</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal38: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #38</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal39: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #39</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal40: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #40</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal41: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #41</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal42: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #42</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal43: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #43</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal44: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #44</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal45: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #45</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal46: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #46</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal47: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #47</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal48: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #48</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal49: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #49</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal50: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #50</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal51: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #51</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal52: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #52</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal53: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #53</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal54: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #54</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal55: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #55</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal56: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #56</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal57: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #57</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal58: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #58</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal59: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #59</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const DashboardsFormModal60: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Executive & Departmental Dashboards Form #60</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+

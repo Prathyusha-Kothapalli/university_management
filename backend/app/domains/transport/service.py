@@ -2011,3 +2011,2803 @@ class TransportDomainService:
         self.db.commit()
         return True
 
+    def get_entity_51_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity51]:
+        return self.db.query(TransportModelEntity51).offset(skip).limit(limit).all()
+
+    def get_entity_51_by_id(self, entity_id: int) -> Optional[TransportModelEntity51]:
+        return self.db.query(TransportModelEntity51).filter(TransportModelEntity51.id == entity_id).first()
+
+    def create_entity_51(self, payload: TransportSchemaEntity51Create) -> TransportModelEntity51:
+        db_obj = TransportModelEntity51(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_51(self, entity_id: int, payload: TransportSchemaEntity51Update) -> Optional[TransportModelEntity51]:
+        db_obj = self.get_entity_51_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_51(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_51_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_52_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity52]:
+        return self.db.query(TransportModelEntity52).offset(skip).limit(limit).all()
+
+    def get_entity_52_by_id(self, entity_id: int) -> Optional[TransportModelEntity52]:
+        return self.db.query(TransportModelEntity52).filter(TransportModelEntity52.id == entity_id).first()
+
+    def create_entity_52(self, payload: TransportSchemaEntity52Create) -> TransportModelEntity52:
+        db_obj = TransportModelEntity52(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_52(self, entity_id: int, payload: TransportSchemaEntity52Update) -> Optional[TransportModelEntity52]:
+        db_obj = self.get_entity_52_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_52(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_52_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_53_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity53]:
+        return self.db.query(TransportModelEntity53).offset(skip).limit(limit).all()
+
+    def get_entity_53_by_id(self, entity_id: int) -> Optional[TransportModelEntity53]:
+        return self.db.query(TransportModelEntity53).filter(TransportModelEntity53.id == entity_id).first()
+
+    def create_entity_53(self, payload: TransportSchemaEntity53Create) -> TransportModelEntity53:
+        db_obj = TransportModelEntity53(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_53(self, entity_id: int, payload: TransportSchemaEntity53Update) -> Optional[TransportModelEntity53]:
+        db_obj = self.get_entity_53_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_53(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_53_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_54_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity54]:
+        return self.db.query(TransportModelEntity54).offset(skip).limit(limit).all()
+
+    def get_entity_54_by_id(self, entity_id: int) -> Optional[TransportModelEntity54]:
+        return self.db.query(TransportModelEntity54).filter(TransportModelEntity54.id == entity_id).first()
+
+    def create_entity_54(self, payload: TransportSchemaEntity54Create) -> TransportModelEntity54:
+        db_obj = TransportModelEntity54(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_54(self, entity_id: int, payload: TransportSchemaEntity54Update) -> Optional[TransportModelEntity54]:
+        db_obj = self.get_entity_54_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_54(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_54_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_55_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity55]:
+        return self.db.query(TransportModelEntity55).offset(skip).limit(limit).all()
+
+    def get_entity_55_by_id(self, entity_id: int) -> Optional[TransportModelEntity55]:
+        return self.db.query(TransportModelEntity55).filter(TransportModelEntity55.id == entity_id).first()
+
+    def create_entity_55(self, payload: TransportSchemaEntity55Create) -> TransportModelEntity55:
+        db_obj = TransportModelEntity55(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_55(self, entity_id: int, payload: TransportSchemaEntity55Update) -> Optional[TransportModelEntity55]:
+        db_obj = self.get_entity_55_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_55(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_55_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_56_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity56]:
+        return self.db.query(TransportModelEntity56).offset(skip).limit(limit).all()
+
+    def get_entity_56_by_id(self, entity_id: int) -> Optional[TransportModelEntity56]:
+        return self.db.query(TransportModelEntity56).filter(TransportModelEntity56.id == entity_id).first()
+
+    def create_entity_56(self, payload: TransportSchemaEntity56Create) -> TransportModelEntity56:
+        db_obj = TransportModelEntity56(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_56(self, entity_id: int, payload: TransportSchemaEntity56Update) -> Optional[TransportModelEntity56]:
+        db_obj = self.get_entity_56_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_56(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_56_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_57_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity57]:
+        return self.db.query(TransportModelEntity57).offset(skip).limit(limit).all()
+
+    def get_entity_57_by_id(self, entity_id: int) -> Optional[TransportModelEntity57]:
+        return self.db.query(TransportModelEntity57).filter(TransportModelEntity57.id == entity_id).first()
+
+    def create_entity_57(self, payload: TransportSchemaEntity57Create) -> TransportModelEntity57:
+        db_obj = TransportModelEntity57(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_57(self, entity_id: int, payload: TransportSchemaEntity57Update) -> Optional[TransportModelEntity57]:
+        db_obj = self.get_entity_57_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_57(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_57_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_58_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity58]:
+        return self.db.query(TransportModelEntity58).offset(skip).limit(limit).all()
+
+    def get_entity_58_by_id(self, entity_id: int) -> Optional[TransportModelEntity58]:
+        return self.db.query(TransportModelEntity58).filter(TransportModelEntity58.id == entity_id).first()
+
+    def create_entity_58(self, payload: TransportSchemaEntity58Create) -> TransportModelEntity58:
+        db_obj = TransportModelEntity58(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_58(self, entity_id: int, payload: TransportSchemaEntity58Update) -> Optional[TransportModelEntity58]:
+        db_obj = self.get_entity_58_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_58(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_58_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_59_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity59]:
+        return self.db.query(TransportModelEntity59).offset(skip).limit(limit).all()
+
+    def get_entity_59_by_id(self, entity_id: int) -> Optional[TransportModelEntity59]:
+        return self.db.query(TransportModelEntity59).filter(TransportModelEntity59.id == entity_id).first()
+
+    def create_entity_59(self, payload: TransportSchemaEntity59Create) -> TransportModelEntity59:
+        db_obj = TransportModelEntity59(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_59(self, entity_id: int, payload: TransportSchemaEntity59Update) -> Optional[TransportModelEntity59]:
+        db_obj = self.get_entity_59_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_59(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_59_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_60_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity60]:
+        return self.db.query(TransportModelEntity60).offset(skip).limit(limit).all()
+
+    def get_entity_60_by_id(self, entity_id: int) -> Optional[TransportModelEntity60]:
+        return self.db.query(TransportModelEntity60).filter(TransportModelEntity60.id == entity_id).first()
+
+    def create_entity_60(self, payload: TransportSchemaEntity60Create) -> TransportModelEntity60:
+        db_obj = TransportModelEntity60(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_60(self, entity_id: int, payload: TransportSchemaEntity60Update) -> Optional[TransportModelEntity60]:
+        db_obj = self.get_entity_60_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_60(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_60_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_61_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity61]:
+        return self.db.query(TransportModelEntity61).offset(skip).limit(limit).all()
+
+    def get_entity_61_by_id(self, entity_id: int) -> Optional[TransportModelEntity61]:
+        return self.db.query(TransportModelEntity61).filter(TransportModelEntity61.id == entity_id).first()
+
+    def create_entity_61(self, payload: TransportSchemaEntity61Create) -> TransportModelEntity61:
+        db_obj = TransportModelEntity61(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_61(self, entity_id: int, payload: TransportSchemaEntity61Update) -> Optional[TransportModelEntity61]:
+        db_obj = self.get_entity_61_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_61(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_61_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_62_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity62]:
+        return self.db.query(TransportModelEntity62).offset(skip).limit(limit).all()
+
+    def get_entity_62_by_id(self, entity_id: int) -> Optional[TransportModelEntity62]:
+        return self.db.query(TransportModelEntity62).filter(TransportModelEntity62.id == entity_id).first()
+
+    def create_entity_62(self, payload: TransportSchemaEntity62Create) -> TransportModelEntity62:
+        db_obj = TransportModelEntity62(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_62(self, entity_id: int, payload: TransportSchemaEntity62Update) -> Optional[TransportModelEntity62]:
+        db_obj = self.get_entity_62_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_62(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_62_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_63_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity63]:
+        return self.db.query(TransportModelEntity63).offset(skip).limit(limit).all()
+
+    def get_entity_63_by_id(self, entity_id: int) -> Optional[TransportModelEntity63]:
+        return self.db.query(TransportModelEntity63).filter(TransportModelEntity63.id == entity_id).first()
+
+    def create_entity_63(self, payload: TransportSchemaEntity63Create) -> TransportModelEntity63:
+        db_obj = TransportModelEntity63(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_63(self, entity_id: int, payload: TransportSchemaEntity63Update) -> Optional[TransportModelEntity63]:
+        db_obj = self.get_entity_63_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_63(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_63_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_64_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity64]:
+        return self.db.query(TransportModelEntity64).offset(skip).limit(limit).all()
+
+    def get_entity_64_by_id(self, entity_id: int) -> Optional[TransportModelEntity64]:
+        return self.db.query(TransportModelEntity64).filter(TransportModelEntity64.id == entity_id).first()
+
+    def create_entity_64(self, payload: TransportSchemaEntity64Create) -> TransportModelEntity64:
+        db_obj = TransportModelEntity64(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_64(self, entity_id: int, payload: TransportSchemaEntity64Update) -> Optional[TransportModelEntity64]:
+        db_obj = self.get_entity_64_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_64(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_64_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_65_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity65]:
+        return self.db.query(TransportModelEntity65).offset(skip).limit(limit).all()
+
+    def get_entity_65_by_id(self, entity_id: int) -> Optional[TransportModelEntity65]:
+        return self.db.query(TransportModelEntity65).filter(TransportModelEntity65.id == entity_id).first()
+
+    def create_entity_65(self, payload: TransportSchemaEntity65Create) -> TransportModelEntity65:
+        db_obj = TransportModelEntity65(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_65(self, entity_id: int, payload: TransportSchemaEntity65Update) -> Optional[TransportModelEntity65]:
+        db_obj = self.get_entity_65_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_65(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_65_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_66_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity66]:
+        return self.db.query(TransportModelEntity66).offset(skip).limit(limit).all()
+
+    def get_entity_66_by_id(self, entity_id: int) -> Optional[TransportModelEntity66]:
+        return self.db.query(TransportModelEntity66).filter(TransportModelEntity66.id == entity_id).first()
+
+    def create_entity_66(self, payload: TransportSchemaEntity66Create) -> TransportModelEntity66:
+        db_obj = TransportModelEntity66(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_66(self, entity_id: int, payload: TransportSchemaEntity66Update) -> Optional[TransportModelEntity66]:
+        db_obj = self.get_entity_66_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_66(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_66_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_67_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity67]:
+        return self.db.query(TransportModelEntity67).offset(skip).limit(limit).all()
+
+    def get_entity_67_by_id(self, entity_id: int) -> Optional[TransportModelEntity67]:
+        return self.db.query(TransportModelEntity67).filter(TransportModelEntity67.id == entity_id).first()
+
+    def create_entity_67(self, payload: TransportSchemaEntity67Create) -> TransportModelEntity67:
+        db_obj = TransportModelEntity67(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_67(self, entity_id: int, payload: TransportSchemaEntity67Update) -> Optional[TransportModelEntity67]:
+        db_obj = self.get_entity_67_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_67(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_67_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_68_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity68]:
+        return self.db.query(TransportModelEntity68).offset(skip).limit(limit).all()
+
+    def get_entity_68_by_id(self, entity_id: int) -> Optional[TransportModelEntity68]:
+        return self.db.query(TransportModelEntity68).filter(TransportModelEntity68.id == entity_id).first()
+
+    def create_entity_68(self, payload: TransportSchemaEntity68Create) -> TransportModelEntity68:
+        db_obj = TransportModelEntity68(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_68(self, entity_id: int, payload: TransportSchemaEntity68Update) -> Optional[TransportModelEntity68]:
+        db_obj = self.get_entity_68_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_68(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_68_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_69_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity69]:
+        return self.db.query(TransportModelEntity69).offset(skip).limit(limit).all()
+
+    def get_entity_69_by_id(self, entity_id: int) -> Optional[TransportModelEntity69]:
+        return self.db.query(TransportModelEntity69).filter(TransportModelEntity69.id == entity_id).first()
+
+    def create_entity_69(self, payload: TransportSchemaEntity69Create) -> TransportModelEntity69:
+        db_obj = TransportModelEntity69(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_69(self, entity_id: int, payload: TransportSchemaEntity69Update) -> Optional[TransportModelEntity69]:
+        db_obj = self.get_entity_69_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_69(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_69_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_70_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity70]:
+        return self.db.query(TransportModelEntity70).offset(skip).limit(limit).all()
+
+    def get_entity_70_by_id(self, entity_id: int) -> Optional[TransportModelEntity70]:
+        return self.db.query(TransportModelEntity70).filter(TransportModelEntity70.id == entity_id).first()
+
+    def create_entity_70(self, payload: TransportSchemaEntity70Create) -> TransportModelEntity70:
+        db_obj = TransportModelEntity70(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_70(self, entity_id: int, payload: TransportSchemaEntity70Update) -> Optional[TransportModelEntity70]:
+        db_obj = self.get_entity_70_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_70(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_70_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_71_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity71]:
+        return self.db.query(TransportModelEntity71).offset(skip).limit(limit).all()
+
+    def get_entity_71_by_id(self, entity_id: int) -> Optional[TransportModelEntity71]:
+        return self.db.query(TransportModelEntity71).filter(TransportModelEntity71.id == entity_id).first()
+
+    def create_entity_71(self, payload: TransportSchemaEntity71Create) -> TransportModelEntity71:
+        db_obj = TransportModelEntity71(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_71(self, entity_id: int, payload: TransportSchemaEntity71Update) -> Optional[TransportModelEntity71]:
+        db_obj = self.get_entity_71_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_71(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_71_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_72_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity72]:
+        return self.db.query(TransportModelEntity72).offset(skip).limit(limit).all()
+
+    def get_entity_72_by_id(self, entity_id: int) -> Optional[TransportModelEntity72]:
+        return self.db.query(TransportModelEntity72).filter(TransportModelEntity72.id == entity_id).first()
+
+    def create_entity_72(self, payload: TransportSchemaEntity72Create) -> TransportModelEntity72:
+        db_obj = TransportModelEntity72(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_72(self, entity_id: int, payload: TransportSchemaEntity72Update) -> Optional[TransportModelEntity72]:
+        db_obj = self.get_entity_72_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_72(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_72_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_73_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity73]:
+        return self.db.query(TransportModelEntity73).offset(skip).limit(limit).all()
+
+    def get_entity_73_by_id(self, entity_id: int) -> Optional[TransportModelEntity73]:
+        return self.db.query(TransportModelEntity73).filter(TransportModelEntity73.id == entity_id).first()
+
+    def create_entity_73(self, payload: TransportSchemaEntity73Create) -> TransportModelEntity73:
+        db_obj = TransportModelEntity73(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_73(self, entity_id: int, payload: TransportSchemaEntity73Update) -> Optional[TransportModelEntity73]:
+        db_obj = self.get_entity_73_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_73(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_73_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_74_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity74]:
+        return self.db.query(TransportModelEntity74).offset(skip).limit(limit).all()
+
+    def get_entity_74_by_id(self, entity_id: int) -> Optional[TransportModelEntity74]:
+        return self.db.query(TransportModelEntity74).filter(TransportModelEntity74.id == entity_id).first()
+
+    def create_entity_74(self, payload: TransportSchemaEntity74Create) -> TransportModelEntity74:
+        db_obj = TransportModelEntity74(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_74(self, entity_id: int, payload: TransportSchemaEntity74Update) -> Optional[TransportModelEntity74]:
+        db_obj = self.get_entity_74_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_74(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_74_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_75_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity75]:
+        return self.db.query(TransportModelEntity75).offset(skip).limit(limit).all()
+
+    def get_entity_75_by_id(self, entity_id: int) -> Optional[TransportModelEntity75]:
+        return self.db.query(TransportModelEntity75).filter(TransportModelEntity75.id == entity_id).first()
+
+    def create_entity_75(self, payload: TransportSchemaEntity75Create) -> TransportModelEntity75:
+        db_obj = TransportModelEntity75(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_75(self, entity_id: int, payload: TransportSchemaEntity75Update) -> Optional[TransportModelEntity75]:
+        db_obj = self.get_entity_75_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_75(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_75_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_76_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity76]:
+        return self.db.query(TransportModelEntity76).offset(skip).limit(limit).all()
+
+    def get_entity_76_by_id(self, entity_id: int) -> Optional[TransportModelEntity76]:
+        return self.db.query(TransportModelEntity76).filter(TransportModelEntity76.id == entity_id).first()
+
+    def create_entity_76(self, payload: TransportSchemaEntity76Create) -> TransportModelEntity76:
+        db_obj = TransportModelEntity76(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_76(self, entity_id: int, payload: TransportSchemaEntity76Update) -> Optional[TransportModelEntity76]:
+        db_obj = self.get_entity_76_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_76(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_76_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_77_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity77]:
+        return self.db.query(TransportModelEntity77).offset(skip).limit(limit).all()
+
+    def get_entity_77_by_id(self, entity_id: int) -> Optional[TransportModelEntity77]:
+        return self.db.query(TransportModelEntity77).filter(TransportModelEntity77.id == entity_id).first()
+
+    def create_entity_77(self, payload: TransportSchemaEntity77Create) -> TransportModelEntity77:
+        db_obj = TransportModelEntity77(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_77(self, entity_id: int, payload: TransportSchemaEntity77Update) -> Optional[TransportModelEntity77]:
+        db_obj = self.get_entity_77_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_77(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_77_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_78_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity78]:
+        return self.db.query(TransportModelEntity78).offset(skip).limit(limit).all()
+
+    def get_entity_78_by_id(self, entity_id: int) -> Optional[TransportModelEntity78]:
+        return self.db.query(TransportModelEntity78).filter(TransportModelEntity78.id == entity_id).first()
+
+    def create_entity_78(self, payload: TransportSchemaEntity78Create) -> TransportModelEntity78:
+        db_obj = TransportModelEntity78(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_78(self, entity_id: int, payload: TransportSchemaEntity78Update) -> Optional[TransportModelEntity78]:
+        db_obj = self.get_entity_78_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_78(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_78_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_79_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity79]:
+        return self.db.query(TransportModelEntity79).offset(skip).limit(limit).all()
+
+    def get_entity_79_by_id(self, entity_id: int) -> Optional[TransportModelEntity79]:
+        return self.db.query(TransportModelEntity79).filter(TransportModelEntity79.id == entity_id).first()
+
+    def create_entity_79(self, payload: TransportSchemaEntity79Create) -> TransportModelEntity79:
+        db_obj = TransportModelEntity79(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_79(self, entity_id: int, payload: TransportSchemaEntity79Update) -> Optional[TransportModelEntity79]:
+        db_obj = self.get_entity_79_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_79(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_79_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_80_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity80]:
+        return self.db.query(TransportModelEntity80).offset(skip).limit(limit).all()
+
+    def get_entity_80_by_id(self, entity_id: int) -> Optional[TransportModelEntity80]:
+        return self.db.query(TransportModelEntity80).filter(TransportModelEntity80.id == entity_id).first()
+
+    def create_entity_80(self, payload: TransportSchemaEntity80Create) -> TransportModelEntity80:
+        db_obj = TransportModelEntity80(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_80(self, entity_id: int, payload: TransportSchemaEntity80Update) -> Optional[TransportModelEntity80]:
+        db_obj = self.get_entity_80_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_80(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_80_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_81_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity81]:
+        return self.db.query(TransportModelEntity81).offset(skip).limit(limit).all()
+
+    def get_entity_81_by_id(self, entity_id: int) -> Optional[TransportModelEntity81]:
+        return self.db.query(TransportModelEntity81).filter(TransportModelEntity81.id == entity_id).first()
+
+    def create_entity_81(self, payload: TransportSchemaEntity81Create) -> TransportModelEntity81:
+        db_obj = TransportModelEntity81(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_81(self, entity_id: int, payload: TransportSchemaEntity81Update) -> Optional[TransportModelEntity81]:
+        db_obj = self.get_entity_81_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_81(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_81_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_82_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity82]:
+        return self.db.query(TransportModelEntity82).offset(skip).limit(limit).all()
+
+    def get_entity_82_by_id(self, entity_id: int) -> Optional[TransportModelEntity82]:
+        return self.db.query(TransportModelEntity82).filter(TransportModelEntity82.id == entity_id).first()
+
+    def create_entity_82(self, payload: TransportSchemaEntity82Create) -> TransportModelEntity82:
+        db_obj = TransportModelEntity82(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_82(self, entity_id: int, payload: TransportSchemaEntity82Update) -> Optional[TransportModelEntity82]:
+        db_obj = self.get_entity_82_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_82(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_82_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_83_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity83]:
+        return self.db.query(TransportModelEntity83).offset(skip).limit(limit).all()
+
+    def get_entity_83_by_id(self, entity_id: int) -> Optional[TransportModelEntity83]:
+        return self.db.query(TransportModelEntity83).filter(TransportModelEntity83.id == entity_id).first()
+
+    def create_entity_83(self, payload: TransportSchemaEntity83Create) -> TransportModelEntity83:
+        db_obj = TransportModelEntity83(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_83(self, entity_id: int, payload: TransportSchemaEntity83Update) -> Optional[TransportModelEntity83]:
+        db_obj = self.get_entity_83_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_83(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_83_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_84_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity84]:
+        return self.db.query(TransportModelEntity84).offset(skip).limit(limit).all()
+
+    def get_entity_84_by_id(self, entity_id: int) -> Optional[TransportModelEntity84]:
+        return self.db.query(TransportModelEntity84).filter(TransportModelEntity84.id == entity_id).first()
+
+    def create_entity_84(self, payload: TransportSchemaEntity84Create) -> TransportModelEntity84:
+        db_obj = TransportModelEntity84(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_84(self, entity_id: int, payload: TransportSchemaEntity84Update) -> Optional[TransportModelEntity84]:
+        db_obj = self.get_entity_84_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_84(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_84_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_85_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity85]:
+        return self.db.query(TransportModelEntity85).offset(skip).limit(limit).all()
+
+    def get_entity_85_by_id(self, entity_id: int) -> Optional[TransportModelEntity85]:
+        return self.db.query(TransportModelEntity85).filter(TransportModelEntity85.id == entity_id).first()
+
+    def create_entity_85(self, payload: TransportSchemaEntity85Create) -> TransportModelEntity85:
+        db_obj = TransportModelEntity85(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_85(self, entity_id: int, payload: TransportSchemaEntity85Update) -> Optional[TransportModelEntity85]:
+        db_obj = self.get_entity_85_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_85(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_85_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_86_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity86]:
+        return self.db.query(TransportModelEntity86).offset(skip).limit(limit).all()
+
+    def get_entity_86_by_id(self, entity_id: int) -> Optional[TransportModelEntity86]:
+        return self.db.query(TransportModelEntity86).filter(TransportModelEntity86.id == entity_id).first()
+
+    def create_entity_86(self, payload: TransportSchemaEntity86Create) -> TransportModelEntity86:
+        db_obj = TransportModelEntity86(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_86(self, entity_id: int, payload: TransportSchemaEntity86Update) -> Optional[TransportModelEntity86]:
+        db_obj = self.get_entity_86_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_86(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_86_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_87_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity87]:
+        return self.db.query(TransportModelEntity87).offset(skip).limit(limit).all()
+
+    def get_entity_87_by_id(self, entity_id: int) -> Optional[TransportModelEntity87]:
+        return self.db.query(TransportModelEntity87).filter(TransportModelEntity87.id == entity_id).first()
+
+    def create_entity_87(self, payload: TransportSchemaEntity87Create) -> TransportModelEntity87:
+        db_obj = TransportModelEntity87(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_87(self, entity_id: int, payload: TransportSchemaEntity87Update) -> Optional[TransportModelEntity87]:
+        db_obj = self.get_entity_87_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_87(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_87_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_88_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity88]:
+        return self.db.query(TransportModelEntity88).offset(skip).limit(limit).all()
+
+    def get_entity_88_by_id(self, entity_id: int) -> Optional[TransportModelEntity88]:
+        return self.db.query(TransportModelEntity88).filter(TransportModelEntity88.id == entity_id).first()
+
+    def create_entity_88(self, payload: TransportSchemaEntity88Create) -> TransportModelEntity88:
+        db_obj = TransportModelEntity88(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_88(self, entity_id: int, payload: TransportSchemaEntity88Update) -> Optional[TransportModelEntity88]:
+        db_obj = self.get_entity_88_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_88(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_88_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_89_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity89]:
+        return self.db.query(TransportModelEntity89).offset(skip).limit(limit).all()
+
+    def get_entity_89_by_id(self, entity_id: int) -> Optional[TransportModelEntity89]:
+        return self.db.query(TransportModelEntity89).filter(TransportModelEntity89.id == entity_id).first()
+
+    def create_entity_89(self, payload: TransportSchemaEntity89Create) -> TransportModelEntity89:
+        db_obj = TransportModelEntity89(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_89(self, entity_id: int, payload: TransportSchemaEntity89Update) -> Optional[TransportModelEntity89]:
+        db_obj = self.get_entity_89_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_89(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_89_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_90_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity90]:
+        return self.db.query(TransportModelEntity90).offset(skip).limit(limit).all()
+
+    def get_entity_90_by_id(self, entity_id: int) -> Optional[TransportModelEntity90]:
+        return self.db.query(TransportModelEntity90).filter(TransportModelEntity90.id == entity_id).first()
+
+    def create_entity_90(self, payload: TransportSchemaEntity90Create) -> TransportModelEntity90:
+        db_obj = TransportModelEntity90(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_90(self, entity_id: int, payload: TransportSchemaEntity90Update) -> Optional[TransportModelEntity90]:
+        db_obj = self.get_entity_90_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_90(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_90_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_91_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity91]:
+        return self.db.query(TransportModelEntity91).offset(skip).limit(limit).all()
+
+    def get_entity_91_by_id(self, entity_id: int) -> Optional[TransportModelEntity91]:
+        return self.db.query(TransportModelEntity91).filter(TransportModelEntity91.id == entity_id).first()
+
+    def create_entity_91(self, payload: TransportSchemaEntity91Create) -> TransportModelEntity91:
+        db_obj = TransportModelEntity91(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_91(self, entity_id: int, payload: TransportSchemaEntity91Update) -> Optional[TransportModelEntity91]:
+        db_obj = self.get_entity_91_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_91(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_91_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_92_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity92]:
+        return self.db.query(TransportModelEntity92).offset(skip).limit(limit).all()
+
+    def get_entity_92_by_id(self, entity_id: int) -> Optional[TransportModelEntity92]:
+        return self.db.query(TransportModelEntity92).filter(TransportModelEntity92.id == entity_id).first()
+
+    def create_entity_92(self, payload: TransportSchemaEntity92Create) -> TransportModelEntity92:
+        db_obj = TransportModelEntity92(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_92(self, entity_id: int, payload: TransportSchemaEntity92Update) -> Optional[TransportModelEntity92]:
+        db_obj = self.get_entity_92_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_92(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_92_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_93_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity93]:
+        return self.db.query(TransportModelEntity93).offset(skip).limit(limit).all()
+
+    def get_entity_93_by_id(self, entity_id: int) -> Optional[TransportModelEntity93]:
+        return self.db.query(TransportModelEntity93).filter(TransportModelEntity93.id == entity_id).first()
+
+    def create_entity_93(self, payload: TransportSchemaEntity93Create) -> TransportModelEntity93:
+        db_obj = TransportModelEntity93(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_93(self, entity_id: int, payload: TransportSchemaEntity93Update) -> Optional[TransportModelEntity93]:
+        db_obj = self.get_entity_93_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_93(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_93_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_94_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity94]:
+        return self.db.query(TransportModelEntity94).offset(skip).limit(limit).all()
+
+    def get_entity_94_by_id(self, entity_id: int) -> Optional[TransportModelEntity94]:
+        return self.db.query(TransportModelEntity94).filter(TransportModelEntity94.id == entity_id).first()
+
+    def create_entity_94(self, payload: TransportSchemaEntity94Create) -> TransportModelEntity94:
+        db_obj = TransportModelEntity94(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_94(self, entity_id: int, payload: TransportSchemaEntity94Update) -> Optional[TransportModelEntity94]:
+        db_obj = self.get_entity_94_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_94(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_94_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_95_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity95]:
+        return self.db.query(TransportModelEntity95).offset(skip).limit(limit).all()
+
+    def get_entity_95_by_id(self, entity_id: int) -> Optional[TransportModelEntity95]:
+        return self.db.query(TransportModelEntity95).filter(TransportModelEntity95.id == entity_id).first()
+
+    def create_entity_95(self, payload: TransportSchemaEntity95Create) -> TransportModelEntity95:
+        db_obj = TransportModelEntity95(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_95(self, entity_id: int, payload: TransportSchemaEntity95Update) -> Optional[TransportModelEntity95]:
+        db_obj = self.get_entity_95_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_95(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_95_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_96_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity96]:
+        return self.db.query(TransportModelEntity96).offset(skip).limit(limit).all()
+
+    def get_entity_96_by_id(self, entity_id: int) -> Optional[TransportModelEntity96]:
+        return self.db.query(TransportModelEntity96).filter(TransportModelEntity96.id == entity_id).first()
+
+    def create_entity_96(self, payload: TransportSchemaEntity96Create) -> TransportModelEntity96:
+        db_obj = TransportModelEntity96(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_96(self, entity_id: int, payload: TransportSchemaEntity96Update) -> Optional[TransportModelEntity96]:
+        db_obj = self.get_entity_96_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_96(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_96_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_97_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity97]:
+        return self.db.query(TransportModelEntity97).offset(skip).limit(limit).all()
+
+    def get_entity_97_by_id(self, entity_id: int) -> Optional[TransportModelEntity97]:
+        return self.db.query(TransportModelEntity97).filter(TransportModelEntity97.id == entity_id).first()
+
+    def create_entity_97(self, payload: TransportSchemaEntity97Create) -> TransportModelEntity97:
+        db_obj = TransportModelEntity97(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_97(self, entity_id: int, payload: TransportSchemaEntity97Update) -> Optional[TransportModelEntity97]:
+        db_obj = self.get_entity_97_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_97(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_97_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_98_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity98]:
+        return self.db.query(TransportModelEntity98).offset(skip).limit(limit).all()
+
+    def get_entity_98_by_id(self, entity_id: int) -> Optional[TransportModelEntity98]:
+        return self.db.query(TransportModelEntity98).filter(TransportModelEntity98.id == entity_id).first()
+
+    def create_entity_98(self, payload: TransportSchemaEntity98Create) -> TransportModelEntity98:
+        db_obj = TransportModelEntity98(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_98(self, entity_id: int, payload: TransportSchemaEntity98Update) -> Optional[TransportModelEntity98]:
+        db_obj = self.get_entity_98_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_98(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_98_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_99_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity99]:
+        return self.db.query(TransportModelEntity99).offset(skip).limit(limit).all()
+
+    def get_entity_99_by_id(self, entity_id: int) -> Optional[TransportModelEntity99]:
+        return self.db.query(TransportModelEntity99).filter(TransportModelEntity99.id == entity_id).first()
+
+    def create_entity_99(self, payload: TransportSchemaEntity99Create) -> TransportModelEntity99:
+        db_obj = TransportModelEntity99(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_99(self, entity_id: int, payload: TransportSchemaEntity99Update) -> Optional[TransportModelEntity99]:
+        db_obj = self.get_entity_99_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_99(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_99_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_100_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity100]:
+        return self.db.query(TransportModelEntity100).offset(skip).limit(limit).all()
+
+    def get_entity_100_by_id(self, entity_id: int) -> Optional[TransportModelEntity100]:
+        return self.db.query(TransportModelEntity100).filter(TransportModelEntity100.id == entity_id).first()
+
+    def create_entity_100(self, payload: TransportSchemaEntity100Create) -> TransportModelEntity100:
+        db_obj = TransportModelEntity100(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_100(self, entity_id: int, payload: TransportSchemaEntity100Update) -> Optional[TransportModelEntity100]:
+        db_obj = self.get_entity_100_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_100(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_100_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_101_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity101]:
+        return self.db.query(TransportModelEntity101).offset(skip).limit(limit).all()
+
+    def get_entity_101_by_id(self, entity_id: int) -> Optional[TransportModelEntity101]:
+        return self.db.query(TransportModelEntity101).filter(TransportModelEntity101.id == entity_id).first()
+
+    def create_entity_101(self, payload: TransportSchemaEntity101Create) -> TransportModelEntity101:
+        db_obj = TransportModelEntity101(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_101(self, entity_id: int, payload: TransportSchemaEntity101Update) -> Optional[TransportModelEntity101]:
+        db_obj = self.get_entity_101_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_101(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_101_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_102_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity102]:
+        return self.db.query(TransportModelEntity102).offset(skip).limit(limit).all()
+
+    def get_entity_102_by_id(self, entity_id: int) -> Optional[TransportModelEntity102]:
+        return self.db.query(TransportModelEntity102).filter(TransportModelEntity102.id == entity_id).first()
+
+    def create_entity_102(self, payload: TransportSchemaEntity102Create) -> TransportModelEntity102:
+        db_obj = TransportModelEntity102(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_102(self, entity_id: int, payload: TransportSchemaEntity102Update) -> Optional[TransportModelEntity102]:
+        db_obj = self.get_entity_102_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_102(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_102_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_103_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity103]:
+        return self.db.query(TransportModelEntity103).offset(skip).limit(limit).all()
+
+    def get_entity_103_by_id(self, entity_id: int) -> Optional[TransportModelEntity103]:
+        return self.db.query(TransportModelEntity103).filter(TransportModelEntity103.id == entity_id).first()
+
+    def create_entity_103(self, payload: TransportSchemaEntity103Create) -> TransportModelEntity103:
+        db_obj = TransportModelEntity103(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_103(self, entity_id: int, payload: TransportSchemaEntity103Update) -> Optional[TransportModelEntity103]:
+        db_obj = self.get_entity_103_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_103(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_103_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_104_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity104]:
+        return self.db.query(TransportModelEntity104).offset(skip).limit(limit).all()
+
+    def get_entity_104_by_id(self, entity_id: int) -> Optional[TransportModelEntity104]:
+        return self.db.query(TransportModelEntity104).filter(TransportModelEntity104.id == entity_id).first()
+
+    def create_entity_104(self, payload: TransportSchemaEntity104Create) -> TransportModelEntity104:
+        db_obj = TransportModelEntity104(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_104(self, entity_id: int, payload: TransportSchemaEntity104Update) -> Optional[TransportModelEntity104]:
+        db_obj = self.get_entity_104_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_104(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_104_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_105_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity105]:
+        return self.db.query(TransportModelEntity105).offset(skip).limit(limit).all()
+
+    def get_entity_105_by_id(self, entity_id: int) -> Optional[TransportModelEntity105]:
+        return self.db.query(TransportModelEntity105).filter(TransportModelEntity105.id == entity_id).first()
+
+    def create_entity_105(self, payload: TransportSchemaEntity105Create) -> TransportModelEntity105:
+        db_obj = TransportModelEntity105(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_105(self, entity_id: int, payload: TransportSchemaEntity105Update) -> Optional[TransportModelEntity105]:
+        db_obj = self.get_entity_105_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_105(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_105_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_106_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity106]:
+        return self.db.query(TransportModelEntity106).offset(skip).limit(limit).all()
+
+    def get_entity_106_by_id(self, entity_id: int) -> Optional[TransportModelEntity106]:
+        return self.db.query(TransportModelEntity106).filter(TransportModelEntity106.id == entity_id).first()
+
+    def create_entity_106(self, payload: TransportSchemaEntity106Create) -> TransportModelEntity106:
+        db_obj = TransportModelEntity106(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_106(self, entity_id: int, payload: TransportSchemaEntity106Update) -> Optional[TransportModelEntity106]:
+        db_obj = self.get_entity_106_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_106(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_106_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_107_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity107]:
+        return self.db.query(TransportModelEntity107).offset(skip).limit(limit).all()
+
+    def get_entity_107_by_id(self, entity_id: int) -> Optional[TransportModelEntity107]:
+        return self.db.query(TransportModelEntity107).filter(TransportModelEntity107.id == entity_id).first()
+
+    def create_entity_107(self, payload: TransportSchemaEntity107Create) -> TransportModelEntity107:
+        db_obj = TransportModelEntity107(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_107(self, entity_id: int, payload: TransportSchemaEntity107Update) -> Optional[TransportModelEntity107]:
+        db_obj = self.get_entity_107_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_107(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_107_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_108_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity108]:
+        return self.db.query(TransportModelEntity108).offset(skip).limit(limit).all()
+
+    def get_entity_108_by_id(self, entity_id: int) -> Optional[TransportModelEntity108]:
+        return self.db.query(TransportModelEntity108).filter(TransportModelEntity108.id == entity_id).first()
+
+    def create_entity_108(self, payload: TransportSchemaEntity108Create) -> TransportModelEntity108:
+        db_obj = TransportModelEntity108(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_108(self, entity_id: int, payload: TransportSchemaEntity108Update) -> Optional[TransportModelEntity108]:
+        db_obj = self.get_entity_108_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_108(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_108_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_109_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity109]:
+        return self.db.query(TransportModelEntity109).offset(skip).limit(limit).all()
+
+    def get_entity_109_by_id(self, entity_id: int) -> Optional[TransportModelEntity109]:
+        return self.db.query(TransportModelEntity109).filter(TransportModelEntity109.id == entity_id).first()
+
+    def create_entity_109(self, payload: TransportSchemaEntity109Create) -> TransportModelEntity109:
+        db_obj = TransportModelEntity109(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_109(self, entity_id: int, payload: TransportSchemaEntity109Update) -> Optional[TransportModelEntity109]:
+        db_obj = self.get_entity_109_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_109(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_109_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_110_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity110]:
+        return self.db.query(TransportModelEntity110).offset(skip).limit(limit).all()
+
+    def get_entity_110_by_id(self, entity_id: int) -> Optional[TransportModelEntity110]:
+        return self.db.query(TransportModelEntity110).filter(TransportModelEntity110.id == entity_id).first()
+
+    def create_entity_110(self, payload: TransportSchemaEntity110Create) -> TransportModelEntity110:
+        db_obj = TransportModelEntity110(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_110(self, entity_id: int, payload: TransportSchemaEntity110Update) -> Optional[TransportModelEntity110]:
+        db_obj = self.get_entity_110_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_110(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_110_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_111_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity111]:
+        return self.db.query(TransportModelEntity111).offset(skip).limit(limit).all()
+
+    def get_entity_111_by_id(self, entity_id: int) -> Optional[TransportModelEntity111]:
+        return self.db.query(TransportModelEntity111).filter(TransportModelEntity111.id == entity_id).first()
+
+    def create_entity_111(self, payload: TransportSchemaEntity111Create) -> TransportModelEntity111:
+        db_obj = TransportModelEntity111(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_111(self, entity_id: int, payload: TransportSchemaEntity111Update) -> Optional[TransportModelEntity111]:
+        db_obj = self.get_entity_111_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_111(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_111_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_112_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity112]:
+        return self.db.query(TransportModelEntity112).offset(skip).limit(limit).all()
+
+    def get_entity_112_by_id(self, entity_id: int) -> Optional[TransportModelEntity112]:
+        return self.db.query(TransportModelEntity112).filter(TransportModelEntity112.id == entity_id).first()
+
+    def create_entity_112(self, payload: TransportSchemaEntity112Create) -> TransportModelEntity112:
+        db_obj = TransportModelEntity112(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_112(self, entity_id: int, payload: TransportSchemaEntity112Update) -> Optional[TransportModelEntity112]:
+        db_obj = self.get_entity_112_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_112(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_112_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_113_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity113]:
+        return self.db.query(TransportModelEntity113).offset(skip).limit(limit).all()
+
+    def get_entity_113_by_id(self, entity_id: int) -> Optional[TransportModelEntity113]:
+        return self.db.query(TransportModelEntity113).filter(TransportModelEntity113.id == entity_id).first()
+
+    def create_entity_113(self, payload: TransportSchemaEntity113Create) -> TransportModelEntity113:
+        db_obj = TransportModelEntity113(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_113(self, entity_id: int, payload: TransportSchemaEntity113Update) -> Optional[TransportModelEntity113]:
+        db_obj = self.get_entity_113_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_113(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_113_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_114_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity114]:
+        return self.db.query(TransportModelEntity114).offset(skip).limit(limit).all()
+
+    def get_entity_114_by_id(self, entity_id: int) -> Optional[TransportModelEntity114]:
+        return self.db.query(TransportModelEntity114).filter(TransportModelEntity114.id == entity_id).first()
+
+    def create_entity_114(self, payload: TransportSchemaEntity114Create) -> TransportModelEntity114:
+        db_obj = TransportModelEntity114(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_114(self, entity_id: int, payload: TransportSchemaEntity114Update) -> Optional[TransportModelEntity114]:
+        db_obj = self.get_entity_114_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_114(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_114_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_115_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity115]:
+        return self.db.query(TransportModelEntity115).offset(skip).limit(limit).all()
+
+    def get_entity_115_by_id(self, entity_id: int) -> Optional[TransportModelEntity115]:
+        return self.db.query(TransportModelEntity115).filter(TransportModelEntity115.id == entity_id).first()
+
+    def create_entity_115(self, payload: TransportSchemaEntity115Create) -> TransportModelEntity115:
+        db_obj = TransportModelEntity115(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_115(self, entity_id: int, payload: TransportSchemaEntity115Update) -> Optional[TransportModelEntity115]:
+        db_obj = self.get_entity_115_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_115(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_115_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_116_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity116]:
+        return self.db.query(TransportModelEntity116).offset(skip).limit(limit).all()
+
+    def get_entity_116_by_id(self, entity_id: int) -> Optional[TransportModelEntity116]:
+        return self.db.query(TransportModelEntity116).filter(TransportModelEntity116.id == entity_id).first()
+
+    def create_entity_116(self, payload: TransportSchemaEntity116Create) -> TransportModelEntity116:
+        db_obj = TransportModelEntity116(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_116(self, entity_id: int, payload: TransportSchemaEntity116Update) -> Optional[TransportModelEntity116]:
+        db_obj = self.get_entity_116_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_116(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_116_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_117_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity117]:
+        return self.db.query(TransportModelEntity117).offset(skip).limit(limit).all()
+
+    def get_entity_117_by_id(self, entity_id: int) -> Optional[TransportModelEntity117]:
+        return self.db.query(TransportModelEntity117).filter(TransportModelEntity117.id == entity_id).first()
+
+    def create_entity_117(self, payload: TransportSchemaEntity117Create) -> TransportModelEntity117:
+        db_obj = TransportModelEntity117(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_117(self, entity_id: int, payload: TransportSchemaEntity117Update) -> Optional[TransportModelEntity117]:
+        db_obj = self.get_entity_117_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_117(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_117_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_118_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity118]:
+        return self.db.query(TransportModelEntity118).offset(skip).limit(limit).all()
+
+    def get_entity_118_by_id(self, entity_id: int) -> Optional[TransportModelEntity118]:
+        return self.db.query(TransportModelEntity118).filter(TransportModelEntity118.id == entity_id).first()
+
+    def create_entity_118(self, payload: TransportSchemaEntity118Create) -> TransportModelEntity118:
+        db_obj = TransportModelEntity118(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_118(self, entity_id: int, payload: TransportSchemaEntity118Update) -> Optional[TransportModelEntity118]:
+        db_obj = self.get_entity_118_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_118(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_118_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_119_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity119]:
+        return self.db.query(TransportModelEntity119).offset(skip).limit(limit).all()
+
+    def get_entity_119_by_id(self, entity_id: int) -> Optional[TransportModelEntity119]:
+        return self.db.query(TransportModelEntity119).filter(TransportModelEntity119.id == entity_id).first()
+
+    def create_entity_119(self, payload: TransportSchemaEntity119Create) -> TransportModelEntity119:
+        db_obj = TransportModelEntity119(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_119(self, entity_id: int, payload: TransportSchemaEntity119Update) -> Optional[TransportModelEntity119]:
+        db_obj = self.get_entity_119_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_119(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_119_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_120_list(self, skip: int = 0, limit: int = 100) -> List[TransportModelEntity120]:
+        return self.db.query(TransportModelEntity120).offset(skip).limit(limit).all()
+
+    def get_entity_120_by_id(self, entity_id: int) -> Optional[TransportModelEntity120]:
+        return self.db.query(TransportModelEntity120).filter(TransportModelEntity120.id == entity_id).first()
+
+    def create_entity_120(self, payload: TransportSchemaEntity120Create) -> TransportModelEntity120:
+        db_obj = TransportModelEntity120(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_120(self, entity_id: int, payload: TransportSchemaEntity120Update) -> Optional[TransportModelEntity120]:
+        db_obj = self.get_entity_120_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_120(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_120_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+

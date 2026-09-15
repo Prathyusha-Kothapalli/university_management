@@ -911,3 +911,1263 @@ def create_entity_50(payload: TransportSchemaEntity50Create, db: Session = Depen
     srv = TransportDomainService(db)
     return srv.create_entity_50(payload)
 
+@router.get("/entity-51", response_model=List[TransportSchemaEntity51Response])
+def list_entities_51(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_51_list(skip=skip, limit=limit)
+
+@router.get("/entity-51/{entity_id}", response_model=TransportSchemaEntity51Response)
+def get_entity_51(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_51_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 51 not found")
+    return res
+
+@router.post("/entity-51", response_model=TransportSchemaEntity51Response, status_code=201)
+def create_entity_51(payload: TransportSchemaEntity51Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_51(payload)
+
+@router.get("/entity-52", response_model=List[TransportSchemaEntity52Response])
+def list_entities_52(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_52_list(skip=skip, limit=limit)
+
+@router.get("/entity-52/{entity_id}", response_model=TransportSchemaEntity52Response)
+def get_entity_52(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_52_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 52 not found")
+    return res
+
+@router.post("/entity-52", response_model=TransportSchemaEntity52Response, status_code=201)
+def create_entity_52(payload: TransportSchemaEntity52Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_52(payload)
+
+@router.get("/entity-53", response_model=List[TransportSchemaEntity53Response])
+def list_entities_53(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_53_list(skip=skip, limit=limit)
+
+@router.get("/entity-53/{entity_id}", response_model=TransportSchemaEntity53Response)
+def get_entity_53(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_53_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 53 not found")
+    return res
+
+@router.post("/entity-53", response_model=TransportSchemaEntity53Response, status_code=201)
+def create_entity_53(payload: TransportSchemaEntity53Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_53(payload)
+
+@router.get("/entity-54", response_model=List[TransportSchemaEntity54Response])
+def list_entities_54(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_54_list(skip=skip, limit=limit)
+
+@router.get("/entity-54/{entity_id}", response_model=TransportSchemaEntity54Response)
+def get_entity_54(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_54_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 54 not found")
+    return res
+
+@router.post("/entity-54", response_model=TransportSchemaEntity54Response, status_code=201)
+def create_entity_54(payload: TransportSchemaEntity54Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_54(payload)
+
+@router.get("/entity-55", response_model=List[TransportSchemaEntity55Response])
+def list_entities_55(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_55_list(skip=skip, limit=limit)
+
+@router.get("/entity-55/{entity_id}", response_model=TransportSchemaEntity55Response)
+def get_entity_55(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_55_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 55 not found")
+    return res
+
+@router.post("/entity-55", response_model=TransportSchemaEntity55Response, status_code=201)
+def create_entity_55(payload: TransportSchemaEntity55Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_55(payload)
+
+@router.get("/entity-56", response_model=List[TransportSchemaEntity56Response])
+def list_entities_56(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_56_list(skip=skip, limit=limit)
+
+@router.get("/entity-56/{entity_id}", response_model=TransportSchemaEntity56Response)
+def get_entity_56(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_56_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 56 not found")
+    return res
+
+@router.post("/entity-56", response_model=TransportSchemaEntity56Response, status_code=201)
+def create_entity_56(payload: TransportSchemaEntity56Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_56(payload)
+
+@router.get("/entity-57", response_model=List[TransportSchemaEntity57Response])
+def list_entities_57(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_57_list(skip=skip, limit=limit)
+
+@router.get("/entity-57/{entity_id}", response_model=TransportSchemaEntity57Response)
+def get_entity_57(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_57_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 57 not found")
+    return res
+
+@router.post("/entity-57", response_model=TransportSchemaEntity57Response, status_code=201)
+def create_entity_57(payload: TransportSchemaEntity57Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_57(payload)
+
+@router.get("/entity-58", response_model=List[TransportSchemaEntity58Response])
+def list_entities_58(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_58_list(skip=skip, limit=limit)
+
+@router.get("/entity-58/{entity_id}", response_model=TransportSchemaEntity58Response)
+def get_entity_58(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_58_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 58 not found")
+    return res
+
+@router.post("/entity-58", response_model=TransportSchemaEntity58Response, status_code=201)
+def create_entity_58(payload: TransportSchemaEntity58Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_58(payload)
+
+@router.get("/entity-59", response_model=List[TransportSchemaEntity59Response])
+def list_entities_59(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_59_list(skip=skip, limit=limit)
+
+@router.get("/entity-59/{entity_id}", response_model=TransportSchemaEntity59Response)
+def get_entity_59(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_59_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 59 not found")
+    return res
+
+@router.post("/entity-59", response_model=TransportSchemaEntity59Response, status_code=201)
+def create_entity_59(payload: TransportSchemaEntity59Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_59(payload)
+
+@router.get("/entity-60", response_model=List[TransportSchemaEntity60Response])
+def list_entities_60(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_60_list(skip=skip, limit=limit)
+
+@router.get("/entity-60/{entity_id}", response_model=TransportSchemaEntity60Response)
+def get_entity_60(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_60_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 60 not found")
+    return res
+
+@router.post("/entity-60", response_model=TransportSchemaEntity60Response, status_code=201)
+def create_entity_60(payload: TransportSchemaEntity60Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_60(payload)
+
+@router.get("/entity-61", response_model=List[TransportSchemaEntity61Response])
+def list_entities_61(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_61_list(skip=skip, limit=limit)
+
+@router.get("/entity-61/{entity_id}", response_model=TransportSchemaEntity61Response)
+def get_entity_61(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_61_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 61 not found")
+    return res
+
+@router.post("/entity-61", response_model=TransportSchemaEntity61Response, status_code=201)
+def create_entity_61(payload: TransportSchemaEntity61Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_61(payload)
+
+@router.get("/entity-62", response_model=List[TransportSchemaEntity62Response])
+def list_entities_62(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_62_list(skip=skip, limit=limit)
+
+@router.get("/entity-62/{entity_id}", response_model=TransportSchemaEntity62Response)
+def get_entity_62(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_62_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 62 not found")
+    return res
+
+@router.post("/entity-62", response_model=TransportSchemaEntity62Response, status_code=201)
+def create_entity_62(payload: TransportSchemaEntity62Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_62(payload)
+
+@router.get("/entity-63", response_model=List[TransportSchemaEntity63Response])
+def list_entities_63(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_63_list(skip=skip, limit=limit)
+
+@router.get("/entity-63/{entity_id}", response_model=TransportSchemaEntity63Response)
+def get_entity_63(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_63_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 63 not found")
+    return res
+
+@router.post("/entity-63", response_model=TransportSchemaEntity63Response, status_code=201)
+def create_entity_63(payload: TransportSchemaEntity63Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_63(payload)
+
+@router.get("/entity-64", response_model=List[TransportSchemaEntity64Response])
+def list_entities_64(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_64_list(skip=skip, limit=limit)
+
+@router.get("/entity-64/{entity_id}", response_model=TransportSchemaEntity64Response)
+def get_entity_64(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_64_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 64 not found")
+    return res
+
+@router.post("/entity-64", response_model=TransportSchemaEntity64Response, status_code=201)
+def create_entity_64(payload: TransportSchemaEntity64Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_64(payload)
+
+@router.get("/entity-65", response_model=List[TransportSchemaEntity65Response])
+def list_entities_65(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_65_list(skip=skip, limit=limit)
+
+@router.get("/entity-65/{entity_id}", response_model=TransportSchemaEntity65Response)
+def get_entity_65(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_65_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 65 not found")
+    return res
+
+@router.post("/entity-65", response_model=TransportSchemaEntity65Response, status_code=201)
+def create_entity_65(payload: TransportSchemaEntity65Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_65(payload)
+
+@router.get("/entity-66", response_model=List[TransportSchemaEntity66Response])
+def list_entities_66(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_66_list(skip=skip, limit=limit)
+
+@router.get("/entity-66/{entity_id}", response_model=TransportSchemaEntity66Response)
+def get_entity_66(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_66_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 66 not found")
+    return res
+
+@router.post("/entity-66", response_model=TransportSchemaEntity66Response, status_code=201)
+def create_entity_66(payload: TransportSchemaEntity66Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_66(payload)
+
+@router.get("/entity-67", response_model=List[TransportSchemaEntity67Response])
+def list_entities_67(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_67_list(skip=skip, limit=limit)
+
+@router.get("/entity-67/{entity_id}", response_model=TransportSchemaEntity67Response)
+def get_entity_67(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_67_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 67 not found")
+    return res
+
+@router.post("/entity-67", response_model=TransportSchemaEntity67Response, status_code=201)
+def create_entity_67(payload: TransportSchemaEntity67Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_67(payload)
+
+@router.get("/entity-68", response_model=List[TransportSchemaEntity68Response])
+def list_entities_68(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_68_list(skip=skip, limit=limit)
+
+@router.get("/entity-68/{entity_id}", response_model=TransportSchemaEntity68Response)
+def get_entity_68(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_68_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 68 not found")
+    return res
+
+@router.post("/entity-68", response_model=TransportSchemaEntity68Response, status_code=201)
+def create_entity_68(payload: TransportSchemaEntity68Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_68(payload)
+
+@router.get("/entity-69", response_model=List[TransportSchemaEntity69Response])
+def list_entities_69(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_69_list(skip=skip, limit=limit)
+
+@router.get("/entity-69/{entity_id}", response_model=TransportSchemaEntity69Response)
+def get_entity_69(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_69_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 69 not found")
+    return res
+
+@router.post("/entity-69", response_model=TransportSchemaEntity69Response, status_code=201)
+def create_entity_69(payload: TransportSchemaEntity69Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_69(payload)
+
+@router.get("/entity-70", response_model=List[TransportSchemaEntity70Response])
+def list_entities_70(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_70_list(skip=skip, limit=limit)
+
+@router.get("/entity-70/{entity_id}", response_model=TransportSchemaEntity70Response)
+def get_entity_70(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_70_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 70 not found")
+    return res
+
+@router.post("/entity-70", response_model=TransportSchemaEntity70Response, status_code=201)
+def create_entity_70(payload: TransportSchemaEntity70Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_70(payload)
+
+@router.get("/entity-71", response_model=List[TransportSchemaEntity71Response])
+def list_entities_71(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_71_list(skip=skip, limit=limit)
+
+@router.get("/entity-71/{entity_id}", response_model=TransportSchemaEntity71Response)
+def get_entity_71(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_71_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 71 not found")
+    return res
+
+@router.post("/entity-71", response_model=TransportSchemaEntity71Response, status_code=201)
+def create_entity_71(payload: TransportSchemaEntity71Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_71(payload)
+
+@router.get("/entity-72", response_model=List[TransportSchemaEntity72Response])
+def list_entities_72(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_72_list(skip=skip, limit=limit)
+
+@router.get("/entity-72/{entity_id}", response_model=TransportSchemaEntity72Response)
+def get_entity_72(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_72_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 72 not found")
+    return res
+
+@router.post("/entity-72", response_model=TransportSchemaEntity72Response, status_code=201)
+def create_entity_72(payload: TransportSchemaEntity72Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_72(payload)
+
+@router.get("/entity-73", response_model=List[TransportSchemaEntity73Response])
+def list_entities_73(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_73_list(skip=skip, limit=limit)
+
+@router.get("/entity-73/{entity_id}", response_model=TransportSchemaEntity73Response)
+def get_entity_73(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_73_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 73 not found")
+    return res
+
+@router.post("/entity-73", response_model=TransportSchemaEntity73Response, status_code=201)
+def create_entity_73(payload: TransportSchemaEntity73Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_73(payload)
+
+@router.get("/entity-74", response_model=List[TransportSchemaEntity74Response])
+def list_entities_74(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_74_list(skip=skip, limit=limit)
+
+@router.get("/entity-74/{entity_id}", response_model=TransportSchemaEntity74Response)
+def get_entity_74(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_74_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 74 not found")
+    return res
+
+@router.post("/entity-74", response_model=TransportSchemaEntity74Response, status_code=201)
+def create_entity_74(payload: TransportSchemaEntity74Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_74(payload)
+
+@router.get("/entity-75", response_model=List[TransportSchemaEntity75Response])
+def list_entities_75(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_75_list(skip=skip, limit=limit)
+
+@router.get("/entity-75/{entity_id}", response_model=TransportSchemaEntity75Response)
+def get_entity_75(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_75_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 75 not found")
+    return res
+
+@router.post("/entity-75", response_model=TransportSchemaEntity75Response, status_code=201)
+def create_entity_75(payload: TransportSchemaEntity75Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_75(payload)
+
+@router.get("/entity-76", response_model=List[TransportSchemaEntity76Response])
+def list_entities_76(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_76_list(skip=skip, limit=limit)
+
+@router.get("/entity-76/{entity_id}", response_model=TransportSchemaEntity76Response)
+def get_entity_76(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_76_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 76 not found")
+    return res
+
+@router.post("/entity-76", response_model=TransportSchemaEntity76Response, status_code=201)
+def create_entity_76(payload: TransportSchemaEntity76Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_76(payload)
+
+@router.get("/entity-77", response_model=List[TransportSchemaEntity77Response])
+def list_entities_77(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_77_list(skip=skip, limit=limit)
+
+@router.get("/entity-77/{entity_id}", response_model=TransportSchemaEntity77Response)
+def get_entity_77(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_77_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 77 not found")
+    return res
+
+@router.post("/entity-77", response_model=TransportSchemaEntity77Response, status_code=201)
+def create_entity_77(payload: TransportSchemaEntity77Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_77(payload)
+
+@router.get("/entity-78", response_model=List[TransportSchemaEntity78Response])
+def list_entities_78(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_78_list(skip=skip, limit=limit)
+
+@router.get("/entity-78/{entity_id}", response_model=TransportSchemaEntity78Response)
+def get_entity_78(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_78_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 78 not found")
+    return res
+
+@router.post("/entity-78", response_model=TransportSchemaEntity78Response, status_code=201)
+def create_entity_78(payload: TransportSchemaEntity78Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_78(payload)
+
+@router.get("/entity-79", response_model=List[TransportSchemaEntity79Response])
+def list_entities_79(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_79_list(skip=skip, limit=limit)
+
+@router.get("/entity-79/{entity_id}", response_model=TransportSchemaEntity79Response)
+def get_entity_79(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_79_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 79 not found")
+    return res
+
+@router.post("/entity-79", response_model=TransportSchemaEntity79Response, status_code=201)
+def create_entity_79(payload: TransportSchemaEntity79Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_79(payload)
+
+@router.get("/entity-80", response_model=List[TransportSchemaEntity80Response])
+def list_entities_80(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_80_list(skip=skip, limit=limit)
+
+@router.get("/entity-80/{entity_id}", response_model=TransportSchemaEntity80Response)
+def get_entity_80(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_80_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 80 not found")
+    return res
+
+@router.post("/entity-80", response_model=TransportSchemaEntity80Response, status_code=201)
+def create_entity_80(payload: TransportSchemaEntity80Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_80(payload)
+
+@router.get("/entity-81", response_model=List[TransportSchemaEntity81Response])
+def list_entities_81(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_81_list(skip=skip, limit=limit)
+
+@router.get("/entity-81/{entity_id}", response_model=TransportSchemaEntity81Response)
+def get_entity_81(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_81_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 81 not found")
+    return res
+
+@router.post("/entity-81", response_model=TransportSchemaEntity81Response, status_code=201)
+def create_entity_81(payload: TransportSchemaEntity81Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_81(payload)
+
+@router.get("/entity-82", response_model=List[TransportSchemaEntity82Response])
+def list_entities_82(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_82_list(skip=skip, limit=limit)
+
+@router.get("/entity-82/{entity_id}", response_model=TransportSchemaEntity82Response)
+def get_entity_82(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_82_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 82 not found")
+    return res
+
+@router.post("/entity-82", response_model=TransportSchemaEntity82Response, status_code=201)
+def create_entity_82(payload: TransportSchemaEntity82Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_82(payload)
+
+@router.get("/entity-83", response_model=List[TransportSchemaEntity83Response])
+def list_entities_83(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_83_list(skip=skip, limit=limit)
+
+@router.get("/entity-83/{entity_id}", response_model=TransportSchemaEntity83Response)
+def get_entity_83(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_83_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 83 not found")
+    return res
+
+@router.post("/entity-83", response_model=TransportSchemaEntity83Response, status_code=201)
+def create_entity_83(payload: TransportSchemaEntity83Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_83(payload)
+
+@router.get("/entity-84", response_model=List[TransportSchemaEntity84Response])
+def list_entities_84(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_84_list(skip=skip, limit=limit)
+
+@router.get("/entity-84/{entity_id}", response_model=TransportSchemaEntity84Response)
+def get_entity_84(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_84_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 84 not found")
+    return res
+
+@router.post("/entity-84", response_model=TransportSchemaEntity84Response, status_code=201)
+def create_entity_84(payload: TransportSchemaEntity84Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_84(payload)
+
+@router.get("/entity-85", response_model=List[TransportSchemaEntity85Response])
+def list_entities_85(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_85_list(skip=skip, limit=limit)
+
+@router.get("/entity-85/{entity_id}", response_model=TransportSchemaEntity85Response)
+def get_entity_85(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_85_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 85 not found")
+    return res
+
+@router.post("/entity-85", response_model=TransportSchemaEntity85Response, status_code=201)
+def create_entity_85(payload: TransportSchemaEntity85Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_85(payload)
+
+@router.get("/entity-86", response_model=List[TransportSchemaEntity86Response])
+def list_entities_86(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_86_list(skip=skip, limit=limit)
+
+@router.get("/entity-86/{entity_id}", response_model=TransportSchemaEntity86Response)
+def get_entity_86(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_86_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 86 not found")
+    return res
+
+@router.post("/entity-86", response_model=TransportSchemaEntity86Response, status_code=201)
+def create_entity_86(payload: TransportSchemaEntity86Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_86(payload)
+
+@router.get("/entity-87", response_model=List[TransportSchemaEntity87Response])
+def list_entities_87(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_87_list(skip=skip, limit=limit)
+
+@router.get("/entity-87/{entity_id}", response_model=TransportSchemaEntity87Response)
+def get_entity_87(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_87_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 87 not found")
+    return res
+
+@router.post("/entity-87", response_model=TransportSchemaEntity87Response, status_code=201)
+def create_entity_87(payload: TransportSchemaEntity87Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_87(payload)
+
+@router.get("/entity-88", response_model=List[TransportSchemaEntity88Response])
+def list_entities_88(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_88_list(skip=skip, limit=limit)
+
+@router.get("/entity-88/{entity_id}", response_model=TransportSchemaEntity88Response)
+def get_entity_88(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_88_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 88 not found")
+    return res
+
+@router.post("/entity-88", response_model=TransportSchemaEntity88Response, status_code=201)
+def create_entity_88(payload: TransportSchemaEntity88Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_88(payload)
+
+@router.get("/entity-89", response_model=List[TransportSchemaEntity89Response])
+def list_entities_89(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_89_list(skip=skip, limit=limit)
+
+@router.get("/entity-89/{entity_id}", response_model=TransportSchemaEntity89Response)
+def get_entity_89(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_89_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 89 not found")
+    return res
+
+@router.post("/entity-89", response_model=TransportSchemaEntity89Response, status_code=201)
+def create_entity_89(payload: TransportSchemaEntity89Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_89(payload)
+
+@router.get("/entity-90", response_model=List[TransportSchemaEntity90Response])
+def list_entities_90(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_90_list(skip=skip, limit=limit)
+
+@router.get("/entity-90/{entity_id}", response_model=TransportSchemaEntity90Response)
+def get_entity_90(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_90_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 90 not found")
+    return res
+
+@router.post("/entity-90", response_model=TransportSchemaEntity90Response, status_code=201)
+def create_entity_90(payload: TransportSchemaEntity90Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_90(payload)
+
+@router.get("/entity-91", response_model=List[TransportSchemaEntity91Response])
+def list_entities_91(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_91_list(skip=skip, limit=limit)
+
+@router.get("/entity-91/{entity_id}", response_model=TransportSchemaEntity91Response)
+def get_entity_91(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_91_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 91 not found")
+    return res
+
+@router.post("/entity-91", response_model=TransportSchemaEntity91Response, status_code=201)
+def create_entity_91(payload: TransportSchemaEntity91Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_91(payload)
+
+@router.get("/entity-92", response_model=List[TransportSchemaEntity92Response])
+def list_entities_92(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_92_list(skip=skip, limit=limit)
+
+@router.get("/entity-92/{entity_id}", response_model=TransportSchemaEntity92Response)
+def get_entity_92(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_92_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 92 not found")
+    return res
+
+@router.post("/entity-92", response_model=TransportSchemaEntity92Response, status_code=201)
+def create_entity_92(payload: TransportSchemaEntity92Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_92(payload)
+
+@router.get("/entity-93", response_model=List[TransportSchemaEntity93Response])
+def list_entities_93(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_93_list(skip=skip, limit=limit)
+
+@router.get("/entity-93/{entity_id}", response_model=TransportSchemaEntity93Response)
+def get_entity_93(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_93_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 93 not found")
+    return res
+
+@router.post("/entity-93", response_model=TransportSchemaEntity93Response, status_code=201)
+def create_entity_93(payload: TransportSchemaEntity93Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_93(payload)
+
+@router.get("/entity-94", response_model=List[TransportSchemaEntity94Response])
+def list_entities_94(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_94_list(skip=skip, limit=limit)
+
+@router.get("/entity-94/{entity_id}", response_model=TransportSchemaEntity94Response)
+def get_entity_94(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_94_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 94 not found")
+    return res
+
+@router.post("/entity-94", response_model=TransportSchemaEntity94Response, status_code=201)
+def create_entity_94(payload: TransportSchemaEntity94Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_94(payload)
+
+@router.get("/entity-95", response_model=List[TransportSchemaEntity95Response])
+def list_entities_95(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_95_list(skip=skip, limit=limit)
+
+@router.get("/entity-95/{entity_id}", response_model=TransportSchemaEntity95Response)
+def get_entity_95(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_95_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 95 not found")
+    return res
+
+@router.post("/entity-95", response_model=TransportSchemaEntity95Response, status_code=201)
+def create_entity_95(payload: TransportSchemaEntity95Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_95(payload)
+
+@router.get("/entity-96", response_model=List[TransportSchemaEntity96Response])
+def list_entities_96(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_96_list(skip=skip, limit=limit)
+
+@router.get("/entity-96/{entity_id}", response_model=TransportSchemaEntity96Response)
+def get_entity_96(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_96_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 96 not found")
+    return res
+
+@router.post("/entity-96", response_model=TransportSchemaEntity96Response, status_code=201)
+def create_entity_96(payload: TransportSchemaEntity96Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_96(payload)
+
+@router.get("/entity-97", response_model=List[TransportSchemaEntity97Response])
+def list_entities_97(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_97_list(skip=skip, limit=limit)
+
+@router.get("/entity-97/{entity_id}", response_model=TransportSchemaEntity97Response)
+def get_entity_97(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_97_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 97 not found")
+    return res
+
+@router.post("/entity-97", response_model=TransportSchemaEntity97Response, status_code=201)
+def create_entity_97(payload: TransportSchemaEntity97Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_97(payload)
+
+@router.get("/entity-98", response_model=List[TransportSchemaEntity98Response])
+def list_entities_98(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_98_list(skip=skip, limit=limit)
+
+@router.get("/entity-98/{entity_id}", response_model=TransportSchemaEntity98Response)
+def get_entity_98(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_98_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 98 not found")
+    return res
+
+@router.post("/entity-98", response_model=TransportSchemaEntity98Response, status_code=201)
+def create_entity_98(payload: TransportSchemaEntity98Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_98(payload)
+
+@router.get("/entity-99", response_model=List[TransportSchemaEntity99Response])
+def list_entities_99(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_99_list(skip=skip, limit=limit)
+
+@router.get("/entity-99/{entity_id}", response_model=TransportSchemaEntity99Response)
+def get_entity_99(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_99_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 99 not found")
+    return res
+
+@router.post("/entity-99", response_model=TransportSchemaEntity99Response, status_code=201)
+def create_entity_99(payload: TransportSchemaEntity99Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_99(payload)
+
+@router.get("/entity-100", response_model=List[TransportSchemaEntity100Response])
+def list_entities_100(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_100_list(skip=skip, limit=limit)
+
+@router.get("/entity-100/{entity_id}", response_model=TransportSchemaEntity100Response)
+def get_entity_100(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_100_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 100 not found")
+    return res
+
+@router.post("/entity-100", response_model=TransportSchemaEntity100Response, status_code=201)
+def create_entity_100(payload: TransportSchemaEntity100Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_100(payload)
+
+@router.get("/entity-101", response_model=List[TransportSchemaEntity101Response])
+def list_entities_101(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_101_list(skip=skip, limit=limit)
+
+@router.get("/entity-101/{entity_id}", response_model=TransportSchemaEntity101Response)
+def get_entity_101(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_101_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 101 not found")
+    return res
+
+@router.post("/entity-101", response_model=TransportSchemaEntity101Response, status_code=201)
+def create_entity_101(payload: TransportSchemaEntity101Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_101(payload)
+
+@router.get("/entity-102", response_model=List[TransportSchemaEntity102Response])
+def list_entities_102(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_102_list(skip=skip, limit=limit)
+
+@router.get("/entity-102/{entity_id}", response_model=TransportSchemaEntity102Response)
+def get_entity_102(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_102_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 102 not found")
+    return res
+
+@router.post("/entity-102", response_model=TransportSchemaEntity102Response, status_code=201)
+def create_entity_102(payload: TransportSchemaEntity102Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_102(payload)
+
+@router.get("/entity-103", response_model=List[TransportSchemaEntity103Response])
+def list_entities_103(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_103_list(skip=skip, limit=limit)
+
+@router.get("/entity-103/{entity_id}", response_model=TransportSchemaEntity103Response)
+def get_entity_103(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_103_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 103 not found")
+    return res
+
+@router.post("/entity-103", response_model=TransportSchemaEntity103Response, status_code=201)
+def create_entity_103(payload: TransportSchemaEntity103Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_103(payload)
+
+@router.get("/entity-104", response_model=List[TransportSchemaEntity104Response])
+def list_entities_104(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_104_list(skip=skip, limit=limit)
+
+@router.get("/entity-104/{entity_id}", response_model=TransportSchemaEntity104Response)
+def get_entity_104(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_104_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 104 not found")
+    return res
+
+@router.post("/entity-104", response_model=TransportSchemaEntity104Response, status_code=201)
+def create_entity_104(payload: TransportSchemaEntity104Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_104(payload)
+
+@router.get("/entity-105", response_model=List[TransportSchemaEntity105Response])
+def list_entities_105(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_105_list(skip=skip, limit=limit)
+
+@router.get("/entity-105/{entity_id}", response_model=TransportSchemaEntity105Response)
+def get_entity_105(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_105_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 105 not found")
+    return res
+
+@router.post("/entity-105", response_model=TransportSchemaEntity105Response, status_code=201)
+def create_entity_105(payload: TransportSchemaEntity105Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_105(payload)
+
+@router.get("/entity-106", response_model=List[TransportSchemaEntity106Response])
+def list_entities_106(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_106_list(skip=skip, limit=limit)
+
+@router.get("/entity-106/{entity_id}", response_model=TransportSchemaEntity106Response)
+def get_entity_106(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_106_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 106 not found")
+    return res
+
+@router.post("/entity-106", response_model=TransportSchemaEntity106Response, status_code=201)
+def create_entity_106(payload: TransportSchemaEntity106Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_106(payload)
+
+@router.get("/entity-107", response_model=List[TransportSchemaEntity107Response])
+def list_entities_107(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_107_list(skip=skip, limit=limit)
+
+@router.get("/entity-107/{entity_id}", response_model=TransportSchemaEntity107Response)
+def get_entity_107(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_107_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 107 not found")
+    return res
+
+@router.post("/entity-107", response_model=TransportSchemaEntity107Response, status_code=201)
+def create_entity_107(payload: TransportSchemaEntity107Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_107(payload)
+
+@router.get("/entity-108", response_model=List[TransportSchemaEntity108Response])
+def list_entities_108(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_108_list(skip=skip, limit=limit)
+
+@router.get("/entity-108/{entity_id}", response_model=TransportSchemaEntity108Response)
+def get_entity_108(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_108_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 108 not found")
+    return res
+
+@router.post("/entity-108", response_model=TransportSchemaEntity108Response, status_code=201)
+def create_entity_108(payload: TransportSchemaEntity108Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_108(payload)
+
+@router.get("/entity-109", response_model=List[TransportSchemaEntity109Response])
+def list_entities_109(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_109_list(skip=skip, limit=limit)
+
+@router.get("/entity-109/{entity_id}", response_model=TransportSchemaEntity109Response)
+def get_entity_109(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_109_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 109 not found")
+    return res
+
+@router.post("/entity-109", response_model=TransportSchemaEntity109Response, status_code=201)
+def create_entity_109(payload: TransportSchemaEntity109Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_109(payload)
+
+@router.get("/entity-110", response_model=List[TransportSchemaEntity110Response])
+def list_entities_110(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_110_list(skip=skip, limit=limit)
+
+@router.get("/entity-110/{entity_id}", response_model=TransportSchemaEntity110Response)
+def get_entity_110(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_110_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 110 not found")
+    return res
+
+@router.post("/entity-110", response_model=TransportSchemaEntity110Response, status_code=201)
+def create_entity_110(payload: TransportSchemaEntity110Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_110(payload)
+
+@router.get("/entity-111", response_model=List[TransportSchemaEntity111Response])
+def list_entities_111(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_111_list(skip=skip, limit=limit)
+
+@router.get("/entity-111/{entity_id}", response_model=TransportSchemaEntity111Response)
+def get_entity_111(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_111_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 111 not found")
+    return res
+
+@router.post("/entity-111", response_model=TransportSchemaEntity111Response, status_code=201)
+def create_entity_111(payload: TransportSchemaEntity111Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_111(payload)
+
+@router.get("/entity-112", response_model=List[TransportSchemaEntity112Response])
+def list_entities_112(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_112_list(skip=skip, limit=limit)
+
+@router.get("/entity-112/{entity_id}", response_model=TransportSchemaEntity112Response)
+def get_entity_112(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_112_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 112 not found")
+    return res
+
+@router.post("/entity-112", response_model=TransportSchemaEntity112Response, status_code=201)
+def create_entity_112(payload: TransportSchemaEntity112Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_112(payload)
+
+@router.get("/entity-113", response_model=List[TransportSchemaEntity113Response])
+def list_entities_113(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_113_list(skip=skip, limit=limit)
+
+@router.get("/entity-113/{entity_id}", response_model=TransportSchemaEntity113Response)
+def get_entity_113(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_113_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 113 not found")
+    return res
+
+@router.post("/entity-113", response_model=TransportSchemaEntity113Response, status_code=201)
+def create_entity_113(payload: TransportSchemaEntity113Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_113(payload)
+
+@router.get("/entity-114", response_model=List[TransportSchemaEntity114Response])
+def list_entities_114(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_114_list(skip=skip, limit=limit)
+
+@router.get("/entity-114/{entity_id}", response_model=TransportSchemaEntity114Response)
+def get_entity_114(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_114_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 114 not found")
+    return res
+
+@router.post("/entity-114", response_model=TransportSchemaEntity114Response, status_code=201)
+def create_entity_114(payload: TransportSchemaEntity114Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_114(payload)
+
+@router.get("/entity-115", response_model=List[TransportSchemaEntity115Response])
+def list_entities_115(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_115_list(skip=skip, limit=limit)
+
+@router.get("/entity-115/{entity_id}", response_model=TransportSchemaEntity115Response)
+def get_entity_115(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_115_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 115 not found")
+    return res
+
+@router.post("/entity-115", response_model=TransportSchemaEntity115Response, status_code=201)
+def create_entity_115(payload: TransportSchemaEntity115Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_115(payload)
+
+@router.get("/entity-116", response_model=List[TransportSchemaEntity116Response])
+def list_entities_116(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_116_list(skip=skip, limit=limit)
+
+@router.get("/entity-116/{entity_id}", response_model=TransportSchemaEntity116Response)
+def get_entity_116(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_116_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 116 not found")
+    return res
+
+@router.post("/entity-116", response_model=TransportSchemaEntity116Response, status_code=201)
+def create_entity_116(payload: TransportSchemaEntity116Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_116(payload)
+
+@router.get("/entity-117", response_model=List[TransportSchemaEntity117Response])
+def list_entities_117(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_117_list(skip=skip, limit=limit)
+
+@router.get("/entity-117/{entity_id}", response_model=TransportSchemaEntity117Response)
+def get_entity_117(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_117_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 117 not found")
+    return res
+
+@router.post("/entity-117", response_model=TransportSchemaEntity117Response, status_code=201)
+def create_entity_117(payload: TransportSchemaEntity117Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_117(payload)
+
+@router.get("/entity-118", response_model=List[TransportSchemaEntity118Response])
+def list_entities_118(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_118_list(skip=skip, limit=limit)
+
+@router.get("/entity-118/{entity_id}", response_model=TransportSchemaEntity118Response)
+def get_entity_118(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_118_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 118 not found")
+    return res
+
+@router.post("/entity-118", response_model=TransportSchemaEntity118Response, status_code=201)
+def create_entity_118(payload: TransportSchemaEntity118Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_118(payload)
+
+@router.get("/entity-119", response_model=List[TransportSchemaEntity119Response])
+def list_entities_119(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_119_list(skip=skip, limit=limit)
+
+@router.get("/entity-119/{entity_id}", response_model=TransportSchemaEntity119Response)
+def get_entity_119(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_119_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 119 not found")
+    return res
+
+@router.post("/entity-119", response_model=TransportSchemaEntity119Response, status_code=201)
+def create_entity_119(payload: TransportSchemaEntity119Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_119(payload)
+
+@router.get("/entity-120", response_model=List[TransportSchemaEntity120Response])
+def list_entities_120(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.get_entity_120_list(skip=skip, limit=limit)
+
+@router.get("/entity-120/{entity_id}", response_model=TransportSchemaEntity120Response)
+def get_entity_120(entity_id: int, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    res = srv.get_entity_120_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 120 not found")
+    return res
+
+@router.post("/entity-120", response_model=TransportSchemaEntity120Response, status_code=201)
+def create_entity_120(payload: TransportSchemaEntity120Create, db: Session = Depends(get_db)):
+    srv = TransportDomainService(db)
+    return srv.create_entity_120(payload)
+

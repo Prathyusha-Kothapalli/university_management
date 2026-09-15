@@ -750,3 +750,753 @@ export const PlacementsFormModal30: React.FC<{ isOpen: boolean; onClose: () => v
   );
 };
 
+export const PlacementsFormModal31: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #31</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal32: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #32</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal33: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #33</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal34: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #34</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal35: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #35</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal36: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #36</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal37: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #37</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal38: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #38</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal39: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #39</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal40: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #40</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal41: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #41</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal42: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #42</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal43: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #43</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal44: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #44</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal45: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #45</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal46: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #46</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal47: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #47</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal48: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #48</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal49: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #49</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal50: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #50</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal51: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #51</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal52: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #52</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal53: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #53</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal54: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #54</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal55: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #55</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal56: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #56</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal57: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #57</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal58: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #58</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal59: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #59</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const PlacementsFormModal60: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Placements & Alumni Network Form #60</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+

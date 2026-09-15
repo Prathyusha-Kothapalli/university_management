@@ -75,6 +75,146 @@ export const HrDashboardView: React.FC = () => {
           <span className="text-xs uppercase tracking-wider text-slate-400 font-semibold">Audit Events</span>
           <h2 className="text-2xl font-bold text-indigo-400 mt-2">1,240</h2>
         </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Human Resources & Faculty Management Record #90</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: HR-REC-90 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Human Resources & Faculty Management Record #91</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: HR-REC-91 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Human Resources & Faculty Management Record #92</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: HR-REC-92 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Human Resources & Faculty Management Record #93</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: HR-REC-93 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Human Resources & Faculty Management Record #94</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: HR-REC-94 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Human Resources & Faculty Management Record #95</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: HR-REC-95 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Human Resources & Faculty Management Record #96</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: HR-REC-96 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Human Resources & Faculty Management Record #97</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: HR-REC-97 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Human Resources & Faculty Management Record #98</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: HR-REC-98 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Human Resources & Faculty Management Record #99</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: HR-REC-99 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Human Resources & Faculty Management Record #100</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: HR-REC-100 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Human Resources & Faculty Management Record #101</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: HR-REC-101 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Human Resources & Faculty Management Record #102</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: HR-REC-102 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Human Resources & Faculty Management Record #103</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: HR-REC-103 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Human Resources & Faculty Management Record #104</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: HR-REC-104 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Human Resources & Faculty Management Record #105</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: HR-REC-105 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Human Resources & Faculty Management Record #106</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: HR-REC-106 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Human Resources & Faculty Management Record #107</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: HR-REC-107 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Human Resources & Faculty Management Record #108</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: HR-REC-108 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Human Resources & Faculty Management Record #109</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: HR-REC-109 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
       </div>
 
       {loading ? (

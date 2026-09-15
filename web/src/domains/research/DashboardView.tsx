@@ -75,6 +75,146 @@ export const ResearchDashboardView: React.FC = () => {
           <span className="text-xs uppercase tracking-wider text-slate-400 font-semibold">Audit Events</span>
           <h2 className="text-2xl font-bold text-indigo-400 mt-2">1,240</h2>
         </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Research, Grants & Lab Inventory Record #90</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: RESEARCH-REC-90 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Research, Grants & Lab Inventory Record #91</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: RESEARCH-REC-91 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Research, Grants & Lab Inventory Record #92</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: RESEARCH-REC-92 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Research, Grants & Lab Inventory Record #93</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: RESEARCH-REC-93 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Research, Grants & Lab Inventory Record #94</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: RESEARCH-REC-94 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Research, Grants & Lab Inventory Record #95</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: RESEARCH-REC-95 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Research, Grants & Lab Inventory Record #96</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: RESEARCH-REC-96 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Research, Grants & Lab Inventory Record #97</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: RESEARCH-REC-97 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Research, Grants & Lab Inventory Record #98</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: RESEARCH-REC-98 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Research, Grants & Lab Inventory Record #99</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: RESEARCH-REC-99 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Research, Grants & Lab Inventory Record #100</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: RESEARCH-REC-100 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Research, Grants & Lab Inventory Record #101</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: RESEARCH-REC-101 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Research, Grants & Lab Inventory Record #102</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: RESEARCH-REC-102 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Research, Grants & Lab Inventory Record #103</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: RESEARCH-REC-103 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Research, Grants & Lab Inventory Record #104</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: RESEARCH-REC-104 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Research, Grants & Lab Inventory Record #105</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: RESEARCH-REC-105 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Research, Grants & Lab Inventory Record #106</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: RESEARCH-REC-106 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Research, Grants & Lab Inventory Record #107</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: RESEARCH-REC-107 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Research, Grants & Lab Inventory Record #108</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: RESEARCH-REC-108 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Research, Grants & Lab Inventory Record #109</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: RESEARCH-REC-109 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
       </div>
 
       {loading ? (

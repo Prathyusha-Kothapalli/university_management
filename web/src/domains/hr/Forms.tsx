@@ -750,3 +750,753 @@ export const HrFormModal30: React.FC<{ isOpen: boolean; onClose: () => void }> =
   );
 };
 
+export const HrFormModal31: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #31</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal32: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #32</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal33: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #33</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal34: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #34</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal35: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #35</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal36: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #36</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal37: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #37</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal38: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #38</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal39: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #39</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal40: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #40</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal41: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #41</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal42: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #42</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal43: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #43</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal44: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #44</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal45: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #45</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal46: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #46</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal47: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #47</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal48: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #48</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal49: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #49</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal50: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #50</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal51: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #51</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal52: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #52</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal53: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #53</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal54: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #54</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal55: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #55</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal56: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #56</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal57: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #57</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal58: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #58</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal59: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #59</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export const HrFormModal60: React.FC<{ isOpen: boolean; onClose: () => void }> = ({ isOpen, onClose }) => {
+  const [name, setName] = useState("");
+  if (!isOpen) return null;
+  return (
+    <div className="fixed inset-0 bg-black/70 flex items-center justify-center p-4 z-50">
+      <div className="bg-slate-800 border border-slate-700 p-6 rounded-xl max-w-md w-full">
+        <h2 className="text-xl font-bold text-white mb-4">Human Resources & Faculty Management Form #60</h2>
+        <div className="mb-4">
+          <label className="block text-xs font-semibold text-slate-400 mb-1">Entity Name</label>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="w-full px-3 py-2 bg-slate-900 border border-slate-700 rounded text-sm text-white focus:outline-none focus:border-indigo-500"
+          />
+        </div>
+        <div className="flex justify-end gap-2">
+          <button onClick={onClose} className="px-4 py-2 bg-slate-700 text-slate-300 rounded text-xs font-semibold">Cancel</button>
+          <button onClick={onClose} className="px-4 py-2 bg-indigo-600 text-white rounded text-xs font-semibold">Save</button>
+        </div>
+      </div>
+    </div>
+  );
+};
+

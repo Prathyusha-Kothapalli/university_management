@@ -1152,3 +1152,1153 @@ export interface IHrItem50Payload {
   is_active?: boolean;
 }
 
+export interface IHrItem51 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem51Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem52 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem52Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem53 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem53Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem54 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem54Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem55 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem55Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem56 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem56Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem57 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem57Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem58 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem58Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem59 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem59Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem60 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem60Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem61 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem61Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem62 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem62Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem63 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem63Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem64 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem64Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem65 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem65Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem66 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem66Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem67 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem67Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem68 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem68Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem69 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem69Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem70 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem70Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem71 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem71Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem72 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem72Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem73 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem73Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem74 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem74Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem75 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem75Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem76 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem76Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem77 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem77Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem78 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem78Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem79 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem79Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem80 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem80Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem81 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem81Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem82 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem82Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem83 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem83Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem84 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem84Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem85 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem85Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem86 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem86Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem87 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem87Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem88 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem88Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem89 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem89Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem90 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem90Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem91 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem91Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem92 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem92Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem93 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem93Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem94 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem94Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem95 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem95Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem96 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem96Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem97 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem97Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem98 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem98Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem99 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem99Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+
+export interface IHrItem100 {
+  id: number;
+  entity_code: string;
+  name: string;
+  category: string;
+  description?: string;
+  value_amount: number;
+  is_active: boolean;
+  status_flag: 'ACTIVE' | 'PENDING' | 'ARCHIVED';
+  attributes_json?: Record<string, any>;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface IHrItem100Payload {
+  entity_code: string;
+  name: string;
+  category?: string;
+  description?: string;
+  value_amount?: number;
+  is_active?: boolean;
+}
+

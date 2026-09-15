@@ -2171,3 +2171,1443 @@ def create_entity_120(payload: PlacementsSchemaEntity120Create, db: Session = De
     srv = PlacementsDomainService(db)
     return srv.create_entity_120(payload)
 
+@router.get("/entity-121", response_model=List[PlacementsSchemaEntity121Response])
+def list_entities_121(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_121_list(skip=skip, limit=limit)
+
+@router.get("/entity-121/{entity_id}", response_model=PlacementsSchemaEntity121Response)
+def get_entity_121(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_121_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 121 not found")
+    return res
+
+@router.post("/entity-121", response_model=PlacementsSchemaEntity121Response, status_code=201)
+def create_entity_121(payload: PlacementsSchemaEntity121Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_121(payload)
+
+@router.get("/entity-122", response_model=List[PlacementsSchemaEntity122Response])
+def list_entities_122(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_122_list(skip=skip, limit=limit)
+
+@router.get("/entity-122/{entity_id}", response_model=PlacementsSchemaEntity122Response)
+def get_entity_122(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_122_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 122 not found")
+    return res
+
+@router.post("/entity-122", response_model=PlacementsSchemaEntity122Response, status_code=201)
+def create_entity_122(payload: PlacementsSchemaEntity122Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_122(payload)
+
+@router.get("/entity-123", response_model=List[PlacementsSchemaEntity123Response])
+def list_entities_123(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_123_list(skip=skip, limit=limit)
+
+@router.get("/entity-123/{entity_id}", response_model=PlacementsSchemaEntity123Response)
+def get_entity_123(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_123_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 123 not found")
+    return res
+
+@router.post("/entity-123", response_model=PlacementsSchemaEntity123Response, status_code=201)
+def create_entity_123(payload: PlacementsSchemaEntity123Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_123(payload)
+
+@router.get("/entity-124", response_model=List[PlacementsSchemaEntity124Response])
+def list_entities_124(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_124_list(skip=skip, limit=limit)
+
+@router.get("/entity-124/{entity_id}", response_model=PlacementsSchemaEntity124Response)
+def get_entity_124(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_124_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 124 not found")
+    return res
+
+@router.post("/entity-124", response_model=PlacementsSchemaEntity124Response, status_code=201)
+def create_entity_124(payload: PlacementsSchemaEntity124Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_124(payload)
+
+@router.get("/entity-125", response_model=List[PlacementsSchemaEntity125Response])
+def list_entities_125(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_125_list(skip=skip, limit=limit)
+
+@router.get("/entity-125/{entity_id}", response_model=PlacementsSchemaEntity125Response)
+def get_entity_125(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_125_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 125 not found")
+    return res
+
+@router.post("/entity-125", response_model=PlacementsSchemaEntity125Response, status_code=201)
+def create_entity_125(payload: PlacementsSchemaEntity125Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_125(payload)
+
+@router.get("/entity-126", response_model=List[PlacementsSchemaEntity126Response])
+def list_entities_126(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_126_list(skip=skip, limit=limit)
+
+@router.get("/entity-126/{entity_id}", response_model=PlacementsSchemaEntity126Response)
+def get_entity_126(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_126_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 126 not found")
+    return res
+
+@router.post("/entity-126", response_model=PlacementsSchemaEntity126Response, status_code=201)
+def create_entity_126(payload: PlacementsSchemaEntity126Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_126(payload)
+
+@router.get("/entity-127", response_model=List[PlacementsSchemaEntity127Response])
+def list_entities_127(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_127_list(skip=skip, limit=limit)
+
+@router.get("/entity-127/{entity_id}", response_model=PlacementsSchemaEntity127Response)
+def get_entity_127(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_127_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 127 not found")
+    return res
+
+@router.post("/entity-127", response_model=PlacementsSchemaEntity127Response, status_code=201)
+def create_entity_127(payload: PlacementsSchemaEntity127Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_127(payload)
+
+@router.get("/entity-128", response_model=List[PlacementsSchemaEntity128Response])
+def list_entities_128(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_128_list(skip=skip, limit=limit)
+
+@router.get("/entity-128/{entity_id}", response_model=PlacementsSchemaEntity128Response)
+def get_entity_128(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_128_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 128 not found")
+    return res
+
+@router.post("/entity-128", response_model=PlacementsSchemaEntity128Response, status_code=201)
+def create_entity_128(payload: PlacementsSchemaEntity128Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_128(payload)
+
+@router.get("/entity-129", response_model=List[PlacementsSchemaEntity129Response])
+def list_entities_129(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_129_list(skip=skip, limit=limit)
+
+@router.get("/entity-129/{entity_id}", response_model=PlacementsSchemaEntity129Response)
+def get_entity_129(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_129_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 129 not found")
+    return res
+
+@router.post("/entity-129", response_model=PlacementsSchemaEntity129Response, status_code=201)
+def create_entity_129(payload: PlacementsSchemaEntity129Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_129(payload)
+
+@router.get("/entity-130", response_model=List[PlacementsSchemaEntity130Response])
+def list_entities_130(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_130_list(skip=skip, limit=limit)
+
+@router.get("/entity-130/{entity_id}", response_model=PlacementsSchemaEntity130Response)
+def get_entity_130(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_130_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 130 not found")
+    return res
+
+@router.post("/entity-130", response_model=PlacementsSchemaEntity130Response, status_code=201)
+def create_entity_130(payload: PlacementsSchemaEntity130Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_130(payload)
+
+@router.get("/entity-131", response_model=List[PlacementsSchemaEntity131Response])
+def list_entities_131(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_131_list(skip=skip, limit=limit)
+
+@router.get("/entity-131/{entity_id}", response_model=PlacementsSchemaEntity131Response)
+def get_entity_131(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_131_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 131 not found")
+    return res
+
+@router.post("/entity-131", response_model=PlacementsSchemaEntity131Response, status_code=201)
+def create_entity_131(payload: PlacementsSchemaEntity131Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_131(payload)
+
+@router.get("/entity-132", response_model=List[PlacementsSchemaEntity132Response])
+def list_entities_132(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_132_list(skip=skip, limit=limit)
+
+@router.get("/entity-132/{entity_id}", response_model=PlacementsSchemaEntity132Response)
+def get_entity_132(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_132_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 132 not found")
+    return res
+
+@router.post("/entity-132", response_model=PlacementsSchemaEntity132Response, status_code=201)
+def create_entity_132(payload: PlacementsSchemaEntity132Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_132(payload)
+
+@router.get("/entity-133", response_model=List[PlacementsSchemaEntity133Response])
+def list_entities_133(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_133_list(skip=skip, limit=limit)
+
+@router.get("/entity-133/{entity_id}", response_model=PlacementsSchemaEntity133Response)
+def get_entity_133(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_133_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 133 not found")
+    return res
+
+@router.post("/entity-133", response_model=PlacementsSchemaEntity133Response, status_code=201)
+def create_entity_133(payload: PlacementsSchemaEntity133Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_133(payload)
+
+@router.get("/entity-134", response_model=List[PlacementsSchemaEntity134Response])
+def list_entities_134(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_134_list(skip=skip, limit=limit)
+
+@router.get("/entity-134/{entity_id}", response_model=PlacementsSchemaEntity134Response)
+def get_entity_134(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_134_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 134 not found")
+    return res
+
+@router.post("/entity-134", response_model=PlacementsSchemaEntity134Response, status_code=201)
+def create_entity_134(payload: PlacementsSchemaEntity134Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_134(payload)
+
+@router.get("/entity-135", response_model=List[PlacementsSchemaEntity135Response])
+def list_entities_135(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_135_list(skip=skip, limit=limit)
+
+@router.get("/entity-135/{entity_id}", response_model=PlacementsSchemaEntity135Response)
+def get_entity_135(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_135_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 135 not found")
+    return res
+
+@router.post("/entity-135", response_model=PlacementsSchemaEntity135Response, status_code=201)
+def create_entity_135(payload: PlacementsSchemaEntity135Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_135(payload)
+
+@router.get("/entity-136", response_model=List[PlacementsSchemaEntity136Response])
+def list_entities_136(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_136_list(skip=skip, limit=limit)
+
+@router.get("/entity-136/{entity_id}", response_model=PlacementsSchemaEntity136Response)
+def get_entity_136(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_136_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 136 not found")
+    return res
+
+@router.post("/entity-136", response_model=PlacementsSchemaEntity136Response, status_code=201)
+def create_entity_136(payload: PlacementsSchemaEntity136Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_136(payload)
+
+@router.get("/entity-137", response_model=List[PlacementsSchemaEntity137Response])
+def list_entities_137(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_137_list(skip=skip, limit=limit)
+
+@router.get("/entity-137/{entity_id}", response_model=PlacementsSchemaEntity137Response)
+def get_entity_137(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_137_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 137 not found")
+    return res
+
+@router.post("/entity-137", response_model=PlacementsSchemaEntity137Response, status_code=201)
+def create_entity_137(payload: PlacementsSchemaEntity137Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_137(payload)
+
+@router.get("/entity-138", response_model=List[PlacementsSchemaEntity138Response])
+def list_entities_138(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_138_list(skip=skip, limit=limit)
+
+@router.get("/entity-138/{entity_id}", response_model=PlacementsSchemaEntity138Response)
+def get_entity_138(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_138_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 138 not found")
+    return res
+
+@router.post("/entity-138", response_model=PlacementsSchemaEntity138Response, status_code=201)
+def create_entity_138(payload: PlacementsSchemaEntity138Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_138(payload)
+
+@router.get("/entity-139", response_model=List[PlacementsSchemaEntity139Response])
+def list_entities_139(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_139_list(skip=skip, limit=limit)
+
+@router.get("/entity-139/{entity_id}", response_model=PlacementsSchemaEntity139Response)
+def get_entity_139(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_139_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 139 not found")
+    return res
+
+@router.post("/entity-139", response_model=PlacementsSchemaEntity139Response, status_code=201)
+def create_entity_139(payload: PlacementsSchemaEntity139Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_139(payload)
+
+@router.get("/entity-140", response_model=List[PlacementsSchemaEntity140Response])
+def list_entities_140(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_140_list(skip=skip, limit=limit)
+
+@router.get("/entity-140/{entity_id}", response_model=PlacementsSchemaEntity140Response)
+def get_entity_140(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_140_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 140 not found")
+    return res
+
+@router.post("/entity-140", response_model=PlacementsSchemaEntity140Response, status_code=201)
+def create_entity_140(payload: PlacementsSchemaEntity140Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_140(payload)
+
+@router.get("/entity-141", response_model=List[PlacementsSchemaEntity141Response])
+def list_entities_141(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_141_list(skip=skip, limit=limit)
+
+@router.get("/entity-141/{entity_id}", response_model=PlacementsSchemaEntity141Response)
+def get_entity_141(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_141_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 141 not found")
+    return res
+
+@router.post("/entity-141", response_model=PlacementsSchemaEntity141Response, status_code=201)
+def create_entity_141(payload: PlacementsSchemaEntity141Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_141(payload)
+
+@router.get("/entity-142", response_model=List[PlacementsSchemaEntity142Response])
+def list_entities_142(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_142_list(skip=skip, limit=limit)
+
+@router.get("/entity-142/{entity_id}", response_model=PlacementsSchemaEntity142Response)
+def get_entity_142(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_142_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 142 not found")
+    return res
+
+@router.post("/entity-142", response_model=PlacementsSchemaEntity142Response, status_code=201)
+def create_entity_142(payload: PlacementsSchemaEntity142Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_142(payload)
+
+@router.get("/entity-143", response_model=List[PlacementsSchemaEntity143Response])
+def list_entities_143(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_143_list(skip=skip, limit=limit)
+
+@router.get("/entity-143/{entity_id}", response_model=PlacementsSchemaEntity143Response)
+def get_entity_143(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_143_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 143 not found")
+    return res
+
+@router.post("/entity-143", response_model=PlacementsSchemaEntity143Response, status_code=201)
+def create_entity_143(payload: PlacementsSchemaEntity143Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_143(payload)
+
+@router.get("/entity-144", response_model=List[PlacementsSchemaEntity144Response])
+def list_entities_144(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_144_list(skip=skip, limit=limit)
+
+@router.get("/entity-144/{entity_id}", response_model=PlacementsSchemaEntity144Response)
+def get_entity_144(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_144_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 144 not found")
+    return res
+
+@router.post("/entity-144", response_model=PlacementsSchemaEntity144Response, status_code=201)
+def create_entity_144(payload: PlacementsSchemaEntity144Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_144(payload)
+
+@router.get("/entity-145", response_model=List[PlacementsSchemaEntity145Response])
+def list_entities_145(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_145_list(skip=skip, limit=limit)
+
+@router.get("/entity-145/{entity_id}", response_model=PlacementsSchemaEntity145Response)
+def get_entity_145(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_145_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 145 not found")
+    return res
+
+@router.post("/entity-145", response_model=PlacementsSchemaEntity145Response, status_code=201)
+def create_entity_145(payload: PlacementsSchemaEntity145Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_145(payload)
+
+@router.get("/entity-146", response_model=List[PlacementsSchemaEntity146Response])
+def list_entities_146(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_146_list(skip=skip, limit=limit)
+
+@router.get("/entity-146/{entity_id}", response_model=PlacementsSchemaEntity146Response)
+def get_entity_146(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_146_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 146 not found")
+    return res
+
+@router.post("/entity-146", response_model=PlacementsSchemaEntity146Response, status_code=201)
+def create_entity_146(payload: PlacementsSchemaEntity146Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_146(payload)
+
+@router.get("/entity-147", response_model=List[PlacementsSchemaEntity147Response])
+def list_entities_147(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_147_list(skip=skip, limit=limit)
+
+@router.get("/entity-147/{entity_id}", response_model=PlacementsSchemaEntity147Response)
+def get_entity_147(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_147_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 147 not found")
+    return res
+
+@router.post("/entity-147", response_model=PlacementsSchemaEntity147Response, status_code=201)
+def create_entity_147(payload: PlacementsSchemaEntity147Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_147(payload)
+
+@router.get("/entity-148", response_model=List[PlacementsSchemaEntity148Response])
+def list_entities_148(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_148_list(skip=skip, limit=limit)
+
+@router.get("/entity-148/{entity_id}", response_model=PlacementsSchemaEntity148Response)
+def get_entity_148(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_148_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 148 not found")
+    return res
+
+@router.post("/entity-148", response_model=PlacementsSchemaEntity148Response, status_code=201)
+def create_entity_148(payload: PlacementsSchemaEntity148Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_148(payload)
+
+@router.get("/entity-149", response_model=List[PlacementsSchemaEntity149Response])
+def list_entities_149(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_149_list(skip=skip, limit=limit)
+
+@router.get("/entity-149/{entity_id}", response_model=PlacementsSchemaEntity149Response)
+def get_entity_149(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_149_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 149 not found")
+    return res
+
+@router.post("/entity-149", response_model=PlacementsSchemaEntity149Response, status_code=201)
+def create_entity_149(payload: PlacementsSchemaEntity149Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_149(payload)
+
+@router.get("/entity-150", response_model=List[PlacementsSchemaEntity150Response])
+def list_entities_150(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_150_list(skip=skip, limit=limit)
+
+@router.get("/entity-150/{entity_id}", response_model=PlacementsSchemaEntity150Response)
+def get_entity_150(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_150_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 150 not found")
+    return res
+
+@router.post("/entity-150", response_model=PlacementsSchemaEntity150Response, status_code=201)
+def create_entity_150(payload: PlacementsSchemaEntity150Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_150(payload)
+
+@router.get("/entity-151", response_model=List[PlacementsSchemaEntity151Response])
+def list_entities_151(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_151_list(skip=skip, limit=limit)
+
+@router.get("/entity-151/{entity_id}", response_model=PlacementsSchemaEntity151Response)
+def get_entity_151(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_151_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 151 not found")
+    return res
+
+@router.post("/entity-151", response_model=PlacementsSchemaEntity151Response, status_code=201)
+def create_entity_151(payload: PlacementsSchemaEntity151Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_151(payload)
+
+@router.get("/entity-152", response_model=List[PlacementsSchemaEntity152Response])
+def list_entities_152(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_152_list(skip=skip, limit=limit)
+
+@router.get("/entity-152/{entity_id}", response_model=PlacementsSchemaEntity152Response)
+def get_entity_152(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_152_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 152 not found")
+    return res
+
+@router.post("/entity-152", response_model=PlacementsSchemaEntity152Response, status_code=201)
+def create_entity_152(payload: PlacementsSchemaEntity152Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_152(payload)
+
+@router.get("/entity-153", response_model=List[PlacementsSchemaEntity153Response])
+def list_entities_153(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_153_list(skip=skip, limit=limit)
+
+@router.get("/entity-153/{entity_id}", response_model=PlacementsSchemaEntity153Response)
+def get_entity_153(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_153_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 153 not found")
+    return res
+
+@router.post("/entity-153", response_model=PlacementsSchemaEntity153Response, status_code=201)
+def create_entity_153(payload: PlacementsSchemaEntity153Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_153(payload)
+
+@router.get("/entity-154", response_model=List[PlacementsSchemaEntity154Response])
+def list_entities_154(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_154_list(skip=skip, limit=limit)
+
+@router.get("/entity-154/{entity_id}", response_model=PlacementsSchemaEntity154Response)
+def get_entity_154(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_154_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 154 not found")
+    return res
+
+@router.post("/entity-154", response_model=PlacementsSchemaEntity154Response, status_code=201)
+def create_entity_154(payload: PlacementsSchemaEntity154Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_154(payload)
+
+@router.get("/entity-155", response_model=List[PlacementsSchemaEntity155Response])
+def list_entities_155(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_155_list(skip=skip, limit=limit)
+
+@router.get("/entity-155/{entity_id}", response_model=PlacementsSchemaEntity155Response)
+def get_entity_155(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_155_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 155 not found")
+    return res
+
+@router.post("/entity-155", response_model=PlacementsSchemaEntity155Response, status_code=201)
+def create_entity_155(payload: PlacementsSchemaEntity155Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_155(payload)
+
+@router.get("/entity-156", response_model=List[PlacementsSchemaEntity156Response])
+def list_entities_156(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_156_list(skip=skip, limit=limit)
+
+@router.get("/entity-156/{entity_id}", response_model=PlacementsSchemaEntity156Response)
+def get_entity_156(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_156_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 156 not found")
+    return res
+
+@router.post("/entity-156", response_model=PlacementsSchemaEntity156Response, status_code=201)
+def create_entity_156(payload: PlacementsSchemaEntity156Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_156(payload)
+
+@router.get("/entity-157", response_model=List[PlacementsSchemaEntity157Response])
+def list_entities_157(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_157_list(skip=skip, limit=limit)
+
+@router.get("/entity-157/{entity_id}", response_model=PlacementsSchemaEntity157Response)
+def get_entity_157(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_157_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 157 not found")
+    return res
+
+@router.post("/entity-157", response_model=PlacementsSchemaEntity157Response, status_code=201)
+def create_entity_157(payload: PlacementsSchemaEntity157Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_157(payload)
+
+@router.get("/entity-158", response_model=List[PlacementsSchemaEntity158Response])
+def list_entities_158(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_158_list(skip=skip, limit=limit)
+
+@router.get("/entity-158/{entity_id}", response_model=PlacementsSchemaEntity158Response)
+def get_entity_158(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_158_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 158 not found")
+    return res
+
+@router.post("/entity-158", response_model=PlacementsSchemaEntity158Response, status_code=201)
+def create_entity_158(payload: PlacementsSchemaEntity158Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_158(payload)
+
+@router.get("/entity-159", response_model=List[PlacementsSchemaEntity159Response])
+def list_entities_159(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_159_list(skip=skip, limit=limit)
+
+@router.get("/entity-159/{entity_id}", response_model=PlacementsSchemaEntity159Response)
+def get_entity_159(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_159_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 159 not found")
+    return res
+
+@router.post("/entity-159", response_model=PlacementsSchemaEntity159Response, status_code=201)
+def create_entity_159(payload: PlacementsSchemaEntity159Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_159(payload)
+
+@router.get("/entity-160", response_model=List[PlacementsSchemaEntity160Response])
+def list_entities_160(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_160_list(skip=skip, limit=limit)
+
+@router.get("/entity-160/{entity_id}", response_model=PlacementsSchemaEntity160Response)
+def get_entity_160(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_160_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 160 not found")
+    return res
+
+@router.post("/entity-160", response_model=PlacementsSchemaEntity160Response, status_code=201)
+def create_entity_160(payload: PlacementsSchemaEntity160Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_160(payload)
+
+@router.get("/entity-161", response_model=List[PlacementsSchemaEntity161Response])
+def list_entities_161(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_161_list(skip=skip, limit=limit)
+
+@router.get("/entity-161/{entity_id}", response_model=PlacementsSchemaEntity161Response)
+def get_entity_161(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_161_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 161 not found")
+    return res
+
+@router.post("/entity-161", response_model=PlacementsSchemaEntity161Response, status_code=201)
+def create_entity_161(payload: PlacementsSchemaEntity161Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_161(payload)
+
+@router.get("/entity-162", response_model=List[PlacementsSchemaEntity162Response])
+def list_entities_162(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_162_list(skip=skip, limit=limit)
+
+@router.get("/entity-162/{entity_id}", response_model=PlacementsSchemaEntity162Response)
+def get_entity_162(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_162_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 162 not found")
+    return res
+
+@router.post("/entity-162", response_model=PlacementsSchemaEntity162Response, status_code=201)
+def create_entity_162(payload: PlacementsSchemaEntity162Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_162(payload)
+
+@router.get("/entity-163", response_model=List[PlacementsSchemaEntity163Response])
+def list_entities_163(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_163_list(skip=skip, limit=limit)
+
+@router.get("/entity-163/{entity_id}", response_model=PlacementsSchemaEntity163Response)
+def get_entity_163(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_163_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 163 not found")
+    return res
+
+@router.post("/entity-163", response_model=PlacementsSchemaEntity163Response, status_code=201)
+def create_entity_163(payload: PlacementsSchemaEntity163Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_163(payload)
+
+@router.get("/entity-164", response_model=List[PlacementsSchemaEntity164Response])
+def list_entities_164(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_164_list(skip=skip, limit=limit)
+
+@router.get("/entity-164/{entity_id}", response_model=PlacementsSchemaEntity164Response)
+def get_entity_164(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_164_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 164 not found")
+    return res
+
+@router.post("/entity-164", response_model=PlacementsSchemaEntity164Response, status_code=201)
+def create_entity_164(payload: PlacementsSchemaEntity164Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_164(payload)
+
+@router.get("/entity-165", response_model=List[PlacementsSchemaEntity165Response])
+def list_entities_165(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_165_list(skip=skip, limit=limit)
+
+@router.get("/entity-165/{entity_id}", response_model=PlacementsSchemaEntity165Response)
+def get_entity_165(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_165_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 165 not found")
+    return res
+
+@router.post("/entity-165", response_model=PlacementsSchemaEntity165Response, status_code=201)
+def create_entity_165(payload: PlacementsSchemaEntity165Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_165(payload)
+
+@router.get("/entity-166", response_model=List[PlacementsSchemaEntity166Response])
+def list_entities_166(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_166_list(skip=skip, limit=limit)
+
+@router.get("/entity-166/{entity_id}", response_model=PlacementsSchemaEntity166Response)
+def get_entity_166(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_166_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 166 not found")
+    return res
+
+@router.post("/entity-166", response_model=PlacementsSchemaEntity166Response, status_code=201)
+def create_entity_166(payload: PlacementsSchemaEntity166Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_166(payload)
+
+@router.get("/entity-167", response_model=List[PlacementsSchemaEntity167Response])
+def list_entities_167(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_167_list(skip=skip, limit=limit)
+
+@router.get("/entity-167/{entity_id}", response_model=PlacementsSchemaEntity167Response)
+def get_entity_167(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_167_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 167 not found")
+    return res
+
+@router.post("/entity-167", response_model=PlacementsSchemaEntity167Response, status_code=201)
+def create_entity_167(payload: PlacementsSchemaEntity167Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_167(payload)
+
+@router.get("/entity-168", response_model=List[PlacementsSchemaEntity168Response])
+def list_entities_168(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_168_list(skip=skip, limit=limit)
+
+@router.get("/entity-168/{entity_id}", response_model=PlacementsSchemaEntity168Response)
+def get_entity_168(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_168_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 168 not found")
+    return res
+
+@router.post("/entity-168", response_model=PlacementsSchemaEntity168Response, status_code=201)
+def create_entity_168(payload: PlacementsSchemaEntity168Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_168(payload)
+
+@router.get("/entity-169", response_model=List[PlacementsSchemaEntity169Response])
+def list_entities_169(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_169_list(skip=skip, limit=limit)
+
+@router.get("/entity-169/{entity_id}", response_model=PlacementsSchemaEntity169Response)
+def get_entity_169(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_169_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 169 not found")
+    return res
+
+@router.post("/entity-169", response_model=PlacementsSchemaEntity169Response, status_code=201)
+def create_entity_169(payload: PlacementsSchemaEntity169Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_169(payload)
+
+@router.get("/entity-170", response_model=List[PlacementsSchemaEntity170Response])
+def list_entities_170(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_170_list(skip=skip, limit=limit)
+
+@router.get("/entity-170/{entity_id}", response_model=PlacementsSchemaEntity170Response)
+def get_entity_170(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_170_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 170 not found")
+    return res
+
+@router.post("/entity-170", response_model=PlacementsSchemaEntity170Response, status_code=201)
+def create_entity_170(payload: PlacementsSchemaEntity170Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_170(payload)
+
+@router.get("/entity-171", response_model=List[PlacementsSchemaEntity171Response])
+def list_entities_171(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_171_list(skip=skip, limit=limit)
+
+@router.get("/entity-171/{entity_id}", response_model=PlacementsSchemaEntity171Response)
+def get_entity_171(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_171_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 171 not found")
+    return res
+
+@router.post("/entity-171", response_model=PlacementsSchemaEntity171Response, status_code=201)
+def create_entity_171(payload: PlacementsSchemaEntity171Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_171(payload)
+
+@router.get("/entity-172", response_model=List[PlacementsSchemaEntity172Response])
+def list_entities_172(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_172_list(skip=skip, limit=limit)
+
+@router.get("/entity-172/{entity_id}", response_model=PlacementsSchemaEntity172Response)
+def get_entity_172(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_172_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 172 not found")
+    return res
+
+@router.post("/entity-172", response_model=PlacementsSchemaEntity172Response, status_code=201)
+def create_entity_172(payload: PlacementsSchemaEntity172Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_172(payload)
+
+@router.get("/entity-173", response_model=List[PlacementsSchemaEntity173Response])
+def list_entities_173(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_173_list(skip=skip, limit=limit)
+
+@router.get("/entity-173/{entity_id}", response_model=PlacementsSchemaEntity173Response)
+def get_entity_173(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_173_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 173 not found")
+    return res
+
+@router.post("/entity-173", response_model=PlacementsSchemaEntity173Response, status_code=201)
+def create_entity_173(payload: PlacementsSchemaEntity173Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_173(payload)
+
+@router.get("/entity-174", response_model=List[PlacementsSchemaEntity174Response])
+def list_entities_174(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_174_list(skip=skip, limit=limit)
+
+@router.get("/entity-174/{entity_id}", response_model=PlacementsSchemaEntity174Response)
+def get_entity_174(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_174_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 174 not found")
+    return res
+
+@router.post("/entity-174", response_model=PlacementsSchemaEntity174Response, status_code=201)
+def create_entity_174(payload: PlacementsSchemaEntity174Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_174(payload)
+
+@router.get("/entity-175", response_model=List[PlacementsSchemaEntity175Response])
+def list_entities_175(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_175_list(skip=skip, limit=limit)
+
+@router.get("/entity-175/{entity_id}", response_model=PlacementsSchemaEntity175Response)
+def get_entity_175(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_175_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 175 not found")
+    return res
+
+@router.post("/entity-175", response_model=PlacementsSchemaEntity175Response, status_code=201)
+def create_entity_175(payload: PlacementsSchemaEntity175Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_175(payload)
+
+@router.get("/entity-176", response_model=List[PlacementsSchemaEntity176Response])
+def list_entities_176(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_176_list(skip=skip, limit=limit)
+
+@router.get("/entity-176/{entity_id}", response_model=PlacementsSchemaEntity176Response)
+def get_entity_176(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_176_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 176 not found")
+    return res
+
+@router.post("/entity-176", response_model=PlacementsSchemaEntity176Response, status_code=201)
+def create_entity_176(payload: PlacementsSchemaEntity176Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_176(payload)
+
+@router.get("/entity-177", response_model=List[PlacementsSchemaEntity177Response])
+def list_entities_177(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_177_list(skip=skip, limit=limit)
+
+@router.get("/entity-177/{entity_id}", response_model=PlacementsSchemaEntity177Response)
+def get_entity_177(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_177_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 177 not found")
+    return res
+
+@router.post("/entity-177", response_model=PlacementsSchemaEntity177Response, status_code=201)
+def create_entity_177(payload: PlacementsSchemaEntity177Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_177(payload)
+
+@router.get("/entity-178", response_model=List[PlacementsSchemaEntity178Response])
+def list_entities_178(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_178_list(skip=skip, limit=limit)
+
+@router.get("/entity-178/{entity_id}", response_model=PlacementsSchemaEntity178Response)
+def get_entity_178(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_178_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 178 not found")
+    return res
+
+@router.post("/entity-178", response_model=PlacementsSchemaEntity178Response, status_code=201)
+def create_entity_178(payload: PlacementsSchemaEntity178Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_178(payload)
+
+@router.get("/entity-179", response_model=List[PlacementsSchemaEntity179Response])
+def list_entities_179(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_179_list(skip=skip, limit=limit)
+
+@router.get("/entity-179/{entity_id}", response_model=PlacementsSchemaEntity179Response)
+def get_entity_179(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_179_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 179 not found")
+    return res
+
+@router.post("/entity-179", response_model=PlacementsSchemaEntity179Response, status_code=201)
+def create_entity_179(payload: PlacementsSchemaEntity179Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_179(payload)
+
+@router.get("/entity-180", response_model=List[PlacementsSchemaEntity180Response])
+def list_entities_180(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_180_list(skip=skip, limit=limit)
+
+@router.get("/entity-180/{entity_id}", response_model=PlacementsSchemaEntity180Response)
+def get_entity_180(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_180_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 180 not found")
+    return res
+
+@router.post("/entity-180", response_model=PlacementsSchemaEntity180Response, status_code=201)
+def create_entity_180(payload: PlacementsSchemaEntity180Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_180(payload)
+
+@router.get("/entity-181", response_model=List[PlacementsSchemaEntity181Response])
+def list_entities_181(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_181_list(skip=skip, limit=limit)
+
+@router.get("/entity-181/{entity_id}", response_model=PlacementsSchemaEntity181Response)
+def get_entity_181(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_181_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 181 not found")
+    return res
+
+@router.post("/entity-181", response_model=PlacementsSchemaEntity181Response, status_code=201)
+def create_entity_181(payload: PlacementsSchemaEntity181Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_181(payload)
+
+@router.get("/entity-182", response_model=List[PlacementsSchemaEntity182Response])
+def list_entities_182(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_182_list(skip=skip, limit=limit)
+
+@router.get("/entity-182/{entity_id}", response_model=PlacementsSchemaEntity182Response)
+def get_entity_182(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_182_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 182 not found")
+    return res
+
+@router.post("/entity-182", response_model=PlacementsSchemaEntity182Response, status_code=201)
+def create_entity_182(payload: PlacementsSchemaEntity182Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_182(payload)
+
+@router.get("/entity-183", response_model=List[PlacementsSchemaEntity183Response])
+def list_entities_183(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_183_list(skip=skip, limit=limit)
+
+@router.get("/entity-183/{entity_id}", response_model=PlacementsSchemaEntity183Response)
+def get_entity_183(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_183_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 183 not found")
+    return res
+
+@router.post("/entity-183", response_model=PlacementsSchemaEntity183Response, status_code=201)
+def create_entity_183(payload: PlacementsSchemaEntity183Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_183(payload)
+
+@router.get("/entity-184", response_model=List[PlacementsSchemaEntity184Response])
+def list_entities_184(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_184_list(skip=skip, limit=limit)
+
+@router.get("/entity-184/{entity_id}", response_model=PlacementsSchemaEntity184Response)
+def get_entity_184(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_184_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 184 not found")
+    return res
+
+@router.post("/entity-184", response_model=PlacementsSchemaEntity184Response, status_code=201)
+def create_entity_184(payload: PlacementsSchemaEntity184Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_184(payload)
+
+@router.get("/entity-185", response_model=List[PlacementsSchemaEntity185Response])
+def list_entities_185(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_185_list(skip=skip, limit=limit)
+
+@router.get("/entity-185/{entity_id}", response_model=PlacementsSchemaEntity185Response)
+def get_entity_185(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_185_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 185 not found")
+    return res
+
+@router.post("/entity-185", response_model=PlacementsSchemaEntity185Response, status_code=201)
+def create_entity_185(payload: PlacementsSchemaEntity185Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_185(payload)
+
+@router.get("/entity-186", response_model=List[PlacementsSchemaEntity186Response])
+def list_entities_186(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_186_list(skip=skip, limit=limit)
+
+@router.get("/entity-186/{entity_id}", response_model=PlacementsSchemaEntity186Response)
+def get_entity_186(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_186_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 186 not found")
+    return res
+
+@router.post("/entity-186", response_model=PlacementsSchemaEntity186Response, status_code=201)
+def create_entity_186(payload: PlacementsSchemaEntity186Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_186(payload)
+
+@router.get("/entity-187", response_model=List[PlacementsSchemaEntity187Response])
+def list_entities_187(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_187_list(skip=skip, limit=limit)
+
+@router.get("/entity-187/{entity_id}", response_model=PlacementsSchemaEntity187Response)
+def get_entity_187(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_187_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 187 not found")
+    return res
+
+@router.post("/entity-187", response_model=PlacementsSchemaEntity187Response, status_code=201)
+def create_entity_187(payload: PlacementsSchemaEntity187Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_187(payload)
+
+@router.get("/entity-188", response_model=List[PlacementsSchemaEntity188Response])
+def list_entities_188(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_188_list(skip=skip, limit=limit)
+
+@router.get("/entity-188/{entity_id}", response_model=PlacementsSchemaEntity188Response)
+def get_entity_188(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_188_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 188 not found")
+    return res
+
+@router.post("/entity-188", response_model=PlacementsSchemaEntity188Response, status_code=201)
+def create_entity_188(payload: PlacementsSchemaEntity188Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_188(payload)
+
+@router.get("/entity-189", response_model=List[PlacementsSchemaEntity189Response])
+def list_entities_189(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_189_list(skip=skip, limit=limit)
+
+@router.get("/entity-189/{entity_id}", response_model=PlacementsSchemaEntity189Response)
+def get_entity_189(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_189_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 189 not found")
+    return res
+
+@router.post("/entity-189", response_model=PlacementsSchemaEntity189Response, status_code=201)
+def create_entity_189(payload: PlacementsSchemaEntity189Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_189(payload)
+
+@router.get("/entity-190", response_model=List[PlacementsSchemaEntity190Response])
+def list_entities_190(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_190_list(skip=skip, limit=limit)
+
+@router.get("/entity-190/{entity_id}", response_model=PlacementsSchemaEntity190Response)
+def get_entity_190(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_190_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 190 not found")
+    return res
+
+@router.post("/entity-190", response_model=PlacementsSchemaEntity190Response, status_code=201)
+def create_entity_190(payload: PlacementsSchemaEntity190Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_190(payload)
+
+@router.get("/entity-191", response_model=List[PlacementsSchemaEntity191Response])
+def list_entities_191(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_191_list(skip=skip, limit=limit)
+
+@router.get("/entity-191/{entity_id}", response_model=PlacementsSchemaEntity191Response)
+def get_entity_191(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_191_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 191 not found")
+    return res
+
+@router.post("/entity-191", response_model=PlacementsSchemaEntity191Response, status_code=201)
+def create_entity_191(payload: PlacementsSchemaEntity191Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_191(payload)
+
+@router.get("/entity-192", response_model=List[PlacementsSchemaEntity192Response])
+def list_entities_192(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_192_list(skip=skip, limit=limit)
+
+@router.get("/entity-192/{entity_id}", response_model=PlacementsSchemaEntity192Response)
+def get_entity_192(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_192_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 192 not found")
+    return res
+
+@router.post("/entity-192", response_model=PlacementsSchemaEntity192Response, status_code=201)
+def create_entity_192(payload: PlacementsSchemaEntity192Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_192(payload)
+
+@router.get("/entity-193", response_model=List[PlacementsSchemaEntity193Response])
+def list_entities_193(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_193_list(skip=skip, limit=limit)
+
+@router.get("/entity-193/{entity_id}", response_model=PlacementsSchemaEntity193Response)
+def get_entity_193(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_193_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 193 not found")
+    return res
+
+@router.post("/entity-193", response_model=PlacementsSchemaEntity193Response, status_code=201)
+def create_entity_193(payload: PlacementsSchemaEntity193Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_193(payload)
+
+@router.get("/entity-194", response_model=List[PlacementsSchemaEntity194Response])
+def list_entities_194(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_194_list(skip=skip, limit=limit)
+
+@router.get("/entity-194/{entity_id}", response_model=PlacementsSchemaEntity194Response)
+def get_entity_194(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_194_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 194 not found")
+    return res
+
+@router.post("/entity-194", response_model=PlacementsSchemaEntity194Response, status_code=201)
+def create_entity_194(payload: PlacementsSchemaEntity194Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_194(payload)
+
+@router.get("/entity-195", response_model=List[PlacementsSchemaEntity195Response])
+def list_entities_195(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_195_list(skip=skip, limit=limit)
+
+@router.get("/entity-195/{entity_id}", response_model=PlacementsSchemaEntity195Response)
+def get_entity_195(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_195_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 195 not found")
+    return res
+
+@router.post("/entity-195", response_model=PlacementsSchemaEntity195Response, status_code=201)
+def create_entity_195(payload: PlacementsSchemaEntity195Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_195(payload)
+
+@router.get("/entity-196", response_model=List[PlacementsSchemaEntity196Response])
+def list_entities_196(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_196_list(skip=skip, limit=limit)
+
+@router.get("/entity-196/{entity_id}", response_model=PlacementsSchemaEntity196Response)
+def get_entity_196(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_196_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 196 not found")
+    return res
+
+@router.post("/entity-196", response_model=PlacementsSchemaEntity196Response, status_code=201)
+def create_entity_196(payload: PlacementsSchemaEntity196Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_196(payload)
+
+@router.get("/entity-197", response_model=List[PlacementsSchemaEntity197Response])
+def list_entities_197(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_197_list(skip=skip, limit=limit)
+
+@router.get("/entity-197/{entity_id}", response_model=PlacementsSchemaEntity197Response)
+def get_entity_197(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_197_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 197 not found")
+    return res
+
+@router.post("/entity-197", response_model=PlacementsSchemaEntity197Response, status_code=201)
+def create_entity_197(payload: PlacementsSchemaEntity197Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_197(payload)
+
+@router.get("/entity-198", response_model=List[PlacementsSchemaEntity198Response])
+def list_entities_198(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_198_list(skip=skip, limit=limit)
+
+@router.get("/entity-198/{entity_id}", response_model=PlacementsSchemaEntity198Response)
+def get_entity_198(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_198_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 198 not found")
+    return res
+
+@router.post("/entity-198", response_model=PlacementsSchemaEntity198Response, status_code=201)
+def create_entity_198(payload: PlacementsSchemaEntity198Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_198(payload)
+
+@router.get("/entity-199", response_model=List[PlacementsSchemaEntity199Response])
+def list_entities_199(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_199_list(skip=skip, limit=limit)
+
+@router.get("/entity-199/{entity_id}", response_model=PlacementsSchemaEntity199Response)
+def get_entity_199(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_199_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 199 not found")
+    return res
+
+@router.post("/entity-199", response_model=PlacementsSchemaEntity199Response, status_code=201)
+def create_entity_199(payload: PlacementsSchemaEntity199Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_199(payload)
+
+@router.get("/entity-200", response_model=List[PlacementsSchemaEntity200Response])
+def list_entities_200(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.get_entity_200_list(skip=skip, limit=limit)
+
+@router.get("/entity-200/{entity_id}", response_model=PlacementsSchemaEntity200Response)
+def get_entity_200(entity_id: int, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    res = srv.get_entity_200_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 200 not found")
+    return res
+
+@router.post("/entity-200", response_model=PlacementsSchemaEntity200Response, status_code=201)
+def create_entity_200(payload: PlacementsSchemaEntity200Create, db: Session = Depends(get_db)):
+    srv = PlacementsDomainService(db)
+    return srv.create_entity_200(payload)
+

@@ -1206,3 +1206,803 @@ class PlacementsRepository120:
     def find_by_code(self, code: str) -> Optional[PlacementsModelEntity120]:
         return self.db.query(PlacementsModelEntity120).filter(PlacementsModelEntity120.entity_code == code).first()
 
+class PlacementsRepository121:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity121]:
+        return self.db.query(PlacementsModelEntity121).filter(PlacementsModelEntity121.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity121]:
+        return self.db.query(PlacementsModelEntity121).filter(PlacementsModelEntity121.entity_code == code).first()
+
+class PlacementsRepository122:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity122]:
+        return self.db.query(PlacementsModelEntity122).filter(PlacementsModelEntity122.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity122]:
+        return self.db.query(PlacementsModelEntity122).filter(PlacementsModelEntity122.entity_code == code).first()
+
+class PlacementsRepository123:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity123]:
+        return self.db.query(PlacementsModelEntity123).filter(PlacementsModelEntity123.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity123]:
+        return self.db.query(PlacementsModelEntity123).filter(PlacementsModelEntity123.entity_code == code).first()
+
+class PlacementsRepository124:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity124]:
+        return self.db.query(PlacementsModelEntity124).filter(PlacementsModelEntity124.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity124]:
+        return self.db.query(PlacementsModelEntity124).filter(PlacementsModelEntity124.entity_code == code).first()
+
+class PlacementsRepository125:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity125]:
+        return self.db.query(PlacementsModelEntity125).filter(PlacementsModelEntity125.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity125]:
+        return self.db.query(PlacementsModelEntity125).filter(PlacementsModelEntity125.entity_code == code).first()
+
+class PlacementsRepository126:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity126]:
+        return self.db.query(PlacementsModelEntity126).filter(PlacementsModelEntity126.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity126]:
+        return self.db.query(PlacementsModelEntity126).filter(PlacementsModelEntity126.entity_code == code).first()
+
+class PlacementsRepository127:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity127]:
+        return self.db.query(PlacementsModelEntity127).filter(PlacementsModelEntity127.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity127]:
+        return self.db.query(PlacementsModelEntity127).filter(PlacementsModelEntity127.entity_code == code).first()
+
+class PlacementsRepository128:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity128]:
+        return self.db.query(PlacementsModelEntity128).filter(PlacementsModelEntity128.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity128]:
+        return self.db.query(PlacementsModelEntity128).filter(PlacementsModelEntity128.entity_code == code).first()
+
+class PlacementsRepository129:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity129]:
+        return self.db.query(PlacementsModelEntity129).filter(PlacementsModelEntity129.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity129]:
+        return self.db.query(PlacementsModelEntity129).filter(PlacementsModelEntity129.entity_code == code).first()
+
+class PlacementsRepository130:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity130]:
+        return self.db.query(PlacementsModelEntity130).filter(PlacementsModelEntity130.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity130]:
+        return self.db.query(PlacementsModelEntity130).filter(PlacementsModelEntity130.entity_code == code).first()
+
+class PlacementsRepository131:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity131]:
+        return self.db.query(PlacementsModelEntity131).filter(PlacementsModelEntity131.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity131]:
+        return self.db.query(PlacementsModelEntity131).filter(PlacementsModelEntity131.entity_code == code).first()
+
+class PlacementsRepository132:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity132]:
+        return self.db.query(PlacementsModelEntity132).filter(PlacementsModelEntity132.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity132]:
+        return self.db.query(PlacementsModelEntity132).filter(PlacementsModelEntity132.entity_code == code).first()
+
+class PlacementsRepository133:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity133]:
+        return self.db.query(PlacementsModelEntity133).filter(PlacementsModelEntity133.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity133]:
+        return self.db.query(PlacementsModelEntity133).filter(PlacementsModelEntity133.entity_code == code).first()
+
+class PlacementsRepository134:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity134]:
+        return self.db.query(PlacementsModelEntity134).filter(PlacementsModelEntity134.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity134]:
+        return self.db.query(PlacementsModelEntity134).filter(PlacementsModelEntity134.entity_code == code).first()
+
+class PlacementsRepository135:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity135]:
+        return self.db.query(PlacementsModelEntity135).filter(PlacementsModelEntity135.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity135]:
+        return self.db.query(PlacementsModelEntity135).filter(PlacementsModelEntity135.entity_code == code).first()
+
+class PlacementsRepository136:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity136]:
+        return self.db.query(PlacementsModelEntity136).filter(PlacementsModelEntity136.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity136]:
+        return self.db.query(PlacementsModelEntity136).filter(PlacementsModelEntity136.entity_code == code).first()
+
+class PlacementsRepository137:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity137]:
+        return self.db.query(PlacementsModelEntity137).filter(PlacementsModelEntity137.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity137]:
+        return self.db.query(PlacementsModelEntity137).filter(PlacementsModelEntity137.entity_code == code).first()
+
+class PlacementsRepository138:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity138]:
+        return self.db.query(PlacementsModelEntity138).filter(PlacementsModelEntity138.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity138]:
+        return self.db.query(PlacementsModelEntity138).filter(PlacementsModelEntity138.entity_code == code).first()
+
+class PlacementsRepository139:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity139]:
+        return self.db.query(PlacementsModelEntity139).filter(PlacementsModelEntity139.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity139]:
+        return self.db.query(PlacementsModelEntity139).filter(PlacementsModelEntity139.entity_code == code).first()
+
+class PlacementsRepository140:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity140]:
+        return self.db.query(PlacementsModelEntity140).filter(PlacementsModelEntity140.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity140]:
+        return self.db.query(PlacementsModelEntity140).filter(PlacementsModelEntity140.entity_code == code).first()
+
+class PlacementsRepository141:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity141]:
+        return self.db.query(PlacementsModelEntity141).filter(PlacementsModelEntity141.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity141]:
+        return self.db.query(PlacementsModelEntity141).filter(PlacementsModelEntity141.entity_code == code).first()
+
+class PlacementsRepository142:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity142]:
+        return self.db.query(PlacementsModelEntity142).filter(PlacementsModelEntity142.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity142]:
+        return self.db.query(PlacementsModelEntity142).filter(PlacementsModelEntity142.entity_code == code).first()
+
+class PlacementsRepository143:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity143]:
+        return self.db.query(PlacementsModelEntity143).filter(PlacementsModelEntity143.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity143]:
+        return self.db.query(PlacementsModelEntity143).filter(PlacementsModelEntity143.entity_code == code).first()
+
+class PlacementsRepository144:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity144]:
+        return self.db.query(PlacementsModelEntity144).filter(PlacementsModelEntity144.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity144]:
+        return self.db.query(PlacementsModelEntity144).filter(PlacementsModelEntity144.entity_code == code).first()
+
+class PlacementsRepository145:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity145]:
+        return self.db.query(PlacementsModelEntity145).filter(PlacementsModelEntity145.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity145]:
+        return self.db.query(PlacementsModelEntity145).filter(PlacementsModelEntity145.entity_code == code).first()
+
+class PlacementsRepository146:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity146]:
+        return self.db.query(PlacementsModelEntity146).filter(PlacementsModelEntity146.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity146]:
+        return self.db.query(PlacementsModelEntity146).filter(PlacementsModelEntity146.entity_code == code).first()
+
+class PlacementsRepository147:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity147]:
+        return self.db.query(PlacementsModelEntity147).filter(PlacementsModelEntity147.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity147]:
+        return self.db.query(PlacementsModelEntity147).filter(PlacementsModelEntity147.entity_code == code).first()
+
+class PlacementsRepository148:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity148]:
+        return self.db.query(PlacementsModelEntity148).filter(PlacementsModelEntity148.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity148]:
+        return self.db.query(PlacementsModelEntity148).filter(PlacementsModelEntity148.entity_code == code).first()
+
+class PlacementsRepository149:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity149]:
+        return self.db.query(PlacementsModelEntity149).filter(PlacementsModelEntity149.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity149]:
+        return self.db.query(PlacementsModelEntity149).filter(PlacementsModelEntity149.entity_code == code).first()
+
+class PlacementsRepository150:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity150]:
+        return self.db.query(PlacementsModelEntity150).filter(PlacementsModelEntity150.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity150]:
+        return self.db.query(PlacementsModelEntity150).filter(PlacementsModelEntity150.entity_code == code).first()
+
+class PlacementsRepository151:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity151]:
+        return self.db.query(PlacementsModelEntity151).filter(PlacementsModelEntity151.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity151]:
+        return self.db.query(PlacementsModelEntity151).filter(PlacementsModelEntity151.entity_code == code).first()
+
+class PlacementsRepository152:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity152]:
+        return self.db.query(PlacementsModelEntity152).filter(PlacementsModelEntity152.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity152]:
+        return self.db.query(PlacementsModelEntity152).filter(PlacementsModelEntity152.entity_code == code).first()
+
+class PlacementsRepository153:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity153]:
+        return self.db.query(PlacementsModelEntity153).filter(PlacementsModelEntity153.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity153]:
+        return self.db.query(PlacementsModelEntity153).filter(PlacementsModelEntity153.entity_code == code).first()
+
+class PlacementsRepository154:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity154]:
+        return self.db.query(PlacementsModelEntity154).filter(PlacementsModelEntity154.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity154]:
+        return self.db.query(PlacementsModelEntity154).filter(PlacementsModelEntity154.entity_code == code).first()
+
+class PlacementsRepository155:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity155]:
+        return self.db.query(PlacementsModelEntity155).filter(PlacementsModelEntity155.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity155]:
+        return self.db.query(PlacementsModelEntity155).filter(PlacementsModelEntity155.entity_code == code).first()
+
+class PlacementsRepository156:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity156]:
+        return self.db.query(PlacementsModelEntity156).filter(PlacementsModelEntity156.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity156]:
+        return self.db.query(PlacementsModelEntity156).filter(PlacementsModelEntity156.entity_code == code).first()
+
+class PlacementsRepository157:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity157]:
+        return self.db.query(PlacementsModelEntity157).filter(PlacementsModelEntity157.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity157]:
+        return self.db.query(PlacementsModelEntity157).filter(PlacementsModelEntity157.entity_code == code).first()
+
+class PlacementsRepository158:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity158]:
+        return self.db.query(PlacementsModelEntity158).filter(PlacementsModelEntity158.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity158]:
+        return self.db.query(PlacementsModelEntity158).filter(PlacementsModelEntity158.entity_code == code).first()
+
+class PlacementsRepository159:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity159]:
+        return self.db.query(PlacementsModelEntity159).filter(PlacementsModelEntity159.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity159]:
+        return self.db.query(PlacementsModelEntity159).filter(PlacementsModelEntity159.entity_code == code).first()
+
+class PlacementsRepository160:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity160]:
+        return self.db.query(PlacementsModelEntity160).filter(PlacementsModelEntity160.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity160]:
+        return self.db.query(PlacementsModelEntity160).filter(PlacementsModelEntity160.entity_code == code).first()
+
+class PlacementsRepository161:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity161]:
+        return self.db.query(PlacementsModelEntity161).filter(PlacementsModelEntity161.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity161]:
+        return self.db.query(PlacementsModelEntity161).filter(PlacementsModelEntity161.entity_code == code).first()
+
+class PlacementsRepository162:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity162]:
+        return self.db.query(PlacementsModelEntity162).filter(PlacementsModelEntity162.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity162]:
+        return self.db.query(PlacementsModelEntity162).filter(PlacementsModelEntity162.entity_code == code).first()
+
+class PlacementsRepository163:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity163]:
+        return self.db.query(PlacementsModelEntity163).filter(PlacementsModelEntity163.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity163]:
+        return self.db.query(PlacementsModelEntity163).filter(PlacementsModelEntity163.entity_code == code).first()
+
+class PlacementsRepository164:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity164]:
+        return self.db.query(PlacementsModelEntity164).filter(PlacementsModelEntity164.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity164]:
+        return self.db.query(PlacementsModelEntity164).filter(PlacementsModelEntity164.entity_code == code).first()
+
+class PlacementsRepository165:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity165]:
+        return self.db.query(PlacementsModelEntity165).filter(PlacementsModelEntity165.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity165]:
+        return self.db.query(PlacementsModelEntity165).filter(PlacementsModelEntity165.entity_code == code).first()
+
+class PlacementsRepository166:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity166]:
+        return self.db.query(PlacementsModelEntity166).filter(PlacementsModelEntity166.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity166]:
+        return self.db.query(PlacementsModelEntity166).filter(PlacementsModelEntity166.entity_code == code).first()
+
+class PlacementsRepository167:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity167]:
+        return self.db.query(PlacementsModelEntity167).filter(PlacementsModelEntity167.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity167]:
+        return self.db.query(PlacementsModelEntity167).filter(PlacementsModelEntity167.entity_code == code).first()
+
+class PlacementsRepository168:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity168]:
+        return self.db.query(PlacementsModelEntity168).filter(PlacementsModelEntity168.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity168]:
+        return self.db.query(PlacementsModelEntity168).filter(PlacementsModelEntity168.entity_code == code).first()
+
+class PlacementsRepository169:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity169]:
+        return self.db.query(PlacementsModelEntity169).filter(PlacementsModelEntity169.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity169]:
+        return self.db.query(PlacementsModelEntity169).filter(PlacementsModelEntity169.entity_code == code).first()
+
+class PlacementsRepository170:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity170]:
+        return self.db.query(PlacementsModelEntity170).filter(PlacementsModelEntity170.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity170]:
+        return self.db.query(PlacementsModelEntity170).filter(PlacementsModelEntity170.entity_code == code).first()
+
+class PlacementsRepository171:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity171]:
+        return self.db.query(PlacementsModelEntity171).filter(PlacementsModelEntity171.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity171]:
+        return self.db.query(PlacementsModelEntity171).filter(PlacementsModelEntity171.entity_code == code).first()
+
+class PlacementsRepository172:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity172]:
+        return self.db.query(PlacementsModelEntity172).filter(PlacementsModelEntity172.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity172]:
+        return self.db.query(PlacementsModelEntity172).filter(PlacementsModelEntity172.entity_code == code).first()
+
+class PlacementsRepository173:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity173]:
+        return self.db.query(PlacementsModelEntity173).filter(PlacementsModelEntity173.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity173]:
+        return self.db.query(PlacementsModelEntity173).filter(PlacementsModelEntity173.entity_code == code).first()
+
+class PlacementsRepository174:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity174]:
+        return self.db.query(PlacementsModelEntity174).filter(PlacementsModelEntity174.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity174]:
+        return self.db.query(PlacementsModelEntity174).filter(PlacementsModelEntity174.entity_code == code).first()
+
+class PlacementsRepository175:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity175]:
+        return self.db.query(PlacementsModelEntity175).filter(PlacementsModelEntity175.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity175]:
+        return self.db.query(PlacementsModelEntity175).filter(PlacementsModelEntity175.entity_code == code).first()
+
+class PlacementsRepository176:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity176]:
+        return self.db.query(PlacementsModelEntity176).filter(PlacementsModelEntity176.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity176]:
+        return self.db.query(PlacementsModelEntity176).filter(PlacementsModelEntity176.entity_code == code).first()
+
+class PlacementsRepository177:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity177]:
+        return self.db.query(PlacementsModelEntity177).filter(PlacementsModelEntity177.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity177]:
+        return self.db.query(PlacementsModelEntity177).filter(PlacementsModelEntity177.entity_code == code).first()
+
+class PlacementsRepository178:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity178]:
+        return self.db.query(PlacementsModelEntity178).filter(PlacementsModelEntity178.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity178]:
+        return self.db.query(PlacementsModelEntity178).filter(PlacementsModelEntity178.entity_code == code).first()
+
+class PlacementsRepository179:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity179]:
+        return self.db.query(PlacementsModelEntity179).filter(PlacementsModelEntity179.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity179]:
+        return self.db.query(PlacementsModelEntity179).filter(PlacementsModelEntity179.entity_code == code).first()
+
+class PlacementsRepository180:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity180]:
+        return self.db.query(PlacementsModelEntity180).filter(PlacementsModelEntity180.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity180]:
+        return self.db.query(PlacementsModelEntity180).filter(PlacementsModelEntity180.entity_code == code).first()
+
+class PlacementsRepository181:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity181]:
+        return self.db.query(PlacementsModelEntity181).filter(PlacementsModelEntity181.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity181]:
+        return self.db.query(PlacementsModelEntity181).filter(PlacementsModelEntity181.entity_code == code).first()
+
+class PlacementsRepository182:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity182]:
+        return self.db.query(PlacementsModelEntity182).filter(PlacementsModelEntity182.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity182]:
+        return self.db.query(PlacementsModelEntity182).filter(PlacementsModelEntity182.entity_code == code).first()
+
+class PlacementsRepository183:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity183]:
+        return self.db.query(PlacementsModelEntity183).filter(PlacementsModelEntity183.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity183]:
+        return self.db.query(PlacementsModelEntity183).filter(PlacementsModelEntity183.entity_code == code).first()
+
+class PlacementsRepository184:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity184]:
+        return self.db.query(PlacementsModelEntity184).filter(PlacementsModelEntity184.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity184]:
+        return self.db.query(PlacementsModelEntity184).filter(PlacementsModelEntity184.entity_code == code).first()
+
+class PlacementsRepository185:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity185]:
+        return self.db.query(PlacementsModelEntity185).filter(PlacementsModelEntity185.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity185]:
+        return self.db.query(PlacementsModelEntity185).filter(PlacementsModelEntity185.entity_code == code).first()
+
+class PlacementsRepository186:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity186]:
+        return self.db.query(PlacementsModelEntity186).filter(PlacementsModelEntity186.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity186]:
+        return self.db.query(PlacementsModelEntity186).filter(PlacementsModelEntity186.entity_code == code).first()
+
+class PlacementsRepository187:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity187]:
+        return self.db.query(PlacementsModelEntity187).filter(PlacementsModelEntity187.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity187]:
+        return self.db.query(PlacementsModelEntity187).filter(PlacementsModelEntity187.entity_code == code).first()
+
+class PlacementsRepository188:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity188]:
+        return self.db.query(PlacementsModelEntity188).filter(PlacementsModelEntity188.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity188]:
+        return self.db.query(PlacementsModelEntity188).filter(PlacementsModelEntity188.entity_code == code).first()
+
+class PlacementsRepository189:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity189]:
+        return self.db.query(PlacementsModelEntity189).filter(PlacementsModelEntity189.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity189]:
+        return self.db.query(PlacementsModelEntity189).filter(PlacementsModelEntity189.entity_code == code).first()
+
+class PlacementsRepository190:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity190]:
+        return self.db.query(PlacementsModelEntity190).filter(PlacementsModelEntity190.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity190]:
+        return self.db.query(PlacementsModelEntity190).filter(PlacementsModelEntity190.entity_code == code).first()
+
+class PlacementsRepository191:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity191]:
+        return self.db.query(PlacementsModelEntity191).filter(PlacementsModelEntity191.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity191]:
+        return self.db.query(PlacementsModelEntity191).filter(PlacementsModelEntity191.entity_code == code).first()
+
+class PlacementsRepository192:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity192]:
+        return self.db.query(PlacementsModelEntity192).filter(PlacementsModelEntity192.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity192]:
+        return self.db.query(PlacementsModelEntity192).filter(PlacementsModelEntity192.entity_code == code).first()
+
+class PlacementsRepository193:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity193]:
+        return self.db.query(PlacementsModelEntity193).filter(PlacementsModelEntity193.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity193]:
+        return self.db.query(PlacementsModelEntity193).filter(PlacementsModelEntity193.entity_code == code).first()
+
+class PlacementsRepository194:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity194]:
+        return self.db.query(PlacementsModelEntity194).filter(PlacementsModelEntity194.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity194]:
+        return self.db.query(PlacementsModelEntity194).filter(PlacementsModelEntity194.entity_code == code).first()
+
+class PlacementsRepository195:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity195]:
+        return self.db.query(PlacementsModelEntity195).filter(PlacementsModelEntity195.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity195]:
+        return self.db.query(PlacementsModelEntity195).filter(PlacementsModelEntity195.entity_code == code).first()
+
+class PlacementsRepository196:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity196]:
+        return self.db.query(PlacementsModelEntity196).filter(PlacementsModelEntity196.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity196]:
+        return self.db.query(PlacementsModelEntity196).filter(PlacementsModelEntity196.entity_code == code).first()
+
+class PlacementsRepository197:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity197]:
+        return self.db.query(PlacementsModelEntity197).filter(PlacementsModelEntity197.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity197]:
+        return self.db.query(PlacementsModelEntity197).filter(PlacementsModelEntity197.entity_code == code).first()
+
+class PlacementsRepository198:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity198]:
+        return self.db.query(PlacementsModelEntity198).filter(PlacementsModelEntity198.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity198]:
+        return self.db.query(PlacementsModelEntity198).filter(PlacementsModelEntity198.entity_code == code).first()
+
+class PlacementsRepository199:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity199]:
+        return self.db.query(PlacementsModelEntity199).filter(PlacementsModelEntity199.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity199]:
+        return self.db.query(PlacementsModelEntity199).filter(PlacementsModelEntity199.entity_code == code).first()
+
+class PlacementsRepository200:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[PlacementsModelEntity200]:
+        return self.db.query(PlacementsModelEntity200).filter(PlacementsModelEntity200.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[PlacementsModelEntity200]:
+        return self.db.query(PlacementsModelEntity200).filter(PlacementsModelEntity200.entity_code == code).first()
+

@@ -4811,3 +4811,3203 @@ class PlacementsDomainService:
         self.db.commit()
         return True
 
+    def get_entity_121_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity121]:
+        return self.db.query(PlacementsModelEntity121).offset(skip).limit(limit).all()
+
+    def get_entity_121_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity121]:
+        return self.db.query(PlacementsModelEntity121).filter(PlacementsModelEntity121.id == entity_id).first()
+
+    def create_entity_121(self, payload: PlacementsSchemaEntity121Create) -> PlacementsModelEntity121:
+        db_obj = PlacementsModelEntity121(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_121(self, entity_id: int, payload: PlacementsSchemaEntity121Update) -> Optional[PlacementsModelEntity121]:
+        db_obj = self.get_entity_121_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_121(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_121_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_122_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity122]:
+        return self.db.query(PlacementsModelEntity122).offset(skip).limit(limit).all()
+
+    def get_entity_122_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity122]:
+        return self.db.query(PlacementsModelEntity122).filter(PlacementsModelEntity122.id == entity_id).first()
+
+    def create_entity_122(self, payload: PlacementsSchemaEntity122Create) -> PlacementsModelEntity122:
+        db_obj = PlacementsModelEntity122(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_122(self, entity_id: int, payload: PlacementsSchemaEntity122Update) -> Optional[PlacementsModelEntity122]:
+        db_obj = self.get_entity_122_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_122(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_122_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_123_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity123]:
+        return self.db.query(PlacementsModelEntity123).offset(skip).limit(limit).all()
+
+    def get_entity_123_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity123]:
+        return self.db.query(PlacementsModelEntity123).filter(PlacementsModelEntity123.id == entity_id).first()
+
+    def create_entity_123(self, payload: PlacementsSchemaEntity123Create) -> PlacementsModelEntity123:
+        db_obj = PlacementsModelEntity123(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_123(self, entity_id: int, payload: PlacementsSchemaEntity123Update) -> Optional[PlacementsModelEntity123]:
+        db_obj = self.get_entity_123_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_123(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_123_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_124_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity124]:
+        return self.db.query(PlacementsModelEntity124).offset(skip).limit(limit).all()
+
+    def get_entity_124_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity124]:
+        return self.db.query(PlacementsModelEntity124).filter(PlacementsModelEntity124.id == entity_id).first()
+
+    def create_entity_124(self, payload: PlacementsSchemaEntity124Create) -> PlacementsModelEntity124:
+        db_obj = PlacementsModelEntity124(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_124(self, entity_id: int, payload: PlacementsSchemaEntity124Update) -> Optional[PlacementsModelEntity124]:
+        db_obj = self.get_entity_124_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_124(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_124_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_125_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity125]:
+        return self.db.query(PlacementsModelEntity125).offset(skip).limit(limit).all()
+
+    def get_entity_125_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity125]:
+        return self.db.query(PlacementsModelEntity125).filter(PlacementsModelEntity125.id == entity_id).first()
+
+    def create_entity_125(self, payload: PlacementsSchemaEntity125Create) -> PlacementsModelEntity125:
+        db_obj = PlacementsModelEntity125(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_125(self, entity_id: int, payload: PlacementsSchemaEntity125Update) -> Optional[PlacementsModelEntity125]:
+        db_obj = self.get_entity_125_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_125(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_125_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_126_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity126]:
+        return self.db.query(PlacementsModelEntity126).offset(skip).limit(limit).all()
+
+    def get_entity_126_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity126]:
+        return self.db.query(PlacementsModelEntity126).filter(PlacementsModelEntity126.id == entity_id).first()
+
+    def create_entity_126(self, payload: PlacementsSchemaEntity126Create) -> PlacementsModelEntity126:
+        db_obj = PlacementsModelEntity126(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_126(self, entity_id: int, payload: PlacementsSchemaEntity126Update) -> Optional[PlacementsModelEntity126]:
+        db_obj = self.get_entity_126_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_126(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_126_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_127_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity127]:
+        return self.db.query(PlacementsModelEntity127).offset(skip).limit(limit).all()
+
+    def get_entity_127_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity127]:
+        return self.db.query(PlacementsModelEntity127).filter(PlacementsModelEntity127.id == entity_id).first()
+
+    def create_entity_127(self, payload: PlacementsSchemaEntity127Create) -> PlacementsModelEntity127:
+        db_obj = PlacementsModelEntity127(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_127(self, entity_id: int, payload: PlacementsSchemaEntity127Update) -> Optional[PlacementsModelEntity127]:
+        db_obj = self.get_entity_127_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_127(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_127_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_128_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity128]:
+        return self.db.query(PlacementsModelEntity128).offset(skip).limit(limit).all()
+
+    def get_entity_128_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity128]:
+        return self.db.query(PlacementsModelEntity128).filter(PlacementsModelEntity128.id == entity_id).first()
+
+    def create_entity_128(self, payload: PlacementsSchemaEntity128Create) -> PlacementsModelEntity128:
+        db_obj = PlacementsModelEntity128(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_128(self, entity_id: int, payload: PlacementsSchemaEntity128Update) -> Optional[PlacementsModelEntity128]:
+        db_obj = self.get_entity_128_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_128(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_128_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_129_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity129]:
+        return self.db.query(PlacementsModelEntity129).offset(skip).limit(limit).all()
+
+    def get_entity_129_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity129]:
+        return self.db.query(PlacementsModelEntity129).filter(PlacementsModelEntity129.id == entity_id).first()
+
+    def create_entity_129(self, payload: PlacementsSchemaEntity129Create) -> PlacementsModelEntity129:
+        db_obj = PlacementsModelEntity129(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_129(self, entity_id: int, payload: PlacementsSchemaEntity129Update) -> Optional[PlacementsModelEntity129]:
+        db_obj = self.get_entity_129_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_129(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_129_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_130_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity130]:
+        return self.db.query(PlacementsModelEntity130).offset(skip).limit(limit).all()
+
+    def get_entity_130_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity130]:
+        return self.db.query(PlacementsModelEntity130).filter(PlacementsModelEntity130.id == entity_id).first()
+
+    def create_entity_130(self, payload: PlacementsSchemaEntity130Create) -> PlacementsModelEntity130:
+        db_obj = PlacementsModelEntity130(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_130(self, entity_id: int, payload: PlacementsSchemaEntity130Update) -> Optional[PlacementsModelEntity130]:
+        db_obj = self.get_entity_130_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_130(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_130_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_131_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity131]:
+        return self.db.query(PlacementsModelEntity131).offset(skip).limit(limit).all()
+
+    def get_entity_131_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity131]:
+        return self.db.query(PlacementsModelEntity131).filter(PlacementsModelEntity131.id == entity_id).first()
+
+    def create_entity_131(self, payload: PlacementsSchemaEntity131Create) -> PlacementsModelEntity131:
+        db_obj = PlacementsModelEntity131(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_131(self, entity_id: int, payload: PlacementsSchemaEntity131Update) -> Optional[PlacementsModelEntity131]:
+        db_obj = self.get_entity_131_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_131(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_131_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_132_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity132]:
+        return self.db.query(PlacementsModelEntity132).offset(skip).limit(limit).all()
+
+    def get_entity_132_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity132]:
+        return self.db.query(PlacementsModelEntity132).filter(PlacementsModelEntity132.id == entity_id).first()
+
+    def create_entity_132(self, payload: PlacementsSchemaEntity132Create) -> PlacementsModelEntity132:
+        db_obj = PlacementsModelEntity132(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_132(self, entity_id: int, payload: PlacementsSchemaEntity132Update) -> Optional[PlacementsModelEntity132]:
+        db_obj = self.get_entity_132_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_132(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_132_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_133_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity133]:
+        return self.db.query(PlacementsModelEntity133).offset(skip).limit(limit).all()
+
+    def get_entity_133_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity133]:
+        return self.db.query(PlacementsModelEntity133).filter(PlacementsModelEntity133.id == entity_id).first()
+
+    def create_entity_133(self, payload: PlacementsSchemaEntity133Create) -> PlacementsModelEntity133:
+        db_obj = PlacementsModelEntity133(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_133(self, entity_id: int, payload: PlacementsSchemaEntity133Update) -> Optional[PlacementsModelEntity133]:
+        db_obj = self.get_entity_133_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_133(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_133_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_134_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity134]:
+        return self.db.query(PlacementsModelEntity134).offset(skip).limit(limit).all()
+
+    def get_entity_134_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity134]:
+        return self.db.query(PlacementsModelEntity134).filter(PlacementsModelEntity134.id == entity_id).first()
+
+    def create_entity_134(self, payload: PlacementsSchemaEntity134Create) -> PlacementsModelEntity134:
+        db_obj = PlacementsModelEntity134(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_134(self, entity_id: int, payload: PlacementsSchemaEntity134Update) -> Optional[PlacementsModelEntity134]:
+        db_obj = self.get_entity_134_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_134(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_134_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_135_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity135]:
+        return self.db.query(PlacementsModelEntity135).offset(skip).limit(limit).all()
+
+    def get_entity_135_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity135]:
+        return self.db.query(PlacementsModelEntity135).filter(PlacementsModelEntity135.id == entity_id).first()
+
+    def create_entity_135(self, payload: PlacementsSchemaEntity135Create) -> PlacementsModelEntity135:
+        db_obj = PlacementsModelEntity135(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_135(self, entity_id: int, payload: PlacementsSchemaEntity135Update) -> Optional[PlacementsModelEntity135]:
+        db_obj = self.get_entity_135_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_135(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_135_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_136_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity136]:
+        return self.db.query(PlacementsModelEntity136).offset(skip).limit(limit).all()
+
+    def get_entity_136_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity136]:
+        return self.db.query(PlacementsModelEntity136).filter(PlacementsModelEntity136.id == entity_id).first()
+
+    def create_entity_136(self, payload: PlacementsSchemaEntity136Create) -> PlacementsModelEntity136:
+        db_obj = PlacementsModelEntity136(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_136(self, entity_id: int, payload: PlacementsSchemaEntity136Update) -> Optional[PlacementsModelEntity136]:
+        db_obj = self.get_entity_136_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_136(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_136_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_137_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity137]:
+        return self.db.query(PlacementsModelEntity137).offset(skip).limit(limit).all()
+
+    def get_entity_137_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity137]:
+        return self.db.query(PlacementsModelEntity137).filter(PlacementsModelEntity137.id == entity_id).first()
+
+    def create_entity_137(self, payload: PlacementsSchemaEntity137Create) -> PlacementsModelEntity137:
+        db_obj = PlacementsModelEntity137(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_137(self, entity_id: int, payload: PlacementsSchemaEntity137Update) -> Optional[PlacementsModelEntity137]:
+        db_obj = self.get_entity_137_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_137(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_137_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_138_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity138]:
+        return self.db.query(PlacementsModelEntity138).offset(skip).limit(limit).all()
+
+    def get_entity_138_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity138]:
+        return self.db.query(PlacementsModelEntity138).filter(PlacementsModelEntity138.id == entity_id).first()
+
+    def create_entity_138(self, payload: PlacementsSchemaEntity138Create) -> PlacementsModelEntity138:
+        db_obj = PlacementsModelEntity138(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_138(self, entity_id: int, payload: PlacementsSchemaEntity138Update) -> Optional[PlacementsModelEntity138]:
+        db_obj = self.get_entity_138_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_138(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_138_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_139_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity139]:
+        return self.db.query(PlacementsModelEntity139).offset(skip).limit(limit).all()
+
+    def get_entity_139_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity139]:
+        return self.db.query(PlacementsModelEntity139).filter(PlacementsModelEntity139.id == entity_id).first()
+
+    def create_entity_139(self, payload: PlacementsSchemaEntity139Create) -> PlacementsModelEntity139:
+        db_obj = PlacementsModelEntity139(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_139(self, entity_id: int, payload: PlacementsSchemaEntity139Update) -> Optional[PlacementsModelEntity139]:
+        db_obj = self.get_entity_139_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_139(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_139_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_140_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity140]:
+        return self.db.query(PlacementsModelEntity140).offset(skip).limit(limit).all()
+
+    def get_entity_140_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity140]:
+        return self.db.query(PlacementsModelEntity140).filter(PlacementsModelEntity140.id == entity_id).first()
+
+    def create_entity_140(self, payload: PlacementsSchemaEntity140Create) -> PlacementsModelEntity140:
+        db_obj = PlacementsModelEntity140(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_140(self, entity_id: int, payload: PlacementsSchemaEntity140Update) -> Optional[PlacementsModelEntity140]:
+        db_obj = self.get_entity_140_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_140(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_140_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_141_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity141]:
+        return self.db.query(PlacementsModelEntity141).offset(skip).limit(limit).all()
+
+    def get_entity_141_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity141]:
+        return self.db.query(PlacementsModelEntity141).filter(PlacementsModelEntity141.id == entity_id).first()
+
+    def create_entity_141(self, payload: PlacementsSchemaEntity141Create) -> PlacementsModelEntity141:
+        db_obj = PlacementsModelEntity141(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_141(self, entity_id: int, payload: PlacementsSchemaEntity141Update) -> Optional[PlacementsModelEntity141]:
+        db_obj = self.get_entity_141_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_141(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_141_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_142_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity142]:
+        return self.db.query(PlacementsModelEntity142).offset(skip).limit(limit).all()
+
+    def get_entity_142_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity142]:
+        return self.db.query(PlacementsModelEntity142).filter(PlacementsModelEntity142.id == entity_id).first()
+
+    def create_entity_142(self, payload: PlacementsSchemaEntity142Create) -> PlacementsModelEntity142:
+        db_obj = PlacementsModelEntity142(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_142(self, entity_id: int, payload: PlacementsSchemaEntity142Update) -> Optional[PlacementsModelEntity142]:
+        db_obj = self.get_entity_142_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_142(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_142_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_143_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity143]:
+        return self.db.query(PlacementsModelEntity143).offset(skip).limit(limit).all()
+
+    def get_entity_143_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity143]:
+        return self.db.query(PlacementsModelEntity143).filter(PlacementsModelEntity143.id == entity_id).first()
+
+    def create_entity_143(self, payload: PlacementsSchemaEntity143Create) -> PlacementsModelEntity143:
+        db_obj = PlacementsModelEntity143(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_143(self, entity_id: int, payload: PlacementsSchemaEntity143Update) -> Optional[PlacementsModelEntity143]:
+        db_obj = self.get_entity_143_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_143(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_143_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_144_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity144]:
+        return self.db.query(PlacementsModelEntity144).offset(skip).limit(limit).all()
+
+    def get_entity_144_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity144]:
+        return self.db.query(PlacementsModelEntity144).filter(PlacementsModelEntity144.id == entity_id).first()
+
+    def create_entity_144(self, payload: PlacementsSchemaEntity144Create) -> PlacementsModelEntity144:
+        db_obj = PlacementsModelEntity144(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_144(self, entity_id: int, payload: PlacementsSchemaEntity144Update) -> Optional[PlacementsModelEntity144]:
+        db_obj = self.get_entity_144_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_144(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_144_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_145_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity145]:
+        return self.db.query(PlacementsModelEntity145).offset(skip).limit(limit).all()
+
+    def get_entity_145_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity145]:
+        return self.db.query(PlacementsModelEntity145).filter(PlacementsModelEntity145.id == entity_id).first()
+
+    def create_entity_145(self, payload: PlacementsSchemaEntity145Create) -> PlacementsModelEntity145:
+        db_obj = PlacementsModelEntity145(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_145(self, entity_id: int, payload: PlacementsSchemaEntity145Update) -> Optional[PlacementsModelEntity145]:
+        db_obj = self.get_entity_145_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_145(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_145_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_146_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity146]:
+        return self.db.query(PlacementsModelEntity146).offset(skip).limit(limit).all()
+
+    def get_entity_146_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity146]:
+        return self.db.query(PlacementsModelEntity146).filter(PlacementsModelEntity146.id == entity_id).first()
+
+    def create_entity_146(self, payload: PlacementsSchemaEntity146Create) -> PlacementsModelEntity146:
+        db_obj = PlacementsModelEntity146(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_146(self, entity_id: int, payload: PlacementsSchemaEntity146Update) -> Optional[PlacementsModelEntity146]:
+        db_obj = self.get_entity_146_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_146(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_146_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_147_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity147]:
+        return self.db.query(PlacementsModelEntity147).offset(skip).limit(limit).all()
+
+    def get_entity_147_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity147]:
+        return self.db.query(PlacementsModelEntity147).filter(PlacementsModelEntity147.id == entity_id).first()
+
+    def create_entity_147(self, payload: PlacementsSchemaEntity147Create) -> PlacementsModelEntity147:
+        db_obj = PlacementsModelEntity147(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_147(self, entity_id: int, payload: PlacementsSchemaEntity147Update) -> Optional[PlacementsModelEntity147]:
+        db_obj = self.get_entity_147_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_147(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_147_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_148_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity148]:
+        return self.db.query(PlacementsModelEntity148).offset(skip).limit(limit).all()
+
+    def get_entity_148_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity148]:
+        return self.db.query(PlacementsModelEntity148).filter(PlacementsModelEntity148.id == entity_id).first()
+
+    def create_entity_148(self, payload: PlacementsSchemaEntity148Create) -> PlacementsModelEntity148:
+        db_obj = PlacementsModelEntity148(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_148(self, entity_id: int, payload: PlacementsSchemaEntity148Update) -> Optional[PlacementsModelEntity148]:
+        db_obj = self.get_entity_148_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_148(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_148_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_149_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity149]:
+        return self.db.query(PlacementsModelEntity149).offset(skip).limit(limit).all()
+
+    def get_entity_149_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity149]:
+        return self.db.query(PlacementsModelEntity149).filter(PlacementsModelEntity149.id == entity_id).first()
+
+    def create_entity_149(self, payload: PlacementsSchemaEntity149Create) -> PlacementsModelEntity149:
+        db_obj = PlacementsModelEntity149(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_149(self, entity_id: int, payload: PlacementsSchemaEntity149Update) -> Optional[PlacementsModelEntity149]:
+        db_obj = self.get_entity_149_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_149(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_149_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_150_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity150]:
+        return self.db.query(PlacementsModelEntity150).offset(skip).limit(limit).all()
+
+    def get_entity_150_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity150]:
+        return self.db.query(PlacementsModelEntity150).filter(PlacementsModelEntity150.id == entity_id).first()
+
+    def create_entity_150(self, payload: PlacementsSchemaEntity150Create) -> PlacementsModelEntity150:
+        db_obj = PlacementsModelEntity150(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_150(self, entity_id: int, payload: PlacementsSchemaEntity150Update) -> Optional[PlacementsModelEntity150]:
+        db_obj = self.get_entity_150_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_150(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_150_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_151_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity151]:
+        return self.db.query(PlacementsModelEntity151).offset(skip).limit(limit).all()
+
+    def get_entity_151_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity151]:
+        return self.db.query(PlacementsModelEntity151).filter(PlacementsModelEntity151.id == entity_id).first()
+
+    def create_entity_151(self, payload: PlacementsSchemaEntity151Create) -> PlacementsModelEntity151:
+        db_obj = PlacementsModelEntity151(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_151(self, entity_id: int, payload: PlacementsSchemaEntity151Update) -> Optional[PlacementsModelEntity151]:
+        db_obj = self.get_entity_151_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_151(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_151_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_152_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity152]:
+        return self.db.query(PlacementsModelEntity152).offset(skip).limit(limit).all()
+
+    def get_entity_152_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity152]:
+        return self.db.query(PlacementsModelEntity152).filter(PlacementsModelEntity152.id == entity_id).first()
+
+    def create_entity_152(self, payload: PlacementsSchemaEntity152Create) -> PlacementsModelEntity152:
+        db_obj = PlacementsModelEntity152(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_152(self, entity_id: int, payload: PlacementsSchemaEntity152Update) -> Optional[PlacementsModelEntity152]:
+        db_obj = self.get_entity_152_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_152(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_152_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_153_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity153]:
+        return self.db.query(PlacementsModelEntity153).offset(skip).limit(limit).all()
+
+    def get_entity_153_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity153]:
+        return self.db.query(PlacementsModelEntity153).filter(PlacementsModelEntity153.id == entity_id).first()
+
+    def create_entity_153(self, payload: PlacementsSchemaEntity153Create) -> PlacementsModelEntity153:
+        db_obj = PlacementsModelEntity153(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_153(self, entity_id: int, payload: PlacementsSchemaEntity153Update) -> Optional[PlacementsModelEntity153]:
+        db_obj = self.get_entity_153_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_153(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_153_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_154_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity154]:
+        return self.db.query(PlacementsModelEntity154).offset(skip).limit(limit).all()
+
+    def get_entity_154_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity154]:
+        return self.db.query(PlacementsModelEntity154).filter(PlacementsModelEntity154.id == entity_id).first()
+
+    def create_entity_154(self, payload: PlacementsSchemaEntity154Create) -> PlacementsModelEntity154:
+        db_obj = PlacementsModelEntity154(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_154(self, entity_id: int, payload: PlacementsSchemaEntity154Update) -> Optional[PlacementsModelEntity154]:
+        db_obj = self.get_entity_154_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_154(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_154_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_155_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity155]:
+        return self.db.query(PlacementsModelEntity155).offset(skip).limit(limit).all()
+
+    def get_entity_155_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity155]:
+        return self.db.query(PlacementsModelEntity155).filter(PlacementsModelEntity155.id == entity_id).first()
+
+    def create_entity_155(self, payload: PlacementsSchemaEntity155Create) -> PlacementsModelEntity155:
+        db_obj = PlacementsModelEntity155(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_155(self, entity_id: int, payload: PlacementsSchemaEntity155Update) -> Optional[PlacementsModelEntity155]:
+        db_obj = self.get_entity_155_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_155(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_155_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_156_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity156]:
+        return self.db.query(PlacementsModelEntity156).offset(skip).limit(limit).all()
+
+    def get_entity_156_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity156]:
+        return self.db.query(PlacementsModelEntity156).filter(PlacementsModelEntity156.id == entity_id).first()
+
+    def create_entity_156(self, payload: PlacementsSchemaEntity156Create) -> PlacementsModelEntity156:
+        db_obj = PlacementsModelEntity156(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_156(self, entity_id: int, payload: PlacementsSchemaEntity156Update) -> Optional[PlacementsModelEntity156]:
+        db_obj = self.get_entity_156_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_156(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_156_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_157_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity157]:
+        return self.db.query(PlacementsModelEntity157).offset(skip).limit(limit).all()
+
+    def get_entity_157_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity157]:
+        return self.db.query(PlacementsModelEntity157).filter(PlacementsModelEntity157.id == entity_id).first()
+
+    def create_entity_157(self, payload: PlacementsSchemaEntity157Create) -> PlacementsModelEntity157:
+        db_obj = PlacementsModelEntity157(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_157(self, entity_id: int, payload: PlacementsSchemaEntity157Update) -> Optional[PlacementsModelEntity157]:
+        db_obj = self.get_entity_157_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_157(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_157_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_158_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity158]:
+        return self.db.query(PlacementsModelEntity158).offset(skip).limit(limit).all()
+
+    def get_entity_158_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity158]:
+        return self.db.query(PlacementsModelEntity158).filter(PlacementsModelEntity158.id == entity_id).first()
+
+    def create_entity_158(self, payload: PlacementsSchemaEntity158Create) -> PlacementsModelEntity158:
+        db_obj = PlacementsModelEntity158(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_158(self, entity_id: int, payload: PlacementsSchemaEntity158Update) -> Optional[PlacementsModelEntity158]:
+        db_obj = self.get_entity_158_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_158(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_158_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_159_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity159]:
+        return self.db.query(PlacementsModelEntity159).offset(skip).limit(limit).all()
+
+    def get_entity_159_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity159]:
+        return self.db.query(PlacementsModelEntity159).filter(PlacementsModelEntity159.id == entity_id).first()
+
+    def create_entity_159(self, payload: PlacementsSchemaEntity159Create) -> PlacementsModelEntity159:
+        db_obj = PlacementsModelEntity159(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_159(self, entity_id: int, payload: PlacementsSchemaEntity159Update) -> Optional[PlacementsModelEntity159]:
+        db_obj = self.get_entity_159_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_159(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_159_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_160_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity160]:
+        return self.db.query(PlacementsModelEntity160).offset(skip).limit(limit).all()
+
+    def get_entity_160_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity160]:
+        return self.db.query(PlacementsModelEntity160).filter(PlacementsModelEntity160.id == entity_id).first()
+
+    def create_entity_160(self, payload: PlacementsSchemaEntity160Create) -> PlacementsModelEntity160:
+        db_obj = PlacementsModelEntity160(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_160(self, entity_id: int, payload: PlacementsSchemaEntity160Update) -> Optional[PlacementsModelEntity160]:
+        db_obj = self.get_entity_160_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_160(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_160_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_161_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity161]:
+        return self.db.query(PlacementsModelEntity161).offset(skip).limit(limit).all()
+
+    def get_entity_161_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity161]:
+        return self.db.query(PlacementsModelEntity161).filter(PlacementsModelEntity161.id == entity_id).first()
+
+    def create_entity_161(self, payload: PlacementsSchemaEntity161Create) -> PlacementsModelEntity161:
+        db_obj = PlacementsModelEntity161(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_161(self, entity_id: int, payload: PlacementsSchemaEntity161Update) -> Optional[PlacementsModelEntity161]:
+        db_obj = self.get_entity_161_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_161(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_161_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_162_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity162]:
+        return self.db.query(PlacementsModelEntity162).offset(skip).limit(limit).all()
+
+    def get_entity_162_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity162]:
+        return self.db.query(PlacementsModelEntity162).filter(PlacementsModelEntity162.id == entity_id).first()
+
+    def create_entity_162(self, payload: PlacementsSchemaEntity162Create) -> PlacementsModelEntity162:
+        db_obj = PlacementsModelEntity162(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_162(self, entity_id: int, payload: PlacementsSchemaEntity162Update) -> Optional[PlacementsModelEntity162]:
+        db_obj = self.get_entity_162_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_162(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_162_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_163_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity163]:
+        return self.db.query(PlacementsModelEntity163).offset(skip).limit(limit).all()
+
+    def get_entity_163_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity163]:
+        return self.db.query(PlacementsModelEntity163).filter(PlacementsModelEntity163.id == entity_id).first()
+
+    def create_entity_163(self, payload: PlacementsSchemaEntity163Create) -> PlacementsModelEntity163:
+        db_obj = PlacementsModelEntity163(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_163(self, entity_id: int, payload: PlacementsSchemaEntity163Update) -> Optional[PlacementsModelEntity163]:
+        db_obj = self.get_entity_163_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_163(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_163_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_164_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity164]:
+        return self.db.query(PlacementsModelEntity164).offset(skip).limit(limit).all()
+
+    def get_entity_164_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity164]:
+        return self.db.query(PlacementsModelEntity164).filter(PlacementsModelEntity164.id == entity_id).first()
+
+    def create_entity_164(self, payload: PlacementsSchemaEntity164Create) -> PlacementsModelEntity164:
+        db_obj = PlacementsModelEntity164(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_164(self, entity_id: int, payload: PlacementsSchemaEntity164Update) -> Optional[PlacementsModelEntity164]:
+        db_obj = self.get_entity_164_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_164(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_164_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_165_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity165]:
+        return self.db.query(PlacementsModelEntity165).offset(skip).limit(limit).all()
+
+    def get_entity_165_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity165]:
+        return self.db.query(PlacementsModelEntity165).filter(PlacementsModelEntity165.id == entity_id).first()
+
+    def create_entity_165(self, payload: PlacementsSchemaEntity165Create) -> PlacementsModelEntity165:
+        db_obj = PlacementsModelEntity165(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_165(self, entity_id: int, payload: PlacementsSchemaEntity165Update) -> Optional[PlacementsModelEntity165]:
+        db_obj = self.get_entity_165_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_165(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_165_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_166_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity166]:
+        return self.db.query(PlacementsModelEntity166).offset(skip).limit(limit).all()
+
+    def get_entity_166_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity166]:
+        return self.db.query(PlacementsModelEntity166).filter(PlacementsModelEntity166.id == entity_id).first()
+
+    def create_entity_166(self, payload: PlacementsSchemaEntity166Create) -> PlacementsModelEntity166:
+        db_obj = PlacementsModelEntity166(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_166(self, entity_id: int, payload: PlacementsSchemaEntity166Update) -> Optional[PlacementsModelEntity166]:
+        db_obj = self.get_entity_166_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_166(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_166_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_167_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity167]:
+        return self.db.query(PlacementsModelEntity167).offset(skip).limit(limit).all()
+
+    def get_entity_167_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity167]:
+        return self.db.query(PlacementsModelEntity167).filter(PlacementsModelEntity167.id == entity_id).first()
+
+    def create_entity_167(self, payload: PlacementsSchemaEntity167Create) -> PlacementsModelEntity167:
+        db_obj = PlacementsModelEntity167(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_167(self, entity_id: int, payload: PlacementsSchemaEntity167Update) -> Optional[PlacementsModelEntity167]:
+        db_obj = self.get_entity_167_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_167(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_167_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_168_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity168]:
+        return self.db.query(PlacementsModelEntity168).offset(skip).limit(limit).all()
+
+    def get_entity_168_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity168]:
+        return self.db.query(PlacementsModelEntity168).filter(PlacementsModelEntity168.id == entity_id).first()
+
+    def create_entity_168(self, payload: PlacementsSchemaEntity168Create) -> PlacementsModelEntity168:
+        db_obj = PlacementsModelEntity168(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_168(self, entity_id: int, payload: PlacementsSchemaEntity168Update) -> Optional[PlacementsModelEntity168]:
+        db_obj = self.get_entity_168_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_168(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_168_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_169_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity169]:
+        return self.db.query(PlacementsModelEntity169).offset(skip).limit(limit).all()
+
+    def get_entity_169_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity169]:
+        return self.db.query(PlacementsModelEntity169).filter(PlacementsModelEntity169.id == entity_id).first()
+
+    def create_entity_169(self, payload: PlacementsSchemaEntity169Create) -> PlacementsModelEntity169:
+        db_obj = PlacementsModelEntity169(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_169(self, entity_id: int, payload: PlacementsSchemaEntity169Update) -> Optional[PlacementsModelEntity169]:
+        db_obj = self.get_entity_169_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_169(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_169_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_170_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity170]:
+        return self.db.query(PlacementsModelEntity170).offset(skip).limit(limit).all()
+
+    def get_entity_170_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity170]:
+        return self.db.query(PlacementsModelEntity170).filter(PlacementsModelEntity170.id == entity_id).first()
+
+    def create_entity_170(self, payload: PlacementsSchemaEntity170Create) -> PlacementsModelEntity170:
+        db_obj = PlacementsModelEntity170(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_170(self, entity_id: int, payload: PlacementsSchemaEntity170Update) -> Optional[PlacementsModelEntity170]:
+        db_obj = self.get_entity_170_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_170(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_170_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_171_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity171]:
+        return self.db.query(PlacementsModelEntity171).offset(skip).limit(limit).all()
+
+    def get_entity_171_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity171]:
+        return self.db.query(PlacementsModelEntity171).filter(PlacementsModelEntity171.id == entity_id).first()
+
+    def create_entity_171(self, payload: PlacementsSchemaEntity171Create) -> PlacementsModelEntity171:
+        db_obj = PlacementsModelEntity171(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_171(self, entity_id: int, payload: PlacementsSchemaEntity171Update) -> Optional[PlacementsModelEntity171]:
+        db_obj = self.get_entity_171_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_171(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_171_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_172_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity172]:
+        return self.db.query(PlacementsModelEntity172).offset(skip).limit(limit).all()
+
+    def get_entity_172_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity172]:
+        return self.db.query(PlacementsModelEntity172).filter(PlacementsModelEntity172.id == entity_id).first()
+
+    def create_entity_172(self, payload: PlacementsSchemaEntity172Create) -> PlacementsModelEntity172:
+        db_obj = PlacementsModelEntity172(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_172(self, entity_id: int, payload: PlacementsSchemaEntity172Update) -> Optional[PlacementsModelEntity172]:
+        db_obj = self.get_entity_172_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_172(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_172_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_173_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity173]:
+        return self.db.query(PlacementsModelEntity173).offset(skip).limit(limit).all()
+
+    def get_entity_173_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity173]:
+        return self.db.query(PlacementsModelEntity173).filter(PlacementsModelEntity173.id == entity_id).first()
+
+    def create_entity_173(self, payload: PlacementsSchemaEntity173Create) -> PlacementsModelEntity173:
+        db_obj = PlacementsModelEntity173(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_173(self, entity_id: int, payload: PlacementsSchemaEntity173Update) -> Optional[PlacementsModelEntity173]:
+        db_obj = self.get_entity_173_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_173(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_173_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_174_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity174]:
+        return self.db.query(PlacementsModelEntity174).offset(skip).limit(limit).all()
+
+    def get_entity_174_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity174]:
+        return self.db.query(PlacementsModelEntity174).filter(PlacementsModelEntity174.id == entity_id).first()
+
+    def create_entity_174(self, payload: PlacementsSchemaEntity174Create) -> PlacementsModelEntity174:
+        db_obj = PlacementsModelEntity174(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_174(self, entity_id: int, payload: PlacementsSchemaEntity174Update) -> Optional[PlacementsModelEntity174]:
+        db_obj = self.get_entity_174_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_174(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_174_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_175_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity175]:
+        return self.db.query(PlacementsModelEntity175).offset(skip).limit(limit).all()
+
+    def get_entity_175_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity175]:
+        return self.db.query(PlacementsModelEntity175).filter(PlacementsModelEntity175.id == entity_id).first()
+
+    def create_entity_175(self, payload: PlacementsSchemaEntity175Create) -> PlacementsModelEntity175:
+        db_obj = PlacementsModelEntity175(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_175(self, entity_id: int, payload: PlacementsSchemaEntity175Update) -> Optional[PlacementsModelEntity175]:
+        db_obj = self.get_entity_175_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_175(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_175_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_176_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity176]:
+        return self.db.query(PlacementsModelEntity176).offset(skip).limit(limit).all()
+
+    def get_entity_176_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity176]:
+        return self.db.query(PlacementsModelEntity176).filter(PlacementsModelEntity176.id == entity_id).first()
+
+    def create_entity_176(self, payload: PlacementsSchemaEntity176Create) -> PlacementsModelEntity176:
+        db_obj = PlacementsModelEntity176(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_176(self, entity_id: int, payload: PlacementsSchemaEntity176Update) -> Optional[PlacementsModelEntity176]:
+        db_obj = self.get_entity_176_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_176(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_176_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_177_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity177]:
+        return self.db.query(PlacementsModelEntity177).offset(skip).limit(limit).all()
+
+    def get_entity_177_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity177]:
+        return self.db.query(PlacementsModelEntity177).filter(PlacementsModelEntity177.id == entity_id).first()
+
+    def create_entity_177(self, payload: PlacementsSchemaEntity177Create) -> PlacementsModelEntity177:
+        db_obj = PlacementsModelEntity177(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_177(self, entity_id: int, payload: PlacementsSchemaEntity177Update) -> Optional[PlacementsModelEntity177]:
+        db_obj = self.get_entity_177_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_177(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_177_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_178_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity178]:
+        return self.db.query(PlacementsModelEntity178).offset(skip).limit(limit).all()
+
+    def get_entity_178_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity178]:
+        return self.db.query(PlacementsModelEntity178).filter(PlacementsModelEntity178.id == entity_id).first()
+
+    def create_entity_178(self, payload: PlacementsSchemaEntity178Create) -> PlacementsModelEntity178:
+        db_obj = PlacementsModelEntity178(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_178(self, entity_id: int, payload: PlacementsSchemaEntity178Update) -> Optional[PlacementsModelEntity178]:
+        db_obj = self.get_entity_178_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_178(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_178_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_179_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity179]:
+        return self.db.query(PlacementsModelEntity179).offset(skip).limit(limit).all()
+
+    def get_entity_179_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity179]:
+        return self.db.query(PlacementsModelEntity179).filter(PlacementsModelEntity179.id == entity_id).first()
+
+    def create_entity_179(self, payload: PlacementsSchemaEntity179Create) -> PlacementsModelEntity179:
+        db_obj = PlacementsModelEntity179(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_179(self, entity_id: int, payload: PlacementsSchemaEntity179Update) -> Optional[PlacementsModelEntity179]:
+        db_obj = self.get_entity_179_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_179(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_179_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_180_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity180]:
+        return self.db.query(PlacementsModelEntity180).offset(skip).limit(limit).all()
+
+    def get_entity_180_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity180]:
+        return self.db.query(PlacementsModelEntity180).filter(PlacementsModelEntity180.id == entity_id).first()
+
+    def create_entity_180(self, payload: PlacementsSchemaEntity180Create) -> PlacementsModelEntity180:
+        db_obj = PlacementsModelEntity180(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_180(self, entity_id: int, payload: PlacementsSchemaEntity180Update) -> Optional[PlacementsModelEntity180]:
+        db_obj = self.get_entity_180_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_180(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_180_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_181_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity181]:
+        return self.db.query(PlacementsModelEntity181).offset(skip).limit(limit).all()
+
+    def get_entity_181_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity181]:
+        return self.db.query(PlacementsModelEntity181).filter(PlacementsModelEntity181.id == entity_id).first()
+
+    def create_entity_181(self, payload: PlacementsSchemaEntity181Create) -> PlacementsModelEntity181:
+        db_obj = PlacementsModelEntity181(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_181(self, entity_id: int, payload: PlacementsSchemaEntity181Update) -> Optional[PlacementsModelEntity181]:
+        db_obj = self.get_entity_181_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_181(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_181_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_182_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity182]:
+        return self.db.query(PlacementsModelEntity182).offset(skip).limit(limit).all()
+
+    def get_entity_182_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity182]:
+        return self.db.query(PlacementsModelEntity182).filter(PlacementsModelEntity182.id == entity_id).first()
+
+    def create_entity_182(self, payload: PlacementsSchemaEntity182Create) -> PlacementsModelEntity182:
+        db_obj = PlacementsModelEntity182(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_182(self, entity_id: int, payload: PlacementsSchemaEntity182Update) -> Optional[PlacementsModelEntity182]:
+        db_obj = self.get_entity_182_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_182(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_182_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_183_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity183]:
+        return self.db.query(PlacementsModelEntity183).offset(skip).limit(limit).all()
+
+    def get_entity_183_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity183]:
+        return self.db.query(PlacementsModelEntity183).filter(PlacementsModelEntity183.id == entity_id).first()
+
+    def create_entity_183(self, payload: PlacementsSchemaEntity183Create) -> PlacementsModelEntity183:
+        db_obj = PlacementsModelEntity183(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_183(self, entity_id: int, payload: PlacementsSchemaEntity183Update) -> Optional[PlacementsModelEntity183]:
+        db_obj = self.get_entity_183_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_183(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_183_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_184_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity184]:
+        return self.db.query(PlacementsModelEntity184).offset(skip).limit(limit).all()
+
+    def get_entity_184_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity184]:
+        return self.db.query(PlacementsModelEntity184).filter(PlacementsModelEntity184.id == entity_id).first()
+
+    def create_entity_184(self, payload: PlacementsSchemaEntity184Create) -> PlacementsModelEntity184:
+        db_obj = PlacementsModelEntity184(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_184(self, entity_id: int, payload: PlacementsSchemaEntity184Update) -> Optional[PlacementsModelEntity184]:
+        db_obj = self.get_entity_184_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_184(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_184_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_185_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity185]:
+        return self.db.query(PlacementsModelEntity185).offset(skip).limit(limit).all()
+
+    def get_entity_185_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity185]:
+        return self.db.query(PlacementsModelEntity185).filter(PlacementsModelEntity185.id == entity_id).first()
+
+    def create_entity_185(self, payload: PlacementsSchemaEntity185Create) -> PlacementsModelEntity185:
+        db_obj = PlacementsModelEntity185(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_185(self, entity_id: int, payload: PlacementsSchemaEntity185Update) -> Optional[PlacementsModelEntity185]:
+        db_obj = self.get_entity_185_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_185(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_185_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_186_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity186]:
+        return self.db.query(PlacementsModelEntity186).offset(skip).limit(limit).all()
+
+    def get_entity_186_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity186]:
+        return self.db.query(PlacementsModelEntity186).filter(PlacementsModelEntity186.id == entity_id).first()
+
+    def create_entity_186(self, payload: PlacementsSchemaEntity186Create) -> PlacementsModelEntity186:
+        db_obj = PlacementsModelEntity186(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_186(self, entity_id: int, payload: PlacementsSchemaEntity186Update) -> Optional[PlacementsModelEntity186]:
+        db_obj = self.get_entity_186_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_186(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_186_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_187_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity187]:
+        return self.db.query(PlacementsModelEntity187).offset(skip).limit(limit).all()
+
+    def get_entity_187_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity187]:
+        return self.db.query(PlacementsModelEntity187).filter(PlacementsModelEntity187.id == entity_id).first()
+
+    def create_entity_187(self, payload: PlacementsSchemaEntity187Create) -> PlacementsModelEntity187:
+        db_obj = PlacementsModelEntity187(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_187(self, entity_id: int, payload: PlacementsSchemaEntity187Update) -> Optional[PlacementsModelEntity187]:
+        db_obj = self.get_entity_187_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_187(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_187_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_188_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity188]:
+        return self.db.query(PlacementsModelEntity188).offset(skip).limit(limit).all()
+
+    def get_entity_188_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity188]:
+        return self.db.query(PlacementsModelEntity188).filter(PlacementsModelEntity188.id == entity_id).first()
+
+    def create_entity_188(self, payload: PlacementsSchemaEntity188Create) -> PlacementsModelEntity188:
+        db_obj = PlacementsModelEntity188(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_188(self, entity_id: int, payload: PlacementsSchemaEntity188Update) -> Optional[PlacementsModelEntity188]:
+        db_obj = self.get_entity_188_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_188(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_188_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_189_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity189]:
+        return self.db.query(PlacementsModelEntity189).offset(skip).limit(limit).all()
+
+    def get_entity_189_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity189]:
+        return self.db.query(PlacementsModelEntity189).filter(PlacementsModelEntity189.id == entity_id).first()
+
+    def create_entity_189(self, payload: PlacementsSchemaEntity189Create) -> PlacementsModelEntity189:
+        db_obj = PlacementsModelEntity189(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_189(self, entity_id: int, payload: PlacementsSchemaEntity189Update) -> Optional[PlacementsModelEntity189]:
+        db_obj = self.get_entity_189_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_189(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_189_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_190_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity190]:
+        return self.db.query(PlacementsModelEntity190).offset(skip).limit(limit).all()
+
+    def get_entity_190_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity190]:
+        return self.db.query(PlacementsModelEntity190).filter(PlacementsModelEntity190.id == entity_id).first()
+
+    def create_entity_190(self, payload: PlacementsSchemaEntity190Create) -> PlacementsModelEntity190:
+        db_obj = PlacementsModelEntity190(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_190(self, entity_id: int, payload: PlacementsSchemaEntity190Update) -> Optional[PlacementsModelEntity190]:
+        db_obj = self.get_entity_190_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_190(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_190_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_191_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity191]:
+        return self.db.query(PlacementsModelEntity191).offset(skip).limit(limit).all()
+
+    def get_entity_191_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity191]:
+        return self.db.query(PlacementsModelEntity191).filter(PlacementsModelEntity191.id == entity_id).first()
+
+    def create_entity_191(self, payload: PlacementsSchemaEntity191Create) -> PlacementsModelEntity191:
+        db_obj = PlacementsModelEntity191(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_191(self, entity_id: int, payload: PlacementsSchemaEntity191Update) -> Optional[PlacementsModelEntity191]:
+        db_obj = self.get_entity_191_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_191(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_191_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_192_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity192]:
+        return self.db.query(PlacementsModelEntity192).offset(skip).limit(limit).all()
+
+    def get_entity_192_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity192]:
+        return self.db.query(PlacementsModelEntity192).filter(PlacementsModelEntity192.id == entity_id).first()
+
+    def create_entity_192(self, payload: PlacementsSchemaEntity192Create) -> PlacementsModelEntity192:
+        db_obj = PlacementsModelEntity192(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_192(self, entity_id: int, payload: PlacementsSchemaEntity192Update) -> Optional[PlacementsModelEntity192]:
+        db_obj = self.get_entity_192_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_192(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_192_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_193_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity193]:
+        return self.db.query(PlacementsModelEntity193).offset(skip).limit(limit).all()
+
+    def get_entity_193_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity193]:
+        return self.db.query(PlacementsModelEntity193).filter(PlacementsModelEntity193.id == entity_id).first()
+
+    def create_entity_193(self, payload: PlacementsSchemaEntity193Create) -> PlacementsModelEntity193:
+        db_obj = PlacementsModelEntity193(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_193(self, entity_id: int, payload: PlacementsSchemaEntity193Update) -> Optional[PlacementsModelEntity193]:
+        db_obj = self.get_entity_193_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_193(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_193_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_194_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity194]:
+        return self.db.query(PlacementsModelEntity194).offset(skip).limit(limit).all()
+
+    def get_entity_194_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity194]:
+        return self.db.query(PlacementsModelEntity194).filter(PlacementsModelEntity194.id == entity_id).first()
+
+    def create_entity_194(self, payload: PlacementsSchemaEntity194Create) -> PlacementsModelEntity194:
+        db_obj = PlacementsModelEntity194(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_194(self, entity_id: int, payload: PlacementsSchemaEntity194Update) -> Optional[PlacementsModelEntity194]:
+        db_obj = self.get_entity_194_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_194(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_194_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_195_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity195]:
+        return self.db.query(PlacementsModelEntity195).offset(skip).limit(limit).all()
+
+    def get_entity_195_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity195]:
+        return self.db.query(PlacementsModelEntity195).filter(PlacementsModelEntity195.id == entity_id).first()
+
+    def create_entity_195(self, payload: PlacementsSchemaEntity195Create) -> PlacementsModelEntity195:
+        db_obj = PlacementsModelEntity195(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_195(self, entity_id: int, payload: PlacementsSchemaEntity195Update) -> Optional[PlacementsModelEntity195]:
+        db_obj = self.get_entity_195_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_195(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_195_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_196_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity196]:
+        return self.db.query(PlacementsModelEntity196).offset(skip).limit(limit).all()
+
+    def get_entity_196_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity196]:
+        return self.db.query(PlacementsModelEntity196).filter(PlacementsModelEntity196.id == entity_id).first()
+
+    def create_entity_196(self, payload: PlacementsSchemaEntity196Create) -> PlacementsModelEntity196:
+        db_obj = PlacementsModelEntity196(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_196(self, entity_id: int, payload: PlacementsSchemaEntity196Update) -> Optional[PlacementsModelEntity196]:
+        db_obj = self.get_entity_196_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_196(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_196_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_197_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity197]:
+        return self.db.query(PlacementsModelEntity197).offset(skip).limit(limit).all()
+
+    def get_entity_197_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity197]:
+        return self.db.query(PlacementsModelEntity197).filter(PlacementsModelEntity197.id == entity_id).first()
+
+    def create_entity_197(self, payload: PlacementsSchemaEntity197Create) -> PlacementsModelEntity197:
+        db_obj = PlacementsModelEntity197(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_197(self, entity_id: int, payload: PlacementsSchemaEntity197Update) -> Optional[PlacementsModelEntity197]:
+        db_obj = self.get_entity_197_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_197(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_197_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_198_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity198]:
+        return self.db.query(PlacementsModelEntity198).offset(skip).limit(limit).all()
+
+    def get_entity_198_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity198]:
+        return self.db.query(PlacementsModelEntity198).filter(PlacementsModelEntity198.id == entity_id).first()
+
+    def create_entity_198(self, payload: PlacementsSchemaEntity198Create) -> PlacementsModelEntity198:
+        db_obj = PlacementsModelEntity198(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_198(self, entity_id: int, payload: PlacementsSchemaEntity198Update) -> Optional[PlacementsModelEntity198]:
+        db_obj = self.get_entity_198_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_198(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_198_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_199_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity199]:
+        return self.db.query(PlacementsModelEntity199).offset(skip).limit(limit).all()
+
+    def get_entity_199_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity199]:
+        return self.db.query(PlacementsModelEntity199).filter(PlacementsModelEntity199.id == entity_id).first()
+
+    def create_entity_199(self, payload: PlacementsSchemaEntity199Create) -> PlacementsModelEntity199:
+        db_obj = PlacementsModelEntity199(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_199(self, entity_id: int, payload: PlacementsSchemaEntity199Update) -> Optional[PlacementsModelEntity199]:
+        db_obj = self.get_entity_199_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_199(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_199_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_200_list(self, skip: int = 0, limit: int = 100) -> List[PlacementsModelEntity200]:
+        return self.db.query(PlacementsModelEntity200).offset(skip).limit(limit).all()
+
+    def get_entity_200_by_id(self, entity_id: int) -> Optional[PlacementsModelEntity200]:
+        return self.db.query(PlacementsModelEntity200).filter(PlacementsModelEntity200.id == entity_id).first()
+
+    def create_entity_200(self, payload: PlacementsSchemaEntity200Create) -> PlacementsModelEntity200:
+        db_obj = PlacementsModelEntity200(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_200(self, entity_id: int, payload: PlacementsSchemaEntity200Update) -> Optional[PlacementsModelEntity200]:
+        db_obj = self.get_entity_200_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_200(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_200_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+

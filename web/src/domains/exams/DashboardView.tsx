@@ -268,6 +268,181 @@ export const ExamsDashboardView: React.FC = () => {
           </div>
           <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
         </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #35</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-35 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #36</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-36 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #37</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-37 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #38</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-38 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #39</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-39 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #40</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-40 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #41</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-41 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #42</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-42 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #43</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-43 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #44</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-44 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #45</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-45 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #46</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-46 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #47</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-47 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #48</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-48 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #49</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-49 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #50</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-50 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #51</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-51 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #52</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-52 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #53</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-53 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #54</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-54 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #55</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-55 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #56</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-56 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #57</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-57 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #58</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-58 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
+        <div className="p-4 bg-slate-800/60 border border-slate-700/60 rounded-lg flex justify-between items-center">
+          <div>
+            <h4 className="font-semibold text-slate-200">Examinations & Result Management Record #59</h4>
+            <p className="text-xs text-slate-400 mt-0.5">Code: EXAMS-REC-59 • Standard Allocation</p>
+          </div>
+          <button className="px-3 py-1.5 bg-indigo-600 hover:bg-indigo-500 text-white rounded text-xs font-semibold">Inspect</button>
+        </div>
       </div>
     </div>
   );

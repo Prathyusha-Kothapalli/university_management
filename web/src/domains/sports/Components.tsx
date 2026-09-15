@@ -1560,3 +1560,393 @@ export const SportsComponent120: React.FC<{ title?: string }> = ({ title }) => {
   );
 };
 
+export const SportsComponent121: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #121"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #121.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1331</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent122: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #122"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #122.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1342</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent123: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #123"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #123.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1353</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent124: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #124"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #124.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1364</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent125: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #125"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #125.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1375</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent126: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #126"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #126.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1386</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent127: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #127"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #127.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1397</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent128: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #128"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #128.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1408</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent129: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #129"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #129.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1419</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent130: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #130"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #130.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1430</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent131: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #131"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #131.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1441</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent132: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #132"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #132.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1452</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent133: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #133"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #133.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1463</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent134: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #134"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #134.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1474</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent135: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #135"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #135.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1485</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent136: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #136"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #136.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1496</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent137: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #137"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #137.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1507</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent138: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #138"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #138.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1518</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent139: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #139"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #139.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1529</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent140: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #140"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #140.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1540</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent141: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #141"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #141.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1551</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent142: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #142"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #142.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1562</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent143: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #143"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #143.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1573</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent144: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #144"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #144.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1584</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent145: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #145"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #145.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1595</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent146: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #146"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #146.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1606</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent147: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #147"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #147.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1617</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent148: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #148"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #148.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1628</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent149: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #149"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #149.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1639</span>
+      </div>
+    </div>
+  );
+};
+
+export const SportsComponent150: React.FC<{ title?: string }> = ({ title }) => {
+  return (
+    <div className="p-5 bg-slate-800 border border-slate-700 rounded-xl mb-4">
+      <h3 className="text-lg font-bold text-indigo-300">{title || "Sports & Extracurricular Activities Component #150"}</h3>
+      <p className="text-sm text-slate-400 mt-2">Domain module component providing stateful view #150.</p>
+      <div className="mt-4 flex gap-3 text-xs text-slate-300">
+        <span className="px-2 py-1 bg-slate-700 rounded">Status: OK</span>
+        <span className="px-2 py-1 bg-indigo-900/50 text-indigo-300 rounded">Metric ID: 1650</span>
+      </div>
+    </div>
+  );
+};
+

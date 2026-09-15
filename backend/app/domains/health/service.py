@@ -8011,3 +8011,2003 @@ class HealthDomainService:
         self.db.commit()
         return True
 
+    def get_entity_201_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity201]:
+        return self.db.query(HealthModelEntity201).offset(skip).limit(limit).all()
+
+    def get_entity_201_by_id(self, entity_id: int) -> Optional[HealthModelEntity201]:
+        return self.db.query(HealthModelEntity201).filter(HealthModelEntity201.id == entity_id).first()
+
+    def create_entity_201(self, payload: HealthSchemaEntity201Create) -> HealthModelEntity201:
+        db_obj = HealthModelEntity201(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_201(self, entity_id: int, payload: HealthSchemaEntity201Update) -> Optional[HealthModelEntity201]:
+        db_obj = self.get_entity_201_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_201(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_201_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_202_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity202]:
+        return self.db.query(HealthModelEntity202).offset(skip).limit(limit).all()
+
+    def get_entity_202_by_id(self, entity_id: int) -> Optional[HealthModelEntity202]:
+        return self.db.query(HealthModelEntity202).filter(HealthModelEntity202.id == entity_id).first()
+
+    def create_entity_202(self, payload: HealthSchemaEntity202Create) -> HealthModelEntity202:
+        db_obj = HealthModelEntity202(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_202(self, entity_id: int, payload: HealthSchemaEntity202Update) -> Optional[HealthModelEntity202]:
+        db_obj = self.get_entity_202_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_202(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_202_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_203_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity203]:
+        return self.db.query(HealthModelEntity203).offset(skip).limit(limit).all()
+
+    def get_entity_203_by_id(self, entity_id: int) -> Optional[HealthModelEntity203]:
+        return self.db.query(HealthModelEntity203).filter(HealthModelEntity203.id == entity_id).first()
+
+    def create_entity_203(self, payload: HealthSchemaEntity203Create) -> HealthModelEntity203:
+        db_obj = HealthModelEntity203(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_203(self, entity_id: int, payload: HealthSchemaEntity203Update) -> Optional[HealthModelEntity203]:
+        db_obj = self.get_entity_203_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_203(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_203_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_204_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity204]:
+        return self.db.query(HealthModelEntity204).offset(skip).limit(limit).all()
+
+    def get_entity_204_by_id(self, entity_id: int) -> Optional[HealthModelEntity204]:
+        return self.db.query(HealthModelEntity204).filter(HealthModelEntity204.id == entity_id).first()
+
+    def create_entity_204(self, payload: HealthSchemaEntity204Create) -> HealthModelEntity204:
+        db_obj = HealthModelEntity204(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_204(self, entity_id: int, payload: HealthSchemaEntity204Update) -> Optional[HealthModelEntity204]:
+        db_obj = self.get_entity_204_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_204(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_204_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_205_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity205]:
+        return self.db.query(HealthModelEntity205).offset(skip).limit(limit).all()
+
+    def get_entity_205_by_id(self, entity_id: int) -> Optional[HealthModelEntity205]:
+        return self.db.query(HealthModelEntity205).filter(HealthModelEntity205.id == entity_id).first()
+
+    def create_entity_205(self, payload: HealthSchemaEntity205Create) -> HealthModelEntity205:
+        db_obj = HealthModelEntity205(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_205(self, entity_id: int, payload: HealthSchemaEntity205Update) -> Optional[HealthModelEntity205]:
+        db_obj = self.get_entity_205_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_205(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_205_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_206_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity206]:
+        return self.db.query(HealthModelEntity206).offset(skip).limit(limit).all()
+
+    def get_entity_206_by_id(self, entity_id: int) -> Optional[HealthModelEntity206]:
+        return self.db.query(HealthModelEntity206).filter(HealthModelEntity206.id == entity_id).first()
+
+    def create_entity_206(self, payload: HealthSchemaEntity206Create) -> HealthModelEntity206:
+        db_obj = HealthModelEntity206(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_206(self, entity_id: int, payload: HealthSchemaEntity206Update) -> Optional[HealthModelEntity206]:
+        db_obj = self.get_entity_206_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_206(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_206_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_207_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity207]:
+        return self.db.query(HealthModelEntity207).offset(skip).limit(limit).all()
+
+    def get_entity_207_by_id(self, entity_id: int) -> Optional[HealthModelEntity207]:
+        return self.db.query(HealthModelEntity207).filter(HealthModelEntity207.id == entity_id).first()
+
+    def create_entity_207(self, payload: HealthSchemaEntity207Create) -> HealthModelEntity207:
+        db_obj = HealthModelEntity207(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_207(self, entity_id: int, payload: HealthSchemaEntity207Update) -> Optional[HealthModelEntity207]:
+        db_obj = self.get_entity_207_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_207(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_207_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_208_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity208]:
+        return self.db.query(HealthModelEntity208).offset(skip).limit(limit).all()
+
+    def get_entity_208_by_id(self, entity_id: int) -> Optional[HealthModelEntity208]:
+        return self.db.query(HealthModelEntity208).filter(HealthModelEntity208.id == entity_id).first()
+
+    def create_entity_208(self, payload: HealthSchemaEntity208Create) -> HealthModelEntity208:
+        db_obj = HealthModelEntity208(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_208(self, entity_id: int, payload: HealthSchemaEntity208Update) -> Optional[HealthModelEntity208]:
+        db_obj = self.get_entity_208_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_208(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_208_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_209_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity209]:
+        return self.db.query(HealthModelEntity209).offset(skip).limit(limit).all()
+
+    def get_entity_209_by_id(self, entity_id: int) -> Optional[HealthModelEntity209]:
+        return self.db.query(HealthModelEntity209).filter(HealthModelEntity209.id == entity_id).first()
+
+    def create_entity_209(self, payload: HealthSchemaEntity209Create) -> HealthModelEntity209:
+        db_obj = HealthModelEntity209(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_209(self, entity_id: int, payload: HealthSchemaEntity209Update) -> Optional[HealthModelEntity209]:
+        db_obj = self.get_entity_209_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_209(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_209_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_210_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity210]:
+        return self.db.query(HealthModelEntity210).offset(skip).limit(limit).all()
+
+    def get_entity_210_by_id(self, entity_id: int) -> Optional[HealthModelEntity210]:
+        return self.db.query(HealthModelEntity210).filter(HealthModelEntity210.id == entity_id).first()
+
+    def create_entity_210(self, payload: HealthSchemaEntity210Create) -> HealthModelEntity210:
+        db_obj = HealthModelEntity210(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_210(self, entity_id: int, payload: HealthSchemaEntity210Update) -> Optional[HealthModelEntity210]:
+        db_obj = self.get_entity_210_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_210(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_210_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_211_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity211]:
+        return self.db.query(HealthModelEntity211).offset(skip).limit(limit).all()
+
+    def get_entity_211_by_id(self, entity_id: int) -> Optional[HealthModelEntity211]:
+        return self.db.query(HealthModelEntity211).filter(HealthModelEntity211.id == entity_id).first()
+
+    def create_entity_211(self, payload: HealthSchemaEntity211Create) -> HealthModelEntity211:
+        db_obj = HealthModelEntity211(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_211(self, entity_id: int, payload: HealthSchemaEntity211Update) -> Optional[HealthModelEntity211]:
+        db_obj = self.get_entity_211_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_211(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_211_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_212_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity212]:
+        return self.db.query(HealthModelEntity212).offset(skip).limit(limit).all()
+
+    def get_entity_212_by_id(self, entity_id: int) -> Optional[HealthModelEntity212]:
+        return self.db.query(HealthModelEntity212).filter(HealthModelEntity212.id == entity_id).first()
+
+    def create_entity_212(self, payload: HealthSchemaEntity212Create) -> HealthModelEntity212:
+        db_obj = HealthModelEntity212(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_212(self, entity_id: int, payload: HealthSchemaEntity212Update) -> Optional[HealthModelEntity212]:
+        db_obj = self.get_entity_212_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_212(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_212_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_213_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity213]:
+        return self.db.query(HealthModelEntity213).offset(skip).limit(limit).all()
+
+    def get_entity_213_by_id(self, entity_id: int) -> Optional[HealthModelEntity213]:
+        return self.db.query(HealthModelEntity213).filter(HealthModelEntity213.id == entity_id).first()
+
+    def create_entity_213(self, payload: HealthSchemaEntity213Create) -> HealthModelEntity213:
+        db_obj = HealthModelEntity213(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_213(self, entity_id: int, payload: HealthSchemaEntity213Update) -> Optional[HealthModelEntity213]:
+        db_obj = self.get_entity_213_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_213(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_213_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_214_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity214]:
+        return self.db.query(HealthModelEntity214).offset(skip).limit(limit).all()
+
+    def get_entity_214_by_id(self, entity_id: int) -> Optional[HealthModelEntity214]:
+        return self.db.query(HealthModelEntity214).filter(HealthModelEntity214.id == entity_id).first()
+
+    def create_entity_214(self, payload: HealthSchemaEntity214Create) -> HealthModelEntity214:
+        db_obj = HealthModelEntity214(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_214(self, entity_id: int, payload: HealthSchemaEntity214Update) -> Optional[HealthModelEntity214]:
+        db_obj = self.get_entity_214_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_214(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_214_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_215_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity215]:
+        return self.db.query(HealthModelEntity215).offset(skip).limit(limit).all()
+
+    def get_entity_215_by_id(self, entity_id: int) -> Optional[HealthModelEntity215]:
+        return self.db.query(HealthModelEntity215).filter(HealthModelEntity215.id == entity_id).first()
+
+    def create_entity_215(self, payload: HealthSchemaEntity215Create) -> HealthModelEntity215:
+        db_obj = HealthModelEntity215(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_215(self, entity_id: int, payload: HealthSchemaEntity215Update) -> Optional[HealthModelEntity215]:
+        db_obj = self.get_entity_215_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_215(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_215_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_216_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity216]:
+        return self.db.query(HealthModelEntity216).offset(skip).limit(limit).all()
+
+    def get_entity_216_by_id(self, entity_id: int) -> Optional[HealthModelEntity216]:
+        return self.db.query(HealthModelEntity216).filter(HealthModelEntity216.id == entity_id).first()
+
+    def create_entity_216(self, payload: HealthSchemaEntity216Create) -> HealthModelEntity216:
+        db_obj = HealthModelEntity216(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_216(self, entity_id: int, payload: HealthSchemaEntity216Update) -> Optional[HealthModelEntity216]:
+        db_obj = self.get_entity_216_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_216(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_216_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_217_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity217]:
+        return self.db.query(HealthModelEntity217).offset(skip).limit(limit).all()
+
+    def get_entity_217_by_id(self, entity_id: int) -> Optional[HealthModelEntity217]:
+        return self.db.query(HealthModelEntity217).filter(HealthModelEntity217.id == entity_id).first()
+
+    def create_entity_217(self, payload: HealthSchemaEntity217Create) -> HealthModelEntity217:
+        db_obj = HealthModelEntity217(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_217(self, entity_id: int, payload: HealthSchemaEntity217Update) -> Optional[HealthModelEntity217]:
+        db_obj = self.get_entity_217_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_217(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_217_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_218_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity218]:
+        return self.db.query(HealthModelEntity218).offset(skip).limit(limit).all()
+
+    def get_entity_218_by_id(self, entity_id: int) -> Optional[HealthModelEntity218]:
+        return self.db.query(HealthModelEntity218).filter(HealthModelEntity218.id == entity_id).first()
+
+    def create_entity_218(self, payload: HealthSchemaEntity218Create) -> HealthModelEntity218:
+        db_obj = HealthModelEntity218(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_218(self, entity_id: int, payload: HealthSchemaEntity218Update) -> Optional[HealthModelEntity218]:
+        db_obj = self.get_entity_218_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_218(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_218_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_219_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity219]:
+        return self.db.query(HealthModelEntity219).offset(skip).limit(limit).all()
+
+    def get_entity_219_by_id(self, entity_id: int) -> Optional[HealthModelEntity219]:
+        return self.db.query(HealthModelEntity219).filter(HealthModelEntity219.id == entity_id).first()
+
+    def create_entity_219(self, payload: HealthSchemaEntity219Create) -> HealthModelEntity219:
+        db_obj = HealthModelEntity219(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_219(self, entity_id: int, payload: HealthSchemaEntity219Update) -> Optional[HealthModelEntity219]:
+        db_obj = self.get_entity_219_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_219(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_219_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_220_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity220]:
+        return self.db.query(HealthModelEntity220).offset(skip).limit(limit).all()
+
+    def get_entity_220_by_id(self, entity_id: int) -> Optional[HealthModelEntity220]:
+        return self.db.query(HealthModelEntity220).filter(HealthModelEntity220.id == entity_id).first()
+
+    def create_entity_220(self, payload: HealthSchemaEntity220Create) -> HealthModelEntity220:
+        db_obj = HealthModelEntity220(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_220(self, entity_id: int, payload: HealthSchemaEntity220Update) -> Optional[HealthModelEntity220]:
+        db_obj = self.get_entity_220_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_220(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_220_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_221_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity221]:
+        return self.db.query(HealthModelEntity221).offset(skip).limit(limit).all()
+
+    def get_entity_221_by_id(self, entity_id: int) -> Optional[HealthModelEntity221]:
+        return self.db.query(HealthModelEntity221).filter(HealthModelEntity221.id == entity_id).first()
+
+    def create_entity_221(self, payload: HealthSchemaEntity221Create) -> HealthModelEntity221:
+        db_obj = HealthModelEntity221(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_221(self, entity_id: int, payload: HealthSchemaEntity221Update) -> Optional[HealthModelEntity221]:
+        db_obj = self.get_entity_221_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_221(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_221_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_222_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity222]:
+        return self.db.query(HealthModelEntity222).offset(skip).limit(limit).all()
+
+    def get_entity_222_by_id(self, entity_id: int) -> Optional[HealthModelEntity222]:
+        return self.db.query(HealthModelEntity222).filter(HealthModelEntity222.id == entity_id).first()
+
+    def create_entity_222(self, payload: HealthSchemaEntity222Create) -> HealthModelEntity222:
+        db_obj = HealthModelEntity222(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_222(self, entity_id: int, payload: HealthSchemaEntity222Update) -> Optional[HealthModelEntity222]:
+        db_obj = self.get_entity_222_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_222(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_222_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_223_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity223]:
+        return self.db.query(HealthModelEntity223).offset(skip).limit(limit).all()
+
+    def get_entity_223_by_id(self, entity_id: int) -> Optional[HealthModelEntity223]:
+        return self.db.query(HealthModelEntity223).filter(HealthModelEntity223.id == entity_id).first()
+
+    def create_entity_223(self, payload: HealthSchemaEntity223Create) -> HealthModelEntity223:
+        db_obj = HealthModelEntity223(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_223(self, entity_id: int, payload: HealthSchemaEntity223Update) -> Optional[HealthModelEntity223]:
+        db_obj = self.get_entity_223_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_223(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_223_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_224_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity224]:
+        return self.db.query(HealthModelEntity224).offset(skip).limit(limit).all()
+
+    def get_entity_224_by_id(self, entity_id: int) -> Optional[HealthModelEntity224]:
+        return self.db.query(HealthModelEntity224).filter(HealthModelEntity224.id == entity_id).first()
+
+    def create_entity_224(self, payload: HealthSchemaEntity224Create) -> HealthModelEntity224:
+        db_obj = HealthModelEntity224(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_224(self, entity_id: int, payload: HealthSchemaEntity224Update) -> Optional[HealthModelEntity224]:
+        db_obj = self.get_entity_224_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_224(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_224_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_225_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity225]:
+        return self.db.query(HealthModelEntity225).offset(skip).limit(limit).all()
+
+    def get_entity_225_by_id(self, entity_id: int) -> Optional[HealthModelEntity225]:
+        return self.db.query(HealthModelEntity225).filter(HealthModelEntity225.id == entity_id).first()
+
+    def create_entity_225(self, payload: HealthSchemaEntity225Create) -> HealthModelEntity225:
+        db_obj = HealthModelEntity225(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_225(self, entity_id: int, payload: HealthSchemaEntity225Update) -> Optional[HealthModelEntity225]:
+        db_obj = self.get_entity_225_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_225(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_225_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_226_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity226]:
+        return self.db.query(HealthModelEntity226).offset(skip).limit(limit).all()
+
+    def get_entity_226_by_id(self, entity_id: int) -> Optional[HealthModelEntity226]:
+        return self.db.query(HealthModelEntity226).filter(HealthModelEntity226.id == entity_id).first()
+
+    def create_entity_226(self, payload: HealthSchemaEntity226Create) -> HealthModelEntity226:
+        db_obj = HealthModelEntity226(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_226(self, entity_id: int, payload: HealthSchemaEntity226Update) -> Optional[HealthModelEntity226]:
+        db_obj = self.get_entity_226_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_226(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_226_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_227_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity227]:
+        return self.db.query(HealthModelEntity227).offset(skip).limit(limit).all()
+
+    def get_entity_227_by_id(self, entity_id: int) -> Optional[HealthModelEntity227]:
+        return self.db.query(HealthModelEntity227).filter(HealthModelEntity227.id == entity_id).first()
+
+    def create_entity_227(self, payload: HealthSchemaEntity227Create) -> HealthModelEntity227:
+        db_obj = HealthModelEntity227(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_227(self, entity_id: int, payload: HealthSchemaEntity227Update) -> Optional[HealthModelEntity227]:
+        db_obj = self.get_entity_227_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_227(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_227_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_228_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity228]:
+        return self.db.query(HealthModelEntity228).offset(skip).limit(limit).all()
+
+    def get_entity_228_by_id(self, entity_id: int) -> Optional[HealthModelEntity228]:
+        return self.db.query(HealthModelEntity228).filter(HealthModelEntity228.id == entity_id).first()
+
+    def create_entity_228(self, payload: HealthSchemaEntity228Create) -> HealthModelEntity228:
+        db_obj = HealthModelEntity228(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_228(self, entity_id: int, payload: HealthSchemaEntity228Update) -> Optional[HealthModelEntity228]:
+        db_obj = self.get_entity_228_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_228(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_228_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_229_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity229]:
+        return self.db.query(HealthModelEntity229).offset(skip).limit(limit).all()
+
+    def get_entity_229_by_id(self, entity_id: int) -> Optional[HealthModelEntity229]:
+        return self.db.query(HealthModelEntity229).filter(HealthModelEntity229.id == entity_id).first()
+
+    def create_entity_229(self, payload: HealthSchemaEntity229Create) -> HealthModelEntity229:
+        db_obj = HealthModelEntity229(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_229(self, entity_id: int, payload: HealthSchemaEntity229Update) -> Optional[HealthModelEntity229]:
+        db_obj = self.get_entity_229_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_229(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_229_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_230_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity230]:
+        return self.db.query(HealthModelEntity230).offset(skip).limit(limit).all()
+
+    def get_entity_230_by_id(self, entity_id: int) -> Optional[HealthModelEntity230]:
+        return self.db.query(HealthModelEntity230).filter(HealthModelEntity230.id == entity_id).first()
+
+    def create_entity_230(self, payload: HealthSchemaEntity230Create) -> HealthModelEntity230:
+        db_obj = HealthModelEntity230(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_230(self, entity_id: int, payload: HealthSchemaEntity230Update) -> Optional[HealthModelEntity230]:
+        db_obj = self.get_entity_230_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_230(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_230_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_231_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity231]:
+        return self.db.query(HealthModelEntity231).offset(skip).limit(limit).all()
+
+    def get_entity_231_by_id(self, entity_id: int) -> Optional[HealthModelEntity231]:
+        return self.db.query(HealthModelEntity231).filter(HealthModelEntity231.id == entity_id).first()
+
+    def create_entity_231(self, payload: HealthSchemaEntity231Create) -> HealthModelEntity231:
+        db_obj = HealthModelEntity231(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_231(self, entity_id: int, payload: HealthSchemaEntity231Update) -> Optional[HealthModelEntity231]:
+        db_obj = self.get_entity_231_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_231(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_231_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_232_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity232]:
+        return self.db.query(HealthModelEntity232).offset(skip).limit(limit).all()
+
+    def get_entity_232_by_id(self, entity_id: int) -> Optional[HealthModelEntity232]:
+        return self.db.query(HealthModelEntity232).filter(HealthModelEntity232.id == entity_id).first()
+
+    def create_entity_232(self, payload: HealthSchemaEntity232Create) -> HealthModelEntity232:
+        db_obj = HealthModelEntity232(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_232(self, entity_id: int, payload: HealthSchemaEntity232Update) -> Optional[HealthModelEntity232]:
+        db_obj = self.get_entity_232_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_232(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_232_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_233_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity233]:
+        return self.db.query(HealthModelEntity233).offset(skip).limit(limit).all()
+
+    def get_entity_233_by_id(self, entity_id: int) -> Optional[HealthModelEntity233]:
+        return self.db.query(HealthModelEntity233).filter(HealthModelEntity233.id == entity_id).first()
+
+    def create_entity_233(self, payload: HealthSchemaEntity233Create) -> HealthModelEntity233:
+        db_obj = HealthModelEntity233(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_233(self, entity_id: int, payload: HealthSchemaEntity233Update) -> Optional[HealthModelEntity233]:
+        db_obj = self.get_entity_233_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_233(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_233_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_234_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity234]:
+        return self.db.query(HealthModelEntity234).offset(skip).limit(limit).all()
+
+    def get_entity_234_by_id(self, entity_id: int) -> Optional[HealthModelEntity234]:
+        return self.db.query(HealthModelEntity234).filter(HealthModelEntity234.id == entity_id).first()
+
+    def create_entity_234(self, payload: HealthSchemaEntity234Create) -> HealthModelEntity234:
+        db_obj = HealthModelEntity234(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_234(self, entity_id: int, payload: HealthSchemaEntity234Update) -> Optional[HealthModelEntity234]:
+        db_obj = self.get_entity_234_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_234(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_234_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_235_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity235]:
+        return self.db.query(HealthModelEntity235).offset(skip).limit(limit).all()
+
+    def get_entity_235_by_id(self, entity_id: int) -> Optional[HealthModelEntity235]:
+        return self.db.query(HealthModelEntity235).filter(HealthModelEntity235.id == entity_id).first()
+
+    def create_entity_235(self, payload: HealthSchemaEntity235Create) -> HealthModelEntity235:
+        db_obj = HealthModelEntity235(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_235(self, entity_id: int, payload: HealthSchemaEntity235Update) -> Optional[HealthModelEntity235]:
+        db_obj = self.get_entity_235_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_235(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_235_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_236_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity236]:
+        return self.db.query(HealthModelEntity236).offset(skip).limit(limit).all()
+
+    def get_entity_236_by_id(self, entity_id: int) -> Optional[HealthModelEntity236]:
+        return self.db.query(HealthModelEntity236).filter(HealthModelEntity236.id == entity_id).first()
+
+    def create_entity_236(self, payload: HealthSchemaEntity236Create) -> HealthModelEntity236:
+        db_obj = HealthModelEntity236(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_236(self, entity_id: int, payload: HealthSchemaEntity236Update) -> Optional[HealthModelEntity236]:
+        db_obj = self.get_entity_236_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_236(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_236_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_237_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity237]:
+        return self.db.query(HealthModelEntity237).offset(skip).limit(limit).all()
+
+    def get_entity_237_by_id(self, entity_id: int) -> Optional[HealthModelEntity237]:
+        return self.db.query(HealthModelEntity237).filter(HealthModelEntity237.id == entity_id).first()
+
+    def create_entity_237(self, payload: HealthSchemaEntity237Create) -> HealthModelEntity237:
+        db_obj = HealthModelEntity237(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_237(self, entity_id: int, payload: HealthSchemaEntity237Update) -> Optional[HealthModelEntity237]:
+        db_obj = self.get_entity_237_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_237(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_237_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_238_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity238]:
+        return self.db.query(HealthModelEntity238).offset(skip).limit(limit).all()
+
+    def get_entity_238_by_id(self, entity_id: int) -> Optional[HealthModelEntity238]:
+        return self.db.query(HealthModelEntity238).filter(HealthModelEntity238.id == entity_id).first()
+
+    def create_entity_238(self, payload: HealthSchemaEntity238Create) -> HealthModelEntity238:
+        db_obj = HealthModelEntity238(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_238(self, entity_id: int, payload: HealthSchemaEntity238Update) -> Optional[HealthModelEntity238]:
+        db_obj = self.get_entity_238_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_238(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_238_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_239_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity239]:
+        return self.db.query(HealthModelEntity239).offset(skip).limit(limit).all()
+
+    def get_entity_239_by_id(self, entity_id: int) -> Optional[HealthModelEntity239]:
+        return self.db.query(HealthModelEntity239).filter(HealthModelEntity239.id == entity_id).first()
+
+    def create_entity_239(self, payload: HealthSchemaEntity239Create) -> HealthModelEntity239:
+        db_obj = HealthModelEntity239(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_239(self, entity_id: int, payload: HealthSchemaEntity239Update) -> Optional[HealthModelEntity239]:
+        db_obj = self.get_entity_239_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_239(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_239_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_240_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity240]:
+        return self.db.query(HealthModelEntity240).offset(skip).limit(limit).all()
+
+    def get_entity_240_by_id(self, entity_id: int) -> Optional[HealthModelEntity240]:
+        return self.db.query(HealthModelEntity240).filter(HealthModelEntity240.id == entity_id).first()
+
+    def create_entity_240(self, payload: HealthSchemaEntity240Create) -> HealthModelEntity240:
+        db_obj = HealthModelEntity240(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_240(self, entity_id: int, payload: HealthSchemaEntity240Update) -> Optional[HealthModelEntity240]:
+        db_obj = self.get_entity_240_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_240(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_240_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_241_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity241]:
+        return self.db.query(HealthModelEntity241).offset(skip).limit(limit).all()
+
+    def get_entity_241_by_id(self, entity_id: int) -> Optional[HealthModelEntity241]:
+        return self.db.query(HealthModelEntity241).filter(HealthModelEntity241.id == entity_id).first()
+
+    def create_entity_241(self, payload: HealthSchemaEntity241Create) -> HealthModelEntity241:
+        db_obj = HealthModelEntity241(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_241(self, entity_id: int, payload: HealthSchemaEntity241Update) -> Optional[HealthModelEntity241]:
+        db_obj = self.get_entity_241_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_241(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_241_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_242_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity242]:
+        return self.db.query(HealthModelEntity242).offset(skip).limit(limit).all()
+
+    def get_entity_242_by_id(self, entity_id: int) -> Optional[HealthModelEntity242]:
+        return self.db.query(HealthModelEntity242).filter(HealthModelEntity242.id == entity_id).first()
+
+    def create_entity_242(self, payload: HealthSchemaEntity242Create) -> HealthModelEntity242:
+        db_obj = HealthModelEntity242(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_242(self, entity_id: int, payload: HealthSchemaEntity242Update) -> Optional[HealthModelEntity242]:
+        db_obj = self.get_entity_242_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_242(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_242_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_243_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity243]:
+        return self.db.query(HealthModelEntity243).offset(skip).limit(limit).all()
+
+    def get_entity_243_by_id(self, entity_id: int) -> Optional[HealthModelEntity243]:
+        return self.db.query(HealthModelEntity243).filter(HealthModelEntity243.id == entity_id).first()
+
+    def create_entity_243(self, payload: HealthSchemaEntity243Create) -> HealthModelEntity243:
+        db_obj = HealthModelEntity243(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_243(self, entity_id: int, payload: HealthSchemaEntity243Update) -> Optional[HealthModelEntity243]:
+        db_obj = self.get_entity_243_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_243(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_243_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_244_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity244]:
+        return self.db.query(HealthModelEntity244).offset(skip).limit(limit).all()
+
+    def get_entity_244_by_id(self, entity_id: int) -> Optional[HealthModelEntity244]:
+        return self.db.query(HealthModelEntity244).filter(HealthModelEntity244.id == entity_id).first()
+
+    def create_entity_244(self, payload: HealthSchemaEntity244Create) -> HealthModelEntity244:
+        db_obj = HealthModelEntity244(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_244(self, entity_id: int, payload: HealthSchemaEntity244Update) -> Optional[HealthModelEntity244]:
+        db_obj = self.get_entity_244_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_244(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_244_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_245_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity245]:
+        return self.db.query(HealthModelEntity245).offset(skip).limit(limit).all()
+
+    def get_entity_245_by_id(self, entity_id: int) -> Optional[HealthModelEntity245]:
+        return self.db.query(HealthModelEntity245).filter(HealthModelEntity245.id == entity_id).first()
+
+    def create_entity_245(self, payload: HealthSchemaEntity245Create) -> HealthModelEntity245:
+        db_obj = HealthModelEntity245(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_245(self, entity_id: int, payload: HealthSchemaEntity245Update) -> Optional[HealthModelEntity245]:
+        db_obj = self.get_entity_245_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_245(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_245_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_246_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity246]:
+        return self.db.query(HealthModelEntity246).offset(skip).limit(limit).all()
+
+    def get_entity_246_by_id(self, entity_id: int) -> Optional[HealthModelEntity246]:
+        return self.db.query(HealthModelEntity246).filter(HealthModelEntity246.id == entity_id).first()
+
+    def create_entity_246(self, payload: HealthSchemaEntity246Create) -> HealthModelEntity246:
+        db_obj = HealthModelEntity246(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_246(self, entity_id: int, payload: HealthSchemaEntity246Update) -> Optional[HealthModelEntity246]:
+        db_obj = self.get_entity_246_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_246(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_246_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_247_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity247]:
+        return self.db.query(HealthModelEntity247).offset(skip).limit(limit).all()
+
+    def get_entity_247_by_id(self, entity_id: int) -> Optional[HealthModelEntity247]:
+        return self.db.query(HealthModelEntity247).filter(HealthModelEntity247.id == entity_id).first()
+
+    def create_entity_247(self, payload: HealthSchemaEntity247Create) -> HealthModelEntity247:
+        db_obj = HealthModelEntity247(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_247(self, entity_id: int, payload: HealthSchemaEntity247Update) -> Optional[HealthModelEntity247]:
+        db_obj = self.get_entity_247_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_247(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_247_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_248_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity248]:
+        return self.db.query(HealthModelEntity248).offset(skip).limit(limit).all()
+
+    def get_entity_248_by_id(self, entity_id: int) -> Optional[HealthModelEntity248]:
+        return self.db.query(HealthModelEntity248).filter(HealthModelEntity248.id == entity_id).first()
+
+    def create_entity_248(self, payload: HealthSchemaEntity248Create) -> HealthModelEntity248:
+        db_obj = HealthModelEntity248(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_248(self, entity_id: int, payload: HealthSchemaEntity248Update) -> Optional[HealthModelEntity248]:
+        db_obj = self.get_entity_248_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_248(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_248_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_249_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity249]:
+        return self.db.query(HealthModelEntity249).offset(skip).limit(limit).all()
+
+    def get_entity_249_by_id(self, entity_id: int) -> Optional[HealthModelEntity249]:
+        return self.db.query(HealthModelEntity249).filter(HealthModelEntity249.id == entity_id).first()
+
+    def create_entity_249(self, payload: HealthSchemaEntity249Create) -> HealthModelEntity249:
+        db_obj = HealthModelEntity249(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_249(self, entity_id: int, payload: HealthSchemaEntity249Update) -> Optional[HealthModelEntity249]:
+        db_obj = self.get_entity_249_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_249(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_249_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_250_list(self, skip: int = 0, limit: int = 100) -> List[HealthModelEntity250]:
+        return self.db.query(HealthModelEntity250).offset(skip).limit(limit).all()
+
+    def get_entity_250_by_id(self, entity_id: int) -> Optional[HealthModelEntity250]:
+        return self.db.query(HealthModelEntity250).filter(HealthModelEntity250.id == entity_id).first()
+
+    def create_entity_250(self, payload: HealthSchemaEntity250Create) -> HealthModelEntity250:
+        db_obj = HealthModelEntity250(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_250(self, entity_id: int, payload: HealthSchemaEntity250Update) -> Optional[HealthModelEntity250]:
+        db_obj = self.get_entity_250_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_250(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_250_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+

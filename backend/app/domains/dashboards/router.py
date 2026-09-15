@@ -3611,3 +3611,903 @@ def create_entity_200(payload: DashboardsSchemaEntity200Create, db: Session = De
     srv = DashboardsDomainService(db)
     return srv.create_entity_200(payload)
 
+@router.get("/entity-201", response_model=List[DashboardsSchemaEntity201Response])
+def list_entities_201(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_201_list(skip=skip, limit=limit)
+
+@router.get("/entity-201/{entity_id}", response_model=DashboardsSchemaEntity201Response)
+def get_entity_201(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_201_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 201 not found")
+    return res
+
+@router.post("/entity-201", response_model=DashboardsSchemaEntity201Response, status_code=201)
+def create_entity_201(payload: DashboardsSchemaEntity201Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_201(payload)
+
+@router.get("/entity-202", response_model=List[DashboardsSchemaEntity202Response])
+def list_entities_202(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_202_list(skip=skip, limit=limit)
+
+@router.get("/entity-202/{entity_id}", response_model=DashboardsSchemaEntity202Response)
+def get_entity_202(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_202_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 202 not found")
+    return res
+
+@router.post("/entity-202", response_model=DashboardsSchemaEntity202Response, status_code=201)
+def create_entity_202(payload: DashboardsSchemaEntity202Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_202(payload)
+
+@router.get("/entity-203", response_model=List[DashboardsSchemaEntity203Response])
+def list_entities_203(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_203_list(skip=skip, limit=limit)
+
+@router.get("/entity-203/{entity_id}", response_model=DashboardsSchemaEntity203Response)
+def get_entity_203(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_203_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 203 not found")
+    return res
+
+@router.post("/entity-203", response_model=DashboardsSchemaEntity203Response, status_code=201)
+def create_entity_203(payload: DashboardsSchemaEntity203Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_203(payload)
+
+@router.get("/entity-204", response_model=List[DashboardsSchemaEntity204Response])
+def list_entities_204(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_204_list(skip=skip, limit=limit)
+
+@router.get("/entity-204/{entity_id}", response_model=DashboardsSchemaEntity204Response)
+def get_entity_204(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_204_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 204 not found")
+    return res
+
+@router.post("/entity-204", response_model=DashboardsSchemaEntity204Response, status_code=201)
+def create_entity_204(payload: DashboardsSchemaEntity204Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_204(payload)
+
+@router.get("/entity-205", response_model=List[DashboardsSchemaEntity205Response])
+def list_entities_205(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_205_list(skip=skip, limit=limit)
+
+@router.get("/entity-205/{entity_id}", response_model=DashboardsSchemaEntity205Response)
+def get_entity_205(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_205_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 205 not found")
+    return res
+
+@router.post("/entity-205", response_model=DashboardsSchemaEntity205Response, status_code=201)
+def create_entity_205(payload: DashboardsSchemaEntity205Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_205(payload)
+
+@router.get("/entity-206", response_model=List[DashboardsSchemaEntity206Response])
+def list_entities_206(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_206_list(skip=skip, limit=limit)
+
+@router.get("/entity-206/{entity_id}", response_model=DashboardsSchemaEntity206Response)
+def get_entity_206(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_206_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 206 not found")
+    return res
+
+@router.post("/entity-206", response_model=DashboardsSchemaEntity206Response, status_code=201)
+def create_entity_206(payload: DashboardsSchemaEntity206Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_206(payload)
+
+@router.get("/entity-207", response_model=List[DashboardsSchemaEntity207Response])
+def list_entities_207(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_207_list(skip=skip, limit=limit)
+
+@router.get("/entity-207/{entity_id}", response_model=DashboardsSchemaEntity207Response)
+def get_entity_207(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_207_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 207 not found")
+    return res
+
+@router.post("/entity-207", response_model=DashboardsSchemaEntity207Response, status_code=201)
+def create_entity_207(payload: DashboardsSchemaEntity207Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_207(payload)
+
+@router.get("/entity-208", response_model=List[DashboardsSchemaEntity208Response])
+def list_entities_208(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_208_list(skip=skip, limit=limit)
+
+@router.get("/entity-208/{entity_id}", response_model=DashboardsSchemaEntity208Response)
+def get_entity_208(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_208_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 208 not found")
+    return res
+
+@router.post("/entity-208", response_model=DashboardsSchemaEntity208Response, status_code=201)
+def create_entity_208(payload: DashboardsSchemaEntity208Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_208(payload)
+
+@router.get("/entity-209", response_model=List[DashboardsSchemaEntity209Response])
+def list_entities_209(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_209_list(skip=skip, limit=limit)
+
+@router.get("/entity-209/{entity_id}", response_model=DashboardsSchemaEntity209Response)
+def get_entity_209(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_209_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 209 not found")
+    return res
+
+@router.post("/entity-209", response_model=DashboardsSchemaEntity209Response, status_code=201)
+def create_entity_209(payload: DashboardsSchemaEntity209Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_209(payload)
+
+@router.get("/entity-210", response_model=List[DashboardsSchemaEntity210Response])
+def list_entities_210(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_210_list(skip=skip, limit=limit)
+
+@router.get("/entity-210/{entity_id}", response_model=DashboardsSchemaEntity210Response)
+def get_entity_210(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_210_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 210 not found")
+    return res
+
+@router.post("/entity-210", response_model=DashboardsSchemaEntity210Response, status_code=201)
+def create_entity_210(payload: DashboardsSchemaEntity210Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_210(payload)
+
+@router.get("/entity-211", response_model=List[DashboardsSchemaEntity211Response])
+def list_entities_211(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_211_list(skip=skip, limit=limit)
+
+@router.get("/entity-211/{entity_id}", response_model=DashboardsSchemaEntity211Response)
+def get_entity_211(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_211_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 211 not found")
+    return res
+
+@router.post("/entity-211", response_model=DashboardsSchemaEntity211Response, status_code=201)
+def create_entity_211(payload: DashboardsSchemaEntity211Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_211(payload)
+
+@router.get("/entity-212", response_model=List[DashboardsSchemaEntity212Response])
+def list_entities_212(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_212_list(skip=skip, limit=limit)
+
+@router.get("/entity-212/{entity_id}", response_model=DashboardsSchemaEntity212Response)
+def get_entity_212(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_212_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 212 not found")
+    return res
+
+@router.post("/entity-212", response_model=DashboardsSchemaEntity212Response, status_code=201)
+def create_entity_212(payload: DashboardsSchemaEntity212Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_212(payload)
+
+@router.get("/entity-213", response_model=List[DashboardsSchemaEntity213Response])
+def list_entities_213(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_213_list(skip=skip, limit=limit)
+
+@router.get("/entity-213/{entity_id}", response_model=DashboardsSchemaEntity213Response)
+def get_entity_213(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_213_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 213 not found")
+    return res
+
+@router.post("/entity-213", response_model=DashboardsSchemaEntity213Response, status_code=201)
+def create_entity_213(payload: DashboardsSchemaEntity213Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_213(payload)
+
+@router.get("/entity-214", response_model=List[DashboardsSchemaEntity214Response])
+def list_entities_214(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_214_list(skip=skip, limit=limit)
+
+@router.get("/entity-214/{entity_id}", response_model=DashboardsSchemaEntity214Response)
+def get_entity_214(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_214_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 214 not found")
+    return res
+
+@router.post("/entity-214", response_model=DashboardsSchemaEntity214Response, status_code=201)
+def create_entity_214(payload: DashboardsSchemaEntity214Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_214(payload)
+
+@router.get("/entity-215", response_model=List[DashboardsSchemaEntity215Response])
+def list_entities_215(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_215_list(skip=skip, limit=limit)
+
+@router.get("/entity-215/{entity_id}", response_model=DashboardsSchemaEntity215Response)
+def get_entity_215(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_215_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 215 not found")
+    return res
+
+@router.post("/entity-215", response_model=DashboardsSchemaEntity215Response, status_code=201)
+def create_entity_215(payload: DashboardsSchemaEntity215Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_215(payload)
+
+@router.get("/entity-216", response_model=List[DashboardsSchemaEntity216Response])
+def list_entities_216(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_216_list(skip=skip, limit=limit)
+
+@router.get("/entity-216/{entity_id}", response_model=DashboardsSchemaEntity216Response)
+def get_entity_216(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_216_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 216 not found")
+    return res
+
+@router.post("/entity-216", response_model=DashboardsSchemaEntity216Response, status_code=201)
+def create_entity_216(payload: DashboardsSchemaEntity216Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_216(payload)
+
+@router.get("/entity-217", response_model=List[DashboardsSchemaEntity217Response])
+def list_entities_217(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_217_list(skip=skip, limit=limit)
+
+@router.get("/entity-217/{entity_id}", response_model=DashboardsSchemaEntity217Response)
+def get_entity_217(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_217_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 217 not found")
+    return res
+
+@router.post("/entity-217", response_model=DashboardsSchemaEntity217Response, status_code=201)
+def create_entity_217(payload: DashboardsSchemaEntity217Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_217(payload)
+
+@router.get("/entity-218", response_model=List[DashboardsSchemaEntity218Response])
+def list_entities_218(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_218_list(skip=skip, limit=limit)
+
+@router.get("/entity-218/{entity_id}", response_model=DashboardsSchemaEntity218Response)
+def get_entity_218(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_218_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 218 not found")
+    return res
+
+@router.post("/entity-218", response_model=DashboardsSchemaEntity218Response, status_code=201)
+def create_entity_218(payload: DashboardsSchemaEntity218Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_218(payload)
+
+@router.get("/entity-219", response_model=List[DashboardsSchemaEntity219Response])
+def list_entities_219(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_219_list(skip=skip, limit=limit)
+
+@router.get("/entity-219/{entity_id}", response_model=DashboardsSchemaEntity219Response)
+def get_entity_219(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_219_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 219 not found")
+    return res
+
+@router.post("/entity-219", response_model=DashboardsSchemaEntity219Response, status_code=201)
+def create_entity_219(payload: DashboardsSchemaEntity219Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_219(payload)
+
+@router.get("/entity-220", response_model=List[DashboardsSchemaEntity220Response])
+def list_entities_220(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_220_list(skip=skip, limit=limit)
+
+@router.get("/entity-220/{entity_id}", response_model=DashboardsSchemaEntity220Response)
+def get_entity_220(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_220_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 220 not found")
+    return res
+
+@router.post("/entity-220", response_model=DashboardsSchemaEntity220Response, status_code=201)
+def create_entity_220(payload: DashboardsSchemaEntity220Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_220(payload)
+
+@router.get("/entity-221", response_model=List[DashboardsSchemaEntity221Response])
+def list_entities_221(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_221_list(skip=skip, limit=limit)
+
+@router.get("/entity-221/{entity_id}", response_model=DashboardsSchemaEntity221Response)
+def get_entity_221(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_221_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 221 not found")
+    return res
+
+@router.post("/entity-221", response_model=DashboardsSchemaEntity221Response, status_code=201)
+def create_entity_221(payload: DashboardsSchemaEntity221Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_221(payload)
+
+@router.get("/entity-222", response_model=List[DashboardsSchemaEntity222Response])
+def list_entities_222(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_222_list(skip=skip, limit=limit)
+
+@router.get("/entity-222/{entity_id}", response_model=DashboardsSchemaEntity222Response)
+def get_entity_222(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_222_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 222 not found")
+    return res
+
+@router.post("/entity-222", response_model=DashboardsSchemaEntity222Response, status_code=201)
+def create_entity_222(payload: DashboardsSchemaEntity222Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_222(payload)
+
+@router.get("/entity-223", response_model=List[DashboardsSchemaEntity223Response])
+def list_entities_223(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_223_list(skip=skip, limit=limit)
+
+@router.get("/entity-223/{entity_id}", response_model=DashboardsSchemaEntity223Response)
+def get_entity_223(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_223_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 223 not found")
+    return res
+
+@router.post("/entity-223", response_model=DashboardsSchemaEntity223Response, status_code=201)
+def create_entity_223(payload: DashboardsSchemaEntity223Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_223(payload)
+
+@router.get("/entity-224", response_model=List[DashboardsSchemaEntity224Response])
+def list_entities_224(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_224_list(skip=skip, limit=limit)
+
+@router.get("/entity-224/{entity_id}", response_model=DashboardsSchemaEntity224Response)
+def get_entity_224(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_224_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 224 not found")
+    return res
+
+@router.post("/entity-224", response_model=DashboardsSchemaEntity224Response, status_code=201)
+def create_entity_224(payload: DashboardsSchemaEntity224Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_224(payload)
+
+@router.get("/entity-225", response_model=List[DashboardsSchemaEntity225Response])
+def list_entities_225(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_225_list(skip=skip, limit=limit)
+
+@router.get("/entity-225/{entity_id}", response_model=DashboardsSchemaEntity225Response)
+def get_entity_225(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_225_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 225 not found")
+    return res
+
+@router.post("/entity-225", response_model=DashboardsSchemaEntity225Response, status_code=201)
+def create_entity_225(payload: DashboardsSchemaEntity225Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_225(payload)
+
+@router.get("/entity-226", response_model=List[DashboardsSchemaEntity226Response])
+def list_entities_226(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_226_list(skip=skip, limit=limit)
+
+@router.get("/entity-226/{entity_id}", response_model=DashboardsSchemaEntity226Response)
+def get_entity_226(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_226_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 226 not found")
+    return res
+
+@router.post("/entity-226", response_model=DashboardsSchemaEntity226Response, status_code=201)
+def create_entity_226(payload: DashboardsSchemaEntity226Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_226(payload)
+
+@router.get("/entity-227", response_model=List[DashboardsSchemaEntity227Response])
+def list_entities_227(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_227_list(skip=skip, limit=limit)
+
+@router.get("/entity-227/{entity_id}", response_model=DashboardsSchemaEntity227Response)
+def get_entity_227(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_227_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 227 not found")
+    return res
+
+@router.post("/entity-227", response_model=DashboardsSchemaEntity227Response, status_code=201)
+def create_entity_227(payload: DashboardsSchemaEntity227Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_227(payload)
+
+@router.get("/entity-228", response_model=List[DashboardsSchemaEntity228Response])
+def list_entities_228(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_228_list(skip=skip, limit=limit)
+
+@router.get("/entity-228/{entity_id}", response_model=DashboardsSchemaEntity228Response)
+def get_entity_228(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_228_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 228 not found")
+    return res
+
+@router.post("/entity-228", response_model=DashboardsSchemaEntity228Response, status_code=201)
+def create_entity_228(payload: DashboardsSchemaEntity228Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_228(payload)
+
+@router.get("/entity-229", response_model=List[DashboardsSchemaEntity229Response])
+def list_entities_229(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_229_list(skip=skip, limit=limit)
+
+@router.get("/entity-229/{entity_id}", response_model=DashboardsSchemaEntity229Response)
+def get_entity_229(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_229_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 229 not found")
+    return res
+
+@router.post("/entity-229", response_model=DashboardsSchemaEntity229Response, status_code=201)
+def create_entity_229(payload: DashboardsSchemaEntity229Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_229(payload)
+
+@router.get("/entity-230", response_model=List[DashboardsSchemaEntity230Response])
+def list_entities_230(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_230_list(skip=skip, limit=limit)
+
+@router.get("/entity-230/{entity_id}", response_model=DashboardsSchemaEntity230Response)
+def get_entity_230(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_230_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 230 not found")
+    return res
+
+@router.post("/entity-230", response_model=DashboardsSchemaEntity230Response, status_code=201)
+def create_entity_230(payload: DashboardsSchemaEntity230Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_230(payload)
+
+@router.get("/entity-231", response_model=List[DashboardsSchemaEntity231Response])
+def list_entities_231(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_231_list(skip=skip, limit=limit)
+
+@router.get("/entity-231/{entity_id}", response_model=DashboardsSchemaEntity231Response)
+def get_entity_231(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_231_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 231 not found")
+    return res
+
+@router.post("/entity-231", response_model=DashboardsSchemaEntity231Response, status_code=201)
+def create_entity_231(payload: DashboardsSchemaEntity231Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_231(payload)
+
+@router.get("/entity-232", response_model=List[DashboardsSchemaEntity232Response])
+def list_entities_232(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_232_list(skip=skip, limit=limit)
+
+@router.get("/entity-232/{entity_id}", response_model=DashboardsSchemaEntity232Response)
+def get_entity_232(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_232_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 232 not found")
+    return res
+
+@router.post("/entity-232", response_model=DashboardsSchemaEntity232Response, status_code=201)
+def create_entity_232(payload: DashboardsSchemaEntity232Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_232(payload)
+
+@router.get("/entity-233", response_model=List[DashboardsSchemaEntity233Response])
+def list_entities_233(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_233_list(skip=skip, limit=limit)
+
+@router.get("/entity-233/{entity_id}", response_model=DashboardsSchemaEntity233Response)
+def get_entity_233(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_233_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 233 not found")
+    return res
+
+@router.post("/entity-233", response_model=DashboardsSchemaEntity233Response, status_code=201)
+def create_entity_233(payload: DashboardsSchemaEntity233Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_233(payload)
+
+@router.get("/entity-234", response_model=List[DashboardsSchemaEntity234Response])
+def list_entities_234(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_234_list(skip=skip, limit=limit)
+
+@router.get("/entity-234/{entity_id}", response_model=DashboardsSchemaEntity234Response)
+def get_entity_234(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_234_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 234 not found")
+    return res
+
+@router.post("/entity-234", response_model=DashboardsSchemaEntity234Response, status_code=201)
+def create_entity_234(payload: DashboardsSchemaEntity234Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_234(payload)
+
+@router.get("/entity-235", response_model=List[DashboardsSchemaEntity235Response])
+def list_entities_235(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_235_list(skip=skip, limit=limit)
+
+@router.get("/entity-235/{entity_id}", response_model=DashboardsSchemaEntity235Response)
+def get_entity_235(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_235_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 235 not found")
+    return res
+
+@router.post("/entity-235", response_model=DashboardsSchemaEntity235Response, status_code=201)
+def create_entity_235(payload: DashboardsSchemaEntity235Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_235(payload)
+
+@router.get("/entity-236", response_model=List[DashboardsSchemaEntity236Response])
+def list_entities_236(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_236_list(skip=skip, limit=limit)
+
+@router.get("/entity-236/{entity_id}", response_model=DashboardsSchemaEntity236Response)
+def get_entity_236(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_236_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 236 not found")
+    return res
+
+@router.post("/entity-236", response_model=DashboardsSchemaEntity236Response, status_code=201)
+def create_entity_236(payload: DashboardsSchemaEntity236Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_236(payload)
+
+@router.get("/entity-237", response_model=List[DashboardsSchemaEntity237Response])
+def list_entities_237(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_237_list(skip=skip, limit=limit)
+
+@router.get("/entity-237/{entity_id}", response_model=DashboardsSchemaEntity237Response)
+def get_entity_237(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_237_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 237 not found")
+    return res
+
+@router.post("/entity-237", response_model=DashboardsSchemaEntity237Response, status_code=201)
+def create_entity_237(payload: DashboardsSchemaEntity237Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_237(payload)
+
+@router.get("/entity-238", response_model=List[DashboardsSchemaEntity238Response])
+def list_entities_238(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_238_list(skip=skip, limit=limit)
+
+@router.get("/entity-238/{entity_id}", response_model=DashboardsSchemaEntity238Response)
+def get_entity_238(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_238_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 238 not found")
+    return res
+
+@router.post("/entity-238", response_model=DashboardsSchemaEntity238Response, status_code=201)
+def create_entity_238(payload: DashboardsSchemaEntity238Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_238(payload)
+
+@router.get("/entity-239", response_model=List[DashboardsSchemaEntity239Response])
+def list_entities_239(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_239_list(skip=skip, limit=limit)
+
+@router.get("/entity-239/{entity_id}", response_model=DashboardsSchemaEntity239Response)
+def get_entity_239(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_239_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 239 not found")
+    return res
+
+@router.post("/entity-239", response_model=DashboardsSchemaEntity239Response, status_code=201)
+def create_entity_239(payload: DashboardsSchemaEntity239Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_239(payload)
+
+@router.get("/entity-240", response_model=List[DashboardsSchemaEntity240Response])
+def list_entities_240(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_240_list(skip=skip, limit=limit)
+
+@router.get("/entity-240/{entity_id}", response_model=DashboardsSchemaEntity240Response)
+def get_entity_240(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_240_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 240 not found")
+    return res
+
+@router.post("/entity-240", response_model=DashboardsSchemaEntity240Response, status_code=201)
+def create_entity_240(payload: DashboardsSchemaEntity240Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_240(payload)
+
+@router.get("/entity-241", response_model=List[DashboardsSchemaEntity241Response])
+def list_entities_241(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_241_list(skip=skip, limit=limit)
+
+@router.get("/entity-241/{entity_id}", response_model=DashboardsSchemaEntity241Response)
+def get_entity_241(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_241_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 241 not found")
+    return res
+
+@router.post("/entity-241", response_model=DashboardsSchemaEntity241Response, status_code=201)
+def create_entity_241(payload: DashboardsSchemaEntity241Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_241(payload)
+
+@router.get("/entity-242", response_model=List[DashboardsSchemaEntity242Response])
+def list_entities_242(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_242_list(skip=skip, limit=limit)
+
+@router.get("/entity-242/{entity_id}", response_model=DashboardsSchemaEntity242Response)
+def get_entity_242(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_242_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 242 not found")
+    return res
+
+@router.post("/entity-242", response_model=DashboardsSchemaEntity242Response, status_code=201)
+def create_entity_242(payload: DashboardsSchemaEntity242Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_242(payload)
+
+@router.get("/entity-243", response_model=List[DashboardsSchemaEntity243Response])
+def list_entities_243(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_243_list(skip=skip, limit=limit)
+
+@router.get("/entity-243/{entity_id}", response_model=DashboardsSchemaEntity243Response)
+def get_entity_243(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_243_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 243 not found")
+    return res
+
+@router.post("/entity-243", response_model=DashboardsSchemaEntity243Response, status_code=201)
+def create_entity_243(payload: DashboardsSchemaEntity243Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_243(payload)
+
+@router.get("/entity-244", response_model=List[DashboardsSchemaEntity244Response])
+def list_entities_244(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_244_list(skip=skip, limit=limit)
+
+@router.get("/entity-244/{entity_id}", response_model=DashboardsSchemaEntity244Response)
+def get_entity_244(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_244_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 244 not found")
+    return res
+
+@router.post("/entity-244", response_model=DashboardsSchemaEntity244Response, status_code=201)
+def create_entity_244(payload: DashboardsSchemaEntity244Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_244(payload)
+
+@router.get("/entity-245", response_model=List[DashboardsSchemaEntity245Response])
+def list_entities_245(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_245_list(skip=skip, limit=limit)
+
+@router.get("/entity-245/{entity_id}", response_model=DashboardsSchemaEntity245Response)
+def get_entity_245(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_245_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 245 not found")
+    return res
+
+@router.post("/entity-245", response_model=DashboardsSchemaEntity245Response, status_code=201)
+def create_entity_245(payload: DashboardsSchemaEntity245Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_245(payload)
+
+@router.get("/entity-246", response_model=List[DashboardsSchemaEntity246Response])
+def list_entities_246(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_246_list(skip=skip, limit=limit)
+
+@router.get("/entity-246/{entity_id}", response_model=DashboardsSchemaEntity246Response)
+def get_entity_246(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_246_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 246 not found")
+    return res
+
+@router.post("/entity-246", response_model=DashboardsSchemaEntity246Response, status_code=201)
+def create_entity_246(payload: DashboardsSchemaEntity246Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_246(payload)
+
+@router.get("/entity-247", response_model=List[DashboardsSchemaEntity247Response])
+def list_entities_247(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_247_list(skip=skip, limit=limit)
+
+@router.get("/entity-247/{entity_id}", response_model=DashboardsSchemaEntity247Response)
+def get_entity_247(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_247_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 247 not found")
+    return res
+
+@router.post("/entity-247", response_model=DashboardsSchemaEntity247Response, status_code=201)
+def create_entity_247(payload: DashboardsSchemaEntity247Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_247(payload)
+
+@router.get("/entity-248", response_model=List[DashboardsSchemaEntity248Response])
+def list_entities_248(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_248_list(skip=skip, limit=limit)
+
+@router.get("/entity-248/{entity_id}", response_model=DashboardsSchemaEntity248Response)
+def get_entity_248(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_248_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 248 not found")
+    return res
+
+@router.post("/entity-248", response_model=DashboardsSchemaEntity248Response, status_code=201)
+def create_entity_248(payload: DashboardsSchemaEntity248Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_248(payload)
+
+@router.get("/entity-249", response_model=List[DashboardsSchemaEntity249Response])
+def list_entities_249(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_249_list(skip=skip, limit=limit)
+
+@router.get("/entity-249/{entity_id}", response_model=DashboardsSchemaEntity249Response)
+def get_entity_249(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_249_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 249 not found")
+    return res
+
+@router.post("/entity-249", response_model=DashboardsSchemaEntity249Response, status_code=201)
+def create_entity_249(payload: DashboardsSchemaEntity249Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_249(payload)
+
+@router.get("/entity-250", response_model=List[DashboardsSchemaEntity250Response])
+def list_entities_250(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.get_entity_250_list(skip=skip, limit=limit)
+
+@router.get("/entity-250/{entity_id}", response_model=DashboardsSchemaEntity250Response)
+def get_entity_250(entity_id: int, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    res = srv.get_entity_250_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 250 not found")
+    return res
+
+@router.post("/entity-250", response_model=DashboardsSchemaEntity250Response, status_code=201)
+def create_entity_250(payload: DashboardsSchemaEntity250Create, db: Session = Depends(get_db)):
+    srv = DashboardsDomainService(db)
+    return srv.create_entity_250(payload)
+

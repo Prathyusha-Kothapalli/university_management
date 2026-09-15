@@ -2006,3 +2006,503 @@ class DashboardsRepository200:
     def find_by_code(self, code: str) -> Optional[DashboardsModelEntity200]:
         return self.db.query(DashboardsModelEntity200).filter(DashboardsModelEntity200.entity_code == code).first()
 
+class DashboardsRepository201:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity201]:
+        return self.db.query(DashboardsModelEntity201).filter(DashboardsModelEntity201.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity201]:
+        return self.db.query(DashboardsModelEntity201).filter(DashboardsModelEntity201.entity_code == code).first()
+
+class DashboardsRepository202:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity202]:
+        return self.db.query(DashboardsModelEntity202).filter(DashboardsModelEntity202.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity202]:
+        return self.db.query(DashboardsModelEntity202).filter(DashboardsModelEntity202.entity_code == code).first()
+
+class DashboardsRepository203:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity203]:
+        return self.db.query(DashboardsModelEntity203).filter(DashboardsModelEntity203.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity203]:
+        return self.db.query(DashboardsModelEntity203).filter(DashboardsModelEntity203.entity_code == code).first()
+
+class DashboardsRepository204:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity204]:
+        return self.db.query(DashboardsModelEntity204).filter(DashboardsModelEntity204.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity204]:
+        return self.db.query(DashboardsModelEntity204).filter(DashboardsModelEntity204.entity_code == code).first()
+
+class DashboardsRepository205:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity205]:
+        return self.db.query(DashboardsModelEntity205).filter(DashboardsModelEntity205.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity205]:
+        return self.db.query(DashboardsModelEntity205).filter(DashboardsModelEntity205.entity_code == code).first()
+
+class DashboardsRepository206:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity206]:
+        return self.db.query(DashboardsModelEntity206).filter(DashboardsModelEntity206.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity206]:
+        return self.db.query(DashboardsModelEntity206).filter(DashboardsModelEntity206.entity_code == code).first()
+
+class DashboardsRepository207:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity207]:
+        return self.db.query(DashboardsModelEntity207).filter(DashboardsModelEntity207.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity207]:
+        return self.db.query(DashboardsModelEntity207).filter(DashboardsModelEntity207.entity_code == code).first()
+
+class DashboardsRepository208:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity208]:
+        return self.db.query(DashboardsModelEntity208).filter(DashboardsModelEntity208.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity208]:
+        return self.db.query(DashboardsModelEntity208).filter(DashboardsModelEntity208.entity_code == code).first()
+
+class DashboardsRepository209:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity209]:
+        return self.db.query(DashboardsModelEntity209).filter(DashboardsModelEntity209.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity209]:
+        return self.db.query(DashboardsModelEntity209).filter(DashboardsModelEntity209.entity_code == code).first()
+
+class DashboardsRepository210:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity210]:
+        return self.db.query(DashboardsModelEntity210).filter(DashboardsModelEntity210.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity210]:
+        return self.db.query(DashboardsModelEntity210).filter(DashboardsModelEntity210.entity_code == code).first()
+
+class DashboardsRepository211:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity211]:
+        return self.db.query(DashboardsModelEntity211).filter(DashboardsModelEntity211.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity211]:
+        return self.db.query(DashboardsModelEntity211).filter(DashboardsModelEntity211.entity_code == code).first()
+
+class DashboardsRepository212:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity212]:
+        return self.db.query(DashboardsModelEntity212).filter(DashboardsModelEntity212.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity212]:
+        return self.db.query(DashboardsModelEntity212).filter(DashboardsModelEntity212.entity_code == code).first()
+
+class DashboardsRepository213:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity213]:
+        return self.db.query(DashboardsModelEntity213).filter(DashboardsModelEntity213.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity213]:
+        return self.db.query(DashboardsModelEntity213).filter(DashboardsModelEntity213.entity_code == code).first()
+
+class DashboardsRepository214:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity214]:
+        return self.db.query(DashboardsModelEntity214).filter(DashboardsModelEntity214.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity214]:
+        return self.db.query(DashboardsModelEntity214).filter(DashboardsModelEntity214.entity_code == code).first()
+
+class DashboardsRepository215:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity215]:
+        return self.db.query(DashboardsModelEntity215).filter(DashboardsModelEntity215.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity215]:
+        return self.db.query(DashboardsModelEntity215).filter(DashboardsModelEntity215.entity_code == code).first()
+
+class DashboardsRepository216:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity216]:
+        return self.db.query(DashboardsModelEntity216).filter(DashboardsModelEntity216.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity216]:
+        return self.db.query(DashboardsModelEntity216).filter(DashboardsModelEntity216.entity_code == code).first()
+
+class DashboardsRepository217:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity217]:
+        return self.db.query(DashboardsModelEntity217).filter(DashboardsModelEntity217.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity217]:
+        return self.db.query(DashboardsModelEntity217).filter(DashboardsModelEntity217.entity_code == code).first()
+
+class DashboardsRepository218:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity218]:
+        return self.db.query(DashboardsModelEntity218).filter(DashboardsModelEntity218.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity218]:
+        return self.db.query(DashboardsModelEntity218).filter(DashboardsModelEntity218.entity_code == code).first()
+
+class DashboardsRepository219:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity219]:
+        return self.db.query(DashboardsModelEntity219).filter(DashboardsModelEntity219.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity219]:
+        return self.db.query(DashboardsModelEntity219).filter(DashboardsModelEntity219.entity_code == code).first()
+
+class DashboardsRepository220:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity220]:
+        return self.db.query(DashboardsModelEntity220).filter(DashboardsModelEntity220.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity220]:
+        return self.db.query(DashboardsModelEntity220).filter(DashboardsModelEntity220.entity_code == code).first()
+
+class DashboardsRepository221:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity221]:
+        return self.db.query(DashboardsModelEntity221).filter(DashboardsModelEntity221.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity221]:
+        return self.db.query(DashboardsModelEntity221).filter(DashboardsModelEntity221.entity_code == code).first()
+
+class DashboardsRepository222:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity222]:
+        return self.db.query(DashboardsModelEntity222).filter(DashboardsModelEntity222.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity222]:
+        return self.db.query(DashboardsModelEntity222).filter(DashboardsModelEntity222.entity_code == code).first()
+
+class DashboardsRepository223:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity223]:
+        return self.db.query(DashboardsModelEntity223).filter(DashboardsModelEntity223.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity223]:
+        return self.db.query(DashboardsModelEntity223).filter(DashboardsModelEntity223.entity_code == code).first()
+
+class DashboardsRepository224:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity224]:
+        return self.db.query(DashboardsModelEntity224).filter(DashboardsModelEntity224.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity224]:
+        return self.db.query(DashboardsModelEntity224).filter(DashboardsModelEntity224.entity_code == code).first()
+
+class DashboardsRepository225:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity225]:
+        return self.db.query(DashboardsModelEntity225).filter(DashboardsModelEntity225.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity225]:
+        return self.db.query(DashboardsModelEntity225).filter(DashboardsModelEntity225.entity_code == code).first()
+
+class DashboardsRepository226:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity226]:
+        return self.db.query(DashboardsModelEntity226).filter(DashboardsModelEntity226.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity226]:
+        return self.db.query(DashboardsModelEntity226).filter(DashboardsModelEntity226.entity_code == code).first()
+
+class DashboardsRepository227:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity227]:
+        return self.db.query(DashboardsModelEntity227).filter(DashboardsModelEntity227.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity227]:
+        return self.db.query(DashboardsModelEntity227).filter(DashboardsModelEntity227.entity_code == code).first()
+
+class DashboardsRepository228:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity228]:
+        return self.db.query(DashboardsModelEntity228).filter(DashboardsModelEntity228.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity228]:
+        return self.db.query(DashboardsModelEntity228).filter(DashboardsModelEntity228.entity_code == code).first()
+
+class DashboardsRepository229:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity229]:
+        return self.db.query(DashboardsModelEntity229).filter(DashboardsModelEntity229.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity229]:
+        return self.db.query(DashboardsModelEntity229).filter(DashboardsModelEntity229.entity_code == code).first()
+
+class DashboardsRepository230:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity230]:
+        return self.db.query(DashboardsModelEntity230).filter(DashboardsModelEntity230.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity230]:
+        return self.db.query(DashboardsModelEntity230).filter(DashboardsModelEntity230.entity_code == code).first()
+
+class DashboardsRepository231:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity231]:
+        return self.db.query(DashboardsModelEntity231).filter(DashboardsModelEntity231.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity231]:
+        return self.db.query(DashboardsModelEntity231).filter(DashboardsModelEntity231.entity_code == code).first()
+
+class DashboardsRepository232:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity232]:
+        return self.db.query(DashboardsModelEntity232).filter(DashboardsModelEntity232.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity232]:
+        return self.db.query(DashboardsModelEntity232).filter(DashboardsModelEntity232.entity_code == code).first()
+
+class DashboardsRepository233:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity233]:
+        return self.db.query(DashboardsModelEntity233).filter(DashboardsModelEntity233.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity233]:
+        return self.db.query(DashboardsModelEntity233).filter(DashboardsModelEntity233.entity_code == code).first()
+
+class DashboardsRepository234:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity234]:
+        return self.db.query(DashboardsModelEntity234).filter(DashboardsModelEntity234.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity234]:
+        return self.db.query(DashboardsModelEntity234).filter(DashboardsModelEntity234.entity_code == code).first()
+
+class DashboardsRepository235:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity235]:
+        return self.db.query(DashboardsModelEntity235).filter(DashboardsModelEntity235.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity235]:
+        return self.db.query(DashboardsModelEntity235).filter(DashboardsModelEntity235.entity_code == code).first()
+
+class DashboardsRepository236:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity236]:
+        return self.db.query(DashboardsModelEntity236).filter(DashboardsModelEntity236.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity236]:
+        return self.db.query(DashboardsModelEntity236).filter(DashboardsModelEntity236.entity_code == code).first()
+
+class DashboardsRepository237:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity237]:
+        return self.db.query(DashboardsModelEntity237).filter(DashboardsModelEntity237.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity237]:
+        return self.db.query(DashboardsModelEntity237).filter(DashboardsModelEntity237.entity_code == code).first()
+
+class DashboardsRepository238:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity238]:
+        return self.db.query(DashboardsModelEntity238).filter(DashboardsModelEntity238.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity238]:
+        return self.db.query(DashboardsModelEntity238).filter(DashboardsModelEntity238.entity_code == code).first()
+
+class DashboardsRepository239:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity239]:
+        return self.db.query(DashboardsModelEntity239).filter(DashboardsModelEntity239.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity239]:
+        return self.db.query(DashboardsModelEntity239).filter(DashboardsModelEntity239.entity_code == code).first()
+
+class DashboardsRepository240:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity240]:
+        return self.db.query(DashboardsModelEntity240).filter(DashboardsModelEntity240.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity240]:
+        return self.db.query(DashboardsModelEntity240).filter(DashboardsModelEntity240.entity_code == code).first()
+
+class DashboardsRepository241:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity241]:
+        return self.db.query(DashboardsModelEntity241).filter(DashboardsModelEntity241.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity241]:
+        return self.db.query(DashboardsModelEntity241).filter(DashboardsModelEntity241.entity_code == code).first()
+
+class DashboardsRepository242:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity242]:
+        return self.db.query(DashboardsModelEntity242).filter(DashboardsModelEntity242.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity242]:
+        return self.db.query(DashboardsModelEntity242).filter(DashboardsModelEntity242.entity_code == code).first()
+
+class DashboardsRepository243:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity243]:
+        return self.db.query(DashboardsModelEntity243).filter(DashboardsModelEntity243.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity243]:
+        return self.db.query(DashboardsModelEntity243).filter(DashboardsModelEntity243.entity_code == code).first()
+
+class DashboardsRepository244:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity244]:
+        return self.db.query(DashboardsModelEntity244).filter(DashboardsModelEntity244.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity244]:
+        return self.db.query(DashboardsModelEntity244).filter(DashboardsModelEntity244.entity_code == code).first()
+
+class DashboardsRepository245:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity245]:
+        return self.db.query(DashboardsModelEntity245).filter(DashboardsModelEntity245.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity245]:
+        return self.db.query(DashboardsModelEntity245).filter(DashboardsModelEntity245.entity_code == code).first()
+
+class DashboardsRepository246:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity246]:
+        return self.db.query(DashboardsModelEntity246).filter(DashboardsModelEntity246.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity246]:
+        return self.db.query(DashboardsModelEntity246).filter(DashboardsModelEntity246.entity_code == code).first()
+
+class DashboardsRepository247:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity247]:
+        return self.db.query(DashboardsModelEntity247).filter(DashboardsModelEntity247.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity247]:
+        return self.db.query(DashboardsModelEntity247).filter(DashboardsModelEntity247.entity_code == code).first()
+
+class DashboardsRepository248:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity248]:
+        return self.db.query(DashboardsModelEntity248).filter(DashboardsModelEntity248.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity248]:
+        return self.db.query(DashboardsModelEntity248).filter(DashboardsModelEntity248.entity_code == code).first()
+
+class DashboardsRepository249:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity249]:
+        return self.db.query(DashboardsModelEntity249).filter(DashboardsModelEntity249.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity249]:
+        return self.db.query(DashboardsModelEntity249).filter(DashboardsModelEntity249.entity_code == code).first()
+
+class DashboardsRepository250:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[DashboardsModelEntity250]:
+        return self.db.query(DashboardsModelEntity250).filter(DashboardsModelEntity250.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[DashboardsModelEntity250]:
+        return self.db.query(DashboardsModelEntity250).filter(DashboardsModelEntity250.entity_code == code).first()
+

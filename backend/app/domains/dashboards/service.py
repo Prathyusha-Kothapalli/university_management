@@ -8011,3 +8011,2003 @@ class DashboardsDomainService:
         self.db.commit()
         return True
 
+    def get_entity_201_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity201]:
+        return self.db.query(DashboardsModelEntity201).offset(skip).limit(limit).all()
+
+    def get_entity_201_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity201]:
+        return self.db.query(DashboardsModelEntity201).filter(DashboardsModelEntity201.id == entity_id).first()
+
+    def create_entity_201(self, payload: DashboardsSchemaEntity201Create) -> DashboardsModelEntity201:
+        db_obj = DashboardsModelEntity201(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_201(self, entity_id: int, payload: DashboardsSchemaEntity201Update) -> Optional[DashboardsModelEntity201]:
+        db_obj = self.get_entity_201_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_201(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_201_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_202_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity202]:
+        return self.db.query(DashboardsModelEntity202).offset(skip).limit(limit).all()
+
+    def get_entity_202_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity202]:
+        return self.db.query(DashboardsModelEntity202).filter(DashboardsModelEntity202.id == entity_id).first()
+
+    def create_entity_202(self, payload: DashboardsSchemaEntity202Create) -> DashboardsModelEntity202:
+        db_obj = DashboardsModelEntity202(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_202(self, entity_id: int, payload: DashboardsSchemaEntity202Update) -> Optional[DashboardsModelEntity202]:
+        db_obj = self.get_entity_202_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_202(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_202_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_203_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity203]:
+        return self.db.query(DashboardsModelEntity203).offset(skip).limit(limit).all()
+
+    def get_entity_203_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity203]:
+        return self.db.query(DashboardsModelEntity203).filter(DashboardsModelEntity203.id == entity_id).first()
+
+    def create_entity_203(self, payload: DashboardsSchemaEntity203Create) -> DashboardsModelEntity203:
+        db_obj = DashboardsModelEntity203(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_203(self, entity_id: int, payload: DashboardsSchemaEntity203Update) -> Optional[DashboardsModelEntity203]:
+        db_obj = self.get_entity_203_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_203(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_203_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_204_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity204]:
+        return self.db.query(DashboardsModelEntity204).offset(skip).limit(limit).all()
+
+    def get_entity_204_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity204]:
+        return self.db.query(DashboardsModelEntity204).filter(DashboardsModelEntity204.id == entity_id).first()
+
+    def create_entity_204(self, payload: DashboardsSchemaEntity204Create) -> DashboardsModelEntity204:
+        db_obj = DashboardsModelEntity204(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_204(self, entity_id: int, payload: DashboardsSchemaEntity204Update) -> Optional[DashboardsModelEntity204]:
+        db_obj = self.get_entity_204_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_204(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_204_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_205_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity205]:
+        return self.db.query(DashboardsModelEntity205).offset(skip).limit(limit).all()
+
+    def get_entity_205_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity205]:
+        return self.db.query(DashboardsModelEntity205).filter(DashboardsModelEntity205.id == entity_id).first()
+
+    def create_entity_205(self, payload: DashboardsSchemaEntity205Create) -> DashboardsModelEntity205:
+        db_obj = DashboardsModelEntity205(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_205(self, entity_id: int, payload: DashboardsSchemaEntity205Update) -> Optional[DashboardsModelEntity205]:
+        db_obj = self.get_entity_205_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_205(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_205_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_206_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity206]:
+        return self.db.query(DashboardsModelEntity206).offset(skip).limit(limit).all()
+
+    def get_entity_206_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity206]:
+        return self.db.query(DashboardsModelEntity206).filter(DashboardsModelEntity206.id == entity_id).first()
+
+    def create_entity_206(self, payload: DashboardsSchemaEntity206Create) -> DashboardsModelEntity206:
+        db_obj = DashboardsModelEntity206(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_206(self, entity_id: int, payload: DashboardsSchemaEntity206Update) -> Optional[DashboardsModelEntity206]:
+        db_obj = self.get_entity_206_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_206(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_206_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_207_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity207]:
+        return self.db.query(DashboardsModelEntity207).offset(skip).limit(limit).all()
+
+    def get_entity_207_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity207]:
+        return self.db.query(DashboardsModelEntity207).filter(DashboardsModelEntity207.id == entity_id).first()
+
+    def create_entity_207(self, payload: DashboardsSchemaEntity207Create) -> DashboardsModelEntity207:
+        db_obj = DashboardsModelEntity207(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_207(self, entity_id: int, payload: DashboardsSchemaEntity207Update) -> Optional[DashboardsModelEntity207]:
+        db_obj = self.get_entity_207_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_207(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_207_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_208_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity208]:
+        return self.db.query(DashboardsModelEntity208).offset(skip).limit(limit).all()
+
+    def get_entity_208_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity208]:
+        return self.db.query(DashboardsModelEntity208).filter(DashboardsModelEntity208.id == entity_id).first()
+
+    def create_entity_208(self, payload: DashboardsSchemaEntity208Create) -> DashboardsModelEntity208:
+        db_obj = DashboardsModelEntity208(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_208(self, entity_id: int, payload: DashboardsSchemaEntity208Update) -> Optional[DashboardsModelEntity208]:
+        db_obj = self.get_entity_208_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_208(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_208_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_209_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity209]:
+        return self.db.query(DashboardsModelEntity209).offset(skip).limit(limit).all()
+
+    def get_entity_209_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity209]:
+        return self.db.query(DashboardsModelEntity209).filter(DashboardsModelEntity209.id == entity_id).first()
+
+    def create_entity_209(self, payload: DashboardsSchemaEntity209Create) -> DashboardsModelEntity209:
+        db_obj = DashboardsModelEntity209(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_209(self, entity_id: int, payload: DashboardsSchemaEntity209Update) -> Optional[DashboardsModelEntity209]:
+        db_obj = self.get_entity_209_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_209(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_209_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_210_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity210]:
+        return self.db.query(DashboardsModelEntity210).offset(skip).limit(limit).all()
+
+    def get_entity_210_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity210]:
+        return self.db.query(DashboardsModelEntity210).filter(DashboardsModelEntity210.id == entity_id).first()
+
+    def create_entity_210(self, payload: DashboardsSchemaEntity210Create) -> DashboardsModelEntity210:
+        db_obj = DashboardsModelEntity210(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_210(self, entity_id: int, payload: DashboardsSchemaEntity210Update) -> Optional[DashboardsModelEntity210]:
+        db_obj = self.get_entity_210_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_210(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_210_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_211_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity211]:
+        return self.db.query(DashboardsModelEntity211).offset(skip).limit(limit).all()
+
+    def get_entity_211_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity211]:
+        return self.db.query(DashboardsModelEntity211).filter(DashboardsModelEntity211.id == entity_id).first()
+
+    def create_entity_211(self, payload: DashboardsSchemaEntity211Create) -> DashboardsModelEntity211:
+        db_obj = DashboardsModelEntity211(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_211(self, entity_id: int, payload: DashboardsSchemaEntity211Update) -> Optional[DashboardsModelEntity211]:
+        db_obj = self.get_entity_211_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_211(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_211_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_212_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity212]:
+        return self.db.query(DashboardsModelEntity212).offset(skip).limit(limit).all()
+
+    def get_entity_212_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity212]:
+        return self.db.query(DashboardsModelEntity212).filter(DashboardsModelEntity212.id == entity_id).first()
+
+    def create_entity_212(self, payload: DashboardsSchemaEntity212Create) -> DashboardsModelEntity212:
+        db_obj = DashboardsModelEntity212(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_212(self, entity_id: int, payload: DashboardsSchemaEntity212Update) -> Optional[DashboardsModelEntity212]:
+        db_obj = self.get_entity_212_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_212(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_212_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_213_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity213]:
+        return self.db.query(DashboardsModelEntity213).offset(skip).limit(limit).all()
+
+    def get_entity_213_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity213]:
+        return self.db.query(DashboardsModelEntity213).filter(DashboardsModelEntity213.id == entity_id).first()
+
+    def create_entity_213(self, payload: DashboardsSchemaEntity213Create) -> DashboardsModelEntity213:
+        db_obj = DashboardsModelEntity213(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_213(self, entity_id: int, payload: DashboardsSchemaEntity213Update) -> Optional[DashboardsModelEntity213]:
+        db_obj = self.get_entity_213_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_213(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_213_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_214_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity214]:
+        return self.db.query(DashboardsModelEntity214).offset(skip).limit(limit).all()
+
+    def get_entity_214_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity214]:
+        return self.db.query(DashboardsModelEntity214).filter(DashboardsModelEntity214.id == entity_id).first()
+
+    def create_entity_214(self, payload: DashboardsSchemaEntity214Create) -> DashboardsModelEntity214:
+        db_obj = DashboardsModelEntity214(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_214(self, entity_id: int, payload: DashboardsSchemaEntity214Update) -> Optional[DashboardsModelEntity214]:
+        db_obj = self.get_entity_214_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_214(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_214_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_215_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity215]:
+        return self.db.query(DashboardsModelEntity215).offset(skip).limit(limit).all()
+
+    def get_entity_215_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity215]:
+        return self.db.query(DashboardsModelEntity215).filter(DashboardsModelEntity215.id == entity_id).first()
+
+    def create_entity_215(self, payload: DashboardsSchemaEntity215Create) -> DashboardsModelEntity215:
+        db_obj = DashboardsModelEntity215(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_215(self, entity_id: int, payload: DashboardsSchemaEntity215Update) -> Optional[DashboardsModelEntity215]:
+        db_obj = self.get_entity_215_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_215(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_215_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_216_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity216]:
+        return self.db.query(DashboardsModelEntity216).offset(skip).limit(limit).all()
+
+    def get_entity_216_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity216]:
+        return self.db.query(DashboardsModelEntity216).filter(DashboardsModelEntity216.id == entity_id).first()
+
+    def create_entity_216(self, payload: DashboardsSchemaEntity216Create) -> DashboardsModelEntity216:
+        db_obj = DashboardsModelEntity216(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_216(self, entity_id: int, payload: DashboardsSchemaEntity216Update) -> Optional[DashboardsModelEntity216]:
+        db_obj = self.get_entity_216_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_216(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_216_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_217_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity217]:
+        return self.db.query(DashboardsModelEntity217).offset(skip).limit(limit).all()
+
+    def get_entity_217_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity217]:
+        return self.db.query(DashboardsModelEntity217).filter(DashboardsModelEntity217.id == entity_id).first()
+
+    def create_entity_217(self, payload: DashboardsSchemaEntity217Create) -> DashboardsModelEntity217:
+        db_obj = DashboardsModelEntity217(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_217(self, entity_id: int, payload: DashboardsSchemaEntity217Update) -> Optional[DashboardsModelEntity217]:
+        db_obj = self.get_entity_217_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_217(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_217_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_218_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity218]:
+        return self.db.query(DashboardsModelEntity218).offset(skip).limit(limit).all()
+
+    def get_entity_218_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity218]:
+        return self.db.query(DashboardsModelEntity218).filter(DashboardsModelEntity218.id == entity_id).first()
+
+    def create_entity_218(self, payload: DashboardsSchemaEntity218Create) -> DashboardsModelEntity218:
+        db_obj = DashboardsModelEntity218(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_218(self, entity_id: int, payload: DashboardsSchemaEntity218Update) -> Optional[DashboardsModelEntity218]:
+        db_obj = self.get_entity_218_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_218(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_218_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_219_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity219]:
+        return self.db.query(DashboardsModelEntity219).offset(skip).limit(limit).all()
+
+    def get_entity_219_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity219]:
+        return self.db.query(DashboardsModelEntity219).filter(DashboardsModelEntity219.id == entity_id).first()
+
+    def create_entity_219(self, payload: DashboardsSchemaEntity219Create) -> DashboardsModelEntity219:
+        db_obj = DashboardsModelEntity219(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_219(self, entity_id: int, payload: DashboardsSchemaEntity219Update) -> Optional[DashboardsModelEntity219]:
+        db_obj = self.get_entity_219_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_219(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_219_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_220_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity220]:
+        return self.db.query(DashboardsModelEntity220).offset(skip).limit(limit).all()
+
+    def get_entity_220_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity220]:
+        return self.db.query(DashboardsModelEntity220).filter(DashboardsModelEntity220.id == entity_id).first()
+
+    def create_entity_220(self, payload: DashboardsSchemaEntity220Create) -> DashboardsModelEntity220:
+        db_obj = DashboardsModelEntity220(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_220(self, entity_id: int, payload: DashboardsSchemaEntity220Update) -> Optional[DashboardsModelEntity220]:
+        db_obj = self.get_entity_220_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_220(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_220_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_221_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity221]:
+        return self.db.query(DashboardsModelEntity221).offset(skip).limit(limit).all()
+
+    def get_entity_221_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity221]:
+        return self.db.query(DashboardsModelEntity221).filter(DashboardsModelEntity221.id == entity_id).first()
+
+    def create_entity_221(self, payload: DashboardsSchemaEntity221Create) -> DashboardsModelEntity221:
+        db_obj = DashboardsModelEntity221(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_221(self, entity_id: int, payload: DashboardsSchemaEntity221Update) -> Optional[DashboardsModelEntity221]:
+        db_obj = self.get_entity_221_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_221(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_221_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_222_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity222]:
+        return self.db.query(DashboardsModelEntity222).offset(skip).limit(limit).all()
+
+    def get_entity_222_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity222]:
+        return self.db.query(DashboardsModelEntity222).filter(DashboardsModelEntity222.id == entity_id).first()
+
+    def create_entity_222(self, payload: DashboardsSchemaEntity222Create) -> DashboardsModelEntity222:
+        db_obj = DashboardsModelEntity222(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_222(self, entity_id: int, payload: DashboardsSchemaEntity222Update) -> Optional[DashboardsModelEntity222]:
+        db_obj = self.get_entity_222_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_222(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_222_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_223_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity223]:
+        return self.db.query(DashboardsModelEntity223).offset(skip).limit(limit).all()
+
+    def get_entity_223_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity223]:
+        return self.db.query(DashboardsModelEntity223).filter(DashboardsModelEntity223.id == entity_id).first()
+
+    def create_entity_223(self, payload: DashboardsSchemaEntity223Create) -> DashboardsModelEntity223:
+        db_obj = DashboardsModelEntity223(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_223(self, entity_id: int, payload: DashboardsSchemaEntity223Update) -> Optional[DashboardsModelEntity223]:
+        db_obj = self.get_entity_223_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_223(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_223_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_224_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity224]:
+        return self.db.query(DashboardsModelEntity224).offset(skip).limit(limit).all()
+
+    def get_entity_224_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity224]:
+        return self.db.query(DashboardsModelEntity224).filter(DashboardsModelEntity224.id == entity_id).first()
+
+    def create_entity_224(self, payload: DashboardsSchemaEntity224Create) -> DashboardsModelEntity224:
+        db_obj = DashboardsModelEntity224(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_224(self, entity_id: int, payload: DashboardsSchemaEntity224Update) -> Optional[DashboardsModelEntity224]:
+        db_obj = self.get_entity_224_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_224(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_224_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_225_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity225]:
+        return self.db.query(DashboardsModelEntity225).offset(skip).limit(limit).all()
+
+    def get_entity_225_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity225]:
+        return self.db.query(DashboardsModelEntity225).filter(DashboardsModelEntity225.id == entity_id).first()
+
+    def create_entity_225(self, payload: DashboardsSchemaEntity225Create) -> DashboardsModelEntity225:
+        db_obj = DashboardsModelEntity225(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_225(self, entity_id: int, payload: DashboardsSchemaEntity225Update) -> Optional[DashboardsModelEntity225]:
+        db_obj = self.get_entity_225_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_225(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_225_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_226_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity226]:
+        return self.db.query(DashboardsModelEntity226).offset(skip).limit(limit).all()
+
+    def get_entity_226_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity226]:
+        return self.db.query(DashboardsModelEntity226).filter(DashboardsModelEntity226.id == entity_id).first()
+
+    def create_entity_226(self, payload: DashboardsSchemaEntity226Create) -> DashboardsModelEntity226:
+        db_obj = DashboardsModelEntity226(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_226(self, entity_id: int, payload: DashboardsSchemaEntity226Update) -> Optional[DashboardsModelEntity226]:
+        db_obj = self.get_entity_226_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_226(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_226_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_227_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity227]:
+        return self.db.query(DashboardsModelEntity227).offset(skip).limit(limit).all()
+
+    def get_entity_227_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity227]:
+        return self.db.query(DashboardsModelEntity227).filter(DashboardsModelEntity227.id == entity_id).first()
+
+    def create_entity_227(self, payload: DashboardsSchemaEntity227Create) -> DashboardsModelEntity227:
+        db_obj = DashboardsModelEntity227(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_227(self, entity_id: int, payload: DashboardsSchemaEntity227Update) -> Optional[DashboardsModelEntity227]:
+        db_obj = self.get_entity_227_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_227(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_227_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_228_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity228]:
+        return self.db.query(DashboardsModelEntity228).offset(skip).limit(limit).all()
+
+    def get_entity_228_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity228]:
+        return self.db.query(DashboardsModelEntity228).filter(DashboardsModelEntity228.id == entity_id).first()
+
+    def create_entity_228(self, payload: DashboardsSchemaEntity228Create) -> DashboardsModelEntity228:
+        db_obj = DashboardsModelEntity228(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_228(self, entity_id: int, payload: DashboardsSchemaEntity228Update) -> Optional[DashboardsModelEntity228]:
+        db_obj = self.get_entity_228_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_228(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_228_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_229_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity229]:
+        return self.db.query(DashboardsModelEntity229).offset(skip).limit(limit).all()
+
+    def get_entity_229_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity229]:
+        return self.db.query(DashboardsModelEntity229).filter(DashboardsModelEntity229.id == entity_id).first()
+
+    def create_entity_229(self, payload: DashboardsSchemaEntity229Create) -> DashboardsModelEntity229:
+        db_obj = DashboardsModelEntity229(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_229(self, entity_id: int, payload: DashboardsSchemaEntity229Update) -> Optional[DashboardsModelEntity229]:
+        db_obj = self.get_entity_229_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_229(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_229_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_230_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity230]:
+        return self.db.query(DashboardsModelEntity230).offset(skip).limit(limit).all()
+
+    def get_entity_230_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity230]:
+        return self.db.query(DashboardsModelEntity230).filter(DashboardsModelEntity230.id == entity_id).first()
+
+    def create_entity_230(self, payload: DashboardsSchemaEntity230Create) -> DashboardsModelEntity230:
+        db_obj = DashboardsModelEntity230(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_230(self, entity_id: int, payload: DashboardsSchemaEntity230Update) -> Optional[DashboardsModelEntity230]:
+        db_obj = self.get_entity_230_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_230(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_230_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_231_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity231]:
+        return self.db.query(DashboardsModelEntity231).offset(skip).limit(limit).all()
+
+    def get_entity_231_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity231]:
+        return self.db.query(DashboardsModelEntity231).filter(DashboardsModelEntity231.id == entity_id).first()
+
+    def create_entity_231(self, payload: DashboardsSchemaEntity231Create) -> DashboardsModelEntity231:
+        db_obj = DashboardsModelEntity231(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_231(self, entity_id: int, payload: DashboardsSchemaEntity231Update) -> Optional[DashboardsModelEntity231]:
+        db_obj = self.get_entity_231_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_231(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_231_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_232_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity232]:
+        return self.db.query(DashboardsModelEntity232).offset(skip).limit(limit).all()
+
+    def get_entity_232_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity232]:
+        return self.db.query(DashboardsModelEntity232).filter(DashboardsModelEntity232.id == entity_id).first()
+
+    def create_entity_232(self, payload: DashboardsSchemaEntity232Create) -> DashboardsModelEntity232:
+        db_obj = DashboardsModelEntity232(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_232(self, entity_id: int, payload: DashboardsSchemaEntity232Update) -> Optional[DashboardsModelEntity232]:
+        db_obj = self.get_entity_232_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_232(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_232_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_233_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity233]:
+        return self.db.query(DashboardsModelEntity233).offset(skip).limit(limit).all()
+
+    def get_entity_233_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity233]:
+        return self.db.query(DashboardsModelEntity233).filter(DashboardsModelEntity233.id == entity_id).first()
+
+    def create_entity_233(self, payload: DashboardsSchemaEntity233Create) -> DashboardsModelEntity233:
+        db_obj = DashboardsModelEntity233(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_233(self, entity_id: int, payload: DashboardsSchemaEntity233Update) -> Optional[DashboardsModelEntity233]:
+        db_obj = self.get_entity_233_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_233(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_233_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_234_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity234]:
+        return self.db.query(DashboardsModelEntity234).offset(skip).limit(limit).all()
+
+    def get_entity_234_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity234]:
+        return self.db.query(DashboardsModelEntity234).filter(DashboardsModelEntity234.id == entity_id).first()
+
+    def create_entity_234(self, payload: DashboardsSchemaEntity234Create) -> DashboardsModelEntity234:
+        db_obj = DashboardsModelEntity234(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_234(self, entity_id: int, payload: DashboardsSchemaEntity234Update) -> Optional[DashboardsModelEntity234]:
+        db_obj = self.get_entity_234_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_234(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_234_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_235_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity235]:
+        return self.db.query(DashboardsModelEntity235).offset(skip).limit(limit).all()
+
+    def get_entity_235_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity235]:
+        return self.db.query(DashboardsModelEntity235).filter(DashboardsModelEntity235.id == entity_id).first()
+
+    def create_entity_235(self, payload: DashboardsSchemaEntity235Create) -> DashboardsModelEntity235:
+        db_obj = DashboardsModelEntity235(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_235(self, entity_id: int, payload: DashboardsSchemaEntity235Update) -> Optional[DashboardsModelEntity235]:
+        db_obj = self.get_entity_235_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_235(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_235_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_236_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity236]:
+        return self.db.query(DashboardsModelEntity236).offset(skip).limit(limit).all()
+
+    def get_entity_236_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity236]:
+        return self.db.query(DashboardsModelEntity236).filter(DashboardsModelEntity236.id == entity_id).first()
+
+    def create_entity_236(self, payload: DashboardsSchemaEntity236Create) -> DashboardsModelEntity236:
+        db_obj = DashboardsModelEntity236(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_236(self, entity_id: int, payload: DashboardsSchemaEntity236Update) -> Optional[DashboardsModelEntity236]:
+        db_obj = self.get_entity_236_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_236(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_236_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_237_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity237]:
+        return self.db.query(DashboardsModelEntity237).offset(skip).limit(limit).all()
+
+    def get_entity_237_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity237]:
+        return self.db.query(DashboardsModelEntity237).filter(DashboardsModelEntity237.id == entity_id).first()
+
+    def create_entity_237(self, payload: DashboardsSchemaEntity237Create) -> DashboardsModelEntity237:
+        db_obj = DashboardsModelEntity237(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_237(self, entity_id: int, payload: DashboardsSchemaEntity237Update) -> Optional[DashboardsModelEntity237]:
+        db_obj = self.get_entity_237_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_237(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_237_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_238_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity238]:
+        return self.db.query(DashboardsModelEntity238).offset(skip).limit(limit).all()
+
+    def get_entity_238_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity238]:
+        return self.db.query(DashboardsModelEntity238).filter(DashboardsModelEntity238.id == entity_id).first()
+
+    def create_entity_238(self, payload: DashboardsSchemaEntity238Create) -> DashboardsModelEntity238:
+        db_obj = DashboardsModelEntity238(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_238(self, entity_id: int, payload: DashboardsSchemaEntity238Update) -> Optional[DashboardsModelEntity238]:
+        db_obj = self.get_entity_238_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_238(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_238_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_239_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity239]:
+        return self.db.query(DashboardsModelEntity239).offset(skip).limit(limit).all()
+
+    def get_entity_239_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity239]:
+        return self.db.query(DashboardsModelEntity239).filter(DashboardsModelEntity239.id == entity_id).first()
+
+    def create_entity_239(self, payload: DashboardsSchemaEntity239Create) -> DashboardsModelEntity239:
+        db_obj = DashboardsModelEntity239(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_239(self, entity_id: int, payload: DashboardsSchemaEntity239Update) -> Optional[DashboardsModelEntity239]:
+        db_obj = self.get_entity_239_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_239(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_239_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_240_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity240]:
+        return self.db.query(DashboardsModelEntity240).offset(skip).limit(limit).all()
+
+    def get_entity_240_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity240]:
+        return self.db.query(DashboardsModelEntity240).filter(DashboardsModelEntity240.id == entity_id).first()
+
+    def create_entity_240(self, payload: DashboardsSchemaEntity240Create) -> DashboardsModelEntity240:
+        db_obj = DashboardsModelEntity240(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_240(self, entity_id: int, payload: DashboardsSchemaEntity240Update) -> Optional[DashboardsModelEntity240]:
+        db_obj = self.get_entity_240_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_240(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_240_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_241_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity241]:
+        return self.db.query(DashboardsModelEntity241).offset(skip).limit(limit).all()
+
+    def get_entity_241_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity241]:
+        return self.db.query(DashboardsModelEntity241).filter(DashboardsModelEntity241.id == entity_id).first()
+
+    def create_entity_241(self, payload: DashboardsSchemaEntity241Create) -> DashboardsModelEntity241:
+        db_obj = DashboardsModelEntity241(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_241(self, entity_id: int, payload: DashboardsSchemaEntity241Update) -> Optional[DashboardsModelEntity241]:
+        db_obj = self.get_entity_241_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_241(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_241_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_242_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity242]:
+        return self.db.query(DashboardsModelEntity242).offset(skip).limit(limit).all()
+
+    def get_entity_242_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity242]:
+        return self.db.query(DashboardsModelEntity242).filter(DashboardsModelEntity242.id == entity_id).first()
+
+    def create_entity_242(self, payload: DashboardsSchemaEntity242Create) -> DashboardsModelEntity242:
+        db_obj = DashboardsModelEntity242(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_242(self, entity_id: int, payload: DashboardsSchemaEntity242Update) -> Optional[DashboardsModelEntity242]:
+        db_obj = self.get_entity_242_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_242(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_242_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_243_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity243]:
+        return self.db.query(DashboardsModelEntity243).offset(skip).limit(limit).all()
+
+    def get_entity_243_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity243]:
+        return self.db.query(DashboardsModelEntity243).filter(DashboardsModelEntity243.id == entity_id).first()
+
+    def create_entity_243(self, payload: DashboardsSchemaEntity243Create) -> DashboardsModelEntity243:
+        db_obj = DashboardsModelEntity243(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_243(self, entity_id: int, payload: DashboardsSchemaEntity243Update) -> Optional[DashboardsModelEntity243]:
+        db_obj = self.get_entity_243_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_243(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_243_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_244_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity244]:
+        return self.db.query(DashboardsModelEntity244).offset(skip).limit(limit).all()
+
+    def get_entity_244_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity244]:
+        return self.db.query(DashboardsModelEntity244).filter(DashboardsModelEntity244.id == entity_id).first()
+
+    def create_entity_244(self, payload: DashboardsSchemaEntity244Create) -> DashboardsModelEntity244:
+        db_obj = DashboardsModelEntity244(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_244(self, entity_id: int, payload: DashboardsSchemaEntity244Update) -> Optional[DashboardsModelEntity244]:
+        db_obj = self.get_entity_244_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_244(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_244_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_245_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity245]:
+        return self.db.query(DashboardsModelEntity245).offset(skip).limit(limit).all()
+
+    def get_entity_245_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity245]:
+        return self.db.query(DashboardsModelEntity245).filter(DashboardsModelEntity245.id == entity_id).first()
+
+    def create_entity_245(self, payload: DashboardsSchemaEntity245Create) -> DashboardsModelEntity245:
+        db_obj = DashboardsModelEntity245(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_245(self, entity_id: int, payload: DashboardsSchemaEntity245Update) -> Optional[DashboardsModelEntity245]:
+        db_obj = self.get_entity_245_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_245(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_245_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_246_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity246]:
+        return self.db.query(DashboardsModelEntity246).offset(skip).limit(limit).all()
+
+    def get_entity_246_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity246]:
+        return self.db.query(DashboardsModelEntity246).filter(DashboardsModelEntity246.id == entity_id).first()
+
+    def create_entity_246(self, payload: DashboardsSchemaEntity246Create) -> DashboardsModelEntity246:
+        db_obj = DashboardsModelEntity246(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_246(self, entity_id: int, payload: DashboardsSchemaEntity246Update) -> Optional[DashboardsModelEntity246]:
+        db_obj = self.get_entity_246_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_246(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_246_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_247_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity247]:
+        return self.db.query(DashboardsModelEntity247).offset(skip).limit(limit).all()
+
+    def get_entity_247_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity247]:
+        return self.db.query(DashboardsModelEntity247).filter(DashboardsModelEntity247.id == entity_id).first()
+
+    def create_entity_247(self, payload: DashboardsSchemaEntity247Create) -> DashboardsModelEntity247:
+        db_obj = DashboardsModelEntity247(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_247(self, entity_id: int, payload: DashboardsSchemaEntity247Update) -> Optional[DashboardsModelEntity247]:
+        db_obj = self.get_entity_247_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_247(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_247_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_248_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity248]:
+        return self.db.query(DashboardsModelEntity248).offset(skip).limit(limit).all()
+
+    def get_entity_248_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity248]:
+        return self.db.query(DashboardsModelEntity248).filter(DashboardsModelEntity248.id == entity_id).first()
+
+    def create_entity_248(self, payload: DashboardsSchemaEntity248Create) -> DashboardsModelEntity248:
+        db_obj = DashboardsModelEntity248(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_248(self, entity_id: int, payload: DashboardsSchemaEntity248Update) -> Optional[DashboardsModelEntity248]:
+        db_obj = self.get_entity_248_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_248(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_248_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_249_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity249]:
+        return self.db.query(DashboardsModelEntity249).offset(skip).limit(limit).all()
+
+    def get_entity_249_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity249]:
+        return self.db.query(DashboardsModelEntity249).filter(DashboardsModelEntity249.id == entity_id).first()
+
+    def create_entity_249(self, payload: DashboardsSchemaEntity249Create) -> DashboardsModelEntity249:
+        db_obj = DashboardsModelEntity249(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_249(self, entity_id: int, payload: DashboardsSchemaEntity249Update) -> Optional[DashboardsModelEntity249]:
+        db_obj = self.get_entity_249_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_249(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_249_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+
+    def get_entity_250_list(self, skip: int = 0, limit: int = 100) -> List[DashboardsModelEntity250]:
+        return self.db.query(DashboardsModelEntity250).offset(skip).limit(limit).all()
+
+    def get_entity_250_by_id(self, entity_id: int) -> Optional[DashboardsModelEntity250]:
+        return self.db.query(DashboardsModelEntity250).filter(DashboardsModelEntity250.id == entity_id).first()
+
+    def create_entity_250(self, payload: DashboardsSchemaEntity250Create) -> DashboardsModelEntity250:
+        db_obj = DashboardsModelEntity250(
+            entity_code=payload.entity_code,
+            name=payload.name,
+            category=payload.category,
+            description=payload.description,
+            value_amount=payload.value_amount,
+            is_active=payload.is_active,
+            attributes_json=payload.attributes_json or {}
+        )
+        self.db.add(db_obj)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def update_entity_250(self, entity_id: int, payload: DashboardsSchemaEntity250Update) -> Optional[DashboardsModelEntity250]:
+        db_obj = self.get_entity_250_by_id(entity_id)
+        if not db_obj:
+            return None
+        data = payload.model_dump(exclude_unset=True)
+        for k, v in data.items():
+            setattr(db_obj, k, v)
+        self.db.commit()
+        self.db.refresh(db_obj)
+        return db_obj
+
+    def delete_entity_250(self, entity_id: int) -> bool:
+        db_obj = self.get_entity_250_by_id(entity_id)
+        if not db_obj:
+            return False
+        self.db.delete(db_obj)
+        self.db.commit()
+        return True
+

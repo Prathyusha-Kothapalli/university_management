@@ -2006,3 +2006,503 @@ class HrRepository200:
     def find_by_code(self, code: str) -> Optional[HrModelEntity200]:
         return self.db.query(HrModelEntity200).filter(HrModelEntity200.entity_code == code).first()
 
+class HrRepository201:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity201]:
+        return self.db.query(HrModelEntity201).filter(HrModelEntity201.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity201]:
+        return self.db.query(HrModelEntity201).filter(HrModelEntity201.entity_code == code).first()
+
+class HrRepository202:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity202]:
+        return self.db.query(HrModelEntity202).filter(HrModelEntity202.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity202]:
+        return self.db.query(HrModelEntity202).filter(HrModelEntity202.entity_code == code).first()
+
+class HrRepository203:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity203]:
+        return self.db.query(HrModelEntity203).filter(HrModelEntity203.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity203]:
+        return self.db.query(HrModelEntity203).filter(HrModelEntity203.entity_code == code).first()
+
+class HrRepository204:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity204]:
+        return self.db.query(HrModelEntity204).filter(HrModelEntity204.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity204]:
+        return self.db.query(HrModelEntity204).filter(HrModelEntity204.entity_code == code).first()
+
+class HrRepository205:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity205]:
+        return self.db.query(HrModelEntity205).filter(HrModelEntity205.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity205]:
+        return self.db.query(HrModelEntity205).filter(HrModelEntity205.entity_code == code).first()
+
+class HrRepository206:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity206]:
+        return self.db.query(HrModelEntity206).filter(HrModelEntity206.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity206]:
+        return self.db.query(HrModelEntity206).filter(HrModelEntity206.entity_code == code).first()
+
+class HrRepository207:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity207]:
+        return self.db.query(HrModelEntity207).filter(HrModelEntity207.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity207]:
+        return self.db.query(HrModelEntity207).filter(HrModelEntity207.entity_code == code).first()
+
+class HrRepository208:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity208]:
+        return self.db.query(HrModelEntity208).filter(HrModelEntity208.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity208]:
+        return self.db.query(HrModelEntity208).filter(HrModelEntity208.entity_code == code).first()
+
+class HrRepository209:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity209]:
+        return self.db.query(HrModelEntity209).filter(HrModelEntity209.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity209]:
+        return self.db.query(HrModelEntity209).filter(HrModelEntity209.entity_code == code).first()
+
+class HrRepository210:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity210]:
+        return self.db.query(HrModelEntity210).filter(HrModelEntity210.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity210]:
+        return self.db.query(HrModelEntity210).filter(HrModelEntity210.entity_code == code).first()
+
+class HrRepository211:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity211]:
+        return self.db.query(HrModelEntity211).filter(HrModelEntity211.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity211]:
+        return self.db.query(HrModelEntity211).filter(HrModelEntity211.entity_code == code).first()
+
+class HrRepository212:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity212]:
+        return self.db.query(HrModelEntity212).filter(HrModelEntity212.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity212]:
+        return self.db.query(HrModelEntity212).filter(HrModelEntity212.entity_code == code).first()
+
+class HrRepository213:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity213]:
+        return self.db.query(HrModelEntity213).filter(HrModelEntity213.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity213]:
+        return self.db.query(HrModelEntity213).filter(HrModelEntity213.entity_code == code).first()
+
+class HrRepository214:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity214]:
+        return self.db.query(HrModelEntity214).filter(HrModelEntity214.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity214]:
+        return self.db.query(HrModelEntity214).filter(HrModelEntity214.entity_code == code).first()
+
+class HrRepository215:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity215]:
+        return self.db.query(HrModelEntity215).filter(HrModelEntity215.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity215]:
+        return self.db.query(HrModelEntity215).filter(HrModelEntity215.entity_code == code).first()
+
+class HrRepository216:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity216]:
+        return self.db.query(HrModelEntity216).filter(HrModelEntity216.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity216]:
+        return self.db.query(HrModelEntity216).filter(HrModelEntity216.entity_code == code).first()
+
+class HrRepository217:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity217]:
+        return self.db.query(HrModelEntity217).filter(HrModelEntity217.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity217]:
+        return self.db.query(HrModelEntity217).filter(HrModelEntity217.entity_code == code).first()
+
+class HrRepository218:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity218]:
+        return self.db.query(HrModelEntity218).filter(HrModelEntity218.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity218]:
+        return self.db.query(HrModelEntity218).filter(HrModelEntity218.entity_code == code).first()
+
+class HrRepository219:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity219]:
+        return self.db.query(HrModelEntity219).filter(HrModelEntity219.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity219]:
+        return self.db.query(HrModelEntity219).filter(HrModelEntity219.entity_code == code).first()
+
+class HrRepository220:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity220]:
+        return self.db.query(HrModelEntity220).filter(HrModelEntity220.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity220]:
+        return self.db.query(HrModelEntity220).filter(HrModelEntity220.entity_code == code).first()
+
+class HrRepository221:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity221]:
+        return self.db.query(HrModelEntity221).filter(HrModelEntity221.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity221]:
+        return self.db.query(HrModelEntity221).filter(HrModelEntity221.entity_code == code).first()
+
+class HrRepository222:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity222]:
+        return self.db.query(HrModelEntity222).filter(HrModelEntity222.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity222]:
+        return self.db.query(HrModelEntity222).filter(HrModelEntity222.entity_code == code).first()
+
+class HrRepository223:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity223]:
+        return self.db.query(HrModelEntity223).filter(HrModelEntity223.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity223]:
+        return self.db.query(HrModelEntity223).filter(HrModelEntity223.entity_code == code).first()
+
+class HrRepository224:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity224]:
+        return self.db.query(HrModelEntity224).filter(HrModelEntity224.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity224]:
+        return self.db.query(HrModelEntity224).filter(HrModelEntity224.entity_code == code).first()
+
+class HrRepository225:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity225]:
+        return self.db.query(HrModelEntity225).filter(HrModelEntity225.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity225]:
+        return self.db.query(HrModelEntity225).filter(HrModelEntity225.entity_code == code).first()
+
+class HrRepository226:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity226]:
+        return self.db.query(HrModelEntity226).filter(HrModelEntity226.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity226]:
+        return self.db.query(HrModelEntity226).filter(HrModelEntity226.entity_code == code).first()
+
+class HrRepository227:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity227]:
+        return self.db.query(HrModelEntity227).filter(HrModelEntity227.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity227]:
+        return self.db.query(HrModelEntity227).filter(HrModelEntity227.entity_code == code).first()
+
+class HrRepository228:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity228]:
+        return self.db.query(HrModelEntity228).filter(HrModelEntity228.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity228]:
+        return self.db.query(HrModelEntity228).filter(HrModelEntity228.entity_code == code).first()
+
+class HrRepository229:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity229]:
+        return self.db.query(HrModelEntity229).filter(HrModelEntity229.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity229]:
+        return self.db.query(HrModelEntity229).filter(HrModelEntity229.entity_code == code).first()
+
+class HrRepository230:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity230]:
+        return self.db.query(HrModelEntity230).filter(HrModelEntity230.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity230]:
+        return self.db.query(HrModelEntity230).filter(HrModelEntity230.entity_code == code).first()
+
+class HrRepository231:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity231]:
+        return self.db.query(HrModelEntity231).filter(HrModelEntity231.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity231]:
+        return self.db.query(HrModelEntity231).filter(HrModelEntity231.entity_code == code).first()
+
+class HrRepository232:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity232]:
+        return self.db.query(HrModelEntity232).filter(HrModelEntity232.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity232]:
+        return self.db.query(HrModelEntity232).filter(HrModelEntity232.entity_code == code).first()
+
+class HrRepository233:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity233]:
+        return self.db.query(HrModelEntity233).filter(HrModelEntity233.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity233]:
+        return self.db.query(HrModelEntity233).filter(HrModelEntity233.entity_code == code).first()
+
+class HrRepository234:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity234]:
+        return self.db.query(HrModelEntity234).filter(HrModelEntity234.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity234]:
+        return self.db.query(HrModelEntity234).filter(HrModelEntity234.entity_code == code).first()
+
+class HrRepository235:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity235]:
+        return self.db.query(HrModelEntity235).filter(HrModelEntity235.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity235]:
+        return self.db.query(HrModelEntity235).filter(HrModelEntity235.entity_code == code).first()
+
+class HrRepository236:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity236]:
+        return self.db.query(HrModelEntity236).filter(HrModelEntity236.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity236]:
+        return self.db.query(HrModelEntity236).filter(HrModelEntity236.entity_code == code).first()
+
+class HrRepository237:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity237]:
+        return self.db.query(HrModelEntity237).filter(HrModelEntity237.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity237]:
+        return self.db.query(HrModelEntity237).filter(HrModelEntity237.entity_code == code).first()
+
+class HrRepository238:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity238]:
+        return self.db.query(HrModelEntity238).filter(HrModelEntity238.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity238]:
+        return self.db.query(HrModelEntity238).filter(HrModelEntity238.entity_code == code).first()
+
+class HrRepository239:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity239]:
+        return self.db.query(HrModelEntity239).filter(HrModelEntity239.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity239]:
+        return self.db.query(HrModelEntity239).filter(HrModelEntity239.entity_code == code).first()
+
+class HrRepository240:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity240]:
+        return self.db.query(HrModelEntity240).filter(HrModelEntity240.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity240]:
+        return self.db.query(HrModelEntity240).filter(HrModelEntity240.entity_code == code).first()
+
+class HrRepository241:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity241]:
+        return self.db.query(HrModelEntity241).filter(HrModelEntity241.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity241]:
+        return self.db.query(HrModelEntity241).filter(HrModelEntity241.entity_code == code).first()
+
+class HrRepository242:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity242]:
+        return self.db.query(HrModelEntity242).filter(HrModelEntity242.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity242]:
+        return self.db.query(HrModelEntity242).filter(HrModelEntity242.entity_code == code).first()
+
+class HrRepository243:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity243]:
+        return self.db.query(HrModelEntity243).filter(HrModelEntity243.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity243]:
+        return self.db.query(HrModelEntity243).filter(HrModelEntity243.entity_code == code).first()
+
+class HrRepository244:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity244]:
+        return self.db.query(HrModelEntity244).filter(HrModelEntity244.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity244]:
+        return self.db.query(HrModelEntity244).filter(HrModelEntity244.entity_code == code).first()
+
+class HrRepository245:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity245]:
+        return self.db.query(HrModelEntity245).filter(HrModelEntity245.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity245]:
+        return self.db.query(HrModelEntity245).filter(HrModelEntity245.entity_code == code).first()
+
+class HrRepository246:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity246]:
+        return self.db.query(HrModelEntity246).filter(HrModelEntity246.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity246]:
+        return self.db.query(HrModelEntity246).filter(HrModelEntity246.entity_code == code).first()
+
+class HrRepository247:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity247]:
+        return self.db.query(HrModelEntity247).filter(HrModelEntity247.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity247]:
+        return self.db.query(HrModelEntity247).filter(HrModelEntity247.entity_code == code).first()
+
+class HrRepository248:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity248]:
+        return self.db.query(HrModelEntity248).filter(HrModelEntity248.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity248]:
+        return self.db.query(HrModelEntity248).filter(HrModelEntity248.entity_code == code).first()
+
+class HrRepository249:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity249]:
+        return self.db.query(HrModelEntity249).filter(HrModelEntity249.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity249]:
+        return self.db.query(HrModelEntity249).filter(HrModelEntity249.entity_code == code).first()
+
+class HrRepository250:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[HrModelEntity250]:
+        return self.db.query(HrModelEntity250).filter(HrModelEntity250.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[HrModelEntity250]:
+        return self.db.query(HrModelEntity250).filter(HrModelEntity250.entity_code == code).first()
+

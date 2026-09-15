@@ -5806,3 +5806,1453 @@ class HostelsSchemaEntity200Response(HostelsSchemaEntity200Base):
 
     model_config = ConfigDict(from_attributes=True)
 
+class HostelsSchemaEntity201Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 201")
+    category: str = Field(default="Category_201", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=201 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity201Create(HostelsSchemaEntity201Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity201Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity201Response(HostelsSchemaEntity201Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity202Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 202")
+    category: str = Field(default="Category_202", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=202 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity202Create(HostelsSchemaEntity202Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity202Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity202Response(HostelsSchemaEntity202Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity203Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 203")
+    category: str = Field(default="Category_203", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=203 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity203Create(HostelsSchemaEntity203Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity203Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity203Response(HostelsSchemaEntity203Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity204Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 204")
+    category: str = Field(default="Category_204", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=204 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity204Create(HostelsSchemaEntity204Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity204Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity204Response(HostelsSchemaEntity204Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity205Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 205")
+    category: str = Field(default="Category_205", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=205 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity205Create(HostelsSchemaEntity205Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity205Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity205Response(HostelsSchemaEntity205Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity206Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 206")
+    category: str = Field(default="Category_206", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=206 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity206Create(HostelsSchemaEntity206Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity206Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity206Response(HostelsSchemaEntity206Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity207Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 207")
+    category: str = Field(default="Category_207", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=207 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity207Create(HostelsSchemaEntity207Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity207Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity207Response(HostelsSchemaEntity207Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity208Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 208")
+    category: str = Field(default="Category_208", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=208 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity208Create(HostelsSchemaEntity208Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity208Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity208Response(HostelsSchemaEntity208Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity209Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 209")
+    category: str = Field(default="Category_209", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=209 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity209Create(HostelsSchemaEntity209Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity209Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity209Response(HostelsSchemaEntity209Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity210Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 210")
+    category: str = Field(default="Category_210", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=210 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity210Create(HostelsSchemaEntity210Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity210Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity210Response(HostelsSchemaEntity210Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity211Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 211")
+    category: str = Field(default="Category_211", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=211 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity211Create(HostelsSchemaEntity211Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity211Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity211Response(HostelsSchemaEntity211Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity212Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 212")
+    category: str = Field(default="Category_212", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=212 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity212Create(HostelsSchemaEntity212Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity212Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity212Response(HostelsSchemaEntity212Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity213Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 213")
+    category: str = Field(default="Category_213", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=213 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity213Create(HostelsSchemaEntity213Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity213Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity213Response(HostelsSchemaEntity213Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity214Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 214")
+    category: str = Field(default="Category_214", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=214 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity214Create(HostelsSchemaEntity214Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity214Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity214Response(HostelsSchemaEntity214Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity215Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 215")
+    category: str = Field(default="Category_215", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=215 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity215Create(HostelsSchemaEntity215Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity215Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity215Response(HostelsSchemaEntity215Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity216Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 216")
+    category: str = Field(default="Category_216", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=216 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity216Create(HostelsSchemaEntity216Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity216Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity216Response(HostelsSchemaEntity216Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity217Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 217")
+    category: str = Field(default="Category_217", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=217 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity217Create(HostelsSchemaEntity217Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity217Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity217Response(HostelsSchemaEntity217Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity218Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 218")
+    category: str = Field(default="Category_218", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=218 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity218Create(HostelsSchemaEntity218Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity218Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity218Response(HostelsSchemaEntity218Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity219Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 219")
+    category: str = Field(default="Category_219", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=219 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity219Create(HostelsSchemaEntity219Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity219Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity219Response(HostelsSchemaEntity219Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity220Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 220")
+    category: str = Field(default="Category_220", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=220 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity220Create(HostelsSchemaEntity220Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity220Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity220Response(HostelsSchemaEntity220Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity221Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 221")
+    category: str = Field(default="Category_221", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=221 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity221Create(HostelsSchemaEntity221Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity221Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity221Response(HostelsSchemaEntity221Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity222Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 222")
+    category: str = Field(default="Category_222", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=222 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity222Create(HostelsSchemaEntity222Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity222Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity222Response(HostelsSchemaEntity222Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity223Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 223")
+    category: str = Field(default="Category_223", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=223 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity223Create(HostelsSchemaEntity223Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity223Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity223Response(HostelsSchemaEntity223Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity224Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 224")
+    category: str = Field(default="Category_224", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=224 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity224Create(HostelsSchemaEntity224Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity224Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity224Response(HostelsSchemaEntity224Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity225Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 225")
+    category: str = Field(default="Category_225", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=225 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity225Create(HostelsSchemaEntity225Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity225Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity225Response(HostelsSchemaEntity225Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity226Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 226")
+    category: str = Field(default="Category_226", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=226 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity226Create(HostelsSchemaEntity226Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity226Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity226Response(HostelsSchemaEntity226Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity227Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 227")
+    category: str = Field(default="Category_227", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=227 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity227Create(HostelsSchemaEntity227Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity227Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity227Response(HostelsSchemaEntity227Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity228Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 228")
+    category: str = Field(default="Category_228", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=228 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity228Create(HostelsSchemaEntity228Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity228Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity228Response(HostelsSchemaEntity228Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity229Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 229")
+    category: str = Field(default="Category_229", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=229 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity229Create(HostelsSchemaEntity229Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity229Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity229Response(HostelsSchemaEntity229Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity230Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 230")
+    category: str = Field(default="Category_230", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=230 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity230Create(HostelsSchemaEntity230Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity230Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity230Response(HostelsSchemaEntity230Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity231Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 231")
+    category: str = Field(default="Category_231", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=231 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity231Create(HostelsSchemaEntity231Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity231Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity231Response(HostelsSchemaEntity231Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity232Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 232")
+    category: str = Field(default="Category_232", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=232 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity232Create(HostelsSchemaEntity232Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity232Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity232Response(HostelsSchemaEntity232Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity233Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 233")
+    category: str = Field(default="Category_233", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=233 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity233Create(HostelsSchemaEntity233Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity233Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity233Response(HostelsSchemaEntity233Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity234Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 234")
+    category: str = Field(default="Category_234", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=234 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity234Create(HostelsSchemaEntity234Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity234Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity234Response(HostelsSchemaEntity234Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity235Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 235")
+    category: str = Field(default="Category_235", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=235 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity235Create(HostelsSchemaEntity235Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity235Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity235Response(HostelsSchemaEntity235Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity236Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 236")
+    category: str = Field(default="Category_236", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=236 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity236Create(HostelsSchemaEntity236Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity236Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity236Response(HostelsSchemaEntity236Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity237Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 237")
+    category: str = Field(default="Category_237", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=237 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity237Create(HostelsSchemaEntity237Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity237Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity237Response(HostelsSchemaEntity237Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity238Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 238")
+    category: str = Field(default="Category_238", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=238 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity238Create(HostelsSchemaEntity238Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity238Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity238Response(HostelsSchemaEntity238Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity239Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 239")
+    category: str = Field(default="Category_239", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=239 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity239Create(HostelsSchemaEntity239Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity239Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity239Response(HostelsSchemaEntity239Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity240Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 240")
+    category: str = Field(default="Category_240", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=240 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity240Create(HostelsSchemaEntity240Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity240Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity240Response(HostelsSchemaEntity240Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity241Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 241")
+    category: str = Field(default="Category_241", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=241 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity241Create(HostelsSchemaEntity241Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity241Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity241Response(HostelsSchemaEntity241Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity242Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 242")
+    category: str = Field(default="Category_242", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=242 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity242Create(HostelsSchemaEntity242Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity242Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity242Response(HostelsSchemaEntity242Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity243Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 243")
+    category: str = Field(default="Category_243", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=243 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity243Create(HostelsSchemaEntity243Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity243Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity243Response(HostelsSchemaEntity243Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity244Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 244")
+    category: str = Field(default="Category_244", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=244 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity244Create(HostelsSchemaEntity244Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity244Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity244Response(HostelsSchemaEntity244Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity245Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 245")
+    category: str = Field(default="Category_245", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=245 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity245Create(HostelsSchemaEntity245Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity245Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity245Response(HostelsSchemaEntity245Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity246Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 246")
+    category: str = Field(default="Category_246", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=246 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity246Create(HostelsSchemaEntity246Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity246Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity246Response(HostelsSchemaEntity246Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity247Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 247")
+    category: str = Field(default="Category_247", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=247 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity247Create(HostelsSchemaEntity247Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity247Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity247Response(HostelsSchemaEntity247Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity248Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 248")
+    category: str = Field(default="Category_248", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=248 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity248Create(HostelsSchemaEntity248Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity248Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity248Response(HostelsSchemaEntity248Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity249Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 249")
+    category: str = Field(default="Category_249", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=249 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity249Create(HostelsSchemaEntity249Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity249Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity249Response(HostelsSchemaEntity249Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class HostelsSchemaEntity250Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 250")
+    category: str = Field(default="Category_250", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=250 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class HostelsSchemaEntity250Create(HostelsSchemaEntity250Base):
+    entity_code: str = Field(..., max_length=100)
+
+class HostelsSchemaEntity250Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class HostelsSchemaEntity250Response(HostelsSchemaEntity250Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+

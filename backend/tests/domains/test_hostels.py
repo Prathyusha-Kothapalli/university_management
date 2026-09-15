@@ -1804,3 +1804,453 @@ def test_hostels_entity_200_schema_validation():
     assert obj.entity_code == "TEST_HOSTELS_200"
     assert obj.value_amount == 200 * 100.5
 
+def test_hostels_entity_201_schema_validation():
+    obj = HostelsSchemaEntity201Create(
+        entity_code="TEST_HOSTELS_201",
+        name="Test Entity 201",
+        value_amount=201 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_201"
+    assert obj.value_amount == 201 * 100.5
+
+def test_hostels_entity_202_schema_validation():
+    obj = HostelsSchemaEntity202Create(
+        entity_code="TEST_HOSTELS_202",
+        name="Test Entity 202",
+        value_amount=202 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_202"
+    assert obj.value_amount == 202 * 100.5
+
+def test_hostels_entity_203_schema_validation():
+    obj = HostelsSchemaEntity203Create(
+        entity_code="TEST_HOSTELS_203",
+        name="Test Entity 203",
+        value_amount=203 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_203"
+    assert obj.value_amount == 203 * 100.5
+
+def test_hostels_entity_204_schema_validation():
+    obj = HostelsSchemaEntity204Create(
+        entity_code="TEST_HOSTELS_204",
+        name="Test Entity 204",
+        value_amount=204 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_204"
+    assert obj.value_amount == 204 * 100.5
+
+def test_hostels_entity_205_schema_validation():
+    obj = HostelsSchemaEntity205Create(
+        entity_code="TEST_HOSTELS_205",
+        name="Test Entity 205",
+        value_amount=205 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_205"
+    assert obj.value_amount == 205 * 100.5
+
+def test_hostels_entity_206_schema_validation():
+    obj = HostelsSchemaEntity206Create(
+        entity_code="TEST_HOSTELS_206",
+        name="Test Entity 206",
+        value_amount=206 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_206"
+    assert obj.value_amount == 206 * 100.5
+
+def test_hostels_entity_207_schema_validation():
+    obj = HostelsSchemaEntity207Create(
+        entity_code="TEST_HOSTELS_207",
+        name="Test Entity 207",
+        value_amount=207 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_207"
+    assert obj.value_amount == 207 * 100.5
+
+def test_hostels_entity_208_schema_validation():
+    obj = HostelsSchemaEntity208Create(
+        entity_code="TEST_HOSTELS_208",
+        name="Test Entity 208",
+        value_amount=208 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_208"
+    assert obj.value_amount == 208 * 100.5
+
+def test_hostels_entity_209_schema_validation():
+    obj = HostelsSchemaEntity209Create(
+        entity_code="TEST_HOSTELS_209",
+        name="Test Entity 209",
+        value_amount=209 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_209"
+    assert obj.value_amount == 209 * 100.5
+
+def test_hostels_entity_210_schema_validation():
+    obj = HostelsSchemaEntity210Create(
+        entity_code="TEST_HOSTELS_210",
+        name="Test Entity 210",
+        value_amount=210 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_210"
+    assert obj.value_amount == 210 * 100.5
+
+def test_hostels_entity_211_schema_validation():
+    obj = HostelsSchemaEntity211Create(
+        entity_code="TEST_HOSTELS_211",
+        name="Test Entity 211",
+        value_amount=211 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_211"
+    assert obj.value_amount == 211 * 100.5
+
+def test_hostels_entity_212_schema_validation():
+    obj = HostelsSchemaEntity212Create(
+        entity_code="TEST_HOSTELS_212",
+        name="Test Entity 212",
+        value_amount=212 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_212"
+    assert obj.value_amount == 212 * 100.5
+
+def test_hostels_entity_213_schema_validation():
+    obj = HostelsSchemaEntity213Create(
+        entity_code="TEST_HOSTELS_213",
+        name="Test Entity 213",
+        value_amount=213 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_213"
+    assert obj.value_amount == 213 * 100.5
+
+def test_hostels_entity_214_schema_validation():
+    obj = HostelsSchemaEntity214Create(
+        entity_code="TEST_HOSTELS_214",
+        name="Test Entity 214",
+        value_amount=214 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_214"
+    assert obj.value_amount == 214 * 100.5
+
+def test_hostels_entity_215_schema_validation():
+    obj = HostelsSchemaEntity215Create(
+        entity_code="TEST_HOSTELS_215",
+        name="Test Entity 215",
+        value_amount=215 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_215"
+    assert obj.value_amount == 215 * 100.5
+
+def test_hostels_entity_216_schema_validation():
+    obj = HostelsSchemaEntity216Create(
+        entity_code="TEST_HOSTELS_216",
+        name="Test Entity 216",
+        value_amount=216 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_216"
+    assert obj.value_amount == 216 * 100.5
+
+def test_hostels_entity_217_schema_validation():
+    obj = HostelsSchemaEntity217Create(
+        entity_code="TEST_HOSTELS_217",
+        name="Test Entity 217",
+        value_amount=217 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_217"
+    assert obj.value_amount == 217 * 100.5
+
+def test_hostels_entity_218_schema_validation():
+    obj = HostelsSchemaEntity218Create(
+        entity_code="TEST_HOSTELS_218",
+        name="Test Entity 218",
+        value_amount=218 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_218"
+    assert obj.value_amount == 218 * 100.5
+
+def test_hostels_entity_219_schema_validation():
+    obj = HostelsSchemaEntity219Create(
+        entity_code="TEST_HOSTELS_219",
+        name="Test Entity 219",
+        value_amount=219 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_219"
+    assert obj.value_amount == 219 * 100.5
+
+def test_hostels_entity_220_schema_validation():
+    obj = HostelsSchemaEntity220Create(
+        entity_code="TEST_HOSTELS_220",
+        name="Test Entity 220",
+        value_amount=220 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_220"
+    assert obj.value_amount == 220 * 100.5
+
+def test_hostels_entity_221_schema_validation():
+    obj = HostelsSchemaEntity221Create(
+        entity_code="TEST_HOSTELS_221",
+        name="Test Entity 221",
+        value_amount=221 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_221"
+    assert obj.value_amount == 221 * 100.5
+
+def test_hostels_entity_222_schema_validation():
+    obj = HostelsSchemaEntity222Create(
+        entity_code="TEST_HOSTELS_222",
+        name="Test Entity 222",
+        value_amount=222 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_222"
+    assert obj.value_amount == 222 * 100.5
+
+def test_hostels_entity_223_schema_validation():
+    obj = HostelsSchemaEntity223Create(
+        entity_code="TEST_HOSTELS_223",
+        name="Test Entity 223",
+        value_amount=223 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_223"
+    assert obj.value_amount == 223 * 100.5
+
+def test_hostels_entity_224_schema_validation():
+    obj = HostelsSchemaEntity224Create(
+        entity_code="TEST_HOSTELS_224",
+        name="Test Entity 224",
+        value_amount=224 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_224"
+    assert obj.value_amount == 224 * 100.5
+
+def test_hostels_entity_225_schema_validation():
+    obj = HostelsSchemaEntity225Create(
+        entity_code="TEST_HOSTELS_225",
+        name="Test Entity 225",
+        value_amount=225 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_225"
+    assert obj.value_amount == 225 * 100.5
+
+def test_hostels_entity_226_schema_validation():
+    obj = HostelsSchemaEntity226Create(
+        entity_code="TEST_HOSTELS_226",
+        name="Test Entity 226",
+        value_amount=226 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_226"
+    assert obj.value_amount == 226 * 100.5
+
+def test_hostels_entity_227_schema_validation():
+    obj = HostelsSchemaEntity227Create(
+        entity_code="TEST_HOSTELS_227",
+        name="Test Entity 227",
+        value_amount=227 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_227"
+    assert obj.value_amount == 227 * 100.5
+
+def test_hostels_entity_228_schema_validation():
+    obj = HostelsSchemaEntity228Create(
+        entity_code="TEST_HOSTELS_228",
+        name="Test Entity 228",
+        value_amount=228 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_228"
+    assert obj.value_amount == 228 * 100.5
+
+def test_hostels_entity_229_schema_validation():
+    obj = HostelsSchemaEntity229Create(
+        entity_code="TEST_HOSTELS_229",
+        name="Test Entity 229",
+        value_amount=229 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_229"
+    assert obj.value_amount == 229 * 100.5
+
+def test_hostels_entity_230_schema_validation():
+    obj = HostelsSchemaEntity230Create(
+        entity_code="TEST_HOSTELS_230",
+        name="Test Entity 230",
+        value_amount=230 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_230"
+    assert obj.value_amount == 230 * 100.5
+
+def test_hostels_entity_231_schema_validation():
+    obj = HostelsSchemaEntity231Create(
+        entity_code="TEST_HOSTELS_231",
+        name="Test Entity 231",
+        value_amount=231 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_231"
+    assert obj.value_amount == 231 * 100.5
+
+def test_hostels_entity_232_schema_validation():
+    obj = HostelsSchemaEntity232Create(
+        entity_code="TEST_HOSTELS_232",
+        name="Test Entity 232",
+        value_amount=232 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_232"
+    assert obj.value_amount == 232 * 100.5
+
+def test_hostels_entity_233_schema_validation():
+    obj = HostelsSchemaEntity233Create(
+        entity_code="TEST_HOSTELS_233",
+        name="Test Entity 233",
+        value_amount=233 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_233"
+    assert obj.value_amount == 233 * 100.5
+
+def test_hostels_entity_234_schema_validation():
+    obj = HostelsSchemaEntity234Create(
+        entity_code="TEST_HOSTELS_234",
+        name="Test Entity 234",
+        value_amount=234 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_234"
+    assert obj.value_amount == 234 * 100.5
+
+def test_hostels_entity_235_schema_validation():
+    obj = HostelsSchemaEntity235Create(
+        entity_code="TEST_HOSTELS_235",
+        name="Test Entity 235",
+        value_amount=235 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_235"
+    assert obj.value_amount == 235 * 100.5
+
+def test_hostels_entity_236_schema_validation():
+    obj = HostelsSchemaEntity236Create(
+        entity_code="TEST_HOSTELS_236",
+        name="Test Entity 236",
+        value_amount=236 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_236"
+    assert obj.value_amount == 236 * 100.5
+
+def test_hostels_entity_237_schema_validation():
+    obj = HostelsSchemaEntity237Create(
+        entity_code="TEST_HOSTELS_237",
+        name="Test Entity 237",
+        value_amount=237 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_237"
+    assert obj.value_amount == 237 * 100.5
+
+def test_hostels_entity_238_schema_validation():
+    obj = HostelsSchemaEntity238Create(
+        entity_code="TEST_HOSTELS_238",
+        name="Test Entity 238",
+        value_amount=238 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_238"
+    assert obj.value_amount == 238 * 100.5
+
+def test_hostels_entity_239_schema_validation():
+    obj = HostelsSchemaEntity239Create(
+        entity_code="TEST_HOSTELS_239",
+        name="Test Entity 239",
+        value_amount=239 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_239"
+    assert obj.value_amount == 239 * 100.5
+
+def test_hostels_entity_240_schema_validation():
+    obj = HostelsSchemaEntity240Create(
+        entity_code="TEST_HOSTELS_240",
+        name="Test Entity 240",
+        value_amount=240 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_240"
+    assert obj.value_amount == 240 * 100.5
+
+def test_hostels_entity_241_schema_validation():
+    obj = HostelsSchemaEntity241Create(
+        entity_code="TEST_HOSTELS_241",
+        name="Test Entity 241",
+        value_amount=241 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_241"
+    assert obj.value_amount == 241 * 100.5
+
+def test_hostels_entity_242_schema_validation():
+    obj = HostelsSchemaEntity242Create(
+        entity_code="TEST_HOSTELS_242",
+        name="Test Entity 242",
+        value_amount=242 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_242"
+    assert obj.value_amount == 242 * 100.5
+
+def test_hostels_entity_243_schema_validation():
+    obj = HostelsSchemaEntity243Create(
+        entity_code="TEST_HOSTELS_243",
+        name="Test Entity 243",
+        value_amount=243 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_243"
+    assert obj.value_amount == 243 * 100.5
+
+def test_hostels_entity_244_schema_validation():
+    obj = HostelsSchemaEntity244Create(
+        entity_code="TEST_HOSTELS_244",
+        name="Test Entity 244",
+        value_amount=244 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_244"
+    assert obj.value_amount == 244 * 100.5
+
+def test_hostels_entity_245_schema_validation():
+    obj = HostelsSchemaEntity245Create(
+        entity_code="TEST_HOSTELS_245",
+        name="Test Entity 245",
+        value_amount=245 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_245"
+    assert obj.value_amount == 245 * 100.5
+
+def test_hostels_entity_246_schema_validation():
+    obj = HostelsSchemaEntity246Create(
+        entity_code="TEST_HOSTELS_246",
+        name="Test Entity 246",
+        value_amount=246 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_246"
+    assert obj.value_amount == 246 * 100.5
+
+def test_hostels_entity_247_schema_validation():
+    obj = HostelsSchemaEntity247Create(
+        entity_code="TEST_HOSTELS_247",
+        name="Test Entity 247",
+        value_amount=247 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_247"
+    assert obj.value_amount == 247 * 100.5
+
+def test_hostels_entity_248_schema_validation():
+    obj = HostelsSchemaEntity248Create(
+        entity_code="TEST_HOSTELS_248",
+        name="Test Entity 248",
+        value_amount=248 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_248"
+    assert obj.value_amount == 248 * 100.5
+
+def test_hostels_entity_249_schema_validation():
+    obj = HostelsSchemaEntity249Create(
+        entity_code="TEST_HOSTELS_249",
+        name="Test Entity 249",
+        value_amount=249 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_249"
+    assert obj.value_amount == 249 * 100.5
+
+def test_hostels_entity_250_schema_validation():
+    obj = HostelsSchemaEntity250Create(
+        entity_code="TEST_HOSTELS_250",
+        name="Test Entity 250",
+        value_amount=250 * 100.5
+    )
+    assert obj.entity_code == "TEST_HOSTELS_250"
+    assert obj.value_amount == 250 * 100.5
+

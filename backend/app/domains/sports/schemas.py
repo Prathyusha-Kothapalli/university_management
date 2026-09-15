@@ -5806,3 +5806,1453 @@ class SportsSchemaEntity200Response(SportsSchemaEntity200Base):
 
     model_config = ConfigDict(from_attributes=True)
 
+class SportsSchemaEntity201Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 201")
+    category: str = Field(default="Category_201", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=201 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity201Create(SportsSchemaEntity201Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity201Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity201Response(SportsSchemaEntity201Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity202Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 202")
+    category: str = Field(default="Category_202", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=202 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity202Create(SportsSchemaEntity202Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity202Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity202Response(SportsSchemaEntity202Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity203Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 203")
+    category: str = Field(default="Category_203", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=203 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity203Create(SportsSchemaEntity203Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity203Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity203Response(SportsSchemaEntity203Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity204Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 204")
+    category: str = Field(default="Category_204", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=204 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity204Create(SportsSchemaEntity204Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity204Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity204Response(SportsSchemaEntity204Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity205Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 205")
+    category: str = Field(default="Category_205", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=205 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity205Create(SportsSchemaEntity205Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity205Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity205Response(SportsSchemaEntity205Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity206Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 206")
+    category: str = Field(default="Category_206", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=206 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity206Create(SportsSchemaEntity206Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity206Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity206Response(SportsSchemaEntity206Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity207Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 207")
+    category: str = Field(default="Category_207", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=207 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity207Create(SportsSchemaEntity207Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity207Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity207Response(SportsSchemaEntity207Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity208Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 208")
+    category: str = Field(default="Category_208", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=208 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity208Create(SportsSchemaEntity208Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity208Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity208Response(SportsSchemaEntity208Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity209Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 209")
+    category: str = Field(default="Category_209", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=209 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity209Create(SportsSchemaEntity209Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity209Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity209Response(SportsSchemaEntity209Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity210Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 210")
+    category: str = Field(default="Category_210", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=210 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity210Create(SportsSchemaEntity210Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity210Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity210Response(SportsSchemaEntity210Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity211Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 211")
+    category: str = Field(default="Category_211", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=211 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity211Create(SportsSchemaEntity211Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity211Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity211Response(SportsSchemaEntity211Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity212Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 212")
+    category: str = Field(default="Category_212", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=212 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity212Create(SportsSchemaEntity212Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity212Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity212Response(SportsSchemaEntity212Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity213Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 213")
+    category: str = Field(default="Category_213", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=213 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity213Create(SportsSchemaEntity213Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity213Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity213Response(SportsSchemaEntity213Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity214Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 214")
+    category: str = Field(default="Category_214", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=214 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity214Create(SportsSchemaEntity214Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity214Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity214Response(SportsSchemaEntity214Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity215Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 215")
+    category: str = Field(default="Category_215", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=215 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity215Create(SportsSchemaEntity215Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity215Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity215Response(SportsSchemaEntity215Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity216Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 216")
+    category: str = Field(default="Category_216", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=216 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity216Create(SportsSchemaEntity216Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity216Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity216Response(SportsSchemaEntity216Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity217Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 217")
+    category: str = Field(default="Category_217", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=217 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity217Create(SportsSchemaEntity217Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity217Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity217Response(SportsSchemaEntity217Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity218Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 218")
+    category: str = Field(default="Category_218", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=218 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity218Create(SportsSchemaEntity218Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity218Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity218Response(SportsSchemaEntity218Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity219Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 219")
+    category: str = Field(default="Category_219", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=219 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity219Create(SportsSchemaEntity219Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity219Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity219Response(SportsSchemaEntity219Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity220Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 220")
+    category: str = Field(default="Category_220", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=220 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity220Create(SportsSchemaEntity220Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity220Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity220Response(SportsSchemaEntity220Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity221Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 221")
+    category: str = Field(default="Category_221", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=221 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity221Create(SportsSchemaEntity221Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity221Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity221Response(SportsSchemaEntity221Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity222Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 222")
+    category: str = Field(default="Category_222", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=222 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity222Create(SportsSchemaEntity222Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity222Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity222Response(SportsSchemaEntity222Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity223Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 223")
+    category: str = Field(default="Category_223", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=223 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity223Create(SportsSchemaEntity223Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity223Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity223Response(SportsSchemaEntity223Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity224Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 224")
+    category: str = Field(default="Category_224", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=224 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity224Create(SportsSchemaEntity224Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity224Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity224Response(SportsSchemaEntity224Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity225Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 225")
+    category: str = Field(default="Category_225", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=225 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity225Create(SportsSchemaEntity225Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity225Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity225Response(SportsSchemaEntity225Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity226Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 226")
+    category: str = Field(default="Category_226", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=226 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity226Create(SportsSchemaEntity226Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity226Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity226Response(SportsSchemaEntity226Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity227Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 227")
+    category: str = Field(default="Category_227", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=227 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity227Create(SportsSchemaEntity227Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity227Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity227Response(SportsSchemaEntity227Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity228Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 228")
+    category: str = Field(default="Category_228", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=228 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity228Create(SportsSchemaEntity228Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity228Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity228Response(SportsSchemaEntity228Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity229Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 229")
+    category: str = Field(default="Category_229", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=229 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity229Create(SportsSchemaEntity229Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity229Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity229Response(SportsSchemaEntity229Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity230Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 230")
+    category: str = Field(default="Category_230", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=230 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity230Create(SportsSchemaEntity230Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity230Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity230Response(SportsSchemaEntity230Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity231Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 231")
+    category: str = Field(default="Category_231", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=231 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity231Create(SportsSchemaEntity231Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity231Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity231Response(SportsSchemaEntity231Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity232Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 232")
+    category: str = Field(default="Category_232", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=232 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity232Create(SportsSchemaEntity232Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity232Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity232Response(SportsSchemaEntity232Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity233Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 233")
+    category: str = Field(default="Category_233", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=233 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity233Create(SportsSchemaEntity233Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity233Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity233Response(SportsSchemaEntity233Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity234Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 234")
+    category: str = Field(default="Category_234", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=234 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity234Create(SportsSchemaEntity234Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity234Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity234Response(SportsSchemaEntity234Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity235Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 235")
+    category: str = Field(default="Category_235", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=235 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity235Create(SportsSchemaEntity235Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity235Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity235Response(SportsSchemaEntity235Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity236Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 236")
+    category: str = Field(default="Category_236", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=236 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity236Create(SportsSchemaEntity236Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity236Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity236Response(SportsSchemaEntity236Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity237Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 237")
+    category: str = Field(default="Category_237", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=237 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity237Create(SportsSchemaEntity237Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity237Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity237Response(SportsSchemaEntity237Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity238Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 238")
+    category: str = Field(default="Category_238", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=238 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity238Create(SportsSchemaEntity238Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity238Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity238Response(SportsSchemaEntity238Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity239Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 239")
+    category: str = Field(default="Category_239", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=239 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity239Create(SportsSchemaEntity239Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity239Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity239Response(SportsSchemaEntity239Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity240Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 240")
+    category: str = Field(default="Category_240", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=240 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity240Create(SportsSchemaEntity240Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity240Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity240Response(SportsSchemaEntity240Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity241Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 241")
+    category: str = Field(default="Category_241", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=241 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity241Create(SportsSchemaEntity241Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity241Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity241Response(SportsSchemaEntity241Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity242Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 242")
+    category: str = Field(default="Category_242", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=242 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity242Create(SportsSchemaEntity242Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity242Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity242Response(SportsSchemaEntity242Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity243Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 243")
+    category: str = Field(default="Category_243", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=243 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity243Create(SportsSchemaEntity243Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity243Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity243Response(SportsSchemaEntity243Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity244Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 244")
+    category: str = Field(default="Category_244", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=244 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity244Create(SportsSchemaEntity244Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity244Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity244Response(SportsSchemaEntity244Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity245Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 245")
+    category: str = Field(default="Category_245", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=245 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity245Create(SportsSchemaEntity245Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity245Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity245Response(SportsSchemaEntity245Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity246Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 246")
+    category: str = Field(default="Category_246", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=246 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity246Create(SportsSchemaEntity246Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity246Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity246Response(SportsSchemaEntity246Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity247Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 247")
+    category: str = Field(default="Category_247", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=247 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity247Create(SportsSchemaEntity247Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity247Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity247Response(SportsSchemaEntity247Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity248Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 248")
+    category: str = Field(default="Category_248", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=248 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity248Create(SportsSchemaEntity248Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity248Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity248Response(SportsSchemaEntity248Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity249Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 249")
+    category: str = Field(default="Category_249", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=249 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity249Create(SportsSchemaEntity249Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity249Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity249Response(SportsSchemaEntity249Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+
+class SportsSchemaEntity250Base(BaseModel):
+    name: str = Field(..., max_length=255, description="Name of the entity 250")
+    category: str = Field(default="Category_250", max_length=100)
+    description: Optional[str] = Field(default=None)
+    value_amount: float = Field(default=250 * 100.5)
+    is_active: bool = Field(default=True)
+    attributes_json: Optional[Dict[str, Any]] = Field(default_factory=dict)
+
+class SportsSchemaEntity250Create(SportsSchemaEntity250Base):
+    entity_code: str = Field(..., max_length=100)
+
+class SportsSchemaEntity250Update(BaseModel):
+    name: Optional[str] = None
+    category: Optional[str] = None
+    description: Optional[str] = None
+    value_amount: Optional[float] = None
+    is_active: Optional[bool] = None
+    status_flag: Optional[str] = None
+    attributes_json: Optional[Dict[str, Any]] = None
+
+class SportsSchemaEntity250Response(SportsSchemaEntity250Base):
+    id: int
+    entity_code: str
+    status_flag: str
+    created_at: datetime
+    updated_at: datetime
+
+    model_config = ConfigDict(from_attributes=True)
+

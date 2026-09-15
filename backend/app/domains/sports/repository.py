@@ -2006,3 +2006,503 @@ class SportsRepository200:
     def find_by_code(self, code: str) -> Optional[SportsModelEntity200]:
         return self.db.query(SportsModelEntity200).filter(SportsModelEntity200.entity_code == code).first()
 
+class SportsRepository201:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity201]:
+        return self.db.query(SportsModelEntity201).filter(SportsModelEntity201.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity201]:
+        return self.db.query(SportsModelEntity201).filter(SportsModelEntity201.entity_code == code).first()
+
+class SportsRepository202:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity202]:
+        return self.db.query(SportsModelEntity202).filter(SportsModelEntity202.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity202]:
+        return self.db.query(SportsModelEntity202).filter(SportsModelEntity202.entity_code == code).first()
+
+class SportsRepository203:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity203]:
+        return self.db.query(SportsModelEntity203).filter(SportsModelEntity203.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity203]:
+        return self.db.query(SportsModelEntity203).filter(SportsModelEntity203.entity_code == code).first()
+
+class SportsRepository204:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity204]:
+        return self.db.query(SportsModelEntity204).filter(SportsModelEntity204.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity204]:
+        return self.db.query(SportsModelEntity204).filter(SportsModelEntity204.entity_code == code).first()
+
+class SportsRepository205:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity205]:
+        return self.db.query(SportsModelEntity205).filter(SportsModelEntity205.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity205]:
+        return self.db.query(SportsModelEntity205).filter(SportsModelEntity205.entity_code == code).first()
+
+class SportsRepository206:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity206]:
+        return self.db.query(SportsModelEntity206).filter(SportsModelEntity206.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity206]:
+        return self.db.query(SportsModelEntity206).filter(SportsModelEntity206.entity_code == code).first()
+
+class SportsRepository207:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity207]:
+        return self.db.query(SportsModelEntity207).filter(SportsModelEntity207.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity207]:
+        return self.db.query(SportsModelEntity207).filter(SportsModelEntity207.entity_code == code).first()
+
+class SportsRepository208:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity208]:
+        return self.db.query(SportsModelEntity208).filter(SportsModelEntity208.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity208]:
+        return self.db.query(SportsModelEntity208).filter(SportsModelEntity208.entity_code == code).first()
+
+class SportsRepository209:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity209]:
+        return self.db.query(SportsModelEntity209).filter(SportsModelEntity209.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity209]:
+        return self.db.query(SportsModelEntity209).filter(SportsModelEntity209.entity_code == code).first()
+
+class SportsRepository210:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity210]:
+        return self.db.query(SportsModelEntity210).filter(SportsModelEntity210.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity210]:
+        return self.db.query(SportsModelEntity210).filter(SportsModelEntity210.entity_code == code).first()
+
+class SportsRepository211:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity211]:
+        return self.db.query(SportsModelEntity211).filter(SportsModelEntity211.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity211]:
+        return self.db.query(SportsModelEntity211).filter(SportsModelEntity211.entity_code == code).first()
+
+class SportsRepository212:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity212]:
+        return self.db.query(SportsModelEntity212).filter(SportsModelEntity212.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity212]:
+        return self.db.query(SportsModelEntity212).filter(SportsModelEntity212.entity_code == code).first()
+
+class SportsRepository213:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity213]:
+        return self.db.query(SportsModelEntity213).filter(SportsModelEntity213.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity213]:
+        return self.db.query(SportsModelEntity213).filter(SportsModelEntity213.entity_code == code).first()
+
+class SportsRepository214:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity214]:
+        return self.db.query(SportsModelEntity214).filter(SportsModelEntity214.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity214]:
+        return self.db.query(SportsModelEntity214).filter(SportsModelEntity214.entity_code == code).first()
+
+class SportsRepository215:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity215]:
+        return self.db.query(SportsModelEntity215).filter(SportsModelEntity215.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity215]:
+        return self.db.query(SportsModelEntity215).filter(SportsModelEntity215.entity_code == code).first()
+
+class SportsRepository216:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity216]:
+        return self.db.query(SportsModelEntity216).filter(SportsModelEntity216.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity216]:
+        return self.db.query(SportsModelEntity216).filter(SportsModelEntity216.entity_code == code).first()
+
+class SportsRepository217:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity217]:
+        return self.db.query(SportsModelEntity217).filter(SportsModelEntity217.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity217]:
+        return self.db.query(SportsModelEntity217).filter(SportsModelEntity217.entity_code == code).first()
+
+class SportsRepository218:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity218]:
+        return self.db.query(SportsModelEntity218).filter(SportsModelEntity218.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity218]:
+        return self.db.query(SportsModelEntity218).filter(SportsModelEntity218.entity_code == code).first()
+
+class SportsRepository219:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity219]:
+        return self.db.query(SportsModelEntity219).filter(SportsModelEntity219.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity219]:
+        return self.db.query(SportsModelEntity219).filter(SportsModelEntity219.entity_code == code).first()
+
+class SportsRepository220:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity220]:
+        return self.db.query(SportsModelEntity220).filter(SportsModelEntity220.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity220]:
+        return self.db.query(SportsModelEntity220).filter(SportsModelEntity220.entity_code == code).first()
+
+class SportsRepository221:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity221]:
+        return self.db.query(SportsModelEntity221).filter(SportsModelEntity221.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity221]:
+        return self.db.query(SportsModelEntity221).filter(SportsModelEntity221.entity_code == code).first()
+
+class SportsRepository222:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity222]:
+        return self.db.query(SportsModelEntity222).filter(SportsModelEntity222.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity222]:
+        return self.db.query(SportsModelEntity222).filter(SportsModelEntity222.entity_code == code).first()
+
+class SportsRepository223:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity223]:
+        return self.db.query(SportsModelEntity223).filter(SportsModelEntity223.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity223]:
+        return self.db.query(SportsModelEntity223).filter(SportsModelEntity223.entity_code == code).first()
+
+class SportsRepository224:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity224]:
+        return self.db.query(SportsModelEntity224).filter(SportsModelEntity224.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity224]:
+        return self.db.query(SportsModelEntity224).filter(SportsModelEntity224.entity_code == code).first()
+
+class SportsRepository225:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity225]:
+        return self.db.query(SportsModelEntity225).filter(SportsModelEntity225.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity225]:
+        return self.db.query(SportsModelEntity225).filter(SportsModelEntity225.entity_code == code).first()
+
+class SportsRepository226:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity226]:
+        return self.db.query(SportsModelEntity226).filter(SportsModelEntity226.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity226]:
+        return self.db.query(SportsModelEntity226).filter(SportsModelEntity226.entity_code == code).first()
+
+class SportsRepository227:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity227]:
+        return self.db.query(SportsModelEntity227).filter(SportsModelEntity227.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity227]:
+        return self.db.query(SportsModelEntity227).filter(SportsModelEntity227.entity_code == code).first()
+
+class SportsRepository228:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity228]:
+        return self.db.query(SportsModelEntity228).filter(SportsModelEntity228.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity228]:
+        return self.db.query(SportsModelEntity228).filter(SportsModelEntity228.entity_code == code).first()
+
+class SportsRepository229:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity229]:
+        return self.db.query(SportsModelEntity229).filter(SportsModelEntity229.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity229]:
+        return self.db.query(SportsModelEntity229).filter(SportsModelEntity229.entity_code == code).first()
+
+class SportsRepository230:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity230]:
+        return self.db.query(SportsModelEntity230).filter(SportsModelEntity230.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity230]:
+        return self.db.query(SportsModelEntity230).filter(SportsModelEntity230.entity_code == code).first()
+
+class SportsRepository231:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity231]:
+        return self.db.query(SportsModelEntity231).filter(SportsModelEntity231.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity231]:
+        return self.db.query(SportsModelEntity231).filter(SportsModelEntity231.entity_code == code).first()
+
+class SportsRepository232:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity232]:
+        return self.db.query(SportsModelEntity232).filter(SportsModelEntity232.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity232]:
+        return self.db.query(SportsModelEntity232).filter(SportsModelEntity232.entity_code == code).first()
+
+class SportsRepository233:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity233]:
+        return self.db.query(SportsModelEntity233).filter(SportsModelEntity233.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity233]:
+        return self.db.query(SportsModelEntity233).filter(SportsModelEntity233.entity_code == code).first()
+
+class SportsRepository234:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity234]:
+        return self.db.query(SportsModelEntity234).filter(SportsModelEntity234.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity234]:
+        return self.db.query(SportsModelEntity234).filter(SportsModelEntity234.entity_code == code).first()
+
+class SportsRepository235:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity235]:
+        return self.db.query(SportsModelEntity235).filter(SportsModelEntity235.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity235]:
+        return self.db.query(SportsModelEntity235).filter(SportsModelEntity235.entity_code == code).first()
+
+class SportsRepository236:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity236]:
+        return self.db.query(SportsModelEntity236).filter(SportsModelEntity236.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity236]:
+        return self.db.query(SportsModelEntity236).filter(SportsModelEntity236.entity_code == code).first()
+
+class SportsRepository237:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity237]:
+        return self.db.query(SportsModelEntity237).filter(SportsModelEntity237.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity237]:
+        return self.db.query(SportsModelEntity237).filter(SportsModelEntity237.entity_code == code).first()
+
+class SportsRepository238:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity238]:
+        return self.db.query(SportsModelEntity238).filter(SportsModelEntity238.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity238]:
+        return self.db.query(SportsModelEntity238).filter(SportsModelEntity238.entity_code == code).first()
+
+class SportsRepository239:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity239]:
+        return self.db.query(SportsModelEntity239).filter(SportsModelEntity239.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity239]:
+        return self.db.query(SportsModelEntity239).filter(SportsModelEntity239.entity_code == code).first()
+
+class SportsRepository240:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity240]:
+        return self.db.query(SportsModelEntity240).filter(SportsModelEntity240.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity240]:
+        return self.db.query(SportsModelEntity240).filter(SportsModelEntity240.entity_code == code).first()
+
+class SportsRepository241:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity241]:
+        return self.db.query(SportsModelEntity241).filter(SportsModelEntity241.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity241]:
+        return self.db.query(SportsModelEntity241).filter(SportsModelEntity241.entity_code == code).first()
+
+class SportsRepository242:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity242]:
+        return self.db.query(SportsModelEntity242).filter(SportsModelEntity242.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity242]:
+        return self.db.query(SportsModelEntity242).filter(SportsModelEntity242.entity_code == code).first()
+
+class SportsRepository243:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity243]:
+        return self.db.query(SportsModelEntity243).filter(SportsModelEntity243.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity243]:
+        return self.db.query(SportsModelEntity243).filter(SportsModelEntity243.entity_code == code).first()
+
+class SportsRepository244:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity244]:
+        return self.db.query(SportsModelEntity244).filter(SportsModelEntity244.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity244]:
+        return self.db.query(SportsModelEntity244).filter(SportsModelEntity244.entity_code == code).first()
+
+class SportsRepository245:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity245]:
+        return self.db.query(SportsModelEntity245).filter(SportsModelEntity245.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity245]:
+        return self.db.query(SportsModelEntity245).filter(SportsModelEntity245.entity_code == code).first()
+
+class SportsRepository246:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity246]:
+        return self.db.query(SportsModelEntity246).filter(SportsModelEntity246.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity246]:
+        return self.db.query(SportsModelEntity246).filter(SportsModelEntity246.entity_code == code).first()
+
+class SportsRepository247:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity247]:
+        return self.db.query(SportsModelEntity247).filter(SportsModelEntity247.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity247]:
+        return self.db.query(SportsModelEntity247).filter(SportsModelEntity247.entity_code == code).first()
+
+class SportsRepository248:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity248]:
+        return self.db.query(SportsModelEntity248).filter(SportsModelEntity248.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity248]:
+        return self.db.query(SportsModelEntity248).filter(SportsModelEntity248.entity_code == code).first()
+
+class SportsRepository249:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity249]:
+        return self.db.query(SportsModelEntity249).filter(SportsModelEntity249.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity249]:
+        return self.db.query(SportsModelEntity249).filter(SportsModelEntity249.entity_code == code).first()
+
+class SportsRepository250:
+    def __init__(self, db: Session):
+        self.db = db
+
+    def query_all(self, limit: int = 50) -> List[SportsModelEntity250]:
+        return self.db.query(SportsModelEntity250).filter(SportsModelEntity250.is_active == True).limit(limit).all()
+
+    def find_by_code(self, code: str) -> Optional[SportsModelEntity250]:
+        return self.db.query(SportsModelEntity250).filter(SportsModelEntity250.entity_code == code).first()
+

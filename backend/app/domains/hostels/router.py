@@ -3611,3 +3611,903 @@ def create_entity_200(payload: HostelsSchemaEntity200Create, db: Session = Depen
     srv = HostelsDomainService(db)
     return srv.create_entity_200(payload)
 
+@router.get("/entity-201", response_model=List[HostelsSchemaEntity201Response])
+def list_entities_201(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_201_list(skip=skip, limit=limit)
+
+@router.get("/entity-201/{entity_id}", response_model=HostelsSchemaEntity201Response)
+def get_entity_201(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_201_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 201 not found")
+    return res
+
+@router.post("/entity-201", response_model=HostelsSchemaEntity201Response, status_code=201)
+def create_entity_201(payload: HostelsSchemaEntity201Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_201(payload)
+
+@router.get("/entity-202", response_model=List[HostelsSchemaEntity202Response])
+def list_entities_202(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_202_list(skip=skip, limit=limit)
+
+@router.get("/entity-202/{entity_id}", response_model=HostelsSchemaEntity202Response)
+def get_entity_202(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_202_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 202 not found")
+    return res
+
+@router.post("/entity-202", response_model=HostelsSchemaEntity202Response, status_code=201)
+def create_entity_202(payload: HostelsSchemaEntity202Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_202(payload)
+
+@router.get("/entity-203", response_model=List[HostelsSchemaEntity203Response])
+def list_entities_203(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_203_list(skip=skip, limit=limit)
+
+@router.get("/entity-203/{entity_id}", response_model=HostelsSchemaEntity203Response)
+def get_entity_203(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_203_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 203 not found")
+    return res
+
+@router.post("/entity-203", response_model=HostelsSchemaEntity203Response, status_code=201)
+def create_entity_203(payload: HostelsSchemaEntity203Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_203(payload)
+
+@router.get("/entity-204", response_model=List[HostelsSchemaEntity204Response])
+def list_entities_204(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_204_list(skip=skip, limit=limit)
+
+@router.get("/entity-204/{entity_id}", response_model=HostelsSchemaEntity204Response)
+def get_entity_204(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_204_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 204 not found")
+    return res
+
+@router.post("/entity-204", response_model=HostelsSchemaEntity204Response, status_code=201)
+def create_entity_204(payload: HostelsSchemaEntity204Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_204(payload)
+
+@router.get("/entity-205", response_model=List[HostelsSchemaEntity205Response])
+def list_entities_205(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_205_list(skip=skip, limit=limit)
+
+@router.get("/entity-205/{entity_id}", response_model=HostelsSchemaEntity205Response)
+def get_entity_205(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_205_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 205 not found")
+    return res
+
+@router.post("/entity-205", response_model=HostelsSchemaEntity205Response, status_code=201)
+def create_entity_205(payload: HostelsSchemaEntity205Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_205(payload)
+
+@router.get("/entity-206", response_model=List[HostelsSchemaEntity206Response])
+def list_entities_206(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_206_list(skip=skip, limit=limit)
+
+@router.get("/entity-206/{entity_id}", response_model=HostelsSchemaEntity206Response)
+def get_entity_206(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_206_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 206 not found")
+    return res
+
+@router.post("/entity-206", response_model=HostelsSchemaEntity206Response, status_code=201)
+def create_entity_206(payload: HostelsSchemaEntity206Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_206(payload)
+
+@router.get("/entity-207", response_model=List[HostelsSchemaEntity207Response])
+def list_entities_207(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_207_list(skip=skip, limit=limit)
+
+@router.get("/entity-207/{entity_id}", response_model=HostelsSchemaEntity207Response)
+def get_entity_207(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_207_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 207 not found")
+    return res
+
+@router.post("/entity-207", response_model=HostelsSchemaEntity207Response, status_code=201)
+def create_entity_207(payload: HostelsSchemaEntity207Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_207(payload)
+
+@router.get("/entity-208", response_model=List[HostelsSchemaEntity208Response])
+def list_entities_208(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_208_list(skip=skip, limit=limit)
+
+@router.get("/entity-208/{entity_id}", response_model=HostelsSchemaEntity208Response)
+def get_entity_208(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_208_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 208 not found")
+    return res
+
+@router.post("/entity-208", response_model=HostelsSchemaEntity208Response, status_code=201)
+def create_entity_208(payload: HostelsSchemaEntity208Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_208(payload)
+
+@router.get("/entity-209", response_model=List[HostelsSchemaEntity209Response])
+def list_entities_209(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_209_list(skip=skip, limit=limit)
+
+@router.get("/entity-209/{entity_id}", response_model=HostelsSchemaEntity209Response)
+def get_entity_209(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_209_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 209 not found")
+    return res
+
+@router.post("/entity-209", response_model=HostelsSchemaEntity209Response, status_code=201)
+def create_entity_209(payload: HostelsSchemaEntity209Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_209(payload)
+
+@router.get("/entity-210", response_model=List[HostelsSchemaEntity210Response])
+def list_entities_210(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_210_list(skip=skip, limit=limit)
+
+@router.get("/entity-210/{entity_id}", response_model=HostelsSchemaEntity210Response)
+def get_entity_210(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_210_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 210 not found")
+    return res
+
+@router.post("/entity-210", response_model=HostelsSchemaEntity210Response, status_code=201)
+def create_entity_210(payload: HostelsSchemaEntity210Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_210(payload)
+
+@router.get("/entity-211", response_model=List[HostelsSchemaEntity211Response])
+def list_entities_211(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_211_list(skip=skip, limit=limit)
+
+@router.get("/entity-211/{entity_id}", response_model=HostelsSchemaEntity211Response)
+def get_entity_211(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_211_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 211 not found")
+    return res
+
+@router.post("/entity-211", response_model=HostelsSchemaEntity211Response, status_code=201)
+def create_entity_211(payload: HostelsSchemaEntity211Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_211(payload)
+
+@router.get("/entity-212", response_model=List[HostelsSchemaEntity212Response])
+def list_entities_212(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_212_list(skip=skip, limit=limit)
+
+@router.get("/entity-212/{entity_id}", response_model=HostelsSchemaEntity212Response)
+def get_entity_212(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_212_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 212 not found")
+    return res
+
+@router.post("/entity-212", response_model=HostelsSchemaEntity212Response, status_code=201)
+def create_entity_212(payload: HostelsSchemaEntity212Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_212(payload)
+
+@router.get("/entity-213", response_model=List[HostelsSchemaEntity213Response])
+def list_entities_213(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_213_list(skip=skip, limit=limit)
+
+@router.get("/entity-213/{entity_id}", response_model=HostelsSchemaEntity213Response)
+def get_entity_213(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_213_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 213 not found")
+    return res
+
+@router.post("/entity-213", response_model=HostelsSchemaEntity213Response, status_code=201)
+def create_entity_213(payload: HostelsSchemaEntity213Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_213(payload)
+
+@router.get("/entity-214", response_model=List[HostelsSchemaEntity214Response])
+def list_entities_214(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_214_list(skip=skip, limit=limit)
+
+@router.get("/entity-214/{entity_id}", response_model=HostelsSchemaEntity214Response)
+def get_entity_214(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_214_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 214 not found")
+    return res
+
+@router.post("/entity-214", response_model=HostelsSchemaEntity214Response, status_code=201)
+def create_entity_214(payload: HostelsSchemaEntity214Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_214(payload)
+
+@router.get("/entity-215", response_model=List[HostelsSchemaEntity215Response])
+def list_entities_215(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_215_list(skip=skip, limit=limit)
+
+@router.get("/entity-215/{entity_id}", response_model=HostelsSchemaEntity215Response)
+def get_entity_215(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_215_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 215 not found")
+    return res
+
+@router.post("/entity-215", response_model=HostelsSchemaEntity215Response, status_code=201)
+def create_entity_215(payload: HostelsSchemaEntity215Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_215(payload)
+
+@router.get("/entity-216", response_model=List[HostelsSchemaEntity216Response])
+def list_entities_216(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_216_list(skip=skip, limit=limit)
+
+@router.get("/entity-216/{entity_id}", response_model=HostelsSchemaEntity216Response)
+def get_entity_216(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_216_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 216 not found")
+    return res
+
+@router.post("/entity-216", response_model=HostelsSchemaEntity216Response, status_code=201)
+def create_entity_216(payload: HostelsSchemaEntity216Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_216(payload)
+
+@router.get("/entity-217", response_model=List[HostelsSchemaEntity217Response])
+def list_entities_217(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_217_list(skip=skip, limit=limit)
+
+@router.get("/entity-217/{entity_id}", response_model=HostelsSchemaEntity217Response)
+def get_entity_217(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_217_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 217 not found")
+    return res
+
+@router.post("/entity-217", response_model=HostelsSchemaEntity217Response, status_code=201)
+def create_entity_217(payload: HostelsSchemaEntity217Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_217(payload)
+
+@router.get("/entity-218", response_model=List[HostelsSchemaEntity218Response])
+def list_entities_218(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_218_list(skip=skip, limit=limit)
+
+@router.get("/entity-218/{entity_id}", response_model=HostelsSchemaEntity218Response)
+def get_entity_218(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_218_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 218 not found")
+    return res
+
+@router.post("/entity-218", response_model=HostelsSchemaEntity218Response, status_code=201)
+def create_entity_218(payload: HostelsSchemaEntity218Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_218(payload)
+
+@router.get("/entity-219", response_model=List[HostelsSchemaEntity219Response])
+def list_entities_219(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_219_list(skip=skip, limit=limit)
+
+@router.get("/entity-219/{entity_id}", response_model=HostelsSchemaEntity219Response)
+def get_entity_219(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_219_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 219 not found")
+    return res
+
+@router.post("/entity-219", response_model=HostelsSchemaEntity219Response, status_code=201)
+def create_entity_219(payload: HostelsSchemaEntity219Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_219(payload)
+
+@router.get("/entity-220", response_model=List[HostelsSchemaEntity220Response])
+def list_entities_220(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_220_list(skip=skip, limit=limit)
+
+@router.get("/entity-220/{entity_id}", response_model=HostelsSchemaEntity220Response)
+def get_entity_220(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_220_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 220 not found")
+    return res
+
+@router.post("/entity-220", response_model=HostelsSchemaEntity220Response, status_code=201)
+def create_entity_220(payload: HostelsSchemaEntity220Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_220(payload)
+
+@router.get("/entity-221", response_model=List[HostelsSchemaEntity221Response])
+def list_entities_221(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_221_list(skip=skip, limit=limit)
+
+@router.get("/entity-221/{entity_id}", response_model=HostelsSchemaEntity221Response)
+def get_entity_221(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_221_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 221 not found")
+    return res
+
+@router.post("/entity-221", response_model=HostelsSchemaEntity221Response, status_code=201)
+def create_entity_221(payload: HostelsSchemaEntity221Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_221(payload)
+
+@router.get("/entity-222", response_model=List[HostelsSchemaEntity222Response])
+def list_entities_222(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_222_list(skip=skip, limit=limit)
+
+@router.get("/entity-222/{entity_id}", response_model=HostelsSchemaEntity222Response)
+def get_entity_222(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_222_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 222 not found")
+    return res
+
+@router.post("/entity-222", response_model=HostelsSchemaEntity222Response, status_code=201)
+def create_entity_222(payload: HostelsSchemaEntity222Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_222(payload)
+
+@router.get("/entity-223", response_model=List[HostelsSchemaEntity223Response])
+def list_entities_223(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_223_list(skip=skip, limit=limit)
+
+@router.get("/entity-223/{entity_id}", response_model=HostelsSchemaEntity223Response)
+def get_entity_223(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_223_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 223 not found")
+    return res
+
+@router.post("/entity-223", response_model=HostelsSchemaEntity223Response, status_code=201)
+def create_entity_223(payload: HostelsSchemaEntity223Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_223(payload)
+
+@router.get("/entity-224", response_model=List[HostelsSchemaEntity224Response])
+def list_entities_224(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_224_list(skip=skip, limit=limit)
+
+@router.get("/entity-224/{entity_id}", response_model=HostelsSchemaEntity224Response)
+def get_entity_224(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_224_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 224 not found")
+    return res
+
+@router.post("/entity-224", response_model=HostelsSchemaEntity224Response, status_code=201)
+def create_entity_224(payload: HostelsSchemaEntity224Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_224(payload)
+
+@router.get("/entity-225", response_model=List[HostelsSchemaEntity225Response])
+def list_entities_225(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_225_list(skip=skip, limit=limit)
+
+@router.get("/entity-225/{entity_id}", response_model=HostelsSchemaEntity225Response)
+def get_entity_225(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_225_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 225 not found")
+    return res
+
+@router.post("/entity-225", response_model=HostelsSchemaEntity225Response, status_code=201)
+def create_entity_225(payload: HostelsSchemaEntity225Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_225(payload)
+
+@router.get("/entity-226", response_model=List[HostelsSchemaEntity226Response])
+def list_entities_226(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_226_list(skip=skip, limit=limit)
+
+@router.get("/entity-226/{entity_id}", response_model=HostelsSchemaEntity226Response)
+def get_entity_226(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_226_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 226 not found")
+    return res
+
+@router.post("/entity-226", response_model=HostelsSchemaEntity226Response, status_code=201)
+def create_entity_226(payload: HostelsSchemaEntity226Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_226(payload)
+
+@router.get("/entity-227", response_model=List[HostelsSchemaEntity227Response])
+def list_entities_227(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_227_list(skip=skip, limit=limit)
+
+@router.get("/entity-227/{entity_id}", response_model=HostelsSchemaEntity227Response)
+def get_entity_227(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_227_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 227 not found")
+    return res
+
+@router.post("/entity-227", response_model=HostelsSchemaEntity227Response, status_code=201)
+def create_entity_227(payload: HostelsSchemaEntity227Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_227(payload)
+
+@router.get("/entity-228", response_model=List[HostelsSchemaEntity228Response])
+def list_entities_228(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_228_list(skip=skip, limit=limit)
+
+@router.get("/entity-228/{entity_id}", response_model=HostelsSchemaEntity228Response)
+def get_entity_228(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_228_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 228 not found")
+    return res
+
+@router.post("/entity-228", response_model=HostelsSchemaEntity228Response, status_code=201)
+def create_entity_228(payload: HostelsSchemaEntity228Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_228(payload)
+
+@router.get("/entity-229", response_model=List[HostelsSchemaEntity229Response])
+def list_entities_229(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_229_list(skip=skip, limit=limit)
+
+@router.get("/entity-229/{entity_id}", response_model=HostelsSchemaEntity229Response)
+def get_entity_229(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_229_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 229 not found")
+    return res
+
+@router.post("/entity-229", response_model=HostelsSchemaEntity229Response, status_code=201)
+def create_entity_229(payload: HostelsSchemaEntity229Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_229(payload)
+
+@router.get("/entity-230", response_model=List[HostelsSchemaEntity230Response])
+def list_entities_230(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_230_list(skip=skip, limit=limit)
+
+@router.get("/entity-230/{entity_id}", response_model=HostelsSchemaEntity230Response)
+def get_entity_230(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_230_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 230 not found")
+    return res
+
+@router.post("/entity-230", response_model=HostelsSchemaEntity230Response, status_code=201)
+def create_entity_230(payload: HostelsSchemaEntity230Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_230(payload)
+
+@router.get("/entity-231", response_model=List[HostelsSchemaEntity231Response])
+def list_entities_231(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_231_list(skip=skip, limit=limit)
+
+@router.get("/entity-231/{entity_id}", response_model=HostelsSchemaEntity231Response)
+def get_entity_231(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_231_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 231 not found")
+    return res
+
+@router.post("/entity-231", response_model=HostelsSchemaEntity231Response, status_code=201)
+def create_entity_231(payload: HostelsSchemaEntity231Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_231(payload)
+
+@router.get("/entity-232", response_model=List[HostelsSchemaEntity232Response])
+def list_entities_232(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_232_list(skip=skip, limit=limit)
+
+@router.get("/entity-232/{entity_id}", response_model=HostelsSchemaEntity232Response)
+def get_entity_232(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_232_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 232 not found")
+    return res
+
+@router.post("/entity-232", response_model=HostelsSchemaEntity232Response, status_code=201)
+def create_entity_232(payload: HostelsSchemaEntity232Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_232(payload)
+
+@router.get("/entity-233", response_model=List[HostelsSchemaEntity233Response])
+def list_entities_233(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_233_list(skip=skip, limit=limit)
+
+@router.get("/entity-233/{entity_id}", response_model=HostelsSchemaEntity233Response)
+def get_entity_233(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_233_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 233 not found")
+    return res
+
+@router.post("/entity-233", response_model=HostelsSchemaEntity233Response, status_code=201)
+def create_entity_233(payload: HostelsSchemaEntity233Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_233(payload)
+
+@router.get("/entity-234", response_model=List[HostelsSchemaEntity234Response])
+def list_entities_234(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_234_list(skip=skip, limit=limit)
+
+@router.get("/entity-234/{entity_id}", response_model=HostelsSchemaEntity234Response)
+def get_entity_234(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_234_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 234 not found")
+    return res
+
+@router.post("/entity-234", response_model=HostelsSchemaEntity234Response, status_code=201)
+def create_entity_234(payload: HostelsSchemaEntity234Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_234(payload)
+
+@router.get("/entity-235", response_model=List[HostelsSchemaEntity235Response])
+def list_entities_235(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_235_list(skip=skip, limit=limit)
+
+@router.get("/entity-235/{entity_id}", response_model=HostelsSchemaEntity235Response)
+def get_entity_235(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_235_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 235 not found")
+    return res
+
+@router.post("/entity-235", response_model=HostelsSchemaEntity235Response, status_code=201)
+def create_entity_235(payload: HostelsSchemaEntity235Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_235(payload)
+
+@router.get("/entity-236", response_model=List[HostelsSchemaEntity236Response])
+def list_entities_236(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_236_list(skip=skip, limit=limit)
+
+@router.get("/entity-236/{entity_id}", response_model=HostelsSchemaEntity236Response)
+def get_entity_236(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_236_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 236 not found")
+    return res
+
+@router.post("/entity-236", response_model=HostelsSchemaEntity236Response, status_code=201)
+def create_entity_236(payload: HostelsSchemaEntity236Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_236(payload)
+
+@router.get("/entity-237", response_model=List[HostelsSchemaEntity237Response])
+def list_entities_237(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_237_list(skip=skip, limit=limit)
+
+@router.get("/entity-237/{entity_id}", response_model=HostelsSchemaEntity237Response)
+def get_entity_237(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_237_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 237 not found")
+    return res
+
+@router.post("/entity-237", response_model=HostelsSchemaEntity237Response, status_code=201)
+def create_entity_237(payload: HostelsSchemaEntity237Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_237(payload)
+
+@router.get("/entity-238", response_model=List[HostelsSchemaEntity238Response])
+def list_entities_238(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_238_list(skip=skip, limit=limit)
+
+@router.get("/entity-238/{entity_id}", response_model=HostelsSchemaEntity238Response)
+def get_entity_238(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_238_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 238 not found")
+    return res
+
+@router.post("/entity-238", response_model=HostelsSchemaEntity238Response, status_code=201)
+def create_entity_238(payload: HostelsSchemaEntity238Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_238(payload)
+
+@router.get("/entity-239", response_model=List[HostelsSchemaEntity239Response])
+def list_entities_239(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_239_list(skip=skip, limit=limit)
+
+@router.get("/entity-239/{entity_id}", response_model=HostelsSchemaEntity239Response)
+def get_entity_239(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_239_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 239 not found")
+    return res
+
+@router.post("/entity-239", response_model=HostelsSchemaEntity239Response, status_code=201)
+def create_entity_239(payload: HostelsSchemaEntity239Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_239(payload)
+
+@router.get("/entity-240", response_model=List[HostelsSchemaEntity240Response])
+def list_entities_240(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_240_list(skip=skip, limit=limit)
+
+@router.get("/entity-240/{entity_id}", response_model=HostelsSchemaEntity240Response)
+def get_entity_240(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_240_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 240 not found")
+    return res
+
+@router.post("/entity-240", response_model=HostelsSchemaEntity240Response, status_code=201)
+def create_entity_240(payload: HostelsSchemaEntity240Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_240(payload)
+
+@router.get("/entity-241", response_model=List[HostelsSchemaEntity241Response])
+def list_entities_241(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_241_list(skip=skip, limit=limit)
+
+@router.get("/entity-241/{entity_id}", response_model=HostelsSchemaEntity241Response)
+def get_entity_241(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_241_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 241 not found")
+    return res
+
+@router.post("/entity-241", response_model=HostelsSchemaEntity241Response, status_code=201)
+def create_entity_241(payload: HostelsSchemaEntity241Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_241(payload)
+
+@router.get("/entity-242", response_model=List[HostelsSchemaEntity242Response])
+def list_entities_242(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_242_list(skip=skip, limit=limit)
+
+@router.get("/entity-242/{entity_id}", response_model=HostelsSchemaEntity242Response)
+def get_entity_242(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_242_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 242 not found")
+    return res
+
+@router.post("/entity-242", response_model=HostelsSchemaEntity242Response, status_code=201)
+def create_entity_242(payload: HostelsSchemaEntity242Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_242(payload)
+
+@router.get("/entity-243", response_model=List[HostelsSchemaEntity243Response])
+def list_entities_243(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_243_list(skip=skip, limit=limit)
+
+@router.get("/entity-243/{entity_id}", response_model=HostelsSchemaEntity243Response)
+def get_entity_243(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_243_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 243 not found")
+    return res
+
+@router.post("/entity-243", response_model=HostelsSchemaEntity243Response, status_code=201)
+def create_entity_243(payload: HostelsSchemaEntity243Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_243(payload)
+
+@router.get("/entity-244", response_model=List[HostelsSchemaEntity244Response])
+def list_entities_244(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_244_list(skip=skip, limit=limit)
+
+@router.get("/entity-244/{entity_id}", response_model=HostelsSchemaEntity244Response)
+def get_entity_244(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_244_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 244 not found")
+    return res
+
+@router.post("/entity-244", response_model=HostelsSchemaEntity244Response, status_code=201)
+def create_entity_244(payload: HostelsSchemaEntity244Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_244(payload)
+
+@router.get("/entity-245", response_model=List[HostelsSchemaEntity245Response])
+def list_entities_245(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_245_list(skip=skip, limit=limit)
+
+@router.get("/entity-245/{entity_id}", response_model=HostelsSchemaEntity245Response)
+def get_entity_245(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_245_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 245 not found")
+    return res
+
+@router.post("/entity-245", response_model=HostelsSchemaEntity245Response, status_code=201)
+def create_entity_245(payload: HostelsSchemaEntity245Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_245(payload)
+
+@router.get("/entity-246", response_model=List[HostelsSchemaEntity246Response])
+def list_entities_246(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_246_list(skip=skip, limit=limit)
+
+@router.get("/entity-246/{entity_id}", response_model=HostelsSchemaEntity246Response)
+def get_entity_246(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_246_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 246 not found")
+    return res
+
+@router.post("/entity-246", response_model=HostelsSchemaEntity246Response, status_code=201)
+def create_entity_246(payload: HostelsSchemaEntity246Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_246(payload)
+
+@router.get("/entity-247", response_model=List[HostelsSchemaEntity247Response])
+def list_entities_247(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_247_list(skip=skip, limit=limit)
+
+@router.get("/entity-247/{entity_id}", response_model=HostelsSchemaEntity247Response)
+def get_entity_247(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_247_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 247 not found")
+    return res
+
+@router.post("/entity-247", response_model=HostelsSchemaEntity247Response, status_code=201)
+def create_entity_247(payload: HostelsSchemaEntity247Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_247(payload)
+
+@router.get("/entity-248", response_model=List[HostelsSchemaEntity248Response])
+def list_entities_248(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_248_list(skip=skip, limit=limit)
+
+@router.get("/entity-248/{entity_id}", response_model=HostelsSchemaEntity248Response)
+def get_entity_248(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_248_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 248 not found")
+    return res
+
+@router.post("/entity-248", response_model=HostelsSchemaEntity248Response, status_code=201)
+def create_entity_248(payload: HostelsSchemaEntity248Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_248(payload)
+
+@router.get("/entity-249", response_model=List[HostelsSchemaEntity249Response])
+def list_entities_249(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_249_list(skip=skip, limit=limit)
+
+@router.get("/entity-249/{entity_id}", response_model=HostelsSchemaEntity249Response)
+def get_entity_249(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_249_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 249 not found")
+    return res
+
+@router.post("/entity-249", response_model=HostelsSchemaEntity249Response, status_code=201)
+def create_entity_249(payload: HostelsSchemaEntity249Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_249(payload)
+
+@router.get("/entity-250", response_model=List[HostelsSchemaEntity250Response])
+def list_entities_250(skip: int = Query(0), limit: int = Query(100), db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.get_entity_250_list(skip=skip, limit=limit)
+
+@router.get("/entity-250/{entity_id}", response_model=HostelsSchemaEntity250Response)
+def get_entity_250(entity_id: int, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    res = srv.get_entity_250_by_id(entity_id)
+    if not res:
+        raise HTTPException(status_code=404, detail=f"Entity 250 not found")
+    return res
+
+@router.post("/entity-250", response_model=HostelsSchemaEntity250Response, status_code=201)
+def create_entity_250(payload: HostelsSchemaEntity250Create, db: Session = Depends(get_db)):
+    srv = HostelsDomainService(db)
+    return srv.create_entity_250(payload)
+

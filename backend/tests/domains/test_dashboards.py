@@ -1804,3 +1804,453 @@ def test_dashboards_entity_200_schema_validation():
     assert obj.entity_code == "TEST_DASHBOARDS_200"
     assert obj.value_amount == 200 * 100.5
 
+def test_dashboards_entity_201_schema_validation():
+    obj = DashboardsSchemaEntity201Create(
+        entity_code="TEST_DASHBOARDS_201",
+        name="Test Entity 201",
+        value_amount=201 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_201"
+    assert obj.value_amount == 201 * 100.5
+
+def test_dashboards_entity_202_schema_validation():
+    obj = DashboardsSchemaEntity202Create(
+        entity_code="TEST_DASHBOARDS_202",
+        name="Test Entity 202",
+        value_amount=202 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_202"
+    assert obj.value_amount == 202 * 100.5
+
+def test_dashboards_entity_203_schema_validation():
+    obj = DashboardsSchemaEntity203Create(
+        entity_code="TEST_DASHBOARDS_203",
+        name="Test Entity 203",
+        value_amount=203 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_203"
+    assert obj.value_amount == 203 * 100.5
+
+def test_dashboards_entity_204_schema_validation():
+    obj = DashboardsSchemaEntity204Create(
+        entity_code="TEST_DASHBOARDS_204",
+        name="Test Entity 204",
+        value_amount=204 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_204"
+    assert obj.value_amount == 204 * 100.5
+
+def test_dashboards_entity_205_schema_validation():
+    obj = DashboardsSchemaEntity205Create(
+        entity_code="TEST_DASHBOARDS_205",
+        name="Test Entity 205",
+        value_amount=205 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_205"
+    assert obj.value_amount == 205 * 100.5
+
+def test_dashboards_entity_206_schema_validation():
+    obj = DashboardsSchemaEntity206Create(
+        entity_code="TEST_DASHBOARDS_206",
+        name="Test Entity 206",
+        value_amount=206 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_206"
+    assert obj.value_amount == 206 * 100.5
+
+def test_dashboards_entity_207_schema_validation():
+    obj = DashboardsSchemaEntity207Create(
+        entity_code="TEST_DASHBOARDS_207",
+        name="Test Entity 207",
+        value_amount=207 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_207"
+    assert obj.value_amount == 207 * 100.5
+
+def test_dashboards_entity_208_schema_validation():
+    obj = DashboardsSchemaEntity208Create(
+        entity_code="TEST_DASHBOARDS_208",
+        name="Test Entity 208",
+        value_amount=208 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_208"
+    assert obj.value_amount == 208 * 100.5
+
+def test_dashboards_entity_209_schema_validation():
+    obj = DashboardsSchemaEntity209Create(
+        entity_code="TEST_DASHBOARDS_209",
+        name="Test Entity 209",
+        value_amount=209 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_209"
+    assert obj.value_amount == 209 * 100.5
+
+def test_dashboards_entity_210_schema_validation():
+    obj = DashboardsSchemaEntity210Create(
+        entity_code="TEST_DASHBOARDS_210",
+        name="Test Entity 210",
+        value_amount=210 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_210"
+    assert obj.value_amount == 210 * 100.5
+
+def test_dashboards_entity_211_schema_validation():
+    obj = DashboardsSchemaEntity211Create(
+        entity_code="TEST_DASHBOARDS_211",
+        name="Test Entity 211",
+        value_amount=211 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_211"
+    assert obj.value_amount == 211 * 100.5
+
+def test_dashboards_entity_212_schema_validation():
+    obj = DashboardsSchemaEntity212Create(
+        entity_code="TEST_DASHBOARDS_212",
+        name="Test Entity 212",
+        value_amount=212 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_212"
+    assert obj.value_amount == 212 * 100.5
+
+def test_dashboards_entity_213_schema_validation():
+    obj = DashboardsSchemaEntity213Create(
+        entity_code="TEST_DASHBOARDS_213",
+        name="Test Entity 213",
+        value_amount=213 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_213"
+    assert obj.value_amount == 213 * 100.5
+
+def test_dashboards_entity_214_schema_validation():
+    obj = DashboardsSchemaEntity214Create(
+        entity_code="TEST_DASHBOARDS_214",
+        name="Test Entity 214",
+        value_amount=214 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_214"
+    assert obj.value_amount == 214 * 100.5
+
+def test_dashboards_entity_215_schema_validation():
+    obj = DashboardsSchemaEntity215Create(
+        entity_code="TEST_DASHBOARDS_215",
+        name="Test Entity 215",
+        value_amount=215 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_215"
+    assert obj.value_amount == 215 * 100.5
+
+def test_dashboards_entity_216_schema_validation():
+    obj = DashboardsSchemaEntity216Create(
+        entity_code="TEST_DASHBOARDS_216",
+        name="Test Entity 216",
+        value_amount=216 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_216"
+    assert obj.value_amount == 216 * 100.5
+
+def test_dashboards_entity_217_schema_validation():
+    obj = DashboardsSchemaEntity217Create(
+        entity_code="TEST_DASHBOARDS_217",
+        name="Test Entity 217",
+        value_amount=217 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_217"
+    assert obj.value_amount == 217 * 100.5
+
+def test_dashboards_entity_218_schema_validation():
+    obj = DashboardsSchemaEntity218Create(
+        entity_code="TEST_DASHBOARDS_218",
+        name="Test Entity 218",
+        value_amount=218 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_218"
+    assert obj.value_amount == 218 * 100.5
+
+def test_dashboards_entity_219_schema_validation():
+    obj = DashboardsSchemaEntity219Create(
+        entity_code="TEST_DASHBOARDS_219",
+        name="Test Entity 219",
+        value_amount=219 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_219"
+    assert obj.value_amount == 219 * 100.5
+
+def test_dashboards_entity_220_schema_validation():
+    obj = DashboardsSchemaEntity220Create(
+        entity_code="TEST_DASHBOARDS_220",
+        name="Test Entity 220",
+        value_amount=220 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_220"
+    assert obj.value_amount == 220 * 100.5
+
+def test_dashboards_entity_221_schema_validation():
+    obj = DashboardsSchemaEntity221Create(
+        entity_code="TEST_DASHBOARDS_221",
+        name="Test Entity 221",
+        value_amount=221 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_221"
+    assert obj.value_amount == 221 * 100.5
+
+def test_dashboards_entity_222_schema_validation():
+    obj = DashboardsSchemaEntity222Create(
+        entity_code="TEST_DASHBOARDS_222",
+        name="Test Entity 222",
+        value_amount=222 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_222"
+    assert obj.value_amount == 222 * 100.5
+
+def test_dashboards_entity_223_schema_validation():
+    obj = DashboardsSchemaEntity223Create(
+        entity_code="TEST_DASHBOARDS_223",
+        name="Test Entity 223",
+        value_amount=223 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_223"
+    assert obj.value_amount == 223 * 100.5
+
+def test_dashboards_entity_224_schema_validation():
+    obj = DashboardsSchemaEntity224Create(
+        entity_code="TEST_DASHBOARDS_224",
+        name="Test Entity 224",
+        value_amount=224 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_224"
+    assert obj.value_amount == 224 * 100.5
+
+def test_dashboards_entity_225_schema_validation():
+    obj = DashboardsSchemaEntity225Create(
+        entity_code="TEST_DASHBOARDS_225",
+        name="Test Entity 225",
+        value_amount=225 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_225"
+    assert obj.value_amount == 225 * 100.5
+
+def test_dashboards_entity_226_schema_validation():
+    obj = DashboardsSchemaEntity226Create(
+        entity_code="TEST_DASHBOARDS_226",
+        name="Test Entity 226",
+        value_amount=226 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_226"
+    assert obj.value_amount == 226 * 100.5
+
+def test_dashboards_entity_227_schema_validation():
+    obj = DashboardsSchemaEntity227Create(
+        entity_code="TEST_DASHBOARDS_227",
+        name="Test Entity 227",
+        value_amount=227 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_227"
+    assert obj.value_amount == 227 * 100.5
+
+def test_dashboards_entity_228_schema_validation():
+    obj = DashboardsSchemaEntity228Create(
+        entity_code="TEST_DASHBOARDS_228",
+        name="Test Entity 228",
+        value_amount=228 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_228"
+    assert obj.value_amount == 228 * 100.5
+
+def test_dashboards_entity_229_schema_validation():
+    obj = DashboardsSchemaEntity229Create(
+        entity_code="TEST_DASHBOARDS_229",
+        name="Test Entity 229",
+        value_amount=229 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_229"
+    assert obj.value_amount == 229 * 100.5
+
+def test_dashboards_entity_230_schema_validation():
+    obj = DashboardsSchemaEntity230Create(
+        entity_code="TEST_DASHBOARDS_230",
+        name="Test Entity 230",
+        value_amount=230 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_230"
+    assert obj.value_amount == 230 * 100.5
+
+def test_dashboards_entity_231_schema_validation():
+    obj = DashboardsSchemaEntity231Create(
+        entity_code="TEST_DASHBOARDS_231",
+        name="Test Entity 231",
+        value_amount=231 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_231"
+    assert obj.value_amount == 231 * 100.5
+
+def test_dashboards_entity_232_schema_validation():
+    obj = DashboardsSchemaEntity232Create(
+        entity_code="TEST_DASHBOARDS_232",
+        name="Test Entity 232",
+        value_amount=232 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_232"
+    assert obj.value_amount == 232 * 100.5
+
+def test_dashboards_entity_233_schema_validation():
+    obj = DashboardsSchemaEntity233Create(
+        entity_code="TEST_DASHBOARDS_233",
+        name="Test Entity 233",
+        value_amount=233 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_233"
+    assert obj.value_amount == 233 * 100.5
+
+def test_dashboards_entity_234_schema_validation():
+    obj = DashboardsSchemaEntity234Create(
+        entity_code="TEST_DASHBOARDS_234",
+        name="Test Entity 234",
+        value_amount=234 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_234"
+    assert obj.value_amount == 234 * 100.5
+
+def test_dashboards_entity_235_schema_validation():
+    obj = DashboardsSchemaEntity235Create(
+        entity_code="TEST_DASHBOARDS_235",
+        name="Test Entity 235",
+        value_amount=235 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_235"
+    assert obj.value_amount == 235 * 100.5
+
+def test_dashboards_entity_236_schema_validation():
+    obj = DashboardsSchemaEntity236Create(
+        entity_code="TEST_DASHBOARDS_236",
+        name="Test Entity 236",
+        value_amount=236 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_236"
+    assert obj.value_amount == 236 * 100.5
+
+def test_dashboards_entity_237_schema_validation():
+    obj = DashboardsSchemaEntity237Create(
+        entity_code="TEST_DASHBOARDS_237",
+        name="Test Entity 237",
+        value_amount=237 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_237"
+    assert obj.value_amount == 237 * 100.5
+
+def test_dashboards_entity_238_schema_validation():
+    obj = DashboardsSchemaEntity238Create(
+        entity_code="TEST_DASHBOARDS_238",
+        name="Test Entity 238",
+        value_amount=238 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_238"
+    assert obj.value_amount == 238 * 100.5
+
+def test_dashboards_entity_239_schema_validation():
+    obj = DashboardsSchemaEntity239Create(
+        entity_code="TEST_DASHBOARDS_239",
+        name="Test Entity 239",
+        value_amount=239 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_239"
+    assert obj.value_amount == 239 * 100.5
+
+def test_dashboards_entity_240_schema_validation():
+    obj = DashboardsSchemaEntity240Create(
+        entity_code="TEST_DASHBOARDS_240",
+        name="Test Entity 240",
+        value_amount=240 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_240"
+    assert obj.value_amount == 240 * 100.5
+
+def test_dashboards_entity_241_schema_validation():
+    obj = DashboardsSchemaEntity241Create(
+        entity_code="TEST_DASHBOARDS_241",
+        name="Test Entity 241",
+        value_amount=241 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_241"
+    assert obj.value_amount == 241 * 100.5
+
+def test_dashboards_entity_242_schema_validation():
+    obj = DashboardsSchemaEntity242Create(
+        entity_code="TEST_DASHBOARDS_242",
+        name="Test Entity 242",
+        value_amount=242 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_242"
+    assert obj.value_amount == 242 * 100.5
+
+def test_dashboards_entity_243_schema_validation():
+    obj = DashboardsSchemaEntity243Create(
+        entity_code="TEST_DASHBOARDS_243",
+        name="Test Entity 243",
+        value_amount=243 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_243"
+    assert obj.value_amount == 243 * 100.5
+
+def test_dashboards_entity_244_schema_validation():
+    obj = DashboardsSchemaEntity244Create(
+        entity_code="TEST_DASHBOARDS_244",
+        name="Test Entity 244",
+        value_amount=244 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_244"
+    assert obj.value_amount == 244 * 100.5
+
+def test_dashboards_entity_245_schema_validation():
+    obj = DashboardsSchemaEntity245Create(
+        entity_code="TEST_DASHBOARDS_245",
+        name="Test Entity 245",
+        value_amount=245 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_245"
+    assert obj.value_amount == 245 * 100.5
+
+def test_dashboards_entity_246_schema_validation():
+    obj = DashboardsSchemaEntity246Create(
+        entity_code="TEST_DASHBOARDS_246",
+        name="Test Entity 246",
+        value_amount=246 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_246"
+    assert obj.value_amount == 246 * 100.5
+
+def test_dashboards_entity_247_schema_validation():
+    obj = DashboardsSchemaEntity247Create(
+        entity_code="TEST_DASHBOARDS_247",
+        name="Test Entity 247",
+        value_amount=247 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_247"
+    assert obj.value_amount == 247 * 100.5
+
+def test_dashboards_entity_248_schema_validation():
+    obj = DashboardsSchemaEntity248Create(
+        entity_code="TEST_DASHBOARDS_248",
+        name="Test Entity 248",
+        value_amount=248 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_248"
+    assert obj.value_amount == 248 * 100.5
+
+def test_dashboards_entity_249_schema_validation():
+    obj = DashboardsSchemaEntity249Create(
+        entity_code="TEST_DASHBOARDS_249",
+        name="Test Entity 249",
+        value_amount=249 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_249"
+    assert obj.value_amount == 249 * 100.5
+
+def test_dashboards_entity_250_schema_validation():
+    obj = DashboardsSchemaEntity250Create(
+        entity_code="TEST_DASHBOARDS_250",
+        name="Test Entity 250",
+        value_amount=250 * 100.5
+    )
+    assert obj.entity_code == "TEST_DASHBOARDS_250"
+    assert obj.value_amount == 250 * 100.5
+
